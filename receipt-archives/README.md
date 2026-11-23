@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [period-on-quotient receipt](2026-11-23-period-on-quotient.md) gives an exact denominator example and a dimension bound proved by taking traces of orthogonal projections.
+
 The [quotient-covolume calculation](2026-11-23-quotient-covolume.md) can be checked by multiplying three algebraic conjugates and testing a split prime of the Gaussian integers. The unbounded example has a separate proof in the same record.
 
 For coefficient descent, run `python receipt-archives/check_coefficient_descent.py`. The [receipt](2026-11-23-coefficient-descent.md#reproduce-the-checks) includes the optional compiled-graph check and the proof of the arithmetic obstruction.

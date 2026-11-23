@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+**Which directions can the period lose?** An integer vector can have an orthogonal quotient representative with denominator 5. We traced the condition that keeps the period integral, and proved a bound for the proportion of source directions that can disappear after projection. [Examples, proof and source](receipt-archives/2026-11-23-period-on-quotient.md)
+
 **A residue in the quotient metric.** In a rank-one test, the algebraic and geometric answers differ by $\log(1+\sqrt[3]4)-\tfrac13\log5$. The difference can grow without bound even with fixed lattices. We followed its sign through the upper bound used in the proof. [Hand calculation and source trace](receipt-archives/2026-11-23-quotient-covolume.md)
 
 **Can a nonzero coefficient disappear?** The theta-lift code returns zero for a complex coefficient outside the chosen number field. We found an explicit nonzero input that disappears and an integral line where a mistaken choice would lose half the logarithm of 3. The proof builds its field from the original complex coefficients and checks the degrees the operator reads. We found no loss at that step. [Mathematical argument and source trace](receipt-archives/2026-11-23-coefficient-descent.md)

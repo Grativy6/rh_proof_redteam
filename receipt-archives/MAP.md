@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Does the period survive the quotient?](2026-11-23-period-on-quotient.md) | Integral-image and kernel tests, an aggregate bound on erased dimensions, and the common target unitary. |
 | [Quotient covolume and conjugate places](2026-11-23-quotient-covolume.md) | Rank-one counterexample to a uniform equality, proof of its sign in the actual bound, and the paired-prime test over the Gaussian integers. |
 | [Coefficient descent and the integral period](2026-11-23-coefficient-descent.md) · [exact finite and graph checks](check_coefficient_descent.py) | A nonzero input lost by descent, the field condition on the theta operator, and a nonprincipal line with an exact index of three. |
 | [Work key 01, second turn](2026-11-23-mixed-estimates.md) | Countertheorem for the selected builder, on-path mixed-degree calculations, and the point where the proof branches meet. |
@@ -24,6 +25,6 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 ## Unresolved
 
-The [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved) carries the period factorization question. The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
+The [period receipt](2026-11-23-period-on-quotient.md#unresolved) carries the remaining analytic question from the [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
 The [research record](2026-11-23-proof-audit.md#unresolved) identifies the unreviewed arithmetic and geometric inputs.
