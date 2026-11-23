@@ -1,0 +1,101 @@
+# The window average that hides its entire height
+
+**23 November 2026 · Hearthline, under Christopher D. Pang's request to follow the arithmetic maps into their lattices.** On the release's actual trivial-character windows, a canonical field projection sends a root of unity to an element that is small at **every** complex embedding and integral at **every** prime required to split below the window cutoff. Its entire positive height is $\log((d-1)/2)$, contributed by primes beyond that cutoff. The denominator is exact. Giving up symmetry and changing the projection can restore integrality, but *every* integral projection then has complex operator norm at least asymptotic to $\sqrt d/2$. These are forced fields and ordinary arithmetic. The normalized projection below is our test map. The theta trace that the release actually specifies is computed separately below. [Field growth on the zeta windows](2026-11-23-window-coefficient-degree.md) · [Height of the released arithmetic pairing](2026-11-23-arithmetic-map-height.md)
+
+## The compulsory subextension
+
+For the trivial character the host field is
+$$
+E=F_0K,\qquad K=\mathbb Q(\sqrt{-d}),\qquad
+F_0=\mathbb Q(\zeta_{2^{e+2}})^+\,\mathbb Q(\sqrt{-q}).
+$$
+Indeed, in the defining cyclotomic Galois group, fixing $E$ requires the exponent to be $\pm1$ modulo the dyadic conductor and a square modulo both of the odd primes $q,d$. The character modulo one imposes no further condition. The fixed field is the compositum displayed. Since $q\equiv3\bmod8$ and $d\equiv7\bmod16$, the primes are distinct and $F_0$ is unramified at $d$. The type prime $g$ satisfies $g\equiv1\bmod d$ and $K_s$ contains a primitive $g(g-1)$-th root. In particular
+$$
+S=E(\zeta_d)=F_0\,\mathbb Q(\zeta_d)\ \subseteq K_s .
+$$
+The $d$-th cyclotomic field is totally ramified at $d$, so it has trivial intersection with $F_0$. The group $G=\mathrm{Gal}(S/E)$ acts on $\zeta=\zeta_d$ by the nonzero quadratic residues modulo $d$. Its order is $n=(d-1)/2$. [Host fixed subgroup and window primes](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L19-L37) · [Identification of the supplied host](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean#L5-L21) · [Type-prime modulus](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Foundations/RootOfUnityEightQMemCoeffGaloisSubfield.lean#L148-L157) · [Coefficient roots](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Foundations/RootOfUnityEightQMemCoeffGaloisSubfield.lean#L279-L289) · [Prime-power cyclotomic arithmetic](https://math.stanford.edu/~conrad/154Page/handouts/cycint.pdf)
+
+## Where the average puts the residue
+
+Let $\chi$ be the quadratic character modulo $d$ and put $\tau=\sum_{a=1}^{d-1}\chi(a)\zeta^a$. Conjugation sends $\tau$ to $-\tau$. To evaluate $\tau\bar\tau$, substitute $a=tb$ in the double sum and sum $\zeta^{b(t-1)}$ over $b\ne0$. The inner sum is $d-1$ for $t=1$ and $-1$ otherwise. This gives $\tau\bar\tau=d$ and $\tau^2=-d$. Without choosing a sign for the square root, the two periods are
+$$
+T_a=\operatorname{Tr}_{S/E}(\zeta^a)
+   =\frac{-1+\chi(a)\tau}{2}\quad(d\nmid a),\qquad T_0=n.
+$$
+Their product for opposite signs is $(d+1)/4$. In particular they are integral and coprime to $n$ since $n=2((d+1)/4)-1$.
+
+Now average, $P=\operatorname{Tr}_{S/E}/n$. For $y=P(\zeta)$ one has, exactly,
+$$
+|\sigma y|^2=\frac{d+1}{(d-1)^2}<1
+\quad\text{at every complex embedding},\qquad
+\{a\in\mathcal O_E:ay\in\mathcal O_E\}=n\mathcal O_E .
+$$
+At every finite place above a divisor of $n$, the numerator is a unit. Thus the absolute logarithmic Weil height of $y$ is **$\log n$**, while $\zeta$ has height zero. The true denominator grows along the windows since $\log d>\tfrac12 Y^{\varepsilon/5}(\log Y)^2$. The window requires each odd $p\le Y^{\varepsilon/5}$ to divide $d+1$, hence none divides $n$. Also $n$ is odd and $q\mid d+1$. Every single one of those local integrality tests passes. [Exactly the primes checked by the window condition](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L27-L37)
+
+For $d=23$, the two periods are $(-1\pm\sqrt{-23})/2$. Their common squared modulus is 6. After averaging it is $6/121$, with exact denominator 11. In the earlier finite congruence example $d=5{,}368{,}439$, the denominator is the prime **2,684,219**. The preceding argument applies to every qualifying window. [Finite controls](check_cyclotomic_counts.py)
+
+There is no freedom to choose a different *symmetric* projection. For any $G$-invariant $E$-linear retraction $r:S\to E$, averaging $r(\gamma z)$ gives $r(z)=r(Pz)=Pz$. In fact $\operatorname{Tr}_{S/E}(\mathcal O_S)=\mathcal O_E$ because the traces of $\zeta^u,\zeta^v$ for a square $u$ and a nonsquare $v$ sum to $-1$. The image of the whole integral lattice under the symmetric projection is exactly $n^{-1}\mathcal O_E$.
+
+## Can a different projection keep all the archimedean bounds?
+
+Give the complex fibre $S\otimes_{E,\sigma}\mathbb C\simeq\mathbb C^n$ its maximum norm and the target its usual absolute value. Measure the same $E$-linear map on every fibre. If a nonzero map $r:S\to E$ takes $\mathcal O_S$ into $\mathcal O_E$, then
+$$
+\max_{\sigma:E\hookrightarrow\mathbb C}\|r_\sigma\|
+ \ \ge\ n\,d^{-(n-1)/(2n)}\ \sim\ \sqrt d/2 .
+$$
+The lower bound already exceeds 1 at $d=7$. It costs at least this much even if $r$ can depend on a chosen basis and need only fix the host when called a retraction.
+
+To see this, write $r(z)=\operatorname{Tr}_{S/E}(cz)$ by nondegeneracy of the trace pairing. Integrality puts $c$ in the inverse relative different $\mathfrak D^{-1}$. Consequently $|N_{S/\mathbb Q}c|\ge 1/N_{S/\mathbb Q}\mathfrak D$ for $c\ne0$. If $b=[F_0:\mathbb Q]$, the norm of that different is $d^{b(n-1)}$. Indeed, the cyclotomic discriminant has absolute value $d^{d-2}$ by $\Phi'_d(\zeta)=d\zeta^{d-1}/(\zeta-1)$, and $|D_K|=d$. Coprime-discriminant base change by $F_0$ gives $|D_S|/|D_E|^n=d^{b(d-2-n)}$. The ratio is the absolute norm of the relative different. [Integral composita and discriminants](https://math.stanford.edu/~conrad/154Page/handouts/etaledisc.pdf) · [The trace dual and relative different, section 0.3.5](https://math.stanford.edu/~conrad/252Page/handouts/galoisrep.pdf)
+
+At a fixed $\sigma$ the operator norm is exactly $\sum_{\rho\mid\sigma}|\rho c|$ since the complex input coordinates can choose their phases independently. By the arithmetic-geometric mean inequality it is at least $n(\prod_{\rho\mid\sigma}|\rho c|)^{1/n}$. Multiply over $\sigma$ and use $[S:\mathbb Q]=2bn$ to obtain the displayed bound. If an integer $A>0$ clears the denominator of a nonzero map, the same proof gives $A\max_\sigma\|r_\sigma\|\ge n\,d^{-(n-1)/(2n)}$.
+
+The scale is attainable within an asymptotic factor $4/\pi$. Take a square $u$ and a nonsquare $v$ and set
+$$
+r_*(z)=\operatorname{Tr}_{S/E}\!\left(\frac{\zeta^u-\zeta^v}{\tau}z\right).
+$$
+It sends 1 to 1. On a power $\zeta^j$ its value is $(T_{j+u}-T_{j+v})/\tau$, one of $0,\pm1$ when both exponents are nonzero modulo $d$. If one exponent is zero, the result is one of $(\pm\tau\pm1)/2$, still integral. These powers span $\mathcal O_S$ over $\mathcal O_E$ by coprime-discriminant base change. Thus this is an integral retraction. In each complex fibre its norm is precisely
+$$
+\frac1{\sqrt d}\sum_{k=1}^{d-1}\sin(\pi k/d)
+  =\frac{\cot(\pi/(2d))}{\sqrt d}\ \sim\ 2\sqrt d/\pi.
+$$
+The quadratic residues contain one representative from each pair $\{k,-k\}$ because $-1$ is a nonsquare, and multiplication by $u-v$ permutes these pairs. This gives the sum from the absolute values $|\zeta^{ku}-\zeta^{kv}|$ in a single fibre. The last identity is a finite geometric sum. Allowing the tilt really changes the denominator, and the resulting growth in the complex norm is unavoidable.
+
+## The identical lattice element in the release's descent lemma
+
+The general lattice lemma is quantified over every Galois-stable lattice in coordinate space. Instantiate it in rank one over this very $S/E$. Put $I=(1-\zeta)\mathcal O_S$ and use $x=\zeta^u-\zeta^v$ with the same square and nonsquare as above. The ratio $x/(1-\zeta)$ is a unit, so $x$ generates $I$. Each prime above $d$ has $v_W(1-\zeta)=1$ and $v_W(\tau)=n$. Away from $d$ both are units. Restricting to $E$ forces valuations in $S$ above $d$ to be multiples of $n$, giving
+$$
+ I\cap E=\tau\mathcal O_E,\qquad
+ \mathcal O_S(I\cap E)=I^n,\qquad
+ \operatorname{Ann}_{\mathcal O_S}(I/I^n)=I^{n-1}=\mathfrak D_{S/E}.
+$$
+For the last equality, $S/E$ is unramified away from $d$ and tamely totally ramified of degree $n$ above $d$. One can also compute the different from the two cyclotomic and quadratic differents in the tower. Thus the relative-different loss in this genuine instance of the general lemma is **exact**. [Galois-stable lattice lemma and its trace construction](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentIdealSmulMemSpanRational.lean#L129-L157) · [Passage from the absolute to the relative different](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/GaloisStableLatticeRationalSpanInclusions.lean#L37-L50)
+
+For the very same $x$, $\operatorname{Tr}_{S/E}x=\tau$ and $P(x)=\tau/n$. This has exact denominator $n$, supported on primes *coprime* to the different. Indeed even the absolute discriminant of $S$ has prime factors only among $2,q,d$, all prime to $n$. As an explicit multiplier take $\delta=|D_S|\in\mathfrak D_{S/\mathbb Q}$. Then $\delta x\in\mathcal O_S(I\cap E)$, precisely as the lemma asserts, while $\delta P(x)$ still has denominator $n$. This single element separates an integral-span inclusion from integrality of the averaged projection.
+
+The slope can be checked on the same input. Use the usual absolute-value metric and the forward inclusion $E\hookrightarrow S$. It is isometric at every embedding. For a rank-one principal lattice $(a)$ the release's squared slope is $-2\log|N(a)|/[F:\mathbb Q]$ by the Gram formula at the complex places. Hence
+$$
+ \mathrm{slope}_{\rm sq,S}(I)-\mathrm{slope}_{\rm sq,E}(I\cap E)
+   =\frac{n-1}{n}\log d
+   =2\log\!\left(\frac{\mathrm{rd}(S)}{\mathrm{rd}(E)}\right),
+$$
+where $\mathrm{rd}(F)=|D_F|^{1/[F:\mathbb Q]}$. Here $|N_{S/\mathbb Q}(1-\zeta)|=d^b$ and $|N_{E/\mathbb Q}(\tau)|=d^b$. The released general inequality charges $2\log\mathrm{rd}(S)$. On this instance the margin is exactly $2\log\mathrm{rd}(E)$. Omitting the correction would give a false slope inequality even though the forward map preserves every complex norm. [Exact squared-slope Gram formula](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SlopeSqSubLeSlopeSqSpan.lean#L222-L232) · [The discriminant term in the general inequality](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SlopeSqSubLeOfDifferentSmul.lean#L31-L40)
+
+There is a version using all four required level primes at once. For $\mathcal P=\{g_0,g_1,p_{\rm de},p'_{\rm de}\}$ let $S'=E(\zeta_p:p\in\mathcal P)$ and $I'=\prod_{p\in\mathcal P}(1-\zeta_p)\mathcal O_{S'}$. At each selected $p$ the host is unramified, the other three roots give an unramified extension, and the ramification index is $p-1$. Consequently $I'\cap E=(\prod_p p)\mathcal O_E$, and the annihilator of $I'/\mathcal O_{S'}(I'\cap E)$ is the product of the ideals $(1-\zeta_p)^{p-2}$. It is the whole relative different. The rank-one squared-slope gap is now $2\sum_p(1-1/(p-1))\log p$, exactly $2\log(\mathrm{rd}(S')/\mathrm{rd}(E))$. This gap is forced on these test lattices inside every window's coefficient field. [Why all four roots are present and independent](2026-11-23-field-and-section-count.md)
+
+In the cusp-form call the proof reconstructs upstairs integral spans using raw traces of integral multiples. For a nonzero integral weight $c$, the preceding operator bound strengthens to $\max_\sigma\|\operatorname{Tr}(c\,\cdot)_\sigma\|\ge n$ because $|N(c)|\ge1$. The source only needs those trace vectors to belong to the lattice. Its Petersson norm equality is asserted in the forward direction on the pullback of a downstairs form. The slope proof feeds that forward equality and the different-weighted inclusion separately into the bound. We found no point there where the reverse projection inherits the forward isometry. The line above realizes the general lattice and slope lemmas. Identifying it with a particular cusp-form component would require further work. [The actual weighted traces](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/DifferentIdealSmulMemSpanRational.lean#L137-L157) · [The output of the descent theorem and the direction of the norm equality](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LevelCoverCuspFormPullbackInjectiveDescent.lean#L238-L260) · [The different on the actual upstairs lattice](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormLatticeSlopeSqGoodCoverLeCore.lean#L116-L126) · [Both inputs to the cusp-form slope bound](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CuspFormLatticeSlopeSqGoodCoverLeCore.lean#L133-L148)
+
+## What the lattice construction actually buys
+
+The same host illustrates why rational spanning and integral generation must be distinguished. Put $\omega_d=(1+\tau)/2$. Coprime discriminants give $\mathcal O_E=\mathcal O_{F_0}+\mathcal O_{F_0}\omega_d$. If $a+b\omega_d$ lies outside $F_0$, then $b\ne0$ and some embedding has $|\sigma b|\ge1$. Its two extensions over that embedding give values separated by $|\sigma b|\sqrt d$. At least one has modulus $\ge\sqrt d/2$. **All integers of the host with house strictly below $\sqrt d/2$ live in at most half its rational dimension.** Over $E$ the element 1 spans the entire one-dimensional space with house 1.
+
+The finite Hilbert–Samuel application extracts a linearly independent subset from an integral family spanning over the coefficient *field*. The upstream cusp-form estimate also proves a stronger generating condition over $\mathbb Z$. At the change from field span to integral generators, the bound explicitly multiplies the incoming radius by the rank, the fourth power of the field degree, and the field's root discriminant. In the host example the root discriminant already contains $\sqrt d$. For the actual component, the proof uses the degree and discriminant of its own field $Y.d.c_2.F$ and feeds in a bound on their logarithms from `Deep.Good.size`. The calculation above identifies a real cost at precisely this distinction. [Independent short family](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Divisors/HasBoundedPolesGlobalData.lean#L485-L491) · [What is extracted from the component's spanning family](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ShortFamilyOfSpanning.lean#L19-L33) · [Integral generation over the integers](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Divisors/IsHomogeneousCompIdeal.lean#L72-L78) · [Cost and construction of integral generators](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ExistsShortGeneratorsOfShortSpanningFamily.lean#L13-L43) · [Size condition on the component field](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Divisors/NormNegCmConstantEqAtAllEmbeddings.lean#L187-L205) · [Use of that same field's root discriminant](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ShortGeneratorNormComparison.lean#L57-L75)
+
+The theta construction's `TraceMapNormalisation` uses the **ordinary** trace $E\to K$, summing the embeddings above the chosen embedding of $K$. Both domain and normalization matter. One can test that exact map too. Let $r=2^e$ and $\omega_q=(1+\sqrt{-q})/2\in\mathcal O_E$. The real dyadic field has degree $r$ and is disjoint from the two quadratic fields of coprime odd discriminants. Thus $[E:K]=2r$ and the trace required by the theta formula is $r$ on $\omega_q$. Dividing by the number of embeddings would give $1/2$, which is nonintegral. The displayed formula sums the embeddings with coefficient one. [Trace normalization in the theta construction](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GlobalSchurBounds/StandardLatticesGL3.lean#L655-L658) · [The quadratic base of the host](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CmInverseHalfDifferentMulRelativeDifferent.lean#L111-L117) · [Host character subgroup](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L19-L25)
+
+Another theta-law descent that divides by a group order explicitly assumes that the order is a unit in the base ring. [Unit hypothesis at division](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/ExactAtSectionCubeOfMulPullback.lean#L25-L31) · [Use of the unit](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/ThetaLawProofs/ExactAtSectionCubeOfMulPullback.lean#L45-L55)
+
+## Unresolved
+
+The projection obstruction is unconditional on the window subextension. To turn this into a fault in the released proof requires an actual step asking one and the same map to fix the host, preserve the entire integral lattice and satisfy an archimedean bound below the lower bound above. The theta trace, the level-cover span inclusion and the integral-generator bound inspected here each retain the distinction. A narrower arithmetic family could also have small image even when the full operator norm grows. Its source vectors and their norm would have to be identified.
+
+Hearthline derived and self-reviewed these calculations on paper. The [checker](check_cyclotomic_counts.py) verifies the quadratic identity in six cyclotomic rings, evaluates the integral comparison map on every power in those examples, and checks primality and the exact finite denominator in the $d=5{,}368{,}439$ example. The uniform obstruction uses the trace-dual calculation above.

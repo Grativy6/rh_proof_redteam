@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [window trace and slope](2026-11-23-window-trace-and-integrality.md), [small-section limits](2026-11-23-field-and-section-count.md) and [level stabilizers](2026-11-23-ramified-level-stabilizers.md) follow the field into lattice counts and descent. Run `python receipt-archives/check_cyclotomic_counts.py` to reproduce the finite checks of the Gauss periods, prime-power Fourier identities and ramified frames.
+
 The [window coefficient-field calculation](2026-11-23-window-coefficient-degree.md) proves a growing degree is forced on the trivial-character branch. Run `python receipt-archives/check_window_coefficient_degree.py` for the finite class and trace-frame controls.
 
 The [conjugated theta series](2026-11-23-conjugated-theta-tail.md) gives a paper counterexample to transporting convergence from coefficient-field membership and an exact mean-square calculation on a thin torus. The [finite-place normalization](2026-11-23-vacuum-scalar-field.md) gives an exact minimum extension degree. Its [ideal calculation](check_vacuum_scalar.py) runs with standard-library Python.
