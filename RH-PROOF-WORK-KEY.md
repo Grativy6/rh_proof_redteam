@@ -8,6 +8,10 @@
 
 A **key** records the object, question and test before the outcome is known. Chris selects the work. **Turning** the key means doing the mathematics. The **receipt** preserves the evidence, what failed, and the next reader’s starting point. This key refines the [initial zero-pairing preparation](https://github.com/Grativy6/rh_proof_redteam/blob/65351a0a720c7ef80e06b70c7c99767f509698f2/RH-PROOF-WORK-KEY.md) after Chris clarified that the target is a mathematical mismatch that can survive formal checking.
 
+## First turn
+
+The first use of this key produced a counterexample to the mixed-intersection interpretation of the chosen geometry model. Its two positive weights give 2 in one order and 8 in the other, while the classical answer is 4. The receipt also tests surface replacement and corrects two source links using the compiled dependency graph. [Turn 1 receipt](receipt-archives/2026-11-23-geometry-witness.md)
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean#L54-L71)
@@ -29,4 +33,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 ## Unresolved
 
-The first preparation asked how much of an aggregate pairing can disappear into added coordinates. Keep it as a follow-up if a consumer identifies those coordinates with the intended geometry. The live question is which geometric distinction, if any, survives in the data that the proof actually reads.
+The next question is whether a reachable estimate needs a genuinely mixed intersection, and how its supplier obtains the value. The earlier all-zero pairing test remains available if the geometry-to-rank identification makes it relevant. [Return point](receipt-archives/2026-11-23-geometry-witness.md#8-next-live-question)

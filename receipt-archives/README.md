@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the geometry work key, run `python receipt-archives/check_geometry_witness.py` to reproduce the degree calculation. The [Turn 1 commands](2026-11-23-geometry-witness.md#7-artifacts) add the compiled-graph check.
+
 From the red-team repository, pass a Git checkout or bare mirror that contains the original commit. The script uses Python 3 and Git, reads the objects at that commit and verifies the SHA-256 of each selected file. It also accepts the original handoff ZIP as an optional second input. The ZIP is read in place.
 
 ```sh

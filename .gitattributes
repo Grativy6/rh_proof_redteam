@@ -1,2 +1,4 @@
 *.lean text eol=lf
+receipt-archives/check_geometry_witness.py text eol=lf
+receipt-archives/2026-11-23-geometry-check.json text eol=lf
 receipt-archives/lean-run-*/*.txt text eol=lf

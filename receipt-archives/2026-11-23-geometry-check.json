@@ -1,0 +1,255 @@
+{
+  "release": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "integer_cases": [
+    {
+      "inputs": [
+        "L",
+        "L"
+      ],
+      "supplied": 2,
+      "classical": 2
+    },
+    {
+      "inputs": [
+        "2L",
+        "2L"
+      ],
+      "supplied": 8,
+      "classical": 8
+    },
+    {
+      "inputs": [
+        "L",
+        "2L"
+      ],
+      "supplied": 2,
+      "classical": 4
+    },
+    {
+      "inputs": [
+        "2L",
+        "L"
+      ],
+      "supplied": 8,
+      "classical": 4
+    },
+    {
+      "inputs": [
+        "L",
+        "0"
+      ],
+      "supplied": 2,
+      "classical": 0
+    },
+    {
+      "inputs": [
+        "0",
+        "L"
+      ],
+      "supplied": 0,
+      "classical": 0
+    }
+  ],
+  "graph_audit": {
+    "rh_graph_declarations": 806982,
+    "full_graph_declarations": 1063440,
+    "queried_declarations": [
+      {
+        "name": "riemannHypothesis",
+        "file": "Main.lean",
+        "line": 4,
+        "distance_from_rh": 0
+      },
+      {
+        "name": "Formalism.BasicNotions.DV.Geo",
+        "file": "Formalism/LocalRingCardinality/DataDIV.lean",
+        "line": 13,
+        "distance_from_rh": 10
+      },
+      {
+        "name": "Formalism.L2.Geo.geoDegenerate",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 241,
+        "distance_from_rh": 21
+      },
+      {
+        "name": "Formalism.L2.Geo.flagDegZ",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 221,
+        "distance_from_rh": 22
+      },
+      {
+        "name": "Formalism.L2.Geo.AlgPkg",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/ArVolEqOfNef.lean",
+        "line": 11,
+        "distance_from_rh": 13
+      },
+      {
+        "name": "Formalism.L2.Geo.algDegenerate",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 390,
+        "distance_from_rh": 22
+      },
+      {
+        "name": "Formalism.L2.Geo.divXFl",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 829,
+        "distance_from_rh": 20
+      },
+      {
+        "name": "Formalism.L2.Geo.geoFl_inter",
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 308,
+        "distance_from_rh": null
+      },
+      {
+        "name": "Formalism.MainNotions.HeightShare.inter1",
+        "file": "Formalism/SharpRestriction/Divisibility/HeightShare.lean",
+        "line": 172,
+        "distance_from_rh": null
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.Bl.anyGeometry",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+        "line": 19,
+        "distance_from_rh": 8
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.Bl.geoOf",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+        "line": 16,
+        "distance_from_rh": null
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.Bl.OAt",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+        "line": 44,
+        "distance_from_rh": 11
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.Bl.LamAre",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+        "line": 33,
+        "distance_from_rh": 12
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.DivRec.x0",
+        "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+        "line": 57,
+        "distance_from_rh": 16
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.DivRec.exists_divT",
+        "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+        "line": 178,
+        "distance_from_rh": 18
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.DivRec.divEx_prov",
+        "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupPinsOfMuIsW.lean",
+        "line": 204,
+        "distance_from_rh": 17
+      },
+      {
+        "name": "GlobalTheory.Mem.Top.Closing.divEx_geoCl",
+        "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PublishedInputsImplyConclusion.lean",
+        "line": 39,
+        "distance_from_rh": 15
+      },
+      {
+        "name": "GlobalTheory.ShFam.Pad.HasTrueSurf",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean",
+        "line": 346,
+        "distance_from_rh": null
+      },
+      {
+        "name": "GlobalTheory.ShFam.Pad.HasTrueSurf.degCh2_eq_zero",
+        "file": "Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/SecondChernDegreeVanishesTrueSurfaces.lean",
+        "line": 364,
+        "distance_from_rh": null
+      },
+      {
+        "name": "Formalism.MainNotions.WeightThresholdDefs.Conclusion4a",
+        "file": "Formalism/SharpRestriction/Divisibility/WeightThresholdDefs.lean",
+        "line": 126,
+        "distance_from_rh": null
+      },
+      {
+        "name": "Formalism.MainNotions.WeightThresholdDefs.Conclusion4b",
+        "file": "Formalism/SharpRestriction/Divisibility/WeightThresholdDefs.lean",
+        "line": 128,
+        "distance_from_rh": null
+      },
+      {
+        "name": "GlobalTheory.T.parameter_of_discrete_series_ray",
+        "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ParameterOfDiscreteSeriesRay.lean",
+        "line": 104,
+        "distance_from_rh": null
+      },
+      {
+        "name": "GlobalTheory.T.parameter_of_discrete_series_ray_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ParameterOfDiscreteSeriesRay.lean",
+        "line": 69,
+        "distance_from_rh": 21
+      },
+      {
+        "name": "UpperTheory.Lit.hypsE₂",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+        "line": 41,
+        "distance_from_rh": null
+      },
+      {
+        "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "line": 44,
+        "distance_from_rh": 7
+      }
+    ],
+    "direct_referrers_examined": 41,
+    "files_with_direct_referrers": 19,
+    "explicit_inter_lines": [
+      {
+        "declarations": [
+          "GlobalTheory.PointGeometry.pointGeo"
+        ],
+        "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/PointGlobalSectionsNeBot.lean",
+        "line": 84
+      },
+      {
+        "declarations": [
+          "Formalism.BasicNotions.Examples₂.geoExample"
+        ],
+        "file": "Formalism/LocalRingCardinality/SpanPowerMembership/DivXExample.lean",
+        "line": 31
+      },
+      {
+        "declarations": [
+          "Formalism.L2.Geo.AlgPkg"
+        ],
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/ArVolEqOfNef.lean",
+        "line": 27
+      },
+      {
+        "declarations": [
+          "Formalism.L2.Geo.geoDegenerateNoTau"
+        ],
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 35
+      },
+      {
+        "declarations": [
+          "Formalism.L2.Geo.geoDegenerate"
+        ],
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 261
+      },
+      {
+        "declarations": [
+          "Formalism.L2.Geo.algDegenerate"
+        ],
+        "file": "Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "line": 397
+      }
+    ]
+  }
+}

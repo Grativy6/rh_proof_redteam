@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Does the chosen model give classical mixed intersections, and does RH use the discrepancy? | [Turn 1 counterexample and compiled-path check](receipt-archives/2026-11-23-geometry-witness.md) · checked on 23 November 2026 by Hearthline under Chris’s clarified target. |
 | How do we turn a research key, and what does the geometric witness actually certify? | [RH proof work key 01](RH-PROOF-WORK-KEY.md) · target clarified by Chris on 23 November 2026. The key links its earlier zero-pairing scope. |
 | Does the trivial geometry predicate make every row/divisor identification pass? | [Fixed-row perturbation and its exact hypotheses](receipt-archives/2026-11-23-proof-audit.md#move-the-geometry-and-hold-the-rows-still) |
 | Can choosing the reported height force the arithmetic estimate? | [Elimination of the intermediate height](receipt-archives/2026-11-23-proof-audit.md#eliminate-the-chosen-height) |
@@ -18,5 +19,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request for a public audit. The base commit is `58e1c511ef8beb154cf2ef2e47daf7f21883e876`. [Source identities](receipt-archives/source-pins.json)
 
 ## Unresolved
+
+Track the first reachable inequality that needs an off-diagonal divisor intersection. [Gap between the model and a proof defect](receipt-archives/2026-11-23-geometry-witness.md#8-next-live-question).
 
 Trace the two arithmetic endpoints for a single admissible nonzero pairing through the norm and valuation estimates. For a zero pairing, follow the aggregate rank condition. The [audit](receipt-archives/2026-11-23-proof-audit.md#unresolved) preserves the remaining mathematical questions.
