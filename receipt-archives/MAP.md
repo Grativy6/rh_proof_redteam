@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [A positive scalar erased by projection](2026-11-23-scalar-projection.md) · [Factorial and valuation checks](check_scalar_projection.py) | Both tests satisfy the incoming link weights. Only the surviving one reaches the required valuation. |
 | [Derivative across a digit carry](2026-11-23-frame-derivative.md) · [Exact integer checks](check_frame_derivative.py) | Loss of a required weight on an admitted source, with the exact precision at which it can be seen. |
 | [Plane bounds at large primes](2026-11-23-large-prime-plane.md) · [Digit ratios](check_large_prime_plane.py) · [Projection on two representatives](2026-11-23-model-projection.md) · [Exact coefficient](check_model_projection.py) | A global prime restriction, an exact-type failure beyond it, and a vector discrepancy invisible to the admitted sources in a positive-frame example. |
 | [Restricted plane determinant](2026-11-23-plane-determinant.md) · [Factorial and cofactor check](check_plane_determinant.py) | Detecting the vector on its exact type fails at arbitrary precision. The one-unit weight relaxation meets the local conclusion. |

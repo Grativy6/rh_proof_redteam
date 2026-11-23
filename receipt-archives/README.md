@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [two scalar projection tests](2026-11-23-scalar-projection.md), run `python receipt-archives/check_scalar_projection.py`. It compares direct polynomial expansions with the two factorial formulas and verifies the numerical budgets.
+
 For the [derivative across a digit carry](2026-11-23-frame-derivative.md), run `python receipt-archives/check_frame_derivative.py`. It compares finite differences with polynomial coefficients, checks the determinant calculation at small sizes, and verifies the full example’s numerical hypotheses.
 
 For the [large-prime plane test](2026-11-23-large-prime-plane.md), run `python receipt-archives/check_large_prime_plane.py`. For the [projection on two representatives](2026-11-23-model-projection.md), run `python receipt-archives/check_model_projection.py`.
