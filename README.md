@@ -2,7 +2,7 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
-**Can the projection erase a strictly positive pairing?** Yes. On one admitted source an integral test goes from positive to exactly zero. The lost value is divisible by $79^{81024}$. A second test on that same source attains valuation 41524 both before and after projection, inside the required budget. [The two tests, their exact images and the arithmetic](receipt-archives/2026-11-23-scalar-projection.md)
+**Can the projection erase a strictly positive pairing?** Yes. On one admitted source an integral test goes from positive to exactly zero. The lost value is divisible by $79^{81024}$. A second test on that same source attains valuation 41524 both before and after projection, inside the required budget. [The two tests, their exact images and the arithmetic](receipt-archives/2026-11-23-scalar-projection.md) · [How many independent tests disappear?](receipt-archives/2026-11-23-plane-test-rank.md)
 
 **Can a required weight disappear on an admitted input?** Yes. A divided derivative has weight one where the proof needs a weight-two part. In our example the discrepancy disappears modulo 79 to the power 110600 and reappears at the next power. The allowed error covers it. [Hand calculation and exact cutoff](receipt-archives/2026-11-23-frame-derivative.md)
 
