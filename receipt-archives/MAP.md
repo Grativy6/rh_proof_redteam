@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Conjugate localizations and the class count](2026-11-23-split-class-count.md) · [Finite orbit counts](check_split_class_count.py) · [Indefinite mass and volume](2026-11-23-indefinite-mass-volume.md) | The split versus mixed level count, a genuine unit fallback, and the measure used in the dimension comparison. |
+| [Rank-four Hermitian mass](2026-11-23-hermitian-mass.md) · [Integer neighbor counts](check_hermitian_mass.py) | An explicit second class, its stabilizer, and the two lowest live mass ratios over the twelfth cyclotomic field. |
 | [Rank after projection](2026-11-23-plane-test-rank.md) · [Integral basis checks](check_plane_test_rank.py) | A limiting surviving fraction of $4/p^2$ in a local test family and the one-dimensional admitted source slice. |
 | [A positive scalar erased by projection](2026-11-23-scalar-projection.md) · [Factorial and valuation checks](check_scalar_projection.py) | Both tests satisfy the incoming link weights. Only the surviving one reaches the required valuation. |
 | [Derivative across a digit carry](2026-11-23-frame-derivative.md) · [Exact integer checks](check_frame_derivative.py) | Loss of a required weight on an admitted source, with the exact precision at which it can be seen. |

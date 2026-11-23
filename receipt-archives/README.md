@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [rank-four mass](2026-11-23-hermitian-mass.md), run `python receipt-archives/check_hermitian_mass.py`. It counts norm-two vectors and neighbors, checks the two automorphism orders, and evaluates the ratios. To verify the catalog entries as well, pass `--class-table PATH` with [Kirschmer’s original archive](https://www.math.uni-bielefeld.de/~mkirschm/forms/res_herm.tar.bz2). For the [split-prime class count](2026-11-23-split-class-count.md), run `python receipt-archives/check_split_class_count.py`. The [indefinite-volume comparison](2026-11-23-indefinite-mass-volume.md) contains its mathematical calculation.
+
 For the [rank after projection](2026-11-23-plane-test-rank.md), run `python receipt-archives/check_plane_test_rank.py`. It checks the basis in each coordinate weight and the finite rank bounds.
 
 For the [two scalar projection tests](2026-11-23-scalar-projection.md), run `python receipt-archives/check_scalar_projection.py`. It compares direct polynomial expansions with the two factorial formulas and verifies the numerical budgets.
