@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [oscillator calculation](2026-11-23-oscillator-cancellation.md), run `python receipt-archives/check_oscillator_integral.py`. It compares the oscillator and disk models with exact fractions. The receipt gives a proof for all degrees.
+
 The [period-on-quotient receipt](2026-11-23-period-on-quotient.md) gives an exact denominator example and a dimension bound proved by taking traces of orthogonal projections.
 
 The [quotient-covolume calculation](2026-11-23-quotient-covolume.md) can be checked by multiplying three algebraic conjugates and testing a split prime of the Gaussian integers. The unbounded example has a separate proof in the same record.

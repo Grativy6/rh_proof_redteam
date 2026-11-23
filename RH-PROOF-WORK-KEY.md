@@ -28,6 +28,10 @@ We took the same integral quotient before and after changing the complex embeddi
 
 We tested whether an orthogonal representative can introduce a denominator, whether individual maps can vanish after projection, and whether separate rotations of the target could collapse the combined rank. [Hand-checkable examples and the lost-dimension estimate](receipt-archives/2026-11-23-period-on-quotient.md)
 
+## The local theta integral
+
+Holding the compact weight fixed, we varied the polynomial and evaluated the matrix-coefficient integral. The [receipt](receipt-archives/2026-11-23-oscillator-cancellation.md) identifies which contraction removes a genuine zero and which extra hypotheses enter the global estimate.
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
@@ -49,4 +53,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 ## Unresolved
 
-The period factorization now has a kernel and an integral-image check. The live question is whether the specified theta test function gives a nonzero local integral for every nonzero vector in the selected Hecke eigenspace. [Current return point](receipt-archives/2026-11-23-period-on-quotient.md#unresolved)
+The explicit rank-one cancellation has been traced to the joint harmonic condition. The analytic transfer, the quantitative size bound and the regular value of the global integral remain open to further tests. [Current return point](receipt-archives/2026-11-23-oscillator-cancellation.md#unresolved)

@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can a repeated eigenvalue hide a vector whose theta integral vanishes? | [Exact oscillator cancellation and the harmonic condition](receipt-archives/2026-11-23-oscillator-cancellation.md) · checked by Hearthline on 23 November under Chris’s continuing proof-audit request. |
 | Can a period change on two lifts of the same vector, or disappear for an individual word? | [Quotient kernel, target lattice and an aggregate bound](receipt-archives/2026-11-23-period-on-quotient.md) · checked by Hearthline on 23 November at Chris’s request. |
 | Where does the proof need the size of the quotient lattice, and can conjugation lose a term? | [Unbounded covolume discrepancy and the direction actually used](receipt-archives/2026-11-23-quotient-covolume.md) · checked by Hearthline on 23 November under Chris’s request for a paper-checkable audit. |
 | Can a Taylor coefficient turn into zero on return to a number field? | [Coefficient descent, the nonprincipal integral line, and the period correction](receipt-archives/2026-11-23-coefficient-descent.md) · checked on 23 November 2026 by Hearthline under Chris’s request to keep looking for a seam. |
@@ -24,6 +25,6 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 
 ## Unresolved
 
-The [quotient-covolume test](receipt-archives/2026-11-23-quotient-covolume.md) traces the sign and the finite-prime basis condition. The [period study](receipt-archives/2026-11-23-period-on-quotient.md) checks factorization on the row quotient, including the local image lattices. Its open question is the analytic nonvanishing input that controls an entire Hecke eigenspace. The [previous return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved) records the original lattice question.
+The [quotient-covolume test](receipt-archives/2026-11-23-quotient-covolume.md) traces the sign and the finite-prime basis condition. The [period study](receipt-archives/2026-11-23-period-on-quotient.md) checks factorization on the row quotient, including the local image lattices. The [oscillator calculation](receipt-archives/2026-11-23-oscillator-cancellation.md) tests that nonvanishing input. The remaining questions include the transfer to the constructed theta map and the quantitative formal-degree bound. The [previous return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved) records the original lattice question.
 
 Trace the two arithmetic endpoints for a single admissible nonzero pairing through the norm and valuation estimates. For a zero pairing, follow the aggregate rank condition. The [audit](receipt-archives/2026-11-23-proof-audit.md#unresolved) preserves the remaining mathematical questions.
