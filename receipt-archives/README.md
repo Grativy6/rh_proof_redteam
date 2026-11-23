@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [Hecke boundary calculation](2026-11-23-toric-hecke-boundary.md), run `python receipt-archives/check_toric_boundary.py`. The checker encloses the principal class value with rational arithmetic and tests the local factors.
+
 For the [positive CM derivatives](2026-11-23-toric-cm-derivatives.md), run `python receipt-archives/check_toric_derivatives.py`. It checks the raising formula term by term, both CM correction factors and sample coefficients at the theta cusps.
 
 For the [glued slope](2026-11-23-aligned-lattice-slope.md), [place-selected grid](2026-11-23-selected-grid.md) and [mean valuation](2026-11-23-mean-valuation.md), run `python receipt-archives/check_selected_grid.py`. For the [34-class transform](2026-11-23-toric-fourier.md) and [actual CM denominators](2026-11-23-toric-cm-denominators.md), run `python receipt-archives/check_toric_fourier.py`. The receipts include the proofs for unbounded degrees and all cusps.
