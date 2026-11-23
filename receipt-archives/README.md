@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [corrected trace test](2026-11-23-corrected-trace-test.md), run `python receipt-archives/check_corrected_trace_test.py`. It evaluates the actual factorials before and after substitution.
+
 For the [trace denominator](2026-11-23-trace-denominator.md), run `python receipt-archives/check_trace_denominator.py`. The paper calculation gives the sharp cost for all symmetric powers.
 
 For the [minor-product calculation](2026-11-23-minor-product-rank.md), run `python receipt-archives/check_minor_product_rank.py`. It expands the polynomials in both coordinate conventions. For the [segment collision](2026-11-23-segment-collision.md), run `python receipt-archives/check_segment_collision.py`. The latter verifies the numerical hypotheses and degree budgets with integers.
