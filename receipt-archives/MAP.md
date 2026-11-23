@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [The fixed downward test](2026-11-23-fixed-downward-test.md) | Character conjugation, the congruence subgroup, a missed full-rank point and the finite set of translates for all observers. |
 | [The downward theta residue](2026-11-23-downward-residue.md) | Checks the separate injectivity obligation, the location of its pole and the measure of singular frames. |
 | [Split Gram density](2026-11-23-split-gram-density.md) · [finite counts](check_split_gram.py) | Exact density in the release dimension, failure one row below it and finite-set normalization. |
 | [Oscillator cancellation](2026-11-23-oscillator-cancellation.md) · [exact-arithmetic check](check_oscillator_integral.py) | A nonharmonic zero, the full rank-one kernel, and the higher-rank radial and compact tests. |
@@ -28,6 +29,6 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 ## Unresolved
 
-The [downward residue](2026-11-23-downward-residue.md#unresolved) records the fixed-map generation and level-place questions. The [oscillator receipt](2026-11-23-oscillator-cancellation.md#unresolved) records the analytic test reached from the [period receipt](2026-11-23-period-on-quotient.md#unresolved) and [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
+The [fixed downward test](2026-11-23-fixed-downward-test.md#unresolved) follows the two questions left by the [downward residue](2026-11-23-downward-residue.md#unresolved). The [oscillator receipt](2026-11-23-oscillator-cancellation.md#unresolved) records the analytic test reached from the [period receipt](2026-11-23-period-on-quotient.md#unresolved) and [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
 The [research record](2026-11-23-proof-audit.md#unresolved) identifies the unreviewed arithmetic and geometric inputs.

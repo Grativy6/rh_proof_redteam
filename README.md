@@ -4,6 +4,8 @@ Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis pr
 
 **Can the proof discard a set carrying its entire residue?** One point can carry the whole residue of a p-adic integral. The downward theta argument has a scaling law that rules out such a loss on its singular matrices. Removing one row makes a direct local count diverge. [Two theta maps and the residue](receipt-archives/2026-11-23-downward-residue.md) · [Exact split-prime calculation](receipt-archives/2026-11-23-split-gram-density.md)
 
+A further [test of the fixed downward map](receipt-archives/2026-11-23-fixed-downward-test.md) finds a full-rank matrix missed by every translate and derives the exact subgroup average that removes it. The real integral for the proposed kernel vector becomes a squared norm.
+
 **When does the upward theta integral cancel?** Two degree-two oscillator vectors have the same compact weight. One gives zero. The harmonic vector gives $1/(b+1)$ for $b$ oscillator pairs. The [local integral calculation](receipt-archives/2026-11-23-oscillator-cancellation.md) determines the whole kernel in rank one and tests the higher-rank positivity argument.
 
 **Which directions can the period lose?** An integer vector can have an orthogonal quotient representative with denominator 5. We traced the condition that keeps the period integral, and proved a bound for the proportion of source directions that can disappear after projection. [Examples, proof and source](receipt-archives/2026-11-23-period-on-quotient.md)
