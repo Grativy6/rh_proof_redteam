@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [trace denominator](2026-11-23-trace-denominator.md), run `python receipt-archives/check_trace_denominator.py`. The paper calculation gives the sharp cost for all symmetric powers.
+
 For the [minor-product calculation](2026-11-23-minor-product-rank.md), run `python receipt-archives/check_minor_product_rank.py`. It expands the polynomials in both coordinate conventions. For the [segment collision](2026-11-23-segment-collision.md), run `python receipt-archives/check_segment_collision.py`. The latter verifies the numerical hypotheses and degree budgets with integers.
 
 For the [exact higher-rank localiser order](2026-11-23-localiser-order.md), run `python receipt-archives/check_localiser_order.py`. It evaluates both exchanged minors for all 289 two-row graph matrices over the prime subfield.
