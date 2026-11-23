@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [891 class representatives lose twelve powers at 3](2026-11-23-partial-zeta-loss.md) · [Ideal and CM computations](check_partial_zeta_loss.py) | Actual counterexample to inverse integral recovery and equality in the source’s local charge, including at the global summation threshold. |
 | [Two zeros at the Hecke boundary](2026-11-23-toric-hecke-boundary.md) · [Certified value and zero-mode checks](check_toric_boundary.py) | A genuine zero fallback on a nonsummable class, the continued nonzero value, and its surviving arithmetic bound. |
 | [Positive CM derivatives](2026-11-23-toric-cm-derivatives.md) · [Raising and cusp calculations](check_toric_derivatives.py) | Two cusp coefficients give different 3-adic valuations for representatives of the same CM derivative. A separate bound covers all derivative orders at this point. |
 | [Conductor-137 character transform](2026-11-23-toric-fourier.md) · [Denominators at the CM point](2026-11-23-toric-cm-denominators.md) · [Exact arithmetic](check_toric_fourier.py) | Actual divisor 34, sharp loss at 17 on constant coefficients and a separate denominator check on each class before summation. |
