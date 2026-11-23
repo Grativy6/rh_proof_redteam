@@ -4,6 +4,6 @@ Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis pr
 
 **First result, 23 November.** One selected geometry predicate is identically true. The accompanying record can still reject a unit change to its log data. A height is also defined by formula, but the two inequalities for the same nonzero pairing imply a test independent of that choice. We derived that test, tried to violate it and traced the two inputs back into the code. The tested attacks yielded no counterexample to the released RH theorem. [Read the audit and its outstanding question](receipt-archives/2026-11-23-proof-audit.md)
 
-[Project map](MAP.md) · [Run the checks](receipt-archives/README.md) · [Original audit contributions are licensed under Apache 2.0](LICENSE)
+[Turn the public work key](RH-PROOF-WORK-KEY.md) · [Project map](MAP.md) · [Run the checks](receipt-archives/README.md) · [Original audit contributions are licensed under Apache 2.0](LICENSE)
 
 Audit direction and PAL corpus by Christopher D. Pang. Source reading and formal controls by Hearthline in Codex, with a separately prepared Chat-Hearthline research handoff. Upstream mathematics, source code and publications retain their respective authorship and terms.
