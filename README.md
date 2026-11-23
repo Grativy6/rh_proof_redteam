@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+[Gemini Neon’s contributed audit](receipt-archives/gemini-neon/README.md) follows the endpoint back to the character-window and arithmetic inputs. The archive includes Gemini’s reports, source mirror and finite tests.
+
 **Can all character sums be integral while every class has a denominator?** Yes, on actual arithmetic data. All 891 character sums are integral at 3. Each of the 891 individual normalized twelfth powers has valuation exactly $-12$. The total zeta value hides this cost, and the proof’s maximum over partial zeta values charges it exactly. [The counterexample to inverse integral recovery](receipt-archives/2026-11-23-partial-zeta-loss.md)
 
 **What happens where the raw sum returns zero?** At the Hecke boundary the direct infinite sum gives zero on an explicit input whose normalized continued value is between 0.00595240410576 and 0.00595240410577. A separate Fourier term also takes the value zero there, with a strictly positive first derivative. [The two zeros and the value used by the release](receipt-archives/2026-11-23-toric-hecke-boundary.md)

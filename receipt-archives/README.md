@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+[Gemini Neon’s archive](gemini-neon/README.md) contains the contributor’s reports, executable experiment and pinned sources. The [manifest](gemini-neon/SOURCE-MANIFEST.tsv) identifies the original bytes.
+
 For the [actual 891-class denominator loss](2026-11-23-partial-zeta-loss.md), run `python receipt-archives/check_partial_zeta_loss.py`. The standard-library check enumerates ideals and independently verifies the total zeta values. Add `--cm-certificate` with python-flint 0.9.0 installed to reconstruct the CM class polynomial using complex balls.
 
 For the [Hecke boundary calculation](2026-11-23-toric-hecke-boundary.md), run `python receipt-archives/check_toric_boundary.py`. The checker encloses the principal class value with rational arithmetic and tests the local factors.
