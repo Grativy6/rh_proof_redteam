@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [The actual deep-cover ray field](2026-11-23-deep-cover-ray-field.md) | Exact degree of an everywhere-unramified layer, the unchanged root discriminant, the trace denominator and the field used by the component. Checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Exact trace denominator and different on the windows](2026-11-23-window-trace-and-integrality.md) · [Finite controls](check_cyclotomic_counts.py) | The same element distinguishes a symmetric projection from an integral span. A rank-one lattice attains the relative-different slope loss. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Moving small-section count](2026-11-23-field-and-section-count.md) · [Ramified level frames](2026-11-23-ramified-level-stabilizers.md) | A projective-line count changes limit on the required roots-of-unity fields, and a one-prime symmetry survives reduction. The fixed-field limit and two-prime check retain their hypotheses. Checked by Hearthline under the same request. |
 | [Coefficient field on the actual zeta windows](2026-11-23-window-coefficient-degree.md) · [Class and trace-lattice checks](check_window_coefficient_degree.py) | Lower bounds from the split-prime classes, the required root of unity and the class-number budget used for the host. Checked by Hearthline at Chris’s request on 23 November. |
