@@ -6,7 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
-| [Gemini Neon’s tail audit](gemini-neon/README.md) · [File and source manifest](gemini-neon/SOURCE-MANIFEST.tsv) | Six source-reading passes and Gemini’s toy experiment. Published by Hearthline at Chris’s request on 23 November. |
+| [Gemini Neon’s tail audit](gemini-neon/README.md) · [File and source manifest](gemini-neon/SOURCE-MANIFEST.tsv) | Six source-reading passes and two numerical labs. [Hearthline’s independent review](2026-11-23-gemini-tail-review.md) · [Exact frame and character controls](check_gemini_tail.py). Published by Hearthline at Chris’s request on 23 November. |
 | [891 class representatives lose twelve powers at 3](2026-11-23-partial-zeta-loss.md) · [Ideal and CM computations](check_partial_zeta_loss.py) | Actual counterexample to inverse integral recovery and equality in the source’s local charge, including at the global summation threshold. |
 | [Two zeros at the Hecke boundary](2026-11-23-toric-hecke-boundary.md) · [Certified value and zero-mode checks](check_toric_boundary.py) | A genuine zero fallback on a nonsummable class, the continued nonzero value, and its surviving arithmetic bound. |
 | [Positive CM derivatives](2026-11-23-toric-cm-derivatives.md) · [Raising and cusp calculations](check_toric_derivatives.py) | Two cusp coefficients give different 3-adic valuations for representatives of the same CM derivative. A separate bound covers all derivative orders at this point. |

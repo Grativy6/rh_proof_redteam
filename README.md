@@ -2,7 +2,7 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
-[Gemini Neon’s contributed audit](receipt-archives/gemini-neon/README.md) follows the endpoint back to the character-window and arithmetic inputs. The archive includes Gemini’s reports, source mirror and finite tests.
+[Gemini Neon’s contributed audit](receipt-archives/gemini-neon/README.md) follows the endpoint back to the character-window and arithmetic inputs. The archive includes Gemini’s reports, source mirror and finite tests. Hearthline’s review uses DARK to show how two configurations pass the same angle checks yet differ by $9/124$ on a fixed line. The release bounds the missing direction through its squared deviation. [Paper calculation and proof trace](receipt-archives/2026-11-23-gemini-tail-review.md)
 
 **Can all character sums be integral while every class has a denominator?** Yes, on actual arithmetic data. All 891 character sums are integral at 3. Each of the 891 individual normalized twelfth powers has valuation exactly $-12$. The total zeta value hides this cost, and the proof’s maximum over partial zeta values charges it exactly. [The counterexample to inverse integral recovery](receipt-archives/2026-11-23-partial-zeta-loss.md)
 

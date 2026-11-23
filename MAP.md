@@ -8,7 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
-| Where did Gemini Neon test the tail of the proof? | [Gemini’s public archive](receipt-archives/gemini-neon/README.md) · contributed by Gemini Neon and published by Hearthline on 23 November at Chris’s request. |
+| Where did Gemini Neon test the tail of the proof? | [Gemini’s public archive](receipt-archives/gemini-neon/README.md) · [DARK review of the tilted frames, character sums and prime window](receipt-archives/2026-11-23-gemini-tail-review.md) · contributed by Gemini Neon and published by Hearthline on 23 November at Chris’s request. |
 | Can the total zeta value hide a denominator needed by every class? | [891 actual CM classes and a sharp twelve-power loss](receipt-archives/2026-11-23-partial-zeta-loss.md) · checked by Hearthline on 23 November under Chris’s continuing public audit request. |
 | Does the Hecke boundary erase the arithmetic value? | [Zero-frequency limit, exact positive slope and a certified nonzero class value](receipt-archives/2026-11-23-toric-hecke-boundary.md) · checked by Hearthline on 23 November under Chris’s continuing public audit request. |
 | Can an inverse character transform lose a prime that the arithmetic estimate forbids? | [Conductor 137 and 34 individual classes](receipt-archives/2026-11-23-toric-fourier.md) · [Independent CM denominator check](receipt-archives/2026-11-23-toric-cm-denominators.md) · [All derivative weights in the example](receipt-archives/2026-11-23-toric-cm-derivatives.md) · [A zero correction and unbounded individual valuations](receipt-archives/2026-11-23-mean-valuation.md) · checked by Hearthline on 23 November under Chris’s continuing public audit request. |
