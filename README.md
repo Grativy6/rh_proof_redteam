@@ -2,7 +2,9 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
-**When does the theta integral cancel?** Two degree-two oscillator vectors have the same compact weight. One gives zero. The harmonic vector gives $1/(b+1)$ for $b$ oscillator pairs. The [local integral calculation](receipt-archives/2026-11-23-oscillator-cancellation.md) determines the whole kernel in rank one and tests the higher-rank positivity argument.
+**Can the proof discard a set carrying its entire residue?** One point can carry the whole residue of a p-adic integral. The downward theta argument has a scaling law that rules out such a loss on its singular matrices. Removing one row makes a direct local count diverge. [Two theta maps and the residue](receipt-archives/2026-11-23-downward-residue.md) · [Exact split-prime calculation](receipt-archives/2026-11-23-split-gram-density.md)
+
+**When does the upward theta integral cancel?** Two degree-two oscillator vectors have the same compact weight. One gives zero. The harmonic vector gives $1/(b+1)$ for $b$ oscillator pairs. The [local integral calculation](receipt-archives/2026-11-23-oscillator-cancellation.md) determines the whole kernel in rank one and tests the higher-rank positivity argument.
 
 **Which directions can the period lose?** An integer vector can have an orthogonal quotient representative with denominator 5. We traced the condition that keeps the period integral, and proved a bound for the proportion of source directions that can disappear after projection. [Examples, proof and source](receipt-archives/2026-11-23-period-on-quotient.md)
 
