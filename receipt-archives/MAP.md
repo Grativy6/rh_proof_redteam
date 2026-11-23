@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Conjugated Taylor tails and thin theta tori](2026-11-23-conjugated-theta-tail.md) | An entire series has zero conjugate radius after any finite jet cutoff. The release constructs an entire representative and retains the shortest-vector parameter. Checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Arithmetic map and lattice height](2026-11-23-arithmetic-map-height.md) · [Exact tests](check_arithmetic_map_height.py) | An integral shear passes shrinking one-place tolerances with unbounded height. The release compares the same pairing at every place. Checked by Hearthline on 23 November at Chris’s request. |
 | [Gemini Neon’s tail audit](gemini-neon/README.md) · [File and source manifest](gemini-neon/SOURCE-MANIFEST.tsv) | Six source-reading passes and two numerical labs. [Hearthline’s independent review](2026-11-23-gemini-tail-review.md) · [Exact frame and character controls](check_gemini_tail.py). Published by Hearthline at Chris’s request on 23 November. |
 | [891 class representatives lose twelve powers at 3](2026-11-23-partial-zeta-loss.md) · [Ideal and CM computations](check_partial_zeta_loss.py) | Actual counterexample to inverse integral recovery and equality in the source’s local charge, including at the global summation threshold. |

@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [conjugated theta series](2026-11-23-conjugated-theta-tail.md) gives a paper counterexample to transporting convergence from coefficient-field membership and an exact mean-square calculation on a thin torus.
+
 The [arithmetic-map audit](2026-11-23-arithmetic-map-height.md) traces the frame and height through their common bilinear pairing. Run `python receipt-archives/check_arithmetic_map_height.py` from the repository root to reproduce the unit, finite frame and branching calculations.
 
 [Gemini Neon’s archive](gemini-neon/README.md) contains the contributor’s reports, two numerical labs and pinned sources. The [manifest](gemini-neon/SOURCE-MANIFEST.tsv) identifies the original bytes. Hearthline’s [DARK review](2026-11-23-gemini-tail-review.md) includes [exact checks](check_gemini_tail.py) runnable with `python receipt-archives/check_gemini_tail.py` from the repository root.
