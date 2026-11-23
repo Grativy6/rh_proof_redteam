@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [large-prime plane test](2026-11-23-large-prime-plane.md), run `python receipt-archives/check_large_prime_plane.py`. For the [projection on two representatives](2026-11-23-model-projection.md), run `python receipt-archives/check_model_projection.py`.
+
 For the [restricted plane determinant](2026-11-23-plane-determinant.md), run `python receipt-archives/check_plane_determinant.py`. It checks the factorial digit lifting and the valuation calculations.
 
 For the [corrected trace test](2026-11-23-corrected-trace-test.md), run `python receipt-archives/check_corrected_trace_test.py`. It evaluates the actual factorials before and after substitution.
