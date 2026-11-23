@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [CM formal coordinate and theta correction](2026-11-23-height-two-coordinate.md) · [exact series check](check_cm7_jets.py) | A forced denominator in the original field, an all-degree coordinate over a finite extension, and the unique quadratic correction for a discriminant $-7$ curve. |
+| [Conjugating the phase](2026-11-23-conjugated-phase.md) | A Salem-unit counterexample, the finite class character, a common phase on the class sum and a reduced-test evaluation. |
 | [The normalized formal degree](2026-11-23-formal-degree.md) | Haar normalization, cancellation of the factorials, direct matrix-ball integrals, and a multiplicity counterexample. |
 | [Written-in eigenvalue on a vacant block](2026-11-23-zero-part-eigenvalue.md) | Actual assignment, its two level flags, the multiplicity-one condition and a check for all nonzero column labels. |
 | [Rational and integral valuation descent](2026-11-23-valuation-descent.md) | Two lattices with identical rational preimages, an unbounded determinant discrepancy and the denominator of the base period. |
@@ -34,4 +36,4 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 The [fixed downward test](2026-11-23-fixed-downward-test.md#unresolved) follows the two questions left by the [downward residue](2026-11-23-downward-residue.md#unresolved). The [oscillator receipt](2026-11-23-oscillator-cancellation.md#unresolved) records the analytic test reached from the [period receipt](2026-11-23-period-on-quotient.md#unresolved) and [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
-The [eigenvalue convention](2026-11-23-zero-part-eigenvalue.md#unresolved) leads to the [formal degree on occupied blocks](2026-11-23-formal-degree.md#unresolved). The [valuation receipt](2026-11-23-valuation-descent.md#unresolved) traces the arithmetic half of the pair of bounds in the [first audit](2026-11-23-proof-audit.md#unresolved).
+The [CM coordinate](2026-11-23-height-two-coordinate.md#unresolved) leads to the many-variable jet bound. The [conjugated-phase receipt](2026-11-23-conjugated-phase.md#unresolved) tests the change of embedding in the global pairing. The [eigenvalue convention](2026-11-23-zero-part-eigenvalue.md#unresolved) leads to the [formal degree on occupied blocks](2026-11-23-formal-degree.md#unresolved). The [valuation receipt](2026-11-23-valuation-descent.md#unresolved) traces the arithmetic half of the pair of bounds in the [first audit](2026-11-23-proof-audit.md#unresolved).
