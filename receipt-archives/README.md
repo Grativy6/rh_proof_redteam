@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [character trace on cusp components](2026-11-23-level-trace-on-cusp-components.md) and the [ray field over the exact core](2026-11-23-core-ray-intersection.md) test the two return maps at the selected level. Run `python receipt-archives/check_deep_level_traces.py` to verify the local-unit kernels, component cut and prime-order examples.
+
 The [deep-cover ray field](2026-11-23-deep-cover-ray-field.md) gives the exact degree and root discriminant of the ray field selected in construction. Its numerical example includes the reduced-form counts and the modulus so the degree can be checked by hand.
 
 The [window trace and slope](2026-11-23-window-trace-and-integrality.md), [small-section limits](2026-11-23-field-and-section-count.md) and [level stabilizers](2026-11-23-ramified-level-stabilizers.md) follow the field into lattice counts and descent. Run `python receipt-archives/check_cyclotomic_counts.py` to reproduce the finite checks of the Gauss periods, prime-power Fourier identities and ramified frames.
