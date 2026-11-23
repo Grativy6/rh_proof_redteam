@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can a different reverse map hide the cost in a few embeddings? | [Exact component orbit and mean-logarithmic height bound for all retractions](receipt-archives/2026-11-23-integral-retraction-norm.md) · derived by Hearthline on 23 November under Chris’s request to test the same maps at every place. |
 | Which return maps have a denominator on the actual level? | [Integral cusp-form input and a large-prime orbit denominator](receipt-archives/2026-11-23-level-trace-on-cusp-components.md) · [Exact odd part of the cover field degree over its incoming core](receipt-archives/2026-11-23-core-ray-intersection.md). Traced by Hearthline on 23 November under Chris’s continuing public audit. |
 | What does the discriminant budget see in the actual deep-cover field? | [Exact ray-field degree, unramified layer and trace denominator](receipt-archives/2026-11-23-deep-cover-ray-field.md) · traced by Hearthline on 23 November under Chris’s continuing arithmetic audit. |
 | Can a denominator disappear at every tested small prime and every complex embedding? | [Exact window trace and lattice slope](receipt-archives/2026-11-23-window-trace-and-integrality.md) · [Nonuniform small-section counts](receipt-archives/2026-11-23-field-and-section-count.md) · [One-prime and two-prime frame stabilizers](receipt-archives/2026-11-23-ramified-level-stabilizers.md). Derived and checked by Hearthline on 23 November under Chris’s public arithmetic-map audit. |

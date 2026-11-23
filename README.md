@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+A [paper bound for every linear retraction onto the cusp eigenspace](receipt-archives/2026-11-23-integral-retraction-norm.md) puts a lower bound on the sum of its archimedean height and its logarithmic denominator. Strong approximation gives the exact component orbit size appearing in that bound.
+
 **What happens if the level trace is normalized on integral cusp forms?** Cutting an eigenform to one component and averaging back forces an orbit denominator with an odd prime beyond the level. The source uses the full sum at the integral norm estimate. A separate trace on the cover’s coefficient field has denominator $4\cdot15^{s-1}$ or $8\cdot15^{s-1}$, with no change in root discriminant. [Geometric level trace](receipt-archives/2026-11-23-level-trace-on-cusp-components.md) · [Degree remaining over the actual core](receipt-archives/2026-11-23-core-ray-intersection.md)
 
 The [field chosen for the deep cover](receipt-archives/2026-11-23-deep-cover-ray-field.md) has an unramified layer of exact degree $h(K)\varphi(M)/2$ above the cyclotomic field of the level and the quadratic base. Its root discriminant stays fixed across that layer. Averaging back has the whole degree as its denominator.
