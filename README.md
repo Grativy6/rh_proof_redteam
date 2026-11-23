@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+**Where does the proof write in the number it needs?** For a spectral block with no qualifying vector, the source assigns the exponential of its desired lower bound. We traced that number between the two levels used by the height proof. Every label carrying a nonzero period direction there has a witness at the tested level. [The exact convention, a two-character counterexample and the multiplicity calculation](receipt-archives/2026-11-23-zero-part-eigenvalue.md)
+
 **Can the proof discard a set carrying its entire residue?** One point can carry the whole residue of a p-adic integral. The downward theta argument has a scaling law that rules out such a loss on its singular matrices. Removing one row makes a direct local count diverge. [Two theta maps and the residue](receipt-archives/2026-11-23-downward-residue.md) · [Exact split-prime calculation](receipt-archives/2026-11-23-split-gram-density.md)
 
 A further [test of the fixed downward map](receipt-archives/2026-11-23-fixed-downward-test.md) finds a full-rank matrix missed by every translate and derives the exact subgroup average that removes it. The real integral for the proposed kernel vector becomes a squared norm.

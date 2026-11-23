@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Written-in eigenvalue on a vacant block](2026-11-23-zero-part-eigenvalue.md) | Actual assignment, its two level flags, the multiplicity-one condition and a check for all nonzero column labels. |
 | [Rational and integral valuation descent](2026-11-23-valuation-descent.md) | Two lattices with identical rational preimages, an unbounded determinant discrepancy and the denominator of the base period. |
 | [The fixed downward test](2026-11-23-fixed-downward-test.md) | Character conjugation, the congruence subgroup, a missed full-rank point and the finite set of translates for all observers. |
 | [The downward theta residue](2026-11-23-downward-residue.md) | Checks the separate injectivity obligation, the location of its pole and the measure of singular frames. |
@@ -32,4 +33,4 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 The [fixed downward test](2026-11-23-fixed-downward-test.md#unresolved) follows the two questions left by the [downward residue](2026-11-23-downward-residue.md#unresolved). The [oscillator receipt](2026-11-23-oscillator-cancellation.md#unresolved) records the analytic test reached from the [period receipt](2026-11-23-period-on-quotient.md#unresolved) and [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
-The [valuation receipt](2026-11-23-valuation-descent.md#unresolved) traces the arithmetic half of the pair of bounds in the [first audit](2026-11-23-proof-audit.md#unresolved).
+The [eigenvalue convention](2026-11-23-zero-part-eigenvalue.md#unresolved) leads to the quantitative bound on occupied blocks. The [valuation receipt](2026-11-23-valuation-descent.md#unresolved) traces the arithmetic half of the pair of bounds in the [first audit](2026-11-23-proof-audit.md#unresolved).

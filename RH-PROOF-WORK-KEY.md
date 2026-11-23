@@ -42,6 +42,10 @@ The [fixed downward test](receipt-archives/2026-11-23-fixed-downward-test.md) fo
 
 We fixed all rational integrality tests, varied a lattice after extending scalars, and calculated the change in divisibility and determinant. We traced the additional integral-span requirement to the finite-place bound on a period. [The two lattices and the period](receipt-archives/2026-11-23-valuation-descent.md)
 
+## A number assigned on an empty block
+
+We followed a scalar set equal to the requested lower bound under a logarithm. We tested whether an unused label at one level could carry a period at the other. [Two levels, one character projector and the exact scope of the default](receipt-archives/2026-11-23-zero-part-eigenvalue.md)
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
@@ -65,4 +69,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 The explicit rank-one cancellation has been traced to the joint harmonic condition. The analytic transfer, the quantitative size bound and the regular value of the global integral remain open to further tests. [Upward integral](receipt-archives/2026-11-23-oscillator-cancellation.md#unresolved)
 
-The [fixed downward test](receipt-archives/2026-11-23-fixed-downward-test.md#unresolved) records the real character, split type primes and the remaining local branches. The [valuation comparison](receipt-archives/2026-11-23-valuation-descent.md#unresolved) returns to the arithmetic endpoints of a single pairing.
+The [fixed downward test](receipt-archives/2026-11-23-fixed-downward-test.md#unresolved) records the real character, split type primes and the remaining local branches. The [valuation comparison](receipt-archives/2026-11-23-valuation-descent.md#unresolved) returns to the arithmetic endpoints of a single pairing. The [zero-part test](receipt-archives/2026-11-23-zero-part-eigenvalue.md#unresolved) traces the archimedean estimate to the lower bound on an occupied block.
