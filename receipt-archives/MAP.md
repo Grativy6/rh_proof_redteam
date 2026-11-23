@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Positive CM derivatives](2026-11-23-toric-cm-derivatives.md) · [Raising and cusp calculations](check_toric_derivatives.py) | Two cusp coefficients give different 3-adic valuations for representatives of the same CM derivative. A separate bound covers all derivative orders at this point. |
 | [Conductor-137 character transform](2026-11-23-toric-fourier.md) · [Denominators at the CM point](2026-11-23-toric-cm-denominators.md) · [Exact arithmetic](check_toric_fourier.py) | Actual divisor 34, sharp loss at 17 on constant coefficients and a separate denominator check on each class before summation. |
 | [Locally identical slope data](2026-11-23-aligned-lattice-slope.md) · [Place-dependent grid](2026-11-23-selected-grid.md) · [Unbounded conjugate valuations](2026-11-23-mean-valuation.md) · [Integer checks](check_selected_grid.py) | A sharp global map cost, the cost of using both height allowances, and what a mean can lose. |
 | [Conjugate localizations and the class count](2026-11-23-split-class-count.md) · [Finite orbit counts](check_split_class_count.py) · [Indefinite mass and volume](2026-11-23-indefinite-mass-volume.md) | The split versus mixed level count, a genuine unit fallback, and the measure used in the dimension comparison. |
