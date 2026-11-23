@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Where does the proof need the size of the quotient lattice, and can conjugation lose a term? | [Unbounded covolume discrepancy and the direction actually used](receipt-archives/2026-11-23-quotient-covolume.md) · checked by Hearthline on 23 November under Chris’s request for a paper-checkable audit. |
 | Can a Taylor coefficient turn into zero on return to a number field? | [Coefficient descent, the nonprincipal integral line, and the period correction](receipt-archives/2026-11-23-coefficient-descent.md) · checked on 23 November 2026 by Hearthline under Chris’s request to keep looking for a seam. |
 | Does the actual divisor builder meet the section-growth law, and does RH use its mixed degree? | [Turn 2 receipt and native countertheorems](receipt-archives/2026-11-23-mixed-estimates.md) · checked on 23 November 2026 by Hearthline under Chris’s request to turn the key. |
 | Does the chosen model give classical mixed intersections, and does RH use the discrepancy? | [Turn 1 counterexample and compiled-path check](receipt-archives/2026-11-23-geometry-witness.md) · checked on 23 November 2026 by Hearthline under Chris’s clarified target. |
@@ -22,6 +23,6 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 
 ## Unresolved
 
-The [cusp-space return point](receipt-archives/2026-11-23-mixed-estimates.md#8-next-live-question) has been checked in both directions. The remaining comparison is the covolume of the whole integral cusp-form lattice at its specified metric. [Current scope and conditions](receipt-archives/2026-11-23-coefficient-descent.md#unresolved)
+The [quotient-covolume test](receipt-archives/2026-11-23-quotient-covolume.md) traces the sign and the finite-prime basis condition. The comparison of lifted cusp forms with full Hecke eigenspaces and the factorization of the period through the row quotient remain live. The [previous return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved) records the original lattice question.
 
 Trace the two arithmetic endpoints for a single admissible nonzero pairing through the norm and valuation estimates. For a zero pairing, follow the aggregate rank condition. The [audit](receipt-archives/2026-11-23-proof-audit.md#unresolved) preserves the remaining mathematical questions.

@@ -20,6 +20,10 @@ The chosen divisor builder fails the release’s section-growth condition at eve
 
 A nonzero complex input can turn into zero on descent to a number field. We tested the actual field of definition, the degrees that enter the theta operator, and the cost of replacing an integral line by a single vector. The original complex coefficients enter the field construction before descent. [Argument and examples](receipt-archives/2026-11-23-coefficient-descent.md)
 
+## Quotient covolume
+
+We took the same integral quotient before and after changing the complex embedding. The resulting difference has no uniform upper bound in rank one. The release uses an inequality in the direction that this difference permits. A second calculation tests the two primes used in a Hermitian basis change. [Calculations and consumer](receipt-archives/2026-11-23-quotient-covolume.md)
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
@@ -41,4 +45,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 ## Unresolved
 
-The same-component cusp-space comparison and the scalar period tests are recorded. The whole integral lattice and its Petersson covolume remain open to an independent arithmetic check. The earlier all-zero pairing question remains available. [Current return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved)
+The quotient-covolume comparison uses a one-sided bound. Two live questions are how the actual lift fills a whole Hecke eigenspace and what forces the period to vanish on the kernel of the row projection. [Current return point](receipt-archives/2026-11-23-quotient-covolume.md#unresolved)
