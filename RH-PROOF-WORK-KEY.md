@@ -12,9 +12,13 @@ A **key** records the object, question and test before the outcome is known. Chr
 
 The first use of this key produced a counterexample to the mixed-intersection interpretation of the chosen geometry model. Its two positive weights give 2 in one order and 8 in the other, while the classical answer is 4. The receipt also tests surface replacement and corrects two source links using the compiled dependency graph. [Turn 1 receipt](receipt-archives/2026-11-23-geometry-witness.md)
 
+## Second turn
+
+The chosen divisor builder fails the release’s section-growth condition at every stage. A genuine mixed numerical estimate on the RH path uses a different intersection operation. We tested a case where substituting the first-slot operation would change its strict premise from false to true. The nonempty-index theorem and the genuine mixed-degree calculation both passed kernel replay against the original release libraries. [Turn 2 receipt](receipt-archives/2026-11-23-mixed-estimates.md)
+
 ## Starting sources
 
-- Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean#L54-L71)
+- Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
 - Use the PAL v2.4-M `M-INTERFACE-FIBER` card and APCI’s reachable-image criterion. Name the two admissible inputs, everything the selected interface reads, and the specific answer it is supposed to certify. Use BRIDGE’s distinction between an object and its observable image when following the record into a consumer. [PAL v2.4](https://doi.org/10.5281/zenodo.22888036) · [APCI interface theorem](https://github.com/Grativy6/PAL-Lean-Audit/blob/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/projects/APCI/APCILeanAudit/Interface.lean#L62-L66) · [Earlier audit](receipt-archives/2026-11-23-proof-audit.md)
 
 ## Object and first test
@@ -33,4 +37,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 ## Unresolved
 
-The next question is whether a reachable estimate needs a genuinely mixed intersection, and how its supplier obtains the value. The earlier all-zero pairing test remains available if the geometry-to-rank identification makes it relevant. [Return point](receipt-archives/2026-11-23-geometry-witness.md#8-next-live-question)
+The first mixed inequality has been located and tested. The next question is whether the active linear equivalence between cusp forms and boundary-vanishing sections preserves the full space on the selected component at each weight. The earlier all-zero pairing work remains available if the geometry-to-rank identification makes it relevant. [Return point](receipt-archives/2026-11-23-mixed-estimates.md#8-next-live-question)

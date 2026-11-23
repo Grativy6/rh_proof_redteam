@@ -1,0 +1,6 @@
+'RHRedteam.FlagGrowth.polarized_flag_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.FlagGrowth.mixed_example' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.FlagGrowth.fails_height_share_admissibility' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.FlagGrowth.first_slot' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.FlagGrowth.nonzero_ruling_breaks_nef_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.FlagGrowth.positive_weight_breaks_section_growth' depends on axioms: [propext, Classical.choice, Quot.sound]

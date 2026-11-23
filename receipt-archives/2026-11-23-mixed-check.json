@@ -1,0 +1,311 @@
+{
+  "release": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "arithmetic": {
+    "growth_example": {
+      "C": 10,
+      "power": 13,
+      "model_sections": 1,
+      "classical_sections": 196,
+      "absolute_error": 168,
+      "allowed_error": 130
+    },
+    "weyl": {
+      "mu": [
+        0,
+        -1,
+        -1
+      ],
+      "nu": [
+        2,
+        1,
+        0
+      ],
+      "coefficients_constant_first": [
+        0,
+        3,
+        9,
+        6
+      ],
+      "mixed_degree": 1,
+      "first_slot_mu_first": 0,
+      "first_slot_nu_first": 6
+    },
+    "surface": [
+      {
+        "q": 9,
+        "true_gate_lhs": 16,
+        "first_slot_gate_lhs": 8,
+        "true_gate_passes": false,
+        "first_slot_gate_passes": true,
+        "conclusion_lhs": 144,
+        "conclusion_rhs": 648,
+        "conclusion_holds": true
+      },
+      {
+        "q": 16,
+        "true_gate_lhs": 16,
+        "first_slot_gate_lhs": 8,
+        "true_gate_passes": false,
+        "first_slot_gate_passes": true,
+        "conclusion_lhs": 256,
+        "conclusion_rhs": 2048,
+        "conclusion_holds": true
+      },
+      {
+        "q": 17,
+        "true_gate_lhs": 16,
+        "first_slot_gate_lhs": 8,
+        "true_gate_passes": true,
+        "first_slot_gate_passes": true,
+        "conclusion_lhs": 272,
+        "conclusion_rhs": 2312,
+        "conclusion_holds": true
+      }
+    ]
+  },
+  "graph": {
+    "depths": {
+      "Formalism.BasicNotions.DV.Geo": 10,
+      "Formalism.DegreeFormula.degFl": 13,
+      "Formalism.DegreeFormula.flagDeg": 12,
+      "Formalism.L2.Geo.AlgPkg": 13,
+      "Formalism.L2.Geo.WeylPolynomialAlgebra.weyl_coeff": 22,
+      "Formalism.L2.Geo.flagDegZ": 22,
+      "Formalism.L2.Geo.geoDegenerate": 21,
+      "Formalism.MainNotions.HeightShare.AdmG": null,
+      "Formalism.MainNotions.HeightShare.AsymptoticRiemannRoch": null,
+      "Formalism.MainNotions.HeightShare.GloballyGeneratedNef": null,
+      "Formalism.MainNotions.HeightShare.inter1": null,
+      "GlobalTheory.CompHt.growthOn": 11,
+      "GlobalTheory.CompProport.growth_eq_covolume": 13,
+      "GlobalTheory.MorseNum.morse_A_sq": 17,
+      "GlobalTheory.T.top_intersection_growth_bound": 16,
+      "GlobalTheory.interNum": 8,
+      "GlobalTheory.topSelfIntersection": 9,
+      "RootFieldNumerics.TF.jPos": 21,
+      "RootFieldNumerics.test_polynomial_shift_values": 19
+    },
+    "dependency_closures": {
+      "Formalism.L2.Geo.WeylPolynomialAlgebra.weyl_coeff": {
+        "size_including_root": 31,
+        "observed": [
+          "Formalism.DegreeFormula.flagDeg",
+          "Formalism.DegreeFormula.degFl"
+        ]
+      },
+      "RootFieldNumerics.TF.jPos": {
+        "size_including_root": 68,
+        "observed": [
+          "Formalism.DegreeFormula.flagDeg",
+          "Formalism.DegreeFormula.degFl"
+        ]
+      },
+      "RootFieldNumerics.test_polynomial_shift_values": {
+        "size_including_root": 109,
+        "observed": [
+          "Formalism.DegreeFormula.flagDeg",
+          "Formalism.DegreeFormula.degFl"
+        ]
+      },
+      "GlobalTheory.MorseNum.morse_A_sq": {
+        "size_including_root": 1916,
+        "observed": [
+          "GlobalTheory.interNum",
+          "GlobalTheory.topSelfIntersection"
+        ]
+      },
+      "GlobalTheory.T.top_intersection_growth_bound": {
+        "size_including_root": 1917,
+        "observed": [
+          "GlobalTheory.interNum",
+          "GlobalTheory.topSelfIntersection"
+        ]
+      },
+      "GlobalTheory.CompProport.growth_eq_covolume": {
+        "size_including_root": 43279,
+        "observed": [
+          "GlobalTheory.interNum",
+          "GlobalTheory.topSelfIntersection",
+          "Formalism.DegreeFormula.flagDeg",
+          "Formalism.DegreeFormula.degFl",
+          "GlobalTheory.CompHt.growthOn"
+        ]
+      }
+    },
+    "first_shared_users_with_geoDegenerate": {
+      "RootFieldNumerics.TF.jPos": {
+        "shared_users": 6,
+        "first_shared_users": [
+          {
+            "declaration": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "witness_dependencies": [
+              "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+            ],
+            "estimate_dependencies": [
+              "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+            ]
+          }
+        ]
+      },
+      "GlobalTheory.T.top_intersection_growth_bound": {
+        "shared_users": 6,
+        "first_shared_users": [
+          {
+            "declaration": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "witness_dependencies": [
+              "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+            ],
+            "estimate_dependencies": [
+              "UpperTheory.LiteratureTheorems.point_separation_pair_of_literature",
+              "UpperTheory.LiteratureTheorems.published_results_arithmetic"
+            ]
+          }
+        ]
+      },
+      "GlobalTheory.CompProport.growth_eq_covolume": {
+        "shared_users": 6,
+        "first_shared_users": [
+          {
+            "declaration": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+            "witness_dependencies": [
+              "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+            ],
+            "estimate_dependencies": [
+              "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+            ]
+          }
+        ]
+      }
+    },
+    "rh_referrer_modules": [
+      "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GeoTiedPGraft",
+      "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsProvisionalDivX",
+      "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PointGlobalSectionsNeBot",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisionLocalDataPreservedDivisionLatticeChange",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEigenReadThirdLocal",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdxDefsUp",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndexZeroOffTwistedPlaces",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndicesPairingLengthsVanishOffTwistedPlaces",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MovedReadingSameMapsBaseReadingAgrees",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TupPinsOfMuIsW",
+      "Formalism.LocalRingCardinality.DataDIV",
+      "Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample",
+      "Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef",
+      "Formalism.LocalToGlobal.LatticeGeometry.CompNe",
+      "Formalism.LocalToGlobal.LatticeGeometry.GeoTiedP",
+      "Formalism.LocalToGlobal.LatticeGeometry.Inhabited",
+      "Formalism.LocalToGlobal.LatticeGeometry.InstAddCommSemigroupWt",
+      "Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime",
+      "Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace"
+    ],
+    "off_path_control_module": "Formalism.SharpRestriction.Divisibility.HeightShare"
+  },
+  "compiled": {
+    "native_reader_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "module_count": 20,
+    "declarations_in_modules": 1630,
+    "modules_sha256": {
+      "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GeoTiedPGraft": "6f652918af27dc8d2e63c11857c18fa4c33f7e65c764e003055f5108ff733b78",
+      "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsProvisionalDivX": "3674189e45fc2f9f08d7e3c843872ed7bb60c883cb1b314429b38f2cedeb0d8c",
+      "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PointGlobalSectionsNeBot": "dc2a5e36b6817c9ce3864ab50507bf055d9ef2863eccd6e7956ec32e2bbad856",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.DivisionLocalDataPreservedDivisionLatticeChange": "5035f420c7598ea41ce4de740c8d6ca64d326affe5a77fa1781e16a954042dc8",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.ExistsEigenReadThirdLocal": "b9421f11b3aee4a4f8f44e4c5b8399d0078122e20eb7a1e671c7503f02917dae",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IdxDefsUp": "beb1c8bc46d620c56655f2e8f4bf0714d9ffd349196c2d5ff77a05d384e51323",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndexZeroOffTwistedPlaces": "87fe6b9fa7aed210f5f59fb0e8bef22a0f7d8b502277c70d3829b9184b3ee29f",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.IndicesPairingLengthsVanishOffTwistedPlaces": "1665a7331cc2a72bd499f03df297df755eb780e576a63d0634e15cf0c8b52567",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.MovedReadingSameMapsBaseReadingAgrees": "ce814c45fa67244aab1ea0acad9eb2336e171d88fee0a708df8736549b5afb15",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.TupPinsOfMuIsW": "ce71fd59ac31b5eb319fd14fe597a2dfaacfe91b8858af9715ca28301b264528",
+      "Formalism.LocalRingCardinality.DataDIV": "ccd94fe525bac80a9f3aa1667759e78569e6a86a9f2677ad3d7f6ded80b67fcd",
+      "Formalism.LocalRingCardinality.SpanPowerMembership.DivXExample": "c3a883dff3d709ecedcd8899d1e64df96a86e11dc86f1fac29ab307da1c07bd6",
+      "Formalism.LocalToGlobal.LatticeGeometry.ArVolEqOfNef": "2e7ae30a502135cb08b38f4da80402e169f0caaf66c41b9d0b481350b1b7372b",
+      "Formalism.LocalToGlobal.LatticeGeometry.CompNe": "c65ef694abcaa272f495ef293d4ee80231ae6e092fb6aa37686d89c1b0553f59",
+      "Formalism.LocalToGlobal.LatticeGeometry.GeoTiedP": "b21353c7f4b8bddc56a1530b0ded46194dc65b9d680d0468b5961812e22e2096",
+      "Formalism.LocalToGlobal.LatticeGeometry.Inhabited": "4df91406bc246fb4d6c88de44bc464bb711e7db7ee41ae1248087cd8a4bce9ac",
+      "Formalism.LocalToGlobal.LatticeGeometry.InstAddCommSemigroupWt": "f5d2c407224dac25d38e87fa3331fe5dc6d399326d503fce4916e0c796ca81bf",
+      "Formalism.LocalToGlobal.LatticeGeometry.LevPrPrime": "e8c05bb21de1f13d8ed131a50e6b6161721ebfb1d1384baa0ee32f5c43d1b6df",
+      "Formalism.LocalToGlobal.LatticeGeometry.ShimuraSheafOfIndefiniteSubspace": "845bd8df3605e1f67f3cfb7bb66db8680899906d8d4af9f375d0c7d7616f20b4",
+      "Formalism.SharpRestriction.Divisibility.HeightShare": "924333a6c994916fb33e90c8c6097d1f43ad7f2823ab847cbb1dcd832d814db5"
+    },
+    "calibrations": [
+      {
+        "afterRecord": 2,
+        "arity": 7,
+        "calibration": "Formalism.BasicNotions.DV.Geo.H0",
+        "index": 10,
+        "owner": "Formalism.BasicNotions.DV.Geo"
+      },
+      {
+        "afterRecord": 2,
+        "arity": 7,
+        "calibration": "Formalism.BasicNotions.DV.Geo.inter",
+        "index": 19,
+        "owner": "Formalism.BasicNotions.DV.Geo"
+      },
+      {
+        "afterRecord": 4,
+        "arity": 12,
+        "calibration": "Formalism.L2.Geo.AlgPkg.degA_twist",
+        "index": 8,
+        "owner": "Formalism.L2.Geo.AlgPkg"
+      },
+      {
+        "afterRecord": 2,
+        "arity": 10,
+        "calibration": "Formalism.L2.Geo.AlgPkg.degA",
+        "index": 6,
+        "owner": "Formalism.L2.Geo.AlgPkg"
+      },
+      {
+        "afterRecord": 4,
+        "arity": 12,
+        "calibration": "Formalism.L2.Geo.AlgPkg.degA_ofW",
+        "index": 7,
+        "owner": "Formalism.L2.Geo.AlgPkg"
+      }
+    ],
+    "field_results_by_distinct_raw_declaration": {
+      "constant-tuple": [
+        "Formalism.L2.Geo.AlgPkg._sizeOf_1",
+        "Formalism.L2.Geo.AlgPkg.casesOn",
+        "Formalism.L2.Geo.AlgPkg.degA_ofW",
+        "Formalism.L2.Geo.AlgPkg.mk",
+        "Formalism.L2.Geo.AlgPkg.mk._flat_ctor",
+        "Formalism.L2.Geo.AlgPkg.mk.inj",
+        "Formalism.L2.Geo.AlgPkg.mk.injEq",
+        "Formalism.L2.Geo.AlgPkg.mk.noConfusion",
+        "Formalism.L2.Geo.AlgPkg.mk.sizeOf_spec",
+        "Formalism.L2.Geo.AlgPkg.noConfusion",
+        "Formalism.L2.Geo.AlgPkg.noConfusionType",
+        "Formalism.L2.Geo.AlgPkg.rec",
+        "Formalism.L2.Geo.AlgPkg.recOn",
+        "Formalism.L2.Geo.MumfordU",
+        "Formalism.L2.Geo.algDegenerate",
+        "Formalism.L2.Geo.algDegenerate._proof_3",
+        "Formalism.L2.Geo.algDegenerate._proof_4",
+        "Formalism.L2.Geo.algJunk._proof_3",
+        "Formalism.L2.Geo.chern_linRoot_pow",
+        "Formalism.L2.Geo.chern_record",
+        "Formalism.L2.Geo.geoFl_inter",
+        "Formalism.L2.Geo.inter_congr",
+        "Formalism.L2.Geo.mumfordU_fl",
+        "Formalism.MainNotions.HeightShare.AsymptoticRiemannRoch",
+        "Formalism.MainNotions.HeightShare.GloballyGeneratedNef",
+        "Formalism.MainNotions.HeightShare.LData.del",
+        "GlobalTheory.Mem.Top.Bl.WitTr.GeoDivTr.formsT._proof_3",
+        "GlobalTheory.Mem.Top.Bl.WitTr.GeoDivTr.shimUT._proof_4"
+      ],
+      "other-tuple": [
+        "Formalism.MainNotions.HeightShare.GloballyGeneratedNef"
+      ],
+      "partial": [
+        "Formalism.BasicNotions.DV.Geo.inter"
+      ],
+      "section_space_under_rank": [
+        "Formalism.MainNotions.HeightShare.AsymptoticRiemannRoch"
+      ],
+      "slot-dependent-lambda": [
+        "Formalism.MainNotions.HeightShare.inter1"
+      ]
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 2,
+  "claim_id": "RH-PAL-20261123-geometry-growth",
+  "repository": {
+    "commit": "4272021c7bcc68ac8342230495642dd8f2ecbcd2",
+    "dirty": true
+  },
+  "command": [
+    "lean",
+    "--tstack=400000",
+    "receipt-archives/FlagGrowth.lean"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Lean",
+        "version": "4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)"
+      },
+      {
+        "name": "Mathlib",
+        "version": "0df444a360eaa60ab8c11dca51a86af692955474"
+      },
+      {
+        "name": "Riemann hypothesis release",
+        "version": "40e56bab026552e089d7afcfeff08d2defb9c005"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Elaborate six named results at the original release types and print their axiom dependencies.",
+    "coefficient_domain": "integer divisor weights and real section-growth bounds over the rational model",
+    "conventions": "Flag dimensions and predicates are imported from the 20 November release; the section-growth contradiction ranges over all real constants.",
+    "inputs": [
+      "The unmodified release libraries and the six printed declarations in FlagGrowth.lean."
+    ],
+    "bounds": {
+      "geometry_index_count": 2,
+      "geometry_flag_rank": 2,
+      "polarization_index_count": 1,
+      "polarization_flag_rank": 3
+    },
+    "non_claims": [
+      "This run checks the new module against imports. Rebuilding the full RH theorem is outside its scope."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-23T09:42:51.167372+00:00",
+    "runtime_seconds": 16.797,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 350.0,
+    "max_output_bytes": 131072,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "receipt-archives/FlagGrowth.lean"
+  ],
+  "input_artifacts": [
+    {
+      "path": "receipt-archives/FlagGrowth.lean",
+      "sha256": "83ed8f02adebd46a568678dcd2d9bbdaf7ff3676f7456257b88b123f2584594d",
+      "sha256_after": "83ed8f02adebd46a568678dcd2d9bbdaf7ff3676f7456257b88b123f2584594d"
+    }
+  ],
+  "output_directory": "receipt-archives/turn-02-native",
+  "declared_results": [],
+  "outputs": [
+    {
+      "path": "receipt-archives/turn-02-native/stdout.txt",
+      "sha256": "f76b7221d12f5705a4ec75918ded08ebe20c7f7e3a2db4632a66290a1b3bb96b",
+      "kind": "log"
+    },
+    {
+      "path": "receipt-archives/turn-02-native/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

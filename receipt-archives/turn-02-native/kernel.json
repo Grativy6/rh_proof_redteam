@@ -1,0 +1,74 @@
+{
+  "version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compile_exit": 0,
+  "native_olean_sha256": "42d24660cf79ecd0f5154ba40aa4603d4a0be423eb9b9c2f37c910a8d7e81689",
+  "source_sha256": "83ed8f02adebd46a568678dcd2d9bbdaf7ff3676f7456257b88b123f2584594d",
+  "leanchecker_sha256": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c",
+  "compiler_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "kernel_exit": 0,
+  "kernel_output": "replaying FlagGrowth",
+  "release": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original_source_imports": {
+    "roots": [
+      "Formalism.DegreeFormula.PointDegree.FlagDeg",
+      "Formalism.LocalToGlobal.LatticeGeometry.Inhabited",
+      "Formalism.LocalToGlobal.LatticeGeometry.PluckerHadamard.WeylPolynomialAlgebra",
+      "Formalism.SharpRestriction.Divisibility.HeightShare"
+    ],
+    "original_modules_including_roots": 617,
+    "imports_Main": false,
+    "imports_Challenge": false
+  },
+  "imports_provenance": {
+    "original_src_tree": "b41b516b1f7baee4d83ced235ecc71fd43c97695",
+    "cache_src_tree": "24df20b62d9976ccd20da819bc20b16f808f0fdd",
+    "only_extra_cache_source": {
+      "name": "Challenge.lean",
+      "git_blob": "9677ace64b3a5e8b1a571d82d52ee13c53b08026"
+    },
+    "official_lean_archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+    "rh_module_manifest_sha256": "292caa386a620d935cfc736b56fcceaab9fe7073086693b62e899c1ee4725f04",
+    "mathlib_dependency_archive_sha256": "42b22a8360d23db1e6b48d3b80b06895669ffd8e5c2c213872d66cd5412e0422",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "verified_original_module_archives": 617,
+    "scope": "Public compiled dependencies. The new module was built and replayed here."
+  },
+  "additional_native_module": {
+    "name": "GeneralFlagGrowth",
+    "source_sha256": "a919141a055911f96c48cc48cae9e1ca5b7ebd2826dcf56629dc0f9e3e544005",
+    "olean_sha256": "d07c7e014f36376f820ed85fd5a31a6e5215b005d15d9c47a8f84c11bbe65614",
+    "compile_exit": 0,
+    "compile_argv": [
+      "lean",
+      "--tstack=400000",
+      "-o",
+      "GeneralFlagGrowth.olean",
+      "GeneralFlagGrowth.lean"
+    ],
+    "kernel_argv": [
+      "leanchecker",
+      "-v",
+      "GeneralFlagGrowth"
+    ],
+    "kernel_exit": 0,
+    "kernel_output": "replaying GeneralFlagGrowth",
+    "axioms": {
+      "RHRedteam.GeneralFlagGrowth.builder_fails_growth_and_admissibility": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHRedteam.GeneralFlagGrowth.no_asymptotic_riemann_roch": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "RHRedteam.GeneralFlagGrowth.no_height_share_admissibility": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "imports": "A subset of the original modules listed for FlagGrowth. Same checked caches and Lean binaries."
+  }
+}
