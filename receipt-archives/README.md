@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [jet loss and polynomial frames](2026-11-23-jet-loss-and-frames.md), run `python receipt-archives/check_honda_jet_loss.py`. The proof gives equality at infinitely many orders.
+
 For the [CM curve and quadratic correction](2026-11-23-height-two-coordinate.md), run `python receipt-archives/check_cm7_jets.py`. The [conjugated-phase test](2026-11-23-conjugated-phase.md) uses an explicit quartic and a finite ideal-class character.
 
 The [formal-degree receipt](2026-11-23-formal-degree.md) evaluates real-place integrals by two one-row beta integrals, including an exact $U(2,2)$ example.
