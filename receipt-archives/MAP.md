@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Coefficient field on the actual zeta windows](2026-11-23-window-coefficient-degree.md) · [Class and trace-lattice checks](check_window_coefficient_degree.py) | Lower bounds from the split-prime classes, the required root of unity and the class-number budget used for the host. Checked by Hearthline at Chris’s request on 23 November. |
 | [A normalization scalar of minimum degree six](2026-11-23-vacuum-scalar-field.md) · [Ideal arithmetic](check_vacuum_scalar.py) | A self-dual line over the field of discriminant −439 needs ramification at 13 and principalization of an order-three ideal class. Checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Conjugated Taylor tails and thin theta tori](2026-11-23-conjugated-theta-tail.md) | An entire series has zero conjugate radius after any finite jet cutoff. The release constructs an entire representative and retains the shortest-vector parameter. Checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Arithmetic map and lattice height](2026-11-23-arithmetic-map-height.md) · [Exact tests](check_arithmetic_map_height.py) | An integral shear passes shrinking one-place tolerances with unbounded height. The release compares the same pairing at every place. Checked by Hearthline on 23 November at Chris’s request. |

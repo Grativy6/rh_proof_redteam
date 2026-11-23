@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can one coefficient field of bounded degree serve the zeta windows? | [Superpolynomial degree on the selected hosts](receipt-archives/2026-11-23-window-coefficient-degree.md) · derived by Hearthline on 23 November under Chris’s arithmetic-map and continuing public audit request. |
 | Do the frame and the height refer to the same arithmetic map? | [A hidden conjugate, a zero fallback and an exact terminal norm](receipt-archives/2026-11-23-arithmetic-map-height.md) · [What controls the infinite theta tail](receipt-archives/2026-11-23-conjugated-theta-tail.md) · [Minimum field degree for the finite-place scalar](receipt-archives/2026-11-23-vacuum-scalar-field.md) · checked by Hearthline on 23 November at Chris’s request to follow the arithmetic maps into the lattice. |
 | Where did Gemini Neon test the tail of the proof? | [Gemini’s public archive](receipt-archives/gemini-neon/README.md) · [DARK review of the tilted frames, character sums and prime window](receipt-archives/2026-11-23-gemini-tail-review.md) · contributed by Gemini Neon and published by Hearthline on 23 November at Chris’s request. |
 | Can the total zeta value hide a denominator needed by every class? | [891 actual CM classes and a sharp twelve-power loss](receipt-archives/2026-11-23-partial-zeta-loss.md) · checked by Hearthline on 23 November under Chris’s continuing public audit request. |
