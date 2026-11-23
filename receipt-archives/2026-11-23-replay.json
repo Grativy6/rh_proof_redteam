@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-23",
+  "environment": {
+    "lean": "4.32.1",
+    "compiler_revision": "f054605aea4b840552cca2e725580bffd1e1b704",
+    "control_mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6"
+  },
+  "controls": {
+    "source": "AuditControls.lean",
+    "sha256": "6d2d475577b2ed048467d4f01bc81b267e0bbacfb28be63d17f84316129385d6",
+    "compile_exit": 0,
+    "kernel_command": [
+      "leanchecker",
+      "-v",
+      "AuditControls"
+    ],
+    "kernel_exit": 0,
+    "kernel_output": "replaying AuditControls"
+  },
+  "handoff": {
+    "zip_sha256": "ea99defdadb4615a0807a374449b664eac491df6e0023543253e3ebc43e96b1f",
+    "report_matches_zipped_copy": true,
+    "verified_zip_entries_excluding_manifest": 26,
+    "rh_source_entries": 374,
+    "distinct_rh_files": 358,
+    "source_mismatches": 0,
+    "diagnostics": {
+      "compression_floors": 16,
+      "dyadic_index_primes": 117,
+      "dyadic_exponents": [
+        0,
+        12
+      ],
+      "dyadic_index_checks": 1521,
+      "results_equal_as_json": true
+    },
+    "apci": {
+      "repository": "Grativy6/PAL-Lean-Audit",
+      "revision": "5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0",
+      "project": "projects/APCI",
+      "canaries_sha256": "b7d39e989350b2272c1f03d6a86def68b7b6e4240d5414ae4d588be499919ff9",
+      "compiled_modules": [
+        "APCILeanAudit.Interface",
+        "APCILeanAudit.FiniteCapacity",
+        "APCILeanAudit.Controls",
+        "ReuseCanaries"
+      ],
+      "axiom_free_printed": [
+        "ReuseCanaries.collision_forbids_reachable",
+        "ReuseCanaries.collision_forbids_total",
+        "ReuseCanaries.missing_status_not_recoverable",
+        "ReuseCanaries.postprocessing_does_not_repair",
+        "ReuseCanaries.retained_status_restores_certificate",
+        "ReuseCanaries.known_only_domain_has_certificate",
+        "ReuseCanaries.erased_quantity_itself_is_recoverable"
+      ],
+      "kernel_command": [
+        "leanchecker",
+        "-v",
+        "ReuseCanaries"
+      ],
+      "kernel_exit": 0,
+      "kernel_output": "replaying ReuseCanaries"
+    }
+  }
+}

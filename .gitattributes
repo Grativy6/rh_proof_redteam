@@ -1,0 +1,2 @@
+*.lean text eol=lf
+receipt-archives/lean-run-*/*.txt text eol=lf

@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "claim_id": "PAL-RH-20261123-controls",
+  "repository": {
+    "commit": "58e1c511ef8beb154cf2ef2e47daf7f21883e876",
+    "dirty": true
+  },
+  "command": [
+    "lean",
+    "receipt-archives/AuditControls.lean"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Lean",
+        "version": "4.32.1 (f054605aea4b840552cca2e725580bffd1e1b704)"
+      },
+      {
+        "name": "Mathlib",
+        "version": "520045ab14e26149ee970e2e617ca04b09bde5d6"
+      }
+    ],
+    "hardware": "Windows-11-10.0.26300-SP0"
+  },
+  "mathematics": {
+    "assertion_tested": "Lean type-checks the eight declarations and prints their axiom dependencies in AuditControls.lean.",
+    "coefficient_domain": "real numbers, natural numbers, Bool and extended natural numbers",
+    "conventions": "Mathlib Real and ENat operations, with distinct zero and top before conversion. Each theorem lists its own quantifiers.",
+    "inputs": [
+      "Eight declarations in receipt-archives/AuditControls.lean"
+    ],
+    "bounds": {
+      "declarations": 8
+    },
+    "non_claims": [
+      "No compilation of the RH release in this run."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-23T08:04:53.742827+00:00",
+    "runtime_seconds": 4.656,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 150.0,
+    "max_output_bytes": 131072,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "receipt-archives/AuditControls.lean"
+  ],
+  "input_artifacts": [
+    {
+      "path": "receipt-archives/AuditControls.lean",
+      "sha256": "6d2d475577b2ed048467d4f01bc81b267e0bbacfb28be63d17f84316129385d6",
+      "sha256_after": "6d2d475577b2ed048467d4f01bc81b267e0bbacfb28be63d17f84316129385d6"
+    }
+  ],
+  "output_directory": "receipt-archives/lean-run-2026-11-23",
+  "declared_results": [],
+  "outputs": [
+    {
+      "path": "receipt-archives/lean-run-2026-11-23/stdout.txt",
+      "sha256": "9424ff12f78124b15dd9d07f873c9532aa71fa08c0734f81b1d5115703fa2214",
+      "kind": "log"
+    },
+    {
+      "path": "receipt-archives/lean-run-2026-11-23/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

@@ -1,0 +1,8 @@
+'RHRedteam.height_exists_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.allowed_height_shifts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.zero_gate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.pointwise_not_uniform' does not depend on any axioms
+'RHRedteam.incompatible_witnesses' does not depend on any axioms
+'RHRedteam.finite_prefix' depends on axioms: [propext, Quot.sound]
+'RHRedteam.projection_loses_finiteness' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RHRedteam.length_recovered' depends on axioms: [propext, Quot.sound]

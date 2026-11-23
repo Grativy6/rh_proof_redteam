@@ -1,0 +1,166 @@
+{
+  "release": {
+    "repository": "leanprover-community/riemann-hypothesis",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "tree": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "files": [
+      {
+        "path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotGeoClFalse.lean",
+        "sha256": "54dbd62bbacc19db2294f1c41fd28663522acf498a732f9328ed2086b08b9e38"
+      },
+      {
+        "path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/NotLamAreShift.lean",
+        "sha256": "acc5c8c8ed2946c1d941a34b94cc04f900a1ec2ebdf4c430107b37073c82e914"
+      },
+      {
+        "path": "src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean",
+        "sha256": "b9ba78e313f6c7a601d87a1672429122d7f976a0afdd8bae8e4efed68a7215df"
+      },
+      {
+        "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/SetUnipotentTranslate.lean",
+        "sha256": "52560bbc51e012b706fc6838bfa75eb15f2cf05f7e6f9ccde98d2d8b5c5c60df"
+      },
+      {
+        "path": "src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ParameterOfDiscreteSeriesRay.lean",
+        "sha256": "345e64f8a3d5bc600c5486da2b8377e4aab7170b3c92b1daa4a3f35ce64183c7"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/AmbCyc.lean",
+        "sha256": "6a01ae475070eccf7863aac280fb95a80594aea998c0e7f08ad6b75c247f9f10"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+        "sha256": "425bd4e7cef263fd37a5b6c46639c3d31df40a9cb91e4894a71c30e313bba3fa"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/SgnCyc.lean",
+        "sha256": "9024c039664be52328846ef8dba5ce6aef83c4816baba9e70ce3375dcfa224ee"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/StickH.lean",
+        "sha256": "77117a51af766c14e710fa539db361fcef577cf5e5064828b8760609bfdd5da5"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/ToKOf.lean",
+        "sha256": "f8978d46e4d2765f470743fced895d512ddf5a91d17a777207e9f8986e6471f2"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/DecCompact.lean",
+        "sha256": "98f2c8ad70214a51976a014c43684bfe09d2e7cdc2a10611567b3949f3376c42"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/HomExt.lean",
+        "sha256": "8c15047985479ac980c196957313e3f4ea25c077176313140e57c9c6febf95a5"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/XdualExt.lean",
+        "sha256": "8384572e4b4c2919e9c83c5c07d343803becbfe5a3eadf3de9b89428f1555aff"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LemmaKOfLitN.lean",
+        "sha256": "53545a20c11e6e2dcc92f9da2aeaac4b3ebe7c1287e2febef716bb61c82a43b8"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LemmaKOfSteps.lean",
+        "sha256": "e402e7a22956f3184d3bcb49dae312179feb1913b2e9540f890ab13e94ac736c"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+        "sha256": "b8c5e3712c2ae88aac92285b77cf185093ef86d3f21db0ec55cd1ac8efa3782c"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+        "sha256": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+        "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+        "sha256": "cd70757dd71088386ae322de0a4ce80adaeec30c2fcfe5f2ae03ae2b69e515b9"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+        "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+        "sha256": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+        "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+        "sha256": "3252473ba2654b05e9d2ea0781ea91b4c7eadcca0def18b0f21d20212c2f0316"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+        "sha256": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+        "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+        "sha256": "b70c2177d57dfcd03f82784741813b7c6e6b525c69ffec5cae5527f03013a364"
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/EveryCharacterE.lean",
+        "sha256": "87518b975cbf7675d19cc619bf7422c43d7e2f010f6769d2b8ec1b9e852ca6d1"
+      },
+      {
+        "path": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+        "sha256": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02"
+      },
+      {
+        "path": "src/Formalism/LocalToGlobal/Divisibility/RecBridge.lean",
+        "sha256": "ba20a46a7a5132ecd646b85dfd4ec4df838e818543083930b34d2a11533e962b"
+      },
+      {
+        "path": "src/Formalism/LocalToGlobal/LatticeGeometry/Inhabited.lean",
+        "sha256": "7a95297aa3205b6d5e033b4352eff0bb406b4cd11cb2e0fac5722c9b4aafde54"
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/Divisibility/HookProducts/RBTieMu.lean",
+        "sha256": "785f33c7f086d05a9a988ddd68dcceb285007e14a297e2571c144d8ec1bb58d2"
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/Divisibility/HookProducts/RBTieOp.lean",
+        "sha256": "4ec1f0774902b6c3ea9f813a422f71cf12ce47f5ce60c6fe5ad55c343f30d430"
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+        "sha256": "afbbf8ec0a8aca08b7935c6118c76eef06b2eee896805e7de277b9d4e09fc52b"
+      },
+      {
+        "path": "src/Main.lean",
+        "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939"
+      },
+      {
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53"
+      }
+    ]
+  },
+  "handoff": {
+    "member_root": "RH_PAL_Research_Pack_2026-11-23",
+    "sha256": "ea99defdadb4615a0807a374449b664eac491df6e0023543253e3ebc43e96b1f",
+    "report_sha256": "c0a9818b305228415e2edaed70b9e82643620f811ac5dd1d6127973208efef55",
+    "source_manifests": {
+      "rh_source_fetch_manifest.json": null,
+      "rank_uniformity_source_manifest.json": "sources",
+      "rh_domain_source_manifest.json": "files",
+      "analytic_window_source_manifest.json": "sources"
+    }
+  }
+}
