@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+For the [exact higher-rank localiser order](2026-11-23-localiser-order.md), run `python receipt-archives/check_localiser_order.py`. It evaluates both exchanged minors for all 289 two-row graph matrices over the prime subfield.
+
 The [edge-separation receipt](2026-11-23-edge-separation.md) proves the one-slot bound at every degree. Run `python receipt-archives/check_edge_separation.py` to check the two-slot example at all 289 competing points.
 
 The [zero-chain proof](2026-11-23-zero-chain.md) can be checked on paper. For the [four-operator test](2026-11-23-correlated-places.md), run `python receipt-archives/check_correlated_places.py`. It computes the elementary divisors for both families, including the positive definite symmetric matrices.
