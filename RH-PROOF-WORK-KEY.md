@@ -16,6 +16,10 @@ The first use of this key produced a counterexample to the mixed-intersection in
 
 The chosen divisor builder fails the release’s section-growth condition at every stage. A genuine mixed numerical estimate on the RH path uses a different intersection operation. We tested a case where substituting the first-slot operation would change its strict premise from false to true. The nonempty-index theorem and the genuine mixed-degree calculation both passed kernel replay against the original release libraries. [Turn 2 receipt](receipt-archives/2026-11-23-mixed-estimates.md)
 
+## Coefficient descent
+
+A nonzero complex input can turn into zero on descent to a number field. We tested the actual field of definition, the degrees that enter the theta operator, and the cost of replacing an integral line by a single vector. The original complex coefficients enter the field construction before descent. [Argument and examples](receipt-archives/2026-11-23-coefficient-descent.md)
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
@@ -37,4 +41,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 ## Unresolved
 
-The first mixed inequality has been located and tested. The next question is whether the active linear equivalence between cusp forms and boundary-vanishing sections preserves the full space on the selected component at each weight. The earlier all-zero pairing work remains available if the geometry-to-rank identification makes it relevant. [Return point](receipt-archives/2026-11-23-mixed-estimates.md#8-next-live-question)
+The same-component cusp-space comparison and the scalar period tests are recorded. The whole integral lattice and its Petersson covolume remain open to an independent arithmetic check. The earlier all-zero pairing question remains available. [Current return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved)

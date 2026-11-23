@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Coefficient descent and the integral period](2026-11-23-coefficient-descent.md) · [exact finite and graph checks](check_coefficient_descent.py) | A nonzero input lost by descent, the field condition on the theta operator, and a nonprincipal line with an exact index of three. |
 | [Work key 01, second turn](2026-11-23-mixed-estimates.md) | Countertheorem for the selected builder, on-path mixed-degree calculations, and the point where the proof branches meet. |
 | [General builder proof](GeneralFlagGrowth.lean) · [fixed flags and polarization](FlagGrowth.lean) · [native replay record](turn-02-native/kernel.json) | Actual release types, fixed example and universal obstruction. |
 | [Exact and graph checks](check_mixed_estimates.py) · [compiled-term reader](InspectIntersection.lean) · [returned values](2026-11-23-mixed-check.json) | Run the arithmetic separately or inspect the published graphs and module files. |
@@ -22,6 +23,6 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 ## Unresolved
 
-The [Turn 2 receipt](2026-11-23-mixed-estimates.md#8-next-live-question) carries the active comparison between cusp forms and boundary-vanishing sections. The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
+The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) carries the integral covolume question and records the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
 The [research record](2026-11-23-proof-audit.md#unresolved) identifies the unreviewed arithmetic and geometric inputs.

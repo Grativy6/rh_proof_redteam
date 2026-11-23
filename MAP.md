@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can a Taylor coefficient turn into zero on return to a number field? | [Coefficient descent, the nonprincipal integral line, and the period correction](receipt-archives/2026-11-23-coefficient-descent.md) · checked on 23 November 2026 by Hearthline under Chris’s request to keep looking for a seam. |
 | Does the actual divisor builder meet the section-growth law, and does RH use its mixed degree? | [Turn 2 receipt and native countertheorems](receipt-archives/2026-11-23-mixed-estimates.md) · checked on 23 November 2026 by Hearthline under Chris’s request to turn the key. |
 | Does the chosen model give classical mixed intersections, and does RH use the discrepancy? | [Turn 1 counterexample and compiled-path check](receipt-archives/2026-11-23-geometry-witness.md) · checked on 23 November 2026 by Hearthline under Chris’s clarified target. |
 | How do we turn a research key, and what does the geometric witness actually certify? | [RH proof work key 01](RH-PROOF-WORK-KEY.md) · target clarified by Chris on 23 November 2026. The key links its earlier zero-pairing scope. |
@@ -21,6 +22,6 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 
 ## Unresolved
 
-The tested mixed estimate uses the Euler characteristic. The next question is whether the rank comparison in the active cusp-form growth result transports all boundary-vanishing sections. [Exact reopening point](receipt-archives/2026-11-23-mixed-estimates.md#8-next-live-question).
+The [cusp-space return point](receipt-archives/2026-11-23-mixed-estimates.md#8-next-live-question) has been checked in both directions. The remaining comparison is the covolume of the whole integral cusp-form lattice at its specified metric. [Current scope and conditions](receipt-archives/2026-11-23-coefficient-descent.md#unresolved)
 
 Trace the two arithmetic endpoints for a single admissible nonzero pairing through the norm and valuation estimates. For a zero pairing, follow the aggregate rank condition. The [audit](receipt-archives/2026-11-23-proof-audit.md#unresolved) preserves the remaining mathematical questions.

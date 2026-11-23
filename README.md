@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+**Can a nonzero coefficient disappear?** The theta-lift code returns zero for a complex coefficient outside the chosen number field. We found an explicit nonzero input that disappears and an integral line where a mistaken choice would lose half the logarithm of 3. The proof builds its field from the original complex coefficients and checks the degrees the operator reads. We found no loss at that step. [Mathematical argument and source trace](receipt-archives/2026-11-23-coefficient-descent.md)
+
 **Second result, 23 November.** Every geometry returned by the selected divisor builder fails the release’s asymptotic Riemann–Roch test. The witness always gives one section, even as the leading term grows like a positive power of the tensor exponent. The mixed flag coefficient and the numerical surface inequality we traced on the RH path use other constructions and survive the tests. [Countertheorem, examples and compiled evidence](receipt-archives/2026-11-23-mixed-estimates.md)
 
 The [first geometry turn](receipt-archives/2026-11-23-geometry-witness.md) found that the model’s intersection operation gives 2 for two positive weights in one order and 8 when reversed. The classical answer is 4 either way.
