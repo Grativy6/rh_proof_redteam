@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [valuation-descent receipt](2026-11-23-valuation-descent.md) can be checked with a square root of 5, a quadratic nonsquare modulo 5 and a two-by-two determinant.
+
 The [fixed downward test](2026-11-23-fixed-downward-test.md) includes a two-column example over the 3-adics and a proof using saturated lattices. All its calculations can be checked on paper.
 
 The [downward residue](2026-11-23-downward-residue.md) gives a short matrix counterexample and a scaling proof for singular measures. Run `python receipt-archives/check_split_gram.py` to reproduce finite-ring checks for the [split Gram density](2026-11-23-split-gram-density.md).

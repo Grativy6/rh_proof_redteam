@@ -38,6 +38,10 @@ We used two vectors with the same Hecke label to distinguish the two injectivity
 
 The [fixed downward test](receipt-archives/2026-11-23-fixed-downward-test.md) follows the proposed kernel vector through its compact integral, exhibits a full-rank point outside the selected translates, and tests the passage from individual observers to a common finite set.
 
+## Rational and integral comparison
+
+We fixed all rational integrality tests, varied a lattice after extending scalars, and calculated the change in divisibility and determinant. We traced the additional integral-span requirement to the finite-place bound on a period. [The two lattices and the period](receipt-archives/2026-11-23-valuation-descent.md)
+
 ## Starting sources
 
 - Freeze the original release at `40e56bab026552e089d7afcfeff08d2defb9c005`. Begin with the distinction between `geoOf` and `anyGeometry`, the `OAt` record, the closure constructor, and the occurrence in the package supplied to the all-characters proof. [Predicates and record](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/OverIx.lean#L14-L49) · [Selection on the compiled RH path](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L57-L72)
@@ -61,4 +65,4 @@ Return a dated receipt with the **target, source state, object, work, result, fa
 
 The explicit rank-one cancellation has been traced to the joint harmonic condition. The analytic transfer, the quantitative size bound and the regular value of the global integral remain open to further tests. [Upward integral](receipt-archives/2026-11-23-oscillator-cancellation.md#unresolved)
 
-On the downward side, the remaining candidates include the nonzero level-place factor for the selected test and the passage from that test to all downward lifts on a good eigenspace. [Downward residue](receipt-archives/2026-11-23-downward-residue.md#unresolved) · [Outcome at the real and split type places, with the remaining branches](receipt-archives/2026-11-23-fixed-downward-test.md#unresolved)
+The [fixed downward test](receipt-archives/2026-11-23-fixed-downward-test.md#unresolved) records the real character, split type primes and the remaining local branches. The [valuation comparison](receipt-archives/2026-11-23-valuation-descent.md#unresolved) returns to the arithmetic endpoints of a single pairing.
