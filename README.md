@@ -2,7 +2,7 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
-The [split Hecke measurements](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) put good and bad row eigenforms in one residual system at each host prime. Their exact collective denominator is visible in the eigenvalues. A single local matrix shows why directly twisting the larger space would change its prescribed level character.
+The [split Hecke measurements](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) put good and bad row eigenforms in one residual system at each host prime. The [raw theta lift](receipt-archives/2026-11-23-raw-theta-integral-image.md) reaches both kinds. Its class-stabilizer weights and Whittaker trace are units there, leaving an explicit lower bound on the combined loss in integral preimages and projected outputs.
 
 The [local congruence calculation](receipt-archives/2026-11-23-good-bad-modular-overlap.md) identifies a saturated block where the bad rank fraction tends to zero and almost every bad direction also appears in the good reduction. Equal total lengths can give different congruence depths.
 

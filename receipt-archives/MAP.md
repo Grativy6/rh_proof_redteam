@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Raw theta image and the host-prime class-sum weights](2026-11-23-raw-theta-integral-image.md) | Full pre-cut type range, local equality of the single-series and raw-image lattices, and a sharp lower bound on the combined preimage and projected-image defects. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Good and bad rows with the same residual split Hecke eigenvalues](2026-11-23-good-bad-hecke-eigenvalues.md) | The integral Hecke image, its exact selector denominator, and the determinant test on the larger fixed level. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Congruence depths on a saturated good/bad block](2026-11-23-good-bad-modular-overlap.md) · [Cyclotomic elementary divisors](check_good_bad_congruence_block.py) | Exact modular intersection dimension, tensor depths, and distinct order-seven examples of the same total length. Checked by Hearthline on 23 November under Chris’s continuing request. |
 | [The good-type projector on the actual row lattice](2026-11-23-good-type-spectral-denominator.md) · [Finite checks](check_spectral_cut_denominator.py) | Positive bad-rank lower bound, simultaneous denominator powers at the host primes, and good/bad reductions intersecting at those depths. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |

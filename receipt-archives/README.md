@@ -4,7 +4,7 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
-The [split Hecke calculation](2026-11-23-good-bad-hecke-eigenvalues.md) derives the full integral image on a family of row eigenforms. A cyclic group of order 25 checks the denominator by hand. The final matrix tests the same twist on the larger level.
+The [split Hecke calculation](2026-11-23-good-bad-hecke-eigenvalues.md) derives the integral image on a family of row eigenforms. A cyclic group of order 25 checks the denominator by hand. The [raw theta calculation](2026-11-23-raw-theta-integral-image.md) follows their preimages to the fixed larger level, evaluates the actual class-sum denominators and gives a two-coordinate test of the remaining loss.
 
 The [modular overlap calculation](2026-11-23-good-bad-modular-overlap.md) gives the congruence depths on cyclic products inside the row lattice. Run `python receipt-archives/check_good_bad_congruence_block.py` to reproduce the elementary divisors and two-place intersection example.
 
