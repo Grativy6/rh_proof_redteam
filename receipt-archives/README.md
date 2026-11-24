@@ -8,6 +8,8 @@ The [side-by-side receipt](2026-11-24-lean-check-comparison.md) contains the fou
 
 The [statement-level census](2026-11-24-assumptions-before-the-proof.md) gives the axiom names already present in the type, the [RH premise reversal](ZetaHalfPlaneCut.lean), and Chris’s [APCI blank-slot joke](IUsedLeanToProveRH.lean). The [integral-frame test](2026-11-24-integral-spectral-frame.md) and [inert transfer calculation](2026-11-24-three-colliding-eigenlines.md) use the corpus’s collision criterion on the arithmetic. Run `python check_inert_spectral_frames.py` from this directory to enumerate the local examples.
 
+The [pole experiment](2026-11-24-value-at-the-zeta-pole.md) checks an actual use of the assigned value at 1. On the same proof route the [tail estimate](2026-11-24-log-window-tail.md), [prime readouts](2026-11-24-prime-pair-readouts.md), and [cross-modulus proof](2026-11-24-one-exception-across-moduli.md) work from the given analytic and arithmetic objects. Run `python check_prime_window_readouts.py` here for the prime certificates, finite differences and CRT control.
+
 ### Verify the sources
 
 Run `python receipt-archives/check_coupled_type_residue.py` for the [terminal local matrix calculation](2026-11-23-coupled-type-prime-residue.md). The [expanded corpus](../corpus/README.md) has 40 source files. Run `python receipt-archives/check_corpus_sources.py --upstream` to check the direct public files and the two extracted package members. The optional `--shelf PATH` checks the ten author-supplied records against an original Corpus folder.
