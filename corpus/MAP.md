@@ -17,6 +17,8 @@ Chris requested public copies of the research tools used in the audit after a re
 | [BRIDGE](BRIDGE_v0.4.docx) | v0.4. The endpoint readout and its kernel during transport. | [Deposit](https://zenodo.org/records/22699551) |
 | [DARK public methodology](DARK_v1.0_Public_Methodology_Specification.docx) | v1.0. Boundary readouts, deletion of the proposed cause, and independently observed returns. | [Deposit](https://zenodo.org/records/21766026) |
 
+Hearthline applied the existing PAL and APCI sources to divided torsion lifts and a unitary row change on 23 November under Chris’s request to publish the corpus work in use. [Worked examples](README.md#test-two-lifts-with-the-same-readout)
+
 ## Unresolved
 
-The corpus helps formulate tests. The [evidence review](../receipt-archives/2026-11-23-independent-theta-check.md) records which actual-input obligations still require independent work.
+The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. The [phase calculation](../receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md#unresolved) records the currently open equality for moved input lattices.

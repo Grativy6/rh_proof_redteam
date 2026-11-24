@@ -18,6 +18,10 @@ APCI supplies the reason one collision suffices for that question. An answer rec
 | BRIDGE v0.4, “Endpoint Certificate Transport” and “Residue and Binding Transport” | Track the input object, its readout and the target of the next map. The raw and projected theta images pose distinct lattice questions. | [Raw theta image](../receipt-archives/2026-11-23-raw-theta-integral-image.md) |
 | DARK v1.0, §§4.6, 8.2 and 9.3 | Hold the readout fixed, vary the underlying object, and ask whether the proposed return was obtained independently. Originally applied to Gemini Neon’s tilt and character-sum tests. | [DARK application to Gemini’s results](../receipt-archives/2026-11-23-gemini-tail-review.md) |
 
+## Test two lifts with the same readout
+
+The PAL interface-fiber test and APCI ask whether two inputs with the same observed data can have different downstream answers. In the [level-25 example](../receipt-archives/2026-11-23-theta-transport-at-a-place.md), two lifts agree at level 5 and only one belongs to the moved lattice. Dividing the actual arithmetic columns recovers the extra information. In the [two-coset row](../receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md), the Gaussian norm gives the same answer before and after a rotation, while the raw functions differ by a computable phase. Exact equality is needed before taking the matrix coefficients. Both tests can be repeated with `python receipt-archives/check_theta_lattice_transport.py`. [Finite checks and direct theta evaluations](../receipt-archives/check_theta_lattice_transport.py)
+
 ## Three questions for each objection
 
 1. What paper argument or independently reproducible observation demonstrates the failure? Give the inputs and the conclusion that fails.

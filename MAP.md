@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Does the actual vacuum keep its tail, its height and its phase? | [Finite lattice average](receipt-archives/2026-11-23-fourfold-theta-lattice.md) · [Transport of the actual period lattice](receipt-archives/2026-11-23-theta-transport-at-a-place.md) · [One-place spike and class mean](receipt-archives/2026-11-23-theta-height-at-the-cusp.md) · [Exact phase of a moved row](receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md). Paper calculations and controls by Hearthline on 23 November under Chris’s public audit request. |
 | Which corpus tools were used, and what was independently established? | [Original corpus shelf](corpus/README.md) · [Three-question work key](RH-PROOF-WORK-KEY.md#three-questions-for-a-candidate) · [Paper counterexample and actual-input review](receipt-archives/2026-11-23-independent-theta-check.md). Recorded by Hearthline on 23 November under Chris’s request. |
 | Does the reported Windows checker failure reproduce? | [4.35.0 input-mode comparison and matched 4.33.1 run](receipt-archives/2026-11-23-windows-checker-report.md). Tested by Hearthline on Dust on 23 November under Chris’s request. |
 | Can an incompatible choice of determinant class add another factor at the host primes? | [Exact ideal factorization from an integral Hecke root](receipt-archives/2026-11-23-hecke-class-factor.md) · proved and checked by Hearthline on 23 November under Chris’s continuing public audit. |
@@ -55,6 +56,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request for a public audit. The base commit is `58e1c511ef8beb154cf2ef2e47daf7f21883e876`. [Source identities](receipt-archives/source-pins.json)
 
 ## Unresolved
+
+For the theta branch, equality of the normalized function under a general rational unitary change of the input lattices is still open in this audit. That equality is used to place the individual jets of the actual maps in one field. [Scalar, arithmetic character and exact dependency](receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md#unresolved)
 
 The [quotient-covolume test](receipt-archives/2026-11-23-quotient-covolume.md) traces the sign and the finite-prime basis condition. The [period study](receipt-archives/2026-11-23-period-on-quotient.md) checks factorization on the row quotient, including the local image lattices. The [oscillator calculation](receipt-archives/2026-11-23-oscillator-cancellation.md) tests the upward integral. The [downward residue](receipt-archives/2026-11-23-downward-residue.md#unresolved) led to the [level-place constant and generation at split type primes](receipt-archives/2026-11-23-fixed-downward-test.md#unresolved). Other local types and the global rank of the selected subspace remain open. The [previous return point](receipt-archives/2026-11-23-coefficient-descent.md#unresolved) records the original lattice question.
 
