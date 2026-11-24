@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Good and bad rows with the same residual split Hecke eigenvalues](2026-11-23-good-bad-hecke-eigenvalues.md) | The integral Hecke image, its exact selector denominator, and the determinant test on the larger fixed level. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Congruence depths on a saturated good/bad block](2026-11-23-good-bad-modular-overlap.md) · [Cyclotomic elementary divisors](check_good_bad_congruence_block.py) | Exact modular intersection dimension, tensor depths, and distinct order-seven examples of the same total length. Checked by Hearthline on 23 November under Chris’s continuing request. |
 | [The good-type projector on the actual row lattice](2026-11-23-good-type-spectral-denominator.md) · [Finite checks](check_spectral_cut_denominator.py) | Positive bad-rank lower bound, simultaneous denominator powers at the host primes, and good/bad reductions intersecting at those depths. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Exact orbit size and norm of any integral retraction](2026-11-23-integral-retraction-norm.md) | Strong approximation identifies the component stabilizer. The product formula leaves the orbit cost in the sum of the mean logarithmic norm and denominator. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |

@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [split Hecke calculation](2026-11-23-good-bad-hecke-eigenvalues.md) derives the full integral image on a family of row eigenforms. A cyclic group of order 25 checks the denominator by hand. The final matrix tests the same twist on the larger level.
+
 The [modular overlap calculation](2026-11-23-good-bad-modular-overlap.md) gives the congruence depths on cyclic products inside the row lattice. Run `python receipt-archives/check_good_bad_congruence_block.py` to reproduce the elementary divisors and two-place intersection example.
 
 The [good-type spectral cut](2026-11-23-good-type-spectral-denominator.md) follows the rank estimate and the integral projection to the same row lattice. Run `python receipt-archives/check_spectral_cut_denominator.py` for the finite square-class count and the Fourier coefficient whose diagonal hides 11.

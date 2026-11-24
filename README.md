@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+The [split Hecke measurements](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) put good and bad row eigenforms in one residual system at each host prime. Their exact collective denominator is visible in the eigenvalues. A single local matrix shows why directly twisting the larger space would change its prescribed level character.
+
 The [local congruence calculation](receipt-archives/2026-11-23-good-bad-modular-overlap.md) identifies a saturated block where the bad rank fraction tends to zero and almost every bad direction also appears in the good reduction. Equal total lengths can give different congruence depths.
 
 **Where do the integral good and bad cusp forms still overlap?** At both host primes, the actual good-type projector needs a denominator that grows with the number of type places. Primitive good and bad vectors have identical nonzero reductions through the corresponding depths. The source clears the full type-group order at its integral cut. [Spectral denominator, rank test and a finite example](receipt-archives/2026-11-23-good-type-spectral-denominator.md)

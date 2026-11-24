@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can integral split Hecke operators distinguish the good row eigenforms? | [Exact denominator on a family with one residual system, and the fixed larger-level test](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | How many bad directions reappear in the good reduction? | [Congruence depths and exact intersection dimension in a saturated block](receipt-archives/2026-11-23-good-bad-modular-overlap.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | Is the good/bad spectral split integral on the row lattice? | [Forced denominators at both host primes and primitive common reductions](receipt-archives/2026-11-23-good-type-spectral-denominator.md) · derived by Hearthline on 23 November under Chris’s continuing public audit of the arithmetic maps. |
 | Can a different reverse map hide the cost in a few embeddings? | [Exact component orbit and mean-logarithmic height bound for all retractions](receipt-archives/2026-11-23-integral-retraction-norm.md) · derived by Hearthline on 23 November under Chris’s request to test the same maps at every place. |
