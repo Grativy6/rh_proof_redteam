@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Replay the local match and the global distinction
+
+From this directory, run `python -B boundary-577/unramified_layers.py` for the four base characters and the **0 versus 457** test. Run `python -B boundary-577/artin_units.py` for the nine local readings and discriminants, `python -B boundary-577/hilbert_reciprocity.py` for the independent local and finite-prime symbol calculations, `python -B boundary-577/quadratic_words.py` for the second-order brackets and raw trace derivatives, and `python -B boundary-577/trace_powers.py` for their two surviving squares. All five use Python and NumPy. [Ideal-class argument](2026-11-24-the-unramified-character-that-local-data-miss.md) · [Local unit normalization](2026-11-24-four-local-units-at-577.md) · [Raw trace test](2026-11-24-two-raw-traces-on-the-released-subgroup.md)
+
 ### Check the order-577 class through the next digit
 
 From this directory, run `python -B boundary-577/local_gap.py` with NumPy to check the six local readings, the two-prime matrix and the tame errors. The [local power calculation](2026-11-24-the-last-577th-power-digit.md#reproduce-the-computation) gives the C++ and independent GMP commands that rebuild its inputs. For the cyclotomic weights, run `python -B boundary-577/center_digits.py` with the Python standard library. Adding `--direct 3` repeats the third-level zero by direct enumeration. [Weight computation](2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums)

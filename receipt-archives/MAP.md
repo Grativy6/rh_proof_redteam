@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Local Artin units](2026-11-24-four-local-units-at-577.md) · [Upper class group and four global tests](2026-11-24-the-unramified-character-that-local-data-miss.md) | Two definite ray characters share all nine local restrictions. Their normalized global difference is 457 on the specified prime test. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
+| [Quadratic commutator controls](2026-11-24-three-global-quadratic-readings.md) · [Raw traces on the subgroup chosen in the release](2026-11-24-two-raw-traces-on-the-released-subgroup.md) | Numerical second-order lower readings, two independent trace derivatives and the [nonzero-cube threshold](2026-11-24-two-raw-traces-on-the-released-subgroup.md#a-numerical-milestone-for-the-next-obstruction). Same date and authorization. |
 | [Local power gap](2026-11-24-the-last-577th-power-digit.md) · [Two obstruction primes](2026-11-24-two-independent-obstruction-primes.md) · [Coefficient data](boundary-577/second_level_readings.json) | Six extracted local digits test the last possible strict lift. The two chosen primes also measure the tame cost at the original weight. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
 | [Cyclotomic weight and its digits](2026-11-24-the-cyclotomic-module-of-the-fixed-class.md) · [Real and CM class groups](2026-11-24-the-affine-resolvent-and-its-class-groups.md) · [Ordinary second-order test](2026-11-24-the-obstruction-at-the-nonsplit-point.md) | Follows the same class through the tower and identifies the two local readings needed on each quadratic test direction. Same date and authorization. |
 | [Companion flag](2026-11-24-the-companion-with-the-same-full-trace.md) · [Tangent and circular-unit calculations](2026-11-24-three-deformation-directions-at-577.md) · [Two directed trace words](2026-11-24-why-the-trace-field-must-ramify.md#two-particular-words-suffice) | Independent first-order arithmetic and a necessary ramification bound on every irreducible marked witness. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
@@ -96,6 +98,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [two abelian corrections after restriction](2026-11-24-three-global-quadratic-readings.md#a-smaller-field-where-the-two-remaining-corrections-are-abelian) still have to satisfy global extension conditions. The [trace functions](2026-11-24-two-raw-traces-on-the-released-subgroup.md#compute-the-two-first-order-differences) supply coordinates on the actual nonsplit ring.
 
 The [quadratic calculation at the actual nonsplit residue](2026-11-24-the-obstruction-at-the-nonsplit-point.md#the-second-order-arithmetic-test) needs the global cochain and its two local projections. The [linear readings](2026-11-24-two-independent-obstruction-primes.md) establish a control for that calculation.
 
