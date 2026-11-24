@@ -78,7 +78,7 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 
 ## Unresolved
 
-The [four global norm kernels](receipt-archives/2026-11-24-four-norm-kernels-for-the-two-quadratics.md#four-fields-and-one-determinant) at slopes 1 through 4 are unevaluated. Normalized preimages of the [named abelian targets](receipt-archives/2026-11-24-two-opposite-ideal-class-readings-at-577.md) isolate the two missing local coordinates. The distinct [twist-575 test](receipt-archives/2026-11-24-the-dyadic-ideal-of-order-577.md) excludes its minimal rank-two corner.
+The [four global norm kernels](receipt-archives/2026-11-24-four-norm-kernels-for-the-two-quadratics.md#four-fields-and-one-determinant) at slopes 1 through 4 are unevaluated. Each can now be read by a [weighted local sum on a bicyclic norm preimage](receipt-archives/2026-11-24-four-norm-kernels-for-the-two-quadratics.md#evaluate-a-rank-four-test-through-a-bicyclic-preimage). Normalized preimages of the [named abelian targets](receipt-archives/2026-11-24-two-opposite-ideal-class-readings-at-577.md) isolate the two missing local coordinates. The distinct [twist-575 test](receipt-archives/2026-11-24-the-dyadic-ideal-of-order-577.md) excludes its minimal rank-two corner.
 
 The [trace comparisons on the linked field](receipt-archives/2026-11-24-two-raw-traces-on-the-released-subgroup.md) detect either surviving invariant direction. The [outstanding arithmetic](receipt-archives/2026-11-24-three-global-quadratic-readings.md#what-still-determines-the-two-characters) is the lower and diagonal response on two explicit local units for each of three tangents.
 

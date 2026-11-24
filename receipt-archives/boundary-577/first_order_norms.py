@@ -137,6 +137,30 @@ def four_slopes(row_vectors):
     return rank(matrix) < 4
 
 
+def check_bicyclic_preimage():
+    u, v = upper_units()
+    table = bracket_table()
+    for slope in (1, 2, 3, 4):
+        for t in range(P):
+            cubic = u * translate(3, -t) % P
+            quartic = slope * v * translate(4, -t) % P
+            determinant = (cubic[0] * quartic[1] - cubic[1] * quartic[0]) % P
+            assert determinant == u * v * slope * pow(t, 6, P) % P
+            if not t:
+                assert cubic[:3].tolist() == [0, 0, 0] and cubic[3] == 35
+                assert not np.any(quartic[:4])
+    # Transporting an Artin element to the reference place uses inverse
+    # conjugation. Read its A0 bracket directly in the original matrix basis.
+    for i, j, h2, h3 in [(1, 0, 0, 1), (0, 1, 1, 0), (35, 387, 94, 462)]:
+        left = np.array([i, j, 0, 0, 0])
+        right = np.array([0, 0, h2, h3, 0])
+        correction = int(-wedge(left, right) @ table[:, 0]) % P
+        assert correction == (2 * i * h3 - j * h2) * pow(16, -1, P) % P
+    print(
+        "Bicyclic preimage test: local projection has rank two off the origin; only the cubic line remains at zero."
+    )
+
+
 def check_criterion():
     for e in (1, 2, 5, 19):
         xs = [1, 2, 3, 4]
@@ -161,4 +185,5 @@ def check_criterion():
 
 if __name__ == "__main__":
     compute_knots()
+    check_bicyclic_preimage()
     check_criterion()
