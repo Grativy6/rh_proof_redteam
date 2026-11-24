@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Compare the Lean checks
+
+The [side-by-side receipt](2026-11-24-lean-check-comparison.md) contains the four reproduction steps for the corpus, RH endpoint metadata and a shared matrix lemma. The [full source theorem inventory](2026-11-24-corpus-theorem-axioms.jsonl) gives each inferred proposition, source line, and axiom set by toolchain. [Pins and file outcomes](2026-11-24-lean-comparison.json)
+
 ### Verify the sources
 
 Run `python receipt-archives/check_coupled_type_residue.py` for the [terminal local matrix calculation](2026-11-23-coupled-type-prime-residue.md). The [expanded corpus](../corpus/README.md) has 40 source files. Run `python receipt-archives/check_corpus_sources.py --upstream` to check the direct public files and the two extracted package members. The optional `--shelf PATH` checks the ten author-supplied records against an original Corpus folder.

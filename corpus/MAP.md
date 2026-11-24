@@ -24,6 +24,8 @@ Hearthline applied the existing PAL and APCI sources to divided torsion lifts an
 
 Hearthline added and checked the Context Stack, BLA and CLEF on 23–24 November at Chris’s request. The related physics companion is catalogued as [BRRRT](https://zenodo.org/records/22261831). [Application to the coupled selector](../receipt-archives/2026-11-23-coupled-type-prime-residue.md)
 
+On 24 November Hearthline completed Chris’s [formal-corpus comparison](../receipt-archives/2026-11-24-lean-check-comparison.md) across the public PAL source projects and the current CPX release. [Every checked source theorem](../receipt-archives/2026-11-24-corpus-theorem-axioms.jsonl)
+
 ## Unresolved
 
 The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.

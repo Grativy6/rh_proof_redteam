@@ -1,0 +1,2445 @@
+{
+  "date": "2026-11-24",
+  "original_versions": {
+    "lean": "4.32.1",
+    "mathlib": "520045ab14e26149ee970e2e617ca04b09bde5d6"
+  },
+  "matched_versions": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean4lean": "67f63b0c818920dfaed2ad07ccff187a6a8fe1e3"
+  },
+  "pal_revision": "5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0",
+  "cpx": "10.5281/zenodo.23306102",
+  "cpx_zip_sha256": "f3cf930ac8ef6bec06a13e0f948334aa150834d84bda01e9fce120610a88c32e",
+  "scope": "Tracked personal Lean files in the public PAL collection (root, APCI, FRONT, APCI manuscript supplement), plus the current CPX formal directory. Separate package copies count separately.",
+  "source_size": {
+    "line_rule": "LF count plus an unterminated final line; comments and blanks included",
+    "pal": {
+      "revision": "5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0",
+      "files": 114,
+      "physical_lines": 12271,
+      "excluded": {
+        "vendored external audit files": 974,
+        "Lake configuration files": 3
+      },
+      "identical_files_counted_once": {
+        "files": 110,
+        "physical_lines": 11614
+      },
+      "groups": {
+        "APCI": {
+          "files": 5,
+          "physical_lines": 246
+        },
+        "FRONT": {
+          "files": 15,
+          "physical_lines": 2144
+        },
+        "root": {
+          "files": 93,
+          "physical_lines": 9808
+        },
+        "supplement": {
+          "files": 1,
+          "physical_lines": 73
+        }
+      },
+      "entry_modules": {
+        "root.PALLeanAudit": {
+          "entry_file": "PALLeanAudit.lean",
+          "entry_file_lines": 17,
+          "project_import_closure": {
+            "files": 12,
+            "physical_lines": 2242
+          },
+          "external_module_names_directly_imported_by_closure": 4
+        },
+        "root.Experiments.FiniteAbstractionControls": {
+          "entry_file": "Experiments/FiniteAbstractionControls.lean",
+          "entry_file_lines": 62,
+          "project_import_closure": {
+            "files": 4,
+            "physical_lines": 498
+          },
+          "external_module_names_directly_imported_by_closure": 7
+        },
+        "APCI.APCILeanAudit.Interface": {
+          "entry_file": "projects/APCI/APCILeanAudit/Interface.lean",
+          "entry_file_lines": 114,
+          "project_import_closure": {
+            "files": 1,
+            "physical_lines": 114
+          },
+          "external_module_names_directly_imported_by_closure": 1
+        },
+        "FRONT.FrontLean": {
+          "entry_file": "projects/FRONT/FrontLean.lean",
+          "entry_file_lines": 8,
+          "project_import_closure": {
+            "files": 14,
+            "physical_lines": 1815
+          },
+          "external_module_names_directly_imported_by_closure": 6
+        },
+        "supplement.APCIManuscript": {
+          "entry_file": "supplements/APCI-manuscript-20261008/Audits/2026-10-08-manuscript/APCIManuscript.lean",
+          "entry_file_lines": 73,
+          "project_import_closure": {
+            "files": 5,
+            "physical_lines": 302
+          },
+          "external_module_names_directly_imported_by_closure": 1
+        }
+      }
+    },
+    "rh": {
+      "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "files": 175187,
+      "physical_lines": 17374215,
+      "excluded": {},
+      "identical_files_counted_once": {
+        "files": 175173,
+        "physical_lines": 17373856
+      },
+      "groups": {
+        "root": {
+          "files": 175187,
+          "physical_lines": 17374215
+        }
+      },
+      "entry_modules": {
+        "root.Main": {
+          "entry_file": "src/Main.lean",
+          "entry_file_lines": 12,
+          "project_import_closure": {
+            "files": 175187,
+            "physical_lines": 17374215
+          },
+          "external_module_names_directly_imported_by_closure": 348
+        }
+      }
+    },
+    "cpx": {
+      "edition": "10.5281/zenodo.23306102",
+      "files": 7,
+      "physical_lines": 487,
+      "source_files": [
+        {
+          "path": "formal/CPX/Capsule.lean",
+          "lines": 62
+        },
+        {
+          "path": "formal/CPX/Diagnostics.lean",
+          "lines": 102
+        },
+        {
+          "path": "formal/CPX/Information.lean",
+          "lines": 93
+        },
+        {
+          "path": "formal/CPX/ProtectedReturn.lean",
+          "lines": 35
+        },
+        {
+          "path": "formal/CPX/Resolution.lean",
+          "lines": 84
+        },
+        {
+          "path": "formal/CPX.lean",
+          "lines": 5
+        },
+        {
+          "path": "formal/Inspect.lean",
+          "lines": 106
+        }
+      ]
+    },
+    "corpus_total": {
+      "files": 121,
+      "physical_lines": 12758
+    }
+  },
+  "file_count": 121,
+  "physical_lines": 12758,
+  "files_with_identical_bytes_counted_once": 117,
+  "unique_source_lines": 12101,
+  "original_checked_modules": 121,
+  "matched_checked_modules": 110,
+  "original_source_named_statements": 746,
+  "matched_source_named_statements": 655,
+  "original_distinct_file_line_locations": 711,
+  "native_compiler_theorem_or_axiom_records_including_generated": 1389,
+  "matched_compiler_theorem_or_axiom_records_including_generated": 1236,
+  "original_axioms": [
+    {
+      "axioms": [],
+      "count": 172
+    },
+    {
+      "axioms": [
+        "Classical.choice"
+      ],
+      "count": 15
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "count": 6
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "count": 90
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "propext"
+      ],
+      "count": 9
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 88
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 366
+    }
+  ],
+  "matched_axioms": [
+    {
+      "axioms": [],
+      "count": 161
+    },
+    {
+      "axioms": [
+        "Classical.choice"
+      ],
+      "count": 15
+    },
+    {
+      "axioms": [
+        "Quot.sound"
+      ],
+      "count": 6
+    },
+    {
+      "axioms": [
+        "propext"
+      ],
+      "count": 83
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "propext"
+      ],
+      "count": 9
+    },
+    {
+      "axioms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 72
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "count": 309
+    }
+  ],
+  "directly_typed_as_mathlib_RH_original": 0,
+  "directly_typed_as_mathlib_RH_matched": 0,
+  "registered_axioms_in_personal_source": [],
+  "cross_version_axiom_set_changes": [
+    {
+      "project": "FRONT",
+      "name": "FrontLean.derivation_sound",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "FRONT",
+      "name": "FrontLean.rounds_le_closed",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "FRONT",
+      "name": "FrontLean.rounds_seed",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "FRONT",
+      "name": "FrontLean.valid_under_unchanged_basis",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "root",
+      "name": "Experiments.AbstractLoopsReturnExport.generated_fixture_receipt",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "root",
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_persistence",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "root",
+      "name": "Experiments.AbstractLoopsReturnExport.roster_tag_without_source_copy",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "project": "root",
+      "name": "Experiments.FiniteAbstractionControls.finite_set_does_not_cover",
+      "432": [
+        "propext",
+        "Quot.sound"
+      ],
+      "433": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "compiler_errors": {
+    "root|Experiments.GPPREncoding": "Experiments\\GPPREncoding.lean:84:4: error: Type mismatch: After simplification, term\n  he\n has type\n  (valuation m) ⟨p, hp⟩ = (valuation n) ⟨p, hp⟩\nbut is expected to have type\n  m.factorization p = n.factorization p\nExperiments\\GPPREncoding.lean:165:15: warning: Try `simp at h'` instead of `simpa using h'`\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n",
+    "root|Experiments.Pal24Continuation": "Experiments\\Pal24Continuation.lean:128:6: error: `simp` made no progress\n",
+    "FRONT|FrontLean.Correction": "projects\\FRONT\\FrontLean\\Correction.lean:117:24: error: Tactic `rewrite` failed: Did not find an occurrence of the pattern\n  @Membership.mem ?m.6 (Finset ?m.6) SetLike.instMembership { val := ?m.8, nodup := ?m.9 } ?m.7\nin the target expression\n  @Membership.mem TestAtom (Finset TestAtom) SetLike.instMembership\n    { val := ↑TestAtom.enumList, nodup := TestAtom.enumList_nodup } x✝\n\nx✝ : TestAtom\n⊢ x✝ ∈ { val := ↑TestAtom.enumList, nodup := TestAtom.enumList_nodup }\n\nNote: The target expression is not type-correct under the `implicit` transparency level, which may have triggered the failure. This is usually caused by unfolding of semireducible definitions in prior tactic steps. Use `set_option linter.tacticCheckInstances true` to investigate the source of the issue.\nFull error:\n  Application type mismatch: The argument\n    TestAtom.enumList_nodup\n  has type\n    TestAtom.enumList.Nodup\n  but is expected to have type\n    (↑TestAtom.enumList).Nodup\n  in the application\n    { val := ↑TestAtom.enumList, nodup := TestAtom.enumList_nodup }\n",
+    "FRONT|FrontLean.Linear": "projects\\FRONT\\FrontLean\\Linear.lean:86:4: error: unsolved goals\ncase mpr.refine_2\nk : Type u_1\nT : Type u_2\ninst✝² : Field k\ninst✝¹ : AddCommGroup T\ninst✝ : Module k T\nB : Submodule k T\nL : T →ₗ[k] T\nh : ∀ x ∈ B, L x ∈ B\nx : T\n⊢ (B.liftQ (B.mkQ ∘ₗ L) ⋯) (Submodule.Quotient.mk x) = Submodule.Quotient.mk (L x)\n"
+  },
+  "groups": {
+    "APCI": {
+      "files": 5,
+      "lines": 246,
+      "native_statements": 15,
+      "matched_files": 5,
+      "matched_statements": 15,
+      "native_axioms": [
+        {
+          "axioms": [],
+          "count": 6
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 3
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 3
+        }
+      ],
+      "matched_axioms": [
+        {
+          "axioms": [],
+          "count": 6
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 3
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 3
+        }
+      ]
+    },
+    "CPX": {
+      "files": 7,
+      "lines": 487,
+      "native_statements": 33,
+      "matched_files": 7,
+      "matched_statements": 33,
+      "native_axioms": [
+        {
+          "axioms": [],
+          "count": 7
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 22
+        }
+      ],
+      "matched_axioms": [
+        {
+          "axioms": [],
+          "count": 7
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 22
+        }
+      ]
+    },
+    "FRONT": {
+      "files": 15,
+      "lines": 2144,
+      "native_statements": 124,
+      "matched_files": 10,
+      "matched_statements": 87,
+      "native_axioms": [
+        {
+          "axioms": [],
+          "count": 8
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 4
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 3
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "propext"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 16
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 90
+        }
+      ],
+      "matched_axioms": [
+        {
+          "axioms": [],
+          "count": 7
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 4
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 1
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "propext"
+          ],
+          "count": 2
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 5
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 67
+        }
+      ]
+    },
+    "root": {
+      "files": 93,
+      "lines": 9808,
+      "native_statements": 570,
+      "matched_files": 87,
+      "matched_statements": 516,
+      "native_axioms": [
+        {
+          "axioms": [],
+          "count": 148
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 8
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 4
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 86
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "propext"
+          ],
+          "count": 7
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 67
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 250
+        }
+      ],
+      "matched_axioms": [
+        {
+          "axioms": [],
+          "count": 138
+        },
+        {
+          "axioms": [
+            "Classical.choice"
+          ],
+          "count": 8
+        },
+        {
+          "axioms": [
+            "Quot.sound"
+          ],
+          "count": 4
+        },
+        {
+          "axioms": [
+            "propext"
+          ],
+          "count": 81
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "propext"
+          ],
+          "count": 7
+        },
+        {
+          "axioms": [
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 62
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 216
+        }
+      ]
+    },
+    "supplement": {
+      "files": 1,
+      "lines": 73,
+      "native_statements": 4,
+      "matched_files": 1,
+      "matched_statements": 4,
+      "native_axioms": [
+        {
+          "axioms": [],
+          "count": 3
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 1
+        }
+      ],
+      "matched_axioms": [
+        {
+          "axioms": [],
+          "count": 3
+        },
+        {
+          "axioms": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ],
+          "count": 1
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "project": "APCI",
+      "module": "APCILeanAudit",
+      "path": "projects/APCI/APCILeanAudit.lean",
+      "sha256": "3d76bd08a24cf7614ca68f2ad3858a1df886ef662e09790534a0a7b15aba8708",
+      "physical_lines": 3,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "APCI",
+      "module": "APCILeanAudit.Controls",
+      "path": "projects/APCI/APCILeanAudit/Controls.lean",
+      "sha256": "91cf4c1b72c5f390b0f0cd3eeaba0cdeeaadcc8e170e19593b69d9afeb4b01db",
+      "physical_lines": 35,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "APCI",
+      "module": "APCILeanAudit.FiniteCapacity",
+      "path": "projects/APCI/APCILeanAudit/FiniteCapacity.lean",
+      "sha256": "1abe8999380b5a7c32c44846bd9e4974639ae3fb0d71eaa9edc2f123428633f4",
+      "physical_lines": 77,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "APCI",
+      "module": "APCILeanAudit.Interface",
+      "path": "projects/APCI/APCILeanAudit/Interface.lean",
+      "sha256": "94a81ed49c32457bf40404200f8632edee1bee1784080efbaa0ae02c244f7ab4",
+      "physical_lines": 114,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "APCI",
+      "module": "Audit",
+      "path": "projects/APCI/Audit.lean",
+      "sha256": "e58bd1358068be872b9c82a7a10289cef11556d6deee0d48541707ae48f6c886",
+      "physical_lines": 17,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX.lean",
+      "sha256": "a26f4b5ad8987a9dc2632eda7e0b0a0bf3977f823505ec89ef0c1b7e78205126",
+      "physical_lines": 5,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX.Capsule",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX/Capsule.lean",
+      "sha256": "070364ebe31d2b7c089426cf33460b6288ed436846f534857a3c5243d81e5e1d",
+      "physical_lines": 62,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX.Diagnostics",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX/Diagnostics.lean",
+      "sha256": "ae2861771b7a91b0e234f4f55c2462fd08c3e57a042312de141e48adfda1961d",
+      "physical_lines": 102,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX.Information",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX/Information.lean",
+      "sha256": "7b3d9974112c18f4ba828fc2e43a15f1793af2381b82efa78d4bcebf5df64ac6",
+      "physical_lines": 93,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX.ProtectedReturn",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX/ProtectedReturn.lean",
+      "sha256": "7631350489ce0340ccf87643becba70503a0b13aaeda0ae05880223be1030d18",
+      "physical_lines": 35,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "CPX.Resolution",
+      "path": "CPX_v1.0_Companion.zip!formal/CPX/Resolution.lean",
+      "sha256": "49e4531283c2ed381f2a54937ffd91e04fe371ef86ef9ed33ce2f8e6485862e6",
+      "physical_lines": 84,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "CPX",
+      "module": "Inspect",
+      "path": "CPX_v1.0_Companion.zip!formal/Inspect.lean",
+      "sha256": "1d1ca19132090cab1eec5fcacf80afa5da23c25f2725f8f47ccadff6e129949b",
+      "physical_lines": 106,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "APCILeanAudit.Interface",
+      "path": "projects/FRONT/APCILeanAudit/Interface.lean",
+      "sha256": "6373c48c43196d36f30dcc14ed5682c845e82a5b3af8e8dcf78e09f9d4f90a2f",
+      "physical_lines": 114,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "Audit.Axioms",
+      "path": "projects/FRONT/Audit/Axioms.lean",
+      "sha256": "ebbfdb52fc86be58979a8af6de1a5a84bc15a6b371bc0e40dddcabc5a784b75c",
+      "physical_lines": 329,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "FRONT",
+      "module": "Experiments.BridgeDimension",
+      "path": "projects/FRONT/Experiments/BridgeDimension.lean",
+      "sha256": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+      "physical_lines": 144,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "Experiments.BridgeFourSector",
+      "path": "projects/FRONT/Experiments/BridgeFourSector.lean",
+      "sha256": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+      "physical_lines": 171,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "Experiments.BridgeReadout",
+      "path": "projects/FRONT/Experiments/BridgeReadout.lean",
+      "sha256": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+      "physical_lines": 123,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "Experiments.BridgeRecovery",
+      "path": "projects/FRONT/Experiments/BridgeRecovery.lean",
+      "sha256": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+      "physical_lines": 219,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean",
+      "path": "projects/FRONT/FrontLean.lean",
+      "sha256": "464ffbd60f0a020cc1afe914d306b545d9c5a46dca0534c0511ffe7a36c1091a",
+      "physical_lines": 8,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Answers",
+      "path": "projects/FRONT/FrontLean/Answers.lean",
+      "sha256": "5f7807083ed32c92f88c443ecad35e2fa433fa0d8a5e1e438443f4714da6cf3c",
+      "physical_lines": 81,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Continuation",
+      "path": "projects/FRONT/FrontLean/Continuation.lean",
+      "sha256": "f7a5231eaf04fa457b9ae58a137f5de16a83412000acd8336ffe590fff376739",
+      "physical_lines": 80,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Controls",
+      "path": "projects/FRONT/FrontLean/Controls.lean",
+      "sha256": "7c63befb16a37b6c664a3676b446768dcd3d3eebf9a6b89838f2a31891c2068a",
+      "physical_lines": 69,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Correction",
+      "path": "projects/FRONT/FrontLean/Correction.lean",
+      "sha256": "7b87bc675b517bf9ca109bdcf7858b851e68dbe95316724843b813b4a630256d",
+      "physical_lines": 149,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 1,
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Costs",
+      "path": "projects/FRONT/FrontLean/Costs.lean",
+      "sha256": "b0fd66ac0e0a33f0ad229ccce470318efac5a487ce1454739b370034f27d5d83",
+      "physical_lines": 63,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Horizon",
+      "path": "projects/FRONT/FrontLean/Horizon.lean",
+      "sha256": "1cef3c90d76fdf8ce84f87eeeb66c2423674cbcf24c694de14cd5a2b683b977e",
+      "physical_lines": 151,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Linear",
+      "path": "projects/FRONT/FrontLean/Linear.lean",
+      "sha256": "d02b991a42f20b34c298e84c386b10aae7774c0be20c4ad27390d5ec645c7c9b",
+      "physical_lines": 196,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 1,
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "FRONT",
+      "module": "FrontLean.Propagation",
+      "path": "projects/FRONT/FrontLean/Propagation.lean",
+      "sha256": "0e2bf9f0ae9bef96aaf97f65695f9eb55a6d97e51d30c588bab536e2ffed09d5",
+      "physical_lines": 247,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit",
+      "path": "Audit.lean",
+      "sha256": "f330e273d2c8d953e0f8b87c614f78f0b22f144a6680a0d305deb57fe3517345",
+      "physical_lines": 5,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit.AttackRun0001",
+      "path": "Audit/AttackRun0001.lean",
+      "sha256": "f542601220ea07ddd17d066099dd6785cc8ddb124291297d5d9e491bdf26e3cc",
+      "physical_lines": 34,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit.AttackRun0002",
+      "path": "Audit/AttackRun0002.lean",
+      "sha256": "de956dfd384b41558d320caf44781e73b948aa0abd67626473358ecf438254b0",
+      "physical_lines": 19,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit.AttackRun0003",
+      "path": "Audit/AttackRun0003.lean",
+      "sha256": "2f0a94acb3eb7fdc55fd8dd31d09dffc40ac763bdd615f690f30ef466577b22c",
+      "physical_lines": 84,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit.Bootstrap",
+      "path": "Audit/Bootstrap.lean",
+      "sha256": "554e0248382656502b4e289892b41d5070d034741c90f6c82cd93a77cec119f8",
+      "physical_lines": 8,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Audit.BridgeEndpoint",
+      "path": "Audit/BridgeEndpoint.lean",
+      "sha256": "a5fa15fd120836eb49134140ee91d36bbc4daae9b0cf4e0c4ef1757a3f34fdca",
+      "physical_lines": 251,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments",
+      "path": "Experiments.lean",
+      "sha256": "1055a24932b43d8d62542b5d63864b40313d412b35b7d8d1f931f924dd849f83",
+      "physical_lines": 5,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsDynamics",
+      "path": "Experiments/AbstractLoopsDynamics.lean",
+      "sha256": "209bea6686ca141e0c2bfa5153d965539ad2b1d735512413858e28afc5552324",
+      "physical_lines": 193,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsDynamicsAxioms",
+      "path": "Experiments/AbstractLoopsDynamicsAxioms.lean",
+      "sha256": "ba54e7050cd33f018e394c53e64ec32ad85ec188cde450f0fcc101cd1d1b3b46",
+      "physical_lines": 60,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsFiniteImage",
+      "path": "Experiments/AbstractLoopsFiniteImage.lean",
+      "sha256": "03965f524f893cca90a5b386701415336ea988879941d18297afe3031ed4d5e9",
+      "physical_lines": 226,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsFiniteImageAxioms",
+      "path": "Experiments/AbstractLoopsFiniteImageAxioms.lean",
+      "sha256": "65d1bec5046877c12acc251cf094771c96428d9892b3fa5e54a6cf47277937e0",
+      "physical_lines": 48,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsJoint",
+      "path": "Experiments/AbstractLoopsJoint.lean",
+      "sha256": "105a9bb26a0e04b51d4e0fe1ffc402af1ea073b980f32e02b18b7abc97918aa7",
+      "physical_lines": 95,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsJointAxioms",
+      "path": "Experiments/AbstractLoopsJointAxioms.lean",
+      "sha256": "af36c2ad6e0e3b120ab6e0bd7abb6f273b869ca0aa5c6009f4bbce273544ac2c",
+      "physical_lines": 42,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsPostprocessing",
+      "path": "Experiments/AbstractLoopsPostprocessing.lean",
+      "sha256": "8125e180f4ad8aa59f6c79ef464281906fadd0dfe22e391c70255e5abc892a03",
+      "physical_lines": 115,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsPostprocessingAxioms",
+      "path": "Experiments/AbstractLoopsPostprocessingAxioms.lean",
+      "sha256": "a42f71a49aeda5c89e131f5b9bab71b7f111d9a0f238d2bb85a7ee55afb74b79",
+      "physical_lines": 28,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsReturnExport",
+      "path": "Experiments/AbstractLoopsReturnExport.lean",
+      "sha256": "733091c6e9319eed4ab68b1a686db8b38d6fb3119492df8358e8d51cc429db50",
+      "physical_lines": 147,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.AbstractLoopsReturnExportAxioms",
+      "path": "Experiments/AbstractLoopsReturnExportAxioms.lean",
+      "sha256": "e10e69f09bdf5ac294ba3897aa8a11cb3ee3914325bf6f2a9432e060e79783c4",
+      "physical_lines": 56,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Bridge",
+      "path": "Experiments/Bridge.lean",
+      "sha256": "16d78019db4c8777646696618567ee73ae5720acca870587bbed02a29048802a",
+      "physical_lines": 87,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeAxioms",
+      "path": "Experiments/BridgeAxioms.lean",
+      "sha256": "5e3c0909e8aa2620a5a5ed77ca07abdbff45f06fbc4030e18a37e1cc73daa441",
+      "physical_lines": 11,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeDiagram",
+      "path": "Experiments/BridgeDiagram.lean",
+      "sha256": "176d048437c3530365759c4f41b646b4fa3f57bddc8c822428b2edbdf281d225",
+      "physical_lines": 149,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeDiagramAxioms",
+      "path": "Experiments/BridgeDiagramAxioms.lean",
+      "sha256": "cfbcdd9d1118d88fdd13d175304b221020f033a1ec8098f646edf2380d73a89e",
+      "physical_lines": 14,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeDimension",
+      "path": "Experiments/BridgeDimension.lean",
+      "sha256": "6151e1ee4ca01e238b62d2384440a6eba75b36287c5250003e56e7f434cc3ae8",
+      "physical_lines": 144,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeDimensionAxioms",
+      "path": "Experiments/BridgeDimensionAxioms.lean",
+      "sha256": "0bddfd064dd666c8e191fd64a5f95ac6eb41308c0420738647dbbde1f7b16916",
+      "physical_lines": 9,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeFourSector",
+      "path": "Experiments/BridgeFourSector.lean",
+      "sha256": "f07702722a897300d04296eaefaae58b496f5fbfed82df0601a94ef84d745952",
+      "physical_lines": 171,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeFourSectorAxioms",
+      "path": "Experiments/BridgeFourSectorAxioms.lean",
+      "sha256": "b932c997052078ac6ca14d744c756699bd312063d69d581bb96598527ce989c2",
+      "physical_lines": 20,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeGeneratedRecovery",
+      "path": "Experiments/BridgeGeneratedRecovery.lean",
+      "sha256": "0345dad25b112d1a30f0c454b1d08d62a5b4d66ec221c83befabca271c26a2a1",
+      "physical_lines": 232,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeGeneratedRecoveryAxioms",
+      "path": "Experiments/BridgeGeneratedRecoveryAxioms.lean",
+      "sha256": "0b5618d8c5611539e9c581b6c3badeca6e3f63035d0d489c978c8531077a0d6a",
+      "physical_lines": 27,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeReadout",
+      "path": "Experiments/BridgeReadout.lean",
+      "sha256": "ff5347feb297d4c9d89c9bf37ffc2910913ed75e567b3865537977bef2ce6ca8",
+      "physical_lines": 123,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeReadoutAxioms",
+      "path": "Experiments/BridgeReadoutAxioms.lean",
+      "sha256": "fb25e9c093eb78cecab2579935d6702d49812e71c7a4d3246616ebd3c2445b62",
+      "physical_lines": 13,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeRecovery",
+      "path": "Experiments/BridgeRecovery.lean",
+      "sha256": "28356957853333c2f3f2f5682bae4bc7bd4fa3ac62cce8d30c4f56505e32f08f",
+      "physical_lines": 219,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.BridgeRecoveryAxioms",
+      "path": "Experiments/BridgeRecoveryAxioms.lean",
+      "sha256": "c5864817c11d1bd2f77edaf86d227e39f7a05f8aa9816757c0495b71f481225b",
+      "physical_lines": 17,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Charter",
+      "path": "Experiments/Charter.lean",
+      "sha256": "e63f044b82cb78aa670fff81d8b6003d5d76b2deb7c697002fb352891d32ff76",
+      "physical_lines": 118,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CharterAxioms",
+      "path": "Experiments/CharterAxioms.lean",
+      "sha256": "defdba25c58158be6037784e00c35dcd60d4db205521af88a25a90d67d1e77b4",
+      "physical_lines": 21,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CharterFollowup",
+      "path": "Experiments/CharterFollowup.lean",
+      "sha256": "808d423d2faf2e904b2eca591e2552a91bd11eae3a703a0d80bc29d1913de617",
+      "physical_lines": 60,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CharterFollowupAxioms",
+      "path": "Experiments/CharterFollowupAxioms.lean",
+      "sha256": "e965ac0195ce864b41bbae7a20a4102bf08bbec90c09b680b6fc9353aa863471",
+      "physical_lines": 10,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationBoundary",
+      "path": "Experiments/CompactificationBoundary.lean",
+      "sha256": "fbe5de893b33451d0234cc4a2cb61acd9c542da1f8d35a503a91324fe5b4ff43",
+      "physical_lines": 117,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationBoundaryAxioms",
+      "path": "Experiments/CompactificationBoundaryAxioms.lean",
+      "sha256": "8cb067baeae82dd8d2011886c7c367038151d4147d4649add2998f358742898b",
+      "physical_lines": 24,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationFixtures",
+      "path": "Experiments/CompactificationFixtures.lean",
+      "sha256": "9ee543c9bdfb105ab699827ecb2a77e3c7d6d9bd80043ecdb1f4805d77001c19",
+      "physical_lines": 186,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationFixturesAxioms",
+      "path": "Experiments/CompactificationFixturesAxioms.lean",
+      "sha256": "af6633d00c64c2707f264c30846f8232407bdb2e34bcb252548faa0798a5a457",
+      "physical_lines": 70,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationProfile",
+      "path": "Experiments/CompactificationProfile.lean",
+      "sha256": "765f12be5e1250f321207f938e2be8f0029675de2479850dc49f57aa67c602e0",
+      "physical_lines": 117,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CompactificationProfileAxioms",
+      "path": "Experiments/CompactificationProfileAxioms.lean",
+      "sha256": "e539d1c67de734f84849e56de8f1223ae869d1f8766854325ead34552b5b16a8",
+      "physical_lines": 42,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CorpusBridgeProjector",
+      "path": "Experiments/CorpusBridgeProjector.lean",
+      "sha256": "c61a93ced5508ab7837fc65647a4521339880630b78fded432be967c8d4b2b0d",
+      "physical_lines": 194,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CorpusBridgeProjectorAxioms",
+      "path": "Experiments/CorpusBridgeProjectorAxioms.lean",
+      "sha256": "664a8e0538228ce1a18463949de703f88e60db96aa706c66dcbfd05087087e64",
+      "physical_lines": 54,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CorpusBridgeSixLines",
+      "path": "Experiments/CorpusBridgeSixLines.lean",
+      "sha256": "1a42f74aae1efa18a67bddd1f7e0ab6fb41e2addf522b957942a70f33ab06697",
+      "physical_lines": 210,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.CorpusBridgeSixLinesAxioms",
+      "path": "Experiments/CorpusBridgeSixLinesAxioms.lean",
+      "sha256": "286a8dd5b2b5035e564ec043c4e9334795116d2946b6ba45a8b9e6dcf6e42950",
+      "physical_lines": 48,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.FiniteAbstractionControls",
+      "path": "Experiments/FiniteAbstractionControls.lean",
+      "sha256": "f9e3d48c65f360769ec76da784b94b67690251ab695c8489df85987c7dabac8c",
+      "physical_lines": 62,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.FiniteAbstractionControlsAxioms",
+      "path": "Experiments/FiniteAbstractionControlsAxioms.lean",
+      "sha256": "39fe52af6a944d97bf50348067914efbc37257e13087352bea0d0c7347e2cd85",
+      "physical_lines": 26,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPREncoding",
+      "path": "Experiments/GPPREncoding.lean",
+      "sha256": "191321d366c65b652146c87d05953b37ca5ce06f9c2705d0115290a11cea2d56",
+      "physical_lines": 184,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 1,
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPREncodingAxioms",
+      "path": "Experiments/GPPREncodingAxioms.lean",
+      "sha256": "05946a738fe9de890963457fe4e80c5a25359e266fc1d8512b0640a0d8250f62",
+      "physical_lines": 60,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPRRouting",
+      "path": "Experiments/GPPRRouting.lean",
+      "sha256": "210672bc52cd5d1e91b943166f61259bf995654d653113df3561a1ba6547778a",
+      "physical_lines": 175,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPRRoutingAxioms",
+      "path": "Experiments/GPPRRoutingAxioms.lean",
+      "sha256": "f55a6eaca48376442b0a11b3089b5554dddf96615e54bbba14b209fd9834eca3",
+      "physical_lines": 78,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPRTranscendence",
+      "path": "Experiments/GPPRTranscendence.lean",
+      "sha256": "a6886617de6ec6ba30255b04ce0b746507e10929963d0690d0b3c3104245ef32",
+      "physical_lines": 58,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.GPPRTranscendenceAxioms",
+      "path": "Experiments/GPPRTranscendenceAxioms.lean",
+      "sha256": "b3ca79c47abaccc46644206ce6b2a9207043831240cd7b845605689f29ba9f21",
+      "physical_lines": 34,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.MindContinuation",
+      "path": "Experiments/MindContinuation.lean",
+      "sha256": "808348ca6513fedf07187afda5db5a08c4c680195e09453a0783b4f2d8c0c4cd",
+      "physical_lines": 432,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.MindContinuationAxioms",
+      "path": "Experiments/MindContinuationAxioms.lean",
+      "sha256": "834c500e3280857cd82dab6b535fa27df87e7654bfb662129cc4d8cd84ecb88d",
+      "physical_lines": 108,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23",
+      "path": "Experiments/Pal23.lean",
+      "sha256": "f7031a8249e24c1be9d855bf6f786e3fe00d8ab5620e0015b621cb9c53322f0f",
+      "physical_lines": 101,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23Axioms",
+      "path": "Experiments/Pal23Axioms.lean",
+      "sha256": "d149621e56de7403c86e59fb8df39dab43466da03037073345233661dd91e000",
+      "physical_lines": 18,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23Cadence",
+      "path": "Experiments/Pal23Cadence.lean",
+      "sha256": "e207269f1f2423c611414e330d615f4e2e6fe277e248cd9ca185f777a01e93a4",
+      "physical_lines": 141,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23CadenceAxioms",
+      "path": "Experiments/Pal23CadenceAxioms.lean",
+      "sha256": "401418e2da37ebe2eee594291f6339e06d8e8bbaa71dbed58891986f27db9544",
+      "physical_lines": 35,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23Followup",
+      "path": "Experiments/Pal23Followup.lean",
+      "sha256": "0a002c211896f20fdb58d573b457700966982c2b686f6453a25c84ea7c60852b",
+      "physical_lines": 56,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23FollowupAxioms",
+      "path": "Experiments/Pal23FollowupAxioms.lean",
+      "sha256": "9a494939e470225d0bea20b83b2ecfb89d0c2b47440cff0357be9224f439f8b9",
+      "physical_lines": 10,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23Interface",
+      "path": "Experiments/Pal23Interface.lean",
+      "sha256": "624b2833659126c3e9ce879a56057291a14a08c21fd7eb43c2760b706488109d",
+      "physical_lines": 104,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23InterfaceAxioms",
+      "path": "Experiments/Pal23InterfaceAxioms.lean",
+      "sha256": "19ba50423826334ab5d2d081baf150c25a019fc88ab6eb8053acdecaa859b65d",
+      "physical_lines": 21,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23Roundtrip",
+      "path": "Experiments/Pal23Roundtrip.lean",
+      "sha256": "44dd409f66c2927abe0c2c51bb89eb25fc6650d9745ff8ec834375d2767bb2bd",
+      "physical_lines": 141,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23RoundtripAxioms",
+      "path": "Experiments/Pal23RoundtripAxioms.lean",
+      "sha256": "5f7090b77f93a1a126077a3191b837b2637db840f759cc3a71fa394d140e8d3c",
+      "physical_lines": 48,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23TraceReplay",
+      "path": "Experiments/Pal23TraceReplay.lean",
+      "sha256": "c009f8b2ff84d33a0b49742ee6380442109a67a03bb5ff386cf64aaeec8b2794",
+      "physical_lines": 141,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal23TraceReplayAxioms",
+      "path": "Experiments/Pal23TraceReplayAxioms.lean",
+      "sha256": "7f21957189d93b3ba3aa9fb959413b85ca78d509f3da860dfe00186f54e408b5",
+      "physical_lines": 39,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24Continuation",
+      "path": "Experiments/Pal24Continuation.lean",
+      "sha256": "9722441bfb5ce84c592ba74a2b7b2ce92c9496c5e703e5f44bbd7458d87c1658",
+      "physical_lines": 142,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 1,
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24ContinuationAxioms",
+      "path": "Experiments/Pal24ContinuationAxioms.lean",
+      "sha256": "c4ad9584483ac0b04ef03b59971da8cccb75b578b1cbe2619e82f31e0201e42b",
+      "physical_lines": 34,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": "dependency failed",
+      "matched_native_replay": null,
+      "matched_second_replay": null
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24Feedback",
+      "path": "Experiments/Pal24Feedback.lean",
+      "sha256": "befc4db3ac6b0b28d31e0d0f1b88f7ee9d7ece01a0def36e13c6a2467935b912",
+      "physical_lines": 111,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24FeedbackAxioms",
+      "path": "Experiments/Pal24FeedbackAxioms.lean",
+      "sha256": "34a9ee2418fe4e9337efbc2a9e08bfda577d54e40d5504eecef8b8ef62956c36",
+      "physical_lines": 33,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24HistoryQuotient",
+      "path": "Experiments/Pal24HistoryQuotient.lean",
+      "sha256": "e010ae9a982b6ad9964ec2f532f5a14b1ed357ca67a902864bca0553a32c8185",
+      "physical_lines": 165,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24HistoryQuotientAxioms",
+      "path": "Experiments/Pal24HistoryQuotientAxioms.lean",
+      "sha256": "d7b060282ebffff6350a30d227d2dcbf7941848ee5363f9219807689c8041f52",
+      "physical_lines": 42,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24IntervalSlack",
+      "path": "Experiments/Pal24IntervalSlack.lean",
+      "sha256": "3725e3bdecf2732853ed568dfb26aa78c11f94ba833c8aa7b6677fe6189c37c0",
+      "physical_lines": 209,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24IntervalSlackAxioms",
+      "path": "Experiments/Pal24IntervalSlackAxioms.lean",
+      "sha256": "3cda65d19c62737ec6b97c5dcf60c70416aa74c82b522a726efbfdd0be666c82",
+      "physical_lines": 57,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24NestedAccount",
+      "path": "Experiments/Pal24NestedAccount.lean",
+      "sha256": "d95f19835350d7ceefdc0bd249be18e9eda8bdda0a8b7c470df2a1c8535cc646",
+      "physical_lines": 118,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24NestedAccountAxioms",
+      "path": "Experiments/Pal24NestedAccountAxioms.lean",
+      "sha256": "cdf335f0b2d29161be45284f99ac655aa6a17ba60edbe2cd82b97d28453a0844",
+      "physical_lines": 100,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24SourcePath",
+      "path": "Experiments/Pal24SourcePath.lean",
+      "sha256": "0cfcefd99a9c4bfefeb9d540ce04494fb52c54d8623ddcca635ed6bb7e912352",
+      "physical_lines": 194,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24SourcePathAxioms",
+      "path": "Experiments/Pal24SourcePathAxioms.lean",
+      "sha256": "5acf4ec578a02b612bf7cf93b29605744e7a8baa90e96cd24c8168c7c93b3a75",
+      "physical_lines": 154,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24TypedPaths",
+      "path": "Experiments/Pal24TypedPaths.lean",
+      "sha256": "54d7f04dadb07da370bc13565b7f9d51912531b945eabc791bd202647791ebbb",
+      "physical_lines": 121,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.Pal24TypedPathsAxioms",
+      "path": "Experiments/Pal24TypedPathsAxioms.lean",
+      "sha256": "928fbd3f631fd44603ebb56352044adcfb1392dabfaaaa00dffa4ecbe59ba9c2",
+      "physical_lines": 64,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutCorridor",
+      "path": "Experiments/SingleCutCorridor.lean",
+      "sha256": "f0487d0d8d772fe5b876a4d678f04b8f166a6fee06445fe60e67e478f2c0b625",
+      "physical_lines": 126,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutCorridorAxioms",
+      "path": "Experiments/SingleCutCorridorAxioms.lean",
+      "sha256": "c5c479e151a8b2168d769797d48efa36b064d76f60d27e29ee783b2dbff99a2a",
+      "physical_lines": 34,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutOR",
+      "path": "Experiments/SingleCutOR.lean",
+      "sha256": "0312ff98cb0b2cf028ffb2aa871fb04cbcdc38a4deeb8cfe1a939a4ba5341c52",
+      "physical_lines": 75,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutORAxioms",
+      "path": "Experiments/SingleCutORAxioms.lean",
+      "sha256": "8dc04c642f0814e95129ed710b967e4447fbb1ffea7e4954965e20beb29d2af4",
+      "physical_lines": 34,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutSpan",
+      "path": "Experiments/SingleCutSpan.lean",
+      "sha256": "23f9b1cdac4d6ae113291dfefe29a1c0cd56da16adc6b8be6fe486571ebd7a39",
+      "physical_lines": 119,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "Experiments.SingleCutSpanAxioms",
+      "path": "Experiments/SingleCutSpanAxioms.lean",
+      "sha256": "c5c1ddb41cde5aef4728a763634e9ad78bda416e8940d64e128e962b172ac848",
+      "physical_lines": 40,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PAL",
+      "path": "PAL.lean",
+      "sha256": "2d569e583bfd27a46edde7477606aef5538dc73638b7da554e67a663168be78d",
+      "physical_lines": 4,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PAL.AttackRun0001",
+      "path": "PAL/AttackRun0001.lean",
+      "sha256": "5f104161bbf46787ef187e7753bf325c8ca81abbd1f1eb98bb0dcddd3ec7de4d",
+      "physical_lines": 595,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PAL.AttackRun0002",
+      "path": "PAL/AttackRun0002.lean",
+      "sha256": "6f1618e6ed2dff079a49dd78467be4e39776cfc4e4aa0c8f907196355fbdf086",
+      "physical_lines": 423,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PAL.AttackRun0003",
+      "path": "PAL/AttackRun0003.lean",
+      "sha256": "0225fe8a13702e020ae368697937cfe373761888cbcdc257a19399f5a6e0c34f",
+      "physical_lines": 786,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PAL.Bootstrap",
+      "path": "PAL/Bootstrap.lean",
+      "sha256": "477df5fdcdde64854eeddb803269b467bc54474cbb87f13d4c20e55259b5c317",
+      "physical_lines": 16,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "root",
+      "module": "PALLeanAudit",
+      "path": "PALLeanAudit.lean",
+      "sha256": "5186b1f7840cd736c457abfca4c2b534737d8dd09fb632fe3a78d4d9e187fd5c",
+      "physical_lines": 17,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    },
+    {
+      "project": "supplement",
+      "module": "APCIManuscript",
+      "path": "supplements/APCI-manuscript-20261008/Audits/2026-10-08-manuscript/APCIManuscript.lean",
+      "sha256": "e996a7b38e71402d6e58a07551015e858c0523ba6e475d15f8bf500a2e2005cf",
+      "physical_lines": 73,
+      "original_compile": 0,
+      "original_native_replay": 0,
+      "matched_compile": 0,
+      "matched_native_replay": 0,
+      "matched_second_replay": 0
+    }
+  ],
+  "inventory_sha256": "631172dbc86397eafd6c88958a525956b38e8cd3c9f750457612aa8c2a539491",
+  "RH": {
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "olean_sha256": "9146dfb4148e24d2252e04c50742f3e49dd126dfcc5006d10bf5f873ddf796ad",
+    "lookup_file": "531379566893bc04.ltar",
+    "download_sha256": "b28069c2670a2df1dbbf65f39004d4d20088d970292091b948b1aa3b37a0d151",
+    "verified_build_manifests": 2,
+    "source_revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "endpoints": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "bodyConstants": [
+          "allChi"
+        ],
+        "name": "LFunction_ne_zero_of_half_lt_re",
+        "typeExpr": "DirichletLNonvanishingRightOfHalf"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "bodyConstants": [
+          "critAll"
+        ],
+        "name": "LFunction_eq_zero_re_of_isPrimitive",
+        "typeExpr": "PrimitiveDirichletLZerosOnLine"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "bodyConstants": [
+          "And.left",
+          "Claim.Strip",
+          "Claim.Zeta",
+          "And.right",
+          "Claim.HalfPlane",
+          "And",
+          "claimAll"
+        ],
+        "name": "LFunction_eq_zero_re",
+        "typeExpr": "DirichletLZerosOnLine"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "bodyConstants": [
+          "rhOfAll"
+        ],
+        "name": "riemannHypothesis",
+        "typeExpr": "RiemannHypothesis"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "bodyConstants": [
+          "rhOfAll"
+        ],
+        "name": "riemannZeta_eq_zero_re",
+        "typeExpr": "RiemannZetaZerosOnLine"
+      }
+    ]
+  },
+  "same_statement_test": {
+    "release": "Formalism.L2.DIV.inj_of_left_inv",
+    "corpus_application": "HearthlineComparison.frame_mulVec_injective",
+    "direct_release_span": [
+      29,
+      33
+    ],
+    "direct_application_span": [
+      6,
+      10
+    ],
+    "apci_helper_span": [
+      103,
+      106
+    ],
+    "compiler_comparison": [
+      "'Formalism.L2.DIV.inj_of_left_inv' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'HearthlineComparison.frame_mulVec_injective' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "'APCILeanAudit.leftInverse_implies_injective' does not depend on any axioms"
+    ],
+    "replays": {
+      "Formalism.LocalToGlobal.Divisibility.FramesLemmas": {
+        "compile": 0,
+        "native": 0,
+        "second": 0
+      },
+      "FrameByAPCI": {
+        "compile": 0,
+        "native": 0,
+        "second": 0
+      },
+      "CompareFrameClaim": {
+        "compile": 0,
+        "native": 0,
+        "second": 0
+      }
+    },
+    "isolated_release_slice": {
+      "cut_sha256": "c81ee132f6725100f7e1a5b87ac8c26df4eefa94f59e189ea5bb03a19accdcae",
+      "source_span": [
+        29,
+        33
+      ],
+      "options": [
+        "--tstack=400000",
+        "-DautoImplicit=false",
+        "-DrelaxedAutoImplicit=false",
+        "-DmaxSynthPendingDepth=3",
+        "-Dpp.unicode.fun=true",
+        "-DmaxHeartbeats=4000000"
+      ],
+      "result": {
+        "compile": 0,
+        "native": 0,
+        "second": 0
+      }
+    },
+    "module_import_footprint": {
+      "files": 64,
+      "lines": 9808
+    },
+    "reachable_body_edge_chain": [
+      [
+        "Formalism.L2.DIV.quotFrameHermAt",
+        "Formalism.L2.DIV.inj_of_left_inv",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.BlockDat.XQ_herm",
+        "Formalism.L2.DIV.quotFrameHermAt",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.DefFam3.side_well_formed",
+        "Formalism.L2.DIV.BlockDat.XQ_herm",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.FamIn3.side_well_formed",
+        "Formalism.L2.DIV.DefFam3.side_well_formed",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.DivisionRowsFace.ofCol3",
+        "Formalism.L2.DIV.FamIn3.side_well_formed",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.ColTie3",
+        "Formalism.L2.DIV.DivisionRowsFace.ofCol3",
+        1
+      ],
+      [
+        "Formalism.L2.DIV.SquareIntegrableColumns",
+        "Formalism.L2.DIV.ColTie3",
+        1
+      ],
+      [
+        "GlobalTheory.Fc.DefiniteSideCondition",
+        "Formalism.L2.DIV.SquareIntegrableColumns",
+        1
+      ],
+      [
+        "UpperTheory.Top.every_character_of_green_v_win",
+        "GlobalTheory.Fc.DefiniteSideCondition",
+        1
+      ],
+      [
+        "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+        "UpperTheory.Top.every_character_of_green_v_win",
+        1
+      ],
+      [
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+        "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+        1
+      ],
+      [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+        1
+      ],
+      [
+        "UpperTheory.FinalTheorems.everyCharacter",
+        "UpperTheory.FinalTheorems.everyCharacter_of_row",
+        1
+      ],
+      [
+        "allChi",
+        "UpperTheory.FinalTheorems.everyCharacter",
+        1
+      ],
+      [
+        "rhOfAll",
+        "allChi",
+        1
+      ],
+      [
+        "riemannHypothesis",
+        "rhOfAll",
+        1
+      ]
+    ],
+    "reachability_source_sha256": "82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5"
+  },
+  "tool_binaries": {
+    "bin432/lean.exe": "c3f02a2b739078d1237af9feefd27ec85b943b56870234b42bc0111d6699d54d",
+    "bin432/leanchecker.exe": "c0d4c83407947c26023f10e611e45eda1edbec358140e4217f1edda9aef35265",
+    "bin433/lean.exe": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "bin433/leanchecker.exe": "31b506f83737b7d629fd11699df5aaf88c3b50be23c28219e6b283f0de98f85c",
+    "lean4lean.exe": "86aad6b4c8a1204c271c516715df96297eb76ce24cc6d6fcea403fa5ace47b5d"
+  }
+}

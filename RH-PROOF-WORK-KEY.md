@@ -18,6 +18,10 @@ Chris requested this explicit independence check on 23 November 2026.
 
 [Corpus files and worked use](corpus/README.md) · [Applied to the disappearing tail](receipt-archives/2026-11-23-independent-theta-check.md) · [Windows checker control](receipt-archives/2026-11-23-windows-checker-report.md)
 
+## Compare proof checks on the same statement
+
+Give both proof terms one explicit target type. Record ordinary premises and typeclasses alongside the output of `#print axioms`. Record the compiler and library pins, the direct declaration length, the source import closure, and which proof bodies were replayed. The [paired matrix test](receipt-archives/2026-11-24-lean-check-comparison.md#one-common-statement-with-exactly-the-same-premises) demonstrates the comparison for a lemma used in the RH proof.
+
 ## Keep the physical map fixed
 
 Record the source and target bases, the local prime, the actual test input and the quantity being compared. For a passive coordinate change, transport the lattice and the map together. For an active change of the source map, recompute which cosets pass. In the first terminal selector these two operations distinguish a genuine one-unit valuation residual from a change in the question being asked. [Context Stack](corpus/context-stack/README.md) · [BLA and CLEF worked example](receipt-archives/2026-11-23-coupled-type-prime-residue.md)
