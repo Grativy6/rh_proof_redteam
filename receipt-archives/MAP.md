@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Strict classes of order 25](2026-11-24-two-classes-of-order-twenty-five.md) · [Two independent upper obstructions](2026-11-24-why-the-classes-stop-at-twenty-five.md) | Explicit Kummer coordinates, six host-prime residues, Jacobi sums and an independent local-field computation. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
+| [Adjoint trace at 2179](2026-11-24-one-adjoint-at-2179.md) · [Marked component and tangent signs](2026-11-24-the-two-tangent-signs.md) · [Bernoulli obstruction at 106619](2026-11-24-where-the-adjoint-disappears.md) | Weight-two integral Hecke spaces, a local family through the base point, and a joint two-prime reading on the remaining rank-three space. Same date and authorization. |
 | [One line and four lifts](2026-11-24-one-hecke-line-at-571.md) · [Local Hecke order](2026-11-24-two-ramified-hecke-fields.md) · [Unitary level and Galois conditions](2026-11-24-matching-the-unitary-level.md) | Full signed matrices, exact rank, field and valuation checks. Hearthline under Chris’s ongoing 24 November audit request. |
 | [Global residual representation](2026-11-24-global-residual-character-at-571.md) · [Quintic enumeration](2026-11-24-quintic-check-for-the-even-alternative.md) · [Computational bundle](hecke-571/packet.py) | Verifies the global input character and the pointwise trace budget at 571 using modular symbols and explicit fields. Same authorization and date. |
 | [An order-five class](2026-11-24-an-order-five-class-and-a-hundred-missing-levels.md) · [Type II at 571](2026-11-24-the-rank-two-alternative-at-571.md) · [Rank-three constraints](2026-11-24-which-rank-three-representations-remain.md) · [Integer checks](check_odd_selmer_precision.py) · [PARI controls](check_odd_class_fields.gp) | Matches the actual Case I summand to a class of exact order five, proves the local coefficient delay, and eliminates characteristic-zero candidates. Hearthline, at Chris’s request on 24 November. |
@@ -88,6 +90,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [global residual eigensystem at 106619](2026-11-24-where-the-adjoint-disappears.md#unresolved) is open. The known examples below the final window isolate necessary intermediate steps.
 
 The [general pullback](2026-11-23-phase-around-three-lattices.md) resolves the earlier normalization question for jet descent. The [local residue calculation](2026-11-23-coupled-type-prime-residue.md) supplies the support and character values for the sharp terminal factors. The finite-prime losses in the assembled map remain open.
 

@@ -1,0 +1,48 @@
+# Two strict classes of order 25
+
+**24 November 2026.** For each of $q=2179$ and $q=106619$ the actual strict Selmer group at twist one in the zeta Case I reduction is cyclic of order 25. This receipt constructs a generator in each case. The [upper bounds](2026-11-24-why-the-classes-stop-at-twenty-five.md) explain why a third factor of five is impossible. The argument uses finite fields, number fields and local cohomology. Every large coefficient used for either generator is provided. [Rational-arithmetic verifier](selmer-order-25/verify_order25.py) · [2179 witness](selmer-order-25/order25_witness.json) · [106619 witness](selmer-order-25/order25_at_106619.json)
+
+## The group being measured
+
+Take the trivial outer character, the odd inner character $\psi=\chi_{-q}$, $\ell=5$, twist $j=1$, and $K=\mathbb Q(\sqrt{-7})$ for the later trace test. Let $\varepsilon$ denote the arithmetic 5-adic cyclotomic character and $\Psi=\psi\varepsilon$. The group here is over $\mathbb Q$, with coefficient module $A=(\mathbb Q_5/\mathbb Z_5)(\Psi^{-1})$. Classes have trivial restriction to decomposition at 5, are unramified at other primes, and meet the strict conditions at primes dividing the level. At an unramified $p\ne5$, Frobenius minus one acts surjectively on $A$ because its scalar $\psi(p)^{-1}p^{-1}-1$ is nonzero. At $q$ the inertia invariants are zero. Consequently the two released divisible-coefficient conditions `V` and `V'` give the same group here. Use $N=2^{m+2}qd$ with $m=2$ and any $d$ from the table below. The hosts have $q\equiv3\bmod8$ and $d\equiv7\bmod16$. These are instances of the intermediate statement. The final producer imposes its additional size and window conditions. [Host and character](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean#L148-L192) · [Good datum and character count](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean#L9-L31) · [Final size and window hypotheses](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean#L75-L94)
+
+For clarity, write $R_n$ for classes in $H^1(\mathbb Q,A[5^n])$ unramified outside 5, with inertia allowed to act by its prescribed character and with **no** local restriction at 5. Here “unramified” means that the cohomology class restricts to zero on inertia. Write $S_n$ for the subgroup of $R_n$ restricting to zero on decomposition at 5. Then $S_n=S(A)[5^n]$ under the coefficient inclusion. Globally $H^0(\mathbb Q,A)=0$. At 5 the residual inertia contains a nonidentity scalar, so the local $H^0$ vanishes there as well. At other primes the inertia invariants in $A$ are either all of $A$ or zero, hence divisible. These facts give the identifications from the multiplication-by-$5^n$ sequence. Imposing a finite-coefficient decomposition test at $d$ defines a **smaller** group, computed separately below. [Which finite test the release uses](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ShaInj.lean#L22-L37) · [Local coboundary and inertia conditions](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ShaInjGen.lean#L321-L346)
+
+## Reduction to Kummer theory
+
+For $m_0=5^n$ put $L=\mathbb Q(\zeta_{m_0},\sqrt{-q})$. Over $L$, an $m_0$th root of $z$ describes a class via Kummer theory. For descent to the desired coefficients the character of the radicand modulo $m_0$th powers must be
+$$\lambda=\psi\varepsilon^2,\qquad \varepsilon\lambda^{-1}=\Psi^{-1}.$$
+Indeed, the second character acts on translations of the root. Restriction and inflation give an isomorphism onto the twisted invariant classes. In the finite abelian quotient a central element acts on $A[m_0]$ by a scalar whose difference from one is a unit. Its action on group cohomology is also the identity, so the obstruction and ambiguity groups $H^2$ and $H^1$ vanish.
+
+The field fixed by $\ker\lambda$ is $B=\mathbb Q(\sqrt{-5q})C_{5^{n-1}}$, where $C_{5^{n-1}}$ is the real degree-$5^{n-1}$ subfield of $\mathbb Q(\zeta_{5^n})$. The residual quadratic character is $\psi(\frac{\cdot}{5})$, and the principal-unit part has order $5^{n-1}$. The extension $L/B$ has degree four. Restriction on power classes is injective and norm divided by four recovers the invariants. Both $q$ are $-1\bmod5$, so $-q$ is a 5-adic square. The unique completion of $B$ at 5 is the real cyclotomic subfield $\mathbb Q_5(\zeta_{5^n})^+$, totally ramified of degree $2\cdot5^{n-1}$.
+
+At $n=1$, complex conjugation inverts the radicand. The valuation at the unique place over 5 is therefore zero modulo 5, even in the relaxed group. At the other places the valuations must be multiples of five. In the mirror quadratic field the units are $\{\pm1\}$, and conjugation inverts every ideal class. The elementary exact sequence from $(z)=J^5$ consequently identifies $R_1$ with the 5-torsion of its ideal class group. Descent across the ramified prime $q$ introduces no extra local obstruction because its inertia has order two in $L/\mathbb Q$. Counting reduced primitive binary quadratic forms gives class numbers 120 and 480 respectively. Each is divisible by 5 exactly once. In particular $R_1=C_5$.
+
+For $n\ge1$, the same global and local $H^0$ calculation shows $R_n[5]=R_1$. Inductively $R_n$ is finite, since its exponent divides $5^n$ and its multiplication-by-five kernel has size five. A finite abelian 5-group with that kernel is cyclic. A single strict class of order 25 therefore exhausts $S_2$ and $R_2$.
+
+## A generator in each degree-ten field
+
+Take $n=2$ and $h=(1+\sqrt{-5q})/2$. Let $\gamma(\zeta_{25})=\zeta_{25}^{16}$ fix $h$, let $\tau=\sum_{a\in\{1,7,18,24\}}\zeta_{25}^a$, and set $t=\tau+2\gamma\tau$. The polynomial of $t$ is $t^5-40t^3+35t^2+410t-707$. The files give $y,s,R$ as ten rational coordinates on the basis $1,t,\ldots,t^4,h,ht,\ldots,ht^4$. A bar fixes $t$ and sends $h$ to $1-h$. The verifier constructs $t$ in the cyclotomic quotient, checks the stated action of $\gamma$, and sets $z=y/\bar y$. The following are exact identities and valuations.
+
+| $q$ | Positive 25th root of $N(y)$ | $v_P(z-s^{25})$ | $d$ detecting an element of order 25 |
+| ---: | --- | ---: | ---: |
+| 2179 | $7\cdot25115843$ | 41 | 100669799 |
+| 106619 | $2^5\cdot7^2\cdot20543\cdot453199$ | 42 | 5821397399 |
+
+In each field, $\bar z=z^{-1}$ and $\gamma z=z^6 R^{25}$, with $6=16^2\bmod25$. Those two automorphisms generate $\operatorname{Gal}(B/\mathbb Q)$. The characteristic polynomial makes $y$ integral. At **each** prime in its stated divisor we lift the simple residue roots modulo $p^{25}$ and verify divisibility by $p^{25}$. At 2 for the second field the quintic is irreducible modulo 2, and all five coefficients vanish at the indicated lift of $h$. The degree-weighted norm of these divisors equals the full norm of $y$. Thus every valuation of $z$ is divisible by 25. Kummer theory gives the unramified condition away from 5. At $P\mid5$, $s,y,\bar y$ are units, $v_P(5)=10$, and $v_P(25s^{24})=20$. Both errors are strictly greater than 40, so Hensel's lemma supplies an actual 25th root locally.
+
+At each detecting $d$ the chosen $t$ lies in $\mathbb F_d$ and $h$ in $\mathbb F_{d^2}$. Raising $z$ to $(d^2-1)/25$ yields $52951648+31451h$ for the first field and $4483279239+3021937779h$ for the second. Their fifth powers are nonidentity and their 25th powers are one. This proves exact order 25 in the global power class and hence for the corresponding strict Selmer class. The explicit inputs remove any dependence of this conclusion on the analytic assumptions in a preliminary class-group search.
+
+## The same global class under three host-prime tests
+
+Each displayed $d$ is prime, $v_5(d+1)=2$, and $d\equiv-1\bmod 3\cdot7q$. The coefficient action of its Frobenius is trivial modulo 25. Squaring Frobenius to enter the Kummer field multiplies its translation by a unit modulo 25. Let $u$ denote that translation, with order indicated below.
+
+| $q=2179$, prime $d$ | $q=106619$, prime $d$ | Order of $u$ | Subgroup sizes after imposing triviality at $d$ at coefficient levels 1, 2, 3, 4 |
+| ---: | ---: | ---: | --- |
+| 100669799 | 5821397399 | 25 | $1,1,5,25$ |
+| 265402199 | 41645381399 | 5 | $5,5,25,25$ |
+| 613170599 | 236886094199 | 1 | $5,25,25,25$ |
+
+For $n\ge2$ the generator enters $A[5^n]$ with translation $5^{n-2}u$. A multiple passes at $d$ exactly when this translation is zero modulo $5^{\min(n,2)}$. At level one reduce $u$ modulo five. At 2 the residual scalar minus one is a unit, at $q$ inertia has zero invariants, and at 5 the explicit root works. These account for the whole finite local test. The passage from order 25 to order 125 in the *global strict group* is a different question answered in the next receipt. [Local and global upper bounds](2026-11-24-why-the-classes-stop-at-twenty-five.md)
+
+Run `python -B verify_order25.py` from `receipt-archives/selmer-order-25`. Python's standard library suffices. Hearthline prepared these records under Chris Pang's continuing public audit request.

@@ -26,6 +26,8 @@ Hearthline added and checked the Context Stack, BLA and CLEF on 23–24 November
 
 On 24 November Hearthline completed Chris’s [formal-corpus comparison](../receipt-archives/2026-11-24-lean-check-comparison.md) across the public PAL source projects and the current CPX release. [Every checked source theorem](../receipt-archives/2026-11-24-corpus-theorem-axioms.jsonl)
 
+Hearthline used CLEF and APCI for Chris’s 24 November [two-class comparison](../receipt-archives/2026-11-24-two-classes-of-order-twenty-five.md) and [marked sign check](../receipt-archives/2026-11-24-the-two-tangent-signs.md). The arithmetic gives different mechanisms at equal measured length.
+
 ## Unresolved
 
 The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.
