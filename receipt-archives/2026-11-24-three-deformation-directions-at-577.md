@@ -1,0 +1,52 @@
+# Three global deformation directions at the order-577 class
+
+**24 November 2026.** For the [fixed positive-length character](2026-11-24-a-class-inside-the-zeta-windows.md) we computed the first-order directions of the marked, fixed-weight Galois problem independently of the RH release. There is one lower direction and there are two upper directions. All three have nonzero readings on **one and the same absolute commutator**. Here we work with the necessary ordinary and away-from-577 conditions of `OrdPt`. The determinant on $G_K$ is one. For a marked point it is unramified everywhere on $K$ by the prescribed inertia and the product-one ordinary diagonal, and $K=\mathbb Q(\sqrt{-7})$ has class number one. The normalized value at complex conjugation then extends determinant one to every matrix part. [Conditions on ordinary points](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CurveDVRSpecialization/RatTorsionFree.lean#L21-L32) · [Arithmetic verifier](marked-directions-577/residual_directions.py)
+
+## Two one-dimensional class-group tests
+
+Put $k=\mathbb F_{577}$, $z=\bar\psi\omega^{296}$, $\eta=\chi_{-7}$ and $\psi(5)=510\bmod577$. For a character $\chi$ write $R(\chi)$ for the finite-coefficient classes over $\mathbb Q$ unramified away from 577, and $S(\chi)$ for those also locally zero at 577. At a prime of tame or wild finite character conductor, unramified means restriction to inertia is a coboundary. On a kernel of prescribed inertia the cocycle then vanishes. Conversely the finite residual inertia quotient has order prime to 577, so vanishing on its kernel gives this condition.
+
+For $\chi=z^a$ use the Kummer character $\lambda=\omega z^{-a}$ in the cyclotomic field of conductor $577\operatorname{cond}(\psi^a)$. The odd character $\lambda$ has nontrivial inertia at 577 in each of the four rows below. Even in the relaxed group the valuation there is zero modulo 577, since inertia fixes the valuation and some $\lambda(s)-1$ is a unit. The odd unit kernel contributes no class of this character. At 2 it acts differently from the 577th roots of unity. The even-column multiplier below is the upper-half sum of $\lambda^{-1}$. A nonzero value rules out the entire relaxed group. In the remaining row the [relative class number and explicit local root](2026-11-24-the-577-class-on-paper.md) give $R=S=k$.
+
+For $\kappa_a=\eta z^a$, use class field theory directly in the CM field $M_a$ cut out by $\kappa_a$. A strict class is an unramified class-group character over $M_a$ in the $\kappa_a$ sector. Its extra local vanishing at 577 is automatic there: the prime ideals above 577 have stabilizers containing an inertia element on which $\kappa_a\ne1$. Extend ideal classes to the full cyclotomic field of conductor $7\operatorname{cond}(\psi^a)577$. Its degree over $M_a$ is prime to 577, so extension is injective on 577-primary classes. The Jacobi divisor annihilator acts in this sector by the upper-half sum of $\kappa_a^{-1}$. The third column gives its value.
+
+| $a$ | Even coefficient $z^a$, Kummer multiplier | Odd coefficient $\eta z^a$, class group multiplier | Local circular-unit digit divided by its Gauss sum |
+| ---: | ---: | ---: | ---: |
+| $-2$ | 479 | 556 | 160 |
+| $-1$ | 0 | 537 | 229 |
+| $1$ | 428 | 445 | 211 |
+| $2$ | 524 | 101 | 241 |
+
+For all four odd characters $S(\kappa_a)=0$ and $\dim_k R(\kappa_a)=1$. For the latter assertion, the local principal units at all 577-adic places supply the ramified abelian quotient in the ray-class exact sequence. Project to the Teichmüller lift of $\kappa_a$ by the integral idempotent of the prime-to-577 Galois group. The global units contribute nothing: their odd part comes from roots of unity, and the desired character differs from cyclotomic. The class group contributes nothing by the table. After tensoring with $\mathbb Q_{577}$, the local logarithm and normal basis theorem give one regular representation of $\operatorname{Gal}(M_a/\mathbb Q)$ across all the 577-adic places. The indicated projection has rank one. Local torsion cannot add another copy, since $\kappa_a$ on inertia differs from $\omega$ at 577. Thus this projected pro-577 group is free of rank one and its additive mod-577 character space has dimension one. This derivation uses unramifiedness and class field theory on the same coefficient character throughout.
+
+## Representatives for the upper directions
+
+Write $D=7\operatorname{cond}(\psi^a)$, $\phi=\eta\bar\psi^a$ on units mod $D$, and $f=577D$. Project the cyclotomic unit $1-\zeta_f$ to the Kummer character $\lambda=\omega/\kappa_a$ by taking the product of its conjugates with integer exponents representing $\lambda^{-1}$. This is a global unit since $f$ has distinct prime factors. It gives an unramified class away from 577. To check that it is ramified at 577, take a primitive $D$th root $Y$ in the unramified residue field and put $n\equiv1-296a\bmod576$, $1\le n<576$. With the formal parameter $X=\log\zeta_{577}$ in the truncated local unit calculation, the weight-$n$ coefficient of the normalized logarithm is
+$$\frac{\tau(\phi)}{D\,n!}\sum_{h=1}^{576}h^{n-1}\sum_{b=0}^{D-1}b\,\phi^{-1}(h+577b).$$
+Characters are extended by zero at nonunits. To derive this formula, take the coefficient of $X^n$ in $\log((1-Y^v\exp X)/(1-Y^v))$, then sum with weight $\phi(v)$. The rational series for $\sum k^{n-1}y^k$ reduces in characteristic 577 to $\sum_{h=1}^{577}h^{n-1}y^h/(1-y^{577})$. At a nontrivial $D$th root, $(1-y)^{-1}=-D^{-1}\sum_{b=0}^{D-1}b y^b$. The primitive-character Gauss sum evaluates the remaining sum over $v$. Its product with the reciprocal Gauss sum is $\phi(-1)D$, a unit. The inertia projection and the normalization removing the residue-field unit introduce two factors of $-1$. A nonzero digit with $n<576$ cannot occur in a 577th power of a principal unit. The last column gives the four nonzero checks. The independent PARI calculation evaluates the logarithmic coefficient by Eulerian polynomials in $\mathbb F_{577^{12}}$. [Integer sum and residue tests](marked-directions-577/residual_directions.py) · [Finite-field calculation](marked-directions-577/upper_local.gp)
+
+## Read all three classes on one word
+
+Take arithmetic Frobenius $\sigma$ at $d=12407809$, choosing a place sending the relevant primitive roots to the compatible powers of $22\bmod d$. This prime splits in the cyclotomic field of conductor $1792\cdot577$. For the original lower Jacobi class and the two upper circular-unit classes ($a=1,2$), the exponents of their power-residue symbols in $\mu_{577}(\mathbb F_d)$ are
+$$(82,\ 61,\ 139).$$
+The generator used for the exponents is $22^{(d-1)/577}$. Take $h$ in inertia at 2 acting by the fifth power on the 256th roots of unity. It fixes the roots of unity of orders 7 and 577. On the three coefficient characters $z^{-1},\eta z,\eta z^2$, its scalars are $155,510,510^2$. On $\sigma$ they are all one. Therefore for $\gamma=[h,\sigma]=h\sigma h^{-1}\sigma^{-1}$ the readings are
+$$((155-1)82,\ (510-1)61,\ (510^2-1)139)=(511,\ 468,\ 95)\pmod{577}.$$
+Indeed a crossed homomorphism on such a commutator has value $(\chi(h)-1)y(\sigma)$. Coboundaries vanish on this word. Every abelian base field fixes $\gamma$, and every abelian coefficient character is one on it, even before reduction. Thus replacing the base by an abelian field of degree divisible by 577 cannot erase this particular readout. The verifier repeats the calculation at the independent split prime 19645697.
+
+## The ordinary tangent space
+
+Write $E_{ij}$ for a matrix unit, $J$ for the anti-diagonal identity and $\Theta(M)=JM^{-t}J$. The differential of $\Theta$ sends $X$ to $-JX^tJ$. Its eigenspaces split the root directions over $\mathbb Q$ as follows. Lower off-diagonal classes are strict at 577 because they would move the uniquely ordered local flag. The upper off-diagonal classes have the full local condition. On the two diagonals the inertia characters are fixed, so only unramified changes are allowed at 577. The determinant-one diagonal lines have coefficients 1 and $\eta$. The everywhere unramified global groups for those coefficients vanish by the class numbers of $\mathbb Q$ and $K$.
+
+| Matrix line | Coefficient | Local condition at 577 | Global dimension |
+| --- | --- | --- | ---: |
+| $E_{21}-E_{32}$ | $z^{-1}$ | Strict | 1 |
+| $E_{21}+E_{32}$ | $\eta z^{-1}$ | Strict | 0 |
+| $E_{31}$ | $\eta z^{-2}$ | Strict | 0 |
+| $E_{12}-E_{23}$ | $z$ | Full | 0 |
+| $E_{12}+E_{23}$ | $\eta z$ | Full | 1 |
+| $E_{13}$ | $\eta z^2$ | Full | 1 |
+| Two diagonal lines | $1,\eta$ | Unramified | 0 |
+
+At each finite prime away from 577 the permitted tangent classes are unramified in cohomology, by the prime-to-577 inertia argument above. Requiring the matrix at complex conjugation and the two entries at the mark to be normalized removes the nontrivial infinitesimal coboundaries. A change of basis preserving the first normalization is in the orthogonal Lie algebra of $J$. Preserving the second makes it diagonal because the marked eigenvalues are distinct. The remaining diagonal torus already fixes the base representation. Conversely these two normalizations can be imposed on every tangent class. Thus this table is for the marked problem, with its basis choices accounted for. [Symmetric normalization and the exact lower direction](2026-11-24-why-the-trace-field-must-ramify.md) · [Ordinary local order](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeDeformations/AdjointDiagonalRepPreservesWeightPiece.lean#L27-L39) · [Original global normalization](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/UnitaryThreeReflectionRight.lean#L281-L296)
+
+For the companion replace $z$ by $z^{-1}$ while keeping the ordering of matrix positions. All lower rows now vanish, and the three nonzero tangent vectors are upper. For the live twist the single lower vector is essential. Its exact integral order constrains **every** possible irreducible characteristic-zero witness. [Consequence for the trace field](2026-11-24-why-the-trace-field-must-ramify.md)
