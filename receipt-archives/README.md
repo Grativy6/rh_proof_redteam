@@ -8,6 +8,8 @@ From this directory, `python -B check_host_norm_defect.py` checks 31, the finite
 
 For the original 577 input, run `python -B boundary-577/first_order_norms.py`, `python -B boundary-577/real_norm_units.py` and `python -B boundary-577/wild_unit_norms.py` with NumPy. The [comparison-field receipt](2026-11-24-two-opposite-ideal-class-readings-at-577.md#reproduce) gives the optional independent Jacobi histogram replay. [Minimum quotient rank](2026-11-24-which-norm-tests-see-the-cube.md) · [Four norm tests](2026-11-24-four-norm-kernels-for-the-two-quadratics.md) · [Base-unit coefficients](2026-11-24-two-real-unit-norm-targets-at-577.md)
 
+Run `python -B boundary-577/cyclic_norm_moments.py` to check all 577 local parameters, the four changes of a local reading and the 183 + 394 norm-one control. [Cyclic equations and proof](2026-11-24-cyclic-norm-equations-and-the-missing-divisors.md)
+
 ### Replay the local match and the global distinction
 
 From this directory, run `python -B boundary-577/unramified_layers.py` for the four base characters and the **0 versus 457** test. Run `python -B boundary-577/artin_units.py` for the nine local readings and discriminants, `python -B boundary-577/hilbert_reciprocity.py` for the independent local and finite-prime symbol calculations, `python -B boundary-577/quadratic_words.py` for the second-order brackets and raw trace derivatives, and `python -B boundary-577/trace_powers.py` for their two surviving squares. All five use Python and NumPy. [Ideal-class argument](2026-11-24-the-unramified-character-that-local-data-miss.md) · [Local unit normalization](2026-11-24-four-local-units-at-577.md) · [Raw trace test](2026-11-24-two-raw-traces-on-the-released-subgroup.md)
