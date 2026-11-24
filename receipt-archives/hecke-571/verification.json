@@ -1,0 +1,181 @@
+{
+  "date_checked": "2026-11-24",
+  "release_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "assertion_tested": "Joint local Hecke module and the discriminant and modular-form exclusions for the untwisted q=571, ell=5, j=1 input.",
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "native": "Ubuntu 24.04 under WSL2, g++ 13.3.0, four OpenMP threads for the large minor",
+    "pari": "PARI/GP 2.15.4"
+  },
+  "inputs": {
+    "certify_minor.cpp": "c87768520487a8de6fba9839dd36f3da2960ddf2c8391d05ad71216fc1f8aea1",
+    "discover_kernel.cpp": "90f0b9e88ef2a69924f93a0be9c722ab07c8358d885c50d93feedd616f766bd4",
+    "hunt_quintics.py": "80892d91d4c34580323eabefb7bcc66ce92a2fa1fb60ed2e5361166eb67a4831",
+    "inert_neighbors.py": "96ed05c9003ab64cfe1000586d14d1d0de1fe9a9f5b511d0d99ed4350c5c5892",
+    "manin.py": "ef0480c5b97bbf308b54aa1a3956763e2697b84f3f2f9d1cc2cbf29019905923",
+    "next_length_2179.gp": "2e3b65ca8e6bb1fc0cb9f8eb8d05351b785acb64b0792a39a0344e704caddb8a",
+    "operators.py": "7e1879bb2cd7566dbc8a70ff10d93fcc11dc5eea24f9618b56b7e49902323be3",
+    "packet.py": "75bf8cbec6e6babb8f6d6e518b244c6124152fb0669c99d96073126fe9b069da",
+    "pentagons.py": "0b949383565a2cf89c97b06441c67594faef3832d9000a58bc37c0e0ae666f63",
+    "primary_vectors.json": "84f39f3bb93684b94f2fea98363aae21bdfc5cc81b6e6e76fc7fcf273e8d9f47",
+    "quintic_fields.gp": "76d4dfc790a9465ee190927735e6181005824318dac0a54008aeb45cf66d302d",
+    "ramified_neighbors.py": "3f7dd3cafff3c8011b242dd6d824eb376d5acc99d24025ab4de85adc23376622",
+    "split_neighbors.py": "8a9fe748b5055dff68d1ef84a2bbb18a52f8a39a47a161c7d6c5ac29c56acfa0",
+    "weight_two.gp": "419a062bce3c979ddabee5eba2acf603425ce209cd0094db6dca31d4ccf7dd3c"
+  },
+  "arithmetic_model_sha256": "e67c9e980eb351d16ece9be4a8349ecf2e954522263da34cb590b501ab8a198b",
+  "outputs": {
+    "forward_2": "4beacfe62f7212f7d3bfaa2b4649e80a3d7a8e25092f94ae5f5f238e3fe58f3f",
+    "opposite_2": "7d2e6bcddca52b640d18b2e01d1a5f6f062566c1ad584966573a80f2070745c5",
+    "square_minor": "6fb63964ca2b784195d7820d0ede52471bc5dc9f88020c129791865d17ac913a",
+    "rank_certificates": [
+      [
+        571,
+        15270,
+        87
+      ],
+      [
+        7129,
+        15270,
+        27
+      ]
+    ],
+    "joint_eigen_and_primary_dimensions": [
+      [
+        2,
+        5,
+        12
+      ],
+      [
+        11,
+        4,
+        9
+      ],
+      [
+        23,
+        2,
+        8
+      ],
+      [
+        29,
+        1,
+        4
+      ]
+    ],
+    "global_weight_two_space": 378,
+    "full_pari_cuspidal_filter": [
+      [
+        2,
+        4
+      ],
+      [
+        11,
+        4
+      ],
+      [
+        23,
+        4
+      ],
+      [
+        29,
+        0
+      ]
+    ],
+    "manin_relations_sha256": "9bb0cff32a0358f917d5792b4ef2f6bd2cc022d22a917b4197fbfb002051be0f",
+    "manin_test_sha256": "0f38925052123e0c955d8d427392e0cd1510b73347b2703e61ba676dcc6f5313",
+    "manin_ranks": [
+      3816,
+      4580
+    ],
+    "hunter_survivor_sha256": {
+      "3": "3b63cdbcd0dade74b7a5db6ff86c5b66c305d79050348e84ce4263df47772c11",
+      "5": "f75ff115ef52b956aee80d21387045164aca57b1f26d9c9b9715bf2ad82c423f"
+    },
+    "quintic_survivors": [
+      11,
+      58
+    ],
+    "simple_integer_resolvent_roots": [
+      11,
+      58
+    ]
+  },
+  "independence": "Source proof used for the statement, maps and normalization. Lower and upper checks use explicit arithmetic operators, linear algebra, class field theory and the cited established external results. Self-review, independent mathematical and computational routes, no separately attributed reviewer.",
+  "scope": "The run establishes the stated fixed-input trace protection. It does not identify a particular marked universal-ring point or give a counterexample to the released RH implication.",
+  "primary_sources": [
+    {
+      "use": "Loeffler, sections 2, 3 and 5",
+      "url": "https://arxiv.org/pdf/0801.3176v3",
+      "sha256": "6564899bc6a8959e9f086a0871994f10f16a33d2de623d3156cf880d868df23d"
+    },
+    {
+      "use": "Evra, Feigon, Maurischat and Parzanchevski, 7.2, 7.3, 7.15",
+      "url": "https://math.huji.ac.il/~parzan/Ramanujan_bigraphs.pdf",
+      "sha256": "ad41dae018a7371879960d0cd4d02e1547f1ed436533b798332d437f59a7c19f"
+    },
+    {
+      "use": "Kaletha, Minguez, Shin and White, generic pure-inner case in 1.7",
+      "url": "https://public.websites.umich.edu/~kaletha/unitary.pdf",
+      "sha256": "efae5556b9b4509c13b5f1366f992b63f5b7a43aed469393100dc7ebcb46dd45"
+    },
+    {
+      "use": "Haines, special parahoric Satake parameters",
+      "url": "https://math.umd.edu/~tjh/Satake_parameters_v4.pdf",
+      "sha256": "f8e69c160e9f94f1e2ac59e87c6680368cf68bd4f2e5007caa9cc04d93b03bc8"
+    },
+    {
+      "use": "Barnet-Lamb, Gee, Geraghty and Taylor, coefficient-prime compatibility",
+      "url": "https://www.numdam.org/item/10.24033/asens.2212.pdf",
+      "sha256": "5f7a22dadb589ed0e25c3c0afe6b7d7878d12f6271b69cc30dfcc8d9dd3f354f"
+    },
+    {
+      "use": "Shin, Theorem 1.2 and Corollary 1.3",
+      "url": "https://math.berkeley.edu/~swshin/StableGal.pdf",
+      "sha256": "93f4fe322200a646f337ae8d4aa9a036a866df1bb59ad5fe7bf09373324da75b"
+    },
+    {
+      "use": "Roche, principal-series types",
+      "url": "https://www.numdam.org/item/ASENS_1998_4_31_3_361_0.pdf",
+      "sha256": "50660f4132f81f4b76943aaaaf2bb91e8d35c14debb48fed22c2796e5a1ddf11"
+    },
+    {
+      "use": "Bellaiche and Chenevier, Proposition 2.4",
+      "url": "https://arxiv.org/pdf/0804.2860v1",
+      "sha256": "1d268b71a1214b179508d462698c347f0f3fc4f7d693f4a5c51f062c5dc79991"
+    },
+    {
+      "use": "Abrashkin, Fontaine-Laffaille ramification",
+      "url": "https://arxiv.org/pdf/1405.3861v1",
+      "sha256": "d32fd22cfc94e69af5c7d55f6e71f7264edb2dc5aced9cb79b087c3ec6039667"
+    },
+    {
+      "use": "Khare and Wintenberger, Serre modularity I",
+      "url": "https://www.math.ucla.edu/~shekhar/papers/results.pdf",
+      "sha256": "3c389dc33e09fe847f5d8189ffd8915b5c1a73424e64e4fed6769829883bad82"
+    },
+    {
+      "use": "Mascot, Theorem 4.2.2 on Serre-Tate lifts",
+      "url": "https://www.maths.tcd.ie/~mascotn/research/Companion.pdf",
+      "sha256": "cd1572ae051e0d558c6d539df573312fd6ec1797cfe47af63dc34c763537e2ab"
+    },
+    {
+      "use": "Voight, Hunter inequality in ANTS VIII talk",
+      "url": "https://antsmath.org/ANTSVIII/files/voight.pdf",
+      "sha256": "a4c321080fe1cf2b6a09efd4d5e71e14996082857b3fdf66a7781424af9c7b03"
+    },
+    {
+      "use": "Stein, modular symbols and Heilbronn matrices",
+      "url": "https://wstein.org/msri06/refs/stein-book-on-modular-forms.pdf",
+      "sha256": "883586b6de92e853ecfb12c0ae6341985f975aeb820995231460ffee147a0198"
+    }
+  ],
+  "outcomes": {
+    "finite_replay": "completed",
+    "rank_certificate": "completed with two seeds",
+    "quintic_search": "completed, all survivors excluded by rational intervals",
+    "pari_weight_two": "completed, full Hecke matrices",
+    "modular_symbols": "completed, independent relative and cusp-boundary tests",
+    "extra_timing_probe": "A separate attempt to recompute the same four modular-form columns from long exact Fourier expansions was stopped after the full-space PARI and independent modular-symbol checks. It supplies no evidence."
+  }
+}
