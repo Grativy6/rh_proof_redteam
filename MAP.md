@@ -8,6 +8,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Which corpus tools were used, and what was independently established? | [Original corpus shelf](corpus/README.md) · [Three-question work key](RH-PROOF-WORK-KEY.md#three-questions-for-a-candidate) · [Paper counterexample and actual-input review](receipt-archives/2026-11-23-independent-theta-check.md). Recorded by Hearthline on 23 November under Chris’s request. |
+| Does the reported Windows checker failure reproduce? | [4.35.0 input-mode comparison and matched 4.33.1 run](receipt-archives/2026-11-23-windows-checker-report.md). Tested by Hearthline on Dust on 23 November under Chris’s request. |
 | Can an incompatible choice of determinant class add another factor at the host primes? | [Exact ideal factorization from an integral Hecke root](receipt-archives/2026-11-23-hecke-class-factor.md) · proved and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | Does the residue reach the fixed larger lattice and its later Hecke length? | [Finite marking witness, compulsory twists and the sign of the index](receipt-archives/2026-11-23-fixed-level-theta-congruences.md) · [Unramified determinant classes and the pointwise congruence ideal](receipt-archives/2026-11-23-unramified-determinant-classes.md). Derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | Does the raw theta map reach the same rows integrally? | [Raw image, exact class-sum equality at the host primes, and the remaining two lattice indices](receipt-archives/2026-11-23-raw-theta-integral-image.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |

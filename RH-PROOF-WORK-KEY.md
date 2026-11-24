@@ -8,6 +8,16 @@
 
 A **key** records the object, question and test before the outcome is known. Chris selects the work. **Turning** the key means doing the mathematics. The **receipt** preserves the evidence, what failed, and the next reader’s starting point. This key refines the [initial zero-pairing preparation](https://github.com/Grativy6/rh_proof_redteam/blob/65351a0a720c7ef80e06b70c7c99767f509698f2/RH-PROOF-WORK-KEY.md) after Chris clarified that the target is a mathematical mismatch that can survive formal checking.
 
+## Three questions for a candidate
+
+Chris requested this explicit independence check on 23 November 2026.
+
+1. Demonstrate the proposed counterexample on paper or with an independently reproducible observation. Specify the input, the assertion it violates, and any finite range a calculation tests.
+2. Pin the declaration and its first necessary consumer. Show whether the argument actually uses the violated assertion and on which objects.
+3. Establish each proposed protection for those objects independently of the bridge being challenged. Name any classical result and check its hypotheses. A declaration or a successful kernel replay establishes what the formal system checked. Where the independent argument ends, record the remaining mathematical obligation as **unresolved**.
+
+[Corpus files and worked use](corpus/README.md) · [Applied to the disappearing tail](receipt-archives/2026-11-23-independent-theta-check.md) · [Windows checker control](receipt-archives/2026-11-23-windows-checker-report.md)
+
 ## First turn
 
 The first use of this key produced a counterexample to the mixed-intersection interpretation of the chosen geometry model. Its two positive weights give 2 in one order and 8 in the other, while the classical answer is 4. The receipt also tests surface replacement and corrects two source links using the compiled dependency graph. [Turn 1 receipt](receipt-archives/2026-11-23-geometry-witness.md)

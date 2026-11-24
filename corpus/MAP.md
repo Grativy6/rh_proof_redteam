@@ -1,0 +1,22 @@
+# Corpus map
+
+## Human notes
+
+Chris requested public copies of the research tools used in the audit after a reader questioned whether the workflow could be reproduced. Hearthline added the following sources on 23 November 2026. [Applied method](README.md) · [RH project map](../MAP.md)
+
+| Exact source | Edition and use | Upstream |
+| --- | --- | --- |
+| [Mathematical Realization Atlas](PAL_v2.4-M_Mathematical_Realization_Atlas.docx) | PAL v2.4-M. Interface fibers, generator coverage, completion, return and uniformity. | [Deposit](https://zenodo.org/records/22888036) |
+| [Mechanical Structural Spine](PAL_v2.4_Mechanical_Structural_Spine.docx) | PAL v2.4. L05 and L09–L11 and SC-21 support the handoff’s tests. | [Deposit](https://zenodo.org/records/22888036) |
+| [Obligation and Decision Ledger](PAL_v2.4-L_Obligation_and_Decision_Ledger.docx) | PAL v2.4-L. D33/O54 and D35/O56 track what a measurement and a return can certify. | [Deposit](https://zenodo.org/records/22888036) |
+| [Conformance Tests](PAL_v2.4-T_Conformance_Tests.docx) | PAL v2.4-T. Test identifiers and fixtures referred to in the handoff. | [Deposit](https://zenodo.org/records/22888036) |
+| [Riemann–Pang Ledger](Riemann-Pang_Ledger_v1.0.docx) | Public v1.0. Finite prefixes, signed tails, completion obligations. | [Deposit](https://zenodo.org/records/21894278) |
+| [APCI declared-interface paper](APCI_Declared_Interface_v1.0.0.docx) | Run 0001, v1.0.0. Factorization on reachable traces. | [Deposit](https://zenodo.org/records/21923290) |
+| [APCI interface code](Interface.lean) | The exact source behind the original work key’s reachable-image citation. Its only import is Lean’s Std library. | [Pinned source](https://github.com/Grativy6/PAL-Lean-Audit/blob/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/projects/APCI/APCILeanAudit/Interface.lean) |
+| [Abstract Loops](Abstract_Loops_v1.0.docx) | v1.0. Joint certification through more than one observation. | [Deposit](https://zenodo.org/records/21950771) |
+| [BRIDGE](BRIDGE_v0.4.docx) | v0.4. The endpoint readout and its kernel during transport. | [Deposit](https://zenodo.org/records/22699551) |
+| [DARK public methodology](DARK_v1.0_Public_Methodology_Specification.docx) | v1.0. Boundary readouts, deletion of the proposed cause, and independently observed returns. | [Deposit](https://zenodo.org/records/21766026) |
+
+## Unresolved
+
+The corpus helps formulate tests. The [evidence review](../receipt-archives/2026-11-23-independent-theta-check.md) records which actual-input obligations still require independent work.

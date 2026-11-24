@@ -1,0 +1,37 @@
+{
+  "platform": "Windows x86_64",
+  "toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "official_windows_tar_zst_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+  "checker_repo": "https://github.com/digama0/lean4lean",
+  "checker_commit": "67f63b0c818920dfaed2ad07ccff187a6a8fe1e3",
+  "batteries_commit": "76e1c118b0700b4ceafe99532e887d6431625e1a",
+  "checker_sha256": "86aad6b4c8a1204c271c516715df96297eb76ce24cc6d6fcea403fa5ace47b5d",
+  "checker_build_command": "lake build lean4lean (explicit 4.33.1 executable and PATH)",
+  "native_prelude_check_exit": 0,
+  "independent_prelude": {
+    "module": "Init.Prelude",
+    "exit": 0,
+    "output": "checked 1975 declarations"
+  },
+  "release_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "release_source": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean",
+  "source_sha256": "a56db1ff0f16ea0818aeed4180320454c8f6822c6bcf24908023355893f77f5a",
+  "source_git_blob": "3f95d6414516d32059a820c9867ee61a17c4d85e",
+  "olean_sha256": "6bc289670f5fad37e189274dd4b5e0a9f76576bbb86399a95d6f2c9725df61f9",
+  "compile_exit": 0,
+  "replay_exit": 0,
+  "compile_command": "lean -R . -o <isolated-lib>/<module>.olean <module>.lean",
+  "replay_command": "lean4lean -v Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.IsDiscriminantTwelfthRootOfIdealLattice",
+  "replay_mode": "replayFromImports",
+  "imports": "existing compiled project dependencies",
+  "replay_summary": "checked 183 declarations",
+  "selected_log_lines": [
+    "adding defnDecl Formalism.MainNotions.TaylorLogMetric.sgStar",
+    "adding defnDecl Formalism.MainNotions.TaylorLogMetric.fnConj",
+    "checked 183 declarations"
+  ],
+  "verbose_log_sha256": "5d42ac0b0e37de40926565e89db3751056c7232a37fc2daf1b644f8befff89eb",
+  "other_attempt": "DataN replay timed out after 210 seconds; no result for that module.",
+  "published_log": "2026-11-23-pinned-module-replay.log",
+  "published_log_sha256": "5d42ac0b0e37de40926565e89db3751056c7232a37fc2daf1b644f8befff89eb"
+}

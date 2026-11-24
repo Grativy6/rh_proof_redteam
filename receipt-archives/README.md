@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [independence review](2026-11-23-independent-theta-check.md) applies the [working corpus](../corpus/README.md) to the disappearing tail. Run `python receipt-archives/check_theta_paper_examples.py` for its finite arithmetic and `python receipt-archives/check_corpus_sources.py` for source identities. The [Windows replay receipt](2026-11-23-windows-checker-report.md) gives the exact 4.35.0 reproduction and the 4.33.1 comparison.
+
 The [determinant-class selector](2026-11-23-hecke-class-factor.md) finds an integral Hecke root, identifies the residual support ideal and gives a resultant bound when residual roots collide. Run `python receipt-archives/check_determinant_class_selector.py` for exact root and factor lifting on finite orbits.
 
 The [fixed-level calculation](2026-11-23-fixed-level-theta-congruences.md) and the [unramified determinant calculation](2026-11-23-unramified-determinant-classes.md) track two costs into the localized Hecke lengths. Run `python receipt-archives/check_fixed_level_theta_congruences.py` for the colliding Satake roots, two finite marking coordinates and the quadratic ideal of order three.

@@ -1,0 +1,33 @@
+# Corpus used in the RH proof audit
+
+These are Christopher D. Pang’s source texts that informed a documented test in this audit or its Chat-Hearthline handoff. Nine original manuscripts and one original source file are stored here. The screen of 74 readings across nine shelves was a discovery pass. The table below identifies what was actually applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+
+## Run the disappearing-tail test on paper
+
+Start with any finite cutoff $r$. Ask whether knowing the Taylor coefficients through $r$, and knowing that all coefficients lie in one number field, certifies convergence of the conjugated series. Set $u=(3-\sqrt5)/2$ and put $u^{n^2}$ after the cutoff. The zero series and this series agree on every reported coefficient. One embedding makes the new tail decay on every compact disc. The other sends $u$ to $u^{-1}>1$ and makes its terms grow at every nonzero argument. Varying $r$ repeats the test after any prescribed finite observation.
+
+APCI supplies the reason one collision suffices for that question. An answer recovered from the observed data must be constant on each set of indistinguishable inputs. The mathematical counterexample is the root-test argument itself. The next question is whether the particular theta section in the release can have this tail. That needs an argument about its periods, coefficients and normalization. [Paper derivation and actual-input check](../receipt-archives/2026-11-23-independent-theta-check.md)
+
+| Corpus source | Operation used here | Public work |
+| --- | --- | --- |
+| PAL v2.4-M, §9, M-INTERFACE-FIBER | State exactly what a checker or a finite jet reads. Hold that observation fixed and vary the requested answer. | [Geometry work key](../RH-PROOF-WORK-KEY.md) |
+| PAL v2.4-M, §§6–9, with the Spine, Ledger and Conformance Tests in the handoff | Check the order of uniform quantifiers, coverage by generators and what completion preserves. The handoff calls out T45, T46, T48, T54–T57 and T62, and ledger pairs D33/O54 and D35/O56. | [Handoff and source audit](../receipt-archives/2026-11-23-proof-audit.md) |
+| Riemann–Pang Ledger v1.0, §4 and Parts V–VI | Specify a finite prefix and the signed or unbounded tail still to be controlled. Changing the cutoff changes the witness. | [Conjugated theta tail](../receipt-archives/2026-11-23-conjugated-theta-tail.md) |
+| APCI v1.0.0 and its reachable-image theorem | Identify two inputs a trace merges. Distinguish an answer on reachable traces from a default assigned outside its mathematical domain. | [Pinned APCI source](Interface.lean) · [Geometry audit](../receipt-archives/2026-11-23-proof-audit.md) |
+| Abstract Loops v1.0, §1.1 and the joint-trace test | Ask whether a second observation actually separates the pair. Adding an all-orders coefficient identity can distinguish two functions that have the same finite jet. | [Independent theta check](../receipt-archives/2026-11-23-independent-theta-check.md) |
+| BRIDGE v0.4, “Endpoint Certificate Transport” and “Residue and Binding Transport” | Track the input object, its readout and the target of the next map. The raw and projected theta images pose distinct lattice questions. | [Raw theta image](../receipt-archives/2026-11-23-raw-theta-integral-image.md) |
+| DARK v1.0, §§4.6, 8.2 and 9.3 | Hold the readout fixed, vary the underlying object, and ask whether the proposed return was obtained independently. Originally applied to Gemini Neon’s tilt and character-sum tests. | [DARK application to Gemini’s results](../receipt-archives/2026-11-23-gemini-tail-review.md) |
+
+## Three questions for each objection
+
+1. What paper argument or independently reproducible observation demonstrates the failure? Give the inputs and the conclusion that fails.
+2. Where does the pinned RH argument use this operation, and what property of the particular inputs does its downstream step need?
+3. Which of the conditions excluding the objection can a reader establish for those inputs without assuming the bridge under review? State the remaining obligation as *unresolved* whenever only the source assertion has been traced.
+
+A published source link locates a claim. A checker run records what a particular executable accepted or rejected. In the receipts, the mathematical justification for an actual input is the independent argument and the hypotheses it checks. The dated [evidence review](../receipt-archives/2026-11-23-independent-theta-check.md) applies that distinction to earlier conclusions.
+
+Run `python receipt-archives/check_corpus_sources.py` from the repository root for the offline byte checks. Add `--upstream` to compare each file to the public deposit or pinned Git revision. [Verification script](../receipt-archives/check_corpus_sources.py)
+
+## Attribution
+
+Pang’s nine manuscripts retain their deposited CC BY 4.0 terms. The original APCI Lean source is from the Apache-2.0 PAL-Lean-Audit repository. The files are byte-for-byte copies. Hearthline prepared the application guide, and Chris authorized publication on 23 November 2026. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [APCI source repository license](https://github.com/Grativy6/PAL-Lean-Audit/blob/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/LICENSE)

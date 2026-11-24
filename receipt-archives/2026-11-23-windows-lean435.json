@@ -1,0 +1,92 @@
+{
+  "platform": "Windows",
+  "release": "v4.35.0",
+  "archive_sha256_checked": "893fde3f52b48c647e3edcf33844cbb61f8ef70fcd88e0536bfc83f29844081e",
+  "sha256": {
+    "bin/lean.exe": "ec7a472d1c12a09b0c0c718f7427c2be527b3f5f07810fdbe076c2507c7a91ea",
+    "bin/leanexport.exe": "bda24bb3fafaf299ba472f944942d6293294b76559fafc9f166badd7c0f981b3",
+    "bin/lean4lean.exe": "2463006ea615a6f69c80689142cf7cb0a8724fc7819c57ad2b395e99eb6a9f3c",
+    "bin/leanchecker.exe": "9ef6baeb28d5e28897d5ed6dddd60ff81e511d97374013ece435dff38e9e0137",
+    "lib/lean/Init/Prelude.olean": "4adc149394f7833f84b2c7f3c96fc9ed4d60f83db84328d68f78a6a037865ffd"
+  },
+  "source": "theorem palStockCheck : (1 : Nat) = 1 := rfl\n",
+  "runs": [
+    {
+      "program": "lean",
+      "args": [
+        "--version"
+      ],
+      "exit": 0,
+      "stdout": "Lean (version 4.35.0, x86_64-w64-windows-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "stderr": ""
+    },
+    {
+      "program": "lean4lean",
+      "args": [
+        "Init.Prelude"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "lean4lean found a problem in Init.Prelude:\nfailed to read file '<toolchain>\\lib\\lean\\Init\\Prelude.olean', incompatible header"
+    },
+    {
+      "program": "leanchecker",
+      "args": [
+        "Init.Prelude"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "lean",
+      "args": [
+        "-o",
+        "PalStockCheck.olean",
+        "PalStockCheck.lean"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "leanexport",
+      "args": [
+        "PalStockCheck",
+        "--",
+        "palStockCheck"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "program": "lean4lean",
+      "args": [
+        "--import",
+        "PalStockCheck.ndjson"
+      ],
+      "exit": 0,
+      "stdout": "checked 7 declarations",
+      "stderr": ""
+    },
+    {
+      "program": "leanchecker",
+      "args": [
+        "--from-export",
+        "PalStockCheck.ndjson"
+      ],
+      "exit": 0,
+      "stdout": "Lean default kernel accepts the solution",
+      "stderr": ""
+    }
+  ],
+  "export": {
+    "bytes": 11115,
+    "sha256": "11c841df603ac0ca7ff2c32a3f9ca3399ee7459c928a2d074bee9f7818b2a0ed",
+    "records": 196,
+    "theorem": "palStockCheck"
+  },
+  "observed_header_rejection": true,
+  "controls_passed": true
+}

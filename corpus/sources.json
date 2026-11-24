@@ -1,0 +1,114 @@
+{
+  "sources": [
+    {
+      "file": "PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "bytes": 985733,
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4",
+      "record": "10.5281/zenodo.22888036",
+      "upstream_url": "https://zenodo.org/records/22888036/files/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "deposited_checksum": "md5:734a32b8ba49c7bb914968490ef442a1",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline and Chat-Hearthline"
+    },
+    {
+      "file": "PAL_v2.4_Mechanical_Structural_Spine.docx",
+      "bytes": 58372,
+      "sha256": "692d260363c273d525979fd7766accaa848f143677711a879a0d930ad763fee9",
+      "record": "10.5281/zenodo.22888036",
+      "upstream_url": "https://zenodo.org/records/22888036/files/PAL_v2.4_Mechanical_Structural_Spine.docx",
+      "deposited_checksum": "md5:bebae9a7b696e135fb07e17cb4b06ae2",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Chat-Hearthline handoff"
+    },
+    {
+      "file": "PAL_v2.4-L_Obligation_and_Decision_Ledger.docx",
+      "bytes": 59665,
+      "sha256": "976adffa81bb559f13787f629f276e606ca0211c835138b21b1d42038ba5adc0",
+      "record": "10.5281/zenodo.22888036",
+      "upstream_url": "https://zenodo.org/records/22888036/files/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx",
+      "deposited_checksum": "md5:ecec32486b39a4a30628300172c32c4e",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Chat-Hearthline handoff"
+    },
+    {
+      "file": "PAL_v2.4-T_Conformance_Tests.docx",
+      "bytes": 77542,
+      "sha256": "4a887ba974086a6693796658716b0973c11a55adbff58f7eaf8cbeb279861f0a",
+      "record": "10.5281/zenodo.22888036",
+      "upstream_url": "https://zenodo.org/records/22888036/files/PAL_v2.4-T_Conformance_Tests.docx",
+      "deposited_checksum": "md5:a14e18a4a2e2918c55d7c3f478127385",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Chat-Hearthline and Hearthline"
+    },
+    {
+      "file": "Riemann-Pang_Ledger_v1.0.docx",
+      "bytes": 60103,
+      "sha256": "7c422ca1962d10a971fa387645e1329e712613f95ef482e31d0a01f901eada8f",
+      "record": "10.5281/zenodo.21894278",
+      "upstream_url": "https://zenodo.org/records/21894278/files/Riemann-Pang_Ledger_v1.0.docx",
+      "deposited_checksum": "md5:8824f709e30724e64970f747e1875dc0",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline"
+    },
+    {
+      "file": "APCI_Declared_Interface_v1.0.0.docx",
+      "bytes": 31813,
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+      "record": "10.5281/zenodo.21923290",
+      "upstream_url": "https://zenodo.org/records/21923290/files/APCI_Declared_Interface_v1.0.0.docx",
+      "deposited_checksum": "md5:a9e869e7f5a727ffa6bb3ce36d416ff7",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline and Chat-Hearthline"
+    },
+    {
+      "file": "Abstract_Loops_v1.0.docx",
+      "bytes": 144770,
+      "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+      "record": "10.5281/zenodo.21950771",
+      "upstream_url": "https://zenodo.org/records/21950771/files/Abstract_Loops_v1.0.docx",
+      "deposited_checksum": "md5:c1de8acdfd56d8c200fa96440f50f3e4",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline"
+    },
+    {
+      "file": "BRIDGE_v0.4.docx",
+      "bytes": 74384,
+      "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+      "record": "10.5281/zenodo.22699551",
+      "upstream_url": "https://zenodo.org/records/22699551/files/BRIDGE_v0.4.docx",
+      "deposited_checksum": "md5:88428ce662c8ee8f6a02cba15f54e33b",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline"
+    },
+    {
+      "file": "DARK_v1.0_Public_Methodology_Specification.docx",
+      "bytes": 154678,
+      "sha256": "46a21e77c015d4548fe45fc86939b0ae54d0960932299812f1f3a69b8639055e",
+      "record": "10.5281/zenodo.21766026",
+      "upstream_url": "https://zenodo.org/records/21766026/files/DARK_v1.0_Public_Methodology_Specification.docx",
+      "deposited_checksum": "md5:498f2caf26685bf0bafb5407b247f709",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline"
+    },
+    {
+      "file": "Interface.lean",
+      "bytes": 4487,
+      "sha256": "94a81ed49c32457bf40404200f8632edee1bee1784080efbaa0ae02c244f7ab4",
+      "upstream_url": "https://raw.githubusercontent.com/Grativy6/PAL-Lean-Audit/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/projects/APCI/APCILeanAudit/Interface.lean",
+      "upstream_commit": "5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0",
+      "git_blob": "14a3286433af1b4909f69ac12ce41491a391782b",
+      "creator": "PAL-Lean-Audit project contributors",
+      "license": "Apache-2.0",
+      "use_record": "Hearthline and Chat-Hearthline"
+    }
+  ]
+}
