@@ -4,6 +4,8 @@ Chris Pang asked for the complete Context Stack alongside the sources already us
 
 The public formal projects have a [separate Lean comparison](../receipt-archives/2026-11-24-lean-check-comparison.md), including all seven current Context Parallax formal files. It records the exact propositions and assumptions the checkers read.
 
+The same [APCI source](Interface.lean) produces a [literal blank-slot control](../receipt-archives/IUsedLeanToProveRH.lean) and an [axiom-free obstruction to decoding the next denominator digit](../receipt-archives/2026-11-24-integral-spectral-frame.md). The [new census](../receipt-archives/2026-11-24-assumptions-before-the-proof.md) measures which axiom names enter at the statement itself.
+
 ## Follow the terminal coordinate across two measurements
 
 The [Context Stack](context-stack/README.md) includes the model, map and rhythm papers, MIND, Context Parallax and the prompt protocols with their available working and published editions. [BLA](BLA_in_PAL_v0.9.1.pdf) supplies the distinction between a residual that has been observed and an explanation that still needs a test. [CLEF](CLEF_cluster_layer_entropy_focus_v1_0.pdf) asks which layer makes a distinction readable. For the terminal matrix, retain the ordinary columns and change only the auxiliary coset. A single local denominator becomes a residue after the basis change, and that residue determines the final Fourier character. Repeating in a swapped frame can change the surviving support from one point to a whole affine subspace. [Paper calculation](../receipt-archives/2026-11-23-coupled-type-prime-residue.md) · [Exact controls](../receipt-archives/check_coupled_type_residue.py)
