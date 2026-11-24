@@ -8,6 +8,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Does an obstruction remain relevant after the window primes move? | [A class inside the windows](receipt-archives/2026-11-24-a-class-inside-the-zeta-windows.md) · [Two independent arithmetic checks](receipt-archives/2026-11-24-the-577-class-on-paper.md) · [One of 32 labels](receipt-archives/2026-11-24-one-of-thirty-two-characters.md) · [The remaining rank-three obligation](receipt-archives/2026-11-24-the-rank-three-obligation-at-577.md). Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
+| Can the previous two conductors accumulate more 5-primary length at another twist? | [All positive odd twists](receipt-archives/2026-11-24-all-odd-twists-at-two-conductors.md). Same authorization and date. |
 | Does the same rank-three representation work on two length-two inputs? | [Construct both strict classes](receipt-archives/2026-11-24-two-classes-of-order-twenty-five.md) · [Prove the exact orders](receipt-archives/2026-11-24-why-the-classes-stop-at-twenty-five.md) · [One adjoint at 2179](receipt-archives/2026-11-24-one-adjoint-at-2179.md) · [Opposite tangent signs](receipt-archives/2026-11-24-the-two-tangent-signs.md) · [Congruence obstruction and directed tests at 106619](receipt-archives/2026-11-24-where-the-adjoint-disappears.md). Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
 | Do actual lifts account for the class at 571? | [Joint Hecke computation](receipt-archives/2026-11-24-one-hecke-line-at-571.md) · [Ramified fields and exact valuations](receipt-archives/2026-11-24-two-ramified-hecke-fields.md) · [Local types](receipt-archives/2026-11-24-matching-the-unitary-level.md) · [Global residual identification](receipt-archives/2026-11-24-global-residual-character-at-571.md) · [Even projective alternative](receipt-archives/2026-11-24-quintic-check-for-the-even-alternative.md). Hearthline under Chris’s continuing public audit, 24 November. |
 | Which characteristic-zero representation could see the class at 571? | [Order-five class](receipt-archives/2026-11-24-an-order-five-class-and-a-hundred-missing-levels.md) · [Rank-two exclusion](receipt-archives/2026-11-24-the-rank-two-alternative-at-571.md) · [Constraints in rank three](receipt-archives/2026-11-24-which-rank-three-representations-remain.md) · [Directed Hecke test](receipt-archives/2026-11-24-directed-hecke-test-at-level-571.md). Hearthline, under Chris’s continuing public audit request on 24 November. |
@@ -67,6 +69,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request for a public audit. The base commit is `58e1c511ef8beb154cf2ef2e47daf7f21883e876`. [Source identities](receipt-archives/source-pins.json)
 
 ## Unresolved
+
+The [fixed conductor-256 input](receipt-archives/2026-11-24-the-rank-three-obligation-at-577.md#unresolved) requires a marked non-self-dual rank-three system at 577. Its real-window status, exact group at twist 296 and exclusion of the two classical alternatives have independent checks.
 
 The [rank-three test at 106619](receipt-archives/2026-11-24-where-the-adjoint-disappears.md#unresolved) needs a non-self-dual system on the prescribed global residue. One characteristic-zero eigenform distinguishes both directions at 11 and 29. Its global residue remains to be identified.
 

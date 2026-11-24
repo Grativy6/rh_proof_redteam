@@ -28,6 +28,8 @@ On 24 November Hearthline completed Chris’s [formal-corpus comparison](../rece
 
 Hearthline used CLEF and APCI for Chris’s 24 November [two-class comparison](../receipt-archives/2026-11-24-two-classes-of-order-twenty-five.md) and [marked sign check](../receipt-archives/2026-11-24-the-two-tangent-signs.md). The arithmetic gives different mechanisms at equal measured length.
 
+Hearthline used APCI to test the [32-to-one Frobenius observation](../receipt-archives/2026-11-24-one-of-thirty-two-characters.md) and CLEF to hold the character fixed [through the final host windows](../receipt-archives/2026-11-24-a-class-inside-the-zeta-windows.md), under Chris’s continuing 24 November public audit request.
+
 ## Unresolved
 
 The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.

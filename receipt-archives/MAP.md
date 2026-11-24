@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Class inside the zeta windows](2026-11-24-a-class-inside-the-zeta-windows.md) · [Exact order 577](2026-11-24-the-577-class-on-paper.md) · [One of 32 character labels](2026-11-24-one-of-thirty-two-characters.md) | Actual conductor, twist, two independent local/global readings and the labelled integer product. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
+| [Two modular exclusions at 577](2026-11-24-the-rank-three-obligation-at-577.md) · [All odd twists at the two earlier conductors](2026-11-24-all-odd-twists-at-two-conductors.md) | Tame levels, Hasse-invariant tests, and the exact mod-125 obstruction. Same authorization and date. |
 | [Strict classes of order 25](2026-11-24-two-classes-of-order-twenty-five.md) · [Two independent upper obstructions](2026-11-24-why-the-classes-stop-at-twenty-five.md) | Explicit Kummer coordinates, six host-prime residues, Jacobi sums and an independent local-field computation. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
 | [Adjoint trace at 2179](2026-11-24-one-adjoint-at-2179.md) · [Marked component and tangent signs](2026-11-24-the-two-tangent-signs.md) · [Bernoulli obstruction at 106619](2026-11-24-where-the-adjoint-disappears.md) | Weight-two integral Hecke spaces, a local family through the base point, and a joint two-prime reading on the remaining rank-three space. Same date and authorization. |
 | [One line and four lifts](2026-11-24-one-hecke-line-at-571.md) · [Local Hecke order](2026-11-24-two-ramified-hecke-fields.md) · [Unitary level and Galois conditions](2026-11-24-matching-the-unitary-level.md) | Full signed matrices, exact rank, field and valuation checks. Hearthline under Chris’s ongoing 24 November audit request. |
@@ -90,6 +92,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+For the [in-window order-577 class](2026-11-24-the-rank-three-obligation-at-577.md#unresolved), the ordinary marked point and its cuspidal realization remain open. The exceptional higher twist is recorded in the [orbit calculation](2026-11-24-one-of-thirty-two-characters.md#what-happens-when-the-twist-changes).
 
 The [global residual eigensystem at 106619](2026-11-24-where-the-adjoint-disappears.md#unresolved) is open. The known examples below the final window isolate necessary intermediate steps.
 
