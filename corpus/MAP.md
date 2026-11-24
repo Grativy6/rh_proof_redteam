@@ -21,4 +21,4 @@ Hearthline applied the existing PAL and APCI sources to divided torsion lifts an
 
 ## Unresolved
 
-The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. The [phase calculation](../receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md#unresolved) records the currently open equality for moved input lattices.
+The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.

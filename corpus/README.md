@@ -22,6 +22,8 @@ APCI supplies the reason one collision suffices for that question. An answer rec
 
 The PAL interface-fiber test and APCI ask whether two inputs with the same observed data can have different downstream answers. In the [level-25 example](../receipt-archives/2026-11-23-theta-transport-at-a-place.md), two lifts agree at level 5 and only one belongs to the moved lattice. Dividing the actual arithmetic columns recovers the extra information. In the [two-coset row](../receipt-archives/2026-11-23-phase-of-a-moved-theta-row.md), the Gaussian norm gives the same answer before and after a rotation, while the raw functions differ by a computable phase. Exact equality is needed before taking the matrix coefficients. Both tests can be repeated with `python receipt-archives/check_theta_lattice_transport.py`. [Finite checks and direct theta evaluations](../receipt-archives/check_theta_lattice_transport.py)
 
+The next [coset-lift test](../receipt-archives/2026-11-23-coset-jets-over-one-field.md) holds the readout at the selected prime over 11 fixed. Dropping the paired condition at its conjugate changes the phase by an eleventh root of unity. The [triangle test](../receipt-archives/2026-11-23-phase-around-three-lattices.md) holds three operator norms fixed and reads the sign after composing them. The actual even rank supplies the missing sign information. [Checks](../receipt-archives/check_unitary_row_phases.py)
+
 ## Three questions for each objection
 
 1. What paper argument or independently reproducible observation demonstrates the failure? Give the inputs and the conclusion that fails.

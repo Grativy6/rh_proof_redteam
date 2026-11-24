@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+Run `python receipt-archives/check_unitary_row_phases.py` for the [mixed row](2026-11-23-unitary-phase-with-fixed-directions.md), [negative finite triangle](2026-11-23-phase-around-three-lattices.md), [excluded coset lift](2026-11-23-coset-jets-over-one-field.md) and [coefficient-field conjugation](2026-11-23-conjugation-in-the-height-field.md). It also evaluates a 1,250-term Jacobi average independently. Run `python receipt-archives/check_theta_jet_height.py` for [level refinement and the determinant derivative](2026-11-23-gaussian-bound-for-the-jet-operator.md).
+
 Run `python receipt-archives/check_theta_lattice_transport.py` for the [fourfold average](2026-11-23-fourfold-theta-lattice.md), [divided torsion lifts](2026-11-23-theta-transport-at-a-place.md), [CM class means](2026-11-23-theta-height-at-the-cusp.md) and [phase of a moved row](2026-11-23-phase-of-a-moved-theta-row.md). The finite character and subgroup checks are exact. The script also evaluates Jacobi sums directly and compares two numerical formulas for each class mean.
 
 The [independence review](2026-11-23-independent-theta-check.md) applies the [working corpus](../corpus/README.md) to the disappearing tail. Run `python receipt-archives/check_theta_paper_examples.py` for its finite arithmetic and `python receipt-archives/check_corpus_sources.py` for source identities. The [Windows replay receipt](2026-11-23-windows-checker-report.md) gives the exact 4.35.0 reproduction and the 4.33.1 comparison.

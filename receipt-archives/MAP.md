@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [General rational unitary phase](2026-11-23-unitary-phase-with-fixed-directions.md) · [Composition and mixed row](2026-11-23-phase-around-three-lattices.md) · [Coset-jet field](2026-11-23-coset-jets-over-one-field.md) · [Gram conjugation](2026-11-23-conjugation-in-the-height-field.md) · [Gaussian jet estimate](2026-11-23-gaussian-bound-for-the-jet-operator.md) | Paper derivations and [phase controls](check_unitary_row_phases.py) plus [Fourier and factorial controls](check_theta_jet_height.py), by Hearthline under Chris’s 23 November authorization. |
 | [Fourfold average](2026-11-23-fourfold-theta-lattice.md) · [Conjugation and the integration lattice](2026-11-23-theta-transport-at-a-place.md) · [Cusp height and mean](2026-11-23-theta-height-at-the-cusp.md) · [Phase of a moved row](2026-11-23-phase-of-a-moved-theta-row.md) · [Controls](check_theta_lattice_transport.py) | Proves the standard-vacuum guard on the specified arithmetic data and tests one exact determinant correction. By Hearthline on 23 November under Chris’s instruction to test the objects independently. |
 | [Independence review](2026-11-23-independent-theta-check.md) · [Finite torsion derivation](2026-11-23-cm-theta-torsion-trace.md) · [Exact arithmetic](check_theta_paper_examples.py) | Demonstrates the tail, checks a named input and identifies the higher-rank comparison pursued in the next receipts. By Hearthline under Chris’s 23 November request. |
 | [Windows checker report](2026-11-23-windows-checker-report.md) · [Stock reproduction](check_windows_lean435.py) · [Corpus provenance](../corpus/sources.json) | Reports direct module and export outcomes and links the matched 4.33.1 module log. Corpus files were checked against their public deposits. By Hearthline under Chris’s 23 November request. |
@@ -73,7 +74,7 @@ Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public 
 
 ## Unresolved
 
-The remaining phase test concerns the two unitary maps in [the normalization used before jet descent](2026-11-23-phase-of-a-moved-theta-row.md#unresolved).
+The [general pullback](2026-11-23-phase-around-three-lattices.md) resolves the earlier normalization question for jet descent. The [terminal-entry test](2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) leaves the moved local matrix functions and the finite-prime losses open.
 
 The [fixed downward test](2026-11-23-fixed-downward-test.md#unresolved) follows the two questions left by the [downward residue](2026-11-23-downward-residue.md#unresolved). The [oscillator receipt](2026-11-23-oscillator-cancellation.md#unresolved) records the analytic test reached from the [period receipt](2026-11-23-period-on-quotient.md#unresolved) and [quotient-covolume receipt](2026-11-23-quotient-covolume.md#unresolved). The [coefficient-descent receipt](2026-11-23-coefficient-descent.md#unresolved) gives the preceding lattice question and the outcome of the [cusp-form comparison](2026-11-23-mixed-estimates.md#8-next-live-question). The earlier mixed-call question is preserved in [Turn 1](2026-11-23-geometry-witness.md#8-next-live-question).
 
