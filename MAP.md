@@ -8,6 +8,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can relaxing the condition at 577 hide additional order? | [The local obstruction 177](receipt-archives/2026-11-24-the-last-577th-power-digit.md) · [Two detecting primes](receipt-archives/2026-11-24-two-independent-obstruction-primes.md) · [An integer of relaxed length three](receipt-archives/2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums). The strict length is one for the whole fixed-character sequence. Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
+| Where can the rank-three lift still fail? | [Class groups of the actual affine field](receipt-archives/2026-11-24-the-affine-resolvent-and-its-class-groups.md) · [Two local readings at the nonsplit point](receipt-archives/2026-11-24-the-obstruction-at-the-nonsplit-point.md#the-second-order-arithmetic-test). The mixed quadratic values remain open. Same date and authorization. |
 | Which lifts can still account for the in-window class? | [Identical full residual traces, incompatible flags](receipt-archives/2026-11-24-the-companion-with-the-same-full-trace.md) · [Three first-order directions](receipt-archives/2026-11-24-three-deformation-directions-at-577.md) · [Ramified trace-field requirement](receipt-archives/2026-11-24-why-the-trace-field-must-ramify.md) · [Two remaining invariant equations](receipt-archives/2026-11-24-two-equations-at-the-marked-point.md). Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
 | What does the auxiliary prime supply, and what survives its base change? | [Eisenstein constant and seed descent](receipt-archives/2026-11-24-one-ramified-digit-at-the-auxiliary-prime.md) · [Explicit classes and necessary auxiliary class rank](receipt-archives/2026-11-24-what-the-auxiliary-field-keeps.md). Same authorization and date. |
 | Does an obstruction remain relevant after the window primes move? | [A class inside the windows](receipt-archives/2026-11-24-a-class-inside-the-zeta-windows.md) · [Two independent arithmetic checks](receipt-archives/2026-11-24-the-577-class-on-paper.md) · [One of 32 labels](receipt-archives/2026-11-24-one-of-thirty-two-characters.md) · [The remaining rank-three obligation](receipt-archives/2026-11-24-the-rank-three-obligation-at-577.md). Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
@@ -71,6 +73,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request for a public audit. The base commit is `58e1c511ef8beb154cf2ef2e47daf7f21883e876`. [Source identities](receipt-archives/source-pins.json)
 
 ## Unresolved
+
+The [new calculation at the nonsplit point](receipt-archives/2026-11-24-the-obstruction-at-the-nonsplit-point.md) locates the missing quadratic terms in the strict lower extension and ramified diagonal readings at 577. Their values must be computed on the global lifts of the two ordinary odd classes.
 
 The [two equations at the fixed marked point](receipt-archives/2026-11-24-two-equations-at-the-marked-point.md#a-falsifiable-alternative) still need arithmetic coefficients. A nonconstant characteristic-577 curve would violate the source’s finite-index claim. A finite special fiber would give ordinary characteristic-zero Galois lifts, whose automorphy would then require its own check.
 

@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Local power gap](2026-11-24-the-last-577th-power-digit.md) · [Two obstruction primes](2026-11-24-two-independent-obstruction-primes.md) · [Coefficient data](boundary-577/second_level_readings.json) | Six extracted local digits test the last possible strict lift. The two chosen primes also measure the tame cost at the original weight. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
+| [Cyclotomic weight and its digits](2026-11-24-the-cyclotomic-module-of-the-fixed-class.md) · [Real and CM class groups](2026-11-24-the-affine-resolvent-and-its-class-groups.md) · [Ordinary second-order test](2026-11-24-the-obstruction-at-the-nonsplit-point.md) | Follows the same class through the tower and identifies the two local readings needed on each quadratic test direction. Same date and authorization. |
 | [Companion flag](2026-11-24-the-companion-with-the-same-full-trace.md) · [Tangent and circular-unit calculations](2026-11-24-three-deformation-directions-at-577.md) · [Two directed trace words](2026-11-24-why-the-trace-field-must-ramify.md#two-particular-words-suffice) | Independent first-order arithmetic and a necessary ramification bound on every irreducible marked witness. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
 | [Invariant equations](2026-11-24-two-equations-at-the-marked-point.md) · [Auxiliary prime](2026-11-24-one-ramified-digit-at-the-auxiliary-prime.md) · [Auxiliary class-rank floor](2026-11-24-what-the-auxiliary-field-keeps.md#how-large-the-frame-must-already-be) | Identifies the remaining finite-image test, measures the seed’s congruence and records the quantifier order on the frame. Same date and authorization. |
 | [Class inside the zeta windows](2026-11-24-a-class-inside-the-zeta-windows.md) · [Exact order 577](2026-11-24-the-577-class-on-paper.md) · [One of 32 character labels](2026-11-24-one-of-thirty-two-characters.md) | Actual conductor, twist, two independent local/global readings and the labelled integer product. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
@@ -94,6 +96,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [quadratic calculation at the actual nonsplit residue](2026-11-24-the-obstruction-at-the-nonsplit-point.md#the-second-order-arithmetic-test) needs the global cochain and its two local projections. The [linear readings](2026-11-24-two-independent-obstruction-primes.md) establish a control for that calculation.
 
 For the [fixed 577 problem](2026-11-24-two-equations-at-the-marked-point.md#unresolved), the quadratic obstruction values and possible higher terms are uncomputed. The [two-word reading](2026-11-24-why-the-trace-field-must-ramify.md#two-particular-words-suffice) provides an independent test on a proposed irreducible witness.
 

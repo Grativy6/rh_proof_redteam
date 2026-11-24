@@ -32,6 +32,8 @@ Hearthline used APCI to test the [32-to-one Frobenius observation](../receipt-ar
 
 Hearthline used APCI for the [full-trace companion collision](../receipt-archives/2026-11-24-the-companion-with-the-same-full-trace.md) and CLEF for the [three-class commutator comparison](../receipt-archives/2026-11-24-three-deformation-directions-at-577.md), under Chris’s continuing public audit request on 24 November. The [auxiliary bound](../receipt-archives/2026-11-24-what-the-auxiliary-field-keeps.md#how-large-the-frame-must-already-be) tracks which parameter stays fixed when the cyclotomic layer tends to infinity.
 
+Hearthline applied APCI to the [two independent Frobenius readings](../receipt-archives/2026-11-24-two-independent-obstruction-primes.md) and CLEF to the [strict and relaxed lengths at the same twist](../receipt-archives/2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums), under Chris’s continuing public audit request on 24 November 2026.
+
 ## Unresolved
 
 The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.

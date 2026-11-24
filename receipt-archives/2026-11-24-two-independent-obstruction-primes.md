@@ -1,0 +1,51 @@
+# Two independent primes measure the obstruction
+
+**24 November 2026.** For the even lower character $\xi=z^{-1}$, $z=\bar\psi\omega^{296}$, the dual Selmer group has dimension two. We computed **both** of its Frobenius readings. At 1920257 and 4579073 their determinant is $333\cdot60-388\cdot511\equiv5\bmod577$. Two other primes with more cyclotomic splitting let us compute the full obstruction to lifting the original class by one coefficient digit. These values test the arithmetic Bockstein. The mixed quadratic matrix obstructions are still uncomputed. [First-order directions](2026-11-24-three-deformation-directions-at-577.md) · [The next local unit digit](2026-11-24-the-last-577th-power-digit.md)
+
+## A basis of the dual group
+
+Write $p=577$, $\lambda=\omega z$ and $B=\mathbb Q(\zeta_{256p})^{\ker\lambda}$. This is the degree-64 CM field already used to [construct the strict class](2026-11-24-the-577-class-on-paper.md). It has one place $v$ at $p$, of ramification degree 64 and residue degree one. Its minus $p$-class group is cyclic of order $p$ in the $\lambda$ sector. Use the Teichmüller idempotent for that sector, which is integral because the degree is prime to $p$. Strict and relaxed below refer to the condition on decomposition at $p$. Classes are unramified elsewhere.
+
+The first dual character is an unramified class-group character. Its normalization can be made explicit at each prime $r\equiv1\bmod256p$. Choose the prime $P_r$ specified by the least primitive root of $\mathbb F_r$. Form the first-level Jacobi radicand $\beta_r$ and $I_r=\operatorname{div}(\beta_r)/p$. On the $\lambda$ component the map $P_r\mapsto I_r$ acts by a fixed unit. Indeed its integral ideal operator is $WT/p$, where $T$ is the Jacobi upper-half divisor and $W$ is the character projector with integer power weights. The scalar of $W$ is the degree of the full Galois group modulo $p$, a unit. The scalar of $T$ is $150597=261p\bmod p^2$. The degree for descent from the full cyclotomic field to $B$ is also a unit. The class of $I_r$ can therefore be read by evaluating $\beta_r$ at the old detecting prime 2363393 because the map from the radicand sector to the odd ideal class sector is an isomorphism of order-$p$ groups. Denote the discrete exponent of this power-residue symbol by $u(r)$. This construction gives a fixed normalization of the unramified dual on Frobenius.
+
+There is a second, ramified reading $v(r)$. On a $\lambda$-projected ideal $I$ away from $p$, write $pI=(\alpha)$ in the $p$-adic ideal module. This is possible by the class-group calculation. Take the local logarithm of $\alpha^{p-1}$, project to the same sector and divide by $p$. Global units cause no ambiguity on the odd sector. The corresponding power class has all valuations divisible by $p$ and belongs to the one-dimensional relaxed radicand group, which here is already strict. Its logarithm is therefore divisible by $p$ in the projected local lattice. The local logarithm is an isomorphism on principal units of $B_v$. On principal ideals this divided-log map is the ordinary local logarithm, so reduction gives a ray-class character unramified away from $p$. It is nontrivial on local units. This defines it up to the fixed choice of local basis and Artin sign. We use principal ideals with their positive local-log convention.
+
+For the actual $I_r$, compute $(\beta_r^{576}-1)/577\bmod577$, then extract the inertia-weight-297 coefficient in the local parameter $X$ with $\zeta_{577}=\exp X$ through degree 297. This gives the projected divided log, on the unramified basis vector $Y$ with $Y^4=20\bmod577$. The division is justified before reduction. Replacing the integer projector by another congruent one changes its eigenvalue on $I_r$ by a multiple of $p$, which does not change the mod-$p$ character. The same fixed unit relating $I_r$ to the prime normalizes both dual readings.
+
+| Prime $r$ | $u(r)$, unramified | $v(r)$, divided log |
+| ---: | ---: | ---: |
+| 1920257 | 333 | 511 |
+| 4579073 | 388 | 60 |
+| 6647041 | 84 | 548 |
+| 340919297 | 507 | 514 |
+| 1022757889 | 101 | 367 |
+
+For example, subtract 93 times the first row from the second. The unramified reading becomes zero while the logarithmic reading is 428. These prime classes distinguish the two obstructions even though a single divisibility test cannot. The calculation was repeated by full cyclic convolution and by directly evaluating all 1152 norm factors on the unramified quartic fiber. [Direct local and finite-field replay](boundary-577/dual_primes.py)
+
+## Actual tame inertia at the lift from $p$ to $p^2$
+
+Use the last two primes in the table, $A=340919297$ and $B'=1022757889$. They split at level $256p^2$, so fix the tame generator at each by its action on a $p^2$th root of the local uniformizer. We identify power characters using compatible primitive roots. Normalize the original lower class to have Kummer exponent one at 2363393. The two order-squared Jacobi representatives reduce to 507 and 101 times this class. At its own auxiliary prime each has tame translation $p\,k(j)$ modulo $p^2$, with $k(j)=261+37(j+1)\bmod577$. At the other prime it is unramified.
+
+The last condition on a candidate linear combination is its local residue at 577. The [independent calculations](2026-11-24-the-last-577th-power-digit.md#a-missing-digit-in-local-units) give those residues. On these two primes they can be written
+$$L_j(r)=406(j+1)u(r)+(1+177(j+1))v(r)\pmod{577}.$$
+Two twist residues determine the affine dependence because the wild projector is the norm times the $-p(j+1)$th power of a fixed product of conjugates. The third twist is an independent check. At $j=296$ the two local residues are 263 and 84. Taking the first radicand to the 39th power and the second to the 187th power gives
+$$39\cdot507+187\cdot101=1,\qquad39\cdot263+187\cdot84=0\pmod{577}.$$
+The combined lower and high digits are $394$ and $224$, with $394=553\cdot224\bmod577$. The local power criterion therefore succeeds on this representative. This gives an actual lift of the specified lower class, strict at 577, with last-step tame inertia **230 and 8** at $A$ and $B'$. At $j=171368$ the same procedure uses powers 493 and 256 and gives tame inertia **2 and 461**. The determinant of the two dual rows here is 291, also a unit.
+
+These tame errors are unique. Allowing tame ramification only in the last square-zero coefficient gives one local $k$-line per prime in addition to the unramified condition. Poitou–Tate pairs those lines with the two dual Frobenius values. Both primes split in the coefficient fields, and inertia is normalized by the chosen root of the uniformizer. The pairing matrix is invertible, so no global residual class satisfying the strict condition at 577 can change either tame error. Conversely the two last-step allowances span the obstruction space. Globally this is the ordinary small-extension obstruction with two prescribed additional local corrections. [Duality and dimension count](2026-11-24-two-equations-at-the-marked-point.md#count-the-available-obstructions)
+
+Changing the weight in the coefficient sequence changes its connecting map linearly, by cup product with the mod-$p$ principal cyclotomic character. Thus the two actual lifts determine the Bockstein pair at every residue $j=296\bmod576$. In the basis of dual Frobenius readings it is
+$$(261+37(j+1),\ 202(j+1))\pmod{577}.$$
+Here the column of pairings is $\begin{pmatrix}507&101\\514&367\end{pmatrix}$ times the column of tame errors. At the exceptional twist it is $(0,540)$ and the tame error pair is $(110,459)$. The vanishing first entry agrees with the existence of a globally unramified-away-from-577 lift. The second entry and the direct local calculation independently show that this lift cannot be strict. To convert from exponent one at 2363393 to the lower normalization $X=1$ on the common commutator, multiply all these linear readings by $333/511=231\bmod577$. For example the original tame pair becomes $(46,117)$.
+
+The constant and weight columns $(261,0)$ and $(37,202)$ have determinant 215. This is a computation of two independent *linear* arithmetic obstructions in the base and the varying cyclotomic weight. The unknown coefficients in the two **quadratic** forms in the other variables do not follow by substituting these four integers. [Matrix and local-digit replay](boundary-577/local_gap.py)
+
+## Why these primes work at the nonsplit point too
+
+For the original Jacobi class the two Frobenius translations at $A,B'$ are 278 and 508. Both primes are inert in $K=\mathbb Q(\sqrt{-7})$. The Frobenius on the even three-dimensional adjoint module at the nonsplit point is therefore regular unipotent. Its fixed line is the lower matrix $L=E_{21}-E_{32}$. The dual unramified coinvariants are read by evaluating on that line. On the five odd directions the Frobenius is minus a unipotent matrix, with no fixed vector. In particular the first-order odd classes are locally coboundaries at both primes. The last-step tame correction for the even obstruction is again a single multiple of $L$ at each place, since $A,B'\equiv1\bmod577$.
+
+The dual Selmer group at this nonsplit point maps isomorphically to the two-dimensional relaxed group for $\omega z$ by dualizing the inclusion of the lower line. In its kernel the graded local problems have coefficients $\omega$ with the unit Kummer condition at 577, and $\omega z^{-1}$ strict there. The first has no global class because $\mathbb Q$ has only $\pm1$ as global units. The second vanishes by duality with the computed zero relaxed row for $z$. The gradings split locally at 577, and the intervening local invariant spaces there are zero. This gives injectivity, and the two dimensions agree by the [nonsplit calculation](2026-11-24-the-obstruction-at-the-nonsplit-point.md). Thus the same numerical primes test the actual ordinary cup obstruction, without averaging over a degree-577 field. [Independent Frobenius values](boundary-577/affine_frobenius.py)
+
+## Unresolved
+
+For a mixed odd tangent, a second-order lift can be allowed last-step tame inertia at these two primes. Its two necessary corrections are unique, and the original fixed-level lift exists exactly when both are zero. Their values for the ordinary quadratic cup remain open.

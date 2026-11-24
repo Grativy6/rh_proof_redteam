@@ -2,6 +2,12 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Check the order-577 class through the next digit
+
+From this directory, run `python -B boundary-577/local_gap.py` with NumPy to check the six local readings, the two-prime matrix and the tame errors. The [local power calculation](2026-11-24-the-last-577th-power-digit.md#reproduce-the-computation) gives the C++ and independent GMP commands that rebuild its inputs. For the cyclotomic weights, run `python -B boundary-577/center_digits.py` with the Python standard library. Adding `--direct 3` repeats the third-level zero by direct enumeration. [Weight computation](2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums)
+
+The [dual characters](2026-11-24-two-independent-obstruction-primes.md), [affine field class groups](2026-11-24-the-affine-resolvent-and-its-class-groups.md) and [nonsplit obstruction](2026-11-24-the-obstruction-at-the-nonsplit-point.md) give the derivations and individual replays. Hearthline prepared these under Chris Pang’s continuing public audit request on 24 November 2026.
+
 ### Compare the Lean checks
 
 The [side-by-side receipt](2026-11-24-lean-check-comparison.md) contains the four reproduction steps for the corpus, RH endpoint metadata and a shared matrix lemma. The [full source theorem inventory](2026-11-24-corpus-theorem-axioms.jsonl) gives each inferred proposition, source line, and axiom set by toolchain. [Pins and file outcomes](2026-11-24-lean-comparison.json)

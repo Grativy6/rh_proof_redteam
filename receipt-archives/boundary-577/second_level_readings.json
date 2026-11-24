@@ -1,0 +1,76 @@
+{
+  "ell": 577,
+  "conductor": 256,
+  "local_modulus": 192100033,
+  "teich_y4": 66206154,
+  "records": [
+    {
+      "prime": 340919297,
+      "primitive_root": 3,
+      "histogram_sha256": "a7e976c1df5eb8af55716baf6fec4a004d6eb40d180a48b082218e86c96f3b5e",
+      "unramified_dual": 507,
+      "divided_log_dual": 514,
+      "original_translation": 278,
+      "weights": [
+        {
+          "twist": 171368,
+          "binary_sha256": "e27e1c05b28c91695c8de524463480a08b581dc9e0a0abdfac30743e40b8412b",
+          "low": 514,
+          "residue_row_amplitude": 0,
+          "high": 0,
+          "local_reading": 514
+        },
+        {
+          "twist": 296,
+          "binary_sha256": "14c66ec5ecb2dbe199d57b596ef66878e28a56c2c4ffa597ba40d05fc7769fd1",
+          "low": 514,
+          "residue_row_amplitude": 191,
+          "high": 254,
+          "local_reading": 263
+        },
+        {
+          "twist": 265256,
+          "binary_sha256": "3b72e9ced661159e2ac83a82aa90d369354f6d1b9ba2bd6ac5f7553a50388412",
+          "low": 514,
+          "residue_row_amplitude": 546,
+          "high": 424,
+          "local_reading": 304
+        }
+      ]
+    },
+    {
+      "prime": 1022757889,
+      "primitive_root": 11,
+      "histogram_sha256": "f3b1d354b269c66325b3efa2d2796c81c042d5972675446a811daeb98bd6bb32",
+      "unramified_dual": 101,
+      "divided_log_dual": 367,
+      "original_translation": 508,
+      "weights": [
+        {
+          "twist": 171368,
+          "binary_sha256": "ace916045869cfa8a603a6ae607290e12aeb51aad5a923fbced406da2a19475d",
+          "low": 367,
+          "residue_row_amplitude": 0,
+          "high": 0,
+          "local_reading": 367
+        },
+        {
+          "twist": 296,
+          "binary_sha256": "214cd7c22e837c425bea2f26182e8479ec857c25e1fc3485c7849f2dc8d5623d",
+          "low": 367,
+          "residue_row_amplitude": 505,
+          "high": 445,
+          "local_reading": 84
+        },
+        {
+          "twist": 265256,
+          "binary_sha256": "f64dd1b9ecf8287f5c05d27f1c9d853519405e2a23d934f24f007bd47c8c8ed9",
+          "low": 367,
+          "residue_row_amplitude": 57,
+          "high": 393,
+          "local_reading": 567
+        }
+      ]
+    }
+  ]
+}
