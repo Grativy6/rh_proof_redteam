@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Does the residue reach the fixed larger lattice and its later Hecke length? | [Finite marking witness, compulsory twists and the sign of the index](receipt-archives/2026-11-23-fixed-level-theta-congruences.md) · [Unramified determinant classes and the pointwise congruence ideal](receipt-archives/2026-11-23-unramified-determinant-classes.md). Derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | Does the raw theta map reach the same rows integrally? | [Raw image, exact class-sum equality at the host primes, and the remaining two lattice indices](receipt-archives/2026-11-23-raw-theta-integral-image.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | Can integral split Hecke operators distinguish the good row eigenforms? | [Exact denominator on a family with one residual system, and the fixed larger-level test](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |
 | How many bad directions reappear in the good reduction? | [Congruence depths and exact intersection dimension in a saturated block](receipt-archives/2026-11-23-good-bad-modular-overlap.md) · derived and checked by Hearthline on 23 November under Chris’s continuing public audit. |

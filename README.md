@@ -2,6 +2,8 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+The [larger-space calculation](receipt-archives/2026-11-23-fixed-level-theta-congruences.md) forces a positive congruence length at both host primes. Cutting a retained form to one [unramified determinant class](receipt-archives/2026-11-23-unramified-determinant-classes.md) recovers the reciprocal of the class count under projection. Both losses reach named terms in the published bounds.
+
 The [split Hecke measurements](receipt-archives/2026-11-23-good-bad-hecke-eigenvalues.md) put good and bad row eigenforms in one residual system at each host prime. The [raw theta lift](receipt-archives/2026-11-23-raw-theta-integral-image.md) reaches both kinds. Its class-stabilizer weights and Whittaker trace are units there, leaving an explicit lower bound on the combined loss in integral preimages and projected outputs.
 
 The [local congruence calculation](receipt-archives/2026-11-23-good-bad-modular-overlap.md) identifies a saturated block where the bad rank fraction tends to zero and almost every bad direction also appears in the good reduction. Equal total lengths can give different congruence depths.

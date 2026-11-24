@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Congruence inside the fixed larger level](2026-11-23-fixed-level-theta-congruences.md) · [Full determinant classes](2026-11-23-unramified-determinant-classes.md) · [Exact controls](check_fixed_level_theta_congruences.py) | Forced twisted places, a lower bound in the later local lengths, and a class-number divisor in the pointwise congruence ideal. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Raw theta image and the host-prime class-sum weights](2026-11-23-raw-theta-integral-image.md) | Full pre-cut type range, local equality of the single-series and raw-image lattices, and a sharp lower bound on the combined preimage and projected-image defects. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Good and bad rows with the same residual split Hecke eigenvalues](2026-11-23-good-bad-hecke-eigenvalues.md) | The integral Hecke image, its exact selector denominator, and the determinant test on the larger fixed level. Derived and checked by Hearthline on 23 November under Chris’s continuing request. |
 | [Congruence depths on a saturated good/bad block](2026-11-23-good-bad-modular-overlap.md) · [Cyclotomic elementary divisors](check_good_bad_congruence_block.py) | Exact modular intersection dimension, tensor depths, and distinct order-seven examples of the same total length. Checked by Hearthline on 23 November under Chris’s continuing request. |

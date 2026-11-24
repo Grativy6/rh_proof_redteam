@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [fixed-level calculation](2026-11-23-fixed-level-theta-congruences.md) and the [unramified determinant calculation](2026-11-23-unramified-determinant-classes.md) track two costs into the localized Hecke lengths. Run `python receipt-archives/check_fixed_level_theta_congruences.py` for the colliding Satake roots, two finite marking coordinates and the quadratic ideal of order three.
+
 The [split Hecke calculation](2026-11-23-good-bad-hecke-eigenvalues.md) derives the integral image on a family of row eigenforms. A cyclic group of order 25 checks the denominator by hand. The [raw theta calculation](2026-11-23-raw-theta-integral-image.md) follows their preimages to the fixed larger level, evaluates the actual class-sum denominators and gives a two-coordinate test of the remaining loss.
 
 The [modular overlap calculation](2026-11-23-good-bad-modular-overlap.md) gives the congruence depths on cyclic products inside the row lattice. Run `python receipt-archives/check_good_bad_congruence_block.py` to reproduce the elementary divisors and two-place intersection example.
