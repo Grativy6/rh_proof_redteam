@@ -10,6 +10,10 @@ For the original 577 input, run `python -B boundary-577/first_order_norms.py`, `
 
 Run `python -B boundary-577/cyclic_norm_moments.py` to check all 577 local parameters, the four changes of a local reading and the 183 + 394 norm-one control. [Cyclic equations and proof](2026-11-24-cyclic-norm-equations-and-the-missing-divisors.md)
 
+With NumPy, run `python -B boundary-577/norm_input_coordinates.py` for the support divisor and the Jacobi coordinate, `python -B boundary-577/ramified_norm_depths.py` for the local lifts, and `python -B boundary-577/point_unit_norms.py` for the two actual unit classes and the test of 576 linear factors. [Support](2026-11-24-the-576-primes-of-the-two-norm-targets.md) · [Local norm](2026-11-24-a-local-norm-with-a-nonintegral-logarithm.md) · [Point-field units](2026-11-24-two-units-in-the-degree-577-point-field.md)
+
+All three replays completed on 24 November 2026 using Python 3.12.14 and NumPy 2.3.5. Fresh copies of their source dependencies gave the same results. PARI/GP 2.15.4 supplied separate checks of the relative minimal polynomial and the held-out residue matrix.
+
 ### Replay the local match and the global distinction
 
 From this directory, run `python -B boundary-577/unramified_layers.py` for the four base characters and the **0 versus 457** test. Run `python -B boundary-577/artin_units.py` for the nine local readings and discriminants, `python -B boundary-577/hilbert_reciprocity.py` for the independent local and finite-prime symbol calculations, `python -B boundary-577/quadratic_words.py` for the second-order brackets and raw trace derivatives, and `python -B boundary-577/trace_powers.py` for their two surviving squares. All five use Python and NumPy. [Ideal-class argument](2026-11-24-the-unramified-character-that-local-data-miss.md) · [Local unit normalization](2026-11-24-four-local-units-at-577.md) · [Raw trace test](2026-11-24-two-raw-traces-on-the-released-subgroup.md)
