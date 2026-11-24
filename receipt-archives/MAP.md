@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [The good-type projector on the actual row lattice](2026-11-23-good-type-spectral-denominator.md) · [Finite checks](check_spectral_cut_denominator.py) | Positive bad-rank lower bound, simultaneous denominator powers at the host primes, and good/bad reductions intersecting at those depths. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Exact orbit size and norm of any integral retraction](2026-11-23-integral-retraction-norm.md) | Strong approximation identifies the component stabilizer. The product formula leaves the orbit cost in the sum of the mean logarithmic norm and denominator. Derived and checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Level trace on integral cusp forms](2026-11-23-level-trace-on-cusp-components.md) · [Finite arithmetic](check_deep_level_traces.py) | A component-supported input forces an orbit denominator with a growing prime. The release keeps the raw sum at the norm estimate. Checked by Hearthline on 23 November under Chris’s continuing audit request. |
 | [Exact core and anti-diagonal ray units](2026-11-23-core-ray-intersection.md) | The extension from the actual core to the constructed cover is unramified, with degree determined up to one factor of two. Derived and checked by Hearthline under the same request. |

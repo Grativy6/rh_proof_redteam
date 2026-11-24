@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 ### Verify the sources
 
+The [good-type spectral cut](2026-11-23-good-type-spectral-denominator.md) follows the rank estimate and the integral projection to the same row lattice. Run `python receipt-archives/check_spectral_cut_denominator.py` for the finite square-class count and the Fourier coefficient whose diagonal hides 11.
+
 The [retraction norm calculation](2026-11-23-integral-retraction-norm.md) determines the exact geometric orbit and proves a bound for any tilt using the same Petersson norms and the denominator ideal. Its two-sample calculation is verifiable in the real quadratic subfield.
 
 The [character trace on cusp components](2026-11-23-level-trace-on-cusp-components.md) and the [ray field over the exact core](2026-11-23-core-ray-intersection.md) test the two return maps at the selected level. Run `python receipt-archives/check_deep_level_traces.py` to verify the local-unit kernels, component cut and prime-order examples.
