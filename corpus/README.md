@@ -8,6 +8,8 @@ The same [APCI source](Interface.lean) produces a [literal blank-slot control](.
 
 In the [pole-value control](../receipt-archives/2026-11-24-value-at-the-zeta-pole.md), the observation consists of all values of zeta off its pole. APCI identifies precisely which pointwise claim the observation cannot determine. The [three-point arithmetic readout](../receipt-archives/2026-11-24-prime-pair-readouts.md) recovers a sign lost by recording only the prime-window conditions.
 
+The [two dyadic places](../receipt-archives/2026-11-24-dyadic-class-enters-late.md) give a concrete APCI test. A global change flips both local entries. Their difference detects a class missed at coefficient order two, even after allowing every global change.
+
 ## Follow the terminal coordinate across two measurements
 
 The [Context Stack](context-stack/README.md) includes the model, map and rhythm papers, MIND, Context Parallax and the prompt protocols with their available working and published editions. [BLA](BLA_in_PAL_v0.9.1.pdf) supplies the distinction between a residual that has been observed and an explanation that still needs a test. [CLEF](CLEF_cluster_layer_entropy_focus_v1_0.pdf) asks which layer makes a distinction readable. For the terminal matrix, retain the ordinary columns and change only the auxiliary coset. A single local denominator becomes a residue after the basis change, and that residue determines the final Fourier character. Repeating in a swapped frame can change the surviving support from one point to a whole affine subspace. [Paper calculation](../receipt-archives/2026-11-23-coupled-type-prime-residue.md) · [Exact controls](../receipt-archives/check_coupled_type_residue.py)

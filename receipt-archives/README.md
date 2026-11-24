@@ -10,6 +10,8 @@ The [statement-level census](2026-11-24-assumptions-before-the-proof.md) gives t
 
 The [pole experiment](2026-11-24-value-at-the-zeta-pole.md) checks an actual use of the assigned value at 1. On the same proof route the [tail estimate](2026-11-24-log-window-tail.md), [prime readouts](2026-11-24-prime-pair-readouts.md), and [cross-modulus proof](2026-11-24-one-exception-across-moduli.md) work from the given analytic and arithmetic objects. Run `python check_prime_window_readouts.py` here for the prime certificates, finite differences and CRT control.
 
+The [dyadic counterexample](2026-11-24-dyadic-class-enters-late.md) gives the exact finite input, the number-field class and the threshold used downstream. Run `python check_dyadic_window_class.py` from this directory to check the prime, scale and finite cocycles. [Survival through the tower](2026-11-24-dyadic-class-in-the-tower.md) and the [independent relative prime estimate](2026-11-24-relative-prime-count.md) give the neighboring checks.
+
 ### Verify the sources
 
 Run `python receipt-archives/check_coupled_type_residue.py` for the [terminal local matrix calculation](2026-11-23-coupled-type-prime-residue.md). The [expanded corpus](../corpus/README.md) has 40 source files. Run `python receipt-archives/check_corpus_sources.py --upstream` to check the direct public files and the two extracted package members. The optional `--shelf PATH` checks the ten author-supplied records against an original Corpus folder.
