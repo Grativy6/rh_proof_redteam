@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Reassemble the modulus-one branch
+
+From this directory run `python -B check_rhofall_reassembly.py`. It reuses the two certified prime pairs, checks the signed row and its inverse on prime powers including both ramified primes, and computes three exact quadratic values at $-2$. The [four-character calculation](2026-11-24-taking-rhofall-apart-at-the-four-characters.md) includes a PARI/GP cross-check. The [two-page calculation](2026-11-24-two-dyadic-pages-behind-one-prime-sum.md) gives the corresponding field comparison and identifies the negative sign on an existing order-577 class. The same script checks the rational estimates in the [two-prime budget counterexample](2026-11-24-two-primes-break-one-window-budget.md).
+
 ### Replay the norm and lattice tests
 
 From this directory, `python -B check_host_norm_defect.py` checks 31, the finite norm obstruction and the two genus means. `python -B boundary-577/dyadic_point_field.py` verifies the 579-bit prime certificate, the explicit second strict class and its level-seven corner obstruction. Both use the Python standard library. [Norms](2026-11-24-the-local-norm-that-does-not-compose.md) · [Self-dual lattice](2026-11-24-the-self-dual-lattice-with-no-unit-vector.md) · [Explicit point field](2026-11-24-the-dyadic-ideal-of-order-577.md)

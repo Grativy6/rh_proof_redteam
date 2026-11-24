@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| What can disappear from an actual row on the way to `rhOfAll`? | [Four prime sums and their exact reconstruction](receipt-archives/2026-11-24-taking-rhofall-apart-at-the-four-characters.md) · [Two dyadic pages and the extra strict classes](receipt-archives/2026-11-24-two-dyadic-pages-behind-one-prime-sum.md) · [Two contributions exceed one shared budget](receipt-archives/2026-11-24-two-primes-break-one-window-budget.md). Hearthline, 24 November 2026, under Chris Pang’s request to take the proof apart from its conclusion. |
 | Does the height scale identify the integral lattice? | [Relative versus full-host norm](receipt-archives/2026-11-24-the-local-norm-that-does-not-compose.md) · [Opposite dyadic valuations and empty norm-one coefficient](receipt-archives/2026-11-24-the-self-dual-lattice-with-no-unit-vector.md) · [The same ideal in the strict Selmer group](receipt-archives/2026-11-24-the-dyadic-ideal-of-order-577.md). Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
 | Where does the outside geometry critique meet the arithmetic? | [X-files model and the actual rank cut](receipt-archives/2026-11-24-the-x-files-model-and-the-actual-rank-cut.md). Hearthline compared both pinned trees on 24 November 2026 under Chris’s request to stay on the existing seams. |
 | Which two prime readings distinguish the missing directions? | [Central residues at 2309 and 3463](receipt-archives/2026-11-24-two-small-primes-read-the-actual-point-units.md) · [Exact change of obstruction coordinates](receipt-archives/2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#the-change-of-measurements) · [A new digit over a 577-split cyclic field](receipt-archives/2026-11-24-a-strict-class-gains-one-digit-after-base-change.md). Hearthline, 24 November 2026, under Chris’s request to continue the public audit and prune previously tested branches. |
@@ -87,6 +88,8 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 - In the two-prime tame relaxation every odd slope [lifts through length 1154](receipt-archives/2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#how-long-the-auxiliary-condition-can-imitate-a-lift). The next coefficient tests the original quadratic condition.
 
 ## Unresolved
+
+The [signed row](receipt-archives/2026-11-24-taking-rhofall-apart-at-the-four-characters.md#put-the-pieces-back) leaves three character estimates to check on the selected window. Its prime sum cannot measure the [additional strict group at the next dyadic page](receipt-archives/2026-11-24-two-dyadic-pages-behind-one-prime-sum.md#unresolved).
 
 On the fixed 577 datum, the lower and diagonal quadratic corrections are still unknown on the cubic tangent, the quartic tangent and their sum. The [two tame entries](receipt-archives/2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#the-change-of-measurements) and the [four cyclic norm equations](receipt-archives/2026-11-24-cyclic-norm-equations-and-the-missing-divisors.md#compute-the-same-value-in-four-cyclic-fields) test the same obstruction. The small-prime values identify the two point-unit classes. Explicit global representatives and the remaining ideal-class evaluations are still missing.
 
