@@ -10,6 +10,8 @@ In the [pole-value control](../receipt-archives/2026-11-24-value-at-the-zeta-pol
 
 The [two dyadic places](../receipt-archives/2026-11-24-dyadic-class-enters-late.md) give a concrete APCI test. A global change flips both local entries. Their difference detects a class missed at coefficient order two, even after allowing every global change.
 
+The [twisted norm and its weighted observation](../receipt-archives/2026-11-24-when-minus-eighty-erases-a-class.md) now give genuinely distinct source classes in one observation fiber. On the actual arithmetic fields the source keeps separate counts for that fiber and the image. [Two concrete primes](../receipt-archives/2026-11-24-every-place-splits-in-the-limit.md) show why fixing a list of observations before passing up the tower changes what can be recovered.
+
 ## Follow the terminal coordinate across two measurements
 
 The [Context Stack](context-stack/README.md) includes the model, map and rhythm papers, MIND, Context Parallax and the prompt protocols with their available working and published editions. [BLA](BLA_in_PAL_v0.9.1.pdf) supplies the distinction between a residual that has been observed and an explanation that still needs a test. [CLEF](CLEF_cluster_layer_entropy_focus_v1_0.pdf) asks which layer makes a distinction readable. For the terminal matrix, retain the ordinary columns and change only the auxiliary coset. A single local denominator becomes a residue after the basis change, and that residue determines the final Fourier character. Repeating in a swapped frame can change the surviving support from one point to a whole affine subspace. [Paper calculation](../receipt-archives/2026-11-23-coupled-type-prime-residue.md) · [Exact controls](../receipt-archives/check_coupled_type_residue.py)

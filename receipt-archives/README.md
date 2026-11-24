@@ -14,6 +14,8 @@ The [dyadic counterexample](2026-11-24-dyadic-class-enters-late.md) gives the ex
 
 For Chris’s [P versus NP double feature](2026-11-24-p-vs-np-double-feature.md), the [prebuilt inputs](p-vs-np-comparator-exports.tar.xz) go directly to the exported-statement judge. The [source runner](replay_p_vs_np.py) can also rebuild the inputs from the pinned definitions.
 
+The [twisted-norm collision](2026-11-24-when-minus-eighty-erases-a-class.md) identifies a real kernel element and accounts for its cost. Run `python check_twisted_norm_readouts.py` for the [changing prime witnesses](2026-11-24-every-place-splits-in-the-limit.md), `python check_tower_centres.py` for the [abstract controls](2026-11-24-fixed-centres-and-exceptional-twists.md), and `python check_dyadic_L_values.py` for the [measured arithmetic lengths](2026-11-24-dyadic-lengths-on-the-actual-fields.md). The optional `gp -fq check_small_norm_kernel.gp` certifies the small field’s exact kernel size and checks the two base logarithmic class groups.
+
 ### Verify the sources
 
 Run `python receipt-archives/check_coupled_type_residue.py` for the [terminal local matrix calculation](2026-11-23-coupled-type-prime-residue.md). The [expanded corpus](../corpus/README.md) has 40 source files. Run `python receipt-archives/check_corpus_sources.py --upstream` to check the direct public files and the two extracted package members. The optional `--shelf PATH` checks the ten author-supplied records against an original Corpus folder.
