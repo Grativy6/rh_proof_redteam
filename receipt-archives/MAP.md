@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [31 and the failed norm tower](2026-11-24-the-local-norm-that-does-not-compose.md) · [Self-dual lattice without a unit vector](2026-11-24-the-self-dual-lattice-with-no-unit-vector.md) · [Certified order-577 example](2026-11-24-the-dyadic-ideal-of-order-577.md) | Exact same-scale ideal, both dyadic valuations, Kummer power test and missing integral polynomial element. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
+| [Mixed norm obstructions](2026-11-24-which-norm-tests-see-the-cube.md) · [Four-kernel determinant](2026-11-24-four-norm-kernels-for-the-two-quadratics.md) · [Two base units](2026-11-24-two-real-unit-norm-targets-at-577.md) · [Signed ideal readings](2026-11-24-two-opposite-ideal-class-readings-at-577.md) | The mixed field has norm defect of dimension three. The explicit cyclotomic comparison gives 249 on a named unit and 0 on the descended derivative. Same date and authorization. |
 | [Local Artin units](2026-11-24-four-local-units-at-577.md) · [Upper class group and four global tests](2026-11-24-the-unramified-character-that-local-data-miss.md) | Two definite ray characters share all nine local restrictions. Their normalized global difference is 457 on the specified prime test. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
 | [Quadratic commutator controls](2026-11-24-three-global-quadratic-readings.md) · [Raw traces on the subgroup chosen in the release](2026-11-24-two-raw-traces-on-the-released-subgroup.md) | Numerical second-order lower readings, two independent trace derivatives and the [nonzero-cube threshold](2026-11-24-two-raw-traces-on-the-released-subgroup.md#a-numerical-milestone-for-the-next-obstruction). Same date and authorization. |
 | [Local power gap](2026-11-24-the-last-577th-power-digit.md) · [Two obstruction primes](2026-11-24-two-independent-obstruction-primes.md) · [Coefficient data](boundary-577/second_level_readings.json) | Six extracted local digits test the last possible strict lift. The two chosen primes also measure the tame cost at the original weight. Hearthline under Chris’s continuing public audit request, 24 November 2026. |
@@ -98,6 +100,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [new comparison](2026-11-24-two-opposite-ideal-class-readings-at-577.md#feed-these-results-into-the-original-test) fixes lower-only and diagonal-only inputs over the abelian base. Their normalized preimages must still be tested against the four actual mixed fields.
 
 The [two abelian corrections after restriction](2026-11-24-three-global-quadratic-readings.md#a-smaller-field-where-the-two-remaining-corrections-are-abelian) still have to satisfy global extension conditions. The [trace functions](2026-11-24-two-raw-traces-on-the-released-subgroup.md#compute-the-two-first-order-differences) supply coordinates on the actual nonsplit ring.
 

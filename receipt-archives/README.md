@@ -2,6 +2,12 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Replay the norm and lattice tests
+
+From this directory, `python -B check_host_norm_defect.py` checks 31, the finite norm obstruction and the two genus means. `python -B boundary-577/dyadic_point_field.py` verifies the 579-bit prime certificate, the explicit second strict class and its level-seven corner obstruction. Both use the Python standard library. [Norms](2026-11-24-the-local-norm-that-does-not-compose.md) · [Self-dual lattice](2026-11-24-the-self-dual-lattice-with-no-unit-vector.md) · [Explicit point field](2026-11-24-the-dyadic-ideal-of-order-577.md)
+
+For the original 577 input, run `python -B boundary-577/first_order_norms.py`, `python -B boundary-577/real_norm_units.py` and `python -B boundary-577/wild_unit_norms.py` with NumPy. The [comparison-field receipt](2026-11-24-two-opposite-ideal-class-readings-at-577.md#reproduce) gives the optional independent Jacobi histogram replay. [Minimum quotient rank](2026-11-24-which-norm-tests-see-the-cube.md) · [Four norm tests](2026-11-24-four-norm-kernels-for-the-two-quadratics.md) · [Base-unit coefficients](2026-11-24-two-real-unit-norm-targets-at-577.md)
+
 ### Replay the local match and the global distinction
 
 From this directory, run `python -B boundary-577/unramified_layers.py` for the four base characters and the **0 versus 457** test. Run `python -B boundary-577/artin_units.py` for the nine local readings and discriminants, `python -B boundary-577/hilbert_reciprocity.py` for the independent local and finite-prime symbol calculations, `python -B boundary-577/quadratic_words.py` for the second-order brackets and raw trace derivatives, and `python -B boundary-577/trace_powers.py` for their two surviving squares. All five use Python and NumPy. [Ideal-class argument](2026-11-24-the-unramified-character-that-local-data-miss.md) · [Local unit normalization](2026-11-24-four-local-units-at-577.md) · [Raw trace test](2026-11-24-two-raw-traces-on-the-released-subgroup.md)

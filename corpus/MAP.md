@@ -34,6 +34,8 @@ Hearthline used APCI for the [full-trace companion collision](../receipt-archive
 
 Hearthline applied APCI to the [two independent Frobenius readings](../receipt-archives/2026-11-24-two-independent-obstruction-primes.md) and CLEF to the [strict and relaxed lengths at the same twist](../receipt-archives/2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums), under Chris’s continuing public audit request on 24 November 2026.
 
+Hearthline applied BLA to the [dyadic ideal in the arithmetic map](../receipt-archives/2026-11-24-the-self-dual-lattice-with-no-unit-vector.md), APCI to the [two incompatible norm preimages](../receipt-archives/2026-11-24-the-local-norm-that-does-not-compose.md), and CLEF to the [two norm levels at 577](../receipt-archives/2026-11-24-two-opposite-ideal-class-readings-at-577.md), under Chris’s continuing public audit request on 24 November 2026.
+
 Hearthline used APCI for the [all-place collision and global distinction](../receipt-archives/2026-11-24-the-unramified-character-that-local-data-miss.md), CLEF for the degree-four and degree-278 readings, and the same-map test for the [raw traces on the actual released subgroup](../receipt-archives/2026-11-24-two-raw-traces-on-the-released-subgroup.md), under Chris’s continuing public audit request on 24 November 2026.
 
 ## Unresolved
