@@ -1,6 +1,10 @@
 # Corpus used in the RH proof audit
 
-These are Christopher D. Pang’s source texts that informed a documented test in this audit or its Chat-Hearthline handoff. Nine original manuscripts and one original source file are stored here. The screen of 74 readings across nine shelves was a discovery pass. The table below identifies what was actually applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 40 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+
+## Follow the terminal coordinate across two measurements
+
+The [Context Stack](context-stack/README.md) includes the model, map and rhythm papers, MIND, Context Parallax and the prompt protocols with their available working and published editions. [BLA](BLA_in_PAL_v0.9.1.pdf) supplies the distinction between a residual that has been observed and an explanation that still needs a test. [CLEF](CLEF_cluster_layer_entropy_focus_v1_0.pdf) asks which layer makes a distinction readable. For the terminal matrix, retain the ordinary columns and change only the auxiliary coset. A single local denominator becomes a residue after the basis change, and that residue determines the final Fourier character. Repeating in a swapped frame can change the surviving support from one point to a whole affine subspace. [Paper calculation](../receipt-archives/2026-11-23-coupled-type-prime-residue.md) · [Exact controls](../receipt-archives/check_coupled_type_residue.py)
 
 ## Run the disappearing-tail test on paper
 
@@ -36,4 +40,4 @@ Run `python receipt-archives/check_corpus_sources.py` from the repository root f
 
 ## Attribution
 
-Pang’s nine manuscripts retain their deposited CC BY 4.0 terms. The original APCI Lean source is from the Apache-2.0 PAL-Lean-Audit repository. The files are byte-for-byte copies. Hearthline prepared the application guide, and Chris authorized publication on 23 November 2026. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [APCI source repository license](https://github.com/Grativy6/PAL-Lean-Audit/blob/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/LICENSE)
+The Zenodo editions retain their deposited CC BY 4.0 terms. The original APCI Lean source is from the Apache-2.0 PAL-Lean-Audit repository. The ten author-supplied Context Stack records have separate provenance in the manifest. Chris authorized publication of the expanded shelf on 23 November 2026. Hearthline prepared the guide and verified original bytes through 24 November. [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [APCI source repository license](https://github.com/Grativy6/PAL-Lean-Audit/blob/5d5f88d283cd3fdab27aa2c7d91ceb0745653cd0/LICENSE)

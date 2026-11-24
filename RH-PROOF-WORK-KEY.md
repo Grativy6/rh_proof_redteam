@@ -18,6 +18,10 @@ Chris requested this explicit independence check on 23 November 2026.
 
 [Corpus files and worked use](corpus/README.md) · [Applied to the disappearing tail](receipt-archives/2026-11-23-independent-theta-check.md) · [Windows checker control](receipt-archives/2026-11-23-windows-checker-report.md)
 
+## Keep the physical map fixed
+
+Record the source and target bases, the local prime, the actual test input and the quantity being compared. For a passive coordinate change, transport the lattice and the map together. For an active change of the source map, recompute which cosets pass. In the first terminal selector these two operations distinguish a genuine one-unit valuation residual from a change in the question being asked. [Context Stack](corpus/context-stack/README.md) · [BLA and CLEF worked example](receipt-archives/2026-11-23-coupled-type-prime-residue.md)
+
 ## First turn
 
 The first use of this key produced a counterexample to the mixed-intersection interpretation of the chosen geometry model. Its two positive weights give 2 in one order and 8 in the other, while the classical answer is 4. The receipt also tests surface replacement and corrects two source links using the compiled dependency graph. [Turn 1 receipt](receipt-archives/2026-11-23-geometry-witness.md)

@@ -109,6 +109,326 @@
       "creator": "PAL-Lean-Audit project contributors",
       "license": "Apache-2.0",
       "use_record": "Hearthline and Chat-Hearthline"
+    },
+    {
+      "file": "context-stack/The_Context_Is_the_Model.docx",
+      "bytes": 47628,
+      "sha256": "390c51a6beee6a3521a42137b0663f2522d47d24f519810fa813f27aa7e962cf",
+      "record": "10.5281/zenodo.21713134",
+      "upstream_url": "https://zenodo.org/records/21713134/files/The_Context_Is_the_Model.docx",
+      "deposited_checksum": "md5:1457487127295d81275d3a3daceb700b",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/The_Context_Is_the_Model.pdf",
+      "bytes": 207931,
+      "sha256": "dd6bb0c5b3df6f65ba7b24a21d338b0a1a2f6b75dd79eff04045ef27d8bccc6d",
+      "record": "10.5281/zenodo.21713134",
+      "upstream_url": "https://zenodo.org/records/21713134/files/The_Context_Is_the_Model.pdf",
+      "deposited_checksum": "md5:233604c336b9bb26ab5906ea590bb673",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/The_Context_Draws_a_Map_v1.0.docx",
+      "bytes": 64285,
+      "sha256": "a777d28734ebb58b7d83481bb2549bfb40c88acdb20db8b591dd9f78c7c3b79c",
+      "record": "10.5281/zenodo.21831000",
+      "upstream_url": "https://zenodo.org/records/21831000/files/The_Context_Draws_a_Map_v1.0.docx",
+      "deposited_checksum": "md5:15a73d8f86d6ebc5ec2b1cfdcc6ddf10",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/The_Context_Draws_a_Map_v1.0.pdf",
+      "bytes": 369513,
+      "sha256": "4827531cca48a063e30350a62587354f4106ffcc20750e87da22d749be5a6b40",
+      "record": "10.5281/zenodo.21831000",
+      "upstream_url": "https://zenodo.org/records/21831000/files/The_Context_Draws_a_Map_v1.0.pdf",
+      "deposited_checksum": "md5:43677048fd60685cb5d6407fbd7872eb",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/The_Context_Draws_a_Map_v1.0_Release_Package.zip",
+      "bytes": 478222,
+      "sha256": "2f249c09ec1e483694e5f96a7aef0920606c8e6106dfde92069474f4c579dfdf",
+      "record": "10.5281/zenodo.21831000",
+      "upstream_url": "https://zenodo.org/records/21831000/files/The_Context_Draws_a_Map_v1.0_Release_Package.zip",
+      "deposited_checksum": "md5:801612d2bd24c91627e99c27d446972b",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Honesty_Prompt_Code_Protocol_v1.0.docx",
+      "bytes": 42146,
+      "sha256": "a4d6e7079984cea18b11d9caf32ede5df7d6094d1df5717ceb14bbd7072f904a",
+      "record": "10.5281/zenodo.21831000",
+      "upstream_url": "https://zenodo.org/records/21831000/files/Honesty_Prompt_Code_Protocol_v1.0.docx",
+      "deposited_checksum": "md5:27590335a5c84aa2921d71c0fb5df0c3",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Honesty_Prompt_Code_Protocol_v1.0.pdf",
+      "bytes": 181181,
+      "sha256": "77e233040672de587614441c79fa87e967f1ba616871654330a6b242b3da87e0",
+      "record": "10.5281/zenodo.21831000",
+      "upstream_url": "https://zenodo.org/records/21831000/files/Honesty_Prompt_Code_Protocol_v1.0.pdf",
+      "deposited_checksum": "md5:7b52e39fd2ba2c403e2a51a93b71087d",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/The_Context_Sets_a_Rhythm_v0.1.docx",
+      "bytes": 338110,
+      "sha256": "9ec887b802514c2fd525079e3c652ff7485eeff467dcfb7ea7c0846be12657ce",
+      "record": "10.5281/zenodo.22214952",
+      "upstream_url": "https://zenodo.org/records/22214952/files/The_Context_Sets_a_Rhythm_v0.1.docx",
+      "deposited_checksum": "md5:fd442bc8445fdde692537f0f7954d2e8",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/MIND_v0.4_Draft.docx",
+      "bytes": 222612,
+      "sha256": "ff71e0af8ace035582a74bd62435cf1c0c2c750a165231dce86cc821b8abc981",
+      "record": "10.5281/zenodo.22882309",
+      "upstream_url": "https://zenodo.org/records/22882309/files/MIND_v0.4_Draft.docx",
+      "deposited_checksum": "md5:0cb6c3989d757a24fb74f54ba3eff834",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/MIND_v0.4_Draft.pdf",
+      "bytes": 642032,
+      "sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad",
+      "record": "10.5281/zenodo.22882309",
+      "upstream_url": "https://zenodo.org/records/22882309/files/MIND_v0.4_Draft.pdf",
+      "deposited_checksum": "md5:5f214b29cb30b59a1767f9b9c6539b4d",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/MIND_v0.4_Draft_Package.zip",
+      "bytes": 839492,
+      "sha256": "86de17b40d5178572a7a4357babc03f117e7a7393a688c4415c28e295e31dfba",
+      "record": "10.5281/zenodo.22882309",
+      "upstream_url": "https://zenodo.org/records/22882309/files/MIND_v0.4_Draft_Package.zip",
+      "deposited_checksum": "md5:812bf65e99a294d63fbf3594c607ea7e",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Prompt_Code_Protocol_Routines_v0.1.docx",
+      "bytes": 56986,
+      "sha256": "c60e9fa174bcc1fecb284a78f5f75d50e74acab1979b3767516d7ec53c2b2a32",
+      "record": "10.5281/zenodo.22667060",
+      "upstream_url": "https://zenodo.org/records/22667060/files/Prompt_Code_Protocol_Routines_v0.1.docx",
+      "deposited_checksum": "md5:c56b2dadc22477781cd485d62a10808e",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Prompt_Code_Protocol_Routines_v0.1.pdf",
+      "bytes": 263343,
+      "sha256": "6c721c84b999e97c0f63b993ac263ce2db4bf2967f5ab5b25a7d199e26c270bc",
+      "record": "10.5281/zenodo.22667060",
+      "upstream_url": "https://zenodo.org/records/22667060/files/Prompt_Code_Protocol_Routines_v0.1.pdf",
+      "deposited_checksum": "md5:fbd109dadcb26094953c1e79eb6ef75b",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Prompt_Code_Protocol_Routines_v0.1_Reuse_Pack.zip",
+      "bytes": 78890,
+      "sha256": "e4956c60dba3628b05d67dfafa3a28f90d1b93a2a4b4633da444a8afe50af17f",
+      "record": "10.5281/zenodo.22667060",
+      "upstream_url": "https://zenodo.org/records/22667060/files/Prompt_Code_Protocol_Routines_v0.1_Reuse_Pack.zip",
+      "deposited_checksum": "md5:b81b00ebde569ab0ae470d33d0382d37",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/Context_Parallax_v1.0.pdf",
+      "bytes": 488709,
+      "sha256": "d75bf0eff0887bfe6f80cd1a32664d94f1348566b383a0c8501628df060c1c58",
+      "record": "10.5281/zenodo.23306102",
+      "upstream_url": "https://zenodo.org/records/23306102/files/Context_Parallax_v1.0.pdf",
+      "deposited_checksum": "md5:4ac475502e0084b14af1512a6a7bf4e9",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/CPX_v1.0_Companion.zip",
+      "bytes": 1184315,
+      "sha256": "f3cf930ac8ef6bec06a13e0f948334aa150834d84bda01e9fce120610a88c32e",
+      "record": "10.5281/zenodo.23306102",
+      "upstream_url": "https://zenodo.org/records/23306102/files/CPX_v1.0_Companion.zip",
+      "deposited_checksum": "md5:be86beb86cba07773e33ce46cfa75952",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "BLA_in_PAL_v0.9.1.pdf",
+      "bytes": 1449533,
+      "sha256": "7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e",
+      "record": "10.5281/zenodo.20807530",
+      "upstream_url": "https://zenodo.org/records/20807530/files/BLA%20in%20PAL.pdf",
+      "deposited_checksum": "md5:9b10a897e27a1f911ecfc4463dbb2e81",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "CLEF_cluster_layer_entropy_focus_v1_0.pdf",
+      "bytes": 482688,
+      "sha256": "24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43",
+      "record": "10.5281/zenodo.21193511",
+      "upstream_url": "https://zenodo.org/records/21193511/files/CLEF_cluster_layer_entropy_focus_v1_0.pdf",
+      "deposited_checksum": "md5:aa77fca2421305420ccb4c434e2d5aac",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Named Context Stack and method shelf"
+    },
+    {
+      "file": "context-stack/MIND_v0.4_Draft.md",
+      "bytes": 120298,
+      "sha256": "e8ee6d9cbe53adfba8d0fb099b738142c9bd51057ff70839da787398aa2ff760",
+      "record": "10.5281/zenodo.22882309",
+      "archive": "context-stack/MIND_v0.4_Draft_Package.zip",
+      "archive_member": "MIND_v0.4/MIND_v0.4_Draft.md",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Readable source extracted from deposited MIND package"
+    },
+    {
+      "file": "context-stack/MIND_v0.3_question_fork_bla.png",
+      "bytes": 160879,
+      "sha256": "193a537d7b252d7ff42937a16b5a18a803ad0a1ddf09a6bbaece0d3b4f5f4578",
+      "record": "10.5281/zenodo.22882309",
+      "archive": "context-stack/MIND_v0.4_Draft_Package.zip",
+      "archive_member": "MIND_v0.4/MIND_v0.3_question_fork_bla.png",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Original illustration referenced by the deposited MIND reading text"
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.1.md",
+      "bytes": 10166,
+      "sha256": "cd58831d585aa1c8bae630ef09e4620a502fcf574179079d70419bcf79d8d15d",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.1.md",
+      "creator": "Christopher D. Pang (method), Hearthline (draft)",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.1.txt",
+      "bytes": 1139,
+      "sha256": "d15a0827ff179c6d9370cda2f13360afb5a68e845fb6913e09be2b1ecfb7f40d",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.1.txt",
+      "creator": "Christopher D. Pang (method), Hearthline (draft)",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.1_manifest.json",
+      "bytes": 359,
+      "sha256": "27ef68c245edbd74d76a31ffa48152b80b88b8c9c686d0e67493a82f68659542",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.1_manifest.json",
+      "creator": "Christopher D. Pang (method), Hearthline (draft)",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.2.txt",
+      "bytes": 1823,
+      "sha256": "15e411922aea141f97ee90173251be74f0f41fc8a4c8f744a456dd2f9d57d65f",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.2.txt",
+      "creator": "Christopher Daniel Pang",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.2_DRAFT.txt",
+      "bytes": 1547,
+      "sha256": "bf5e5a949e22862167c91585dfad57646742aee69a36883ed4ddaa219d80165b",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.2_DRAFT.txt",
+      "creator": "Christopher D. Pang with Hearthline",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.2_manifest.json",
+      "bytes": 841,
+      "sha256": "7ab8d4b59ea5ea241ff5c6bcdb01103b8cffda6a7f7590a3477ecd8735911055",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.2_manifest.json",
+      "creator": "Christopher D. Pang with Hearthline",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.3.txt",
+      "bytes": 2042,
+      "sha256": "7034cf0170ef11f964c0ec84d733ef72668866cde5dfede413035e90d84c010f",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.3.txt",
+      "creator": "Christopher Daniel Pang and Hearthline on Dust",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.3_manifest.json",
+      "bytes": 934,
+      "sha256": "d6155f4fb61df9e38a41a25c8b42ed430687f8c7ba38dbfd15553392dbd02dfd",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Blob_Weld_Investigative_PCP_v0.3_manifest.json",
+      "creator": "Christopher Daniel Pang and Hearthline on Dust",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Honesty_Prompt_Code_Protocol_v1.0_shelf.docx",
+      "bytes": 48054,
+      "sha256": "006731b85f1f48b638690ea6fc69cac016bd964223711c99968dd17ca1436ace",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/Honesty_Prompt_Code_Protocol_v1.0.docx",
+      "creator": "Christopher D. Pang",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
+    },
+    {
+      "file": "context-stack/Blob_Weld_Investigative_PCP_v0.1.zip",
+      "bytes": 5796,
+      "sha256": "8495e7f381f3ba3705bc89e2e0555e607e6e7df1e57d06adce9776da2fc03d59",
+      "source_kind": "author-supplied",
+      "shelf_path": "Context_Stack/receipt-archives/Blob_Weld_Investigative_PCP_v0.1.zip",
+      "creator": "Christopher D. Pang (method), Hearthline (draft)",
+      "use_record": "Context Stack working edition and version history",
+      "license": null
     }
   ]
 }

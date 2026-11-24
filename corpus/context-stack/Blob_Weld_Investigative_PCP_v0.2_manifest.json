@@ -1,0 +1,18 @@
+{
+  "name": "Blob Weld Investigative PCP",
+  "version": "0.2",
+  "date": "2026-11-04",
+  "status": "adopted-unrun",
+  "wording_supplied_by": "Christopher Daniel Pang",
+  "adopted_by": "Chris",
+  "authorization": "ok, here's my version, i wanna use this one.",
+  "saved_by": "Hearthline on Dust",
+  "encoding": "UTF-8 without BOM; LF paragraphs and one terminal newline",
+  "source": "Chris's full nine-paragraph message in this chat; outside quotation marks omitted",
+  "files": {
+    "Blob_Weld_Investigative_PCP_v0.2.txt": "15e411922aea141f97ee90173251be74f0f41fc8a4c8f744a456dd2f9d57d65f"
+  },
+  "supersedes_for_current_selection": "Blob_Weld_Investigative_PCP_v0.2_DRAFT.txt",
+  "prior_draft_sha256": "bf5e5a949e22862167c91585dfad57646742aee69a36883ed4ddaa219d80165b",
+  "run_status": "No evaluation of these exact bytes is recorded."
+}
