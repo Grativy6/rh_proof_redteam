@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-24",
+  "question": "Paired APCI self-equalities on the actual Formal Conjectures P and NP classes",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "formal_conjectures": "86a2f58a4d7a3a0637d15d5b2ce627592b54b956",
+  "lean4lean": "67f63b0c818920dfaed2ad07ccff187a6a8fe1e3",
+  "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "export_judge": "Lean 4.36.0, Lake 5.0.0-src+611c117, Ubuntu 24.04 under WSL2, bubblewrap enabled",
+  "nanoda": "nanoda_bin 0.4.17",
+  "allowed_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "checked_solution_declarations_including_comparator_primitives": 2541,
+  "compiled_module_exit_codes": {
+    "APCILeanAudit.Interface": {
+      "compile": 0,
+      "native": 0,
+      "independent": 0
+    },
+    "FormalConjecturesForMathlib.Computability.BitstringEncoding": {
+      "compile": 0,
+      "native": 0,
+      "independent": 0
+    },
+    "FormalConjecturesForMathlib.Computability.Complexity": {
+      "compile": 0,
+      "native": 0,
+      "independent": 0
+    },
+    "IUsedLeanToProveRH": {
+      "compile": 0,
+      "native": 0,
+      "independent": 0
+    },
+    "PvsNPDoubleFeature": {
+      "compile": 0,
+      "native": 0,
+      "independent": 0
+    }
+  },
+  "theorems_and_axioms": [
+    "Hearthline.Punchline.iProvedPEqualsNP : (P = NP) = (P = NP)",
+    "Hearthline.Punchline.iProvedPNotEqualsNP : (P ≠ NP) = (P ≠ NP)",
+    "Hearthline.Punchline.atLeastOneHeadline : P = NP ∨ P ≠ NP",
+    "Hearthline.Punchline.noDoublePrize : ¬(P = NP ∧ P ≠ NP)",
+    "'ComplexityTheory.P' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'ComplexityTheory.NP' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Hearthline.Punchline.iProvedPEqualsNP' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Hearthline.Punchline.iProvedPNotEqualsNP' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Hearthline.Punchline.atLeastOneHeadline' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Hearthline.Punchline.noDoublePrize' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "solution_source_sha256": {
+    "PvsNPDoubleFeature.lean": "2c1118fa06aee3eb8b4a628b0db8088d4f8ea18acf902ede4aa30e0495759efa",
+    "IUsedLeanToProveRH.lean": "b942bd06e47dde5b6c7aa7bea5e1f33a1db45678b953ef43c0ffbe4afd7e4129"
+  },
+  "upstream_module_sha256": {
+    "BitstringEncoding.lean": "2f9fb7cb92e9b7a0fd4f16cec9f7b911d08ae28c155440b980546d10a13b8764",
+    "Complexity.lean": "aca88dff2908a54d4995ce5a7e65066fca64fb291d834b349c630903ae325bd5"
+  },
+  "upstream_catalogue_conjecture_absent_from_solution_environment": true,
+  "direct_bare_type_checks": {
+    "equality": 1,
+    "inequality": 1,
+    "conjunction": 1
+  },
+  "export_judgments": {
+    "AsWritten": {
+      "exit": 0,
+      "output": [
+        "Running nanoda kernel on solution",
+        "nanoda kernel accepts the solution",
+        "Running Lean default kernel on solution",
+        "Lean default kernel accepts the solution",
+        "Your solution is okay!"
+      ]
+    },
+    "BareYes": {
+      "exit": 1,
+      "output": [
+        "error: Challenge and solution theorem statement do not match: 'Hearthline.Punchline.iProvedPEqualsNP'"
+      ]
+    },
+    "BareNo": {
+      "exit": 1,
+      "output": [
+        "error: Challenge and solution theorem statement do not match: 'Hearthline.Punchline.iProvedPNotEqualsNP'"
+      ]
+    }
+  },
+  "export_sha256_and_size": {
+    "ChallengeAsWritten.ndjson": {
+      "bytes": 7482252,
+      "sha256": "f9c3af5d2e9e72f48d6d40fa15306b54174c3a65767e392b553849d02382ea3a"
+    },
+    "ChallengeBareNo.ndjson": {
+      "bytes": 7484558,
+      "sha256": "e6b7959c7fffcc0adc9a55325cfd21d8f565df31f7e5dad0888b1af1984a7c1c"
+    },
+    "ChallengeBareYes.ndjson": {
+      "bytes": 7483253,
+      "sha256": "6707f1f163486b2477ecaf8d7e3fa92ed80ad79300a0ab3c4bf113d503be7788"
+    },
+    "double-feature.ndjson": {
+      "bytes": 7508410,
+      "sha256": "2515a39d97e61c1b0d1fb4e09e1a2f4e569947a08d2cb2bc7d4be94c55ebda20"
+    }
+  },
+  "bundle": {
+    "path": "p-vs-np-comparator-exports.tar.xz",
+    "bytes": 927948,
+    "sha256": "427174c90ff75b38b74831d7f63da40811bf8ef3561127b251e3dd64018aff32",
+    "all_three_verdicts_reproduced_from_archived_files": true
+  }
+}

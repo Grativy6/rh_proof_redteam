@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [P = NP and P ≠ NP double feature](2026-11-24-p-vs-np-double-feature.md) · [Lean source](PvsNPDoubleFeature.lean) · [Comparator bundle](p-vs-np-comparator-exports.tar.xz) · [Run record](2026-11-24-p-vs-np-replay.json) | The same solution export passed the exact written challenge and lost both bare challenges under the Linux comparator. Hearthline, at Chris’s request on 24 November. |
 | [An order-two class that first passes at order four](2026-11-24-dyadic-class-enters-late.md) · [Certificate](check_dyadic_window_class.py) · [Cyclotomic tower](2026-11-24-dyadic-class-in-the-tower.md) | Certified pointwise failure, its exact arithmetic cause, its survival, and the prime-size guard on actual eventual windows. Hearthline under Chris’s continuing request on 24 November. |
 | [Relative prime-count protection](2026-11-24-relative-prime-count.md) | Matches Thorner–Zaman’s Corollary 1.4 to the released exception and unweighted count and checks the costs inside the original proof. Hearthline, 24 November under the same authorization. |
 | [Zeta’s assigned pole value](2026-11-24-value-at-the-zeta-pole.md) · [Formal control](PoleValueControl.lean) · [Logarithmic-window kernel](2026-11-24-log-window-tail.md) | Shows exactly which predicate flips, computes the regularized finite part, and bounds both tails with one common derivative order. Hearthline, checked under Chris’s continuing request on 24 November. |
