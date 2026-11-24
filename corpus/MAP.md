@@ -8,7 +8,7 @@ Chris requested public copies of the research tools used in the audit after a re
 | --- | --- | --- |
 | [Complete Context Stack](context-stack/MAP.md) | The trilogy, MIND, PCP and Honesty protocols, CPX, Blob–Weld versions and original companions. | [Exact editions and supplied-source status](context-stack/MAP.md) |
 | [Boundary-Ledger Accounting](BLA_in_PAL_v0.9.1.pdf) | v0.9.1. Identify an observed residual and test its proposed explanation on the same physical map. | [Zenodo](https://zenodo.org/records/20807530) |
-| [Cluster-Layer Entropy Focus](CLEF_cluster_layer_entropy_focus_v1_0.pdf) | v1.0. Declare the units, readout and boundary for each layer in the terminal comparison. | [Zenodo](https://zenodo.org/records/21193511) |
+| [Cluster-Layer Entropy Focus](CLEF_cluster_layer_entropy_focus_v1_0.pdf) | v1.0. Declare the units, readout and boundary for each layer in the terminal comparison. [Order-five coefficient test](../receipt-archives/2026-11-24-an-order-five-class-and-a-hundred-missing-levels.md). | [Zenodo](https://zenodo.org/records/21193511) |
 | [Mathematical Realization Atlas](PAL_v2.4-M_Mathematical_Realization_Atlas.docx) | PAL v2.4-M. Interface fibers, generator coverage, completion, return and uniformity. | [Deposit](https://zenodo.org/records/22888036) |
 | [Mechanical Structural Spine](PAL_v2.4_Mechanical_Structural_Spine.docx) | PAL v2.4. L05 and L09–L11 and SC-21 support the handoff’s tests. | [Deposit](https://zenodo.org/records/22888036) |
 | [Obligation and Decision Ledger](PAL_v2.4-L_Obligation_and_Decision_Ledger.docx) | PAL v2.4-L. D33/O54 and D35/O56 track what a measurement and a return can certify. | [Deposit](https://zenodo.org/records/22888036) |
