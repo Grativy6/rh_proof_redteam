@@ -13,6 +13,8 @@ In particular, for an integer $m\ge2$,
 $$m\,[G_\chi(m+1)-2G_\chi(m)+G_\chi(m-1)]=\Lambda(m)\chi(m).$$
 For the principal ramp the known $-y\log y$ correction must first be added back. Its other correction is affine. This identity shows why changing the prime label at an isolated integer changes a whole segment of the ramp. [Definitions of the principal and nonprincipal ramps](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L10-L22)
 
+For the centred principal ramp $G$, readings at $y,2y,4y$ give $G(4y)-3G(2y)+2G(y)=-D(4y)$, where $D$ is Lee Crossley’s prime-power tent margin. The coefficients cancel the affine terms on this unequal grid, and the contribution from $-x\log x$ is $-2y\log 2$. [The Crossley Criteria, §3](https://doi.org/10.5281/zenodo.24466908) and [dyadic identity](https://github.com/leecrossley/crossley-criteria-riemann-hypothesis/blob/fa2da5e5cd92579184537f49d569230db76f6026/paper/crossley-criteria-riemann-hypothesis.md#L167-L171).
+
 There is an exact interpolation check as well. Between consecutive integers all raw ramps are affine. In a positive-weight family let $a$ be the sum of the principal weights. For $y=m+t$, $m\ge1$, $0\le t\le1$, the combined real ramp exceeds its linear interpolation between $m$ and $m+1$ by
 $$a[(1-t)m\log m+t(m+1)\log(m+1)-y\log y].$$
 This lies between zero and $a\,t(1-t)/(2m)$ since $(y\log y)''=1/y$. Thus observing all consecutive integers in the original variable has an explicit error bound. Sampling at a fixed spacing in $\log y$ is a different observation, for which the [oscillatory model](2026-11-24-log-window-tail.md) gives a failure.
