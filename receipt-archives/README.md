@@ -10,6 +10,10 @@ For the original 577 input, run `python -B boundary-577/first_order_norms.py`, `
 
 Run `python -B boundary-577/cyclic_norm_moments.py` to check all 577 local parameters, the four changes of a local reading and the 183 + 394 norm-one control. [Cyclic equations and proof](2026-11-24-cyclic-norm-equations-and-the-missing-divisors.md)
 
+The [X-files comparison](2026-11-24-the-x-files-model-and-the-actual-rank-cut.md) gives the pinned external sources, the arithmetic check of the discarded rank, and the surviving geometric question. The earlier spectral-projector replay is linked there.
+
+For the two small-prime tests, run `python -B boundary-577/central_unit_residues.py` with NumPy. The [derivation](2026-11-24-two-small-primes-read-the-actual-point-units.md#reproduce) includes instructions for rebuilding the nine comparison rows using C++17. The same replay checks the two-prime deformation matrix and all 577 twist residues of the cyclic base-change example. The nine comparison rows were rebuilt with g++ 13.3.0, Python 3.12.14 and NumPy 2.3.5.
+
 With NumPy, run `python -B boundary-577/norm_input_coordinates.py` for the support divisor and the Jacobi coordinate, `python -B boundary-577/ramified_norm_depths.py` for the local lifts, and `python -B boundary-577/point_unit_norms.py` for the two actual unit classes and the test of 576 linear factors. [Support](2026-11-24-the-576-primes-of-the-two-norm-targets.md) · [Local norm](2026-11-24-a-local-norm-with-a-nonintegral-logarithm.md) · [Point-field units](2026-11-24-two-units-in-the-degree-577-point-field.md)
 
 All three replays completed on 24 November 2026 using Python 3.12.14 and NumPy 2.3.5. Fresh copies of their source dependencies gave the same results. PARI/GP 2.15.4 supplied separate checks of the relative minimal polynomial and the held-out residue matrix.
