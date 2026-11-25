@@ -87,6 +87,25 @@ E(F)\ \ge\ \sum_{j\ge1}\frac1{jL(jL+1)}
 $$
 Indeed $jL+1\le j(L+1)$ and $\sum_{j\ge1}j^{-2}=\pi^2/6$. The bound decreases as $L$ grows. It locates a residual for **each** finite family. Whether one can make the **total** residual arbitrarily small is the outstanding question.
 
+## What doubling misses
+
+Pang asked what to do with the carry. With $b_1=0$, the binary carry at scale $d\ge1$ is
+$$
+C_d(k)=2b_{2d}(k)-b_d(k)=\lfloor k/d\rfloor\bmod 2 .
+$$
+Across blocks of $d$ rows starting at zero, $C_d-C_{2d}$ repeats $0,1,-1,0$. Its squared size is one on rows $(4j+1)d$ through $(4j+3)d-1$. Summing their lengths gives
+$$
+\|C_d-C_{2d}\|_2^2
+=\frac1d\sum_{j\ge0}\left(\frac1{4j+1}-\frac1{4j+3}\right)=\frac{\pi}{4d}.
+$$
+The series is the integral of $1/(1+x^2)$ from 0 to 1. The remainder after integrating the first $2n$ terms of its geometric expansion has absolute value at most $1/(4n+1)$.
+
+**Every linear combination of binary carries, at arbitrary scales, has squared error at least $1/(1+(2\pi/\log 2)^2)>1/92$.** To see what they all miss, set $s=1+2\pi i/\log2$. The wave $x^{s-1}$ makes one complete turn when $x$ doubles. Its absolute value is one, so its integral against a function on $(0,1]$ is a continuous measurement of norm one. The constant target has reading $1/s$.
+
+Use the reciprocal cells defined above. Since $C_1$ is one at the odd rows, multiplying its reading by $s$ gives the paired alternating sum of $n^{-s}$. At this $s$, $2^{1-s}=1$. For each $N$ its first $2N$ terms sum to $\sum_{n=N+1}^{2N}n^{-s}$. The integral of $x^{-s}$ from $N$ to $2N$ is zero. The sum differs from that integral by at most $\int_N^{2N}|s|x^{-2}dx$, which tends to zero. Thus $C_1$ has reading zero. Scaling $x$ by $d$ multiplies the reading by $d^{-s}$, so every $C_d$ has reading zero as well. Cauchy–Schwarz gives the stated floor $|1/s|^2$. For the strict comparison use $\pi<22/7$ and $\log 2>2/3$, the latter from the midpoint bound for the integral of $1/x$ on $[1,2]$. This argument also shows the cancellation at the exceptional frequency in the classical alternating zeta formula. [DLMF, equation 25.2.3](https://dlmf.nist.gov/25.2.E3)
+
+**Tripling registers this particular wave.** The rational witness above has squared error below $1/92$, so at least one of its $b_d$ has nonzero reading. The Mellin identity above then gives $\zeta(s)\ne0$ at this one frequency. The reading of $3b_3-b_1$ is $(1-3^{1-s})\zeta(s)/s$, which is nonzero because $1<\log3/\log2<2$. This settles the comparison for one wave. Uniform control of the full error after combining scales remains open.
+
 ## Unresolved
 
 Give an unconditional construction satisfying (1) for arbitrary $K$, or establish an obstruction valid for every permitted family that survives as its moduli grow. A finite interval of exact readings, or any finite list of certificates, leaves this quantifier open.

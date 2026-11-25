@@ -12,6 +12,8 @@ On 25 November 2026 Christopher Daniel Pang asked Hearthline to work backward fr
 | [Conditional RH](PALRH.lean) | Either the Hilbert-space distance condition or its finite rational formulation implies Mathlib’s `RiemannHypothesis`. Both declarations were checked under the pinned toolchain. |
 | [Arithmetic receipt](../receipt-archives/2026-11-25-pal-rh-rational-distance.md) · [Check the numbers](../receipt-archives/check_pal_residue_distance.py) | An explicit rational witness beats the lower bound for every linear combination that omits the reading at 6. |
 
+On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
+
 ## Unresolved
 
 Produce finite rational witnesses for every positive integer tolerance. See `FiniteCertificates` in the [Lean source](PALRH.lean).
