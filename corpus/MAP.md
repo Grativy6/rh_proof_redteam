@@ -4,6 +4,8 @@
 
 Chris requested public copies of the research tools used in the audit after a reader questioned whether the workflow could be reproduced. Hearthline added the following sources on 23 November 2026. [Applied method](README.md) · [RH project map](../MAP.md)
 
+On 24 November 2026 Hearthline applied Pang’s PAL/APCI comparison to a marked reciprocal parameter and to the effect of a lost first-order trace on a product. [Spherical parameter](../proofs/recovering-the-inert-spherical-parameter.md) · [Mixed-word theorem](../proofs/finite-trace-test-at-an-irreducible-point.md)
+
 | Exact source | Edition and use | Upstream |
 | --- | --- | --- |
 | [GOLD v0.1](GOLD_v0.1.pdf) | Pang’s six-sector code, exact residual and Fibonacci near-returns, applied by Hearthline to the [golden-angle audit](../receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) at Chris’s request on 24 November 2026. | [Deposit](https://zenodo.org/records/22236848) |

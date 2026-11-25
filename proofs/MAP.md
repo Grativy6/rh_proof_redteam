@@ -63,6 +63,16 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 | [The coefficient field must outgrow every polynomial on the zeta windows](coefficient-fields-outgrow-the-window.md) | For the specified trivial-character windows the auxiliary coefficient-field degree eventually exceeds every fixed power of the scale. |
 | [The field can outrun the small-section count](small-sections-over-moving-fields.md) | A fixed line and metric give different normalized small-section counts when the coefficient fields move with the tensor power. |
 
+## Local projectors, spherical parameters and trace data
+
+| Paper | What it establishes |
+| --- | --- |
+| [The integral cost of the distinguished-prime projector](distinguished-prime-projector.md) | The integral regular projector numerator has explicit Smith factors. On level-one Kirillov inputs it retains one line per generic character. |
+| [Recovering the inert spherical parameter and counting an occupied packet](recovering-the-inert-spherical-parameter.md) | A triangular integral inverse recovers every spherical invariant of the reciprocal multiset. A marked root can move over dual numbers with no change in those readings. |
+| [Finitely many word traces detect an irreducible deformation](finite-trace-test-at-an-irreducible-point.md) | At a common absolutely irreducible reduction, finitely many specified word traces test strict conjugacy of two lifts over a local ring. |
+
+These three papers carry the corpus question and source inputs on their opening page. [Dated supplement](../receipt-archives/2026-11-24-proof-collection-arithmetic-supplement.json)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)

@@ -1,0 +1,60 @@
+{
+  "assembled_local_date": "2026-11-24",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "earlier_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "earlier_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "date_scope": "Corpus dates in the earlier manifest date the methods. The derivations in this supplement belong to the November audit. Named classical inputs retain their credited authorship.",
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/distinguished-prime-projector.md",
+      "result": "The integral regular projector numerator has explicit Smith factors. On level-one Kirillov inputs it retains one line per generic character.",
+      "dated_receipt": "receipt-archives/2026-11-24-the-integral-cost-of-the-distinguished-prime-projector.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked whether a lost arithmetic distinction changes a downstream dimension. The PAL/APCI comparison holds the projector fixed while changing the space.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the finite projector, the local rank claim and its use. Hearthline derived the regular Smith factors, checked its actual adelic section and wrote out the Kirillov-model argument. The one-factor Laplacian and the Kirillov model are classical.",
+      "check": "receipt-archives/check_distinguished_prime.py",
+      "reading_edition_sha256": "c049b26f9ea4bae9862c222d93fe088e2e2c979cdb6ca40e3c2f172782c509c7",
+      "receipt_sha256": "3664a4b0047903f036cd4200030135395614899509afa774e2c588cb8a5925ea",
+      "check_sha256": "b3f38251969f3fb4839dab1f2b8f8f7d3c218fcf754bb94e3e441460f612ffc0"
+    },
+    {
+      "reading_edition": "proofs/recovering-the-inert-spherical-parameter.md",
+      "result": "A triangular integral inverse recovers every spherical invariant of the reciprocal multiset. A marked root can move over dual numbers with no change in those readings.",
+      "dated_receipt": "receipt-archives/2026-11-24-recovering-the-spherical-parameter-and-counting-an-occupied-packet.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked whether the observation can distinguish two marked inputs. PAL and APCI led to the comparison of labelled reciprocal roots with their invariant coordinates.",
+      "proof_inputs_and_release_role": "The list of reciprocal eigenvalues and its use at an inert place come directly from Alpöge and Claude. Hearthline worked out the integral inverse and first-order example. Labesse, Mœglin–Waldspurger and Ramakrishnan provide the global theorems used in the separate packet comparison.",
+      "check": "receipt-archives/check_distinguished_prime.py",
+      "reading_edition_sha256": "d40342137f0178be06188b5a1f910b2e53589b0f4486621e8ad5454879223ead",
+      "receipt_sha256": "9286be6ce47c4b586e45c232d2df966ccb1f1e035570d6c95bc1fe6e1a64aa19",
+      "check_sha256": "b3f38251969f3fb4839dab1f2b8f8f7d3c218fcf754bb94e3e441460f612ffc0"
+    },
+    {
+      "reading_edition": "proofs/finite-trace-test-at-an-irreducible-point.md",
+      "result": "At a common absolutely irreducible reduction, finitely many specified word traces test strict conjugacy of two lifts over a local ring.",
+      "dated_receipt": "receipt-archives/2026-11-24-finitely-many-word-traces-detect-an-irreducible-deformation.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked where a residue can be read after one observation loses it. The PAL/APCI test compares the local reading with observations of products.",
+      "proof_inputs_and_release_role": "The proof uses matrix units, a trace pairing and a word basis. General trace-conjugacy rigidity is classical, including Carayol. The finite recipe, direct derivation and rank-three calculation were developed here. The Alpöge–Claude release supplies the application to irreducible arithmetic points.",
+      "check": "receipt-archives/check_irreducible_trace_words.py",
+      "reading_edition_sha256": "d3061bbf5ba92ff6144d6fb2efd5bf963f4b6b48fb87daab70e1d2d327c11016",
+      "receipt_sha256": "810aef00b486701a76955ccdac0a46b0e95a871913953561187089ef7697d845",
+      "check_sha256": "6a3e4000ec5019293fc3f6afa74a28bcb99c8f66846f0b6e117bac4c4afe4d42"
+    }
+  ]
+}

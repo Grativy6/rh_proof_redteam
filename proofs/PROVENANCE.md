@@ -33,9 +33,13 @@ The August APCI deposit is registered as *Abstract-to-Physical Certification Imp
 | [Exact zero on a supported orbit](a-zero-on-a-supported-orbit.md) | The question came from Pang’s lattice and residue branch. The example uses the release’s actual orbit definition and matrix. Its Hensel construction and weight comparison are given in the project’s receipt. |
 | [Weighted triangle](three-weighted-triangle-optima.md) | Pang’s golden and finite-frame questions preceded his pointer to Bubeck’s post. Goemans and Williamson supply the relaxation; OpenAI supplies the matrix-multiplication claim. The project contribution is the calculation on the RH lattice, its asymmetric test and its finite-angle obstruction. |
 | [Original geometry witness](asymmetric-mixed-intersection.md) | Jenny Lorraine Nielsen identified the permissive geometry predicate. Pang directed the PAL/APCI comparison. Hearthline evaluated the actual constructor, derived the two unequal readings and traced its diagonal uses. |
+| [Distinguished-prime projector](distinguished-prime-projector.md) | Pang’s question asks what survives the measurement. Alpöge and Claude constructed the projector and stated its complex-rank property. Hearthline derived its full integral Smith factors and tested the two local sections and the two flag spaces. |
+| [Finite test for irreducible lifts](finite-trace-test-at-an-irreducible-point.md) | Pang’s question about the remaining trace motivated the calculation. Carayol supplies the classical all-traces rigidity result. The finite reading list, elementary proof and rank-three test are written out here. The release supplies the arithmetic application. |
 | [Contributor receipts](../receipt-archives/gemini-neon/README.md) | Gemini Neon’s handoff is preserved under its contributor name. Chat-Hearthline’s earlier research handoff is identified in the [initial audit](../receipt-archives/2026-11-23-proof-audit.md). |
 
 A compact credit for the first paper is *“Reconstructing a marked lattice by doubling,” Christopher Daniel Pang’s PAL research program, developed with Hearthline, 24 November 2026.* The dated receipt and the individual paper’s input statement travel with that credit. [Paper](marked-lattice-reconstruction.md) · [First dated derivation](../receipt-archives/2026-11-24-reconstructing-a-marked-lattice-by-doubling.md)
+
+The [arithmetic supplement](../receipt-archives/2026-11-24-proof-collection-arithmetic-supplement.json) dates the three later derivations, records their exact inputs, and links them to the same corpus editions. A reader can cite each paper together with its dated receipt.
 
 ## Unresolved
 

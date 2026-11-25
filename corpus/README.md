@@ -2,6 +2,8 @@
 
 Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 42 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
 
+Pang’s fixed-observation test also suggested comparing the trace of one matrix with the trace of a product. A rank-three change invisible on every power of one element moves a mixed trace by exactly one first-order unit. [The paper and worked example](../proofs/finite-trace-test-at-an-irreducible-point.md)
+
 The public formal projects have a [separate Lean comparison](../receipt-archives/2026-11-24-lean-check-comparison.md), including all seven current Context Parallax formal files. It records the exact propositions and assumptions the checkers read.
 
 The same [APCI source](Interface.lean) produces a [literal blank-slot control](../receipt-archives/IUsedLeanToProveRH.lean) and an [axiom-free obstruction to decoding the next denominator digit](../receipt-archives/2026-11-24-integral-spectral-frame.md). The [new census](../receipt-archives/2026-11-24-assumptions-before-the-proof.md) measures which axiom names enter at the statement itself.

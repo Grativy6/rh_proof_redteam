@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check the distinguished prime and the mixed traces
+
+Run `python -B check_distinguished_prime.py` and `python -B check_irreducible_trace_words.py` from this directory. Both use the standard library. The first computes integral Smith factors, counts fixed flags and reconstructs spherical polynomials. The second ranks the complete trace-derivative matrix in the displayed three-generator example. [Projection](2026-11-24-the-integral-cost-of-the-distinguished-prime-projector.md) · [Packet and polynomial](2026-11-24-recovering-the-spherical-parameter-and-counting-an-occupied-packet.md) · [Finite word test](2026-11-24-finitely-many-word-traces-detect-an-irreducible-deformation.md) · [Attribution and digests](2026-11-24-proof-collection-arithmetic-supplement.json)
+
 ### Test the weighted triangle and the nonsplit carry
 
 Run `python -B check_triangle_and_nonsplit_carry.py` here with the standard library and the neighboring E₈ check. It verifies the elliptic flex value in the 25-element residue field, counts the orders of all 81 points of the restricted polarization kernel, and compares the weighted triangle optima. [Triangle](2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md) · [Nonsplit periods](2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md) · [Moving coefficient](2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md)
