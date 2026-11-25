@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [What the last two rows carry](what-the-last-two-rows-carry.md) · [One-step arithmetic](PALRH/CarriedEdge.lean) | The final row difference recovers the carried slope. It changes sign infinitely often on the fourth-power samples themselves. A one-sided envelope at every fourth power is sufficient. The curvature bound prices the unsampled integer frames. |
 | [One list builds the next](the-balanced-newton-handoff.md) · [Direction of the error](when-a-drop-would-count.md) · [Lean](PALRH/TaperedNewton.lean) | The balanced list generates its own successor. Both all-row error and finite square-window error fall in the first three updates. A positive zero displacement would eventually force every such step upward. |
 | [Paying for the whole averaged square](averaging-the-square.md) · [Finite transfer and reversal](PALRH/Smoothed.lean) | Two averages bound the full centered matrix from genuine smaller-side walk measurements. The old discontinuity returns exactly when the averaging is reversed. A Gaussian criterion reduces the remaining spectral range to finitely many modes proportional to log H. |
 | [The signed matrix inside a square](the-signed-matrix-inside-a-square.md) · [Square identity](PALRH/CoreMatrix.lean) · [Outer funding](PALRH/OuterBlock.lean) | The rough Huxley–Watt form computes the square from side data. Signed exact boundary hits cancel at every nontrivial square. A lower estimate for a bounded kernel is sufficient on paper. The actual upper half is paid by one earlier octave. |
@@ -34,6 +35,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+Bound [one direction of the two-row reading](what-the-last-two-rows-carry.md#why-fourth-power-samples-suffice) at all fourth-power sides. The unpriced term in one step is the signed rough count between the old boundaries, divided by $H(H+1)$. The other term has total absolute tail at most $1/(2H)$.
 
 On the [prescribed successive squares](when-a-drop-would-count.md#a-finite-arithmetic-test-at-both-ends), prove that the finite rational cost increases by at most a bounded factor at arbitrarily late steps, or establish the stated subpower ratio. With the finite lists already supplied, the signed change in the physical measurement is the first open claim.
 

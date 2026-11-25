@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Two-row extraction and sparse signs](2026-11-25-pal-carried-edge.json) · [Unit recurrence and integer enclosures](check_pal_carried_edge.py) | 25 November 2026. Hearthline, under Pang’s active key, recovered the carried slope from the output, priced the intervening frames and tested both signs on specified cube and fourth-power samples. |
 | [Building and measuring the next square](2026-11-25-pal-tapered-newton.json) · [Integer reconstruction and outward cost bounds](check_pal_tapered_newton.py) | 25 November 2026. Hearthline tested Pang’s same-frame question on the true six-step census, including the first reversed mixed product and the all-row costs. |
 | [Averaging the whole square](2026-11-25-pal-smoothed-square.json) · [Exact polynomial weights and Gaussian enclosures](check_pal_smoothed_square.py) | 25 November 2026. Hearthline used Pang’s active square and boundary key to test a different receiving observable on both the actual Möbius signs and the earlier comparison packets. |
 | [Rough-core square and the first new cofactor](2026-11-25-pal-square-boundary.json) · [True square arithmetic](check_pal_core_squares.py) · [Alternative signs on genuine labels](check_pal_boundary_packets.py) | 25 November 2026. Hearthline followed Pang’s active key into prime-depth admissions, costed old-to-new square transport and a boundary test repaired by opening 5. |

@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+In a frame of side $H$, the difference between its last two row errors is exactly twice the number it carried forward. That reading takes both signs infinitely often on fourth-power frames. A one-sided size law at fourth-power frames would imply RH. [Read the two-row proof](pal-rh/what-the-last-two-rows-carry.md)
+
 The same finite Möbius list now generates the next square. Its total error falls at sides 4, 8, 32 and 512. An off-line zero would force every sufficiently late step of this sequence to increase, even if only the first square of physical rows is measured. [How the list passes forward](pal-rh/the-balanced-newton-handoff.md) · [Why repeated drops would count](pal-rh/when-a-drop-would-count.md)
 
 At side 1024, the rough integers with only old prime factors contribute −16,226. The exact subtotal with one larger prime is +16,097. A square matrix using only the earlier signs recovers their total, −129. [The signed matrix and its source](pal-rh/the-signed-matrix-inside-a-square.md) · [How much prime depth can be omitted](pal-rh/where-prime-depth-can-stop.md)

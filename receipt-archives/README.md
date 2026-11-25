@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/check_pal_carried_edge.py` for the two-row reading, its neighboring-frame update, and directed enclosures at cubes and fourth powers. [Results and distinctions between finite and infinite claims](2026-11-25-pal-carried-edge.json)
+
 Run `python -B receipt-archives/check_pal_tapered_newton.py` to reconstruct the balanced lists, price the first errors in both directions and enclose all-row and finite-square costs. [Results](2026-11-25-pal-tapered-newton.json) · [What the direction implies](../pal-rh/when-a-drop-would-count.md)
 
 [Averaged square replay](2026-11-25-pal-smoothed-square.json) uses `python -B receipt-archives/check_pal_smoothed_square.py`. It includes the physical values, the backward second difference, the same assigned signs, and five direct Gaussian comparisons. [Paper and proof scope](../pal-rh/averaging-the-square.md)

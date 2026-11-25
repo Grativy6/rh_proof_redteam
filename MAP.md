@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[What the last two rows carry](pal-rh/what-the-last-two-rows-carry.md). Under Pang’s active key, Hearthline derived a sparse one-sided target and unconditional signed excursions at cube and fourth-power sizes on 25 November 2026. [Exact finite reconstruction](receipt-archives/2026-11-25-pal-carried-edge.json)
+
 [Recursive balanced lists](pal-rh/the-balanced-newton-handoff.md) · [Direction of the finite error at successive squares](pal-rh/when-a-drop-would-count.md). Hearthline derived the actual handoff, first missing product, finite tail allowance and limiting exponent under Pang’s active construction key, 25 November 2026. [Reproduction](receipt-archives/2026-11-25-pal-tapered-newton.json)
 
 [Averaging the square](pal-rh/averaging-the-square.md) pays the joint boundary for a distinct RH-detecting observable. The backward difference restores the hard form exactly. Hearthline, under Pang’s active key, 25 November 2026. [Reproduction](receipt-archives/2026-11-25-pal-smoothed-square.json)

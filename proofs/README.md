@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What the last two rows carry](../pal-rh/what-the-last-two-rows-carry.md) proves that the construction’s boundary reading must take both signs infinitely often on fourth-power frames, and gives a sufficient one-sided bound on fourth powers.
+
 [One coefficient list earns the next square](../pal-rh/the-balanced-newton-handoff.md). An [error-exponent calculation](../pal-rh/when-a-drop-would-count.md) proves that infinitely many nonincreasing steps of its finite arithmetic test would imply RH. The first three steps decrease.
 
 [Averaging the square](../pal-rh/averaging-the-square.md) gives a different, still RH-sensitive target that pays the joint crossing, together with the exact cost of undoing the average.

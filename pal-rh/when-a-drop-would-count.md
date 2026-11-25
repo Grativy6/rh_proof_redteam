@@ -23,9 +23,9 @@ If the right side is positive, the ratio inside the logarithm eventually exceeds
 ## A finite arithmetic test at both ends
 
 For the same list, retain only the rows through $H^2$ and call their rational cost $P_H$. The head contributes at most $H$ to $\sum_d|a_H(d)|$, and the outer strip contributes at most $2H$. Hence $|F_H(k)|\le2H$ at every row by the centered census bound. For $H\ge1$ the whole squared error beyond the square obeys
-$
+$$
 0\le E_H-P_H\le\frac{(1+2H)^2}{H^2+1}\le9 .
-$
+$$
 Consequently $\log(1+E_H)$ and $\log(1+P_H)$ differ by at most $\log 10$. Equations (1) and (2) hold verbatim with $P$ in place of $E$. In particular, **infinitely many nonincreases of the finite rational numbers $P_H$ on this single sequence would suffice**. Even occasional bounded-factor increases suffice if they recur arbitrarily late. Each individual comparison uses the original finite list, the six-step census and at most $K^2$ numbered rows. Its truth at infinitely many steps is an additional mathematical claim. The first three finite comparisons all decrease. [Bounds and numbers](the-balanced-newton-handoff.md#what-the-list-measures)
 
 ## Proof of the exponent
