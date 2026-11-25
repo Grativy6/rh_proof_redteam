@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check the coefficient prime 2663 on every real dyadic layer
+
+Run `python -B check_prime_2663.py` here with NumPy. The two evaluations of the high-conductor norms give product 95 modulo 2663. Independent split-prime unit calculations treat the single small-conductor candidate and the principal character. [Proof](2026-11-24-what-prime-2663-does-in-the-real-dyadic-tower.md) · [Provenance and digests](2026-11-24-proof-collection-2663-supplement.json)
+
 ### Check the distinguished prime and the mixed traces
 
 Run `python -B check_distinguished_prime.py` and `python -B check_irreducible_trace_words.py` from this directory. Both use the standard library. The first computes integral Smith factors, counts fixed flags and reconstructs spherical polynomials. The second ranks the complete trace-derivative matrix in the displayed three-generator example. [Projection](2026-11-24-the-integral-cost-of-the-distinguished-prime-projector.md) · [Packet and polynomial](2026-11-24-recovering-the-spherical-parameter-and-counting-an-occupied-packet.md) · [Finite word test](2026-11-24-finitely-many-word-traces-detect-an-irreducible-deformation.md) · [Attribution and digests](2026-11-24-proof-collection-arithmetic-supplement.json)

@@ -43,6 +43,7 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 | --- | --- |
 | [A 577th power locally and a non-power globally](a-577th-power-locally.md) | A single Taylor coefficient checks the strict local condition, while a different prime supplies a global witness of order 577. |
 | [The same dyadic ideal gives a geometric and a Selmer class of order 577](a-dyadic-ideal-of-order-577.md) | An explicit dyadic ideal has order 577 and contributes a class to the arithmetic count. |
+| [What prime 2663 does in the real dyadic tower](prime-2663-in-the-real-dyadic-tower.md) | At 2663 every pure real dyadic strict group at a positive even twist is zero. A finite period handles every higher level. |
 | [One strict class in the entire real dyadic tower at 577](one-class-across-the-real-dyadic-tower.md) | The pure-character part of the 577 count is determined on every sufficiently deep real dyadic layer. |
 | [Every finite place splits, and the global extension is nontrivial](finite-splitting-in-an-infinite-tower.md) | Each finite layer has a detecting prime even though every fixed finite place eventually loses its detection. |
 | [Why the two groups stop at 25](two-groups-stop-at-order-25.md) | Two distinct obstructions rule out order 125 for the strict groups on the inputs 2179 and 106619. |

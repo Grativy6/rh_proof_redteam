@@ -12,6 +12,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| What changes at the coefficient prime 2663? | [Complete real dyadic calculation](proofs/prime-2663-in-the-real-dyadic-tower.md) · [Exact replay](receipt-archives/check_prime_2663.py). Chris Pang suggested the prime and Hearthline derived and checked the comparison with 577, 24 November 2026. |
 | Can the identity fallback change the fixed-weight dimension? | [Actual section and integer divisors](proofs/distinguished-prime-projector.md) · [Inert parameters and an occupied packet](proofs/recovering-the-inert-spherical-parameter.md) · [Finite mixed-word trace test](proofs/finite-trace-test-at-an-irreducible-point.md). Hearthline, working from Pang’s PAL/APCI question under his continuing authorization, 24 November 2026. |
 | How does the announced $9/4$ triangle meet the actual lattice? | [Weighted cut, shortest-root and unrestricted optima](receipt-archives/2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md). Hearthline, following Chris Pang’s 24 November lead. |
 | Can a unit period change the order of a polarization kernel? | [Two order-nine generators](receipt-archives/2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md) · [Independent good probes in the same nonsplit family](receipt-archives/2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md). Hearthline, under Pang’s request to follow the residue and write independent proofs, 24 November 2026. |

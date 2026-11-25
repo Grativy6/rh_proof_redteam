@@ -1,0 +1,31 @@
+{
+  "assembled_local_date": "2026-11-24",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Calculation and derivation with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "preceding_supplement": "receipt-archives/2026-11-24-proof-collection-arithmetic-supplement.json",
+  "preceding_supplement_sha256": "cf19c4cb3aa53141c1f2428a6d2cee7ec6ce981cc7f7ce1940575dfc99a4420d",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/prime-2663-in-the-real-dyadic-tower.md",
+      "result": "For p = 2663 every strict group on the pure real dyadic tower at a positive even twist is zero.",
+      "dated_receipt": "receipt-archives/2026-11-24-what-prime-2663-does-in-the-real-dyadic-tower.md",
+      "corpus_editions": [
+        "PAL",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang singled out 2663 and asked to compare it with 577. His PAL and CLEF methods keep the tower and its local conditions fixed while changing the prime.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the Selmer groups and the prime-window conditions. Hearthline derived the conductor period and computed the norm product and the last circular-unit test. The proof uses classical Kummer theory, the Jacobi divisor, Greither’s characterwise class-number theorem and the Buhler–Harvey criterion.",
+      "check": "receipt-archives/check_prime_2663.py",
+      "reading_edition_sha256": "e8169f240112cb7b28aa8b963ca6f1f7adaa002d74a5bb781a224f703621a53d",
+      "receipt_sha256": "abb7aab9631bfd5cfff4c18ef6e62bc90229cec7474218a63ebdbc4dec2ddcc1",
+      "check_sha256": "e5258a5fbb7c3fbd26c1dc3786e06644ba3a164db8d4c178eb7a324df2c334aa"
+    }
+  ]
+}

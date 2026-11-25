@@ -10,6 +10,8 @@ Pang’s PAL atlas and APCI work on what observations can certify supplied the s
 
 ## Audit findings
 
+**What happens if 2663 takes 577’s place?** For every field in the real dyadic tower and every positive even twist, the strict group at 2663 vanishes. A period of 1331 covers arbitrarily high conductors. [The proof and its last candidate](proofs/prime-2663-in-the-real-dyadic-tower.md)
+
 **One local map really does return the identity.** The distinguished-prime projector calls a second map, whose inverse is explicit on the pair of split components. In rank three at seven, spaces of dimensions 456 and 343 both project to 36. An integral calculation gives all the divisors of the projection numerator. [The two maps and the calculation](proofs/distinguished-prime-projector.md) · [Where a lost first-order trace reappears](proofs/finite-trace-test-at-an-irreducible-point.md)
 
 **Can the proof read through an exact theta zero?** The [larger torsion measurement](receipt-archives/2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) recovers two nonzero terms of the same section and exposes the local ideal that selects one across traits. An [elliptic good factor](receipt-archives/2026-11-24-a-theta-zero-at-every-toric-depth.md) supplies an example where all toric probes of the distinguished section vanish. The [doubling test](receipt-archives/2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) reconstructs the entire underlying metric from labelled minima at level four or higher. [Two CM actions on one fourfold](receipt-archives/2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md) show which arithmetic data can still be lost.
