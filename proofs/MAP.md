@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Rough squares and prime depth](../pal-rh/where-prime-depth-can-stop.md) · [Signed matrix](../pal-rh/the-signed-matrix-inside-a-square.md) · [Boundary counterexample and opening price](../pal-rh/what-the-fifth-boundary-needs.md). Derived and tested by Hearthline under Pang’s active research key, 25 November 2026. [Finite evidence and kernel replay](../receipt-archives/2026-11-25-pal-square-boundary.json)
+
 The [subpower and doubling-window theorems](../pal-rh/what-the-next-octave-costs.md) turn the exact head into a growth test. Derived by Hearthline under Pang’s continuing authorization, 25 November 2026. [Arithmetic and formal scope](../receipt-archives/2026-11-25-pal-octave-growth.json)
 
 On 25 November 2026 Hearthline used Pang’s PAL frame question, RPL arithmetic shell and boundary-ledger accounting in [the signed prime-flow proof](../pal-rh/what-five-carries.md). [Exact primal and dual arithmetic](../receipt-archives/2026-11-25-pal-prime-flow.json)

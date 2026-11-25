@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+The [signed square calculation](../pal-rh/the-signed-matrix-inside-a-square.md) recovers a prime aggregate using only side coefficients, and the [fifth-boundary test](../pal-rh/what-the-fifth-boundary-needs.md) shows exactly why an old signed window cannot pay for every joint crossing on its own. [Corpus and classical source credit](PROVENANCE.md)
+
 [What the next doubling window costs](../pal-rh/what-the-next-octave-costs.md) proves how an exact head changes the power that a missed wave must charge, and constructs a finite rational fit whose next interval contains only signed Möbius increments.
 
 [What 5 carries through 2 and 3](../pal-rh/what-five-carries.md) follows one prime through every triangular layer and proves a strict separation between two finite widths on both physical targets. The first 256 measured rows agree exactly throughout.

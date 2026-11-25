@@ -1,0 +1,754 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "parent_tree": "6960874e2633415a1847f53976ce879b9457ba47",
+  "scope": "Pang’s activated corpus-led independent proof construction. The papers credit Huxley and Watt for the matrix identity and identify the classical Landau and prime-count estimates.",
+  "sources_sha256": {
+    "pal-rh/PALRH/RoughSquares.lean": "80e81177e2c2ee12f8601a9832c7b08a30432cde805dcc89890391a077932052",
+    "pal-rh/PALRH/CoreMatrix.lean": "ba2f618d9e7abe0df46ceb9fccfbf44a95cfb21b7e381eda4522fb03b125d005",
+    "pal-rh/PALRH/OuterBlock.lean": "2698632ccc4be7fd1f53584d464cbe1b833b05841708e771df128683f4003b58",
+    "pal-rh/PALRH/PrimeOpening.lean": "bf32dabaecd2483711c1ba02e70a20d610bb29a25898dd1d4ed3425ade1aed67",
+    "pal-rh/lakefile.toml": "1c0be4027a502456035a93462126fac87d1b564047c53e2ed50d03c904e1642a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/where-prime-depth-can-stop.md": "cf97db669353a90ce1f0ae0ad766a0feb5664797e1db3978cde2b39393a318e9",
+    "pal-rh/the-signed-matrix-inside-a-square.md": "6aa50e96721f5007fe8e36fe9cfbc1d53f82ef8a0c5489f1f059f02631cb5356",
+    "pal-rh/what-the-fifth-boundary-needs.md": "50d35bbc9ade5a8e5497d1f51f49a67bbf87c67e70e71e8df1efa49dcf175793",
+    "receipt-archives/check_pal_core_squares.py": "56ecd01162e7d49dbee42842be5f259bfda9bdea0509f06b66b6d280dc46543b",
+    "receipt-archives/check_pal_boundary_packets.py": "40479f047b62d1ec0d3d706d0a99fb77536eedf1d20e82e38b8134e02ce68356"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "ordinary_build": {
+    "exit": 0,
+    "command": "cd pal-rh && lake build",
+    "jobs_including_replays": 3735
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH.RoughSquares",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CoreMatrix",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OuterBlock",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeOpening",
+      "exit": 0,
+      "seconds": 11.1,
+      "output": ""
+    }
+  ],
+  "printed_declarations": [
+    "PALRH.CoreMatrix.at_square",
+    "PALRH.CoreMatrix.form_jump",
+    "PALRH.CoreMatrix.outer_row",
+    "PALRH.CoreMatrix.rh_of_form_size",
+    "PALRH.CoreMatrix.side_thirty_cross",
+    "PALRH.CoreMatrix.side_thirty_first",
+    "PALRH.CoreMatrix.square_jump_vanishes",
+    "PALRH.CoreMatrix.unpaid",
+    "PALRH.OuterBlock.outer_funded",
+    "PALRH.PrimeOpening.five_flattened",
+    "PALRH.PrimeOpening.five_price",
+    "PALRH.PrimeOpening.price_of_opening_five",
+    "PALRH.PrimeOpening.recover_signed",
+    "PALRH.RoughSquares.four_cores",
+    "PALRH.RoughSquares.pruned_cost",
+    "PALRH.RoughSquares.rh_of_square_signs"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "genuine_arithmetic": {
+    "squares": [
+      {
+        "side": 3,
+        "square": 9,
+        "first_omitted_depth": 1,
+        "tuple_cap": 2,
+        "previous_cap": 9,
+        "actual_omitted_count": 2,
+        "actual_omitted_signed": -2,
+        "retained_signed": 1,
+        "small_primes_only_signed": 1,
+        "one_new_prime_signed": -2,
+        "true_signed": -1,
+        "opening_five": {
+          "R30_at_square": 0,
+          "R30_at_divided_argument": 1
+        }
+      },
+      {
+        "side": 5,
+        "square": 25,
+        "first_omitted_depth": 2,
+        "tuple_cap": 0,
+        "previous_cap": 14,
+        "actual_omitted_count": 0,
+        "actual_omitted_signed": 0,
+        "retained_signed": -6,
+        "small_primes_only_signed": 0,
+        "one_new_prime_signed": -6,
+        "true_signed": -6,
+        "opening_five": {
+          "R30_at_square": -5,
+          "R30_at_divided_argument": 1
+        }
+      },
+      {
+        "side": 8,
+        "square": 64,
+        "first_omitted_depth": 2,
+        "tuple_cap": 2,
+        "previous_cap": 49,
+        "actual_omitted_count": 2,
+        "actual_omitted_signed": 2,
+        "retained_signed": -15,
+        "small_primes_only_signed": 0,
+        "one_new_prime_signed": -13,
+        "true_signed": -13,
+        "opening_five": {
+          "R30_at_square": -14,
+          "R30_at_divided_argument": -1
+        }
+      },
+      {
+        "side": 16,
+        "square": 256,
+        "first_omitted_depth": 3,
+        "tuple_cap": 0,
+        "previous_cap": 44,
+        "actual_omitted_count": 0,
+        "actual_omitted_signed": 0,
+        "retained_signed": -26,
+        "small_primes_only_signed": 3,
+        "one_new_prime_signed": -29,
+        "true_signed": -26,
+        "opening_five": {
+          "R30_at_square": -37,
+          "R30_at_divided_argument": -11
+        }
+      },
+      {
+        "side": 35,
+        "square": 1225,
+        "first_omitted_depth": 3,
+        "tuple_cap": 16,
+        "previous_cap": 456,
+        "actual_omitted_count": 12,
+        "actual_omitted_signed": -12,
+        "retained_signed": -35,
+        "small_primes_only_signed": 16,
+        "one_new_prime_signed": -63,
+        "true_signed": -47,
+        "opening_five": {
+          "R30_at_square": -85,
+          "R30_at_divided_argument": -38
+        }
+      },
+      {
+        "side": 64,
+        "square": 4096,
+        "first_omitted_depth": 4,
+        "tuple_cap": 0,
+        "previous_cap": 173,
+        "actual_omitted_count": 0,
+        "actual_omitted_signed": 0,
+        "retained_signed": -78,
+        "small_primes_only_signed": 21,
+        "one_new_prime_signed": -99,
+        "true_signed": -78,
+        "opening_five": {
+          "R30_at_square": -145,
+          "R30_at_divided_argument": -67
+        }
+      },
+      {
+        "side": 127,
+        "square": 16129,
+        "first_omitted_depth": 4,
+        "tuple_cap": 23,
+        "previous_cap": 1514,
+        "actual_omitted_count": 18,
+        "actual_omitted_signed": 18,
+        "retained_signed": -133,
+        "small_primes_only_signed": -81,
+        "one_new_prime_signed": -34,
+        "true_signed": -115,
+        "opening_five": {
+          "R30_at_square": -240,
+          "R30_at_divided_argument": -125
+        }
+      },
+      {
+        "side": 128,
+        "square": 16384,
+        "first_omitted_depth": 4,
+        "tuple_cap": 23,
+        "previous_cap": 1548,
+        "actual_omitted_count": 18,
+        "actual_omitted_signed": 18,
+        "retained_signed": -131,
+        "small_primes_only_signed": -88,
+        "one_new_prime_signed": -25,
+        "true_signed": -113,
+        "opening_five": {
+          "R30_at_square": -237,
+          "R30_at_divided_argument": -124
+        }
+      },
+      {
+        "side": 256,
+        "square": 65536,
+        "first_omitted_depth": 5,
+        "tuple_cap": 0,
+        "previous_cap": 426,
+        "actual_omitted_count": 0,
+        "actual_omitted_signed": 0,
+        "retained_signed": -112,
+        "small_primes_only_signed": -781,
+        "one_new_prime_signed": 669,
+        "true_signed": -112,
+        "opening_five": {
+          "R30_at_square": -332,
+          "R30_at_divided_argument": -220
+        }
+      },
+      {
+        "side": 512,
+        "square": 262144,
+        "first_omitted_depth": 5,
+        "tuple_cap": 31,
+        "previous_cap": 4417,
+        "actual_omitted_count": 26,
+        "actual_omitted_signed": -26,
+        "retained_signed": -104,
+        "small_primes_only_signed": -3886,
+        "one_new_prime_signed": 3756,
+        "true_signed": -130,
+        "opening_five": {
+          "R30_at_square": -458,
+          "R30_at_divided_argument": -328
+        }
+      },
+      {
+        "side": 1024,
+        "square": 1048576,
+        "first_omitted_depth": 5,
+        "tuple_cap": 694,
+        "previous_cap": 35135,
+        "actual_omitted_count": 450,
+        "actual_omitted_signed": -450,
+        "retained_signed": 321,
+        "small_primes_only_signed": -16226,
+        "one_new_prime_signed": 16097,
+        "true_signed": -129,
+        "opening_five": {
+          "R30_at_square": -633,
+          "R30_at_divided_argument": -504
+        }
+      },
+      {
+        "side": 1536,
+        "square": 2359296,
+        "first_omitted_depth": 6,
+        "tuple_cap": 3,
+        "previous_cap": 3144,
+        "actual_omitted_count": 3,
+        "actual_omitted_signed": 3,
+        "retained_signed": -138,
+        "small_primes_only_signed": -35759,
+        "one_new_prime_signed": 35624,
+        "true_signed": -135,
+        "opening_five": {
+          "R30_at_square": -691,
+          "R30_at_divided_argument": -556
+        }
+      }
+    ],
+    "matrices": [
+      {
+        "side": 3,
+        "core_walk": -1,
+        "known_side_walk": 1,
+        "integer_form": 3,
+        "centered_form_hundredths_enclosure": [
+          0,
+          1
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [],
+          "form_hundredths_upper": 0,
+          "whole_I_millionths_floor": 0
+        },
+        "two_blocks": {
+          "sizes": [
+            0,
+            0
+          ],
+          "actual_sums": [
+            0,
+            0
+          ],
+          "actual_form": 0,
+          "changed_signs_form": 0
+        }
+      },
+      {
+        "side": 5,
+        "core_walk": -6,
+        "known_side_walk": 0,
+        "integer_form": 6,
+        "centered_form_hundredths_enclosure": [
+          66,
+          67
+        ],
+        "exact_boundary_pairs": 4,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [],
+          "form_hundredths_upper": 0,
+          "whole_I_millionths_floor": 0
+        },
+        "two_blocks": {
+          "sizes": [
+            0,
+            0
+          ],
+          "actual_sums": [
+            0,
+            0
+          ],
+          "actual_form": 0,
+          "changed_signs_form": 0
+        }
+      },
+      {
+        "side": 35,
+        "core_walk": -47,
+        "known_side_walk": -7,
+        "integer_form": 33,
+        "centered_form_hundredths_enclosure": [
+          -283,
+          -282
+        ],
+        "exact_boundary_pairs": 16,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            17
+          ],
+          "form_hundredths_upper": -41,
+          "whole_I_millionths_floor": -412919
+        },
+        "two_blocks": {
+          "sizes": [
+            1,
+            0
+          ],
+          "actual_sums": [
+            -1,
+            0
+          ],
+          "actual_form": 1,
+          "changed_signs_form": 1
+        }
+      },
+      {
+        "side": 64,
+        "core_walk": -78,
+        "known_side_walk": -13,
+        "integer_form": 52,
+        "centered_form_hundredths_enclosure": [
+          1427,
+          1428
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            31
+          ],
+          "form_hundredths_upper": -42,
+          "whole_I_millionths_floor": -420743
+        },
+        "two_blocks": {
+          "sizes": [
+            1,
+            0
+          ],
+          "actual_sums": [
+            -1,
+            0
+          ],
+          "actual_form": 1,
+          "changed_signs_form": 1
+        }
+      },
+      {
+        "side": 127,
+        "core_walk": -115,
+        "known_side_walk": -19,
+        "integer_form": 77,
+        "centered_form_hundredths_enclosure": [
+          2197,
+          2198
+        ],
+        "exact_boundary_pairs": 4,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            61
+          ],
+          "form_hundredths_upper": -44,
+          "whole_I_millionths_floor": -444863
+        },
+        "two_blocks": {
+          "sizes": [
+            1,
+            0
+          ],
+          "actual_sums": [
+            -1,
+            0
+          ],
+          "actual_form": 1,
+          "changed_signs_form": 1
+        }
+      },
+      {
+        "side": 128,
+        "core_walk": -113,
+        "known_side_walk": -19,
+        "integer_form": 75,
+        "centered_form_hundredths_enclosure": [
+          1910,
+          1911
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            61
+          ],
+          "form_hundredths_upper": -46,
+          "whole_I_millionths_floor": -467706
+        },
+        "two_blocks": {
+          "sizes": [
+            1,
+            0
+          ],
+          "actual_sums": [
+            -1,
+            0
+          ],
+          "actual_form": 1,
+          "changed_signs_form": 1
+        }
+      },
+      {
+        "side": 256,
+        "core_walk": -112,
+        "known_side_walk": -26,
+        "integer_form": 60,
+        "centered_form_hundredths_enclosure": [
+          -2037,
+          -2036
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [],
+          "form_hundredths_upper": 0,
+          "whole_I_millionths_floor": 0
+        },
+        "two_blocks": {
+          "sizes": [
+            0,
+            1
+          ],
+          "actual_sums": [
+            0,
+            -1
+          ],
+          "actual_form": 2,
+          "changed_signs_form": 2
+        }
+      },
+      {
+        "side": 512,
+        "core_walk": -130,
+        "known_side_walk": -37,
+        "integer_form": 56,
+        "centered_form_hundredths_enclosure": [
+          -2107,
+          -2106
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            241
+          ],
+          "form_hundredths_upper": -50,
+          "whole_I_millionths_floor": -888
+        },
+        "two_blocks": {
+          "sizes": [
+            2,
+            1
+          ],
+          "actual_sums": [
+            0,
+            1
+          ],
+          "actual_form": 2,
+          "changed_signs_form": -2
+        }
+      },
+      {
+        "side": 1024,
+        "core_walk": -129,
+        "known_side_walk": -47,
+        "integer_form": 35,
+        "centered_form_hundredths_enclosure": [
+          -6876,
+          -6875
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            487,
+            491,
+            499
+          ],
+          "form_hundredths_upper": -398,
+          "whole_I_millionths_floor": -24
+        },
+        "two_blocks": {
+          "sizes": [
+            6,
+            4
+          ],
+          "actual_sums": [
+            0,
+            0
+          ],
+          "actual_form": 0,
+          "changed_signs_form": -28
+        }
+      },
+      {
+        "side": 1536,
+        "core_walk": -135,
+        "known_side_walk": -53,
+        "integer_form": 29,
+        "centered_form_hundredths_enclosure": [
+          -9632,
+          -9631
+        ],
+        "exact_boundary_pairs": 0,
+        "signed_boundary": 0,
+        "actual_prime_subblock": {
+          "primes": [
+            727,
+            733,
+            739,
+            743,
+            751
+          ],
+          "form_hundredths_upper": -1104,
+          "whole_I_millionths_floor": -472111
+        },
+        "two_blocks": {
+          "sizes": [
+            9,
+            4
+          ],
+          "actual_sums": [
+            -1,
+            -2
+          ],
+          "actual_form": 17,
+          "changed_signs_form": -31
+        }
+      }
+    ],
+    "continuous_period_variance": {
+      "2": "1/12",
+      "6": "1/9",
+      "30": "8/45",
+      "210": "32/105",
+      "2310": "128/231",
+      "30030": "1024/1001"
+    },
+    "first_unpaid_products": [
+      {
+        "threshold": 900,
+        "true": -43,
+        "inherited": -43,
+        "unpaid": 0,
+        "pairs": []
+      },
+      {
+        "threshold": 960,
+        "true": -43,
+        "inherited": -43,
+        "unpaid": 0,
+        "pairs": []
+      },
+      {
+        "threshold": 961,
+        "true": -43,
+        "inherited": -44,
+        "unpaid": 1,
+        "pairs": [
+          [
+            31,
+            31
+          ]
+        ]
+      },
+      {
+        "threshold": 1084,
+        "true": -47,
+        "inherited": -48,
+        "unpaid": 1,
+        "pairs": [
+          [
+            31,
+            31
+          ]
+        ]
+      },
+      {
+        "threshold": 1085,
+        "true": -48,
+        "inherited": -47,
+        "unpaid": -1,
+        "pairs": [
+          [
+            31,
+            31
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            35,
+            31
+          ]
+        ]
+      },
+      {
+        "threshold": 1147,
+        "true": -48,
+        "inherited": -49,
+        "unpaid": 1,
+        "pairs": [
+          [
+            31,
+            31
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            31,
+            37
+          ],
+          [
+            35,
+            31
+          ],
+          [
+            37,
+            31
+          ]
+        ]
+      }
+    ]
+  },
+  "alternative_sign_controls": [
+    {
+      "side": 262144,
+      "packet_width": 512,
+      "number_of_packets": 3,
+      "selected_sites": 1560,
+      "largest_saved_increment": 131,
+      "all_doubling_window_cost_upper": "17161/50066",
+      "actual_integer_form_of_assigned_signs": -101404,
+      "centered_lower": "-101786",
+      "centered_upper": -101404,
+      "opening_five_uncentered": 0,
+      "opening_five_centered_lower": "-306",
+      "opening_five_centered_upper": 0,
+      "assignment": "balanced alternative signs on selected genuine squarefree labels coprime to 30"
+    },
+    {
+      "side": 1048576,
+      "packet_width": 1024,
+      "number_of_packets": 6,
+      "selected_sites": 6192,
+      "largest_saved_increment": 260,
+      "all_doubling_window_cost_upper": "1040/3073",
+      "actual_integer_form_of_assigned_signs": -798812,
+      "centered_lower": "-800315",
+      "centered_upper": -798812,
+      "opening_five_uncentered": 0,
+      "opening_five_centered_lower": "-1202",
+      "opening_five_centered_upper": 0,
+      "assignment": "balanced alternative signs on selected genuine squarefree labels coprime to 30"
+    },
+    {
+      "side": 4194304,
+      "packet_width": 2048,
+      "number_of_packets": 13,
+      "selected_sites": 26868,
+      "largest_saved_increment": 522,
+      "all_doubling_window_cost_upper": "272484/797945",
+      "actual_integer_form_of_assigned_signs": -6941386,
+      "centered_lower": "-6948370",
+      "centered_upper": -6941386,
+      "opening_five_uncentered": 0,
+      "opening_five_centered_lower": "-5587",
+      "opening_five_centered_upper": 0,
+      "assignment": "balanced alternative signs on selected genuine squarefree labels coprime to 30"
+    }
+  ],
+  "exploratory_diagonal_comparison": {
+    "searched_sides": "1 through 18000",
+    "tested": "whether the genuine centered form goes below minus one unit per nonzero side mark",
+    "found_counterexample": false,
+    "worst_observed_centered_divided_by_side": [
+      -0.2967778725755261,
+      548
+    ],
+    "scope": "A finite exploratory scan only. A separate three-prime calculation rules out a subset-uniform bound."
+  },
+  "review": "Paper self-review, direct arithmetic and native kernel replay. Assigned signs and actual Möbius coefficients have separate calculations. The one-sided Landau implication, growing-prime operator norms, Fourier truncation and branch asymptotics are paper derivations. The upper-half square is formally paid from the preceding physical price.",
+  "unknown": "An unconditional lower estimate of order H^(1+epsilon) for the actual centered form, or an independently sufficient alternative. No bare RH theorem has been submitted."
+}

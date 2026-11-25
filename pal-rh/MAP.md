@@ -8,6 +8,9 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [The signed matrix inside a square](the-signed-matrix-inside-a-square.md) · [Square identity](PALRH/CoreMatrix.lean) · [Outer funding](PALRH/OuterBlock.lean) | The rough Huxley–Watt form computes the square from side data. Signed exact boundary hits cancel at every nontrivial square. A lower estimate for a bounded kernel is sufficient on paper. The actual upper half is paid by one earlier octave. |
+| [How far prime depth travels](where-prime-depth-can-stop.md) · [Lean](PALRH/RoughSquares.lean) | A finite tuple cap pays for every omitted sign at each square. Subpower-times-side growth of the retained integer count implies bare RH. The half-depth threshold for absolute pruning is sharp at the power scale. |
+| [What the fifth boundary needs](what-the-fifth-boundary-needs.md) · [New frame](PALRH/PrimeOpening.lean) | A bounded old walk on the same squarefree support alone can hide a negative crossing of order side to the three-halves. Opening 5 removes the selected crossing. Its periodic variance and the physical costs of adding primes are explicit. |
 | [The cost of the next doubling window](what-the-next-octave-costs.md) · [Exact profile](PALRH/Balanced.lean) · [Overlap](PALRH/Octaves.lean) | Subpower whole cost at arbitrarily large exact heads is sufficient. The explicit profile reduces its first doubling-window cost to signed Möbius increments. A subpower estimate on every such octave implies bare RH. |
 | [What the prime 5 carries](what-five-carries.md) · [Conservation](PALRH/CarriedPrime.lean) · [Protected heads](PALRH/Protected.lean) | At the same exact first 256 rows both width-512 fits beat the error floor of every width-256 fit. Internal paths reduce to signed exit masses. Any fixed finite head can be repaired while the available widths remain open. |
 | [What one finite parent misses](what-one-parent-misses.md) | A missing logarithmic wave survives every rescaling and refit of one finite parent. The actual six-row and initialized-binary families have explicit positive floors. Two independent parents have no additional common factor zero. |
@@ -29,6 +32,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+The open matrix estimate is (1) in [the square paper](the-signed-matrix-inside-a-square.md#a-bounded-kernel-needs-a-lower-estimate-only). Use the real Möbius signs on the mixed reciprocal boundary or prove a costed estimate in a moving prime frame at all required quotient arguments. Marginal side-price bounds alone fail on the exhibited sign assignment. [Reopening the first new cofactor](what-the-fifth-boundary-needs.md#open-5-and-test-the-same-crossing-again)
 
 The open estimate is subpower growth of [the actual signed next-window costs](what-the-next-octave-costs.md#why-the-first-doubling-windows-themselves-suffice). The physical tails after the square cutoff have a universal allowance for this explicit family. [Rational square-window check](PALRH/SquareBudget.lean)
 

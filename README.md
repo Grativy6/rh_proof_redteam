@@ -12,17 +12,11 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Constructing a route from PAL
 
-[**Active construction key**](pal-rh/CONSTRUCTION-KEY.md) · [The whole-corpus toolbelt](pal-rh/CORPUS-ROUTES.md) · [Why improving an even row reopens an odd one](pal-rh/half-tick-reflection.md) · [What a variable fresh prime changes](pal-rh/fresh-prime-transfer.md)
+Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
-[**The cost of the next doubling window**](pal-rh/what-the-next-octave-costs.md) gives a deterministic rational fit. Its error on $H<k\le2H$ is exactly the signed Möbius count since $H$. Subpower growth of these measured costs on overlapping heads implies bare Mathlib RH. [Lean implication](pal-rh/PALRH/Octaves.lean)
+At side 1024, the rough integers with only old prime factors contribute −16,226. The exact subtotal with one larger prime is +16,097. A square matrix using only the earlier signs recovers their total, −129. [The signed matrix and its source](pal-rh/the-signed-matrix-inside-a-square.md) · [How much prime depth can be omitted](pal-rh/where-prime-depth-can-stop.md)
 
-**What does the prime 5 have to carry?** In the independent 2-and-3 construction, its occupied-target load is $-1/15$ across each fully measured outer layer. At fixed first 256 rows, a rational fit using scales through 512 beats a proved lower bound for every fit of width 256, on both targets. [The four-term calculation, the bound, and the wider fits](pal-rh/what-five-carries.md)
-
-**What can one finite reading carry on its own?** Every dilation of it misses the same logarithmic wave. For the six-row example a hand-checkable disk gives positive error floors even from the occupied binary starting fit. Keeping the readings at 2 and 3 independent removes their extra common zero. [Proof and worked example](pal-rh/what-one-parent-misses.md) · [Exact cost of changing one row](pal-rh/changing-the-first-wrong-row.md)
-
-[Every finite fit has a better successor](pal-rh/every-fit-has-a-successor.md) gives a pencil-and-paper move that improves the true error even with a protected prefix, and shows how an indefinitely protected wrong row can survive. [The first-tick construction](pal-rh/one-tick.md) shows exactly how one isolated reading would generate all scales. [The sieve](pal-rh/reversing-the-sieve.md) and [two forward clocks](pal-rh/close-clocks.md) show what was earned toward that remaining arithmetic task.
-
-[Prime phases and a finite rational condition for RH](pal-rh/README.md) starts from Pang’s question about which distinctions survive a projection. One four-row calculation identifies the carry from two prime phases. The branch includes a conditional proof against stock Mathlib and an explicit numerical witness checked with integer arithmetic. [Branch map](pal-rh/MAP.md)
+The upper half of that square can be paid from a measured earlier window. At cofactor five, even excellent one-dimensional side prices can hide a large negative joint reading. Opening 5 flattens that boundary on the same labels, with a calculable change in the full-period cost. [The boundary test and repair](pal-rh/what-the-fifth-boundary-needs.md) · [Signed doubling-window theorem](pal-rh/what-the-next-octave-costs.md) · [The original two-clock flow](pal-rh/what-five-carries.md)
 
 ## Audit findings
 

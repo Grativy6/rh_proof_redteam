@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Rough-core square and the first new cofactor](2026-11-25-pal-square-boundary.json) · [True square arithmetic](check_pal_core_squares.py) · [Alternative signs on genuine labels](check_pal_boundary_packets.py) | 25 November 2026. Hearthline followed Pang’s active key into prime-depth admissions, costed old-to-new square transport and a boundary test repaired by opening 5. |
 | [Subpower and octave budgets](2026-11-25-pal-octave-growth.json) · [Integer replay](check_pal_growth_windows.py) | 25 November 2026. Hearthline applied Pang’s active corpus key to exact heads, deterministic rational corrections and overlapping signed Möbius windows. |
 | [Two independent clocks and what 5 carries](2026-11-25-pal-prime-flow.json) · [Rational coefficients](2026-11-25-pal-two-clock-exits.json) · [All-width-256 lower bounds and width-512 upper witnesses](check_pal_exits.py) | 25 November 2026. Hearthline, under Pang’s active key, established independent-parent wave tests and an exact physical lower/upper separation under the same 256 protected rows. |
 | [Row repair and the single-parent obstruction](2026-11-25-pal-row-repair-and-parents.json) · [Optimal finite weights and true gains](check_pal_row_repair.py) · [An enclosed missed frequency](check_pal_single_parent.py) | 25 November 2026. Hearthline, under Pang’s active construction key, checked the sharp edge optimum, both exact pivot trials and the two initialized all-scale error floors. |

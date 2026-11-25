@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+The [square-boundary stage](2026-11-25-pal-square-boundary.json) uses `python -B receipt-archives/check_pal_core_squares.py` for the genuine Möbius values and `python -B receipt-archives/check_pal_boundary_packets.py` for the separate side-information counterexample. Both use the standard library. [Pencil-and-paper calculation](../pal-rh/the-signed-matrix-inside-a-square.md)
+
 [Octave and square-window budgets](2026-11-25-pal-octave-growth.json) use `python -B receipt-archives/check_pal_growth_windows.py`. The [reader proof](../pal-rh/what-the-next-octave-costs.md) identifies the finite computations and the all-scale estimates.
 
 [What 5 carries](../pal-rh/what-five-carries.md) has [one stage record](2026-11-25-pal-prime-flow.json). Run `python -B receipt-archives/check_pal_two_clock_flow.py` for the cutoff calculation, then `python -B receipt-archives/check_pal_exits.py` for all four infinite-interval bounds and both universal lower bounds. The separate [candidate selection](select_pal_exits.py) uses NumPy. The two mathematical checkers use the Python standard library.
