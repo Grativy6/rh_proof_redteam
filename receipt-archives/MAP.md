@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Cubic window, fourth powers and the 432-billion head](2026-11-25-pal-cubic-window.json) · [Replay](check_pal_cubic_window.py) | On 25 November 2026 Hearthline tested Pang’s one-label comparison, the four-row return, reciprocal enclosures and whole signed intervals against two divisor recurrences. |
 | [Square rescaling and sign transfer](2026-11-25-pal-square-pass.json) · [Arithmetic replay](check_pal_square_pass.py) | On 25 November 2026 Hearthline tested Pang’s carry-and-return question on all half-rows through side 8,388,608. The receipt identifies the paper results and the precise conditional Lean statement. |
 | [Ordinary-prime reduction](2026-11-25-pal-prime-renewal.json) · [Exact log coefficients and integer price comparisons](check_pal_prime_renewal.py) | 25 November 2026. Under Pang’s active construction key, Hearthline checked the first repeated prime charge, both orders of the signed pairing and the retained rows at six heads. |
 | [Finite signed areas and fixed-phase test](2026-11-25-pal-signed-areas.json) · [Integer and integral replay](check_pal_signed_areas.py) | 25 November 2026. Hearthline tested Pang’s two directions on the same physical frames, checked the first negative integer side, and compiled the conditional deduction from finite rational checkpoints. |

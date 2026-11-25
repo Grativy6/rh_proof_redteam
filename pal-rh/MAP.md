@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [The first omitted label](what-the-first-omitted-label-sees.md) · [Conditional fourth-power proof](PALRH/CubicFourth.lean) | One complete pass needs only a nonnegative sign at each sufficiently late fourth power. A positive averaging rule can lose its positive total after one fifth of its first label is removed. |
 | [How many square passes the sign needs](how-many-square-passes-the-sign-needs.md) · [Finite rational statement](PALRH/SquareSignRows.lean) | Four readings undo the pass. One pass clears 23 doublings in the experiment. Positivity through $12^k$ plus a growing margin is proved on paper for sufficiently many passes. |
 | [What the ordinary primes still owe](what-the-ordinary-primes-still-owe.md) · [Certified quotient grid](PALRH/OrdinaryPrimeGrid.lean) | Repeated powers and small primes have an unconditional joint allowance. A cofinal small cost for the retained ordinary-prime comparisons suffices for RH. |
 | [What the two signs cost together](what-the-two-signs-cost-together.md) · [Finite checkpoints](PALRH/FourthAccounts.lean) | The signed balance stays below 7 on every finite interval. Each zero forces an all-cutoff bill. Either sparse rational account can pay for a checkpoint. Both accounts grow at least logarithmically. |
@@ -38,6 +39,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+Establish the sign of the same once-passed reading at every sufficiently late fourth power. The reciprocal interpolation price between squares of squares is funded. [Single remaining hypothesis](what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [Computed positive blocks](../receipt-archives/2026-11-25-pal-cubic-window.json)
 
 Prove that a complete nonnegative list can cover arbitrarily many doublings per pass at arbitrarily large heads. Even 19 doublings per pass cofinally would have an explicit consequence for zeta zeros. [Quantified criterion and intermediate rates](how-many-square-passes-the-sign-needs.md#a-finite-sign-test-at-growing-heads)
 

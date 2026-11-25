@@ -1,0 +1,1398 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent PAL v2.4 construction, his direction to work from the full corpus and his question about carrying a trace forward and reading it back on the same input.",
+  "parent_public_research_commit": "1da22a41d9b7faee07c840c0b14ecbbcb7837726",
+  "parent_tree": "5d71b6acfa1f21259337ee3186756a794289dcaf",
+  "source_roles": {
+    "corpus": "PAL v2.4 supplies the carry and the required return. APCI motivates changing a single ordinary label on the same half-rows. RPL supplies the inherited square scales and BLA the boundary and its cost.",
+    "mathematical_inputs": [
+      "The project’s original signed taper, square-pass inverse, bounded signed rectangle, and finite lower bound at a zeta zero.",
+      "Integer power sums, Möbius inversion, finite summation by parts, reciprocal interpolation, and midpoint bounds for harmonic sums.",
+      "The Gaussian localization uses the classical positive Riemann xi kernel and Jacobi theta transformation. The recurrent signs of the omitted-label measurement use the existence of a critical-line zero and a Laplace positivity argument."
+    ],
+    "references": [
+      "https://arxiv.org/abs/1801.05914",
+      "https://fr.wikisource.org/wiki/Page:Comptes_rendus_hebdomadaires_des_s%C3%A9ances_de_l%E2%80%99Acad%C3%A9mie_des_sciences,_tome_158,_1914.djvu/1014"
+    ]
+  },
+  "sha256_sources": {
+    "pal-rh/PALRH/CubicWindow.lean": "076e9f637b829ff0666b318274f74fd91cc9903c6dec11fdd830170872716b0a",
+    "pal-rh/PALRH/CubicQuadrature.lean": "51730ca264f6d07f06a3e976bbb59b2082d9e67c74ee8bf19788fa935ff8aea6",
+    "pal-rh/PALRH/CubicWeights.lean": "c3ab1f398f56a9ba7266cce3e0e005daf43718ec5488344dc57e7bf26e9f389d",
+    "pal-rh/PALRH/CubicGaps.lean": "32468ff6703475247dd3a666f4d21d29d513c77b409680b62c055d76d1accc92",
+    "pal-rh/PALRH/CubicCarry.lean": "23c06f747ca99ddc8d928969c2ad99b781834f3e7d1866dd233ed4264ddcaddd",
+    "pal-rh/PALRH/CubicFourth.lean": "41f24d1c3460faeb96b7e63364ee3a38899a9aedce62a5be450f64aa23bcce01",
+    "pal-rh/PALRH/FourthAccounts.lean": "e6b7d97e2590db0ae54c67ace1229466bed9f8c3298ef385375af55c055542f1",
+    "pal-rh/PALRH/SquarePassBudget.lean": "210430174a641f4e3f852821515d4f749ae09dc105aa45d0b16f42a9241a1bcd",
+    "pal-rh/PALRH/SquarePass.lean": "e06956f24b9897368191058ed67d6ebfeaa6d735ef5b3744bcd7f2d10efef2ba",
+    "pal-rh/PALRH/SquareSignRows.lean": "b287892777ca6eb03d6d8918f83a7f1f713e53a3c842d33355e8d6e760d8a130",
+    "pal-rh/PALRH/SignedAreas.lean": "f63e712f77c8c79b03d38be0bb26283de225e1198b92c73e3a10397e6999e102",
+    "pal-rh/PALRH/RectangleBalance.lean": "2929e972c43261ef84f53ae6581d3e5eb5f93bc0795e1f03d57b0a8f492bc216",
+    "pal-rh/PALRH/CarriedEdge.lean": "87fc7bf79db150a0fdaef379859b4186f9a26fcc24062676a5a52f456d979628",
+    "pal-rh/what-the-first-omitted-label-sees.md": "d5b92682f4787a8e3834b4e30deff2d8742e162d3c57539bbbd7367651d5fc8f",
+    "pal-rh/lakefile.toml": "3a6bd8a61f0b71e3c138c131de3b91bd33ec5f6e0efb4587a646792985367551",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/checks/square-sign/SquareSignChallenge.lean": "be8901dce9835bd94d7404a6e276c38f0e43b33edf67168dd9259df5927ac492",
+    "pal-rh/checks/square-sign/SquareSignSolution.lean": "4da504fea1d10d417cacd499656db1ffbd617530d1935011953a1a589105f321",
+    "pal-rh/checks/square-sign/compare.json": "ac86fda6b4647599970c7ee9be1cb97884abc938fbd485a47403ede5c07807dd",
+    "receipt-archives/check_pal_cubic_window.py": "0e274176cefb5eaeef65d157a2216712a982ff0ba4e429e11fea5a19107d13a7",
+    "receipt-archives/cubic_window_moments.cpp": "aad478ccb7504abd31b5a7e1dc1511793123a052d3114f808edf193581265ca5",
+    "receipt-archives/cubic_reciprocal_bounds.hpp": "a0d5ab1b26de3433653bdc18af83fc06ac76603be5824a909e67a56643d88bfa",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166"
+  },
+  "formal_result": "If every sufficiently late fourth-power root j has nonnegative rational first-pass value, then stock Mathlib RiemannHypothesis. The canonical finite head is independent of extra padding. The fixed reference states the hypothesis as a separate sum over ordinary Möbius marks, squared integer dilations and the physical cutoff 2*j^4. The hypothesis remains unproved.",
+  "formal_results_also_checked": [
+    "Exact finite reciprocal-grid quadrature and its power-of-three output with the full and first-label-deleted receivers. Positive row weights for both and after any initial ordinary-label cutoff.",
+    "An explicit lower bound for the full one-pass cubic average at every dyadic head.",
+    "Uniform relative variation, a sufficient integer gap condition, the unaveraged seed chord and the passed fourth-power chord."
+  ],
+  "paper_results": [
+    "A strongly positive interval of length at least a constant times y^(3/4)*sqrt(log y) occurs near every sufficiently large head for the same first pass. There are runs of at least a constant times sqrt(log y) positive fourth powers there.",
+    "A zero with real part beta>1/2 forces recurrent negative blocks of length at least c(rho)*y^((1+beta)/2) and at least c(rho)*j^(2*beta-1) consecutive negative fourth-root indices.",
+    "After any fixed positive fraction of the first ordinary label is removed, the normalized raw measurement has positive limsup and negative liminf. Averaging over a whole period of each square clock in the uncut reading gives a calculable straight line and a positive decaying error."
+  ],
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659"
+  },
+  "build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3780
+  },
+  "module_kernel_replays": [
+    {
+      "module": "PALRH.CubicWindow",
+      "exit": 0,
+      "seconds": 13.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicQuadrature",
+      "exit": 0,
+      "seconds": 13.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicWeights",
+      "exit": 0,
+      "seconds": 13,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicGaps",
+      "exit": 0,
+      "seconds": 12.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicCarry",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicFourth",
+      "exit": 0,
+      "seconds": 12.7,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": {
+    "CubicWindow": [
+      "PALRH.CubicWindow.curvature_sum",
+      "PALRH.CubicWindow.positive_tail",
+      "PALRH.CubicWindow.three_feed",
+      "PALRH.CubicWindow.sees_zero"
+    ],
+    "CubicQuadrature": [
+      "PALRH.CubicQuadrature.tick_increment",
+      "PALRH.CubicQuadrature.atom_read",
+      "PALRH.CubicQuadrature.actual_rows",
+      "PALRH.CubicQuadrature.full_grid",
+      "PALRH.CubicQuadrature.omitted_grid"
+    ],
+    "CubicWeights": [
+      "PALRH.CubicWeights.convex_profile",
+      "PALRH.CubicWeights.grid_weight_nonnegative",
+      "PALRH.CubicWeights.sampled_weight",
+      "PALRH.CubicWeights.full_positive_read",
+      "PALRH.CubicWeights.cut_positive_read"
+    ],
+    "CubicGaps": [
+      "PALRH.CubicGaps.edge_relative",
+      "PALRH.CubicGaps.one_pass_relative",
+      "PALRH.CubicGaps.floor_from_gaps",
+      "PALRH.CubicGaps.signed_size",
+      "PALRH.CubicGaps.rh_of_gap_budget",
+      "PALRH.CubicGaps.rh_of_integer_gaps"
+    ],
+    "CubicCarry": [
+      "PALRH.CubicCarry.dilated_rows",
+      "PALRH.CubicCarry.one_pass_mean",
+      "PALRH.CubicCarry.cubic_mean",
+      "PALRH.CubicCarry.mean_floor"
+    ],
+    "CubicFourth": [
+      "PALRH.CubicFourth.seed_chord",
+      "PALRH.CubicFourth.pass_chord",
+      "PALRH.CubicFourth.rh_of_fourth_signs",
+      "PALRH.CubicFourth.rh_of_first_pass_fourths"
+    ]
+  },
+  "independent_fixed_conditional": {
+    "statement": "firstPassFourthReduction",
+    "reference": "pal-rh/checks/square-sign/SquareSignChallenge.lean",
+    "solution": "pal-rh/checks/square-sign/SquareSignSolution.lean",
+    "config": "pal-rh/checks/square-sign/compare.json",
+    "export_details": "The pinned Windows Lean 4.33.1 exported each separate module using lean4export Main.lean, the theorem name and the runtime primitive allow-list in the earlier comparator replay. The Linux Lake Comparator 4.36.0 ran on the exported modules with the supplied configuration.",
+    "exports": {
+      "sign-challenge.ndjson": {
+        "bytes": 348304570,
+        "sha256": "cb9af7179f5e12f8d001f12c3bd3d2e95324088544d72bd718842e899ac84f35"
+      },
+      "sign-solution.ndjson": {
+        "bytes": 431907799,
+        "sha256": "9380aa0a659aac7a6c6fa4674ee9acca46b2ef125480761c422465409ce163cf"
+      }
+    },
+    "comparison": {
+      "exit": 0,
+      "seconds": 135.67,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "arithmetic": {
+    "runtime": "Python standard library with Ubuntu G++ 13.3.0. The C++ engine uses unsigned 128-bit arithmetic and 2^61-1 residues for the polynomial moments. The independent reciprocal calculation uses integer interval endpoints.",
+    "commands": [
+      "g++ -O3 -std=c++17 receipt-archives/cubic_window_moments.cpp -o /tmp/cubic-window-moments",
+      "python -B receipt-archives/check_pal_cubic_window.py /tmp/cubic-window-moments"
+    ],
+    "scope": "The two divisor recurrences use different multiplier sets, different source functions and different sieve cutoffs. Direct forward sieving calibrates the low head and independently evaluates each of the first 128 fourth powers. The interval sign certifications around side 432 billion use exact band counts, geometry and outward reciprocal bounds.",
+    "sha256_combined_json": "ab6ec27e0718647c15251deac32163c4521b4207b0656a905cd3ef1598bc7c9b",
+    "smallest_consecutive_normalized_increment_lower": {
+      "root_pair": [
+        98,
+        99
+      ],
+      "bound": "10756394512867068667984474229/281291933091083605792436256768"
+    },
+    "results": {
+      "convexity_cells": 352,
+      "quadratic_second_derivative_at_7_over_4": "-256/2401",
+      "direct_odd_multiple_sums": 320,
+      "exact_half_row_quadratures": [
+        {
+          "head": 3,
+          "readings": [
+            {
+              "omitted_initial_labels": 0,
+              "tested_weights": 5,
+              "positive_weights": 5,
+              "old_weighted_sum": "19/27",
+              "passed_weighted_sum": "7/9"
+            },
+            {
+              "omitted_initial_labels": 1,
+              "tested_weights": 5,
+              "positive_weights": 2,
+              "old_weighted_sum": "23/54",
+              "passed_weighted_sum": "23/54"
+            }
+          ]
+        },
+        {
+          "head": 12,
+          "readings": [
+            {
+              "omitted_initial_labels": 0,
+              "tested_weights": 23,
+              "positive_weights": 23,
+              "old_weighted_sum": "24803/13824",
+              "passed_weighted_sum": "3527/864"
+            },
+            {
+              "omitted_initial_labels": 1,
+              "tested_weights": 23,
+              "positive_weights": 11,
+              "old_weighted_sum": "11767/4608",
+              "passed_weighted_sum": "47725/13824"
+            }
+          ]
+        },
+        {
+          "head": 45,
+          "readings": [
+            {
+              "omitted_initial_labels": 0,
+              "tested_weights": 89,
+              "positive_weights": 89,
+              "old_weighted_sum": "2145689/729000",
+              "passed_weighted_sum": "669179/48600"
+            },
+            {
+              "omitted_initial_labels": 1,
+              "tested_weights": 89,
+              "positive_weights": 44,
+              "old_weighted_sum": "4110481/729000",
+              "passed_weighted_sum": "10962769/729000"
+            }
+          ]
+        },
+        {
+          "head": 128,
+          "readings": [
+            {
+              "omitted_initial_labels": 0,
+              "tested_weights": 255,
+              "positive_weights": 255,
+              "old_weighted_sum": "16303859/4194304",
+              "passed_weighted_sum": "69432201/2097152"
+            },
+            {
+              "omitted_initial_labels": 1,
+              "tested_weights": 255,
+              "positive_weights": 127,
+              "old_weighted_sum": "35081523/4194304",
+              "passed_weighted_sum": "652769015/16777216"
+            }
+          ]
+        }
+      ],
+      "direct_sample": {
+        "physical_side": "4096",
+        "positive_full_average_times_sqrt_side": "3863410861295/549755813888",
+        "omitted_first_response_times_sqrt_side": "9765321084109/549755813888",
+        "change_from_first_label_times_sqrt_side": "-2950955111407/274877906944",
+        "scaled_passed_rows": [
+          "149470983667377/274877906944",
+          "870491471021/4294967296",
+          "60674450663047/549755813888",
+          "9415081569/268435456"
+        ],
+        "scaled_inverse_coefficients": [
+          1,
+          -2,
+          -3,
+          6
+        ],
+        "physical_passed_rows": [
+          "149470983667377/1125899906842624",
+          "870491471021/4398046511104",
+          "546070055967423/2251799813685248",
+          "84735734121/274877906944"
+        ],
+        "physical_inverse_coefficients": [
+          "1",
+          "-1/2",
+          "-1/3",
+          "1/6"
+        ],
+        "two_largest_moment_rows": {
+          "8192": [
+            -76,
+            -82346,
+            -98586148,
+            871376050750
+          ],
+          "4096": [
+            -78,
+            -99364,
+            -275522526,
+            -920170949044
+          ]
+        }
+      },
+      "direct_reciprocal_calibration": {
+        "side": "4096",
+        "original": [
+          "-409893919548623/72057594037927936",
+          "237058014138209/18014398509481984"
+        ],
+        "one_pass": [
+          [
+            "14121847934268638839/46693320936577302528",
+            "15180484432591771081/46693320936577302528"
+          ],
+          [
+            "3924197312566327729/7782220156096217088",
+            "3971297332718151943/7782220156096217088"
+          ],
+          [
+            "19900719253889035997/31128880624384868352",
+            "4994290205172419327/7782220156096217088"
+          ],
+          [
+            "4890328247004903095/5188146770730811392",
+            "1222740391425626855/1297036692682702848"
+          ]
+        ],
+        "inverse_enclosure": [
+          "-98918245271844667/10376293541461622784",
+          "176438937000451339/10376293541461622784"
+        ]
+      },
+      "large_quotient_divisors": 274,
+      "independent_divisor_identities": [
+        "all multipliers, source supported at 2^a 3^b",
+        "multipliers coprime to six, source at one"
+      ],
+      "large_sample": {
+        "physical_side": "432000000000",
+        "positive_full_average_times_sqrt_side": "3846194000467565662422824249608564853/161243136000000000000000000000000000",
+        "omitted_first_response_times_sqrt_side": "-76593511218767465261392987342942377187/644972544000000000000000000000000000",
+        "change_from_first_label_times_sqrt_side": "30659429073545909303694761447125545533/214990848000000000000000000000000000",
+        "scaled_passed_rows": [
+          "1115068995960375558140045022674478212007877/42998169600000000000000000000000000",
+          "61503162744944779156568835555956650440901/5038848000000000000000000000000000",
+          "3464587361341765111985596491083622509957/442368000000000000000000000000000",
+          "12657181684651038026853177352341384503/3456000000000000000000000000000"
+        ],
+        "scaled_inverse_coefficients": [
+          1,
+          -2,
+          -3,
+          6
+        ],
+        "physical_passed_rows": [
+          "1115068995960375558140045022674478212007877/18575209267200000000000000000000000000000000000",
+          "61503162744944779156568835555956650440901/544195584000000000000000000000000000000000000",
+          "3464587361341765111985596491083622509957/21233664000000000000000000000000000000000000",
+          "12657181684651038026853177352341384503/41472000000000000000000000000000000000000"
+        ],
+        "physical_inverse_coefficients": [
+          "1",
+          "-1/2",
+          "-1/3",
+          "1/6"
+        ],
+        "two_largest_moment_rows": {
+          "864000000000": [
+            -8105,
+            -2422393117046119,
+            1506926213420931249904899055,
+            4540297309759565922443922179663013268625
+          ],
+          "432000000000": [
+            -35785,
+            -16387726970137151,
+            -7662975541580349498763731649,
+            -3575116513042784582784607702923451261847
+          ]
+        },
+        "physical_rows_from_reciprocal_moments": {
+          "side": "432000000000",
+          "original": [
+            "-23569761912590101/1519964874237542400000000",
+            "-11648105722115363/759982437118771200000000"
+          ],
+          "one_pass": [
+            [
+              "140660125763733540019554582647/1225419514659534727544832000000000",
+              "4501135958806474168405787660329/39213424469105111281434624000000000"
+            ],
+            [
+              "44276590109768904467217249661/204236585776589121257472000000000",
+              "1416852087548543601586965661027/6535570744850851880239104000000000"
+            ],
+            [
+              "513934087827762541140884040959/1633892686212712970059776000000000",
+              "32120894355874094606070511349/102118292888294560628736000000000"
+            ],
+            [
+              "160845552281181348984638923861/272315447702118828343296000000000",
+              "10052848345626590754461685671/17019715481382426771456000000000"
+            ]
+          ],
+          "inverse_enclosure": [
+            "-40897400645950538722774559/2614228297940340752095641600000000",
+            "-39708642188675990723555809/2614228297940340752095641600000000"
+          ]
+        },
+        "physical_sign_blocks": {
+          "original": {
+            "sign": -1,
+            "exact_band_at_head": 27680,
+            "left": 431946507226,
+            "right": 432053471715,
+            "half_rows_inclusive": 213928979,
+            "fourth_power_roots": [],
+            "remaining_left_margin": "189952180665736467971/820679398166390986902601728000000000",
+            "remaining_right_margin": "2447536391430220237/7296734453324261750105702400000000"
+          },
+          "one_pass": {
+            "sign": 1,
+            "exact_band_at_head": -23449622,
+            "left": 429332169208,
+            "right": 434676543390,
+            "half_rows_inclusive": 10688748365,
+            "fourth_power_roots": [
+              810,
+              811
+            ],
+            "remaining_left_margin": "6701661393562563535964112125257/65764002302324075019603748828741632000000000",
+            "remaining_right_margin": "409969463173313046393151910077/5918456875942866534165033277980672000000000"
+          }
+        },
+        "critical_removed_fraction": "15384776001870262649691296998434259412/91978287220637727911084284341376636599",
+        "one_sixth_removed_times_sqrt_side": "110122930194615995687832549742973291/1289945088000000000000000000000000000",
+        "one_fifth_removed_times_sqrt_side": "-15054407211286414662627799349205339539/3224862720000000000000000000000000000"
+      },
+      "fourth_power_grid": {
+        "largest_root": 1680,
+        "quotient_arguments": 837,
+        "sampled_fourth_powers": [
+          {
+            "fourth_root": 1,
+            "physical_side": 1,
+            "lower": "1",
+            "upper": "1",
+            "sign": 1
+          },
+          {
+            "fourth_root": 2,
+            "physical_side": 16,
+            "lower": "291603787376602771/216172782113783808",
+            "upper": "291603787376602777/216172782113783808",
+            "sign": 1
+          },
+          {
+            "fourth_root": 3,
+            "physical_side": 81,
+            "lower": "506788485909143461/486388759756013568",
+            "upper": "16217231549092591427/15564440312192434176",
+            "sign": 1
+          },
+          {
+            "fourth_root": 4,
+            "physical_side": 256,
+            "lower": "995001059468127233/1297036692682702848",
+            "upper": "497500529734063649/648518346341351424",
+            "sign": 1
+          },
+          {
+            "fourth_root": 5,
+            "physical_side": 625,
+            "lower": "11458408413329530695197/19455550390240542720000",
+            "upper": "2864602103332382931143/4863887597560135680000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 6,
+            "physical_side": 1296,
+            "lower": "5457283321252884851/11673330234144325632",
+            "upper": "87316533140046167993/186773283746309210112",
+            "sign": 1
+          },
+          {
+            "fourth_root": 7,
+            "physical_side": 2401,
+            "lower": "56354131131490232939579/149480884758296137826304",
+            "upper": "28177065565745120732765/74740442379148068913152",
+            "sign": 1
+          },
+          {
+            "fourth_root": 8,
+            "physical_side": 4096,
+            "lower": "14656844490873583687/46693320936577302528",
+            "upper": "7328422245436793207/23346660468288651264",
+            "sign": 1
+          },
+          {
+            "fourth_root": 10,
+            "physical_side": 10000,
+            "lower": "53075115714330953223271/233466604682886512640000",
+            "upper": "13268778928582741770349/58366651170721628160000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 12,
+            "physical_side": 20736,
+            "lower": "8063007527518343201/46693320936577302528",
+            "upper": "129008120440293536281/747093134985236840448",
+            "sign": 1
+          },
+          {
+            "fourth_root": 14,
+            "physical_side": 38416,
+            "lower": "730758937579853344824691/5381311851298660961746944",
+            "upper": "365379468789926835938453/2690655925649330480873472",
+            "sign": 1
+          },
+          {
+            "fourth_root": 15,
+            "physical_side": 50625,
+            "lower": "17206323393600356188147/140079962809731907584000",
+            "upper": "17206323393600364726897/140079962809731907584000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 16,
+            "physical_side": 65536,
+            "lower": "62687236923091021661/560319851238927630336",
+            "upper": "31343618461545527953/280159925619463815168",
+            "sign": 1
+          },
+          {
+            "fourth_root": 20,
+            "physical_side": 160000,
+            "lower": "217258040192711003016949/2801599256194638151680000",
+            "upper": "54314510048177793857831/700399814048659537920000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 21,
+            "physical_side": 194481,
+            "lower": "385050604655225114044241/5381311851298660961746944",
+            "upper": "385050604655225445703975/5381311851298660961746944",
+            "sign": 1
+          },
+          {
+            "fourth_root": 24,
+            "physical_side": 331776,
+            "lower": "96415128501746519809/1680959553716782891008",
+            "upper": "1542642056027945979361/26895352859468526256128",
+            "sign": 1
+          },
+          {
+            "fourth_root": 28,
+            "physical_side": 614656,
+            "lower": "2900496712588938457166297/64575742215583931540963328",
+            "upper": "1450248356294471228910271/32287871107791965770481664",
+            "sign": 1
+          },
+          {
+            "fourth_root": 30,
+            "physical_side": 810000,
+            "lower": "335137936565174169704509/8404797768583914455040000",
+            "upper": "335137936565174690785759/8404797768583914455040000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 35,
+            "physical_side": 1500625,
+            "lower": "8867404570449986198871679/288284563462428265807872000",
+            "upper": "70939236563600032867432807/2306276507699426126462976000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 40,
+            "physical_side": 2560000,
+            "lower": "2468077016681789247904157/100857573223006973460480000",
+            "upper": "617019254170448879748383/25214393305751743365120000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 42,
+            "physical_side": 3111696,
+            "lower": "624895492681283845387039/27675318092393113517555712",
+            "upper": "624895492681285567062505/27675318092393113517555712",
+            "sign": 1
+          },
+          {
+            "fourth_root": 48,
+            "physical_side": 5308416,
+            "lower": "365385847836504397667/20171514644601394692096",
+            "upper": "5846173565384090454947/322744234313622315073536",
+            "sign": 1
+          },
+          {
+            "fourth_root": 56,
+            "physical_side": 9834496,
+            "lower": "10678725325853401833387403/774908906587007178491559936",
+            "upper": "5339362662970058384078909/387454453293503589245779968",
+            "sign": 1
+          },
+          {
+            "fourth_root": 60,
+            "physical_side": 12960000,
+            "lower": "1240405322293068108270007/100857573223006973460480000",
+            "upper": "1240405322315705119993757/100857573223006973460480000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 70,
+            "physical_side": 24010000,
+            "lower": "97022303456816079681902327/10378244284647417569083392000",
+            "upper": "776178427692219938345976991/83025954277179340552667136000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 80,
+            "physical_side": 40960000,
+            "lower": "1802597447954017022023723/242058175735216736305152000",
+            "upper": "450649362037443222057337/60514543933804184076288000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 84,
+            "physical_side": 49787136,
+            "lower": "15980435746355445912631691/2324726719761021535474679808",
+            "upper": "15980435748482475575153693/2324726719761021535474679808",
+            "sign": 1
+          },
+          {
+            "fourth_root": 105,
+            "physical_side": 121550625,
+            "lower": "26803584665956803798464634791/5811816799402553838686699520000",
+            "upper": "6700896169586780798689180729/1452954199850638459671674880000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 112,
+            "physical_side": 157351936,
+            "lower": "4241214360295144301226457/1033211875449342904655413248",
+            "upper": "19085464633007731514027191/4649453439522043070949359616",
+            "sign": 1
+          },
+          {
+            "fourth_root": 120,
+            "physical_side": 207360000,
+            "lower": "13231237652212912866947951/3630872636028251044577280000",
+            "upper": "13231237663480198863981701/3630872636028251044577280000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 140,
+            "physical_side": 384160000,
+            "lower": "12090911472541352348813521231/4358862599551915379015024640000",
+            "upper": "96727291944988509106549159223/34870900796415323032120197120000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 168,
+            "physical_side": 796594176,
+            "lower": "55894877228773285810715809/27896720637132258425696157696",
+            "upper": "55894877434789537985262679/27896720637132258425696157696",
+            "sign": 1
+          },
+          {
+            "fourth_root": 210,
+            "physical_side": 1944810000,
+            "lower": "279981954073446671806805007583/209225404778491938192721182720000",
+            "upper": "69995489156122077864557170177/52306351194622984548180295680000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 240,
+            "physical_side": 3317760000,
+            "lower": "46119623520131549122497101/43570471632339012534927360000",
+            "upper": "46119624218639095991678351/43570471632339012534927360000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 280,
+            "physical_side": 6146560000,
+            "lower": "41796776603693265219834485741/52306351194622984548180295680000",
+            "upper": "334374221895916370124700934053/418450809556983876385442365440000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 336,
+            "physical_side": 12745506816,
+            "lower": "3050377740153349890048349/5313661073739477795370696704",
+            "upper": "27453401114040034076639123/47822949663655300158336270336",
+            "sign": 1
+          },
+          {
+            "fourth_root": 420,
+            "physical_side": 31116960000,
+            "lower": "961529094076554802922741110429/2510704857341903258312654192640000",
+            "upper": "240382301793265896271667112451/627676214335475814578163548160000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 560,
+            "physical_side": 98344960000,
+            "lower": "142150014269785319854679782343/627676214335475814578163548160000",
+            "upper": "1137200481309335124820751163119/5021409714683806516625308385280000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 840,
+            "physical_side": 497871360000,
+            "lower": "3236721199076819813680087647191/30128458288102839099751850311680000",
+            "upper": "809181364424784650481428856329/7532114572025709774937962577920000",
+            "sign": 1
+          },
+          {
+            "fourth_root": 1680,
+            "physical_side": 7965941760000,
+            "lower": "1540722966740730312515803487507/51648785636747724171003171962880000",
+            "upper": "385186368972373629288027539533/12912196409186931042750792990720000",
+            "sign": 1
+          }
+        ]
+      },
+      "consecutive_fourths": {
+        "largest_root": 128,
+        "direct_sieve_through": 536870912,
+        "prefix_nodes": 3837,
+        "roots": [
+          {
+            "fourth_root": 1,
+            "lower": "1",
+            "upper": "1"
+          },
+          {
+            "fourth_root": 2,
+            "lower": "291603787376602771/216172782113783808",
+            "upper": "291603787376602777/216172782113783808"
+          },
+          {
+            "fourth_root": 3,
+            "lower": "506788485909143461/486388759756013568",
+            "upper": "16217231549092591427/15564440312192434176"
+          },
+          {
+            "fourth_root": 4,
+            "lower": "995001059468127233/1297036692682702848",
+            "upper": "497500529734063649/648518346341351424"
+          },
+          {
+            "fourth_root": 5,
+            "lower": "11458408413329530695197/19455550390240542720000",
+            "upper": "2864602103332382931143/4863887597560135680000"
+          },
+          {
+            "fourth_root": 6,
+            "lower": "5457283321252884851/11673330234144325632",
+            "upper": "87316533140046167993/186773283746309210112"
+          },
+          {
+            "fourth_root": 7,
+            "lower": "56354131131490232939579/149480884758296137826304",
+            "upper": "28177065565745120732765/74740442379148068913152"
+          },
+          {
+            "fourth_root": 8,
+            "lower": "14656844490873583687/46693320936577302528",
+            "upper": "7328422245436793207/23346660468288651264"
+          },
+          {
+            "fourth_root": 9,
+            "lower": "672567915141075461003/2521439330575174336512",
+            "upper": "2690271660564302440091/10085757322300697346048"
+          },
+          {
+            "fourth_root": 10,
+            "lower": "53075115714330953223271/233466604682886512640000",
+            "upper": "13268778928582741770349/58366651170721628160000"
+          },
+          {
+            "fourth_root": 11,
+            "lower": "538582852117368558429607/2734547647329713145249792",
+            "upper": "538582852117368722613781/2734547647329713145249792"
+          },
+          {
+            "fourth_root": 12,
+            "lower": "8063007527518343201/46693320936577302528",
+            "upper": "129008120440293536281/747093134985236840448"
+          },
+          {
+            "fourth_root": 13,
+            "lower": "1622462339796710254979371/10668863514156674700017664",
+            "upper": "3244924679593421802201187/21337727028313349400035328"
+          },
+          {
+            "fourth_root": 14,
+            "lower": "730758937579853344824691/5381311851298660961746944",
+            "upper": "365379468789926835938453/2690655925649330480873472"
+          },
+          {
+            "fourth_root": 15,
+            "lower": "17206323393600356188147/140079962809731907584000",
+            "upper": "17206323393600364726897/140079962809731907584000"
+          },
+          {
+            "fourth_root": 16,
+            "lower": "62687236923091021661/560319851238927630336",
+            "upper": "31343618461545527953/280159925619463815168"
+          },
+          {
+            "fourth_root": 17,
+            "lower": "4706650971201306243283787/46798474295326474613293056",
+            "upper": "37653207769610472880051123/374387794362611796906344448"
+          },
+          {
+            "fourth_root": 18,
+            "lower": "925498465604919736523/10085757322300697346048",
+            "upper": "3701993862419681422235/40343029289202789384192"
+          },
+          {
+            "fourth_root": 19,
+            "lower": "48760467201720865438839473/584171546666466301704142848",
+            "upper": "6095058400215112666399711/73021443333308287713017856"
+          },
+          {
+            "fourth_root": 20,
+            "lower": "217258040192711003016949/2801599256194638151680000",
+            "upper": "54314510048177793857831/700399814048659537920000"
+          },
+          {
+            "fourth_root": 21,
+            "lower": "385050604655225114044241/5381311851298660961746944",
+            "upper": "385050604655225445703975/5381311851298660961746944"
+          },
+          {
+            "fourth_root": 22,
+            "lower": "726963681266148437781671/10938190589318852580999168",
+            "upper": "2180891043798447338400287/32814571767956557742997504"
+          },
+          {
+            "fourth_root": 23,
+            "lower": "115722739058947422499923379/1881605609886632964010278912",
+            "upper": "115722739058947538698301809/1881605609886632964010278912"
+          },
+          {
+            "fourth_root": 24,
+            "lower": "96415128501746519809/1680959553716782891008",
+            "upper": "1542642056027945979361/26895352859468526256128"
+          },
+          {
+            "fourth_root": 25,
+            "lower": "141404257504882317752383177/2626499302682473267200000000",
+            "upper": "565617030019529920770860833/10505997210729893068800000000"
+          },
+          {
+            "fourth_root": 26,
+            "lower": "19358237936107397862684803/384079086509640289200635904",
+            "upper": "38716475872214843251930363/768158173019280578401271808"
+          },
+          {
+            "fourth_root": 27,
+            "lower": "931042924642069367820107/19606712234552555640717312",
+            "upper": "116380365580258822744105/2450839029319069455089664"
+          },
+          {
+            "fourth_root": 28,
+            "lower": "2900496712588938457166297/64575742215583931540963328",
+            "upper": "1450248356294471228910271/32287871107791965770481664"
+          },
+          {
+            "fourth_root": 29,
+            "lower": "401838857199816238583782555/9511286032898879359480233984",
+            "upper": "200919428599908414046650701/4755643016449439679740116992"
+          },
+          {
+            "fourth_root": 30,
+            "lower": "335137936565174169704509/8404797768583914455040000",
+            "upper": "335137936565174690785759/8404797768583914455040000"
+          },
+          {
+            "fourth_root": 31,
+            "lower": "470198290629887716328331805/12419211584064616418292793344",
+            "upper": "470198290629888486594715939/12419211584064616418292793344"
+          },
+          {
+            "fourth_root": 32,
+            "lower": "240609887957371200599/6723838214867131564032",
+            "upper": "120304943978685808867/3361919107433565782016"
+          },
+          {
+            "fourth_root": 33,
+            "lower": "6658227722378630537917505/196887430607739346457985024",
+            "upper": "6658227722378642759492255/196887430607739346457985024"
+          },
+          {
+            "fourth_root": 34,
+            "lower": "18138986328344240311681793/561581691543917695359516672",
+            "upper": "145111890626754201516485657/4492653532351341562876133376"
+          },
+          {
+            "fourth_root": 35,
+            "lower": "8867404570449986198871679/288284563462428265807872000",
+            "upper": "70939236563600032867432807/2306276507699426126462976000"
+          },
+          {
+            "fourth_root": 36,
+            "lower": "131352585324851425907/4482558809911421042688",
+            "upper": "1576231023898220453257/53790705718937052512256"
+          },
+          {
+            "fourth_root": 37,
+            "lower": "312091683181926296770505719/11201382535656531697046913024",
+            "upper": "702206287159335734174737657/25203110705227196318355554304"
+          },
+          {
+            "fourth_root": 38,
+            "lower": "62302294523054439250987697/2336686186665865206816571392",
+            "upper": "23363360446145469180869021/876257319999699452556214272"
+          },
+          {
+            "fourth_root": 39,
+            "lower": "3025084885862467085232301/118178180464504704369426432",
+            "upper": "1512542442931237215794731/59089090232252352184713216"
+          },
+          {
+            "fourth_root": 40,
+            "lower": "2468077016681789247904157/100857573223006973460480000",
+            "upper": "617019254170448879748383/25214393305751743365120000"
+          },
+          {
+            "fourth_root": 41,
+            "lower": "5347678672862471561084529697/227999517574573926666127540224",
+            "upper": "2673839336431242871412255255/113999758787286963333063770112"
+          },
+          {
+            "fourth_root": 42,
+            "lower": "624895492681283845387039/27675318092393113517555712",
+            "upper": "624895492681285567062505/27675318092393113517555712"
+          },
+          {
+            "fourth_root": 43,
+            "lower": "12004777731056073058594688219/551699155507823142197859975168",
+            "upper": "12004777731056107386324247487/551699155507823142197859975168"
+          },
+          {
+            "fourth_root": 44,
+            "lower": "24786965815196965903952413/1181324583646436078747910144",
+            "upper": "24786965815197039417613975/1181324583646436078747910144"
+          },
+          {
+            "fourth_root": 45,
+            "lower": "1016939378965349470942979/50428786611503486730240000",
+            "upper": "1016939378965352609119229/50428786611503486730240000"
+          },
+          {
+            "fourth_root": 46,
+            "lower": "437598468482727626297674009/22579267318639595568123346944",
+            "upper": "437598468482729031644064595/22579267318639595568123346944"
+          },
+          {
+            "fourth_root": 47,
+            "lower": "7376077307172928715777180981/393722227009932713010086805504",
+            "upper": "7376077307172953224082356463/393722227009932713010086805504"
+          },
+          {
+            "fourth_root": 48,
+            "lower": "365385847836504397667/20171514644601394692096",
+            "upper": "5846173565384090454947/322744234313622315073536"
+          },
+          {
+            "fourth_root": 49,
+            "lower": "1160682628925797440726535175/66448438739835865555651264512",
+            "upper": "4642730515703206312288495121/265793754959343462222605058048"
+          },
+          {
+            "fourth_root": 50,
+            "lower": "530238023298536842358707931/31517991632189679206400000000",
+            "upper": "2120952093194155220318816099/126071966528758716825600000000"
+          },
+          {
+            "fourth_root": 51,
+            "lower": "54666967272769468591975231/3369490149263506172157100032",
+            "upper": "437335738182157427525190695/26955921194108049377256800256"
+          },
+          {
+            "fourth_root": 52,
+            "lower": "72164619306024833660289673/4608949038115683470407630848",
+            "upper": "144329238612050241402591473/9217898076231366940815261696"
+          },
+          {
+            "fourth_root": 53,
+            "lower": "38623838833055545022634276329/2546607248711184918263749410816",
+            "upper": "4827979854131962955423479081/318325906088898114782968676352"
+          },
+          {
+            "fourth_root": 54,
+            "lower": "1153188686389907520407371/78426848938210222562869248",
+            "upper": "144148585798739050725929/9803356117276277820358656"
+          },
+          {
+            "fourth_root": 55,
+            "lower": "42093619133118872731872472157/2953311459116090196869775360000",
+            "upper": "10523404783279764175214962883/738327864779022549217443840000"
+          },
+          {
+            "fourth_root": 56,
+            "lower": "10678725325894546719171979/774908906587007178491559936",
+            "upper": "5339362662947297497836605/387454453293503589245779968"
+          },
+          {
+            "fourth_root": 57,
+            "lower": "140440441815704381509930969/10515087839996393430674571264",
+            "upper": "280880883631410073333529327/21030175679992786861349142528"
+          },
+          {
+            "fourth_root": 58,
+            "lower": "51086060978979170442600517/3935704565337467321164234752",
+            "upper": "25543030489489707840375635/1967852282668733660582117376"
+          },
+          {
+            "fourth_root": 59,
+            "lower": "24726021651254732438533717231/1955404198923374404700888629248",
+            "upper": "24726021651254854303196815061/1955404198923374404700888629248"
+          },
+          {
+            "fourth_root": 60,
+            "lower": "1240405322304791128110007/100857573223006973460480000",
+            "upper": "1240405322304797413753757/100857573223006973460480000"
+          },
+          {
+            "fourth_root": 61,
+            "lower": "53443367410590205084032571391/4468665351973158708560082763776",
+            "upper": "53443367410590483607025510755/4468665351973158708560082763776"
+          },
+          {
+            "fourth_root": 62,
+            "lower": "1732327887692359736338825303/149030539008775397019513520128",
+            "upper": "1732327887692369025114890345/149030539008775397019513520128"
+          },
+          {
+            "fourth_root": 63,
+            "lower": "25609507504167860596481/2270240937266622593236992",
+            "upper": "6556033921067008538927111/581181679940255383868669952"
+          },
+          {
+            "fourth_root": 64,
+            "lower": "98266038834123257245/8965117619822842085376",
+            "upper": "442197174753557172265/40343029289202789384192"
+          },
+          {
+            "fourth_root": 65,
+            "lower": "10229516668285312093121693087/960197716274100723001589760000",
+            "upper": "30688550004856115847977175511/2880593148822302169004769280000"
+          },
+          {
+            "fourth_root": 66,
+            "lower": "8176442207471236366366273/787549722430957385831940096",
+            "upper": "24529326622413856388876509/2362649167292872157495820288"
+          },
+          {
+            "fourth_root": 67,
+            "lower": "65848876242136995812855534033/6503658117706155219346947833856",
+            "upper": "65848876242137401257037255813/6503658117706155219346947833856"
+          },
+          {
+            "fourth_root": 68,
+            "lower": "66471299913773369203824515/6738980298527012344314200064",
+            "upper": "531770399310190314984940619/53911842388216098754513600512"
+          },
+          {
+            "fourth_root": 69,
+            "lower": "1301773509428842957594495133/135475603911837573408740081664",
+            "upper": "5207094037715405617500780269/541902415647350293634960326656"
+          },
+          {
+            "fourth_root": 70,
+            "lower": "97022303459219747486510327/10378244284647417569083392000",
+            "upper": "776178427673763157123320991/83025954277179340552667136000"
+          },
+          {
+            "fourth_root": 71,
+            "lower": "112212197380426770141652823207/12302210290450536337695282561024",
+            "upper": "448848789521710149071537072897/49208841161802145350781130244096"
+          },
+          {
+            "fourth_root": 72,
+            "lower": "4312287580870752306721/484116351470433472610304",
+            "upper": "17249150323483129984465/1936465405881733890441216"
+          },
+          {
+            "fourth_root": 73,
+            "lower": "239114314608897139865951497021/27496105642196148259308624150528",
+            "upper": "478228629217797709034790809063/54992211284392296518617248301056"
+          },
+          {
+            "fourth_root": 74,
+            "lower": "30856200926275213778461269287/3629247941552716269843199819776",
+            "upper": "7714050231568860028045877441/907311985388179067460799954944"
+          },
+          {
+            "fourth_root": 75,
+            "lower": "6295486863228588834829676267/756431799172552300953600000000",
+            "upper": "786935857903579501099656799/94553974896569037619200000000"
+          },
+          {
+            "fourth_root": 76,
+            "lower": "108083360081817631245587465/13282216218942812754536300544",
+            "upper": "13510420010227307446896391/1660277027367851594317037568"
+          },
+          {
+            "fourth_root": 77,
+            "lower": "542149869066502966469420233955/68072647808042232601769574137856",
+            "upper": "16942183408328350372537487473/2127270244001319768805299191808"
+          },
+          {
+            "fourth_root": 78,
+            "lower": "430631730940050150132385553/55307388457388201644891570176",
+            "upper": "215315865470026799729903527/27653694228694100822445785088"
+          },
+          {
+            "fourth_root": 79,
+            "lower": "573506026016465026889116633853/75425484412791411453130488938496",
+            "upper": "286753013008234865590346978773/37712742206395705726565244469248"
+          },
+          {
+            "fourth_root": 80,
+            "lower": "1802597448053666959687723/242058175735216736305152000",
+            "upper": "450649362013420514217337/60514543933804184076288000"
+          },
+          {
+            "fourth_root": 81,
+            "lower": "5149070125734202380140053/705841640443892003065823232",
+            "upper": "1287267531433561601898193/176460410110973000766455808"
+          },
+          {
+            "fourth_root": 82,
+            "lower": "19567062098649160023658880099/2735994210894887119993530482688",
+            "upper": "9783531049324665341773762885/1367997105447443559996765241344"
+          },
+          {
+            "fourth_root": 83,
+            "lower": "322525271503939586516678644445/45950698418865307504569030279168",
+            "upper": "322525271503942452833068004303/45950698418865307504569030279168"
+          },
+          {
+            "fourth_root": 84,
+            "lower": "15980435747447057048950667/2324726719761021535474679808",
+            "upper": "15980435747447202068318237/2324726719761021535474679808"
+          },
+          {
+            "fourth_root": 85,
+            "lower": "340277465129697205419336363209/50542352238952592582356500480000",
+            "upper": "340277465129700358314640094459/50542352238952592582356500480000"
+          },
+          {
+            "fourth_root": 86,
+            "lower": "43623896381188230952968331921/6620389866093877706374319702016",
+            "upper": "43623896381188643961127410493/6620389866093877706374319702016"
+          },
+          {
+            "fourth_root": 87,
+            "lower": "8838032740466310149302267273/1369625188737438627765153693696",
+            "upper": "8838032740466395592363668405/1369625188737438627765153693696"
+          },
+          {
+            "fourth_root": 88,
+            "lower": "89564110409165901901535831/14175895003757232944974921728",
+            "upper": "89564110409166786282795461/14175895003757232944974921728"
+          },
+          {
+            "fourth_root": 89,
+            "lower": "23477254010043590337697998953/3796818099499830164122824081408",
+            "upper": "187818032080350617656236255439/30374544795998641312982592651264"
+          },
+          {
+            "fourth_root": 90,
+            "lower": "3667614042849564668435209/605145439338041840762880000",
+            "upper": "3667614042849602421203959/605145439338041840762880000"
+          },
+          {
+            "fourth_root": 91,
+            "lower": "14079760210141574498855657945/2371304280110519145524726071296",
+            "upper": "28159520420283444884081157043/4742608560221038291049452142592"
+          },
+          {
+            "fourth_root": 92,
+            "lower": "1578551733007331778425739083/270951207823675146817480163328",
+            "upper": "1578551733007348682787182585/270951207823675146817480163328"
+          },
+          {
+            "fourth_root": 93,
+            "lower": "5112622802243181140964986777/894183234052652382117081120768",
+            "upper": "5112622802243236928118351239/894183234052652382117081120768"
+          },
+          {
+            "fourth_root": 94,
+            "lower": "26543671735622734555094989727/4724666724119192556121041666048",
+            "upper": "26543671735623029330524598477/4724666724119192556121041666048"
+          },
+          {
+            "fourth_root": 95,
+            "lower": "868859413309091193170841342679/157726317599945901460118568960000",
+            "upper": "868859413309101033831727280179/157726317599945901460118568960000"
+          },
+          {
+            "fourth_root": 96,
+            "lower": "1308368114184956729129/242058175735216736305152",
+            "upper": "20933889826959549307625/3872930811763467780882432"
+          },
+          {
+            "fourth_root": 97,
+            "lower": "454338334527223300847944716319/85716945032041536177046812622848",
+            "upper": "1817353338108914596561319766613/342867780128166144708187250491392"
+          },
+          {
+            "fourth_root": 98,
+            "lower": "29027855399055812344107125395/5581668854146212706674706219008",
+            "upper": "116111421596224642445069401957/22326675416584850826698824876032"
+          },
+          {
+            "fourth_root": 99,
+            "lower": "36148102919195316777786473/7087947501878616472487460864",
+            "upper": "289184823353566072449351613/56703580015028931779899686912"
+          },
+          {
+            "fourth_root": 100,
+            "lower": "1896576030479740056185555089/378215899586276150476800000000",
+            "upper": "7586304121919054625394173481/1512863598345104601907200000000"
+          },
+          {
+            "fourth_root": 101,
+            "lower": "248379703246609421407500435443/50377341664670246803650750971904",
+            "upper": "1987037625972900519086427556813/403018733317361974429206007775232"
+          },
+          {
+            "fourth_root": 102,
+            "lower": "11539473957153371901299693/2378463634774239650934423552",
+            "upper": "92315791657228162582729253/19027709078193917207475388416"
+          },
+          {
+            "fourth_root": 103,
+            "lower": "1039246873830373043254268403097/217950887458011731176716339511296",
+            "upper": "2078493747660773287770903765727/435901774916023462353432679022592"
+          },
+          {
+            "fourth_root": 104,
+            "lower": "259454534840567300838067099/55307388457388201644891570176",
+            "upper": "518909069681141504289845971/110614776914776403289783140352"
+          },
+          {
+            "fourth_root": 105,
+            "lower": "26803584672246219266321274791/5811816799402553838686699520000",
+            "upper": "6700896168061645487144860729/1452954199850638459671674880000"
+          },
+          {
+            "fourth_root": 106,
+            "lower": "138704878028887961338702916027/30559286984534219019164992929792",
+            "upper": "17338109753611233546135624827/3819910873066777377395624116224"
+          },
+          {
+            "fourth_root": 107,
+            "lower": "2264589605967682901321879200295/507662225506561463094424614469632",
+            "upper": "566147401491928645404720605041/126915556376640365773606153617408"
+          },
+          {
+            "fourth_root": 108,
+            "lower": "458867105980024039243033/104569131917613630083825664",
+            "upper": "57358388247503820618083/13071141489701703760478208"
+          },
+          {
+            "fourth_root": 109,
+            "lower": "2359449457425824494106362743827/546695791068768278932115058327552",
+            "upper": "147465591089116163187299214685/34168486941798017433257191145472"
+          },
+          {
+            "fourth_root": 110,
+            "lower": "150458168993355125474194986263/35439737509393082362437304320000",
+            "upper": "37614542248339334278256961097/8859934377348270590609326080000"
+          },
+          {
+            "fourth_root": 111,
+            "lower": "3366116630043530097576459509/806499542567270282187377737728",
+            "upper": "15147524835196111931043287773/3629247941552716269843199819776"
+          },
+          {
+            "fourth_root": 112,
+            "lower": "4241214361616426383567321/1033211875449342904655413248",
+            "upper": "19085464627274208886380727/4649453439522043070949359616"
+          },
+          {
+            "fourth_root": 113,
+            "lower": "851342587670073283379972753005/210490382731207059293802262953984",
+            "upper": "638506940752564814654036589245/157867787048405294470351697215488"
+          },
+          {
+            "fourth_root": 114,
+            "lower": "167522721543011851621064665/42060351359985573722698285056",
+            "upper": "1005136329258086859418411213/252362108159913442336189710336"
+          },
+          {
+            "fourth_root": 115,
+            "lower": "1329774222537638724270447752821/338689009779593933521850204160000",
+            "upper": "332443555634414965487417664299/84672252444898483380462551040000"
+          },
+          {
+            "fourth_root": 116,
+            "lower": "5297220902179048623187741555/1369625188737438627765153693696",
+            "upper": "2648610451089567050946284341/684812594368719313882576846848"
+          },
+          {
+            "fourth_root": 117,
+            "lower": "210881487971083605091130753/55307388457388201644891570176",
+            "upper": "8786728665461960701719485/2304474519057841735203815424"
+          },
+          {
+            "fourth_root": 118,
+            "lower": "264405216599432675390692056167/70394551161241478569231990652928",
+            "upper": "264405216599437068926199840125/70394551161241478569231990652928"
+          },
+          {
+            "fourth_root": 119,
+            "lower": "253499914298394597397464072877/68528294245115392822722611380224",
+            "upper": "253499914298398874454268713091/68528294245115392822722611380224"
+          },
+          {
+            "fourth_root": 120,
+            "lower": "13231237657923286040387951/3630872636028251044577280000",
+            "upper": "13231237657923512654061701/3630872636028251044577280000"
+          },
+          {
+            "fourth_root": 121,
+            "lower": "4467970204121299289584001657957/1245295672500057885284266974117888",
+            "upper": "4467970204121377014104852107463/1245295672500057885284266974117888"
+          },
+          {
+            "fourth_root": 122,
+            "lower": "569030282545759057101662101495/160871952671033713508162979495936",
+            "upper": "569030282545769098016111168635/160871952671033713508162979495936"
+          },
+          {
+            "fourth_root": 123,
+            "lower": "114456411845276289182245165075/32831930530738645439922365792256",
+            "upper": "114456411845278338405867949015/32831930530738645439922365792256"
+          },
+          {
+            "fourth_root": 124,
+            "lower": "18438642260741718391364809487/5365099404315914292702486724608",
+            "upper": "18438642260742053257096436657/5365099404315914292702486724608"
+          },
+          {
+            "fourth_root": 125,
+            "lower": "961400424569897979003661061143/283661924689707112857600000000000",
+            "upper": "961400424569915684208836842393/283661924689707112857600000000000"
+          },
+          {
+            "fourth_root": 126,
+            "lower": "90998684817720124462807/27242891247199471118843904",
+            "upper": "23295663313336787166902293/6974180159283064606424039424"
+          },
+          {
+            "fourth_root": 127,
+            "lower": "4981900802600161442195417149319/1511283293466068854159090403770368",
+            "upper": "4981900802600255771319140105201/1511283293466068854159090403770368"
+          },
+          {
+            "fourth_root": 128,
+            "lower": "9448932430404567088813/2904698108822600835661824",
+            "upper": "4724466215202374195057/1452349054411300417830912"
+          }
+        ],
+        "declines_in_root_squared_times_reading": [],
+        "right_derivative_times_twice_sqrt_side": {
+          "side": 262440,
+          "interval": [
+            "-16139067309727340623/50428786611503486730240",
+            "-8069533654862113199/25214393305751743365120"
+          ],
+          "exact_band": -8358
+        }
+      }
+    }
+  },
+  "open": "Establish eventual nonnegativity at every fourth power, or bound negative runs at the rates proved on paper. The full positive average can erase signals from zeta zeros. The independent fixed statement still has the specified arithmetic sign premise."
+}

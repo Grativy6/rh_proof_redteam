@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**First-pass fourth powers.** Examine the actual rational signs $S_1(j^4)$. Nonnegativity from some root onward suffices. The proof pays for every intervening side using only the corners of its tapers. Test failures on the same input and distinguish a finite violation from failure at unbounded roots. [Paper argument](what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [Stock-target deduction](PALRH/CubicFourth.lean)
+
 **Current sign test.** Form the two square rescalings and recover the original with four signed readings. Prove a complete nonnegative list at arbitrarily large heads with arbitrarily many doublings per pass. One pass covers 23 doublings in the recorded experiment. A rate of 19 doublings at unbounded heads already has a specified consequence in (4a). [Paper derivation](how-many-square-passes-the-sign-needs.md) · [Exact rational condition](PALRH/SquareSignRows.lean)
 
 **Current ordinary-prime target.** For each fourth-power head compute the integer allowance for the retained quotient rows and sum its rational cost. Prove this total has arbitrarily late subpower checkpoints. Repeated powers, any fixed prime prefix and the stated range of older rows already have an unconditional allowance. [Prime calculation](what-the-ordinary-primes-still-owe.md) · [Exact declaration](PALRH/OrdinaryPrimeGrid.lean)

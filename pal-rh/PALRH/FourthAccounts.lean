@@ -12,7 +12,7 @@ def tally (o : Bool) (J : ℕ) : ℚ := ∑ j ∈ Finset.Icc 1 J, (j:ℚ)*peak o
 
 variable (o : Bool)
 
-private theorem mark_cap (d : ℕ) : |(marks d:ℝ)|≤1 := by
+theorem mark_cap (d : ℕ) : |(marks d:ℝ)|≤1 := by
   have q : |marks d|≤1 := by
     change |(ArithmeticFunction.moebius d:ℚ)*(if d.Coprime 6 then 1 else 0)|≤1
     split
@@ -20,7 +20,7 @@ private theorem mark_cap (d : ℕ) : |(marks d:ℝ)|≤1 := by
     · simp
   exact_mod_cast q
 
-private theorem taper_lip (x y : ℝ) : |taper x-taper y|≤|x-y| := by
+theorem taper_lip (x y : ℝ) : |taper x-taper y|≤|x-y| := by
   unfold taper
   simp only [max_def,min_def]
   split_ifs <;> rw [abs_le] <;> constructor <;> linarith [le_abs_self (x-y),neg_abs_le (x-y)]

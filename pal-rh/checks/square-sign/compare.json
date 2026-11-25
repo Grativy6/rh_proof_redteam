@@ -1,0 +1,22 @@
+{
+  "challenge_module": "SquareSignChallenge",
+  "solution_module": "SquareSignSolution",
+  "theorem_names": [
+    "firstPassFourthReduction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

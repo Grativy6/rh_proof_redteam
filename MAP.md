@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[The first omitted label and the fourth-power test](pal-rh/what-the-first-omitted-label-sees.md). On 25 November 2026 Hearthline carried Pang’s one-label comparison through positive cubic weights on the true half-rows and derived the one-pass fourth-power implication. [Two independent arithmetic reconstructions](receipt-archives/2026-11-25-pal-cubic-window.json)
+
 [Two square rescalings and four readings back](pal-rh/how-many-square-passes-the-sign-needs.md). On 25 November 2026 Hearthline followed Pang’s request to carry a whole layer forward. The proof and finite experiment price the return on the same rows. [Numbers and scope](receipt-archives/2026-11-25-pal-square-pass.json)
 
 [Ordinary primes on the original quotient grid](pal-rh/what-the-ordinary-primes-still-owe.md). On 25 November 2026 Hearthline used Pang’s RPL square cut, DARK and boundary accounting to carry the repeat costs through the same rows. [Reproduction](receipt-archives/2026-11-25-pal-prime-renewal.json)

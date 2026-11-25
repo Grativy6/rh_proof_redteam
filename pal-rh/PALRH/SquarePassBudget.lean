@@ -134,7 +134,7 @@ theorem recovered_size (N k : ℕ) {X : ℝ} (xp : 0<X) (inside : X≤(2:ℝ)^N)
 #print axioms PALRH.SquarePassBudget.seed_cap
 #print axioms PALRH.SquarePassBudget.recovered_size
 
-private theorem finite_geometric {r : ℝ} (non : 0≤r) (less : r<1) (N : ℕ) :
+theorem finite_geometric {r : ℝ} (non : 0≤r) (less : r<1) (N : ℕ) :
     (∑ j ∈ Finset.range (N+1), r^j)≤1/(1-r) := by
   have eq (n : ℕ) : (∑ j ∈ Finset.range n, r^j)*(1-r)=1-r^n := by
     induction n with
