@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [The cost of the next doubling window](what-the-next-octave-costs.md) · [Exact profile](PALRH/Balanced.lean) · [Overlap](PALRH/Octaves.lean) | Subpower whole cost at arbitrarily large exact heads is sufficient. The explicit profile reduces its first doubling-window cost to signed Möbius increments. A subpower estimate on every such octave implies bare RH. |
 | [What the prime 5 carries](what-five-carries.md) · [Conservation](PALRH/CarriedPrime.lean) · [Protected heads](PALRH/Protected.lean) | At the same exact first 256 rows both width-512 fits beat the error floor of every width-256 fit. Internal paths reduce to signed exit masses. Any fixed finite head can be repaired while the available widths remain open. |
 | [What one finite parent misses](what-one-parent-misses.md) | A missing logarithmic wave survives every rescaling and refit of one finite parent. The actual six-row and initialized-binary families have explicit positive floors. Two independent parents have no additional common factor zero. |
 | [Change the first wrong row](changing-the-first-wrong-row.md) · [Lean](PALRH/RowRepair.lean) | Exact optimal leading squared cost at every finite height, an admissible unit change behind a protected prefix, and true signed improvements followed by failing second changes on both targets. |
@@ -28,6 +29,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+The open estimate is subpower growth of [the actual signed next-window costs](what-the-next-octave-costs.md#why-the-first-doubling-windows-themselves-suffice). The physical tails after the square cutoff have a universal allowance for this explicit family. [Rational square-window check](PALRH/SquareBudget.lean)
 
 With the independently adjustable 2-and-3 clocks, find a width and an exit rule for each required precision. A width-256 impossibility and two width-512 witnesses are [proved at the same exact head](what-five-carries.md#one-larger-frame-beats-every-smaller-frame-fit). The all-tolerance implication is [explicit in Lean](PALRH/Protected.lean). The finite lower bounds rule out every choice below those thresholds.
 

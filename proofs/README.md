@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What the next doubling window costs](../pal-rh/what-the-next-octave-costs.md) proves how an exact head changes the power that a missed wave must charge, and constructs a finite rational fit whose next interval contains only signed Möbius increments.
+
 [What 5 carries through 2 and 3](../pal-rh/what-five-carries.md) follows one prime through every triangular layer and proves a strict separation between two finite widths on both physical targets. The first 256 measured rows agree exactly throughout.
 
 In Pang’s independent constructive branch, [what every copy of one finite reading misses](../pal-rh/what-one-parent-misses.md) rules out an entire class of attempted RH constructions by a paper argument. [Changing the first wrong row](../pal-rh/changing-the-first-wrong-row.md) gives an exact arithmetic optimum and a six-row example. [Source credit and corpus roles](../pal-rh/CORPUS-ROUTES.md)

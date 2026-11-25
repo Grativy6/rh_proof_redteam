@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Doubling-window arithmetic and subpower budgets](pal-rh/what-the-next-octave-costs.md). On 25 November 2026 Hearthline followed Pang’s active construction key from exact heads to a signed finite observable with an independently derived RH implication. [Stage record](receipt-archives/2026-11-25-pal-octave-growth.json)
+
 [What 5 carries](pal-rh/what-five-carries.md) reconstructs both clocks from signed flows, removes every interior cycle, and separates all width-256 fits from exhibited width-512 fits at the same protected rows. [Kernel and arithmetic record](receipt-archives/2026-11-25-pal-prime-flow.json)
 
 On the same branch, [all copies of one finite parent miss a common wave](pal-rh/what-one-parent-misses.md). [Finite-height optimum and actual receiving rows](pal-rh/changing-the-first-wrong-row.md) gives the exact price of a new correction in the two-clock construction. [Rational replay](receipt-archives/2026-11-25-pal-row-repair-and-parents.json)

@@ -419,7 +419,7 @@ private theorem residual_ae {N : ℕ} (c : Fin N → ℚ) :
   simp only [candidate, hsum, hall]
   simp [rowError, sensor, turn]
 
-private theorem norm_sq_cells (v : CellSpace) :
+theorem norm_sq_cells (v : CellSpace) :
     ‖v‖ ^ 2 = ∫ x, ‖v x‖ ^ 2 ∂cellMeasure := by
   apply Complex.ofReal_injective
   calc
@@ -428,6 +428,58 @@ private theorem norm_sq_cells (v : CellSpace) :
       rw [L2.inner_def]
       simp only [inner_self_eq_norm_sq_to_K, Complex.ofReal_pow, RCLike.ofReal_eq_complex_ofReal]
     _ = _ := integral_ofReal
+
+
+/-- If the discrepancy is confined to (0,u], only the norm of the wave on
+that interval is available to pay for its fixed Mellin observation. -/
+theorem localized_moment {s : ℂ} (hs : 1/2 < s.re) {u : ℝ} (hu : 0<u) (h1 : u≤1)
+    (v : CellSpace) (vanish : ∀ᵐ x ∂cellMeasure, u<x → v x=0) :
+    (2*s.re-1)*‖cellMoment hs v‖^2 ≤ u^(2*s.re-1)*‖v‖^2 := by
+  let A := Ioc (0:ℝ) u
+  let K := kernelFn s
+  have hA : MeasurableSet A := measurableSet_Ioc
+  have full := kernel_mem hs
+  have part : MemLp (A.indicator K) 2 cellMeasure := full.indicator hA
+  let cut := part.toLp _
+  have belongs : ∀ᵐ x ∂cellMeasure, x ∈ Ioc (0:ℝ) 1 := ae_restrict_mem measurableSet_Ioc
+  have equal : cellMoment hs v=inner ℂ cut v := by
+    change inner ℂ (full.toLp _) v = _
+    rw [L2.inner_def,L2.inner_def]
+    apply integral_congr_ae
+    filter_upwards [full.coeFn_toLp,part.coeFn_toLp,belongs,vanish] with x hF hP hx hz
+    change cut x=A.indicator K x at hP
+    rw [hF,hP]
+    by_cases keep : x∈A
+    · rw [Set.indicator_of_mem keep]
+    · have far : u<x := lt_of_not_ge fun le => keep ⟨hx.1,le⟩
+      simp [hz far]
+  have cap : ‖cut‖^2=u^(2*s.re-1)/(2*s.re-1) := by
+    rw [norm_sq_cells]
+    calc
+      _ = ∫ x in Ioc (0:ℝ) 1, A.indicator (fun x : ℝ => x^(2*(s.re-1))) x := by
+        apply integral_congr_ae
+        filter_upwards [part.coeFn_toLp,belongs] with x hp hx
+        change cut x=A.indicator K x at hp
+        rw [hp]
+        by_cases keep : x∈A
+        · rw [Set.indicator_of_mem keep,Set.indicator_of_mem keep]
+          change ‖starRingEnd ℂ ((x:ℂ)^(s-1))‖^2=_
+          rw [Complex.norm_conj,norm_cpow_eq_rpow_re_of_pos hx.1,sub_re,one_re,
+            mul_comm (2:ℝ),Real.rpow_mul hx.1.le,Real.rpow_two]
+        · simp [Set.indicator_of_notMem keep]
+      _ = ∫ x in Ioc (0:ℝ) u, x^(2*(s.re-1)) := by
+        rw [MeasureTheory.setIntegral_indicator hA]
+        rw [inter_eq_right.mpr (Ioc_subset_Ioc le_rfl h1)]
+      _ = _ := by
+        rw [←intervalIntegral.integral_of_le hu.le,integral_rpow (Or.inl (by linarith)),
+          show 2*(s.re-1)+1=2*s.re-1 by ring,Real.zero_rpow (by linarith : 2*s.re-1≠0),sub_zero]
+  rw [equal]
+  have hi := pow_le_pow_left₀ (norm_nonneg (inner ℂ cut v)) (norm_inner_le_norm cut v) 2
+  rw [mul_pow,cap] at hi
+  have hp : 0<2*s.re-1 := by linarith
+  calc
+    _ ≤ (2*s.re-1)*(u^(2*s.re-1)/(2*s.re-1)*‖v‖^2) := mul_le_mul_of_nonneg_left hi hp.le
+    _ = _ := by field_simp
 
 private lemma certificate_bound {N : ℕ} (c : Fin N → ℚ) (M : ℕ) :
     ‖target - candidate c‖ ^ 2 ≤ (certificateValue c M : ℝ) := by

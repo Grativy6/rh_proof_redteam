@@ -1,0 +1,875 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent PAL construction. The mathematical task is the bare stock RiemannHypothesis.",
+  "source_parent_tree": "e5a234bb529c59bddb92e80adb93e30ad1d3b745",
+  "sources_sha256": {
+    "pal-rh/PALRH.lean": "98789ed11382532173da155a03d60b17a2207f423ea50fa74fd261214358b97e",
+    "pal-rh/PALRH/HeadGrowth.lean": "d73ee45ad1c3794b9b33b09cf381de11d00479ae2730d6f422311284cb8caf15",
+    "pal-rh/PALRH/Balanced.lean": "431e57b708d3657f80b1ad2781ef4254f97a0b24722d0b101f0b5e974c1e2296",
+    "pal-rh/PALRH/SquareBudget.lean": "7ce0580d0ca8093d79e1edd8ca8e2e668bbdcf0577436f3d7bcd183434c11b63",
+    "pal-rh/PALRH/Octaves.lean": "830ab006231aebfb7a81d936a38ae50d490c5ba22b2a8bc8281a1dcd63435266",
+    "pal-rh/lakefile.toml": "79a5d163cd75104b3c6f943dabf0698c1c6f57c1d522f5755fbb6d55536da7c3",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/what-the-next-octave-costs.md": "d1e414f84eba854d6e356c1513d1c8703a90e7a898624d23d33fa0d4ef0bde2d",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166"
+  },
+  "toolchain": "Lean 4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "command": "cd pal-rh && lake build",
+    "exit": 0,
+    "jobs_including_replays": 3731
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH.HeadGrowth",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Balanced",
+      "exit": 0,
+      "seconds": 12.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SquareBudget",
+      "exit": 0,
+      "seconds": 11.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Octaves",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH",
+      "exit": 0,
+      "seconds": 213.1,
+      "output": ""
+    }
+  ],
+  "printed_declarations": [
+    "PALRH.Balanced.next_octave",
+    "PALRH.Balanced.profile_bound",
+    "PALRH.Balanced.tick_impulse",
+    "PALRH.HeadGrowth.head_power_floor",
+    "PALRH.HeadGrowth.rh_of_subpower_occupied",
+    "PALRH.HeadGrowth.rh_of_subpower_tick",
+    "PALRH.Octaves.overlap_price",
+    "PALRH.Octaves.physical_price_eq",
+    "PALRH.Octaves.rh_of_octaves",
+    "PALRH.Octaves.rh_of_physical_octaves",
+    "PALRH.Octaves.rh_of_walk_growth",
+    "PALRH.SquareBudget.rh_of_occupied_windows",
+    "PALRH.SquareBudget.rh_of_tick_windows"
+  ],
+  "axioms_for_these_declarations": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mathematics": "Localized Mellin power floor, subpower-cost sufficient conditions on both actual targets, deterministic exact profile arithmetic, and a finite square cutoff. The actual occupied profile’s next-octave price is exactly the Möbius increment price and its all-scale upper bound implies Mathlib RH. The sharper far-tail bound, equality of the finite-band exponent to twice the rightmost zero abscissa minus one, and interleaved-head variant are paper deductions.",
+  "independent_integer_experiments": {
+    "scale": 1000000000000,
+    "interval_convention": "both rational endpoints divided by scale",
+    "physical_profile_controls": "both targets at heads 1,2,3,6,18,32,64; complete periods at heads through 3",
+    "product_controls": [
+      {
+        "H": 4,
+        "signed_cost": "58/315",
+        "diagonal": "38/315",
+        "positive_products": 1,
+        "negative_products": 0
+      },
+      {
+        "H": 18,
+        "signed_cost": "10032944/72679655",
+        "diagonal": "28636416/508757585",
+        "positive_products": 6,
+        "negative_products": 4
+      },
+      {
+        "H": 44,
+        "signed_cost": "1334930739744983225086/14052936830940720762595",
+        "diagonal": "8216479732593743872974/154582305140347928388545",
+        "positive_products": 42,
+        "negative_products": 36
+      },
+      {
+        "H": 96,
+        "signed_cost": "140257007317918857402544880587839565333207178527530794/796374358844133138850292867445334232111543445129627215",
+        "diagonal": "120277489525674664360740462686838593501479105116786642/2070573332994746161010761455357869003490012957337030759",
+        "positive_products": 207,
+        "negative_products": 171
+      }
+    ],
+    "windows": [
+      {
+        "H": 16,
+        "depth": 0,
+        "primorial": 1,
+        "rough_signed_increment": -5,
+        "rough_squarefree_count": 5,
+        "omitted_squarefree_count": 5,
+        "scaled_cost_intervals": {
+          "all": [
+            56469108818,
+            56469108834
+          ],
+          "rough": [
+            208235704010,
+            208235704026
+          ],
+          "rough_diagonal": [
+            70159040842,
+            70159040858
+          ],
+          "absolute": [
+            208235704010,
+            208235704026
+          ],
+          "depth_one": [
+            208235704010,
+            208235704026
+          ],
+          "kept": [
+            0,
+            16
+          ],
+          "deep": [
+            208235704010,
+            208235704026
+          ],
+          "deep_absolute": [
+            208235704010,
+            208235704026
+          ]
+        }
+      },
+      {
+        "H": 24,
+        "depth": 0,
+        "primorial": 1,
+        "rough_signed_increment": -5,
+        "rough_squarefree_count": 7,
+        "omitted_squarefree_count": 7,
+        "scaled_cost_intervals": {
+          "all": [
+            23953579522,
+            23953579546
+          ],
+          "rough": [
+            92650944782,
+            92650944806
+          ],
+          "rough_diagonal": [
+            48404789470,
+            48404789494
+          ],
+          "absolute": [
+            215225177494,
+            215225177518
+          ],
+          "depth_one": [
+            145774795833,
+            145774795857
+          ],
+          "kept": [
+            0,
+            24
+          ],
+          "deep": [
+            92650944782,
+            92650944806
+          ],
+          "deep_absolute": [
+            215225177494,
+            215225177518
+          ]
+        }
+      },
+      {
+        "H": 64,
+        "depth": 1,
+        "primorial": 5,
+        "rough_signed_increment": -6,
+        "rough_squarefree_count": 20,
+        "omitted_squarefree_count": 7,
+        "scaled_cost_intervals": {
+          "all": [
+            32635765502,
+            32635765566
+          ],
+          "rough": [
+            76258223511,
+            76258223575
+          ],
+          "rough_diagonal": [
+            67525486718,
+            67525486782
+          ],
+          "absolute": [
+            852374273138,
+            852374273202
+          ],
+          "depth_one": [
+            354436235390,
+            354436235454
+          ],
+          "kept": [
+            354436235390,
+            354436235454
+          ],
+          "deep": [
+            109880012907,
+            109880012971
+          ],
+          "deep_absolute": [
+            109880012907,
+            109880012971
+          ]
+        }
+      },
+      {
+        "H": 96,
+        "depth": 1,
+        "primorial": 5,
+        "rough_signed_increment": -10,
+        "rough_squarefree_count": 28,
+        "omitted_squarefree_count": 9,
+        "scaled_cost_intervals": {
+          "all": [
+            100715100146,
+            100715100242
+          ],
+          "rough": [
+            176119441469,
+            176119441565
+          ],
+          "rough_diagonal": [
+            58088978309,
+            58088978405
+          ],
+          "absolute": [
+            963936557783,
+            963936557879
+          ],
+          "depth_one": [
+            483494127615,
+            483494127711
+          ],
+          "kept": [
+            483494127615,
+            483494127711
+          ],
+          "deep": [
+            86533871971,
+            86533872067
+          ],
+          "deep_absolute": [
+            86533871971,
+            86533872067
+          ]
+        }
+      },
+      {
+        "H": 256,
+        "depth": 1,
+        "primorial": 5,
+        "rough_signed_increment": -11,
+        "rough_squarefree_count": 79,
+        "omitted_squarefree_count": 36,
+        "scaled_cost_intervals": {
+          "all": [
+            20301203308,
+            20301203564
+          ],
+          "rough": [
+            66309273793,
+            66309274049
+          ],
+          "rough_diagonal": [
+            58686905618,
+            58686905874
+          ],
+          "absolute": [
+            2690646908218,
+            2690646908474
+          ],
+          "depth_one": [
+            833550366234,
+            833550366490
+          ],
+          "kept": [
+            833550366234,
+            833550366490
+          ],
+          "deep": [
+            439671860774,
+            439671861030
+          ],
+          "deep_absolute": [
+            530994359538,
+            530994359794
+          ]
+        }
+      },
+      {
+        "H": 384,
+        "depth": 1,
+        "primorial": 5,
+        "rough_signed_increment": -9,
+        "rough_squarefree_count": 119,
+        "omitted_squarefree_count": 60,
+        "scaled_cost_intervals": {
+          "all": [
+            22901052163,
+            22901052547
+          ],
+          "rough": [
+            41493039855,
+            41493040239
+          ],
+          "rough_diagonal": [
+            60158440593,
+            60158440977
+          ],
+          "absolute": [
+            4184070427994,
+            4184070428378
+          ],
+          "depth_one": [
+            1062189986109,
+            1062189986493
+          ],
+          "kept": [
+            1062189986109,
+            1062189986493
+          ],
+          "deep": [
+            704189380330,
+            704189380714
+          ],
+          "deep_absolute": [
+            1031694998143,
+            1031694998527
+          ]
+        }
+      },
+      {
+        "H": 1024,
+        "depth": 1,
+        "primorial": 5,
+        "rough_signed_increment": -8,
+        "rough_squarefree_count": 312,
+        "omitted_squarefree_count": 175,
+        "scaled_cost_intervals": {
+          "all": [
+            18531918085,
+            18531919109
+          ],
+          "rough": [
+            19663836458,
+            19663837482
+          ],
+          "rough_diagonal": [
+            59270743610,
+            59270744634
+          ],
+          "absolute": [
+            10902517248170,
+            10902517249194
+          ],
+          "depth_one": [
+            2166833743971,
+            2166833744995
+          ],
+          "kept": [
+            2166833743971,
+            2166833744995
+          ],
+          "deep": [
+            1835706137844,
+            1835706138868
+          ],
+          "deep_absolute": [
+            3350225983006,
+            3350225984030
+          ]
+        }
+      },
+      {
+        "H": 1536,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": -13,
+        "rough_squarefree_count": 467,
+        "omitted_squarefree_count": 43,
+        "scaled_cost_intervals": {
+          "all": [
+            23324640764,
+            23324642300
+          ],
+          "rough": [
+            20430466655,
+            20430468191
+          ],
+          "rough_diagonal": [
+            58743979998,
+            58743981534
+          ],
+          "absolute": [
+            16109537051829,
+            16109537053365
+          ],
+          "depth_one": [
+            2952648287811,
+            2952648289347
+          ],
+          "kept": [
+            54109262783,
+            54109264319
+          ],
+          "deep": [
+            124364317864,
+            124364319400
+          ],
+          "deep_absolute": [
+            124364317864,
+            124364319400
+          ]
+        }
+      },
+      {
+        "H": 4096,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": 2,
+        "rough_squarefree_count": 1248,
+        "omitted_squarefree_count": 163,
+        "scaled_cost_intervals": {
+          "all": [
+            45763754796,
+            45763758892
+          ],
+          "rough": [
+            5228460433,
+            5228464529
+          ],
+          "rough_diagonal": [
+            58854515591,
+            58854519687
+          ],
+          "absolute": [
+            43178253617389,
+            43178253621485
+          ],
+          "depth_one": [
+            6129285574939,
+            6129285579035
+          ],
+          "kept": [
+            622345191713,
+            622345195809
+          ],
+          "deep": [
+            640348195944,
+            640348200040
+          ],
+          "deep_absolute": [
+            694192790242,
+            694192794338
+          ]
+        }
+      },
+      {
+        "H": 6144,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": -2,
+        "rough_squarefree_count": 1866,
+        "omitted_squarefree_count": 276,
+        "scaled_cost_intervals": {
+          "all": [
+            23442521297,
+            23442527441
+          ],
+          "rough": [
+            7737228601,
+            7737234745
+          ],
+          "rough_diagonal": [
+            58745909402,
+            58745915546
+          ],
+          "absolute": [
+            64606151132379,
+            64606151138523
+          ],
+          "depth_one": [
+            8478537191000,
+            8478537197144
+          ],
+          "kept": [
+            1093976897882,
+            1093976904026
+          ],
+          "deep": [
+            1200254419288,
+            1200254425432
+          ],
+          "deep_absolute": [
+            1370167767828,
+            1370167773972
+          ]
+        }
+      },
+      {
+        "H": 16384,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": 4,
+        "rough_squarefree_count": 4976,
+        "omitted_squarefree_count": 935,
+        "scaled_cost_intervals": {
+          "all": [
+            56144865204,
+            56144881588
+          ],
+          "rough": [
+            6937620965,
+            6937637349
+          ],
+          "rough_diagonal": [
+            58701285567,
+            58701301951
+          ],
+          "absolute": [
+            172066279899431,
+            172066279915815
+          ],
+          "depth_one": [
+            18408633562038,
+            18408633578422
+          ],
+          "kept": [
+            4541245359001,
+            4541245375385
+          ],
+          "deep": [
+            4430876384718,
+            4430876401102
+          ],
+          "deep_absolute": [
+            5792709619539,
+            5792709635923
+          ]
+        }
+      },
+      {
+        "H": 24576,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": 41,
+        "rough_squarefree_count": 7475,
+        "omitted_squarefree_count": 1508,
+        "scaled_cost_intervals": {
+          "all": [
+            74669240137,
+            74669264713
+          ],
+          "rough": [
+            10207281728,
+            10207306304
+          ],
+          "rough_diagonal": [
+            58728868061,
+            58728892637
+          ],
+          "absolute": [
+            258340937412481,
+            258340937437057
+          ],
+          "depth_one": [
+            25516183485070,
+            25516183509646
+          ],
+          "kept": [
+            7722741642348,
+            7722741666924
+          ],
+          "deep": [
+            7449840344748,
+            7449840369324
+          ],
+          "deep_absolute": [
+            10193442647406,
+            10193442671982
+          ]
+        }
+      },
+      {
+        "H": 65536,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": -42,
+        "rough_squarefree_count": 19924,
+        "omitted_squarefree_count": 4769,
+        "scaled_cost_intervals": {
+          "all": [
+            17219794799,
+            17219860335
+          ],
+          "rough": [
+            8942966996,
+            8943032532
+          ],
+          "rough_diagonal": [
+            58718450581,
+            58718516117
+          ],
+          "absolute": [
+            688758189498829,
+            688758189564365
+          ],
+          "depth_one": [
+            57571278735902,
+            57571278801438
+          ],
+          "kept": [
+            23767489154834,
+            23767489220370
+          ],
+          "deep": [
+            24423729379232,
+            24423729444768
+          ],
+          "deep_absolute": [
+            38379349727913,
+            38379349793449
+          ]
+        }
+      },
+      {
+        "H": 98304,
+        "depth": 2,
+        "primorial": 35,
+        "rough_signed_increment": -2,
+        "rough_squarefree_count": 29880,
+        "omitted_squarefree_count": 7558,
+        "scaled_cost_intervals": {
+          "all": [
+            51569180322,
+            51569278626
+          ],
+          "rough": [
+            5495594168,
+            5495692472
+          ],
+          "rough_diagonal": [
+            58722240155,
+            58722338459
+          ],
+          "absolute": [
+            1032971318627768,
+            1032971318726072
+          ],
+          "depth_one": [
+            80361512488897,
+            80361512587201
+          ],
+          "kept": [
+            38429315667783,
+            38429315766087
+          ],
+          "deep": [
+            38211875948138,
+            38211876046442
+          ],
+          "deep_absolute": [
+            64207489449959,
+            64207489548263
+          ]
+        }
+      },
+      {
+        "H": 262144,
+        "depth": 3,
+        "primorial": 385,
+        "rough_signed_increment": -111,
+        "rough_squarefree_count": 79679,
+        "omitted_squarefree_count": 3316,
+        "scaled_cost_intervals": {
+          "all": [
+            24926015573,
+            24926277717
+          ],
+          "rough": [
+            10810848501,
+            10811110645
+          ],
+          "rough_diagonal": [
+            58707577877,
+            58707840021
+          ],
+          "absolute": [
+            2753719677715892,
+            2753719677978036
+          ],
+          "depth_one": [
+            183019529150994,
+            183019529413138
+          ],
+          "kept": [
+            4244652440550,
+            4244652702694
+          ],
+          "deep": [
+            4002380623448,
+            4002380885592
+          ],
+          "deep_absolute": [
+            4475032818919,
+            4475033081063
+          ]
+        }
+      },
+      {
+        "H": 393216,
+        "depth": 3,
+        "primorial": 385,
+        "rough_signed_increment": 54,
+        "rough_squarefree_count": 119524,
+        "omitted_squarefree_count": 5610,
+        "scaled_cost_intervals": {
+          "all": [
+            17524204612,
+            17524597828
+          ],
+          "rough": [
+            4692041953,
+            4692435169
+          ],
+          "rough_diagonal": [
+            58710168469,
+            58710561685
+          ],
+          "absolute": [
+            4131229830910335,
+            4131229831303551
+          ],
+          "depth_one": [
+            257295710971348,
+            257295711364564
+          ],
+          "kept": [
+            7326627052776,
+            7326627445992
+          ],
+          "deep": [
+            7456064468131,
+            7456064861347
+          ],
+          "deep_absolute": [
+            8589487095669,
+            8589487488885
+          ]
+        }
+      },
+      {
+        "H": 1048576,
+        "depth": 3,
+        "primorial": 385,
+        "rough_signed_increment": -232,
+        "rough_squarefree_count": 318740,
+        "omitted_squarefree_count": 19085,
+        "scaled_cost_intervals": {
+          "all": [
+            47722787274,
+            47723835850
+          ],
+          "rough": [
+            10034714129,
+            10035762705
+          ],
+          "rough_diagonal": [
+            58711914807,
+            58712963383
+          ],
+          "absolute": [
+            11016987338201966,
+            11016987339250542
+          ],
+          "depth_one": [
+            595649653140031,
+            595649654188607
+          ],
+          "kept": [
+            31029565099212,
+            31029566147788
+          ],
+          "deep": [
+            30348853654764,
+            30348854703340
+          ],
+          "deep_absolute": [
+            37756762246639,
+            37756763295215
+          ]
+        }
+      },
+      {
+        "H": 1572864,
+        "depth": 3,
+        "primorial": 385,
+        "rough_signed_increment": 73,
+        "rough_squarefree_count": 478083,
+        "omitted_squarefree_count": 31339,
+        "scaled_cost_intervals": {
+          "all": [
+            21452650648,
+            21454223512
+          ],
+          "rough": [
+            5725368664,
+            5726941528
+          ],
+          "rough_diagonal": [
+            58706481231,
+            58708054095
+          ],
+          "absolute": [
+            16522830551639119,
+            16522830553211983
+          ],
+          "depth_one": [
+            843739082296813,
+            843739083869677
+          ],
+          "kept": [
+            52649794422709,
+            52649795995573
+          ],
+          "deep": [
+            53019971850796,
+            53019973423660
+          ],
+          "deep_absolute": [
+            68034355624613,
+            68034357197477
+          ]
+        }
+      }
+    ]
+  },
+  "outstanding": "An unconditional subpower estimate for the signed prices. No independent bare RH proof has been submitted."
+}

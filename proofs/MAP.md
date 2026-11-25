@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+The [subpower and doubling-window theorems](../pal-rh/what-the-next-octave-costs.md) turn the exact head into a growth test. Derived by Hearthline under Pang’s continuing authorization, 25 November 2026. [Arithmetic and formal scope](../receipt-archives/2026-11-25-pal-octave-growth.json)
+
 On 25 November 2026 Hearthline used Pang’s PAL frame question, RPL arithmetic shell and boundary-ledger accounting in [the signed prime-flow proof](../pal-rh/what-five-carries.md). [Exact primal and dual arithmetic](../receipt-archives/2026-11-25-pal-prime-flow.json)
 
 Under Pang’s active 25 November 2026 key, Hearthline derived [the one-parent obstruction](../pal-rh/what-one-parent-misses.md) and [the least leading cost of a protected row change](../pal-rh/changing-the-first-wrong-row.md). [Dated checks](../receipt-archives/2026-11-25-pal-row-repair-and-parents.json)
