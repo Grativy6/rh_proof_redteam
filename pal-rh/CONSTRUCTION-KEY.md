@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Current sign test.** Form the two square rescalings and recover the original with four signed readings. Prove a complete nonnegative list at arbitrarily large heads with arbitrarily many doublings per pass. One pass covers 23 doublings in the recorded experiment. A rate of 19 doublings at unbounded heads already has a specified consequence in (4a). [Paper derivation](how-many-square-passes-the-sign-needs.md) · [Exact rational condition](PALRH/SquareSignRows.lean)
+
 **Current ordinary-prime target.** For each fourth-power head compute the integer allowance for the retained quotient rows and sum its rational cost. Prove this total has arbitrarily late subpower checkpoints. Repeated powers, any fixed prime prefix and the stated range of older rows already have an unconditional allowance. [Prime calculation](what-the-ordinary-primes-still-owe.md) · [Exact declaration](PALRH/OrdinaryPrimeGrid.lean)
 
 **Signed-area target.** At each $J$ add $j$ times the positive, or the negative, part of the actual slope at $j^4$, for $j\le J$. Prove that for every positive integer $k$ there are arbitrarily late cuts where either rational sum raised to $k$ is at most $J$. Both sums must grow at least logarithmically. The physical readings expose the sign change and rule out the fixed-phase route to an upper bound. [Paper](what-the-two-signs-cost-together.md) · [Formal implication](PALRH/FourthAccounts.lean)

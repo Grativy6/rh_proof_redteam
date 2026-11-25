@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Two square rescalings make all 16,777,215 sampled half-row readings through side 8,388,608 positive in one pass. Four readings recover each original value, including the negatives. The paper derives how the number of doublings covered per pass would constrain the real parts of zeta zeros. [How to make and undo one pass](pal-rh/how-many-square-passes-the-sign-needs.md) · [Exact finite sign criterion](pal-rh/PALRH/SquareSignRows.lean)
+
 At side 13 the entire repeated-prime contribution is $\log(5)/325$. The general calculation pays for every repeated power and removes a growing small-prime range. At side 625 the resulting arithmetic test can start with six quotient rows. [What the ordinary primes still owe](pal-rh/what-the-ordinary-primes-still-owe.md) · [Formal checkpoint theorem](pal-rh/PALRH/OrdinaryPrimeGrid.lean)
 
 Two finite sums now count only the positive or only the negative fourth-power readings. Both have to grow at least logarithmically. Either may furnish an arbitrarily late small checkpoint, and the allowed sign can change. An elementary comparison places the entire weighted signed difference between 0 and 7 at every cutoff. [Derivation and first sign crossing](pal-rh/what-the-two-signs-cost-together.md) · [Exact conditional Lean theorem](pal-rh/PALRH/FourthAccounts.lean)

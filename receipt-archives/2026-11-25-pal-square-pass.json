@@ -1,0 +1,285 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active PAL v2.4 construction and his request to carry a layer and its trace forward, try the reverse, and show what each step earns.",
+  "parent_tree": "e522e0d7530a74b47e7092ff3b5f3ffb7f2d9b0f",
+  "sha256_sources": {
+    "pal-rh/PALRH/SquarePass.lean": "e06956f24b9897368191058ed67d6ebfeaa6d735ef5b3744bcd7f2d10efef2ba",
+    "pal-rh/PALRH/SquarePassBudget.lean": "50ead934e5e69efb24e2c61721742666368c52d3f1feed63343b419a8859bdd7",
+    "pal-rh/PALRH/SquareSignRows.lean": "b287892777ca6eb03d6d8918f83a7f1f713e53a3c842d33355e8d6e760d8a130",
+    "pal-rh/PALRH/OrdinaryPrimeGrid.lean": "3402502babe96ea2365da8a953edd30987897a54dd31828950f7ebb04147c68f",
+    "pal-rh/PALRH/FourthAccounts.lean": "65ce7b9e2361b50571a6e277d5ec52c285468ccfa87c7199c9cfd460c62636c0",
+    "pal-rh/PALRH/PositiveArea.lean": "f837f3e38317538969399a6c6996a075b6f71df0c60fad415026ec4af7258433",
+    "pal-rh/PALRH/RectangleBalance.lean": "2929e972c43261ef84f53ae6581d3e5eb5f93bc0795e1f03d57b0a8f492bc216",
+    "pal-rh/PALRH/SourceAllowance.lean": "1f6cd95fb1c6a5cd8e1501292ce99ad17782afb24c9b4e4aac06107c8d9634e4",
+    "pal-rh/PALRH/TaperedNewton.lean": "392ce3a707aaaef50f201b69a675ac69f4b34adbe85ab9a6fa022dff75b9199a",
+    "pal-rh/how-many-square-passes-the-sign-needs.md": "1dcfc7cf4e352719f2e810fb2e02b317d1ed3b20e2b68a0fd4e70748477a6e23",
+    "pal-rh/what-the-last-two-rows-carry.md": "b819029babe32dff7f27b21ee61af590c71524f436572c95c347e1e0239d0693",
+    "pal-rh/lakefile.toml": "366c47b85b712b34d5cdef761d59a159bfab93abd90e53c1f005d0d4ca0267eb",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "receipt-archives/check_pal_square_pass.py": "8cb587b038de192a62eaa3a1b810896f54008f204495a177dbf77125a9152119",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2"
+  },
+  "source_roles": {
+    "corpus": "Pang’s PAL carry and return question, RPL square scale, APCI same-input test, and earlier two-clock calculation motivated the reversible rescaling.",
+    "mathematical_inputs": [
+      "The actual project edge and the finite lower bound at a zeta zero from the signed-area paper.",
+      "Stone gives the nonlattice local limit mechanism. The paper derives the uniform two-clock calculation and treats the varying tilt directly.",
+      "Theorem 2.2, equations (21) and (23) of Lee and Leong (arXiv:2208.06141v5) supplies unconditional Mertens estimates. The paper transports those estimates to its positive interval. The live two-row paper now links to the exact version and equation."
+    ],
+    "links": [
+      "https://digicoll.lib.berkeley.edu/record/113081/files/math_s5_v2_p2_article-15.pdf",
+      "https://arxiv.org/html/2208.06141v5#S2.SS2"
+    ]
+  },
+  "formal_result": "SignCheckpoints implies stock Mathlib RiemannHypothesis. For each positive integer q and starting index B the premise supplies a later head 2^N, a positive pass count k with q*k <= N, and nonnegative signs for all 2^(N+1) explicit rational samples. Interpolation, area transport and the inverse are derived. The premise remains open.",
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3774
+  },
+  "module_kernel_replays": [
+    {
+      "module": "PALRH.SquarePass",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SquarePassBudget",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SquareSignRows",
+      "exit": 0,
+      "seconds": 10.8,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": {
+    "SquarePass": [
+      "PALRH.SquarePass.inverse",
+      "PALRH.SquarePass.window_shift"
+    ],
+    "SquarePassBudget": [
+      "PALRH.SquarePassBudget.seed_cap",
+      "PALRH.SquarePassBudget.recovered_size",
+      "PALRH.SquarePassBudget.amplitude",
+      "PALRH.SquarePassBudget.balance_bound",
+      "PALRH.SquarePassBudget.rh_of_real_passes"
+    ],
+    "SquareSignRows": [
+      "PALRH.SquareSignRows.edge_rows",
+      "PALRH.SquareSignRows.signs_between",
+      "PALRH.SquareSignRows.reading_cast",
+      "PALRH.SquareSignRows.rh_of_sign_checkpoints"
+    ]
+  },
+  "paper_results": [
+    "For sufficiently large k all rows with 1/2 < x <= 12^k exp(a k^(5/7)/(log(2+k))^(1/7)) are strictly positive for some absolute a > 0. The reading is zero through 1/2.",
+    "Under RH every fixed number of doublings per pass is attained uniformly throughout the interval for all sufficiently large k. The cofinal all-rates criterion is equivalent to RH on paper.",
+    "If a fixed rate can be attained at arbitrarily late heads, rate 19 would exclude zeros of real part at least 151/152, rate 23 at least 171/184, and rate 56 at least 3/4.",
+    "For each fixed k, a zero of real part beta > 1/2 would force at least c(rho,k) H^(2 beta - 1) negative half-rows at every sufficiently large integer head. Subpower counts of exceptions suffice along sublinear-pass heads."
+  ],
+  "arithmetic": {
+    "command": [
+      "python",
+      "-B",
+      "receipt-archives/check_pal_square_pass.py"
+    ],
+    "independent_runs": 2,
+    "identical_stdout_sha256": "5990835983015fcf32c8bb441113443a237dcf445070012dc909c37472af1945",
+    "sample_enclosure": "Directed integer arithmetic at denominator 10^23. Counts start at side 1. Direct coefficient sums check the first sign change and the last row. All 320 half-rows from side 1/2 through 160 are tested under three successive inverses. Four separately bounded positive readings at the first large sign change recover a negative value.",
+    "results": {
+      "head": 8388608,
+      "rounding_denominator": 1e+23,
+      "independent_inverse_checks": [
+        {
+          "passes": 1,
+          "half_rows": 320
+        },
+        {
+          "passes": 2,
+          "half_rows": 320
+        },
+        {
+          "passes": 3,
+          "half_rows": 320
+        }
+      ],
+      "first_crossing_recovery": {
+        "twice_side": 13027865,
+        "four_positive_readings": [
+          {
+            "side": "13027865/2",
+            "coefficient": "1",
+            "lower": "1650048806576047624683/100000000000000000000000",
+            "upper": "1650048806576053564673/100000000000000000000000"
+          },
+          {
+            "side": "13027865/8",
+            "coefficient": "-1/2",
+            "lower": "2969889085865237313333/100000000000000000000000",
+            "upper": "2969889085865238798323/100000000000000000000000"
+          },
+          {
+            "side": "13027865/18",
+            "coefficient": "-1/3",
+            "lower": "522843918212284897659/12500000000000000000000",
+            "upper": "2091375672849139920633/50000000000000000000000"
+          },
+          {
+            "side": "13027865/72",
+            "coefficient": "1/6",
+            "lower": "7374877107197247135777/100000000000000000000000",
+            "upper": "7374877107197247300773/100000000000000000000000"
+          }
+        ],
+        "recovered_lower": "-389790532271/100000000000000000000000",
+        "recovered_upper": "-584675403433/150000000000000000000000"
+      },
+      "actual_readouts": {
+        "original": {
+          "half_rows_from_one": 16777215,
+          "strictly_positive": 15695784,
+          "strictly_negative": 1081431,
+          "unresolved_intervals": 0,
+          "first_negative_twice_side": 13027865,
+          "minimum_lower": "-90140808247521963/100000000000000000000000",
+          "twice_side_of_minimum_lower": 13494187,
+          "selected_twice_sides": {
+            "13027864": [
+              "46019578599/25000000000000000000000",
+              "18408482353/10000000000000000000000"
+            ],
+            "13027865": [
+              "-77958064697/20000000000000000000000",
+              "-7795676287/2000000000000000000000"
+            ],
+            "13027866": [
+              "-60302328007/6250000000000000000000",
+              "-964830738977/100000000000000000000000"
+            ],
+            "13530402": [
+              "-17153155604605593/20000000000000000000000",
+              "-85765778016267743/100000000000000000000000"
+            ],
+            "16777216": [
+              "669272575260178889/100000000000000000000000",
+              "334636287634280971/50000000000000000000000"
+            ]
+          }
+        },
+        "four_only": {
+          "half_rows_from_one": 16777215,
+          "strictly_positive": 16777215,
+          "strictly_negative": 0,
+          "unresolved_intervals": 0,
+          "first_negative_twice_side": null,
+          "minimum_lower": "220874090442628902741/100000000000000000000000",
+          "twice_side_of_minimum_lower": 16777216,
+          "selected_twice_sides": {
+            "13027864": [
+              "255798370138968312131/100000000000000000000000",
+              "255798370138974826059/100000000000000000000000"
+            ],
+            "13027865": [
+              "51159671601990832979/20000000000000000000000",
+              "31974794751245084853/12500000000000000000000"
+            ],
+            "13027866": [
+              "31974793234970438103/12500000000000000000000",
+              "255798345879770018753/100000000000000000000000"
+            ],
+            "13530402": [
+              "6245079243952415881/2500000000000000000000",
+              "249803169758103400437/100000000000000000000000"
+            ],
+            "16777216": [
+              "220874090442628902741/100000000000000000000000",
+              "44174818088527458269/20000000000000000000000"
+            ]
+          }
+        },
+        "nine_only": {
+          "half_rows_from_one": 16777215,
+          "strictly_positive": 16777215,
+          "strictly_negative": 0,
+          "unresolved_intervals": 0,
+          "first_negative_twice_side": null,
+          "minimum_lower": "18513907789333710459/12500000000000000000000",
+          "twice_side_of_minimum_lower": 16777216,
+          "selected_twice_sides": {
+            "13027864": [
+              "33020854170545344391/20000000000000000000000",
+              "82552135426366617909/50000000000000000000000"
+            ],
+            "13027865": [
+              "82552131821714155071/50000000000000000000000",
+              "82552131821717412003/50000000000000000000000"
+            ],
+            "13027866": [
+              "82552128216476315117/50000000000000000000000",
+              "82552128216479572049/50000000000000000000000"
+            ],
+            "13530402": [
+              "161710590735135244929/100000000000000000000000",
+              "161710590735142010061/100000000000000000000000"
+            ],
+            "16777216": [
+              "18513907789333710459/12500000000000000000000",
+              "148111262314678072211/100000000000000000000000"
+            ]
+          }
+        },
+        "one_complete_pass": {
+          "half_rows_from_one": 16777215,
+          "strictly_positive": 16777215,
+          "strictly_negative": 0,
+          "unresolved_intervals": 0,
+          "first_negative_twice_side": null,
+          "minimum_lower": "295636965338675555779/20000000000000000000000",
+          "twice_side_of_minimum_lower": 16777216,
+          "selected_twice_sides": {
+            "13027864": [
+              "1650048862692622846299/100000000000000000000000",
+              "412512215673157340057/25000000000000000000000"
+            ],
+            "13027865": [
+              "825024403288023668381/50000000000000000000000",
+              "412512201644013462673/25000000000000000000000"
+            ],
+            "13027866": [
+              "1650048750458302067233/100000000000000000000000",
+              "1650048750458308581163/100000000000000000000000"
+            ],
+            "13530402": [
+              "3244821314270256461/200000000000000000000",
+              "811205328567567497849/50000000000000000000000"
+            ],
+            "16777216": [
+              "295636965338675555779/20000000000000000000000",
+              "591273930677354467/40000000000000000000"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "open": "Prove arbitrarily many doublings per pass at arbitrarily large heads or the stated weaker bound on the number of negative rows. The experimental 23-doubling head is finite. The extra unconditional margin in the exponent remains sublinear. The independent bare RH goal is still open."
+}

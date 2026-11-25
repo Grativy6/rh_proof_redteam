@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[A finite sign condition and the exact four-row inverse](../pal-rh/how-many-square-passes-the-sign-needs.md). Hearthline derived the sign transfer and its unconditional range under Pang’s 25 November 2026 construction key. [Source roles, exact inequalities and counts](../receipt-archives/2026-11-25-pal-square-pass.json)
+
 [Prime powers, ordinary primes and retained grid rows](../pal-rh/what-the-ordinary-primes-still-owe.md). Hearthline derived the same-frame allowances and the conditional implication under Pang’s active 25 November 2026 research key. [Rational calculations and formal scope](../receipt-archives/2026-11-25-pal-prime-renewal.json)
 
 [Two signed areas, one finite arithmetic test](../pal-rh/what-the-two-signs-cost-together.md). Under Pang’s active 25 November 2026 key, Hearthline derived the bounded signed difference, the all-cutoff zero bill and the matching formal conditional theorem. [Arithmetic and reproduction](../receipt-archives/2026-11-25-pal-signed-areas.json)

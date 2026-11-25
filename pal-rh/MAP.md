@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [How many square passes the sign needs](how-many-square-passes-the-sign-needs.md) · [Finite rational statement](PALRH/SquareSignRows.lean) | Four readings undo the pass. One pass clears 23 doublings in the experiment. Positivity through $12^k$ plus a growing margin is proved on paper for sufficiently many passes. |
 | [What the ordinary primes still owe](what-the-ordinary-primes-still-owe.md) · [Certified quotient grid](PALRH/OrdinaryPrimeGrid.lean) | Repeated powers and small primes have an unconditional joint allowance. A cofinal small cost for the retained ordinary-prime comparisons suffices for RH. |
 | [What the two signs cost together](what-the-two-signs-cost-together.md) · [Finite checkpoints](PALRH/FourthAccounts.lean) | The signed balance stays below 7 on every finite interval. Each zero forces an all-cutoff bill. Either sparse rational account can pay for a checkpoint. Both accounts grow at least logarithmically. |
 | [What the last two rows carry](what-the-last-two-rows-carry.md) · [One-step arithmetic](PALRH/CarriedEdge.lean) | The final row difference recovers the carried slope. It changes sign infinitely often on the fourth-power samples themselves. A one-sided envelope at every fourth power is sufficient. The curvature bound prices the unsampled integer frames. |
@@ -37,6 +38,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+Prove that a complete nonnegative list can cover arbitrarily many doublings per pass at arbitrarily large heads. Even 19 doublings per pass cofinally would have an explicit consequence for zeta zeros. [Quantified criterion and intermediate rates](how-many-square-passes-the-sign-needs.md#a-finite-sign-test-at-growing-heads)
 
 Establish the size estimate for the retained ordinary-prime comparisons on arbitrarily late quotient grids. The discarded rows, including every repeated prime power, have a separate bound. [Finite conditions and numerical examples](what-the-ordinary-primes-still-owe.md#a-finite-test-that-stays-on-the-original-quotient-grid)
 

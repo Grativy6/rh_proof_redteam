@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[How many square passes the sign needs](../pal-rh/how-many-square-passes-the-sign-needs.md) gives an exact four-row inverse and proves positivity through a growing interval. In the finite experiment all the original negative readings can be recovered from the transformed positive ones.
+
 [What the ordinary primes still owe](../pal-rh/what-the-ordinary-primes-still-owe.md) derives the logarithmic update, exposes its first repeated visit at 25, and prices the discarded part before applying the signed-area criterion.
 
 [What the two signs cost together](../pal-rh/what-the-two-signs-cost-together.md) gives an exact finite comparison on Pang’s two-row reading, proves both accounts grow, and locates the exact cofinal upper test.
