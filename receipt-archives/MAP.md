@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [A genuine zero on a supported orbit](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) · [Exact symmetry at a ramified prime](2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md) | Proves the shortest-lift bound in the actual $E_8$ slot, constructs a zero over a finite local field and compares its weight with the surviving minimum. Hearthline under Chris Pang’s request for independent proofs, 24 November 2026. |
+| [The determinant inside the cancelled sum](2026-11-24-the-determinant-inside-the-disappearing-sum.md) · [Two-digit rank](2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) · [Replay](check_theta_orbit_and_digits.py) | Locates the first unpaired point and proves how many directions remain visible in the genuine fine table. Same authorization and date. |
 | [Genuine theta terms](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Exact coefficients](check_e8_theta_refinement.py) · [Compatible class sums](2026-11-24-what-compatible-theta-sums-recover.md) | Tracks two changed leading residues through the next projection and the same-level product calculation. Hearthline under Chris Pang’s lattice request, 24 November 2026. |
 | [Ramification and divisors](2026-11-24-the-ramification-cost-in-divisor-descent.md) · [Singular and proper fibre tests](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md) · [Exact cutoffs](check_theta_descent_bounds.py) | Tests the quantifiers for a base germ on arithmetic surfaces and derives local separation by algebraic probes. Same authorization and date. |
 | [Golden angle and the lattice unit](2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) · [Exact replay](check_golden_carry.py) | Traces both roots of the golden-ratio polynomial, two readings after lattice refinement, and the half-angle sign. Hearthline under Chris Pang’s 24 November question. |
@@ -110,6 +112,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [actual support hypothesis](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md#unresolved) is stronger than membership in the tested congruence orbit. Its global source remains open. The explicit local example has a unique reference minimum.
 
 The [geometric refinement](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md#unresolved) changes both leading digits. The [proper-fibre check](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md#unresolved) identifies the simultaneous bound that a global base germ must still supply.
 

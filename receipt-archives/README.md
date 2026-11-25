@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Test an exact theta zero and the two-digit rank
+
+Run `python -B check_theta_orbit_and_digits.py` here. It uses the Python standard library and the existing `check_e8_theta_refinement.py` in this directory. The script checks the orbit matrix, energy bounds, first unmatched shell, 28-dimensional residue calculation and integer determinant $-3456$. The [paper proof of the exact zero](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) gives the convergent series and Hensel estimate. [Four entries](2026-11-24-the-determinant-inside-the-disappearing-sum.md) · [Rank proof and determinant certificate](2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) · [Wild and prime-to-$p$ symmetries](2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md)
+
 ### Refine two genuine theta coefficients
 
 Run `python -B check_e8_theta_refinement.py` here for the 240 roots, tied minima, finite-field residues and second binary digit. Run `python -B check_theta_descent_bounds.py` for the short labels, compatible tables, singular surface and blowup tests. Both use the Python standard library. [Theta series](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Field of values](2026-11-24-what-compatible-theta-sums-recover.md) · [Ramification cost](2026-11-24-the-ramification-cost-in-divisor-descent.md) · [Which traits detect a divisor](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md)
