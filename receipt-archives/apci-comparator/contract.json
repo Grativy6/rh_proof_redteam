@@ -1,0 +1,77 @@
+{
+  "claim_id": "APCI_COMPARATOR_FIXED_STATEMENT_2026_11_25",
+  "mathematics": {
+    "assertion_tested": "For ten specified challenge/solution pairs, the shipped Lean 4.36.0 comparison and axiom checks distinguish fixed APCI or RH targets from changed definitions, added premises and unpermitted assumptions; three allowed controls pass those component checks. Direct kernel checks validate the permitted solution exports and the Boolean non-recoverability control.",
+    "coefficient_domain": "Exact Lean propositions and functions on Bool and Unit; the official Mathlib v4.36.0 RiemannHypothesis definition",
+    "conventions": "Separate Lean module environments for challenge and solution; standard permitted axiom names propext, Quot.sound, Classical.choice; only explicitly configured definition holes may vary.",
+    "inputs": [
+      "Seven Bool/Unit APCI challenge pairs",
+      "Three original RH answer-slot challenge pairs",
+      "A proof that a constant Bool-to-Unit trace cannot decode the identity answer"
+    ],
+    "bounds": {
+      "core_cases": 7,
+      "rh_cases": 3,
+      "boolean_worlds": 2
+    },
+    "non_claims": [
+      "Does not prove or disprove RH.",
+      "Does not prove universal Comparator correctness.",
+      "Direct component and kernel runs are not sandboxed Comparator acceptance.",
+      "An environment failure is not a mathematical rejection.",
+      "Mathlib cache and the official Lean distribution are trusted build inputs, pinned here; the entire cache source closure is not rebuilt."
+    ]
+  },
+  "execution_artifacts": [
+    "receipt-archives/apci-comparator/CompareExports.lean",
+    "receipt-archives/apci-comparator/core/APCI.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAddedPremise.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAnswerHole.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/ChallengeExtraAxiom.lean",
+    "receipt-archives/apci-comparator/core/ChallengePositive.lean",
+    "receipt-archives/apci-comparator/core/ChallengeSorry.lean",
+    "receipt-archives/apci-comparator/core/ChallengeWrappedAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/MathematicalControl.lean",
+    "receipt-archives/apci-comparator/core/SolutionAddedPremise.lean",
+    "receipt-archives/apci-comparator/core/SolutionAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/SolutionExtraAxiom.lean",
+    "receipt-archives/apci-comparator/core/SolutionPositive.lean",
+    "receipt-archives/apci-comparator/core/SolutionSorry.lean",
+    "receipt-archives/apci-comparator/core/SolutionWrappedAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/cases.json",
+    "receipt-archives/apci-comparator/lakefile.toml",
+    "receipt-archives/apci-comparator/lean-toolchain",
+    "receipt-archives/apci-comparator/rh/Bare.json",
+    "receipt-archives/apci-comparator/rh/ChallengeBare.lean",
+    "receipt-archives/apci-comparator/rh/ChallengeHole.lean",
+    "receipt-archives/apci-comparator/rh/ChallengeTrue.lean",
+    "receipt-archives/apci-comparator/rh/Hole.json",
+    "receipt-archives/apci-comparator/rh/Solution.lean",
+    "receipt-archives/apci-comparator/rh/True.json",
+    "receipt-archives/apci-comparator/run.py"
+  ],
+  "software": [
+    {
+      "name": "Lean/Lake",
+      "version": "4.36.0; commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9"
+    },
+    {
+      "name": "Mathlib",
+      "version": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842"
+    },
+    {
+      "name": "nanoda_bin",
+      "version": "0.4.17, bundled with Lean 4.36.0"
+    },
+    {
+      "name": "experiment Python",
+      "version": "3.12.14"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

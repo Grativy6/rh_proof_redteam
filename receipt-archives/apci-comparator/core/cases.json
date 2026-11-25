@@ -1,0 +1,61 @@
+[
+  {
+    "id": "positive",
+    "challenge_module": "ChallengePositive",
+    "solution_module": "SolutionPositive",
+    "expected": "accepted",
+    "expected_stage": "none",
+    "assertion_tested": "The same constant trace and constant answer admit the exhibited decoder on both sides."
+  },
+  {
+    "id": "answer-swap",
+    "challenge_module": "ChallengeAnswerSwap",
+    "solution_module": "SolutionAnswerSwap",
+    "expected": "rejected",
+    "expected_stage": "comparison",
+    "assertion_tested": "The target claim has unchanged name and type expression but answer changes from identity to constant false."
+  },
+  {
+    "id": "wrapped-answer-swap",
+    "challenge_module": "ChallengeWrappedAnswerSwap",
+    "solution_module": "SolutionWrappedAnswerSwap",
+    "expected": "rejected",
+    "expected_stage": "comparison",
+    "assertion_tested": "The same answer change sits one definition below an unchanged Target wrapper and claim : Target."
+  },
+  {
+    "id": "added-premise",
+    "challenge_module": "ChallengeAddedPremise",
+    "solution_module": "SolutionAddedPremise",
+    "expected": "rejected",
+    "expected_stage": "comparison",
+    "assertion_tested": "A supplied premise is not an unconditional certificate of the fixed impossible target."
+  },
+  {
+    "id": "extra-axiom",
+    "challenge_module": "ChallengeExtraAxiom",
+    "solution_module": "SolutionExtraAxiom",
+    "expected": "rejected",
+    "expected_stage": "axioms",
+    "assertion_tested": "A matching target proved from assumedCertificate uses an unpermitted axiom."
+  },
+  {
+    "id": "sorry",
+    "challenge_module": "ChallengeSorry",
+    "solution_module": "SolutionSorry",
+    "expected": "rejected",
+    "expected_stage": "axioms",
+    "assertion_tested": "A matching target with a sorry proof depends on the unpermitted sorryAx."
+  },
+  {
+    "id": "answer-hole",
+    "challenge_module": "ChallengeAnswerHole",
+    "solution_module": "SolutionAnswerSwap",
+    "definition_names": [
+      "answer"
+    ],
+    "expected": "accepted",
+    "expected_stage": "none",
+    "assertion_tested": "An explicitly authorized answer definition hole may be filled by the constant-false function; the identity-answer requirement has been removed."
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "challenge_module": "ChallengeBare",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "claim"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

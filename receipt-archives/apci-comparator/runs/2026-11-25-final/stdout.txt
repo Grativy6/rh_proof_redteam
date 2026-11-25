@@ -1,0 +1,10 @@
+positive: blocked-sandbox; component exit 0
+answer-swap: rejected-comparison; component exit 1
+wrapped-answer-swap: rejected-comparison; component exit 1
+added-premise: rejected-comparison; component exit 1
+extra-axiom: rejected-axioms; component exit 1
+sorry: rejected-axioms; component exit 1
+answer-hole: blocked-sandbox; component exit 0
+rh-hole: blocked-sandbox; component exit 0
+rh-true: rejected-comparison; component exit 1
+rh-bare: rejected-comparison; component exit 1

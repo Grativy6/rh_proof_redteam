@@ -1,0 +1,2 @@
+ChallengeAnswerHole.lean:6:4: warning: declaration uses `sorry`
+ChallengeAnswerHole.lean:10:8: warning: declaration uses `sorry`
