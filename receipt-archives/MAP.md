@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Strict successors on both actual targets](2026-11-25-pal-strict-successor.json) · [Paper argument](../pal-rh/every-fit-has-a-successor.md) | 25 November 2026. Under Pang’s active key Hearthline proved the existence of legal strict improvements and the positive floors for two wrong protected rows. |
 | [One-tick construction stage](2026-11-25-pal-first-tick-stage.md) · [Numerical and native outcomes](2026-11-25-pal-first-tick-results.json) | 25 November 2026. Hearthline followed Pang’s request to move upward by actual earned claims: a dyadic reconstruction, a directional sieve obstruction, and signed prime-clock updates on the true error. |
 | [PAL construction stage](2026-11-25-pal-construction-replay.md) · [Corpus source inventory](2026-11-25-pal-construction-corpus.json) | 25 November 2026. Under Pang's activated whole-corpus key, Hearthline derived the frame, gain and sharp reopening results and exercised the independent fixed targets. |
 | [Prime phases and the rational distance](2026-11-25-pal-rh-rational-distance.md) · [Integer replay](check_pal_residue_distance.py) | 25 November 2026. Hearthline, at Pang’s request, combined exact prime turns and checked a witness for the constructive RH branch. |

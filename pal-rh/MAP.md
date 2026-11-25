@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Every fit has a better successor](every-fit-has-a-successor.md) · [Lean](PALRH/Productive.lean) | A legal move can preserve any finite head and lower true loss from every constant-target fit and every nonzero first-tick fit. Freezing the wrong row allows endless strict gains above an explicit positive floor. |
 | [One tick to every scale](one-tick.md) · [Lean](PALRH/OneTick.lean) | The first-tick approximation is equivalent to the original finite certificates. A finite rational fit transports backward across the mandatory modulus-four threshold. |
 | [Turning the sieve both ways](reversing-the-sieve.md) · [Lean](PALRH/Sieve.lean) | The ordinary sieve localizes the tick at full squared error at most 1/(B+1). Exact finite forward representation fails. Reflection plus independent arithmetic transport suffices; an explicit legal perfect-prefix repair has a fixed reset loss. |
 | [Nearby forward clocks](close-clocks.md) · [Lean](PALRH/CloseClocks.lean) · [Paired numerical test](../receipt-archives/check_pal_close_clocks.py) | The agreed and disagreed rows, their harmonic costs, and a uniform remainder are explicit. The two clocks recover the signed sieve edge on the measured bands. Changing the receiving target required refitting the coefficients. |

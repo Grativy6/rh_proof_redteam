@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "scope": "Independent PAL construction under Pang’s active whole-corpus key. Work on the constant target and the first tick.",
+  "parent_tree": "71251780945e5936a50af14bbf32a3cd4ad371e7",
+  "sources": {
+    "pal-rh/PALRH/Productive.lean": "d7132727d8b8c210c8366ad9f47c25ad1692935b9397ce7dc4acce7772acfc5e",
+    "pal-rh/every-fit-has-a-successor.md": "118985305ceafc91f42efdea7d7095526f10afab94b35c036b292ffe0c84403b",
+    "pal-rh/lakefile.toml": "1d2c1e9f982e6ebeddd54b720dc0198b8b2a359c8d8ac0f5119ba51b78c45175",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "ordinary_build": {
+    "command": "cd pal-rh && lake build",
+    "exit": 0,
+    "jobs_including_replays": 3720
+  },
+  "kernel": {
+    "command": "cd pal-rh && lake env leanchecker PALRH.Productive",
+    "result": [
+      {
+        "module": "PALRH.Productive",
+        "exit": 0,
+        "seconds": 10.2,
+        "output": ""
+      }
+    ]
+  },
+  "axioms_from_build": {
+    "declarations": [
+      "tick_strict_successor",
+      "stalled_third_row",
+      "strict_successor",
+      "stalled_first_row"
+    ],
+    "namespace": "PALRH.OneTick",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "mathematical_boundary": "Every individual finite fit has another strictly improving legal successor on the constant target. The first-tick version requires a nonzero starting fit. A wrong protected row can keep the squared loss at least 1/2 or 1/12. Uniform arbitrary-tolerance construction remains open."
+}
