@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/check_pal_prime_renewal.py` to reconstruct both orders of the simple-prime calculation and the exact finite-grid prices. [Results and limits](2026-11-25-pal-prime-renewal.json) · [Mathematical account](../pal-rh/what-the-ordinary-primes-still-owe.md)
+
 Run `python -B receipt-archives/check_pal_signed_areas.py` for the first integer sign reversal, both cumulative costs, the two independent integrals and the complex phase test. [Stage results](2026-11-25-pal-signed-areas.json) · [Derivation](../pal-rh/what-the-two-signs-cost-together.md)
 
 For the independently posed conditional theorem, build the pinned project, run `python -B receipt-archives/export_pal_check.py fourths /path/to/exports`, then run Lake Comparator with `pal-rh/checks/fourths/compare.json` and the generated `fourths-challenge.ndjson` and `fourths-solution.ndjson`. The [stock-only reference](../pal-rh/checks/fourths/FourthChallenge.lean) spells out the rational data. The [solution](../pal-rh/checks/fourths/FourthSolution.lean) proves its price agrees with the branch’s original frame.

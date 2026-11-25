@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What the ordinary primes still owe](../pal-rh/what-the-ordinary-primes-still-owe.md) derives the logarithmic update, exposes its first repeated visit at 25, and prices the discarded part before applying the signed-area criterion.
+
 [What the two signs cost together](../pal-rh/what-the-two-signs-cost-together.md) gives an exact finite comparison on Pang’s two-row reading, proves both accounts grow, and locates the exact cofinal upper test.
 
 [What the last two rows carry](../pal-rh/what-the-last-two-rows-carry.md) proves that the construction’s boundary reading must take both signs infinitely often on fourth-power frames, and gives a sufficient one-sided bound on fourth powers.

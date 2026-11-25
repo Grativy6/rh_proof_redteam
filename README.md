@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+At side 13 the entire repeated-prime contribution is $\log(5)/325$. The general calculation pays for every repeated power and removes a growing small-prime range. At side 625 the resulting arithmetic test can start with six quotient rows. [What the ordinary primes still owe](pal-rh/what-the-ordinary-primes-still-owe.md) · [Formal checkpoint theorem](pal-rh/PALRH/OrdinaryPrimeGrid.lean)
+
 Two finite sums now count only the positive or only the negative fourth-power readings. Both have to grow at least logarithmically. Either may furnish an arbitrarily late small checkpoint, and the allowed sign can change. An elementary comparison places the entire weighted signed difference between 0 and 7 at every cutoff. [Derivation and first sign crossing](pal-rh/what-the-two-signs-cost-together.md) · [Exact conditional Lean theorem](pal-rh/PALRH/FourthAccounts.lean)
 
 In a frame of side $H$, the difference between its last two row errors is exactly twice the number it carried forward. That reading takes both signs infinitely often on fourth-power frames. A one-sided size law at fourth-power frames would imply RH. [Read the two-row proof](pal-rh/what-the-last-two-rows-carry.md)

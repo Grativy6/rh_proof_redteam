@@ -1,0 +1,395 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent PAL v2.4 construction and his instruction to move upward by what each actual arithmetic step earns.",
+  "parent_tree": "dc5555659c141651765511cc9af77bc4afa32502",
+  "source_roles": "RPL motivates the square and repeat distinction. BLA and DARK motivate transferring the paid part and pricing the remaining response on the identical input. The paper uses the classical von Mangoldt and Chebyshev identities, the preceding signed-area proof, and the explicit old-frame data.",
+  "sha256_sources": {
+    "pal-rh/PALRH/PrimeRenewal.lean": "5e71abf22a1e0eec3b617417c5bcc0b00404e953cdcd4df925428d52b2e2ccaf",
+    "pal-rh/PALRH/RepeatAllowance.lean": "9806d1afcf553e27fe74683e6acfbc0f35447faf51e4490cab4c3f68554512f8",
+    "pal-rh/PALRH/OrdinaryPrimeGrid.lean": "3402502babe96ea2365da8a953edd30987897a54dd31828950f7ebb04147c68f",
+    "pal-rh/PALRH/FourthAccounts.lean": "65ce7b9e2361b50571a6e277d5ec52c285468ccfa87c7199c9cfd460c62636c0",
+    "pal-rh/PALRH/RectangleBalance.lean": "2929e972c43261ef84f53ae6581d3e5eb5f93bc0795e1f03d57b0a8f492bc216",
+    "pal-rh/what-the-ordinary-primes-still-owe.md": "9b8e21a2042e9cdf6f268fe77ad9192d1e56dd90bd426808ec926e33f465b881",
+    "pal-rh/lakefile.toml": "c74b26e04c423853b7b7dac4ef624c2e037c16bd5812637b67c38331eebfa1ef",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "receipt-archives/check_pal_prime_renewal.py": "ce38c1b0edd4dcd571aa975d902db32e321153bee5db6c7b010c3cb6693d768b",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3771
+  },
+  "module_kernel_replays": [
+    {
+      "module": "PALRH.PrimeRenewal",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RepeatAllowance",
+      "exit": 0,
+      "seconds": 12.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OrdinaryPrimeGrid",
+      "exit": 0,
+      "seconds": 10.7,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": {
+    "PrimeRenewal": [
+      "PALRH.PrimeRenewal.log_marks",
+      "PALRH.PrimeRenewal.finite_log_renewal",
+      "PALRH.PrimeRenewal.exterior_term",
+      "PALRH.PrimeRenewal.prime_charge",
+      "PALRH.PrimeRenewal.earlier_cut",
+      "PALRH.PrimeRenewal.root_prime_budget",
+      "PALRH.PrimeRenewal.prime_harmonic_budget",
+      "PALRH.PrimeRenewal.square_multiplier_budget"
+    ],
+    "RepeatAllowance": [
+      "PALRH.RepeatAllowance.repeated_budget"
+    ],
+    "OrdinaryPrimeGrid": [
+      "PALRH.OrdinaryPrimeGrid.paid_identity",
+      "PALRH.OrdinaryPrimeGrid.parked_budget",
+      "PALRH.OrdinaryPrimeGrid.parked_transfer",
+      "PALRH.OrdinaryPrimeGrid.grid_funds_head",
+      "PALRH.OrdinaryPrimeGrid.account_funded",
+      "PALRH.OrdinaryPrimeGrid.rh_of_prime_checkpoints"
+    ]
+  },
+  "arithmetic": {
+    "command": [
+      "python",
+      "-B",
+      "receipt-archives/check_pal_prime_renewal.py"
+    ],
+    "runs": "Two full standard-library runs reproduced the same JSON. The exact logarithmic coefficients are independently assembled from the primes and from the older cofactor bands. Each nonzero price includes a row which fails the next smaller integer allowance.",
+    "results": {
+      "two_orders_of_the_sum": [
+        {
+          "side": "3/4",
+          "removed_through": "5",
+          "nonzero_repeat_terms": 0,
+          "paid_repeat_log_coefficients": {},
+          "large_prime_defect_enclosure": [
+            "0",
+            "0"
+          ],
+          "nonzero_log_and_rational_coordinates": 0,
+          "terminal_cofactor_enclosure": [
+            "144263549549662093/1000000000000000000",
+            "1442635495496621/10000000000000000"
+          ]
+        },
+        {
+          "side": "4",
+          "removed_through": "5",
+          "nonzero_repeat_terms": 0,
+          "paid_repeat_log_coefficients": {},
+          "large_prime_defect_enclosure": [
+            "120510467453781339/1000000000000000000",
+            "60255233726890677/500000000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 4,
+          "terminal_cofactor_enclosure": [
+            "37690941608542899/500000000000000000",
+            "15076376643417161/200000000000000000"
+          ]
+        },
+        {
+          "side": "10",
+          "removed_through": "5",
+          "nonzero_repeat_terms": 0,
+          "paid_repeat_log_coefficients": {},
+          "large_prime_defect_enclosure": [
+            "5020691982598681/12500000000000000",
+            "803310717215789/2000000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 7,
+          "terminal_cofactor_enclosure": [
+            "-13504657801291783/1000000000000000000",
+            "-13504657801291767/1000000000000000000"
+          ]
+        },
+        {
+          "side": "13",
+          "removed_through": "5",
+          "nonzero_repeat_terms": 1,
+          "paid_repeat_log_coefficients": {
+            "5": "1/325"
+          },
+          "large_prime_defect_enclosure": [
+            "417935519831019347/1000000000000000000",
+            "26120969989438711/62500000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 9,
+          "terminal_cofactor_enclosure": [
+            "31201836980831221/200000000000000000",
+            "156009184904156119/1000000000000000000"
+          ]
+        },
+        {
+          "side": "127/2",
+          "removed_through": "11",
+          "nonzero_repeat_terms": 4,
+          "paid_repeat_log_coefficients": {
+            "5": "1/25",
+            "7": "1/49",
+            "11": "12/15367"
+          },
+          "large_prime_defect_enclosure": [
+            "35959776592190479/125000000000000000",
+            "143839106368761989/500000000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 31,
+          "terminal_cofactor_enclosure": [
+            "22013603804190239/1000000000000000000",
+            "22013603804190307/1000000000000000000"
+          ]
+        },
+        {
+          "side": "128",
+          "removed_through": "31",
+          "nonzero_repeat_terms": 5,
+          "paid_repeat_log_coefficients": {
+            "5": "163/4480",
+            "7": "629/31360",
+            "11": "1/121",
+            "13": "87/21632"
+          },
+          "large_prime_defect_enclosure": [
+            "101031448919828811/500000000000000000",
+            "202062897839657889/1000000000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 48,
+          "terminal_cofactor_enclosure": [
+            "458267201615583/25000000000000000",
+            "3666137612924693/200000000000000000"
+          ]
+        },
+        {
+          "side": "512",
+          "removed_through": "31",
+          "nonzero_repeat_terms": 12,
+          "paid_repeat_log_coefficients": {
+            "5": "15788983308523/791545401046400",
+            "7": "18453073/1448487040",
+            "11": "641/98560",
+            "13": "2381/432640",
+            "17": "1/289",
+            "19": "1/361",
+            "23": "495/270848",
+            "29": "183/430592",
+            "31": "63/492032"
+          },
+          "large_prime_defect_enclosure": [
+            "162873151996354557/1000000000000000000",
+            "81436575998177861/500000000000000000"
+          ],
+          "nonzero_log_and_rational_coordinates": 172,
+          "terminal_cofactor_enclosure": [
+            "21502570103490613/1000000000000000000",
+            "5375642525872797/250000000000000000"
+          ]
+        }
+      ],
+      "exact_integer_price_grids": [
+        {
+          "head": 1,
+          "removed_through": 5,
+          "quotient_rows": 2,
+          "denominator": 1,
+          "minimal_numerator": 0,
+          "price": "0",
+          "row_requiring_the_numerator": 1,
+          "cofactor_on_that_row": "1",
+          "minimum_retained_age": 1,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "0",
+          "trimmed_witness": "1"
+        },
+        {
+          "head": 1,
+          "removed_through": 31,
+          "quotient_rows": 2,
+          "denominator": 1,
+          "minimal_numerator": 0,
+          "price": "0",
+          "row_requiring_the_numerator": 1,
+          "cofactor_on_that_row": "1",
+          "minimum_retained_age": 1,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "0",
+          "trimmed_witness": "1"
+        },
+        {
+          "head": 4,
+          "removed_through": 5,
+          "quotient_rows": 8,
+          "denominator": 4,
+          "minimal_numerator": 4,
+          "price": "1",
+          "row_requiring_the_numerator": 1,
+          "cofactor_on_that_row": "4",
+          "minimum_retained_age": 4,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "1",
+          "trimmed_witness": "4"
+        },
+        {
+          "head": 4,
+          "removed_through": 31,
+          "quotient_rows": 8,
+          "denominator": 4,
+          "minimal_numerator": 5,
+          "price": "5/4",
+          "row_requiring_the_numerator": 1,
+          "cofactor_on_that_row": "4",
+          "minimum_retained_age": 4,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "5/4",
+          "trimmed_witness": "4"
+        },
+        {
+          "head": 16,
+          "removed_through": 5,
+          "quotient_rows": 32,
+          "denominator": 16,
+          "minimal_numerator": 24,
+          "price": "3/2",
+          "row_requiring_the_numerator": 3,
+          "cofactor_on_that_row": "16/3",
+          "minimum_retained_age": 16,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "21/16",
+          "trimmed_witness": "16"
+        },
+        {
+          "head": 16,
+          "removed_through": 31,
+          "quotient_rows": 32,
+          "denominator": 16,
+          "minimal_numerator": 37,
+          "price": "37/16",
+          "row_requiring_the_numerator": 1,
+          "cofactor_on_that_row": "16",
+          "minimum_retained_age": 16,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "37/16",
+          "trimmed_witness": "16"
+        },
+        {
+          "head": 81,
+          "removed_through": 5,
+          "quotient_rows": 162,
+          "denominator": 81,
+          "minimal_numerator": 129,
+          "price": "43/27",
+          "row_requiring_the_numerator": 8,
+          "cofactor_on_that_row": "81/8",
+          "minimum_retained_age": 49,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "10/9",
+          "trimmed_witness": "81"
+        },
+        {
+          "head": 81,
+          "removed_through": 31,
+          "quotient_rows": 162,
+          "denominator": 81,
+          "minimal_numerator": 253,
+          "price": "253/81",
+          "row_requiring_the_numerator": 3,
+          "cofactor_on_that_row": "27",
+          "minimum_retained_age": 49,
+          "remaining_rows_including_cut": 1,
+          "trimmed_price": "212/81",
+          "trimmed_witness": "81"
+        },
+        {
+          "head": 256,
+          "removed_through": 5,
+          "quotient_rows": 512,
+          "denominator": 256,
+          "minimal_numerator": 427,
+          "price": "427/256",
+          "row_requiring_the_numerator": 28,
+          "cofactor_on_that_row": "64/7",
+          "minimum_retained_age": 81,
+          "remaining_rows_including_cut": 3,
+          "trimmed_price": "305/256",
+          "trimmed_witness": "256/3"
+        },
+        {
+          "head": 256,
+          "removed_through": 31,
+          "quotient_rows": 512,
+          "denominator": 256,
+          "minimal_numerator": 816,
+          "price": "51/16",
+          "row_requiring_the_numerator": 7,
+          "cofactor_on_that_row": "256/7",
+          "minimum_retained_age": 81,
+          "remaining_rows_including_cut": 3,
+          "trimmed_price": "359/128",
+          "trimmed_witness": "256/3"
+        },
+        {
+          "head": 625,
+          "removed_through": 5,
+          "quotient_rows": 1250,
+          "denominator": 625,
+          "minimal_numerator": 1046,
+          "price": "1046/625",
+          "row_requiring_the_numerator": 69,
+          "cofactor_on_that_row": "625/69",
+          "minimum_retained_age": 100,
+          "remaining_rows_including_cut": 6,
+          "trimmed_price": "142/125",
+          "trimmed_witness": "625/6"
+        },
+        {
+          "head": 625,
+          "removed_through": 31,
+          "quotient_rows": 1250,
+          "denominator": 625,
+          "minimal_numerator": 1986,
+          "price": "1986/625",
+          "row_requiring_the_numerator": 17,
+          "cofactor_on_that_row": "625/17",
+          "minimum_retained_age": 100,
+          "remaining_rows_including_cut": 6,
+          "trimmed_price": "1682/625",
+          "trimmed_witness": "625/6"
+        }
+      ]
+    }
+  },
+  "formal_result": "PrimeCheckpoints R implies the unmodified Mathlib RiemannHypothesis. The hypothesis explicitly supplies cofinally small finite rational costs and valid bids on the retained grid. The proof caps the removed mass and transports old values on the same grid.",
+  "paper_result": [
+    "Critical maxima of the ordinary-prime discrepancy control the old maxima at every cutoff.",
+    "The accumulated discrepancy controls the actual signed-edge area with at most a two-thirds power of a logarithm of the side.",
+    "Both signs of a logarithmically amplified critical oscillation remain after any fixed cut at both ends."
+  ],
+  "open": "Establish the required subpower growth of the retained comparisons for the actual integer inputs. The new native replays certify the conditional implication. The independent Comparator receipt on the prior signed-area implication remains separate."
+}
