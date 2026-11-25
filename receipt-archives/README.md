@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Test the ordinary flags at the moving primes
+
+Run `python -B check_moving_prime_flags.py` here. It checks both splitting types at $q$, the forced residue degree two at $d$, and the first differing local Frobenius digit. The [paper calculation](2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md) proves the count for every sufficiently late page and gives the hypothesis required for the global unlinking argument.
+
 ### Count the strict 577-classes across the dyadic tower
 
 Run `python -B fixed-character-577/dyadic_conductors.py` and `python -B fixed-character-577/dyadic_local_digits.py` here with NumPy. The first program compares direct CRT and periodic evaluations covering arbitrarily high conductors. The second prints the local readings for the 27 remaining character and twist pairs at two Jacobi primes. [Tower and source comparison](2026-11-24-one-strict-class-in-the-entire-real-dyadic-tower.md) · [Divisor and local proof](2026-11-24-which-of-the-27-class-group-directions-split.md)
