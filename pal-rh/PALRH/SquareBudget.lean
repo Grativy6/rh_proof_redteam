@@ -10,7 +10,8 @@ open OneTick _root_.PALRH.Balanced HeadGrowth
 def window (T f : ℕ → ℚ) (H : ℕ) : ℚ :=
   ∑ i ∈ Finset.range (H*H), (T (i+1)-f (i+1))^2/(((i:ℚ)+1)*(i+2))
 
-private lemma close_tail {T f : ℕ → ℚ} {A : ℝ} (H : ℕ)
+/-- A row-amplitude bound pays the complete tail beyond the square cutoff. -/
+theorem loss_le_square_window_add {T f : ℕ → ℚ} {A : ℝ} (H : ℕ)
     (amp : ∀ k : ℕ, |((T k-f k:ℚ):ℝ)|≤A*H) :
     loss T f≤(window T f H:ℝ)+A^2 := by
   let r := fun k : ℕ => ((T k-f k:ℚ):ℝ)
@@ -65,7 +66,7 @@ private theorem windows_subpower {T : ℕ → ℚ} (zero : T 0=0) (smallT : ∀ 
     have hh : (1:ℚ)≤H := by exact_mod_cast hH
     change |f k| ≤ _ at form
     exact_mod_cast (show |T k-f k|≤103*(H:ℚ) by linarith [smallT k])
-  have total := close_tail (A:=103) H residual
+  have total := loss_le_square_window_add (A:=103) H residual
   let P := (window T f H:ℝ)
   let L := ((H:ℝ)+1)^(α/2)
   have one : 1≤(H:ℝ)+1 := by linarith [Nat.cast_nonneg (α:=ℝ) H]

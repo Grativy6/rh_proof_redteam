@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/check_pal_tapered_newton.py` to reconstruct the balanced lists, price the first errors in both directions and enclose all-row and finite-square costs. [Results](2026-11-25-pal-tapered-newton.json) · [What the direction implies](../pal-rh/when-a-drop-would-count.md)
+
 [Averaged square replay](2026-11-25-pal-smoothed-square.json) uses `python -B receipt-archives/check_pal_smoothed_square.py`. It includes the physical values, the backward second difference, the same assigned signs, and five direct Gaussian comparisons. [Paper and proof scope](../pal-rh/averaging-the-square.md)
 
 The [square-boundary stage](2026-11-25-pal-square-boundary.json) uses `python -B receipt-archives/check_pal_core_squares.py` for the genuine Möbius values and `python -B receipt-archives/check_pal_boundary_packets.py` for the separate side-information counterexample. Both use the standard library. [Pencil-and-paper calculation](../pal-rh/the-signed-matrix-inside-a-square.md)

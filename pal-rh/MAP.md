@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [One list builds the next](the-balanced-newton-handoff.md) · [Direction of the error](when-a-drop-would-count.md) · [Lean](PALRH/TaperedNewton.lean) | The balanced list generates its own successor. Both all-row error and finite square-window error fall in the first three updates. A positive zero displacement would eventually force every such step upward. |
 | [Paying for the whole averaged square](averaging-the-square.md) · [Finite transfer and reversal](PALRH/Smoothed.lean) | Two averages bound the full centered matrix from genuine smaller-side walk measurements. The old discontinuity returns exactly when the averaging is reversed. A Gaussian criterion reduces the remaining spectral range to finitely many modes proportional to log H. |
 | [The signed matrix inside a square](the-signed-matrix-inside-a-square.md) · [Square identity](PALRH/CoreMatrix.lean) · [Outer funding](PALRH/OuterBlock.lean) | The rough Huxley–Watt form computes the square from side data. Signed exact boundary hits cancel at every nontrivial square. A lower estimate for a bounded kernel is sufficient on paper. The actual upper half is paid by one earlier octave. |
 | [How far prime depth travels](where-prime-depth-can-stop.md) · [Lean](PALRH/RoughSquares.lean) | A finite tuple cap pays for every omitted sign at each square. Subpower-times-side growth of the retained integer count implies bare RH. The half-depth threshold for absolute pruning is sharp at the power scale. |
@@ -33,6 +34,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+On the [prescribed successive squares](when-a-drop-would-count.md#a-finite-arithmetic-test-at-both-ends), prove that the finite rational cost increases by at most a bounded factor at arbitrarily late steps, or establish the stated subpower ratio. With the finite lists already supplied, the signed change in the physical measurement is the first open claim.
 
 The [averaged alternative](averaging-the-square.md#a-gaussian-alternative-with-only-a-short-spectral-range) keeps the earlier side, a whole-tail allowance and a one-sided RH-detecting target. Its remaining estimate concerns the signed high-side coefficients. The side bound used by the complete transfer still needs independent funding.
 

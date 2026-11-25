@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[One coefficient list earns the next square](../pal-rh/the-balanced-newton-handoff.md). An [error-exponent calculation](../pal-rh/when-a-drop-would-count.md) proves that infinitely many nonincreasing steps of its finite arithmetic test would imply RH. The first three steps decrease.
+
 [Averaging the square](../pal-rh/averaging-the-square.md) gives a different, still RH-sensitive target that pays the joint crossing, together with the exact cost of undoing the average.
 
 The [signed square calculation](../pal-rh/the-signed-matrix-inside-a-square.md) recovers a prime aggregate using only side coefficients, and the [fifth-boundary test](../pal-rh/what-the-fifth-boundary-needs.md) shows exactly why an old signed window cannot pay for every joint crossing on its own. [Corpus and classical source credit](PROVENANCE.md)

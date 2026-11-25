@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Balanced Newton passage](../pal-rh/the-balanced-newton-handoff.md) · [Detecting a zero through the direction of successive errors](../pal-rh/when-a-drop-would-count.md). Hearthline derived both results on 25 November 2026 under Pang’s constructive key. [Integer reproduction and formal scope](../receipt-archives/2026-11-25-pal-tapered-newton.json)
+
 [Averaging the square](../pal-rh/averaging-the-square.md) derives the full transfer and its exact reversal under Pang’s 25 November 2026 key. [Arithmetic and scope](../receipt-archives/2026-11-25-pal-smoothed-square.json)
 
 [Rough squares and prime depth](../pal-rh/where-prime-depth-can-stop.md) · [Signed matrix](../pal-rh/the-signed-matrix-inside-a-square.md) · [Boundary counterexample and opening price](../pal-rh/what-the-fifth-boundary-needs.md). Derived and tested by Hearthline under Pang’s active research key, 25 November 2026. [Finite evidence and kernel replay](../receipt-archives/2026-11-25-pal-square-boundary.json)

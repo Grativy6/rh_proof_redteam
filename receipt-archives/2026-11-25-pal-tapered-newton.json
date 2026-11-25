@@ -1,0 +1,222 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Christopher Daniel Pang authorized the active independent PAL construction and asked what a frame retains and can earn at its next scale.",
+  "parent_tree": "a39c43a52ceca6aa6661cb6087d4c616eca36390",
+  "source_credit": "PAL v2.4, RPL-T02, APCI and boundary-ledger accounting motivated the particular list and comparison. Dirichlet convolution, Newton inversion, Fourier and Mellin analysis, Balazard–Saias and the classical critical-line and distance estimates are identified in the papers. The upstream RH release provides the comparison target and pins.",
+  "sha256_sources": {
+    "pal-rh/PALRH/TaperedNewton.lean": "392ce3a707aaaef50f201b69a675ac69f4b34adbe85ab9a6fa022dff75b9199a",
+    "pal-rh/PALRH/SquareBudget.lean": "6f2ea24ae4be995cf8431276fe11e342215f794ede7dc47752e7bf94ba970936",
+    "pal-rh/the-balanced-newton-handoff.md": "97a9e5c19f75e550a45070923237a311df6fbc8dfdbb883f88bb878f87ec04c7",
+    "pal-rh/when-a-drop-would-count.md": "52ba0642d9db19e6d9056af4eb6e31399e1ac22c14a9d117d33b9ca9b0a041fc",
+    "pal-rh/lakefile.toml": "9f75192d4d325f8be50d3b5b97d59ea3da59cf90aca67a257598ef3848cf7de0",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "receipt-archives/check_pal_tapered_newton.py": "8f45c7a620133f1a7d9e6ce459e30749ee8f1d59020c3eb1a954e22b9cdd4d0b",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3737
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH.SquareBudget",
+      "exit": 0,
+      "seconds": 11.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.TaperedNewton",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": [
+    "PALRH.TaperedNewton.balanced",
+    "PALRH.TaperedNewton.unpaid_square",
+    "PALRH.TaperedNewton.rough_update",
+    "PALRH.TaperedNewton.mixed_update",
+    "PALRH.TaperedNewton.agrees_on_head",
+    "PALRH.TaperedNewton.rh_of_stable",
+    "PALRH.TaperedNewton.old_slope_cap",
+    "PALRH.TaperedNewton.slope_as_average",
+    "PALRH.TaperedNewton.coefficient_cap",
+    "PALRH.TaperedNewton.finite_square_cost",
+    "PALRH.TaperedNewton.eventually_rises"
+  ],
+  "independent_arithmetic": {
+    "command": [
+      "python",
+      "-B",
+      "receipt-archives/check_pal_tapered_newton.py"
+    ],
+    "dependencies": "Python standard library and the existing integer Moebius sieve. Two full executions produced identical JSON.",
+    "result": {
+      "pure_integer_handoffs": [
+        {
+          "old_heads": [
+            4,
+            4
+          ],
+          "renewed_head": 8,
+          "raw_coefficients_compared": 16
+        },
+        {
+          "old_heads": [
+            8,
+            8
+          ],
+          "renewed_head": 32,
+          "raw_coefficients_compared": 64
+        },
+        {
+          "old_heads": [
+            5,
+            10
+          ],
+          "renewed_head": 32,
+          "raw_coefficients_compared": 64
+        },
+        {
+          "old_heads": [
+            4,
+            13
+          ],
+          "renewed_head": 32,
+          "raw_coefficients_compared": 64
+        },
+        {
+          "old_heads": [
+            32,
+            32
+          ],
+          "renewed_head": 512,
+          "raw_coefficients_compared": 1024
+        },
+        {
+          "old_heads": [
+            512,
+            512
+          ],
+          "renewed_head": 131072,
+          "raw_coefficients_compared": 262144
+        }
+      ],
+      "first_possible_unpaid": [
+        {
+          "old_heads": [
+            4,
+            4
+          ],
+          "first_possible_row": 25,
+          "unpaid": "1849/3136"
+        },
+        {
+          "old_heads": [
+            5,
+            10
+          ],
+          "first_possible_row": 66,
+          "unpaid": "1977084/5143775"
+        },
+        {
+          "old_heads": [
+            8,
+            8
+          ],
+          "first_possible_row": 81,
+          "unpaid": "10602614961/25651225600"
+        }
+      ],
+      "all_row_squared_errors": [
+        {
+          "side": 4,
+          "maximum_modulus": 48,
+          "rows_in_head_sum": 50000,
+          "through_side_squared": [
+            "6973/6250",
+            "111569/100000"
+          ],
+          "lower": "59503/50000",
+          "upper": "4763/4000",
+          "tail_allowance_upper": "69/100000"
+        },
+        {
+          "side": 8,
+          "maximum_modulus": 96,
+          "rows_in_head_sum": 50000,
+          "through_side_squared": [
+            "89407/100000",
+            "2794/3125"
+          ],
+          "lower": "23091/25000",
+          "upper": "92507/100000",
+          "tail_allowance_upper": "143/100000"
+        },
+        {
+          "side": 32,
+          "maximum_modulus": 384,
+          "rows_in_head_sum": 131072,
+          "through_side_squared": [
+            "9697/20000",
+            "24243/50000"
+          ],
+          "lower": "24357/50000",
+          "upper": "48939/100000",
+          "tail_allowance_upper": "9/4000"
+        },
+        {
+          "side": 512,
+          "maximum_modulus": 6144,
+          "rows_in_head_sum": 2097152,
+          "through_side_squared": [
+            "1911/20000",
+            "2389/25000"
+          ],
+          "lower": "4781/50000",
+          "upper": "10873/100000",
+          "tail_allowance_upper": "131/10000"
+        }
+      ],
+      "seed_slope": "57/70",
+      "opposite_directions": {
+        "large_side": 6600000,
+        "small_side": 4,
+        "scale": 100000000000000000,
+        "outward_roundings": 4012305,
+        "slope_bounds": [
+          "-46328902209/100000000000000000",
+          "-2895305619/6250000000000000"
+        ],
+        "mu6_at_first_unpaid": -1,
+        "small_side_first_gap": "43/56",
+        "first_mixed_product": 33000005,
+        "first_mixed_gap_bounds": [
+          "-17448144439056994987/36960000000000000000000000",
+          "-1090437859170341617/2310000000000000000000000"
+        ]
+      },
+      "physical_control": "each late row included through the explicit envelope"
+    }
+  },
+  "paper_scope": [
+    "Exact limiting exponent 2 Theta - 1 of the true error and of the finite rational square costs.",
+    "Relative exponent at successive prescribed squarings and the resulting infinitely-many-nonincreases criterion.",
+    "Shifted-contour formula for the same balanced inputs and a comparison showing the distinction between the global and local frequency averages."
+  ],
+  "open": "Prove the required relative growth control at arbitrarily late real arithmetic updates. Its first three measured occurrences are finite. The analytic exponent comparison is established on paper. The limiting arithmetic, report of axioms and normal native replay do not constitute a bare RH submission."
+}
