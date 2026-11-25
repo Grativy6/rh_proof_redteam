@@ -8,6 +8,8 @@ On 24 November 2026 Hearthline applied Pang’s PAL/APCI comparison to a marked 
 
 | Exact source | Edition and use | Upstream |
 | --- | --- | --- |
+| [Shadow Lattice and Dispersal Lattice](Shadow_Lattice_and_Dispersal_Lattice.pdf) | Deposited by Chris Pang on 29 May 2026. Hearthline verified the original 16-page PDF and added it at Pang’s request, 24 November 2026. [Worked comparison](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) | [Zenodo](https://zenodo.org/records/20450735) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| [The Price of Spherical Closure](The_Price_of_Spherical_Closure.pdf) | Deposited by Christopher D. Pang on 30 May 2026. Hearthline verified the original 12-page PDF under the same request. The elliptic example tracks the sign of a differential through a branched quotient. | [Zenodo](https://zenodo.org/records/20467771) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | [GOLD v0.1](GOLD_v0.1.pdf) | Pang’s six-sector code, exact residual and Fibonacci near-returns, applied by Hearthline to the [golden-angle audit](../receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) at Chris’s request on 24 November 2026. | [Deposit](https://zenodo.org/records/22236848) |
 | [Compactification Costs v0.2](Compactification_Costs_v0.2.pdf) | Section 6.3 supplies the test of what can still be recovered after a phase is identified. Applied in the same audit. | [Deposit](https://zenodo.org/records/22238012) |
 | [Complete Context Stack](context-stack/MAP.md) | The trilogy, MIND, PCP and Honesty protocols, CPX, Blob–Weld versions and original companions. | [Exact editions and supplied-source status](context-stack/MAP.md) |

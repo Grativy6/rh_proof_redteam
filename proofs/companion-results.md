@@ -2,6 +2,8 @@
 
 The [main proof collection](README.md) presents 46 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
 
+The [elliptic curves attached to the two May corpus papers](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) give a worked comparison of a rational quotient, prime counts and isogenous curves.
+
 ## Maps, fields and integral frames
 
 - [One arithmetic map, two infinite places](../receipt-archives/2026-11-23-arithmetic-map-height.md)

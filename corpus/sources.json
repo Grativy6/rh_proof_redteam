@@ -451,6 +451,34 @@
       "creator": "Pang, Christopher D.",
       "license": "CC-BY-4.0",
       "use_record": "Section 6.3; fiber test for the angular quotient"
+    },
+    {
+      "file": "Shadow_Lattice_and_Dispersal_Lattice.pdf",
+      "bytes": 311448,
+      "sha256": "55eb702249a3cfe8d690d13f5695b5aefc2d17d5c18082b565c7b1f9bd2d05c3",
+      "record": "10.5281/zenodo.20450735",
+      "upstream_url": "https://zenodo.org/api/records/20450735/files/Shadow%20Lattice%20and%20Dispersal%20Lattice.pdf/content",
+      "deposited_checksum": "md5:beeb70d3d4610241d060d0573dc40ef1",
+      "creator": "Pang, Chris",
+      "license": "CC-BY-4.0",
+      "deposited_filename": "Shadow Lattice and Dispersal Lattice.pdf",
+      "publication_date": "2026-05-29",
+      "deposited_title": "Shadow Lattice and Dispersal Lattice - A snapshot of first layer-relative trace of unresolved possibility at stabilized emergence and it's path through time",
+      "use_record": "Pang and Chat-Hearthline’s elliptic-curve comparison. The first record of a distinction depends on the chosen layer."
+    },
+    {
+      "file": "The_Price_of_Spherical_Closure.pdf",
+      "bytes": 151963,
+      "sha256": "81c47c7be21d6a163c359ba1b68b3361211a32340a2c7f0cf6c4140949be2d54",
+      "record": "10.5281/zenodo.20467771",
+      "upstream_url": "https://zenodo.org/api/records/20467771/files/The%20Price%20of%20Spherical%20Closure.pdf/content",
+      "deposited_checksum": "md5:163bc37a01ebad8bfdb78c9d3594416c",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "deposited_filename": "The Price of Spherical Closure.pdf",
+      "publication_date": "2026-05-30",
+      "deposited_title": "The Price of Spherical Closure. Shaving the Hairy Ball.",
+      "use_record": "Pang and Chat-Hearthline’s elliptic-curve comparison. A change of geometric carrier can alter the directional data that descend."
     }
   ]
 }

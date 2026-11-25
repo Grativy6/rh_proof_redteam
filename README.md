@@ -8,6 +8,8 @@ Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis pr
 
 Pang’s PAL atlas and APCI work on what observations can certify supplied the starting questions for these derivations with Hearthline. Each paper identifies its mathematical inputs and the role of the Alpöge–Claude release. The [doubling theorem](proofs/marked-lattice-reconstruction.md) starts with a lattice and a labelled distance table. The release supplies an application to theta weights. The [mixed-intersection proof](proofs/asymmetric-mixed-intersection.md) uses the release’s particular constructor as a mathematical input. The [complete proof map](proofs/MAP.md) includes the [weighted triangle and its $E_8$ test](proofs/three-weighted-triangle-optima.md) and the [order-nine carry in a nonsplit degeneration](proofs/an-order-nine-carry.md).
 
+The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf) and [spherical closure](corpus/The_Price_of_Spherical_Closure.pdf), with a [worked elliptic-curve comparison](receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md).
+
 ## Audit findings
 
 **Which prime did the original release work out explicitly?** The authors give `prime_large` a 116-digit Lucas certificate. The [quadratic norm calculation](proofs/the-three-prime-norms-in-the-released-example.md) reproduces it and follows it to the three fields read in the later lattice argument. The [ordinary Hecke calculation](proofs/one-ordinary-line-through-all-congruence-levels.md) and [two local flags](proofs/two-linked-flags-with-identical-finite-readings.md) test a different prime-dependent dimension count on the actual operators.

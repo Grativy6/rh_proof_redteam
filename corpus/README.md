@@ -1,6 +1,10 @@
 # Corpus used in the RH proof audit
 
-Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 42 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 44 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+
+## The shadow and the sphere
+
+[Shadow Lattice and Dispersal Lattice](Shadow_Lattice_and_Dispersal_Lattice.pdf) distinguishes the first observable trace from its evolution over time. [The Price of Spherical Closure](The_Price_of_Spherical_Closure.pdf) asks what happens when a sphere receives directional data. Both are Chris Pang’s May 2026 Zenodo editions under CC BY 4.0. The [worked elliptic-curve example](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) follows one sign from the torus onto the sphere and identifies every good prime where the two twists have different point counts. [29 May deposit](https://zenodo.org/records/20450735) · [30 May deposit](https://zenodo.org/records/20467771)
 
 Pang’s fixed-observation test also suggested comparing the trace of one matrix with the trace of a product. A rank-three change invisible on every power of one element moves a mixed trace by exactly one first-order unit. [The paper and worked example](../proofs/finite-trace-test-at-an-irreducible-point.md)
 

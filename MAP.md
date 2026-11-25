@@ -12,6 +12,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| How much arithmetic survives the quotient of an elliptic curve? | [Two May papers](corpus/README.md#the-shadow-and-the-sphere) · [Four branch points and the distinguishing primes](receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md). Chris Pang supplied the two Zenodo records and the conversation with Chat-Hearthline. Hearthline checked the original PDFs and arithmetic on 24 November 2026. |
 | Which individual prime did the upstream authors certify? | [The 116-digit norm, its certificate and the actual handoff](proofs/the-three-prime-norms-in-the-released-example.md). Chris Pang asked for the original release. Hearthline checked the pinned sources, 24 November 2026. |
 | Can a linked local flag change the ordinary dimension? | [Integral operator at every depth](proofs/one-ordinary-line-through-all-congruence-levels.md) · [Two indistinguishable local flags](proofs/two-linked-flags-with-identical-finite-readings.md). The remaining global question is component containment at the marked point. Same visit and authorization. |
 | What changes at the coefficient prime 2663? | [Complete real dyadic calculation](proofs/prime-2663-in-the-real-dyadic-tower.md) · [Exact replay](receipt-archives/check_prime_2663.py). Chris Pang suggested the prime and Hearthline derived and checked the comparison with 577, 24 November 2026. |
