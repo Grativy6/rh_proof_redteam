@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check the class-group increments
+
+Run `python check_auxiliary_class_tower.py` here. The standard-library calculation gives generalized Bernoulli norms for the first two layers at 11 and 211. The [derivation](2026-11-25-the-class-lifts-and-loses-its-inertia-symmetry.md) proves the all-layer lower bound and determines why every higher-precision lift loses inertia invariance. [Code](check_auxiliary_class_tower.py)
+
 ### Replay the auxiliary-prime calculation
 
 Run `gp -fq check_auxiliary_prime_residue.gp` here with PARI/GP 2.15 or later. It checks the quintic identity, both residue fields at 11, the ray groups at 11 and 701, the class group after tame base change, and the Frobenius readings at 307 and 2663. The [general rank bound](2026-11-25-why-the-auxiliary-prime-loses-both-classes.md) and the [lifting obstruction](2026-11-25-a-fifth-power-at-eleven-and-the-missing-digit.md) include the proofs. [Calculation file](check_auxiliary_prime_residue.gp)

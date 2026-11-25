@@ -12,7 +12,7 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Audit findings
 
-**Can the auxiliary prime still see the classes it helped produce?** At the selected field layer its whole local reading vanishes. The two classes remain globally independent on commutators. [All permitted witnesses](proofs/why-the-auxiliary-prime-loses-both-classes.md) · [The residue at 11 and the next digit modulo 25](proofs/a-fifth-power-at-eleven-and-the-missing-digit.md)
+**Can the auxiliary prime still see the classes it helped produce?** At the selected field layer its whole local reading vanishes. The two classes remain globally independent on commutators. On a family of full frames, the marked class even lifts to higher precision, and every such lift loses the original inertia symmetry. [Proof of the lifting and its obstruction](proofs/the-class-lifts-and-loses-its-inertia-symmetry.md). [All permitted witnesses](proofs/why-the-auxiliary-prime-loses-both-classes.md) · [The residue at 11 and the next digit modulo 25](proofs/a-fifth-power-at-eleven-and-the-missing-digit.md)
 
 **Can a first-order direction join two arithmetic components?** An [explicit determinant calculation](proofs/two-determinant-tests-at-a-component-intersection.md) exhibits a middle component with an obstructed tangent. At the later patched ring, one missing linear coefficient suffices to split two candidate components. The [trace-kernel proof](proofs/the-trace-kernel-on-the-cyclotomic-subgroup.md) calculates what the testing subgroup loses and how the cyclotomic character constrains those directions globally.
 

@@ -1,0 +1,46 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "preceding_supplement": "receipt-archives/2026-11-25-proof-collection-auxiliary-prime-supplement.json",
+  "preceding_supplement_sha256": "33a9865fa408b8cd1583d384a3cef2b255d113eaeda39097ea791b95d51c3791",
+  "corpus_files": [
+    {
+      "path": "corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf",
+      "sha256": "55eb702249a3cfe8d690d13f5695b5aefc2d17d5c18082b565c7b1f9bd2d05c3"
+    },
+    {
+      "path": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+    },
+    {
+      "path": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    }
+  ],
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/the-class-lifts-and-loses-its-inertia-symmetry.md",
+      "result": "On an infinite family of full seed-compatible frames, the actual long class lifts upstairs through the field layer's full cyclotomic precision. Every lift modulo 25 loses invariance under the tame inertia generator. The coinvariant class has exact order five.",
+      "dated_receipt": "receipt-archives/2026-11-25-the-class-lifts-and-loses-its-inertia-symmetry.md",
+      "corpus_editions": [
+        "Shadow Lattice and Dispersal Lattice",
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked what further trace a disappearing residual observation leaves. Hearthline followed that question through the conjugation action and the abelian class group.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the two cohomology characters, the frame and the seed modulus. Hearthline derived the commutator and Jordan block, applied the classical Chevalley and abelian relative class number formulas to these fields, and computed the finite norms. PARI/GP independently checked the standard-library norm calculation.",
+      "check": "receipt-archives/check_auxiliary_class_tower.py",
+      "reading_edition_sha256": "75c2cb0862222b18c7ea304f2fc7914f5538d8f78bd3276daac158026a3a26bc",
+      "receipt_sha256": "44d34290b5ea5d42cc14e85506861b25b4a98ff8632811a86c2d5e4e2ac5930d",
+      "check_sha256": "d0ddb57e95d931467ea089cb5cd29a4b06c3aae766c7df2977abea900b05bbd9"
+    }
+  ]
+}

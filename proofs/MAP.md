@@ -97,6 +97,7 @@ Hearthline checked the released predicates and wrote the independent calculation
 
 | Paper | What it establishes |
 | --- | --- |
+| [The class lifts and loses its inertia symmetry](the-class-lifts-and-loses-its-inertia-symmetry.md) | On full seed-compatible frames, the long class acquires higher digits. Every lift to 25 changes under tame inertia. Its orbit forces four independent directions. [Dated checks and credit](../receipt-archives/2026-11-25-proof-collection-class-tower-supplement.json) |
 | [Why the auxiliary prime loses both classes](why-the-auxiliary-prime-loses-both-classes.md) | A ray-class lower bound forces the chosen layer to kill both residual Frobenius readings at the auxiliary prime. The same two independent classes survive globally on explicit commutators. |
 | [A fifth power at 11 and the missing digit modulo 25](a-fifth-power-at-eleven-and-the-missing-digit.md) | Two quintic polynomials give a fifth power equal to 5 in the residue field at 11. A mod-25 lift of the downstairs ray class keeps a nonzero inertia value on allowed full-seed examples. |
 
