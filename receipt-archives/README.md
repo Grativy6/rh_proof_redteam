@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check the conductor cutoff at 17
+
+Run `python check_seventeen_dyadic_cutoff.py` here to compare the original Bernoulli sums with the signed coefficients and enumerate the 64 row cases covering all high conductors. The [derivation](2026-11-25-the-order-seventeen-class-at-conductor-64.md) includes a separate PARI/GP check of the degree-16 class group and its Galois action. [Python](check_seventeen_dyadic_cutoff.py)
+
 ### Check simultaneous character readings and Frobenius powers
 
 Run `python check_four_character_precision.py` and `gp -fq check_frobenius_centralizer_cost.gp` here. The first enumerates the four-point sets of the affine plane over the field of five elements and the first shared readings. The second independently ranks the truncated coefficient matrices through precision 13 and checks their Smith exponents. The [character proof](2026-11-25-the-centroid-that-hides-four-character-readings.md) and [matrix proof](2026-11-25-the-exact-cost-of-powering-a-frobenius-matrix.md) cover arbitrary precision. [Python](check_four_character_precision.py) · [PARI/GP](check_frobenius_centralizer_cost.gp)

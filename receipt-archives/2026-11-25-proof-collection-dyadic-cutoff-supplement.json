@@ -1,0 +1,41 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "preceding_supplement": "receipt-archives/2026-11-25-proof-collection-character-precision-supplement.json",
+  "preceding_supplement_sha256": "a2545eeaf790ba0528ca7635e6caadafe1ac9f43ad3c32aa309996830fadbd7f",
+  "corpus_files": [
+    {
+      "path": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+    },
+    {
+      "path": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    }
+  ],
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/the-order-seventeen-class-at-conductor-64.md",
+      "result": "An actual strict order-17 class at auxiliary conductor 64 is excluded from conductor 128 onward for every primitive odd label in a genuine Case II host family. The pure dyadic sufficient exponent improves by one and its uniform improvement is sharp.",
+      "dated_receipt": "receipt-archives/2026-11-25-the-order-seventeen-class-at-conductor-64.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked for an independent test on the same arithmetic input. Hearthline fixed prime 17, twist 8 and the conductor-8 inner character and varied the auxiliary conductor.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the vanishing conditions and the actual host cutoff. Hearthline derived the signed half-sum, the shorter pure-dyadic bound and the two-row test at 17. The class number formula, class field theory and Stickelberger annihilation are classical inputs. PARI/GP certifies the independent class-group calculation.",
+      "check": "receipt-archives/check_seventeen_dyadic_cutoff.py",
+      "reading_edition_sha256": "3883b12bb17d705b16343046fb6e101eca36019b993be7bf1b35c52eaaad8785",
+      "receipt_sha256": "463ac26d65e543d19ed455956cac747c97b356a6288740e8b8f471d1beab5454",
+      "check_sha256": "af0fe6e9cd6310d91bc523b295ae2afdd083ef2c1c0599b8a9c1237c3839f4f6"
+    }
+  ]
+}

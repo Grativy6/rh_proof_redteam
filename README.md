@@ -12,6 +12,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Audit findings
 
+**Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. [The class and the cutoff](proofs/the-order-seventeen-class-at-conductor-64.md)
+
 **Which local readings can hide a difference?** Over the field with five elements, four character weights can defeat every common observation while each pair stays distinguishable. The exact shape is a triangle and its centroid. The symplectic flag used in the release excludes it. A separate calculation gives the precise counting error when eigenvalues approach each other under powers. [The centroid](proofs/the-centroid-that-hides-four-character-readings.md) · [The Frobenius calculation](proofs/the-exact-cost-of-powering-a-frobenius-matrix.md)
 
 **Can the auxiliary prime still see the classes it helped produce?** At the selected field layer its whole local reading vanishes. The two classes remain globally independent on commutators. On a family of full frames, the marked class even lifts to higher precision, and every such lift loses the original inertia symmetry. [Proof of the lifting and its obstruction](proofs/the-class-lifts-and-loses-its-inertia-symmetry.md). [All permitted witnesses](proofs/why-the-auxiliary-prime-loses-both-classes.md) · [The residue at 11 and the next digit modulo 25](proofs/a-fifth-power-at-eleven-and-the-missing-digit.md)

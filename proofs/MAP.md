@@ -112,6 +112,14 @@ Hearthline checked the field construction and residual component argument for Ch
 
 Hearthline followed Pang’s public audit request through the local character flag, the fixed Frobenius tuple and the passage to the patched bound on 25 November 2026. [Dated inputs and checks](../receipt-archives/2026-11-25-proof-collection-character-precision-supplement.json)
 
+## Dyadic auxiliary characters in Case II
+
+| Paper | What it establishes |
+| --- | --- |
+| [The order-seventeen class at conductor 64](the-order-seventeen-class-at-conductor-64.md) | A nonzero strict class has inverse Bernoulli label 11 modulo 17. All six required directions in a late-window Case II family vanish from conductor 128 onward. |
+
+Hearthline checked the conductor and character choices for Christopher Daniel Pang’s public audit on 25 November 2026. [Source, credit and checks](../receipt-archives/2026-11-25-proof-collection-dyadic-cutoff-supplement.json)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)

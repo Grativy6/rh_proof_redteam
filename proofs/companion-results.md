@@ -1,6 +1,6 @@
 # Companion derivations and checks
 
-The [main proof collection](README.md) presents 53 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
+The [main proof collection](README.md) presents 54 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
 
 The [elliptic curves attached to the two May corpus papers](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) give a worked comparison of a rational quotient, prime counts and isogenous curves.
 
@@ -9,6 +9,8 @@ The [class-group tower](../receipt-archives/2026-11-25-the-class-lifts-and-loses
 The [auxiliary-prime rank bound](../receipt-archives/2026-11-25-why-the-auxiliary-prime-loses-both-classes.md) uses one earlier field layer to prove that the prime loses both local readings. The [quintic example](../receipt-archives/2026-11-25-a-fifth-power-at-eleven-and-the-missing-digit.md) tests 11, 307, 701 and Pang’s 2663. [Certificate](../receipt-archives/check_auxiliary_prime_residue.gp)
 
 The [centroid classification](../receipt-archives/2026-11-25-the-centroid-that-hides-four-character-readings.md) and [Frobenius power law](../receipt-archives/2026-11-25-the-exact-cost-of-powering-a-frobenius-matrix.md) give exact finite-resolution tests for two operations used to choose and count at auxiliary primes. [Character replay](../receipt-archives/check_four_character_precision.py) · [Matrix replay](../receipt-archives/check_frobenius_centralizer_cost.gp)
+
+The [Case II calculation](../receipt-archives/2026-11-25-the-order-seventeen-class-at-conductor-64.md) compares all auxiliary conductors for the three coefficient directions at 17 beyond the first safe layer. [Signed coefficients and exact finite rows](../receipt-archives/check_seventeen_dyadic_cutoff.py)
 
 ## Maps, fields and integral frames
 
