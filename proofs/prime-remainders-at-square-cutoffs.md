@@ -83,6 +83,39 @@ Take $j=r!$ for any integer $r\ge2$. All of $j^2+2,\ldots,j^2+r$ are composite, 
 
 The entire family of these runs also has a uniform budget. Any contributing run has $r!\le k$, hence $2^{r-1}\le k$. Summing $r-1$ up to $1+\log_2 k$ bounds the total by $O((1+\log k)^2)=o(k)$. A single run could occur where other columns have already accumulated a large deficit. The contribution of all these deliberately planted columns is too small to supply a square-root-sized deficit on its own.
 
+## Moving the holes
+
+Pang asked which part of the factorial construction can be moved. For a fixed length $r-1$, every positive multiple $N$ of $\operatorname{lcm}(2,\ldots,r)$ supplies a copy $N+2,\ldots,N+r$ of the composite run. To place the holes on the high-weight side of a square, take $k$ a sufficiently large multiple of that same modulus. Then $k^2-s$ is composite for $2\le s\le r$, with gap $1-s/(k^2-s)$. At fixed $r$ these gaps approach one.
+
+Here are the last six entries of three actual rows. A composite adds its gap. A prime $p$ contributes $(1-\log p)h_k(p)$. Subtotals below are rounded.
+
+| Square cutoff | Six integers | Prime among the six | Composite contributions | Prime contribution | Signed subtotal |
+| --- | --- | --- | ---: | ---: | ---: |
+| $12^2=144$ | 139–144 | 139 | $+4.929$ | $-3.793$ | $+1.136$ |
+| $24^2=576$ | 571–576 | 571 | $+4.983$ | $-5.301$ | $-0.318$ |
+| $30^2=900$ | 895–900 | none | $+5.983$ | $0$ | $+5.983$ |
+
+For all three roots, $k$ is a multiple of six. Among the last five places, $k^2-4$ and $k^2-2$ are even, $k^2-3$ is divisible by three, $k^2-1=(k-1)(k+1)$, and the last place is the square. Choosing $k=30$ forces $k^2-5=895$ to be divisible by five as well. At 576 the prime's gap is $566/571$. Its debit exceeds five even before rounding, since $\log571=9\log2+\log(571/512)>6+59/571$ and $(5+59/571)566/571>5$. Here $\log2>2/3$ follows by the strict midpoint bound for the integral of $1/t$. At 144 the debit has magnitude below four because $\log139<5$, while each of the five composite gaps exceeds $0.97$.
+
+**All translations can have a large subtotal.** Every block $6t+2,6t+3,6t+4$ for $t\ge1$ consists of composites. On $3k^2/4\le m\le k^2$, the gap is $2-k^2/m\ge2/3$. This interval contains at least $k^2/24-2$ complete periods for $k\ge3$. The three marked columns per period therefore contribute at least $k^2/12-4$ in total. The earlier logarithmic bound counted only the chosen factorial runs. The signed row still includes prime contributions outside the marked columns.
+
+### Carrying a repeating divisibility pattern through the count
+
+Take the six residue slots modulo 6. Primes above 3 occupy slots 1 and 5. Count each of those two slots three times in the ordinary integer reference, measuring the actual primes there as before. In a full period with constant weights, two slots counted three times give precisely six. Across the weighted row the error in this reassignment is at most $3(2k+1)$. To see it, the prefix sums of the periodic sequence $1-3\mathbf1_{(m,6)=1}$ starting from $m=1$ range from $-2$ to $1$, so its sum on any interval has absolute value at most three. Apply the variation estimate below. This reassignment says how many candidate slots have to carry the comparison. The amount supplied by actual primes in those slots remains a separate question.
+
+More generally, let $Q$ be any squarefree product of primes at most $k$, let $u=\prod_{p\mid Q}(1-1/p)^{-1}$, and let $\omega(Q)$ count its prime factors. Define the signed tally on the surviving slots by
+$$
+D_Q(k)=\sum_{\substack{k<m\le k^2\\(m,Q)=1}}
+       (u-\mathbf1_{m\ {\rm prime}}\log m)\,h_k(m).
+$$
+Every prime in the row survives. On any integer interval $(a,b]$, inclusion–exclusion counts the surviving slots by summing $\mu(d)(\lfloor b/d\rfloor-\lfloor a/d\rfloor)$ over $d\mid Q$. Replacing the floors by real quotients yields $(b-a)/u$. Each divisor $d>1$ costs less than one in absolute error. Thus every interval sum of $1-u\mathbf1_{(m,Q)=1}$ has magnitude at most $u(2^{\omega(Q)}-1)$.
+
+Both $k^2/m$ and $\lfloor k^2/m\rfloor$ decrease as $m$ increases. Their combined drop over $k<m\le k^2$ is less than $2k$. Since $h_k(m)=1-k^2/m+\lfloor k^2/m\rfloor$, its total variation is at most $2k$, and its final value is one. Summation by parts gives
+$$
+|D(k)-D_Q(k)|\le(2k+1)u(2^{\omega(Q)}-1).
+$$
+This gives a uniform $O_Q(k)$ error for every fixed choice of sieving primes. Even taking all primes through $y=c\log k$, for any fixed $c>0$, costs only $k^{1+o(1)}$. Indeed $u\le\prod_{2\le n\le y}n/(n-1)=\lfloor y\rfloor$ for $y\ge2$. The elementary estimate $\vartheta(y)\le4y$ proved above gives $\pi(y)\le\sqrt y+2\vartheta(y)/\log y$ by splitting the prime count at $\sqrt y$. Thus $\log(u2^{\pi(y)})=o(\log k)$. The all-positive-margin window assertion survives this change of reference by using a smaller margin in each direction. A bound for $D_Q$ itself would also have to control how the primes populate the surviving columns.
+
 ## Unresolved
 
 The open question in this audit is how the selected arithmetic and geometric inputs give the required prime contribution throughout arbitrarily late blocks. In the released transfer the chosen host can depend on $x$. Its estimates must apply to that host at the same $x$, with constants chosen early enough for the whole window. The signed character measurement also needs the three discarded-character estimates to recover the principal reading. The square-cutoff calculation does not derive these inputs. [Host and index at the point of use](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean#L17-L25) · [Four-character reconstruction](../receipt-archives/2026-11-24-taking-rhofall-apart-at-the-four-characters.md)

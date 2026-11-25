@@ -41,7 +41,7 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 | Paper | What it establishes |
 | --- | --- |
-| [The released prime window at square cutoffs](prime-remainders-at-square-cutoffs.md) | 25 November 2026. At Pang’s request, Hearthline reduced the level-one whole-window estimate to finite remainders at squares. Explicit uniform error bounds cover the discarded prime powers, integer columns and intervening real scales. |
+| [The released prime window at square cutoffs](prime-remainders-at-square-cutoffs.md) · [Moving the holes](prime-remainders-at-square-cutoffs.md#moving-the-holes) | 25 November 2026. At Pang’s request, Hearthline reduced the level-one window to integer remainders at squares, then priced all translations of small-prime divisibility patterns in that tally. |
 | [A 577th power locally and a non-power globally](a-577th-power-locally.md) | A single Taylor coefficient checks the strict local condition, while a different prime supplies a global witness of order 577. |
 | [The same dyadic ideal gives a geometric and a Selmer class of order 577](a-dyadic-ideal-of-order-577.md) | An explicit dyadic ideal has order 577 and contributes a class to the arithmetic count. |
 | [What prime 2663 does in the real dyadic tower](prime-2663-in-the-real-dyadic-tower.md) | At 2663 every pure real dyadic strict group at a positive even twist is zero. A finite period handles every higher level. |
