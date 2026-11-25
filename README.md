@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 [**Active construction key**](pal-rh/CONSTRUCTION-KEY.md) · [The whole-corpus toolbelt](pal-rh/CORPUS-ROUTES.md) · [Why improving an even row reopens an odd one](pal-rh/half-tick-reflection.md) · [What a variable fresh prime changes](pal-rh/fresh-prime-transfer.md)
 
+**What can one finite reading carry on its own?** Every dilation of it misses the same logarithmic wave. For the six-row example a hand-checkable disk gives positive error floors even from the occupied binary starting fit. Keeping the readings at 2 and 3 independent removes their extra common zero. [Proof and worked example](pal-rh/what-one-parent-misses.md) · [Exact cost of changing one row](pal-rh/changing-the-first-wrong-row.md)
+
 [Every finite fit has a better successor](pal-rh/every-fit-has-a-successor.md) gives a pencil-and-paper move that improves the true error even with a protected prefix, and shows how an indefinitely protected wrong row can survive. [The first-tick construction](pal-rh/one-tick.md) shows exactly how one isolated reading would generate all scales. [The sieve](pal-rh/reversing-the-sieve.md) and [two forward clocks](pal-rh/close-clocks.md) show what was earned toward that remaining arithmetic task.
 
 [Prime phases and a finite rational condition for RH](pal-rh/README.md) starts from Pang’s question about which distinctions survive a projection. One four-row calculation identifies the carry from two prime phases. The branch includes a conditional proof against stock Mathlib and an explicit numerical witness checked with integer arithmetic. [Branch map](pal-rh/MAP.md)

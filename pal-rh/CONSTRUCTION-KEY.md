@@ -53,6 +53,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 [Every finite fit can improve](every-fit-has-a-successor.md) now supplies a genuine successor from every state on the constant-target route and every nonzero state on the first-tick route. A wrong fixed reading can survive infinitely many such gains. The next controller has to pay to change the earliest wrong reading and track the later echoes.
 
+[One fixed finite parent has a missing wave](what-one-parent-misses.md), even when its scaled copies are freely refitted. [Changing the first wrong row](changing-the-first-wrong-row.md) gives an exact optimizer for the leading squared cost and direct all-row signed comparisons. Keep two or more readings independently adjustable in a fixed-parent dilation strategy. For the independent 2 and 3 parents the remaining shared Mellin zero question is exactly the zeta zero question. The remaining construction has to control the norm under integer dilations.
+
 At each material transition record the parent commit, definitions, input domain, claimed implication, result, and next unresolved inequality in the [live map](MAP.md). Retain paper derivations alongside named Lean declarations. Save runnable discriminators in the existing receipt archive. On failure record the counterexample or failing scale and execute the next route that changes that mechanism. Before asserting RH, replay the entire dependency chain and the frozen challenge, and arrange independent human scrutiny of the mathematical mechanism. Record standard antecedents and bound any originality claim to the literature actually inspected.
 
 ## Unresolved

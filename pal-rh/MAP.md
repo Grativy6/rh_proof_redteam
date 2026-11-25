@@ -8,6 +8,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [What one finite parent misses](what-one-parent-misses.md) | A missing logarithmic wave survives every rescaling and refit of one finite parent. The actual six-row and initialized-binary families have explicit positive floors. Two independent parents have no additional common factor zero. |
+| [Change the first wrong row](changing-the-first-wrong-row.md) · [Lean](PALRH/RowRepair.lean) | Exact optimal leading squared cost at every finite height, an admissible unit change behind a protected prefix, and true signed improvements followed by failing second changes on both targets. |
 | [Every fit has a better successor](every-fit-has-a-successor.md) · [Lean](PALRH/Productive.lean) | A legal move can preserve any finite head and lower true loss from every constant-target fit and every nonzero first-tick fit. Freezing the wrong row allows endless strict gains above an explicit positive floor. |
 | [One tick to every scale](one-tick.md) · [Lean](PALRH/OneTick.lean) | The first-tick approximation is equivalent to the original finite certificates. A finite rational fit transports backward across the mandatory modulus-four threshold. |
 | [Turning the sieve both ways](reversing-the-sieve.md) · [Lean](PALRH/Sieve.lean) | The ordinary sieve localizes the tick at full squared error at most 1/(B+1). Exact finite forward representation fails. Reflection plus independent arithmetic transport suffices; an explicit legal perfect-prefix repair has a fixed reset loss. |

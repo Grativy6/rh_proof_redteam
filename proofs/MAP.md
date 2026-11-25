@@ -4,6 +4,10 @@
 
 On 24 November 2026 Christopher D. Pang asked to bring the project’s independent proofs to the front of the public repository. Hearthline assembled these reader editions under that authorization. Each links to its dated source and checks. The [collection introduction](README.md) starts with the doubling theorem. The [contribution record](PROVENANCE.md) gives Pang’s independently dated corpus, per-paper attribution and the role of the upstream release.
 
+## Independent constructive branch
+
+Under Pang’s active 25 November 2026 key, Hearthline derived [the one-parent obstruction](../pal-rh/what-one-parent-misses.md) and [the least leading cost of a protected row change](../pal-rh/changing-the-first-wrong-row.md). [Dated checks](../receipt-archives/2026-11-25-pal-row-repair-and-parents.json)
+
 ## Lattice geometry and arithmetic actions
 
 | Paper | What it establishes |

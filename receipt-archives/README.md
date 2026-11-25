@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+[Two row-repair calculations](2026-11-25-pal-row-repair-and-parents.json) run with Python’s standard library. Use `python -B receipt-archives/check_pal_row_repair.py` for the rational fits and `python -B receipt-archives/check_pal_single_parent.py` for the missed wave.
+
 [Strict successors on both targets](2026-11-25-pal-strict-successor.json) records the ordinary Lake build, replay command and hashes for the [paper argument](../pal-rh/every-fit-has-a-successor.md).
 
 [First tick, sieve reversal and clock comparisons](2026-11-25-pal-first-tick-stage.md) includes the all-row rational runs for the two-way transfer and sequential improvements. Use `python -B receipt-archives/check_pal_first_tick.py` and `python -B receipt-archives/check_pal_close_clocks.py` from the repository root.

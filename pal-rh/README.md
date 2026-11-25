@@ -4,6 +4,8 @@
 
 Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas asks what a measurement retains when it passes from one representation to another. Here the inputs are integer residues, the geometry is a circle, and the measurement is a weighted squared distance. The Alpöge–Claude release supplies the comparison target and toolchain pin. The mathematical derivation on this branch uses stock Mathlib and the sources identified below. [PAL Mathematical Realization Atlas](../corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx) · [APCI](../corpus/APCI_Declared_Interface_v1.0.0.docx)
 
+[What a single finite frame always misses](what-one-parent-misses.md) · [The price of changing an early row](changing-the-first-wrong-row.md)
+
 ## Where the sixth turn went
 
 Draw the point $e^{2\pi i k/d}$ on a circle. Its counterclockwise turn from 1, measured in turns in $[0,1)$, is $b_d(k)=(k\bmod d)/d$. Each full revolution is represented exactly by one turn. For $d=2,3$ one has $1/2-1/3=1/6$, hence

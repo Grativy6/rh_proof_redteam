@@ -1,0 +1,173 @@
+{
+  "date": "2026-11-25",
+  "direction": "Christopher Daniel Pang requested the independent upward PAL construction. Hearthline derived and implemented these results under his active key.",
+  "prior_tree": "90f9d55cb7c92e9dca00c7a14ac0af4080bedf49",
+  "sha256_lf_sources": {
+    "pal-rh/PALRH/RowRepair.lean": "65e01561cd20793dd3036d409a17997478ff712b0804b498c4dfb8c3bb4bed24",
+    "pal-rh/changing-the-first-wrong-row.md": "2fb6c0d373d721e030cafd6fa84d96b5df70bf0d790611b4b9f88bc0eb6e9f3e",
+    "pal-rh/what-one-parent-misses.md": "6b33e4be80bebc3ae18a67dfa3165c99c86890f2ca2a8d9618330086caa768be",
+    "receipt-archives/check_pal_row_repair.py": "b21bdaf34b2eec6baf950d017c527361c5e8c6c4d43bc181be1b5d5c9f20d91c",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "ordinary_lake_build": {
+    "command": "cd pal-rh && lake build",
+    "exit": 0,
+    "jobs_including_replays": 3721
+  },
+  "replay": [
+    {
+      "module": "PALRH.RowRepair",
+      "exit": 0,
+      "seconds": 10.2,
+      "output": ""
+    }
+  ],
+  "shown_axioms": {
+    "PALRH.RowRepair.least_edge_cost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.RowRepair.repair_pivot": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "paper_scope": "The uniform large-row bound, the universal single-parent obstruction and the two-parent comparison are paper deductions. The enclosed disk and signed trial receipts below use integer arithmetic.",
+  "row_comparisons": {
+    "height_optima": {
+      "2": "1",
+      "3": "2/3",
+      "4": "2/3",
+      "5": "4/7",
+      "6": "4/9",
+      "7": "12/29",
+      "8": "12/29",
+      "9": "12/29",
+      "10": "3/8",
+      "11": "30/83",
+      "12": "30/83",
+      "13": "20/57",
+      "14": "60/181",
+      "15": "120/377",
+      "16": "120/377",
+      "17": "240/769",
+      "18": "240/769",
+      "19": "720/2347",
+      "20": "720/2347",
+      "21": "720/2407",
+      "22": "720/2479",
+      "23": "7920/27629",
+      "24": "7920/27629"
+    },
+    "first_two_forced_pivots": {
+      "constant_binary": [
+        {
+          "row": 2,
+          "change": "1",
+          "gain_lower": "-7755292975115763753/166670000000000000000",
+          "gain_upper": "-23225878922847241259/500010000000000000000"
+        },
+        {
+          "row": 4,
+          "change": "2",
+          "gain_lower": "-17248295007256348281/83335000000000000000",
+          "gain_upper": "-51664885020519019843/250005000000000000000"
+        }
+      ],
+      "constant_six": [
+        {
+          "row": 2,
+          "change": "1",
+          "gain_lower": "112671429191432833/16667000000000000000",
+          "gain_upper": "342014287824303499/50001000000000000000"
+        },
+        {
+          "row": 4,
+          "change": "3/2",
+          "gain_lower": "-18076768270109233/5952500000000000000",
+          "gain_upper": "-113568627682427131/41667500000000000000"
+        }
+      ],
+      "tick_binary": [
+        {
+          "row": 3,
+          "change": "-1",
+          "gain_lower": "-923660048347660307/33334000000000000000",
+          "gain_upper": "-2762980144542970921/100002000000000000000"
+        },
+        {
+          "row": 5,
+          "change": "-1",
+          "gain_lower": "-3602972408969069041/250005000000000000000",
+          "gain_upper": "-1187657469239681347/83335000000000000000"
+        }
+      ],
+      "tick_six": [
+        {
+          "row": 3,
+          "change": "-1",
+          "gain_lower": "105990814019382549/23810000000000000000",
+          "gain_upper": "2288307096907083529/500010000000000000000"
+        },
+        {
+          "row": 5,
+          "change": "-1",
+          "gain_lower": "-2850201033275424383/166670000000000000000",
+          "gain_upper": "-2815201032442074383/166670000000000000000"
+        }
+      ]
+    },
+    "cut": 50000,
+    "tail": "minimum and maximum over the complete repeated period times 1/(cut+1)"
+  },
+  "frequency_enclosure": {
+    "method": "outward rounded integer intervals, Taylor bound and contraction on a closed disk",
+    "center": [
+      "794/1000",
+      "17715/1000"
+    ],
+    "radius": "1/1000",
+    "P": [
+      [
+        "-26100830941301/500000000000000000",
+        "-26100830937301/500000000000000000"
+      ],
+      [
+        "-13817781543171/62500000000000000",
+        "-110542252341369/500000000000000000"
+      ]
+    ],
+    "derivative": [
+      [
+        "131187661673589403/250000000000000000",
+        "4099614427299757/7812500000000000"
+      ],
+      [
+        "-19086904429788311/1000000000000000000",
+        "-1908690442977703/100000000000000000"
+      ]
+    ],
+    "contraction_constant_upper": "7/250",
+    "constant_target_squared_error_strict_lower": "1/650",
+    "first_tick_squared_error_strict_lower": "1/10400",
+    "binary_initial_fit": {
+      "constant_squared_error_strict_lower": "9/10400",
+      "tick_squared_error_strict_lower": "1/23400",
+      "eta_256_at_center": [
+        [
+          "-43106978194781543/250000000000000000",
+          "-172427912778918059/1000000000000000000"
+        ],
+        [
+          "-677165700018073791/1000000000000000000",
+          "-677165700017865661/1000000000000000000"
+        ]
+      ]
+    }
+  },
+  "outstanding": "Produce arbitrary-tolerance approximants while independent parent readings remain available."
+}

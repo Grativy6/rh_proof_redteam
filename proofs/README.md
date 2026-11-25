@@ -8,6 +8,10 @@
 
 The papers state their own conclusions and the scope of their application to the RH argument. The overall audit still seeks a verified failure at a necessary step of that deduction.
 
+## Building upward from PAL
+
+In Pang’s independent constructive branch, [what every copy of one finite reading misses](../pal-rh/what-one-parent-misses.md) rules out an entire class of attempted RH constructions by a paper argument. [Changing the first wrong row](../pal-rh/changing-the-first-wrong-row.md) gives an exact arithmetic optimum and a six-row example. [Source credit and corpus roles](../pal-rh/CORPUS-ROUTES.md)
+
 ## More ways into the proofs
 
 | Question | Paper |
