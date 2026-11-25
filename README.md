@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Two finite sums now count only the positive or only the negative fourth-power readings. Both have to grow at least logarithmically. Either may furnish an arbitrarily late small checkpoint, and the allowed sign can change. An elementary comparison places the entire weighted signed difference between 0 and 7 at every cutoff. [Derivation and first sign crossing](pal-rh/what-the-two-signs-cost-together.md) · [Exact conditional Lean theorem](pal-rh/PALRH/FourthAccounts.lean)
+
 In a frame of side $H$, the difference between its last two row errors is exactly twice the number it carried forward. That reading takes both signs infinitely often on fourth-power frames. A one-sided size law at fourth-power frames would imply RH. [Read the two-row proof](pal-rh/what-the-last-two-rows-carry.md)
 
 The same finite Möbius list now generates the next square. Its total error falls at sides 4, 8, 32 and 512. An off-line zero would force every sufficiently late step of this sequence to increase, even if only the first square of physical rows is measured. [How the list passes forward](pal-rh/the-balanced-newton-handoff.md) · [Why repeated drops would count](pal-rh/when-a-drop-would-count.md)

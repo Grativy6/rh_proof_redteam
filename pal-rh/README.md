@@ -6,7 +6,7 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
-[What the last two rows carry](what-the-last-two-rows-carry.md) · [One list builds the next square](the-balanced-newton-handoff.md) · [Why infinitely many finite error drops would imply RH](when-a-drop-would-count.md)
+[What the two signs cost together](what-the-two-signs-cost-together.md) · [What the last two rows carry](what-the-last-two-rows-carry.md) · [One list builds the next square](the-balanced-newton-handoff.md) · [Why infinitely many finite error drops would imply RH](when-a-drop-would-count.md)
 
 [Signed window costs and the growth exponent](what-the-next-octave-costs.md) · [What 5 carries through 2 and 3](what-five-carries.md) · [Keeping a finite head when wider scales are available](PALRH/Protected.lean)
 

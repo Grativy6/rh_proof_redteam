@@ -1,7 +1,7 @@
 """Export a fixed PAL exercise or the actual solution from its pinned Lake project.
 
 Run lake build first. The exported .ndjson files go in the named output
-directory. The odd exercise compiles its Mathlib-only challenge separately.
+directory. Each exercise compiles its Mathlib-only challenge separately.
 """
 import argparse
 import json
@@ -21,7 +21,7 @@ PROJECT = Path(__file__).resolve().parents[1] / "pal-rh"
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("kind", choices=["odd", "partial", "final"])
+    parser.add_argument("kind", choices=["odd", "fourths", "partial", "final"])
     parser.add_argument("output", type=Path)
     parser.add_argument("--project", type=Path, default=PROJECT)
     parser.add_argument("--lake", default="lake")
@@ -49,7 +49,8 @@ def main():
     version = subprocess.check_output([str(lean), "--version"], env=env, text=True)
     if LEAN not in version or "4.33.1" not in version:
         parser.error("The compiler differs from the construction key.")
-    relative = {"odd": "checks/odd/OddSolution.lean", "partial": "checks/partial/PALSolution.lean",
+    relative = {"odd": "checks/odd/OddSolution.lean", "fourths": "checks/fourths/FourthSolution.lean",
+                "partial": "checks/partial/PALSolution.lean",
                 "final": "PALSolution.lean"}[args.kind]
     source = project / relative
     if not source.is_file():
@@ -87,10 +88,13 @@ def main():
             temp.replace(output / destination)
             print(destination, (output / destination).stat().st_size, "bytes", flush=True)
 
-        if args.kind == "odd":
-            compile_and_export(project / "checks/odd/OddChallenge.lean", "oddReopening",
-                               dep_libs, "odd-challenge.ndjson")
-            compile_and_export(source, "oddReopening", libs, "odd-solution.ndjson")
+        references = {"odd": ("OddChallenge.lean", "oddReopening"),
+                      "fourths": ("FourthChallenge.lean", "fourthPowerAreaReduction")}
+        if args.kind in references:
+            reference, theorem = references[args.kind]
+            compile_and_export(project / "checks" / args.kind / reference, theorem,
+                               dep_libs, args.kind + "-challenge.ndjson")
+            compile_and_export(source, theorem, libs, args.kind + "-solution.ndjson")
         else:
             compile_and_export(source, "riemannHypothesis", libs, args.kind + ".ndjson")
 

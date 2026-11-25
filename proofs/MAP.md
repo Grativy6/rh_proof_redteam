@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Two signed areas, one finite arithmetic test](../pal-rh/what-the-two-signs-cost-together.md). Under Pang’s active 25 November 2026 key, Hearthline derived the bounded signed difference, the all-cutoff zero bill and the matching formal conditional theorem. [Arithmetic and reproduction](../receipt-archives/2026-11-25-pal-signed-areas.json)
+
 [Two-row recovery, fourth-power interpolation and signed oscillation](../pal-rh/what-the-last-two-rows-carry.md). Derived by Hearthline on 25 November 2026 under Pang’s active key. [Reproduction](../receipt-archives/2026-11-25-pal-carried-edge.json)
 
 [Balanced Newton passage](../pal-rh/the-balanced-newton-handoff.md) · [Detecting a zero through the direction of successive errors](../pal-rh/when-a-drop-would-count.md). Hearthline derived both results on 25 November 2026 under Pang’s constructive key. [Integer reproduction and formal scope](../receipt-archives/2026-11-25-pal-tapered-newton.json)

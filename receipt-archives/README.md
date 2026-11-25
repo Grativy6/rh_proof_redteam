@@ -6,6 +6,10 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/check_pal_signed_areas.py` for the first integer sign reversal, both cumulative costs, the two independent integrals and the complex phase test. [Stage results](2026-11-25-pal-signed-areas.json) · [Derivation](../pal-rh/what-the-two-signs-cost-together.md)
+
+For the independently posed conditional theorem, build the pinned project, run `python -B receipt-archives/export_pal_check.py fourths /path/to/exports`, then run Lake Comparator with `pal-rh/checks/fourths/compare.json` and the generated `fourths-challenge.ndjson` and `fourths-solution.ndjson`. The [stock-only reference](../pal-rh/checks/fourths/FourthChallenge.lean) spells out the rational data. The [solution](../pal-rh/checks/fourths/FourthSolution.lean) proves its price agrees with the branch’s original frame.
+
 Run `python -B receipt-archives/check_pal_carried_edge.py` for the two-row reading, its neighboring-frame update, and directed enclosures at cubes and fourth powers. [Results and distinctions between finite and infinite claims](2026-11-25-pal-carried-edge.json)
 
 Run `python -B receipt-archives/check_pal_tapered_newton.py` to reconstruct the balanced lists, price the first errors in both directions and enclose all-row and finite-square costs. [Results](2026-11-25-pal-tapered-newton.json) · [What the direction implies](../pal-rh/when-a-drop-would-count.md)

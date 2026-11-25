@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [What the two signs cost together](what-the-two-signs-cost-together.md) · [Finite checkpoints](PALRH/FourthAccounts.lean) | The signed balance stays below 7 on every finite interval. Each zero forces an all-cutoff bill. Either sparse rational account can pay for a checkpoint. Both accounts grow at least logarithmically. |
 | [What the last two rows carry](what-the-last-two-rows-carry.md) · [One-step arithmetic](PALRH/CarriedEdge.lean) | The final row difference recovers the carried slope. It changes sign infinitely often on the fourth-power samples themselves. A one-sided envelope at every fourth power is sufficient. The curvature bound prices the unsampled integer frames. |
 | [One list builds the next](the-balanced-newton-handoff.md) · [Direction of the error](when-a-drop-would-count.md) · [Lean](PALRH/TaperedNewton.lean) | The balanced list generates its own successor. Both all-row error and finite square-window error fall in the first three updates. A positive zero displacement would eventually force every such step upward. |
 | [Paying for the whole averaged square](averaging-the-square.md) · [Finite transfer and reversal](PALRH/Smoothed.lean) | Two averages bound the full centered matrix from genuine smaller-side walk measurements. The old discontinuity returns exactly when the averaging is reversed. A Gaussian criterion reduces the remaining spectral range to finitely many modes proportional to log H. |
@@ -35,6 +36,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+Bound the smaller accumulated fourth-power cost by $J^\epsilon$ at arbitrarily late cuts for every $\epsilon>0$. Its weighted difference from the opposite sign is funded in continuous coordinates, and its unbounded common growth is required. A fixed complex rotation fails on the actual kernel. [Finite target and counterexample](what-the-two-signs-cost-together.md)
 
 Bound [one direction of the two-row reading](what-the-last-two-rows-carry.md#why-fourth-power-samples-suffice) at all fourth-power sides. The unpriced term in one step is the signed rough count between the old boundaries, divided by $H(H+1)$. The other term has total absolute tail at most $1/(2H)$.
 

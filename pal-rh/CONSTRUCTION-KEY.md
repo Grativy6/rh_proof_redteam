@@ -49,7 +49,9 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
-**Current two-row test.** At side $j^4$, read the last two row errors of the true list. Their difference equals twice the paid slope. Either a uniform upper or a uniform lower envelope at size $j^{-2+\eta}$, for every positive $\eta$, would close the paper argument. The signed unit update and its interpolation price are explicit. Swings of both signs on those same fourth powers are already forced. [Proof, integer examples and scope](what-the-last-two-rows-carry.md)
+**Current finite target.** At each $J$ add $j$ times the positive, or the negative, part of the actual slope at $j^4$, for $j\le J$. Prove that for every positive integer $k$ there are arbitrarily late cuts where either rational sum raised to $k$ is at most $J$. Both sums must grow at least logarithmically. The physical readings expose the sign change and rule out the fixed-phase route to an upper bound. [Paper](what-the-two-signs-cost-together.md) · [Formal implication](PALRH/FourthAccounts.lean)
+
+**Two-row envelope.** At side $j^4$, read the last two row errors of the true list. Their difference equals twice the paid slope. Either a uniform upper or a uniform lower envelope at size $j^{-2+\eta}$, for every positive $\eta$, would close the paper argument. The signed unit update and its interpolation price are explicit. Swings of both signs on those same fourth powers are already forced. [Proof, integer examples and scope](what-the-last-two-rows-carry.md)
 
 **Successive-square test.** From side four use the [same finite list](the-balanced-newton-handoff.md) to make every successor at half the side squared. Each error through row $H^2$ is rational and its omitted tail costs at most nine. Prove a bounded-factor step recurs arbitrarily late, or obtain the weaker relative growth law. A zero off the line would force every sufficiently late ratio of one plus the successive errors to grow as a positive power. [Derivation and exact remaining claim](when-a-drop-would-count.md)
 
