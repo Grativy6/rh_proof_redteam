@@ -12,6 +12,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Audit findings
 
+**Can a first-order direction join two arithmetic components?** An [explicit determinant calculation](proofs/two-determinant-tests-at-a-component-intersection.md) exhibits a middle component with an obstructed tangent. At the later patched ring, one missing linear coefficient suffices to split two candidate components. The [trace-kernel proof](proofs/the-trace-kernel-on-the-cyclotomic-subgroup.md) calculates what the testing subgroup loses and how the cyclotomic character constrains those directions globally.
+
 **Which prime did the original release work out explicitly?** The authors give `prime_large` a 116-digit Lucas certificate. The [quadratic norm calculation](proofs/the-three-prime-norms-in-the-released-example.md) reproduces it and follows it to the three fields read in the later lattice argument. The [ordinary Hecke calculation](proofs/one-ordinary-line-through-all-congruence-levels.md) and [two local flags](proofs/two-linked-flags-with-identical-finite-readings.md) test a different prime-dependent dimension count on the actual operators.
 
 **What happens if 2663 takes 577’s place?** For every field in the real dyadic tower and every positive even twist, the strict group at 2663 vanishes. A period of 1331 covers arbitrarily high conductors. [The proof and its last candidate](proofs/prime-2663-in-the-real-dyadic-tower.md)

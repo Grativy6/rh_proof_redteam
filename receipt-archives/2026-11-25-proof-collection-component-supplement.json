@@ -1,0 +1,46 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "preceding_supplement": "receipt-archives/2026-11-24-proof-collection-prime-and-refinement-supplement.json",
+  "preceding_supplement_sha256": "390998cde762dd1d33a3404c24e0c26472f82497c6455f96422e69ac202cd82c",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/two-determinant-tests-at-a-component-intersection.md",
+      "result": "An explicit intermediate component is needed at the prescribed intersection dimension. In the patched presentation, losing one linear coefficient can split two full-dimensional stable components.",
+      "dated_receipt": "receipt-archives/2026-11-25-two-determinant-tests-at-a-component-intersection.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang’s PAL/APCI question asks which information survives a change of observation. It led here to a comparison of a chosen tangent witness with the fibre of the algebra that carries it.",
+      "proof_inputs_and_release_role": "Alpöge and Claude provide the local and patched determinant constructions, dimension thresholds and arithmetic hypotheses. Hearthline derived the three-component example, the one-coefficient counterexample to the weakened lemma and the classification of a single linear hyperplane. The syzygy calculation uses classical Koszul relations.",
+      "check": "receipt-archives/check_component_and_dual_trace.py",
+      "reading_edition_sha256": "9bce7ef1c4d0b63647a00d1799e130c0667d5c4bb0b501f24307ce115fd0f3d0",
+      "receipt_sha256": "2317b0e1d1f275ad37812b7d9a1d49de99830e0c607c8ebb0da436d02eec0196",
+      "check_sha256": "212d1312078db7ddf834ff743b51739e2ab27e5aff53528b8ea442658992a65c"
+    },
+    {
+      "reading_edition": "proofs/the-trace-kernel-on-the-cyclotomic-subgroup.md",
+      "result": "For a two-plus-one block, the unrestricted subgroup trace has a g-by-g matrix of invisible classes. A nontrivial cyclotomic value excludes those classes from the actual twisted global problem.",
+      "dated_receipt": "receipt-archives/2026-11-25-the-trace-kernel-on-the-cyclotomic-subgroup.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked what a trace can discard while another datum still distinguishes the inputs. Hearthline applied the PAL/APCI comparison first on the subgroup and then at an element outside it.",
+      "proof_inputs_and_release_role": "The release supplies the paired coefficient ring, polarized cocycles and testing subgroup. Hearthline derived the trace-kernel classification by matrix units, checked the global character action and wrote a field-arithmetic replay. The full-block argument uses elementary representation theory.",
+      "check": "receipt-archives/check_component_and_dual_trace.py",
+      "reading_edition_sha256": "0e971ecedfe3fbf96b068d4f64d1c2bff6fe397b93cf44ed5f2c6dd32956fbbc",
+      "receipt_sha256": "8a9bafeaade831fdcc045a758183cb2ff5b79320a22feadd231f3805d51e0209",
+      "check_sha256": "212d1312078db7ddf834ff743b51739e2ab27e5aff53528b8ea442658992a65c"
+    }
+  ]
+}

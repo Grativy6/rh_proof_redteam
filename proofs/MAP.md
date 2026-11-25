@@ -84,6 +84,15 @@ These three papers carry the corpus question and source inputs on their opening 
 
 Hearthline traced these maps under Chris Pang’s continuing public audit and his question about the original release, 24 November 2026. [Dated source and corpus credits](../receipt-archives/2026-11-24-proof-collection-prime-and-refinement-supplement.json)
 
+## Propagation through components
+
+| Paper | What it establishes |
+| --- | --- |
+| [Two determinant tests at a component intersection](two-determinant-tests-at-a-component-intersection.md) | An explicit intermediate component is needed at the prescribed intersection dimension. In the patched presentation, losing one linear coefficient can split two full-dimensional stable components. |
+| [The trace kernel on the cyclotomic subgroup](the-trace-kernel-on-the-cyclotomic-subgroup.md) | For a two-plus-one block, the unrestricted subgroup trace has a g-by-g matrix of invisible classes. A nontrivial cyclotomic value excludes those classes from the actual twisted global problem. |
+
+Hearthline checked the released predicates and wrote the independent calculations under Christopher Daniel Pang’s continuing audit, 25 November 2026. [Provenance](../receipt-archives/2026-11-25-proof-collection-component-supplement.json)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)
