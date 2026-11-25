@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Can the golden unit change a genuine theta coefficient? | [Explicit theta projections and both changed digits](receipt-archives/2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Products, phases and fields of values](receipt-archives/2026-11-24-what-compatible-theta-sums-recover.md) · [Ramification](receipt-archives/2026-11-24-the-ramification-cost-in-divisor-descent.md) · [Singular and proper fibres](receipt-archives/2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md). Hearthline, under Chris Pang’s request to follow the same lattice branch on 24 November 2026. |
 | Does a golden-ratio unit or a doubled angle hide something the proof later needs? | [Actual substitution, refined class and angular sign](receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) · [GOLD](corpus/GOLD_v0.1.pdf). Hearthline, under Chris Pang’s golden-angle question on 24 November 2026. |
 | Where could a moving coefficient prime hide an exact cyclotomic ratio? | [The remaining weight-one flags and their Frobenius test](receipt-archives/2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md) · [Finite arithmetic](receipt-archives/check_moving_prime_flags.py). Hearthline, 24 November 2026 under Chris Pang’s request to reassemble the marked-point argument. |
 | Does doubling the real dyadic field keep adding 577-classes to the plus count? | [Exact answer at every depth and twist](receipt-archives/2026-11-24-one-strict-class-in-the-entire-real-dyadic-tower.md) · [The 27 possible ideal-class directions and their local obstructions](receipt-archives/2026-11-24-which-of-the-27-class-group-directions-split.md). Hearthline, under Chris Pang’s request to reconstruct the arithmetic, 24 November 2026. |
@@ -92,7 +93,7 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 
 ## Unresolved
 
-The [golden-ratio substitution](receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md#a-lost-distinction-a-finer-lattice-actually-reads) shows how one coarse class admits different refined coefficients. The geometric weight bounds and the separate leading-term isolation control its use in the approximation.
+The [genuine theta example](receipt-archives/2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) gives a finer measurement that disagrees with the coarse reconstructed terms. Products at a single level agree. The [normal local test](receipt-archives/2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md#unresolved) leaves the construction of simultaneous base-germ estimates on the actual global model as the next question.
 
 For the [remaining moving-prime flags](receipt-archives/2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md#unresolved), the rank comparison is at one global deformation point. Independent local data allow either outcome for the Frobenius character.
 

@@ -6,6 +6,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Genuine theta terms](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Exact coefficients](check_e8_theta_refinement.py) · [Compatible class sums](2026-11-24-what-compatible-theta-sums-recover.md) | Tracks two changed leading residues through the next projection and the same-level product calculation. Hearthline under Chris Pang’s lattice request, 24 November 2026. |
+| [Ramification and divisors](2026-11-24-the-ramification-cost-in-divisor-descent.md) · [Singular and proper fibre tests](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md) · [Exact cutoffs](check_theta_descent_bounds.py) | Tests the quantifiers for a base germ on arithmetic surfaces and derives local separation by algebraic probes. Same authorization and date. |
 | [Golden angle and the lattice unit](2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) · [Exact replay](check_golden_carry.py) | Traces both roots of the golden-ratio polynomial, two readings after lattice refinement, and the half-angle sign. Hearthline under Chris Pang’s 24 November question. |
 | [Moving-prime ordinary flags](2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md) · [Exact local replay](check_moving_prime_flags.py) | Narrows a possible marked-point linkage to weight one, accounts for inert quadratic restriction, and identifies the global fixed-weight tangent comparison. Hearthline under Chris Pang’s continuing public audit request, 24 November 2026. |
 | [One strict class across the real dyadic tower](2026-11-24-one-strict-class-in-the-entire-real-dyadic-tower.md) · [Local tests for all 27 directions](2026-11-24-which-of-the-27-class-group-directions-split.md) · [Conductor replay](fixed-character-577/dyadic_conductors.py) · [Local replay](fixed-character-577/dyadic_local_digits.py) | Determines the pure 577 term of the plus sum and leaves the terms involving the moving primes open. Hearthline, authorized by Chris Pang’s continued public audit request, 24 November 2026. |
@@ -108,6 +110,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [geometric refinement](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md#unresolved) changes both leading digits. The [proper-fibre check](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md#unresolved) identifies the simultaneous bound that a global base germ must still supply.
 
 The [two central prime residues](2026-11-24-two-small-primes-read-the-actual-point-units.md) now distinguish the required real point units. The [two forms at the marked point](2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#the-change-of-measurements) still need their values on the two ordinary tangents and their sum, either from tame inertia or the [global norm witnesses](2026-11-24-cyclic-norm-equations-and-the-missing-divisors.md). The [traces on the released subgroup](2026-11-24-two-raw-traces-on-the-released-subgroup.md) and [higher-order branch criterion](2026-11-24-two-equations-at-the-marked-point.md#a-falsifiable-alternative) give the downstream tests.
 

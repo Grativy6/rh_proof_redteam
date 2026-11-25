@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Refine two genuine theta coefficients
+
+Run `python -B check_e8_theta_refinement.py` here for the 240 roots, tied minima, finite-field residues and second binary digit. Run `python -B check_theta_descent_bounds.py` for the short labels, compatible tables, singular surface and blowup tests. Both use the Python standard library. [Theta series](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Field of values](2026-11-24-what-compatible-theta-sums-recover.md) · [Ramification cost](2026-11-24-the-ramification-cost-in-divisor-descent.md) · [Which traits detect a divisor](2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md)
+
 ### Check the golden angle and the two tied lattice terms
 
 Run `python -B check_golden_carry.py` here. Its integer calculations check the six-sector carry, Fibonacci near-returns, the golden-ratio unit, and the two leading lattice points. The [receipt](2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) locates both the source’s actual residue substitution and the sign in its square-root cover.
