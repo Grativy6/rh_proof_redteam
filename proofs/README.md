@@ -12,6 +12,7 @@ The papers state their own conclusions and the scope of their application to the
 
 | Question | Paper |
 | --- | --- |
+| What do the actual primes have to do in the last window estimate? | [The prime window at square cutoffs](prime-remainders-at-square-cutoffs.md) |
 | Can the same recovered metric hide a different arithmetic action? | [Two actions on one fourfold at the same full torsion level](arithmetic-actions-at-full-level.md) |
 | Where can two order-three labels lift to order nine? | [The carry in a nonsplit degeneration](an-order-nine-carry.md) |
 | Can a genuine theta sum disappear, and which probe reads through it? | [An exact zero on a lattice orbit](a-zero-on-a-supported-orbit.md) · [The larger torsion reading and corrected size parameters](torsion-readings-at-a-zero.md) |

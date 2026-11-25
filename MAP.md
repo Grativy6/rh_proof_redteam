@@ -14,6 +14,8 @@ On 25 November 2026, under Pang’s direction, Hearthline built the [prime-phase
 
 ## Where the checks lead
 
+[The released estimate at square cutoffs](proofs/prime-remainders-at-square-cutoffs.md) gives the integer remainder test at level one. On 25 November 2026 Hearthline derived the uniform cost of the omitted rows for Pang’s investigation of the infinite tail.
+
 | Question | Record |
 | --- | --- |
 | Can the auxiliary character have too small a conductor to kill a global class? | [Order 17 at conductor 64 and the exact upper tail](proofs/the-order-seventeen-class-at-conductor-64.md) · [Signed sums](receipt-archives/check_seventeen_dyadic_cutoff.py) · [Two rows and the general cutoff](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md) |
