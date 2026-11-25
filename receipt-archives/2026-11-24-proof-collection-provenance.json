@@ -1,0 +1,713 @@
+{
+  "assembled_local_date": "2026-11-24",
+  "metadata_checked_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL",
+  "derivations": "Hearthline in collaboration with Pang. Individual receipts retain specific additional contributions.",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "date_scope": "DOI dates document the listed corpus editions. The dated receipts and their Git records document the later derivations.",
+  "corpus": {
+    "PAL": {
+      "edition": "PAL v2.4-M, Mathematical Realization Atlas",
+      "registered_title": "PAL v2.4 — Primitive Axiom Layers",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-09-22",
+      "registered_utc": "2026-09-22T18:43:13.000Z",
+      "doi": "10.5281/zenodo.22888036",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.22888036",
+      "project_file": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4",
+      "terms": "CC-BY-4.0"
+    },
+    "APCI": {
+      "edition": "APCI v1.0.0, Exact Certification Through a Declared Interface",
+      "registered_title": "Abstract-to-Physical Certification Impossibility",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-08-13",
+      "registered_utc": "2026-08-13T18:12:56.000Z",
+      "doi": "10.5281/zenodo.21923290",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21923290",
+      "project_file": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30",
+      "terms": "CC-BY-4.0"
+    },
+    "GOLD": {
+      "edition": "GOLD v0.1, Golden-Oriented Lens Diagram",
+      "registered_title": "Golden-Oriented Lens Diagram(GOLD): Sixfold Geometry, Five-Dimensional Comparison, and Trace-Bearing Paths",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-09-01",
+      "registered_utc": "2026-09-01T20:15:16.000Z",
+      "doi": "10.5281/zenodo.22236848",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.22236848",
+      "project_file": "corpus/GOLD_v0.1.pdf",
+      "sha256": "db2f3a097dfc0b2327a9e24e170617c89c9b585ac259aadef4e9623afadf2d90",
+      "terms": "CC-BY-4.0"
+    },
+    "CC": {
+      "edition": "Compactification Costs v0.2",
+      "registered_title": "Compactification Costs: A Typed Framework for Extension, Boundary, Identification, and Ambiguity",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-09-01",
+      "registered_utc": "2026-09-01T21:21:21.000Z",
+      "doi": "10.5281/zenodo.22238012",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.22238012",
+      "project_file": "corpus/Compactification_Costs_v0.2.pdf",
+      "sha256": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994",
+      "terms": "CC-BY-4.0"
+    },
+    "RPL": {
+      "edition": "Riemann–Pang Ledger v1.0",
+      "registered_title": "Riemann-Pang Ledger",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-08-11",
+      "registered_utc": "2026-08-12T00:51:23.000Z",
+      "doi": "10.5281/zenodo.21894278",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21894278",
+      "project_file": "corpus/Riemann-Pang_Ledger_v1.0.docx",
+      "sha256": "7c422ca1962d10a971fa387645e1329e712613f95ef482e31d0a01f901eada8f",
+      "terms": "CC-BY-4.0"
+    },
+    "BLA": {
+      "edition": "Boundary-Ledger Accounting in PAL v0.9.1",
+      "registered_title": "Boundary-Ledger Accounting in Primitive Axiom Layers",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-06-23",
+      "registered_utc": "2026-06-23T05:37:46.000Z",
+      "doi": "10.5281/zenodo.20807530",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.20807530",
+      "project_file": "corpus/BLA_in_PAL_v0.9.1.pdf",
+      "sha256": "7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e",
+      "terms": "CC-BY-4.0"
+    },
+    "CLEF": {
+      "edition": "Cluster-Layer Entropy Focus v1.0",
+      "registered_title": "CLEF: Cluster-Layer Entropy Focus",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-07-04",
+      "registered_utc": "2026-07-04T13:11:59.000Z",
+      "doi": "10.5281/zenodo.21193511",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21193511",
+      "project_file": "corpus/CLEF_cluster_layer_entropy_focus_v1_0.pdf",
+      "sha256": "24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43",
+      "terms": "CC-BY-4.0"
+    },
+    "LOOPS": {
+      "edition": "Abstract Loops v1.0",
+      "registered_title": "Abstract Loops",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-08-15",
+      "registered_utc": "2026-08-15T22:19:14.000Z",
+      "doi": "10.5281/zenodo.21950771",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21950771",
+      "project_file": "corpus/Abstract_Loops_v1.0.docx",
+      "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736",
+      "terms": "CC-BY-4.0"
+    },
+    "BRIDGE": {
+      "edition": "BRIDGE v0.4",
+      "registered_title": "BRIDGE- Binding Residue and Information Dynamics of Generative Export",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-09-11",
+      "registered_utc": "2026-09-11T23:14:45.000Z",
+      "doi": "10.5281/zenodo.22699551",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.22699551",
+      "project_file": "corpus/BRIDGE_v0.4.docx",
+      "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470",
+      "terms": "CC-BY-4.0"
+    },
+    "DARK": {
+      "edition": "DARK v1.0 public methodology",
+      "registered_title": "DARK - Dynamical Attribution and Residual Kernel",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-08-04",
+      "registered_utc": "2026-08-04T01:06:16.000Z",
+      "doi": "10.5281/zenodo.21766026",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21766026",
+      "project_file": "corpus/DARK_v1.0_Public_Methodology_Specification.docx",
+      "sha256": "46a21e77c015d4548fe45fc86939b0ae54d0960932299812f1f3a69b8639055e",
+      "terms": "CC-BY-4.0"
+    },
+    "CONTEXT": {
+      "edition": "The Context Draws a Map v1.0",
+      "registered_title": "The Context Draws a Map",
+      "creator": "Pang, Christopher D.",
+      "issued": "2026-08-08",
+      "registered_utc": "2026-08-08T00:45:13.000Z",
+      "doi": "10.5281/zenodo.21831000",
+      "datacite": "https://api.datacite.org/dois/10.5281/zenodo.21831000",
+      "project_file": "corpus/context-stack/The_Context_Draws_a_Map_v1.0.docx",
+      "sha256": "a777d28734ebb58b7d83481bb2549bfb40c88acdb20db8b591dd9f78c7c3b79c",
+      "terms": "CC-BY-4.0"
+    }
+  },
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/marked-lattice-reconstruction.md",
+      "result": "A complete labelled minimum table at level four or higher determines the positive-definite lattice up to a unique marked isometry.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-reconstructing-a-marked-lattice-by-doubling.md",
+      "receipt_sha256": "23108f4784081c53b40102396554444ef62c2e60e8e5ae4458021a20fd133cc5",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang asked what a marked distance table actually retains about a lattice. His fixed-observation test leads here to a positive reconstruction result.",
+      "proof_inputs_and_release_role": "The proof starts with a positive-definite lattice and the table of minima. Convexity of its Voronoi cell, polarization and integer generation give the result. The Alpöge–Claude release supplies the application to its labelled theta weights.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/arithmetic-actions-at-full-level.md",
+      "result": "Two actions on the same polarized fourfold agree on full level $3^{28}$. A point one power deeper separates them.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md",
+      "receipt_sha256": "13860852aa856ce726796aa3014f5ab70b5a743645b8ee8779811083aa0d3a96",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s question about the information lost in a change of frame led us to hold the lattice metric and the entire torsion observation fixed.",
+      "proof_inputs_and_release_role": "The discriminant bound and the fourfold example use integral operators, quaternions and torus uniformization. The release supplies the level-size requirements and the generic arithmetic-action comparison against which the example is tested.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/three-weighted-triangle-optima.md",
+      "result": "Compare cuts, the shortest roots of $E_8$, and arbitrary unit vectors. The weighted optima distinguish the three constraints.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md",
+      "receipt_sha256": "0ed8de9a20bbcef21bdf6540d8f37e65a34c8e9a89d189c69c41cba9a2b8c398",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s earlier golden-rotation and frame questions motivate keeping the allowed directions explicit as one weight changes. His later pointer to Bubeck’s post prompted this particular comparison.",
+      "proof_inputs_and_release_role": "The weighted-cut relaxation is due to Goemans and Williamson. OpenAI supplied the separate matrix-exponent claim. Our calculation compares their formula with a shortest-root constraint and proves a golden-ratio nonattainment result. The Alpöge–Claude input is the particular E₈ matrix and its use in their reference orbit.",
+      "first_publication": "In the same revision as this collection."
+    },
+    {
+      "reading_edition": "proofs/golden-and-rational-boundary-limits.md",
+      "result": "The golden limit has an exactly repeating normalized height. At a rational rank-one boundary the cluster set is a full interval.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-the-golden-limit-and-the-rational-boundary.md",
+      "receipt_sha256": "4d43656a3814394397722a78291df2a80491fc7b88587bba27ede3a120ae3c3e",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s GOLD records a rotation and its residual, and Compactification Costs asks which distinctions survive at a boundary. Here the question is what remains after the height is rescaled.",
+      "proof_inputs_and_release_role": "The specific Voronoi seed and fan hypotheses come from the release. The Fibonacci scaling, cluster-set calculation and normal-local-ring argument are the derivations given here.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/inserting-vectors-in-a-support.md",
+      "result": "An integral identity inserts any prescribed finite list into a strict support. A binary example gives all twelve entries.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-an-explicit-support-for-the-zero-orbit.md",
+      "receipt_sha256": "5b82aa3a4fe65f3e8a309279d7ccb610b1f776a3409ad6f31b54ee10eba32689",
+      "corpus_editions": [
+        "PAL",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang asked whether the same arithmetic objects can survive the change of frame and still meet the required equality.",
+      "proof_inputs_and_release_role": "The release defines the support and its equality condition. Lagrange’s identity inserts vectors into any such support. The explicit binary fan and twelve-entry example are worked out here.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/local-elementary-divisors-and-global-slope.md",
+      "result": "Matching local elementary divisors allows global maximum slopes separated by an arbitrarily large amount.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-23-aligned-lattice-slope.md",
+      "receipt_sha256": "b73cb324011f633f95d24bac30b7062928309985b2e61a7339a2f203aa056b3f",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s same-observation question asks which global quantities can vary when all the stated local readings agree.",
+      "proof_inputs_and_release_role": "The release supplies the row predicates, levels and intended bound. The two row lattices and their slope comparison are the project’s construction.",
+      "first_receipt_commit": "a7df64703660a644f611b4d9743fed3bf7b76763"
+    },
+    {
+      "reading_edition": "proofs/quotient-covolumes-under-embedding.md",
+      "result": "Taking a Hermitian quotient before or after a field embedding can give arbitrarily different mean logarithms.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-23-quotient-covolume.md",
+      "receipt_sha256": "ad38f9f18c27e55c3ec372b230dce7e7279ce89bdaa90f7bb4c5f23a68eb507e",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked whether a metric reading can be transported to a new arithmetic frame without losing the quantity being measured.",
+      "proof_inputs_and_release_role": "A Hermitian quotient and a change of embedding suffice for the mathematical example. The release supplies the particular quotient bound whose direction is then checked.",
+      "first_receipt_commit": "f114c5d2a61c04f1e016fc866342ae98aa7d9075"
+    },
+    {
+      "reading_edition": "proofs/a-self-dual-lattice-with-no-unit-vector.md",
+      "result": "A self-dual lattice can represent one at every completion and have no global vector of norm one.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-24-the-self-dual-lattice-with-no-unit-vector.md",
+      "receipt_sha256": "fb9ec49e416b14937df4eb91949f745abba0d6b49c9f2fc077a8c3891e77bc97",
+      "corpus_editions": [
+        "PAL",
+        "BLA"
+      ],
+      "originating_question_or_method": "Pang’s BLA comparison keeps the same curve ideal in view under local valuation and global norm readings. The corpus guide records this application.",
+      "proof_inputs_and_release_role": "The release supplies the host fields and its ideal-scaling prescription. The norm-one obstruction and local-global comparison are proved for those data.",
+      "first_receipt_commit": "22e69e2ba627a98faa6f75ca9e8129bb9984a00f"
+    },
+    {
+      "reading_edition": "proofs/sharp-degree-for-edge-separation.md",
+      "result": "In the binary test, degree $d$ buys at most $\\lfloor d/q\\rfloor$ extra uniformizer powers on every competing edge.",
+      "subject": "Lattice geometry and arithmetic actions",
+      "dated_receipt": "receipt-archives/2026-11-23-edge-separation.md",
+      "receipt_sha256": "220feccc3c79cc2bd59286149d965bed1a82d7883d587d5f4ec89e27c158c6ec",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s audit asks how much precision a fixed observation can spend to distinguish competing inputs.",
+      "proof_inputs_and_release_role": "The release supplies its source lattice, local rank predicate and Frobenius coordinates. The binary degree bound and its equality examples are independently counted here.",
+      "first_receipt_commit": "02c1cdfceebd424a7b1208df04c47871aeb04b08"
+    },
+    {
+      "reading_edition": "proofs/a-zero-on-a-supported-orbit.md",
+      "result": "An exact theta zero lies on a determinant-one orbit. Its weight and the sharp shortest-lift bound isolate the surviving reference term.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md",
+      "receipt_sha256": "3e0ff010a52a085f2f98a5f7820a12dcdc4048d9ea3f1292617ac436a2e68d91",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s golden-lattice branch asked where a lost residue can return on the very orbit that carries the claimed estimate.",
+      "proof_inputs_and_release_role": "The E₈ matrix, distinguished slot and congruence predicates are upstream inputs. The shortest-lift theorem, tuned theta zero and reference-weight comparison are proved here. Later size checks are linked above.",
+      "first_receipt_commit": "cfb8c7c43e580cd98d3310e3b69b10d119addfee"
+    },
+    {
+      "reading_edition": "proofs/torsion-readings-at-a-zero.md",
+      "result": "One theta section vanishes on an entire smaller probe group and recovers the full leading size on the next group. Includes corrected size parameters.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-the-torsion-reading-that-sees-through-the-zero.md",
+      "receipt_sha256": "c92ecaa232c7bf5f67dd97d5049e8efef1bb4e5be6b94bc185bce0acb2715028",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s request to track the missing residue motivates changing only the torsion observation on the very same theta section.",
+      "proof_inputs_and_release_role": "The allowed projection, phases and three size inequalities come from the release. The two-parameter family, Fourier calculation, ideal and Newton check are derived here.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/a-zero-at-every-toric-depth.md",
+      "result": "An elliptic good factor makes every toric probe of the distinguished section vanish. A different section or torsion label recovers a unit.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-a-theta-zero-at-every-toric-depth.md",
+      "receipt_sha256": "2e3b96b1b72e20894d57c152d78f2c6a72b815c28f06a9742544604c09afa434",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s request to probe what a geometric measurement can miss led to holding the good elliptic coordinate fixed as toric precision grows.",
+      "proof_inputs_and_release_role": "The release supplies the eighth-power polarization and the distinction between a torsion probe and a section index. The elliptic example, root-line calculation and counting bounds are developed here using the cited classical facts.",
+      "first_receipt_commit": "f60cbf926541e7564e0f8c5beeab3fdac06c00b1"
+    },
+    {
+      "reading_edition": "proofs/an-order-nine-carry.md",
+      "result": "A nonsplit polarization kernel has two order-nine generators where the phase-free kernel has exponent three. Both have 81 elements.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md",
+      "receipt_sha256": "cbe0533b039794e4328f7ccf31948681460a5518bfb281153462ff6b4320c168",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang asked for the residue carried through a lattice handoff. His phase and fibre questions led to testing the two power maps on one and the same torsion fibre.",
+      "proof_inputs_and_release_role": "The nonsplit example, finite group law and integral obstruction are derived from the elliptic Weil pairing and classical period theory. The release supplies the particular E₈ coordinate factor and inverse matrix tested at the end.",
+      "first_publication": "In the same revision as this collection."
+    },
+    {
+      "reading_edition": "proofs/moving-coefficient-zeros.md",
+      "result": "In a nonsplit degeneration each good torsion point misses some uniquely minimized class. A bounded family of probes detects all translated sections.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md",
+      "receipt_sha256": "07876bf653d8fbdaa60422c1831c50f1e85f70e6395d56cb1dfec0401ed05f2c",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s fibre question led us to vary the good torsion point while tracing the same Fourier coefficient and the order of the choices.",
+      "proof_inputs_and_release_role": "The release supplies the primitive-family and individual-probe quantifiers. The moving-zero construction, finite set of detecting probes and comparison use the nonsplit example and the cited classical theta theory.",
+      "first_publication": "In the same revision as this collection."
+    },
+    {
+      "reading_edition": "proofs/two-genuine-theta-terms.md",
+      "result": "The same coarse sum can conceal two changed leading digits on genuine Fourier projections.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md",
+      "receipt_sha256": "33d7d0bde10e48ea9bee4631b6da131fe0e9b282309d010bdd77b14b3fc6c639",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang asked whether the golden-ratio substitution can erase a residue on a genuine lattice input. GOLD and Compactification Costs supply the recorded route to that question.",
+      "proof_inputs_and_release_role": "The release supplies the particular numerical recipe, its matrix and its geometric caller. The explicit theta periods and the two leading digits are calculated here.",
+      "first_receipt_commit": "dc9b4947a18e3c9d2c45c827e261e172b2e9d53c"
+    },
+    {
+      "reading_edition": "proofs/the-first-unpaired-theta-term.md",
+      "result": "A reflection pairs the two true fine sums. The first unpaired point sets the exact precision to which halving the coarse sum recovers them.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-the-determinant-inside-the-disappearing-sum.md",
+      "receipt_sha256": "44274dff5655338ab4ee15a75a88ab59239b052a07e026f48aa420728199b03b",
+      "corpus_editions": [
+        "PAL",
+        "GOLD",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang specifically asked about the residue left by a cancellation. The calculation tracks the first lattice point that the pairing can no longer hide.",
+      "proof_inputs_and_release_role": "The example uses the release’s E₈ matrix and numerical reconstruction. The reflection, determinant and exact precision at the first unpaired term are proved here.",
+      "first_receipt_commit": "cfb8c7c43e580cd98d3310e3b69b10d119addfee"
+    },
+    {
+      "reading_edition": "proofs/the-two-digit-theta-rank.md",
+      "result": "The residue table has rank 28. Seven more independent directions appear in the next binary digit.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-how-many-theta-directions-the-second-digit-recovers.md",
+      "receipt_sha256": "d7bee4a732d3ed2af0d66ee00bb4ec932143b3951d66b67a4a688f4c2f201ac8",
+      "corpus_editions": [
+        "PAL",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s question about a residue on the residue motivated comparing two successive digits of the same genuine table.",
+      "proof_inputs_and_release_role": "The release supplies its lattice and the ordinary-section comparison. The rank calculations and determinant certificate concern the new geometric table constructed in this audit.",
+      "first_receipt_commit": "cfb8c7c43e580cd98d3310e3b69b10d119addfee"
+    },
+    {
+      "reading_edition": "proofs/compatible-theta-class-sums.md",
+      "result": "Coherent class sums can have a limit outside the algebraic closure. At a fixed geometric trait the Galois symmetry constrains the field of values.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-what-compatible-theta-sums-recover.md",
+      "receipt_sha256": "d06347661c2ee0fd1eff6a0d964f96302eb36e1d845de47197c282f704b3658f",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "RPL"
+      ],
+      "originating_question_or_method": "Pang’s finite-observation and completion questions motivate testing what compatible finite readings can force about one infinite object.",
+      "proof_inputs_and_release_role": "The algebraic-closure counterexample is constructed directly. The positive field-of-values result uses the finite Galois and attained-weight hypotheses stated in the release.",
+      "first_receipt_commit": "dc9b4947a18e3c9d2c45c827e261e172b2e9d53c"
+    },
+    {
+      "reading_edition": "proofs/disappearing-tail-after-conjugation.md",
+      "result": "Conjugating the coefficients of a nonzero entire function can give a series of radius zero, even after any prescribed finite initial segment.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-23-conjugated-theta-tail.md",
+      "receipt_sha256": "c65350f9279ec2f7ff5a2392039a2ceba84c162cbe220a59962ba3e1c9fc15a1",
+      "corpus_editions": [
+        "PAL",
+        "RPL",
+        "APCI",
+        "LOOPS"
+      ],
+      "originating_question_or_method": "Pang’s Riemann–Pang Ledger supplied the finite-prefix and uncontrolled-tail question. APCI and Abstract Loops ask which further reading can distinguish the two continuations.",
+      "proof_inputs_and_release_role": "The counterexample uses a quadratic field unit and the root test. The release supplies its summation convention and the particular geometric theta subclass whose protection is examined separately.",
+      "first_receipt_commit": "446ea9840b5b055a32e49e9f5a06292f8d8ba394"
+    },
+    {
+      "reading_edition": "proofs/exact-precision-at-a-ramified-prime.md",
+      "result": "For a totally ramified cyclic extension of prime degree, the ramification break gives the exact loss in approximating an almost invariant element downstairs.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md",
+      "receipt_sha256": "70e780ef738468b78a67961df91ff76081a692155786650da3abdda9f49609e2",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s question about trusting a preserved readout motivates testing how much Galois invariance can be recovered from a congruence.",
+      "proof_inputs_and_release_role": "The cyclic prime-degree digit formula is proved from a uniformizer basis. The release supplies the separate frame-root and invariant-germ construction used in its application.",
+      "first_receipt_commit": "cfb8c7c43e580cd98d3310e3b69b10d119addfee"
+    },
+    {
+      "reading_edition": "proofs/sharp-precision-in-divisor-descent.md",
+      "result": "A tail estimate is sharp on a fixed trait. A regular arithmetic surface gives exact precision thresholds for divisor descent.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-the-ramification-cost-in-divisor-descent.md",
+      "receipt_sha256": "7675be5820ecfb28e8510d42c8974587468f6558d6328a1cd57f885be1fb464b",
+      "corpus_editions": [
+        "PAL",
+        "RPL"
+      ],
+      "originating_question_or_method": "Pang’s work on thresholds and the tails they control motivates keeping the test point and the requested precision in their stated order.",
+      "proof_inputs_and_release_role": "The release supplies the divisibility and approximation predicates. The lattice estimate, ramified family and sharp cutoffs on an arithmetic surface are calculated directly.",
+      "first_receipt_commit": "dc9b4947a18e3c9d2c45c827e261e172b2e9d53c"
+    },
+    {
+      "reading_edition": "proofs/singular-points-and-proper-fibres.md",
+      "result": "A singular arithmetic surface has a computable cutoff. One ramified arc rejects every proposed base generator in a two-blowup example.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-24-which-traits-detect-a-divisor-at-a-singular-point.md",
+      "receipt_sha256": "82b7b9c709a6e0acffec5b2e8cb48f4b8d4f27b8fcf8c10ba0f16e8cac74a6db",
+      "corpus_editions": [
+        "PAL",
+        "CC"
+      ],
+      "originating_question_or_method": "Pang’s question about what a frame can actually certify motivates testing the same divisibility claim at singular and exceptional points.",
+      "proof_inputs_and_release_role": "The release supplies the normality and proper-fibre hypotheses and its downstream use. The node, blowup and separating-probe arguments appear here with their commutative-algebra inputs.",
+      "first_receipt_commit": "dc9b4947a18e3c9d2c45c827e261e172b2e9d53c"
+    },
+    {
+      "reading_edition": "proofs/one-lost-digit-in-a-jet.md",
+      "result": "For infinitely many orders the one-variable jet loses a whole unit of divisibility. The loss is sharp on this specialization.",
+      "subject": "Theta series, torsion and descent",
+      "dated_receipt": "receipt-archives/2026-11-23-jet-loss-and-frames.md",
+      "receipt_sha256": "3293f6443f995fc7b359bbe4ed6cdf1cb0e1cf4352e6adbddf6a048b14211c9e",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s declared-interface test motivates measuring exactly how many digits of a jet survive an integral change of frame.",
+      "proof_inputs_and_release_role": "The release provides the jet estimate and its formal hypotheses. The one-variable examples and sharp loss are calculated in this audit.",
+      "first_receipt_commit": "9705f68e557c8608ceccf094cc6b8bef84e600b9"
+    },
+    {
+      "reading_edition": "proofs/a-577th-power-locally.md",
+      "result": "A single Taylor coefficient checks the strict local condition, while a different prime supplies a global witness of order 577.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-the-577-class-on-paper.md",
+      "receipt_sha256": "b6c448fc1cf1c59f2ead56801f5853de2ddbe6c0733ca939ed5746ab948df5b1",
+      "corpus_editions": [
+        "PAL",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Pang’s local-versus-global reading question is applied to one fixed class. CLEF keeps the two levels of observation explicit in this arithmetic branch.",
+      "proof_inputs_and_release_role": "The field, twist and target strict condition are chosen from the release. The Taylor coefficient and independent global prime are arithmetic witnesses worked out here.",
+      "first_receipt_commit": "c463533a89675464a6cef7ac37b7e13c93425835"
+    },
+    {
+      "reading_edition": "proofs/a-dyadic-ideal-of-order-577.md",
+      "result": "An explicit dyadic ideal has order 577 and contributes a class to the arithmetic count.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-the-dyadic-ideal-of-order-577.md",
+      "receipt_sha256": "df0603d5ff515812a6bfbf8ef58ba734c80e14f7e057d1a249a01562e300f052",
+      "corpus_editions": [
+        "PAL",
+        "BLA",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Pang’s corpus asks to keep the same ideal in view when changing from a geometric measurement to an arithmetic one.",
+      "proof_inputs_and_release_role": "The release supplies the shape of the host, geometric class and arithmetic count. The explicit ideal, its generator and its exact order are calculated for this input.",
+      "first_receipt_commit": "22e69e2ba627a98faa6f75ca9e8129bb9984a00f"
+    },
+    {
+      "reading_edition": "proofs/one-class-across-the-real-dyadic-tower.md",
+      "result": "The pure-character part of the 577 count is determined on every sufficiently deep real dyadic layer.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-one-strict-class-in-the-entire-real-dyadic-tower.md",
+      "receipt_sha256": "3a1e0a908ec44afad76d94df206e479ec8b4a11c1511284b3562aee826f6c417",
+      "corpus_editions": [
+        "PAL",
+        "CLEF",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked us to reconstruct the arithmetic rows of rhOfAll and keep one character fixed while the window changes.",
+      "proof_inputs_and_release_role": "The release supplies the host, twists and normalized plus-count. This paper computes its pure-character contribution and states which other characters remain outside that computation.",
+      "first_receipt_commit": "5f2945a6fe750e8d148e22d324523b6415404393"
+    },
+    {
+      "reading_edition": "proofs/finite-splitting-in-an-infinite-tower.md",
+      "result": "Each finite layer has a detecting prime even though every fixed finite place eventually loses its detection.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-every-place-splits-in-the-limit.md",
+      "receipt_sha256": "02e692a20b53dc8e54488198018b7435f94fcf799fdd8257a6121bebea66734f",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "RPL"
+      ],
+      "originating_question_or_method": "Pang asked what changes if a finite list of observations is fixed before moving up the tower. This application is recorded in the corpus guide.",
+      "proof_inputs_and_release_role": "The example uses the cyclotomic host and class singled out in the audit. The two orders of quantification are distinguished with explicit primes and splitting calculations.",
+      "first_receipt_commit": "62a5428936cb725603489b301357d67a00d2aa18"
+    },
+    {
+      "reading_edition": "proofs/two-groups-stop-at-order-25.md",
+      "result": "Two distinct obstructions rule out order 125 for the strict groups on the inputs 2179 and 106619.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-why-the-classes-stop-at-twenty-five.md",
+      "receipt_sha256": "73f405efffd8d2e73bcfea37838c7469a394d117c739386449e2f35f8e2c1110",
+      "corpus_editions": [
+        "PAL",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Pang’s CLEF comparison follows a fixed global class through local measurements at successive coefficient orders.",
+      "proof_inputs_and_release_role": "The release sets the strict group being tested. A published conjectural table prompted one input. The divisor and local unit arguments here give the two cutoffs.",
+      "first_receipt_commit": "51f82889320e9a979c1586a3930fa68291a89d33"
+    },
+    {
+      "reading_edition": "proofs/the-rank-two-obstruction-at-571.md",
+      "result": "The unique classical weight-three form in the rank-two alternative has the wrong coefficient modulo five.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-the-rank-two-alternative-at-571.md",
+      "receipt_sha256": "dd33ae9653fd127da683483cc2ae8d6e5c4e7682fb4dbf3582c8df610bc718cd",
+      "corpus_editions": [
+        "PAL",
+        "BLA"
+      ],
+      "originating_question_or_method": "Pang’s BLA comparison follows the observed contribution into the exact rank-two alternative. The corpus guide explicitly records this use.",
+      "proof_inputs_and_release_role": "The release states the alternative and its local conditions. Twisting and the checked Fourier coefficient rule out the proposed rank-two point on this input.",
+      "first_receipt_commit": "e51917abf586100483fe5faa01480bc2c79c0868"
+    },
+    {
+      "reading_edition": "proofs/same-residual-trace-different-strict-group.md",
+      "result": "Two twists have the same complete residual trace on the stated subgroup and strict groups of orders 577 and one.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-the-companion-with-the-same-full-trace.md",
+      "receipt_sha256": "058bc4664b914c68979ff7b25f0baa9a21c05871cb328a8840dda151d3a4b07b",
+      "corpus_editions": [
+        "PAL",
+        "APCI",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Pang’s APCI comparison asks whether an entire trace determines the marked arithmetic answer. The corpus guide records the test on these two twists.",
+      "proof_inputs_and_release_role": "The release supplies the two twists, the host subgroup and the ordered conditions. The matching characteristic polynomials and the separate strict-group computations are the comparison given here.",
+      "first_receipt_commit": "7b20fbba577cfc7cadd7d645973281cc8fa584a0"
+    },
+    {
+      "reading_edition": "proofs/the-minus-eighty-collision.md",
+      "result": "The geometric multiplier erases a nonzero squareclass reading. The proof counts the inputs sharing its image.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-when-minus-eighty-erases-a-class.md",
+      "receipt_sha256": "985ea0a2ecbe1350cb8165d09f1d99500f01f108c5a45c05fdeb6a338d9c8577",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s APCI observation-fibre test motivated comparing distinct squareclasses under the same weighted norm. This example is recorded in the corpus guide.",
+      "proof_inputs_and_release_role": "The coefficient minus eighty and the map being measured are taken from the release. The distinct inputs, collision count and downstream check were calculated in the audit.",
+      "first_receipt_commit": "62a5428936cb725603489b301357d67a00d2aa18"
+    },
+    {
+      "reading_edition": "proofs/integral-transforms-and-891-denominators.md",
+      "result": "On a CM example integral character sums conceal a denominator present in each of 891 individual class readings.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-23-partial-zeta-loss.md",
+      "receipt_sha256": "ecbaac56731938f40bd044d75af4679dc6f66c9d77eed4fa00103da9e13c3283",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked whether observing every transformed sum can certify the original arithmetic entries.",
+      "proof_inputs_and_release_role": "The release supplies the CM period normalization and the character transform. The class-field example and its 891 individual denominator readings are proved with the cited arithmetic inputs.",
+      "first_receipt_commit": "fd4280e7f56db7500c88e3cc7d47153bc857e050"
+    },
+    {
+      "reading_edition": "proofs/three-colliding-eigenlines.md",
+      "result": "Direct counts give both sides of the transfer for the stated equal-depth and isolated-singleton families.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-three-colliding-eigenlines.md",
+      "receipt_sha256": "c8d89f2910faef38f1901700a135c3af4989ec6f7ab5c592c685c02597161616",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s fixed-observation test motivates holding the reported trace data fixed while checking the lattices behind both sides of the transfer.",
+      "proof_inputs_and_release_role": "The release defines the two orbital counts. This paper derives their equality for the stated families by lattice counting and checks the finite cases independently.",
+      "first_receipt_commit": "01688996fcf65fe29ff01f789f5573f87fa3c50d"
+    },
+    {
+      "reading_edition": "proofs/four-character-reconstruction.md",
+      "result": "One prime-sum measurement drops a zeta zero. The other three characters recover the missing contribution.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-taking-rhofall-apart-at-the-four-characters.md",
+      "receipt_sha256": "c6fc8c2df0e11193b4612ca4cdf240f8d35f63c243d4aa3d25f98200c4e1aeb2",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked to take rhOfAll apart and see what each arithmetic row loses before putting the pieces back together.",
+      "proof_inputs_and_release_role": "The four characters and the deduction being dismantled are release inputs. The Euler-product and character reconstruction explains the missing zero for that specified row.",
+      "first_receipt_commit": "d22341c8d572477a1cdaa51ddb91f43705b8d4b7"
+    },
+    {
+      "reading_edition": "proofs/two-primes-in-one-window.md",
+      "result": "At an explicit scale two arithmetic contributions exceed one shared budget. The published eventual threshold lies later.",
+      "subject": "Arithmetic witnesses and counts",
+      "dated_receipt": "receipt-archives/2026-11-24-two-primes-break-one-window-budget.md",
+      "receipt_sha256": "003ac28a44f433b5408d7e28de9a2e885e140144fad298336c39153ac5e95f1e",
+      "corpus_editions": [
+        "PAL",
+        "CLEF"
+      ],
+      "originating_question_or_method": "Pang asked to keep the actual scale fixed while combining arithmetic contributions that fit separately.",
+      "proof_inputs_and_release_role": "The release supplies the window budget and its eventual quantifiers. The two-prime example is a pointwise failure at the stated scale.",
+      "first_receipt_commit": "d22341c8d572477a1cdaa51ddb91f43705b8d4b7"
+    },
+    {
+      "reading_edition": "proofs/asymmetric-mixed-intersection.md",
+      "result": "The supplied mixed intersection returns two in one order and eight in the other. The genuine surface value is four either way.",
+      "subject": "Geometric models and heights",
+      "dated_receipt": "receipt-archives/2026-11-23-geometry-witness.md",
+      "receipt_sha256": "023087ba08c6595e20affe244ab3319fcfa35bb86f828e2b178a58f0007b4dfc",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang set the declared-interface test. Jenny Lorraine Nielsen’s critique identified the permissive geometry predicate that prompted this particular calculation.",
+      "proof_inputs_and_release_role": "The geometry constructor and its call sites are taken from Alpöge–Claude. Evaluating it in both orders is the project’s counterexample to the mixed classical interpretation.",
+      "first_receipt_commit": "4272021c7bcc68ac8342230495642dd8f2ecbcd2"
+    },
+    {
+      "reading_edition": "proofs/section-growth-of-the-geometry-witness.md",
+      "result": "The selected geometry builder fails the release’s stronger asymptotic Riemann–Roch condition. The tested numerical uses carry separate premises.",
+      "subject": "Geometric models and heights",
+      "dated_receipt": "receipt-archives/2026-11-23-mixed-estimates.md",
+      "receipt_sha256": "2b87a2b202af1c7600e1a8b9ef1d391b84dd5e2af1fa143962c028769a080cdf",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked whether the chosen geometric object earns the separate growth assertion. The project key also credits Nielsen for identifying the permissive predicate.",
+      "proof_inputs_and_release_role": "This is expressly a countertheorem about the release’s divXFl constructor and its stronger Riemann–Roch condition. The project supplies the counterargument and traces the actual uses.",
+      "first_receipt_commit": "8aeaa4cc3de321c67790944d412b66041ccb6117"
+    },
+    {
+      "reading_edition": "proofs/coefficient-fields-outgrow-the-window.md",
+      "result": "For the specified trivial-character windows the auxiliary coefficient-field degree eventually exceeds every fixed power of the scale.",
+      "subject": "Geometric models and heights",
+      "dated_receipt": "receipt-archives/2026-11-23-window-coefficient-degree.md",
+      "receipt_sha256": "70ba1a6227b3e8ce3cabe23ac4fc9feb18645507986653081c3eaaf345d1971e",
+      "corpus_editions": [
+        "PAL",
+        "RPL"
+      ],
+      "originating_question_or_method": "Pang’s uniformity question asks which parameters can grow while a window estimate is being used.",
+      "proof_inputs_and_release_role": "The release supplies the trivial-character window, host and auxiliary-field construction. The field-degree lower bound is derived on that specific family.",
+      "first_receipt_commit": "06085e62f9a1243dd89ffeba805a1a3d69d471aa"
+    },
+    {
+      "reading_edition": "proofs/small-sections-over-moving-fields.md",
+      "result": "A fixed line and metric give different normalized small-section counts when the coefficient fields move with the tensor power.",
+      "subject": "Geometric models and heights",
+      "dated_receipt": "receipt-archives/2026-11-23-field-and-section-count.md",
+      "receipt_sha256": "91fcf9ae12014a591dcef48eaa544c05fef139dfcf9617ca12d4719a7480090e",
+      "corpus_editions": [
+        "PAL",
+        "RPL"
+      ],
+      "originating_question_or_method": "Pang’s scope and uniformity questions motivate keeping the archimedean metric fixed while varying the coefficient field and tensor power.",
+      "proof_inputs_and_release_role": "The project’s moving-field example is computed on a fixed projective line. The paper compares it to the particular small-section estimate in the release.",
+      "first_receipt_commit": "d335fb964cdc926f8a1311b6f4c49ae73a63cdbe"
+    }
+  ]
+}

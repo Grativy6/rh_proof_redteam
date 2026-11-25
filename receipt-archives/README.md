@@ -2,6 +2,12 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
+
+### Test the weighted triangle and the nonsplit carry
+
+Run `python -B check_triangle_and_nonsplit_carry.py` here with the standard library and the neighboring E₈ check. It verifies the elliptic flex value in the 25-element residue field, counts the orders of all 81 points of the restricted polarization kernel, and compares the weighted triangle optima. [Triangle](2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md) · [Nonsplit periods](2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md) · [Moving coefficient](2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md)
+
 ### Recover a marked metric and distinguish arithmetic actions
 
 Run `python -B check_marked_lattice_and_torsion.py` here. It uses only the Python standard library and checks Gram recovery through rank four, a Hensel correction modulo $2^{324}$, the corrected torsion size bounds, fourfold action matrices and the integer face identities. [Doubling proof](2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) · [Exact Fourier measurements](2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) · [Mixed toric and good reduction](2026-11-24-a-theta-zero-at-every-toric-depth.md) · [Arithmetic action](2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md) · [Fan limit](2026-11-24-the-golden-limit-and-the-rational-boundary.md) · [Supporting tuple](2026-11-24-an-explicit-support-for-the-zero-orbit.md)

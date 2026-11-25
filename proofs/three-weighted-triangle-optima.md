@@ -1,0 +1,49 @@
+# Three ways to read the nine-fourths triangle
+
+**Corpus and derivation.** This result was developed in Christopher Daniel Pang’s PAL research program with Hearthline. Pang’s earlier golden-rotation and frame questions motivate keeping the allowed directions explicit as one weight changes. His later pointer to Bubeck’s post prompted this particular comparison. Hearthline wrote the mathematical argument. [PAL v2.4-M, Mathematical Realization Atlas](../corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx) · [GOLD v0.1, Golden-Oriented Lens Diagram](../corpus/GOLD_v0.1.pdf) · [Compactification Costs v0.2](../corpus/Compactification_Costs_v0.2.pdf)
+
+**Proof inputs and the release.** The weighted-cut relaxation is due to Goemans and Williamson. OpenAI supplied the separate matrix-exponent claim. Our calculation compares their formula with a shortest-root constraint and proves a golden-ratio nonattainment result. The Alpöge–Claude input is the particular E₈ matrix and its use in their reference orbit.
+
+[Proof collection](README.md) · [Dated receipt and supporting checks](../receipt-archives/2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md) · [Contribution record](PROVENANCE.md)
+
+**24 November 2026.** Chris Pang pointed Hearthline to Sébastien Bubeck’s announcement about the matrix multiplication exponent and the Goemans–Williamson value of an equilateral triangle. There is an exact connection beyond the unweighted example. The optimum of the **weighted** three-vertex semidefinite relaxation has the same formula that OpenAI’s release gives for **all positive rectangular matrix-multiplication weights**. Within the RH audit, the released $E_8$ lattice supplies a third feasible set. All three calculations below are independent of Lean.
+
+## What was announced
+
+OpenAI’s November 24 manuscript reports a matching lower bound for formal arithmetic circuits, giving square exponent $9/4$ over every field. This exponent measures asymptotic arithmetic-operation growth. The earlier upper bound has a separate elementary derivation by Amir Shpilka. The November paper obtains its lower bound through a tensor-network argument and a lower bound for batched list distinctness. In its own price calculation, a flat Euclidean triangle gives ratio two. Its critical configuration is a tripod with three unit arms: total pairwise distance six and shared-label rate $8/3$, giving $6/(8/3)=9/4$. The triangle calculation below checks a numerical identity with the reported result; it does not independently establish the circuit lower bound. [November manuscript](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/README.md) · [Price argument and tripod](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/build/intro.tex#L140-L202) · [Shpilka’s independent upper-bound proof](https://eccc.weizmann.ac.il/report/2026/281/)
+
+The release’s scope document gives the exact rectangular and dual exponents in its division-free formal-polynomial model. The linked solution actually states the square theorem and the rectangular formula. The paper also claims a per-size lower bound on **nonscalar** multiplication or division gates; the scope document lists that stronger per-size assertion as unformalized. [Solution declarations](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean#L9-L61) · [Formalization scope](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/docs/379.md#L59-L69)
+
+## What $9/4$ measures on a triangle
+
+The integer Max-Cut labels are two signs. They split at most two edges of an unweighted triangle. In the Goemans–Williamson relaxation, give the three vertices unit vectors $a,b,c$. Edge $ij$ earns $(1-u_i\cdot u_j)/2$. The entire objective is
+$$\frac94-\frac14\|a+b+c\|^2.$$
+Three directions $120^\circ$ apart achieve $9/4$. Each of the three edges then earns $3/4$. The graph’s actual maximum cut still has two edges. [Original semidefinite relaxation](https://math.mit.edu/~goemans/PAPERS/maxcut-jacm.pdf)
+
+For positive edge weights $x\ge y\ge z$, put weights $x,y$ on the two edges meeting at $a$, and $z$ on $bc$. Fix $t=b\cdot c$. The best $a$ points opposite $xb+yc$, so the maximum for this $t$ is
+$$\frac{x+y+z+\sqrt{x^2+y^2+2xyt}-zt}{2}.$$
+If $z\le xy/(x+y)$ the maximum is at $t=1$ and is exactly the cut value $x+y$. Otherwise the optimum has $\sqrt{x^2+y^2+2xyt}=xy/z$. This length is feasible because $|x-y|\le xy/z<x+y$. Substitution gives, in both regimes,
+$$x+y+\frac{\max(0,(x+y)z-xy)^2}{4xyz}.$$
+This is identically the positive-weight formula in the rectangular exponent theorem. In particular for weights $(1,1,t)$ its plateau ends at $t=1/2$, matching the reported dual exponent. The circuit proof has an additional burden: to explain why arithmetic computation is governed by that function. [Formal rectangular result](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean#L50-L61)
+
+## The actual $E_8$ test
+
+Now require each direction to come from a shortest root of the RH release’s $E_8$ lattice, divided by $\sqrt2$. Take $r=e_0$ and $s=-e_2$ in its numbering. They have squared length 2 and $\langle r,s\rangle=1$. The three roots $r,-s,s-r$ sum to zero and have pairwise inner products $-1$. Thus the same equilateral optimizer really occurs on the integral lattice. The audit can compare the three feasible sets at an asymmetric input where the outputs differ. [Actual Gram matrix](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/CharacterTheory/W8AddTransposeEqE8.lean#L8-L18)
+
+For **every** positive weighted triangle the maximum on this root shell is
+$$\max\{x+y,\;3(x+y+z)/4\}.$$
+If there is no antipodal pair, all normalized dot products are at least $-1/2$ by integrality. The displayed triple attains the resulting second bound. If there is an antipodal pair, the other two inner products have opposite signs; the score is at most the weight of that edge plus the larger of the other two weights, hence at most $x+y$. A sign cut attains that bound. For weights $(1,1,3/4)$ the three exact answers are $2$ for signs, $33/16$ for shortest roots and $25/12$ for arbitrary unit vectors. The last two differ by $1/48$. Agreement at the equilateral point by itself would miss this distinction. [Exact arithmetic and enumeration](../receipt-archives/check_triangle_and_nonsplit_carry.py)
+
+There is a golden-ratio example with a stronger property. Let $\varphi=(1+\sqrt5)/2$ and take $(1,1,z)$ with $z=1/\varphi$. The optimal angle between $b$ and $c$ is $72^\circ$, since its cosine is $1/(2z^2)-1=(\sqrt5-1)/4$. The other two angles are $144^\circ$. These are pentagon angles. The sunflower golden angle is $360^\circ/\varphi^2$. The relaxed score is $2+1/(4\varphi^5)$ and the shortest-root score is 2.
+
+Even allowing **all** nonzero lattice vectors and normalizing each of them, no positive-definite integral lattice can realize this optimizer exactly. For such a pair the squared cosine is rational. The required square is $(3-\sqrt5)/8$. In a lattice of rank at least two the bound is approachable, since rational directions are dense in any plane generated by two independent lattice vectors. On a finite search with squared lengths at most $H$ there is a quantitative gap. The squared cosine is $p/q$ with $q\le H^2$. The minimal polynomial $16X^2-12X+1$ and its other root in $(0,1)$ give distance at least $1/(16q^2)$ from the target square. Hence the dot product differs from the target cosine by at least $1/(32H^4)$. For $x=y=1$ the loss in score, even after optimizing the third vector, is
+$$\frac{z}{4}\left(\sqrt{2+2t}-1/z\right)^2 \ \ge\ \frac{z}{16}(t-t_*)^2,$$
+with $t_*$ the optimal dot product. Thus the loss is at least $z/(16384 H^8)$. No claim of sharpness of this estimate is needed.
+
+## The linear-programming remark
+
+Cohen, Lee and Song’s relative-accuracy complexity bound includes terms $n^\omega$, $n^{5/2-\alpha/2}$ and $n^{2+1/6}$ and a factor $\log(n/\delta)$. With $\omega=9/4$ and $\alpha\ge1/2$ all three powers are at most $9/4$. This accounts for the running-time remark. Strongly polynomial linear programming is a separate manuscript in the same release, with a dimension-only bound on the operation count and control of intermediate bit lengths for rational input. [Cohen, Lee and Song](https://arxiv.org/abs/1810.07896) · [Separate November LP paper and scope](https://github.com/openai/math/blob/3344da59991ed94f9ba711217b29c1d760badfa6/preprints/Strongly-polynomial-linear-programming-November-24-2026/README.md)
+
+## Unresolved
+
+The RH argument’s tested step applies a positive quadratic bound to integer tuples. Its reference search is over a marked congruence orbit and its equality condition uses the supplying cone and support. We have not found a use there that demands realization of the unrestricted unit-vector optimizer. The concrete attack this suggests is to test each promotion from an extremal value to an attained arithmetic witness, especially after changing the allowed directions. The [explicit binary support](../receipt-archives/2026-11-24-an-explicit-support-for-the-zero-orbit.md) and [golden boundary calculation](../receipt-archives/2026-11-24-the-golden-limit-and-the-rational-boundary.md) give prior checks on that exact question. [Released orbit and energy estimate](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CongModOfSpan.lean#L182-L217)

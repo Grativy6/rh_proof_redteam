@@ -4,10 +4,16 @@
 
 Chris opened this repository for public attempts to falsify the November 20 release using the PAL atlas and the surrounding corpus.
 
+## Proofs developed here
+
+[Top-level proof collection](proofs/README.md) · [Full proof editions](proofs/MAP.md) · [Corpus and derivation credits](proofs/PROVENANCE.md). Hearthline established the collection on 24 November 2026 under Christopher Daniel Pang’s request to give the collaboration’s mathematical results prominent placement and fair source attribution.
+
 ## Where the checks lead
 
 | Question | Record |
 | --- | --- |
+| How does the announced $9/4$ triangle meet the actual lattice? | [Weighted cut, shortest-root and unrestricted optima](receipt-archives/2026-11-24-three-ways-to-read-the-nine-fourths-triangle.md). Hearthline, following Chris Pang’s 24 November lead. |
+| Can a unit period change the order of a polarization kernel? | [Two order-nine generators](receipt-archives/2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md) · [Independent good probes in the same nonsplit family](receipt-archives/2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md). Hearthline, under Pang’s request to follow the residue and write independent proofs, 24 November 2026. |
 | Do the extra torsion readings actually recover the lattice? | [Exact zero, its detecting phase and corrected size bounds](receipt-archives/2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) · [The good elliptic factor](receipt-archives/2026-11-24-a-theta-zero-at-every-toric-depth.md) · [Metric reconstruction in all ranks](receipt-archives/2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) · [Two distinct full-level CM actions](receipt-archives/2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md). Hearthline under Chris Pang’s independent-proof and public audit requests, 24 November 2026. |
 | What happens at the edge of a marked fan? | [Golden oscillation, rational boundary and local period cone](receipt-archives/2026-11-24-the-golden-limit-and-the-rational-boundary.md) · [An explicit twelve-entry support and the insertion identity](receipt-archives/2026-11-24-an-explicit-support-for-the-zero-orbit.md). Same authorization and date. |
 | Where can a genuine theta sum disappear on a first-coordinate orbit? | [Exact zero, lattice gap and surviving reference product](receipt-archives/2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) · [First unpaired point](receipt-archives/2026-11-24-the-determinant-inside-the-disappearing-sum.md) · [28 directions and seven more](receipt-archives/2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) · [Exact symmetry and local digit loss](receipt-archives/2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md). Hearthline, under Chris Pang’s request for independent proofs on the lattice branch, 24 November 2026. |
@@ -95,6 +101,8 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 - In the two-prime tame relaxation every odd slope [lifts through length 1154](receipt-archives/2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#how-long-the-auxiliary-condition-can-imitate-a-lift). The next coefficient tests the original quadratic condition.
 
 ## Unresolved
+
+The [nonsplit carry](receipt-archives/2026-11-24-the-order-nine-carry-in-a-nonsplit-degeneration.md#unresolved) changes the integral kernel exponent. The tested factor comparison carries the missing phase through its integral inverse; the related [good probes](receipt-archives/2026-11-24-when-the-coefficient-and-the-good-torsion-point-move-together.md#unresolved) may be chosen per coefficient.
 
 The [Fourier calculation](receipt-archives/2026-11-24-the-torsion-reading-that-sees-through-the-zero.md#unresolved) identifies the local generator on a genuine split family. The [mixed elliptic example](receipt-archives/2026-11-24-a-theta-zero-at-every-toric-depth.md#unresolved) tests the good-factor section and torsion choices. The [CM counterexample](receipt-archives/2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md#unresolved) leaves the extension of the exact common generic action as the relevant test in the unitary setting. The binary [support proof](receipt-archives/2026-11-24-an-explicit-support-for-the-zero-orbit.md#unresolved) supplies the equality condition for a fully specified fan.
 

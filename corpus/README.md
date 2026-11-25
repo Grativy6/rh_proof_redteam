@@ -30,6 +30,10 @@ APCI now has two actual inputs with the same readings at all nine places above 5
 
 The [two-prime test](../receipt-archives/2026-11-24-two-independent-obstruction-primes.md) applies APCI by taking two readings on the same class. Their determinant is 5 modulo 577 on the first pair, so a nonzero combination of the two directions cannot disappear in both readings. CLEF keeps the local condition fixed in the [comparison at integer twist 162120680](../receipt-archives/2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums). Allowing ramification changes the measured order from 577 to 192,100,033.
 
+## How the corpus led to the proof collection
+
+Christopher Daniel Pang’s PAL atlas and APCI specify what data an observation retains and what proof is needed to recover a target from it. The [doubling theorem](../proofs/marked-lattice-reconstruction.md) answers that question positively for a marked lattice metric. The [CM example](../proofs/arithmetic-actions-at-full-level.md) tests the same observations on an additional arithmetic action. Pang’s GOLD and Compactification Costs led the golden-angle and phase branch into the [first unpaired theta term](../proofs/the-first-unpaired-theta-term.md) and the [nonsplit carry](../proofs/an-order-nine-carry.md). Each full paper states what came from this corpus, what the release supplied and what was derived here. [Verified dates and contribution record](../proofs/PROVENANCE.md)
+
 ## Carry the golden rotation through the released maps
 
 [GOLD, §6](GOLD_v0.1.pdf) retains the nearest sixfold sector and the angular remainder. [Compactification Costs, §6.3](Compactification_Costs_v0.2.pdf) asks which requested quantities are constant on the resulting fibers. The [worked test](../receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) applies these to a doubled complex angle and a separately constructed $2$-adic class sum. Both PDFs are Pang’s original CC BY 4.0 deposits, checked against the author’s shelf and the Zenodo file bytes.

@@ -2,6 +2,14 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+## Proofs from Christopher Daniel Pang’s PAL research program
+
+[**Read the proof collection**](proofs/README.md) · [Start with the marked-lattice doubling theorem](proofs/marked-lattice-reconstruction.md) · [Corpus dates and contributions](proofs/PROVENANCE.md)
+
+Pang’s PAL atlas and APCI work on what observations can certify supplied the starting questions for these derivations with Hearthline. Each paper identifies its mathematical inputs and the role of the Alpöge–Claude release. The [complete proof map](proofs/MAP.md) includes the [weighted triangle and its $E_8$ test](proofs/three-weighted-triangle-optima.md) and the [order-nine carry in a nonsplit degeneration](proofs/an-order-nine-carry.md).
+
+## Audit findings
+
 **Can the proof read through an exact theta zero?** The [larger torsion measurement](receipt-archives/2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) recovers two nonzero terms of the same section and exposes the local ideal that selects one across traits. An [elliptic good factor](receipt-archives/2026-11-24-a-theta-zero-at-every-toric-depth.md) supplies an example where all toric probes of the distinguished section vanish. The [doubling test](receipt-archives/2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) reconstructs the entire underlying metric from labelled minima at level four or higher. [Two CM actions on one fourfold](receipt-archives/2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md) show which arithmetic data can still be lost.
 
 **Can the entire measured sum vanish?** A [paper construction](receipt-archives/2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) makes a genuine theta sum exactly zero on a determinant-one orbit, with two nonzero finer readings. Its weight places it away from the unique minimum used in the tested reference product. A [separate four-entry determinant](receipt-archives/2026-11-24-the-determinant-inside-the-disappearing-sum.md) detects a loss that survives row and column rescaling. The full [rank calculation](receipt-archives/2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) finds 28 directions in the first binary digit and seven more in the second.

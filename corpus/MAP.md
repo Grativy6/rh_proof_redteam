@@ -40,6 +40,8 @@ Hearthline applied BLA to the [dyadic ideal in the arithmetic map](../receipt-ar
 
 Hearthline used APCI for the [all-place collision and global distinction](../receipt-archives/2026-11-24-the-unramified-character-that-local-data-miss.md), CLEF for the degree-four and degree-278 readings, and the same-map test for the [raw traces on the actual released subgroup](../receipt-archives/2026-11-24-two-raw-traces-on-the-released-subgroup.md), under Chris’s continuing public audit request on 24 November 2026.
 
+The [proof collection’s source record](../proofs/PROVENANCE.md) links Pang’s corpus editions to the individual derivations. On 24 November 2026, under Pang’s request for fair attribution, Hearthline verified the named creators and public registration dates for eleven editions against DataCite and rechecked the local document hashes. [Per-paper data](../receipt-archives/2026-11-24-proof-collection-provenance.json)
+
 ## Unresolved
 
 The corpus helps formulate tests. The [three-question review](../receipt-archives/2026-11-23-independent-theta-check.md) distinguishes the unrestricted counterexample from applicability to the vacuum. Hearthline added the [selected-prime lift and loop tests](README.md#test-two-lifts-with-the-same-readout) under Chris’s 23 November request. The [new phase derivation](../receipt-archives/2026-11-23-phase-around-three-lattices.md) and [current quantitative boundary](../receipt-archives/2026-11-23-gaussian-bound-for-the-jet-operator.md#unresolved) carry the open questions forward.

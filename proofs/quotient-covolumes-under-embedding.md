@@ -1,0 +1,66 @@
+# An unbounded residue in the quotient covolume
+
+**Corpus and derivation.** This result was developed in Christopher Daniel Pang’s PAL research program with Hearthline. Pang asked whether a metric reading can be transported to a new arithmetic frame without losing the quantity being measured. Hearthline wrote the mathematical argument. [PAL v2.4-M, Mathematical Realization Atlas](../corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx) · [APCI v1.0.0, Exact Certification Through a Declared Interface](../corpus/APCI_Declared_Interface_v1.0.0.docx)
+
+**Proof inputs and the release.** A Hermitian quotient and a change of embedding suffice for the mathematical example. The release supplies the particular quotient bound whose direction is then checked.
+
+[Proof collection](README.md) · [Dated receipt and supporting checks](../receipt-archives/2026-11-23-quotient-covolume.md) · [Contribution record](PROVENANCE.md)
+
+**Result.** Taking a Hermitian quotient over a number field and then applying an embedding can give a different answer from taking the Hermitian quotient at that embedding. The discrepancy in the mean logarithm can be arbitrarily large with the field, source lattice, source metric, and target lattice all fixed. The quotient map varies. In the published covolume bound the discrepancy has the sign the argument needs. The following calculation is independent of a proof assistant.
+
+Christopher D. Pang asked Hearthline to audit a necessary inference in the November 20 argument. This record follows the [integral covolume question](../receipt-archives/2026-11-23-coefficient-descent.md#unresolved) from audit revision `5516f9145562f68321e0390a0eb7c3737373713c`. The PAL test is to keep the inputs visible while changing the order of the two operations. All release references below are pinned to `40e56bab026552e089d7afcfeff08d2defb9c005`.
+
+## One row is enough
+
+Put $a=\sqrt[3]2>0$, $\omega=e^{2\pi i/3}$ and $K=\mathbb Q(a,\omega)$. This is the degree-six splitting field of $X^3-2$. Use ordinary complex conjugation on this embedded field. It fixes $a$. The field is totally complex. At its distinguished embedding the field involution agrees with complex conjugation. An embedding sending $a$ to $\omega a$ shows why that agreement matters.
+
+Give $K^2$ the standard form and take the quotient map $P=(1,a):K^2\to K$. Its image on $\mathcal O_K^2$ is exactly $\mathcal O_K$. For a complex row $(1,z)$ the vector of least Euclidean norm mapping to $1$ is $(1,\bar z)/(1+|z|^2)$. Its squared norm is $1/(1+|z|^2)$. The two calculations in the source therefore read
+
+| Operation | Result at an embedding $\sigma$ |
+| --- | --- |
+| Form the algebraic quotient Gram matrix over $K$, then apply $\sigma$ | $\sigma((1+a^2)^{-1})=(1+(\sigma a)^2)^{-1}$ |
+| Embed the row first, then take its complex quotient metric | $(1+|\sigma a|^2)^{-1}=(1+a^2)^{-1}$ |
+
+For $\sigma a=\omega a$, the first answer is nonreal. The second is positive. The rank, lattice, and surjectivity conditions of the release’s quotient-metric estimate hold here. One can take its small coefficient field $K_0=\mathbb Q$, the initial Gram matrix $H=I$, and the standard basis at every finite prime. [Definitions of both Gram matrices](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/Statement.lean#L48-L80)
+
+The discrepancy survives averaging. The source’s normalized log covolume for this rank-one image lattice is $-\log(1+a^2)$. Indeed the discriminant factor in its height cancels the ordinary covolume of $\mathcal O_K$ with its standard metric. On the algebraic side the product formula gives $-\tfrac13\log5$. To check the 5, multiply the three conjugates of $1+a^2$ in $\mathbb Q(a)$. Their product is $1+(a^2)^3=5$. The norm to $\mathbb Q$ from $K$ is $25$. Thus the algebraic upper bound exceeds the geometric quantity by
+
+$$
+\Delta=\log(1+\sqrt[3]4)-\tfrac13\log5>0 .
+$$
+
+The sign follows by cubing $1+\sqrt[3]4$. Both numbers are negative before subtraction. [Height normalization](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/HarderNarasimhan/StatementPl.lean#L21-L32) · [Normalized log covolume and finite weights](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/Statement.lean#L28-L40)
+
+## No fixed additive allowance covers the difference
+
+Keep $K$, $H=I$, and both integral lattices fixed. Use $P_x=(1,x)$ with $x\in\mathbb Z[a]$. Write $r=x$ at the real embedding of $\mathbb Q(a)$, and $z$ at the embedding sending $a$ to $\omega a$. Each of $r,z,\bar z$ occurs twice among the six embeddings of $K$. The real contribution cancels in the difference. The same calculation gives
+
+$$
+\Delta(x)=\frac23\log\frac{1+|z|^2}{|1+z^2|}.
+$$
+
+The numerator bounds the denominator by the triangle inequality. To see why the difference is unbounded, put $u=1+a+a^2=(a-1)^{-1}$. The algebraic integer $a-1$ has norm $1$, so $u>1$ is a unit. Its two nonreal conjugates have modulus $u^{-1/2}<1$. In the selected complex embedding, $\mathbb Z+\mathbb Z\omega a$ is a plane lattice. Its multiples by $\sigma(u)^m$ are contained in $\sigma(\mathbb Z[a])$ and have parallelograms of diameter tending to zero. Choose a lattice point in each scaled lattice nearest to $i$. This gives $z_m=\sigma(x_m)\to i$ with $x_m\in\mathbb Z[a]$. The cubic field cannot contain $i$, so the denominators stay nonzero. They tend to zero while the numerators tend to two. Hence $\Delta(x_m)\to+\infty$.
+
+This is a counterexample to replacing the comparison by an equality or by a uniform two-sided estimate on these inputs. Every $P_x$ is integrally onto, including along this sequence.
+
+## Which sign the argument uses
+
+The pinned statement makes an exact identification at the distinguished complex place. Its separate global assertion, `LemmaRb`, places the log covolume **on the left** of an upper bound. At another embedding the proof pairs $\sigma$ with $c_{\mathbb C}\circ\sigma\circ c_K$, where the two $c$’s are the specified conjugations. The algebraic determinant is a mixed Gram determinant. Cauchy–Schwarz bounds its absolute value by the geometric mean of the two positive Gram determinants. Inverting them for a quotient puts the inequality in exactly the direction above. The twist permutes the infinite places, so both geometric terms have the same sum. [Exact place and global statements](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/Statement.lean#L98-L130) · [Paired determinant inequality](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/ReductionLemmaSecond.lean#L133-L157) · [Sum over places](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/ReductionLemmaSecond.lean#L200-L233)
+
+We followed the sign into the estimate of the dual target lattice. The construction applies the single-place equality at $v_0$ and the upper bound at the base twist. The resulting statement is an **upper bound** for the dual slope. In rank one with the standard integral lattice, the dual slope has the same sign as the normalized log covolume of the primal lattice. Our arbitrarily large positive $\Delta$ makes that bound looser. [Use of the upper bound at the base twist](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/ConjugateWeightLatticeOfGeneral.lean#L506-L518) · [Direction of the dual-slope bound](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteForms/IndefUse.lean#L271-L287)
+
+There is an exact all-place formula elsewhere in the development. It is for a subspace that is a sum of **whole simultaneous eigenspaces** of a commuting family closed under adjoints, with compatible matrix coefficients. The statement gives a basis whose entries commute with conjugation at every embedding. Our row does not supply such a subspace for the coefficient field $\mathbb Q(\omega)$. A matrix with entries in this field preserving the line spanned by $(1,a)$ must be scalar. Indeed, if its rows are $(s,t),(v,w)$, invariance gives $ta^2+(s-w)a-v=0$. The degree of $a$ over $\mathbb Q(\omega)$ is three. Thus $t=v=0$ and $s=w$. For scalar operators the only nonzero whole simultaneous eigenspace is the entire plane. The test line is invariant but cannot pass the whole-eigenspace condition. [Exact condition](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/EigenRatHermLcv.lean#L15-L35) · [All-place formula and its hypotheses](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/EigenRatHermLcv.lean#L85-L104) · [Use for the lift subspaces](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/MajAtEqZeroOfMemQpOfNe.lean#L45-L54)
+
+## A five-adic way to reverse the inequality
+
+We tried to defeat the same bound at a finite place. In $\mathbb Z[i]$, take $\mathfrak p=(2+i)$ above 5, $P=H=1$, and $L=\mathbb Z[i]$. At $\mathfrak p$ use the candidate basis vector $e=1/(2-i)$, and at every other prime use $1$. It is a perfectly good basis at the **single** local ring $\mathbb Z[i]_{\mathfrak p}$. Its Hermitian Gram value is $\bar e e=1/5$. Under that reading the finite sum would be $-\tfrac12\log5$ while the log covolume is zero. The displayed inequality would be false.
+
+Here the release allows denominators only when both they and their conjugates avoid $\mathfrak p$. Thus it asks for a basis at $\mathfrak p$ **and** $\bar{\mathfrak p}$. Our candidate has a pole at the second prime. For any permitted rank-one basis change $e$, both valuations vanish and $v_{\mathfrak p}(\bar e e)=0$. The proof uses the index at each of the two primes in its change-of-basis formula. The ordinary one-prime localization also occurs in the release, under a different definition. [Two localization definitions](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/HermitianLattices/StatementLat.lean#L57-L66) · [Basis required by this estimate](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/Statement.lean#L73-L80) · [Both index terms used](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/QuotientMetricDivisors/HermitianTwistDivisors/ReductionLemmaSecond.lean#L235-L263) · [The chosen basis satisfies the paired condition](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/Divisibility/RowLatLemmas.lean#L713-L725)
+
+## Verification
+
+A second derivation of the 5 uses the matrix of multiplication by $1+a^2$ on the basis $1,a,a^2$. Its columns are $(1,0,1)$, $(2,1,0)$, $(0,2,1)$ and its determinant is 5. The strict inequality and the unbounded family above have hand proofs. I also checked direct proof-body dependencies in the published graph. The path from the use of the upper bound passes through `second_step_refined_weak`, `divisor_bounds_chain_weak`, `slope_bounds`, `boundsMu`, and `divClausesR_of`. The other use of the same lemma in `gm_support_finite` takes its finite-support conclusion. This is a self-audit. [Dual-slope step](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/DivisorInequality/DivisorInequalityProofs/BaseLevelBoundsWithCovolumeHolds.lean#L47-L58) · [Finite-support use](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/Divisibility/LinkDef.lean#L19-L29) · [Dependency graph](https://proofsandreasons.io/rh-graph.html)
+
+## Unresolved
+
+These results test the quotient-covolume comparison in the released argument. They give no counterexample to its stated upper bound. The next question concerns the pairing itself. An integral functional on a space need not induce an integral functional after one takes an orthogonal representative of a quotient. The release invokes a separate assertion that the period vanishes on the discarded subspace. Its source and the relation to the nonvanishing and rank estimates are the next points of attack. [Exact factorization condition](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RationalPairingEqColumnPairing.lean#L23-L50)
