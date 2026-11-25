@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check simultaneous character readings and Frobenius powers
+
+Run `python check_four_character_precision.py` and `gp -fq check_frobenius_centralizer_cost.gp` here. The first enumerates the four-point sets of the affine plane over the field of five elements and the first shared readings. The second independently ranks the truncated coefficient matrices through precision 13 and checks their Smith exponents. The [character proof](2026-11-25-the-centroid-that-hides-four-character-readings.md) and [matrix proof](2026-11-25-the-exact-cost-of-powering-a-frobenius-matrix.md) cover arbitrary precision. [Python](check_four_character_precision.py) · [PARI/GP](check_frobenius_centralizer_cost.gp)
+
 ### Check the class-group increments
 
 Run `python check_auxiliary_class_tower.py` here. The standard-library calculation gives generalized Bernoulli norms for the first two layers at 11 and 211. The [derivation](2026-11-25-the-class-lifts-and-loses-its-inertia-symmetry.md) proves the all-layer lower bound and determines why every higher-precision lift loses inertia invariance. [Code](check_auxiliary_class_tower.py)

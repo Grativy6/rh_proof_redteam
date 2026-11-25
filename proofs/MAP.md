@@ -103,6 +103,15 @@ Hearthline checked the released predicates and wrote the independent calculation
 
 Hearthline checked the field construction and residual component argument for Christopher Daniel Pang’s public audit on 25 November 2026. [Dated derivations and corpus credit](../receipt-archives/2026-11-25-proof-collection-auxiliary-prime-supplement.json) · [Exact arithmetic](../receipt-archives/check_auxiliary_prime_residue.gp)
 
+## Local characters and Frobenius powers
+
+| Paper | What it establishes |
+| --- | --- |
+| [The centroid that hides four character readings](the-centroid-that-hides-four-character-readings.md) | At five the only four-character finite obstruction is a triangle and its centroid. The marked rank-four symplectic flag excludes it. Two and three characters need no extra precision at any odd prime. |
+| [The exact cost of powering a Frobenius matrix](the-exact-cost-of-powering-a-frobenius-matrix.md) | The least additive error in the fixed centralizer count equals a spectral valuation minus an integral lattice index. Under a characteristic power the spectral term scales while that index stays fixed. |
+
+Hearthline followed Pang’s public audit request through the local character flag, the fixed Frobenius tuple and the passage to the patched bound on 25 November 2026. [Dated inputs and checks](../receipt-archives/2026-11-25-proof-collection-character-precision-supplement.json)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)

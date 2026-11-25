@@ -1,0 +1,62 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "preceding_supplement": "receipt-archives/2026-11-25-proof-collection-class-tower-supplement.json",
+  "preceding_supplement_sha256": "c2d4c7ee189651277d46767890ece4b17eb5f7300f835aaf64d8989b09471182",
+  "corpus_files": [
+    {
+      "path": "corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf",
+      "sha256": "55eb702249a3cfe8d690d13f5695b5aefc2d17d5c18082b565c7b1f9bd2d05c3"
+    },
+    {
+      "path": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+    },
+    {
+      "path": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    }
+  ],
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/the-centroid-that-hides-four-character-readings.md",
+      "result": "At five the only four-character finite obstruction is a triangle and its centroid. The marked rank-four symplectic flag excludes it. Two and three characters need no extra precision at any odd prime.",
+      "dated_receipt": "receipt-archives/2026-11-25-the-centroid-that-hides-four-character-readings.md",
+      "corpus_editions": [
+        "Shadow Lattice and Dispersal Lattice",
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang’s PAL and APCI question compares what separate observations retain with what one common observation can certify. His shadow-lattice paper supplied the geometric framing.",
+      "proof_inputs_and_release_role": "The release supplies the local separation hypotheses and the marked symplectic flag. Hearthline derived the sharp finite-precision bounds, classified the effective five-element-field obstruction and checked the flag equation and common twist. The minimum number of subspaces in a cover is classical.",
+      "check": "receipt-archives/check_four_character_precision.py",
+      "reading_edition_sha256": "c0d664042aabce6667cb3ec570751435df30741df4a5900286e9c4ffc5fd3a3e",
+      "receipt_sha256": "400ea67ebc580ccaa7b05913004d45a8385217e8f139d79be2151dec28c748c9",
+      "check_sha256": "9061f6ee4196f1be01ffa577ade08970456398c8dc73a830038f8015c9befec3"
+    },
+    {
+      "reading_edition": "proofs/the-exact-cost-of-powering-a-frobenius-matrix.md",
+      "result": "The least additive error in the fixed centralizer count equals a spectral valuation minus an integral lattice index. Under a characteristic power the spectral term scales while that index stays fixed.",
+      "dated_receipt": "receipt-archives/2026-11-25-the-exact-cost-of-powering-a-frobenius-matrix.md",
+      "corpus_editions": [
+        "Shadow Lattice and Dispersal Lattice",
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang’s residue question asks which information survives powers and a change in the precision of the observing lattice. His PAL atlas and APCI guide the fixed-object comparison.",
+      "proof_inputs_and_release_role": "The release supplies the paired coefficient algebra, the arithmetic Frobenius tuple and the patching order. Hearthline derived the integral index identity, the exact finite count and its power law and traced the limit consumer. The algebra uses classical Smith normal form over a discrete valuation ring.",
+      "check": "receipt-archives/check_frobenius_centralizer_cost.gp",
+      "reading_edition_sha256": "98ba9d6bdab67a92b05b9a0f149ba5c014765c6131fd3782160d871eed8415ad",
+      "receipt_sha256": "e5c8b08f6538b26aa6f3e9836527e13ce61928c4ad2a1059e1f0e2248328fc42",
+      "check_sha256": "d18c0f347fb65a949adafb1298df0aa0ee6bc50c4c703e1605e2bab7b3e64ba9"
+    }
+  ]
+}
