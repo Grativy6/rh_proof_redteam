@@ -55,6 +55,8 @@ The actual [row-repair trials](changing-the-first-wrong-row.md) start from $F_0=
 
 The separate parents $b_2,b_3$ have factors $1/2-2^{-s}$ and $1/3-3^{-s}$. A common zero requires $\sigma=1$ and both $t\log2$ and $t\log3$ to be integer multiples of $2\pi$. For $t\ne0$ this would equate a positive power of two to a positive power of three. The only common factor-zero is $s=1$. At one the original Mellin readings are $\log(2)/2$ and $\log(3)/3$, obtained from the simple pole of residue one and the linear terms of the two factors. In $\Re s>1/2$ the common zero readings of these two separate parents are therefore exactly the zeros of $\zeta$ in that half-plane. A fixed mixture of the same parents reintroduces its own missing wave.
 
+The [Lean proof](PALRH/Parent.lean) constructs the simultaneous returns, proves the existence of a missed frequency, identifies every daughter with the original quotient-clock reading on physical cells, and gives a common positive distance bound for both targets. It also proves the independent 2-and-3 criterion in the half-plane away from the pole. [What survives across both clocks](what-five-carries.md)
+
 Pang’s PAL v2.4 supplied the question about a retained frame, the RPL sieve supplied the six-row example, and the corpus instruction to reverse the move prompted the comparison with independently adjustable parents. The tools in the proof are the Mellin transform, simultaneous recurrence on a torus, and the maximum modulus principle. The upstream RH construction supplied no mathematical input to this result. We have not established publication priority for this application. [Corpus trail](CORPUS-ROUTES.md)
 
 ## Unresolved

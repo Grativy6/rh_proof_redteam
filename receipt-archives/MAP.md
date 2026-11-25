@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Two independent clocks and what 5 carries](2026-11-25-pal-prime-flow.json) · [Rational coefficients](2026-11-25-pal-two-clock-exits.json) · [All-width-256 lower bounds and width-512 upper witnesses](check_pal_exits.py) | 25 November 2026. Hearthline, under Pang’s active key, established independent-parent wave tests and an exact physical lower/upper separation under the same 256 protected rows. |
 | [Row repair and the single-parent obstruction](2026-11-25-pal-row-repair-and-parents.json) · [Optimal finite weights and true gains](check_pal_row_repair.py) · [An enclosed missed frequency](check_pal_single_parent.py) | 25 November 2026. Hearthline, under Pang’s active construction key, checked the sharp edge optimum, both exact pivot trials and the two initialized all-scale error floors. |
 | [Strict successors on both actual targets](2026-11-25-pal-strict-successor.json) · [Paper argument](../pal-rh/every-fit-has-a-successor.md) | 25 November 2026. Under Pang’s active key Hearthline proved the existence of legal strict improvements and the positive floors for two wrong protected rows. |
 | [One-tick construction stage](2026-11-25-pal-first-tick-stage.md) · [Numerical and native outcomes](2026-11-25-pal-first-tick-results.json) | 25 November 2026. Hearthline followed Pang’s request to move upward by actual earned claims: a dyadic reconstruction, a directional sieve obstruction, and signed prime-clock updates on the true error. |

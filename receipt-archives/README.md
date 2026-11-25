@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+[What 5 carries](../pal-rh/what-five-carries.md) has [one stage record](2026-11-25-pal-prime-flow.json). Run `python -B receipt-archives/check_pal_two_clock_flow.py` for the cutoff calculation, then `python -B receipt-archives/check_pal_exits.py` for all four infinite-interval bounds and both universal lower bounds. The separate [candidate selection](select_pal_exits.py) uses NumPy. The two mathematical checkers use the Python standard library.
+
 [Two row-repair calculations](2026-11-25-pal-row-repair-and-parents.json) run with Python’s standard library. Use `python -B receipt-archives/check_pal_row_repair.py` for the rational fits and `python -B receipt-archives/check_pal_single_parent.py` for the missed wave.
 
 [Strict successors on both targets](2026-11-25-pal-strict-successor.json) records the ordinary Lake build, replay command and hashes for the [paper argument](../pal-rh/every-fit-has-a-successor.md).

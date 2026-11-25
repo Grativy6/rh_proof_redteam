@@ -172,9 +172,10 @@ private lemma mellin_sensor_right {d : ℕ} (hd : 0 < d) {s : ℂ} (hs : 1 < s.r
   simp only [smul_eq_mul]
   ring
 
-/-- A zero on the open right half of the strip annihilates every residue sensor. -/
-theorem mellin_sensor_zero {s : ℂ} (hs : 0 < s.re) (hs1 : s ≠ 1)
-    (hz : riemannZeta s = 0) {d : ℕ} (hd : 0 < d) : mellin (sensor d) s = 0 := by
+/-- Exact Mellin response of one balanced reading throughout the half-plane of convergence. -/
+theorem mellin_sensor_identity {s : ℂ} (hs : 0 < s.re) (hs1 : s ≠ 1)
+    {d : ℕ} (hd : 0 < d) :
+    s * mellin (sensor d) s = ((d:ℂ)⁻¹-(d:ℂ)^(-s))*riemannZeta s := by
   let U : Set ℂ := {z | 0 < z.re}
   have hU : IsOpen U := isOpen_lt continuous_const continuous_re
   let F := fun z : ℂ => (z-1) * (z * mellin (sensor d) z)
@@ -206,9 +207,18 @@ theorem mellin_sensor_zero {s : ℂ} (hs : 0 < s.re) (hs1 : s ≠ 1)
         ring))
   have h := heq (show s ∈ U from hs)
   dsimp [F, G] at h
-  rw [← hfactor s hs1, hz, mul_zero, mul_zero] at h
-  exact (mul_eq_zero.mp ((mul_eq_zero.mp h).resolve_left (sub_ne_zero.mpr hs1))).resolve_left
-    (ne_zero_of_re_pos hs)
+  rw [← hfactor s hs1] at h
+  apply mul_left_cancel₀ (sub_ne_zero.mpr hs1)
+  calc
+    _ = _ := h
+    _ = _ := by ring
+
+/-- A zero on the open right half of the strip annihilates every residue sensor. -/
+theorem mellin_sensor_zero {s : ℂ} (hs : 0 < s.re) (hs1 : s ≠ 1)
+    (hz : riemannZeta s = 0) {d : ℕ} (hd : 0 < d) : mellin (sensor d) s = 0 := by
+  have h := mellin_sensor_identity hs hs1 hd
+  rw [hz,mul_zero] at h
+  exact (mul_eq_zero.mp h).resolve_left (ne_zero_of_re_pos hs)
 
 /-- Lebesgue length assigns cell k the weight 1/(k(k+1)). -/
 abbrev cellMeasure : Measure ℝ := volume.restrict (Ioc (0 : ℝ) 1)
@@ -271,6 +281,76 @@ private theorem kernel_reading {s : ℂ} (hs : 1/2 < s.re) (n : ℕ) :
   intro x hx
   have h : 1 < x := lt_of_not_ge fun hle => hx.2 ⟨hx.1, hle⟩
   simp [sensor_of_one_lt h]
+
+/-- The physical constant and the bounded Mellin observation in the reciprocal-cell space. -/
+def cellConstant : CellSpace := target
+
+def cellMoment {s : ℂ} (hs : 1/2<s.re) : CellSpace →L[ℂ] ℂ :=
+  innerSL ℂ ((kernel_mem hs).toLp _)
+
+def cellSensor (d : ℕ) (hd : 0<d) : CellSpace :=
+  (MemLp.of_bound (μ:=cellMeasure) (p:=2) (sensor_measurable d).aestronglyMeasurable 1
+    (.of_forall (sensor_norm_le hd))).toLp _
+
+theorem moment_constant {s : ℂ} (hs : 1/2<s.re) : cellMoment hs cellConstant=1/s :=
+  kernel_target hs
+
+theorem moment_sensor {s : ℂ} (hs : 1/2<s.re) (hs1 : s≠1) {d : ℕ} (hd : 0<d) :
+    s * cellMoment hs (cellSensor d hd) = ((d:ℂ)⁻¹-(d:ℂ)^(-s))*riemannZeta s := by
+  have eq : cellMoment hs (cellSensor d hd) = mellin (sensor d) s := by
+    change inner ℂ ((kernel_mem hs).toLp _) (cellSensor d hd) = _
+    rw [cellSensor,kernel_inner hs,mellin]
+    symm
+    apply setIntegral_eq_of_subset_of_forall_sdiff_eq_zero measurableSet_Ioi Ioc_subset_Ioi_self
+    intro x hx
+    have h : 1<x := lt_of_not_ge fun hle => hx.2 ⟨hx.1,hle⟩
+    simp [sensor_of_one_lt h]
+  rw [eq]
+  exact mellin_sensor_identity (by linarith) hs1 hd
+
+private def pulseFn (x : ℝ) : ℂ := if 1/2<x then 1 else 0
+
+private lemma pulse_mem : MemLp pulseFn 2 cellMeasure := by
+  apply MemLp.of_bound (C:=1)
+  · have hm : Measurable pulseFn := Measurable.ite (measurableSet_Ioi (a:=(1/2:ℝ))) measurable_const measurable_const
+    exact hm.aestronglyMeasurable
+  · apply Filter.Eventually.of_forall
+    intro x
+    unfold pulseFn
+    split_ifs <;> norm_num
+
+/-- Exactly the physical cell with row index one. -/
+def cellFirst : CellSpace := pulse_mem.toLp _
+
+theorem moment_first {s : ℂ} (hs : 1/2<s.re) :
+    cellMoment hs cellFirst=(1-((1/2:ℝ):ℂ)^s)/s := by
+  change inner ℂ ((kernel_mem hs).toLp _) cellFirst = _
+  rw [cellFirst,kernel_inner hs]
+  calc
+    _ = ∫ x in Ioc (0:ℝ) 1, (Ioi (1/2:ℝ)).indicator (fun y => (y:ℂ)^(s-1)) x := by
+      apply setIntegral_congr_fun measurableSet_Ioc
+      intro x _
+      by_cases h : 1/2<x <;> simp [pulseFn,Set.indicator]
+    _ = ∫ x in Ioc (1/2:ℝ) 1, (x:ℂ)^(s-1) := by
+      rw [MeasureTheory.setIntegral_indicator measurableSet_Ioi]
+      have eq : Ioc (0:ℝ) 1 ∩ Ioi (1/2) = Ioc (1/2) 1 := by
+        ext x; simp only [Set.mem_inter_iff,mem_Ioc,mem_Ioi]; constructor <;> intro h <;> grind
+      rw [eq]
+    _ = _ := by
+      rw [← intervalIntegral.integral_of_le (by norm_num),integral_cpow (Or.inl (by
+        rw [sub_re,one_re]; linarith)),sub_add_cancel]
+      simp
+
+theorem moment_first_ne {s : ℂ} (hs : 1/2<s.re) : cellMoment hs cellFirst ≠ 0 := by
+  rw [moment_first hs]
+  apply div_ne_zero _ (ne_zero_of_re_pos (by linarith))
+  apply sub_ne_zero.mpr
+  intro eq
+  have h : ‖((1/2:ℝ):ℂ)^s‖<1 := by
+    rw [norm_cpow_eq_rpow_re_of_pos (by norm_num : (0:ℝ)<1/2)]
+    exact Real.rpow_lt_one (by norm_num) (by norm_num) (by linarith)
+  rw [←eq,norm_one] at h
+  exact (lt_irrefl _ h)
 
 /-- One geometric approximation hypothesis implies Mathlib's RH. -/
 theorem rh_of_residue_approximation (h : ResidueApproximation) : RiemannHypothesis := by
