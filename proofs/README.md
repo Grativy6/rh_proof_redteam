@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[Averaging the square](../pal-rh/averaging-the-square.md) gives a different, still RH-sensitive target that pays the joint crossing, together with the exact cost of undoing the average.
+
 The [signed square calculation](../pal-rh/the-signed-matrix-inside-a-square.md) recovers a prime aggregate using only side coefficients, and the [fifth-boundary test](../pal-rh/what-the-fifth-boundary-needs.md) shows exactly why an old signed window cannot pay for every joint crossing on its own. [Corpus and classical source credit](PROVENANCE.md)
 
 [What the next doubling window costs](../pal-rh/what-the-next-octave-costs.md) proves how an exact head changes the power that a missed wave must charge, and constructs a finite rational fit whose next interval contains only signed Möbius increments.

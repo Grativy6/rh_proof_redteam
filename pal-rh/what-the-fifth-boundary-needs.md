@@ -79,6 +79,8 @@ U^2-\rho(U+Z)^2
 $$
 Hence its negative cost is at most $H\frac{\rho}{1-\rho}\left(H/r-1\right)$ times the side's true weighted squared increments on $r,\ldots,H-1$. With $y=\log H$ and all primes up to $y$ admitted, $q=(1+o(1))y$ by the prime number theorem. This block occupies a fraction tending to one, and its multiplier beyond the factor $H$ is subpower. The input is the side measured in the **same** $P$ frame. The remaining mixed rows still require joint signed information. [Unconditional prime-count input](https://arxiv.org/abs/2204.01980)
 
+[A second repair changes the target by averaging the threshold](averaging-the-square.md). Its whole matrix has a genuine estimate from the old side. Differencing that average twice at a square recovers the earlier hard form exactly.
+
 ## What survives the test
 
 Even exact squarefree support, signs of magnitude one and excellent old-window prices leave a possible coherent negative contribution at the reciprocal boundary $ij=H^2/5$. A successful induction must use an additional property of the genuine Möbius signs across the two sides of that boundary, or directly control that signed interaction. The explicit upper-half transfer remains valid. The next estimate concerns the mixed pairs.

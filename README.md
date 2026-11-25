@@ -16,7 +16,7 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 At side 1024, the rough integers with only old prime factors contribute −16,226. The exact subtotal with one larger prime is +16,097. A square matrix using only the earlier signs recovers their total, −129. [The signed matrix and its source](pal-rh/the-signed-matrix-inside-a-square.md) · [How much prime depth can be omitted](pal-rh/where-prime-depth-can-stop.md)
 
-The upper half of that square can be paid from a measured earlier window. At cofactor five, even excellent one-dimensional side prices can hide a large negative joint reading. Opening 5 flattens that boundary on the same labels, with a calculable change in the full-period cost. [The boundary test and repair](pal-rh/what-the-fifth-boundary-needs.md) · [Signed doubling-window theorem](pal-rh/what-the-next-octave-costs.md) · [The original two-clock flow](pal-rh/what-five-carries.md)
+The upper half of that square can be paid from a measured earlier window. At cofactor five, even excellent one-dimensional side prices can hide a large negative joint reading. Opening 5 flattens that boundary on the same labels, with a calculable change in the full-period cost. [The boundary test and repair](pal-rh/what-the-fifth-boundary-needs.md) · [Signed doubling-window theorem](pal-rh/what-the-next-octave-costs.md) · [The original two-clock flow](pal-rh/what-five-carries.md) · [What averaging pays for across the entire square](pal-rh/averaging-the-square.md)
 
 ## Audit findings
 

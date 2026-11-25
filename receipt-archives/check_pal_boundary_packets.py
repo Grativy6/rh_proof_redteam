@@ -7,7 +7,7 @@ import json
 from check_pal_growth_windows import sieve
 
 
-def test_side(H, mu):
+def make_packets(H, mu):
     L=isqrt(H)
     X=H*H
     begin=(38*H+99)//100
@@ -29,6 +29,12 @@ def test_side(H, mu):
                 assert n not in support
                 support[n]=sign
         packets.append(count)
+    return L, support, packets
+
+
+def test_side(H, mu):
+    L, support, packets=make_packets(H,mu)
+    X=H*H
     sites=sorted(support)
     assert sites
     prefix=[0]

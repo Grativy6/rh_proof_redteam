@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+[Averaged square replay](2026-11-25-pal-smoothed-square.json) uses `python -B receipt-archives/check_pal_smoothed_square.py`. It includes the physical values, the backward second difference, the same assigned signs, and five direct Gaussian comparisons. [Paper and proof scope](../pal-rh/averaging-the-square.md)
+
 The [square-boundary stage](2026-11-25-pal-square-boundary.json) uses `python -B receipt-archives/check_pal_core_squares.py` for the genuine Möbius values and `python -B receipt-archives/check_pal_boundary_packets.py` for the separate side-information counterexample. Both use the standard library. [Pencil-and-paper calculation](../pal-rh/the-signed-matrix-inside-a-square.md)
 
 [Octave and square-window budgets](2026-11-25-pal-octave-growth.json) use `python -B receipt-archives/check_pal_growth_windows.py`. The [reader proof](../pal-rh/what-the-next-octave-costs.md) identifies the finite computations and the all-scale estimates.

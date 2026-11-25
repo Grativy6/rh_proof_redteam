@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Paying for the whole averaged square](averaging-the-square.md) · [Finite transfer and reversal](PALRH/Smoothed.lean) | Two averages bound the full centered matrix from genuine smaller-side walk measurements. The old discontinuity returns exactly when the averaging is reversed. A Gaussian criterion reduces the remaining spectral range to finitely many modes proportional to log H. |
 | [The signed matrix inside a square](the-signed-matrix-inside-a-square.md) · [Square identity](PALRH/CoreMatrix.lean) · [Outer funding](PALRH/OuterBlock.lean) | The rough Huxley–Watt form computes the square from side data. Signed exact boundary hits cancel at every nontrivial square. A lower estimate for a bounded kernel is sufficient on paper. The actual upper half is paid by one earlier octave. |
 | [How far prime depth travels](where-prime-depth-can-stop.md) · [Lean](PALRH/RoughSquares.lean) | A finite tuple cap pays for every omitted sign at each square. Subpower-times-side growth of the retained integer count implies bare RH. The half-depth threshold for absolute pruning is sharp at the power scale. |
 | [What the fifth boundary needs](what-the-fifth-boundary-needs.md) · [New frame](PALRH/PrimeOpening.lean) | A bounded old walk on the same squarefree support alone can hide a negative crossing of order side to the three-halves. Opening 5 removes the selected crossing. Its periodic variance and the physical costs of adding primes are explicit. |
@@ -32,6 +33,8 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 On 25 November 2026 Hearthline followed Pang’s question about the next step by checking [what doubling misses](README.md#what-doubling-misses). The paper calculation rules out linear sums of binary carries at every scale and shows that tripling detects the same test wave.
 
 ## Unresolved
+
+The [averaged alternative](averaging-the-square.md#a-gaussian-alternative-with-only-a-short-spectral-range) keeps the earlier side, a whole-tail allowance and a one-sided RH-detecting target. Its remaining estimate concerns the signed high-side coefficients. The side bound used by the complete transfer still needs independent funding.
 
 The open matrix estimate is (1) in [the square paper](the-signed-matrix-inside-a-square.md#a-bounded-kernel-needs-a-lower-estimate-only). Use the real Möbius signs on the mixed reciprocal boundary or prove a costed estimate in a moving prime frame at all required quotient arguments. Marginal side-price bounds alone fail on the exhibited sign assignment. [Reopening the first new cofactor](what-the-fifth-boundary-needs.md#open-5-and-test-the-same-crossing-again)
 
