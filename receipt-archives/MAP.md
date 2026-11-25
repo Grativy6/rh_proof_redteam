@@ -6,6 +6,9 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Torsion reading at a zero](2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) · [Reconstructing the lattice](2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) · [Invisible full-level CM action](2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md) · [Integer replay](check_marked_lattice_and_torsion.py) | Identifies a finer reading already present in the same geometric section, the size gates, and the distinction between an exact metric and an arithmetic action. Hearthline, under Chris Pang’s request to write independent proofs, 24 November 2026. |
+| [Vanishing at every toric depth](2026-11-24-a-theta-zero-at-every-toric-depth.md) | A genuine elliptic good factor needs another section or base torsion label. The root-line double zero and the degree bound identify how a nonzero reading is recovered. Hearthline under the same independent-proof request, 24 November 2026. |
+| [Golden and rational boundary limits](2026-11-24-the-golden-limit-and-the-rational-boundary.md) · [An explicit support](2026-11-24-an-explicit-support-for-the-zero-orbit.md) | Computes the source seed on a full logarithmic cycle, tests its domain, and supplies the supporting tuple in the binary zero example. Same authorization and date. |
 | [A genuine zero on a supported orbit](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) · [Exact symmetry at a ramified prime](2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md) | Proves the shortest-lift bound in the actual $E_8$ slot, constructs a zero over a finite local field and compares its weight with the surviving minimum. Hearthline under Chris Pang’s request for independent proofs, 24 November 2026. |
 | [The determinant inside the cancelled sum](2026-11-24-the-determinant-inside-the-disappearing-sum.md) · [Two-digit rank](2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) · [Replay](check_theta_orbit_and_digits.py) | Locates the first unpaired point and proves how many directions remain visible in the genuine fine table. Same authorization and date. |
 | [Genuine theta terms](2026-11-24-when-the-golden-unit-changes-a-genuine-theta-term.md) · [Exact coefficients](check_e8_theta_refinement.py) · [Compatible class sums](2026-11-24-what-compatible-theta-sums-recover.md) | Tracks two changed leading residues through the next projection and the same-level product calculation. Hearthline under Chris Pang’s lattice request, 24 November 2026. |
@@ -112,6 +115,8 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 Recorded by Hearthline on 23 November 2026 under Christopher D. Pang’s public red-team request.
 
 ## Unresolved
+
+The [full-level CM example](2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md#unresolved) does not share a generic action. The [local torsion example](2026-11-24-the-torsion-reading-that-sees-through-the-zero.md#unresolved) and the [good elliptic product](2026-11-24-a-theta-zero-at-every-toric-depth.md#unresolved) leave nonsplit coefficient transport at the common centre to be tested.
 
 The [actual support hypothesis](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md#unresolved) is stronger than membership in the tested congruence orbit. Its global source remains open. The explicit local example has a unique reference minimum.
 

@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Recover a marked metric and distinguish arithmetic actions
+
+Run `python -B check_marked_lattice_and_torsion.py` here. It uses only the Python standard library and checks Gram recovery through rank four, a Hensel correction modulo $2^{324}$, the corrected torsion size bounds, fourfold action matrices and the integer face identities. [Doubling proof](2026-11-24-reconstructing-a-marked-lattice-by-doubling.md) · [Exact Fourier measurements](2026-11-24-the-torsion-reading-that-sees-through-the-zero.md) · [Mixed toric and good reduction](2026-11-24-a-theta-zero-at-every-toric-depth.md) · [Arithmetic action](2026-11-24-two-arithmetic-actions-indistinguishable-at-full-level.md) · [Fan limit](2026-11-24-the-golden-limit-and-the-rational-boundary.md) · [Supporting tuple](2026-11-24-an-explicit-support-for-the-zero-orbit.md)
+
 ### Test an exact theta zero and the two-digit rank
 
 Run `python -B check_theta_orbit_and_digits.py` here. It uses the Python standard library and the existing `check_e8_theta_refinement.py` in this directory. The script checks the orbit matrix, energy bounds, first unmatched shell, 28-dimensional residue calculation and integer determinant $-3456$. The [paper proof of the exact zero](2026-11-24-a-zero-theta-sum-on-the-supported-lattice-orbit.md) gives the convergent series and Hensel estimate. [Four entries](2026-11-24-the-determinant-inside-the-disappearing-sum.md) · [Rank proof and determinant certificate](2026-11-24-how-many-theta-directions-the-second-digit-recovers.md) · [Wild and prime-to-$p$ symmetries](2026-11-24-what-exact-symmetry-earns-at-a-ramified-prime.md)
