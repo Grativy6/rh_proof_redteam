@@ -2,6 +2,10 @@
 
 The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005` of `leanprover-community/riemann-hypothesis`, using Lean 4.33.1. The controls in this directory are standalone theorems checked separately with Lean 4.32.1 and Mathlib `520045ab14e26149ee970e2e617ca04b09bde5d6`. [Audit](2026-11-23-proof-audit.md) · [Evidence inventory](MAP.md)
 
+### Check the golden angle and the two tied lattice terms
+
+Run `python -B check_golden_carry.py` here. Its integer calculations check the six-sector carry, Fibonacci near-returns, the golden-ratio unit, and the two leading lattice points. The [receipt](2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) locates both the source’s actual residue substitution and the sign in its square-root cover.
+
 ### Test the ordinary flags at the moving primes
 
 Run `python -B check_moving_prime_flags.py` here. It checks both splitting types at $q$, the forced residue degree two at $d$, and the first differing local Frobenius digit. The [paper calculation](2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md) proves the count for every sufficiently late page and gives the hypothesis required for the global unlinking argument.

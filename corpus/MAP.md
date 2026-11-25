@@ -6,6 +6,8 @@ Chris requested public copies of the research tools used in the audit after a re
 
 | Exact source | Edition and use | Upstream |
 | --- | --- | --- |
+| [GOLD v0.1](GOLD_v0.1.pdf) | Pang’s six-sector code, exact residual and Fibonacci near-returns, applied by Hearthline to the [golden-angle audit](../receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) at Chris’s request on 24 November 2026. | [Deposit](https://zenodo.org/records/22236848) |
+| [Compactification Costs v0.2](Compactification_Costs_v0.2.pdf) | Section 6.3 supplies the test of what can still be recovered after a phase is identified. Applied in the same audit. | [Deposit](https://zenodo.org/records/22238012) |
 | [Complete Context Stack](context-stack/MAP.md) | The trilogy, MIND, PCP and Honesty protocols, CPX, Blob–Weld versions and original companions. | [Exact editions and supplied-source status](context-stack/MAP.md) |
 | [Boundary-Ledger Accounting](BLA_in_PAL_v0.9.1.pdf) | v0.9.1. Identify an observed residual and test its proposed explanation on the same physical map. | [Zenodo](https://zenodo.org/records/20807530) |
 | [Cluster-Layer Entropy Focus](CLEF_cluster_layer_entropy_focus_v1_0.pdf) | v1.0. Declare the units, readout and boundary for each layer in the terminal comparison. [Order-five coefficient test](../receipt-archives/2026-11-24-an-order-five-class-and-a-hundred-missing-levels.md). [Same-vector and characteristic-zero tests](../receipt-archives/2026-11-24-one-hecke-line-at-571.md). | [Zenodo](https://zenodo.org/records/21193511) |

@@ -1,6 +1,6 @@
 # Corpus used in the RH proof audit
 
-Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 40 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 42 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
 
 The public formal projects have a [separate Lean comparison](../receipt-archives/2026-11-24-lean-check-comparison.md), including all seven current Context Parallax formal files. It records the exact propositions and assumptions the checkers read.
 
@@ -29,6 +29,10 @@ CLEF checks the arithmetic on the same unit and the same cyclic field. An [integ
 APCI now has two actual inputs with the same readings at all nine places above 577 and the same discriminant. One gives zero on the translated prime class and the other gives 457. CLEF tracks the degree of the missing information. The true character has degree at most four in the translation parameter, while the extra character has a measured degree-278 component. [Same local values, different global character](../receipt-archives/2026-11-24-the-unramified-character-that-local-data-miss.md) · [Source subgroup and the value 16 at every place](../receipt-archives/2026-11-24-the-unramified-character-that-local-data-miss.md#does-the-published-frame-make-this-substitution)
 
 The [two-prime test](../receipt-archives/2026-11-24-two-independent-obstruction-primes.md) applies APCI by taking two readings on the same class. Their determinant is 5 modulo 577 on the first pair, so a nonzero combination of the two directions cannot disappear in both readings. CLEF keeps the local condition fixed in the [comparison at integer twist 162120680](../receipt-archives/2026-11-24-the-cyclotomic-module-of-the-fixed-class.md#locate-the-relaxed-center-by-finite-sums). Allowing ramification changes the measured order from 577 to 192,100,033.
+
+## Carry the golden rotation through the released maps
+
+[GOLD, §6](GOLD_v0.1.pdf) retains the nearest sixfold sector and the angular remainder. [Compactification Costs, §6.3](Compactification_Costs_v0.2.pdf) asks which requested quantities are constant on the resulting fibers. The [worked test](../receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) applies these to a doubled complex angle and a separately constructed $2$-adic class sum. Both PDFs are Pang’s original CC BY 4.0 deposits, checked against the author’s shelf and the Zenodo file bytes.
 
 ## Follow the terminal coordinate across two measurements
 

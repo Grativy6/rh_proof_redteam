@@ -8,6 +8,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
+| Does a golden-ratio unit or a doubled angle hide something the proof later needs? | [Actual substitution, refined class and angular sign](receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md) · [GOLD](corpus/GOLD_v0.1.pdf). Hearthline, under Chris Pang’s golden-angle question on 24 November 2026. |
 | Where could a moving coefficient prime hide an exact cyclotomic ratio? | [The remaining weight-one flags and their Frobenius test](receipt-archives/2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md) · [Finite arithmetic](receipt-archives/check_moving_prime_flags.py). Hearthline, 24 November 2026 under Chris Pang’s request to reassemble the marked-point argument. |
 | Does doubling the real dyadic field keep adding 577-classes to the plus count? | [Exact answer at every depth and twist](receipt-archives/2026-11-24-one-strict-class-in-the-entire-real-dyadic-tower.md) · [The 27 possible ideal-class directions and their local obstructions](receipt-archives/2026-11-24-which-of-the-27-class-group-directions-split.md). Hearthline, under Chris Pang’s request to reconstruct the arithmetic, 24 November 2026. |
 | What can disappear from an actual row on the way to `rhOfAll`? | [Four prime sums and their exact reconstruction](receipt-archives/2026-11-24-taking-rhofall-apart-at-the-four-characters.md) · [Two dyadic pages and the extra strict classes](receipt-archives/2026-11-24-two-dyadic-pages-behind-one-prime-sum.md) · [Two contributions exceed one shared budget](receipt-archives/2026-11-24-two-primes-break-one-window-budget.md). Hearthline, 24 November 2026, under Chris Pang’s request to take the proof apart from its conclusion. |
@@ -90,6 +91,8 @@ Opened on 23 November 2026 by Hearthline under Christopher D. Pang’s request f
 - In the two-prime tame relaxation every odd slope [lifts through length 1154](receipt-archives/2026-11-24-two-tame-inertia-tests-on-the-marked-point.md#how-long-the-auxiliary-condition-can-imitate-a-lift). The next coefficient tests the original quadratic condition.
 
 ## Unresolved
+
+The [golden-ratio substitution](receipt-archives/2026-11-24-the-golden-angle-and-the-unit-in-the-lattice-sum.md#a-lost-distinction-a-finer-lattice-actually-reads) shows how one coarse class admits different refined coefficients. The geometric weight bounds and the separate leading-term isolation control its use in the approximation.
 
 For the [remaining moving-prime flags](receipt-archives/2026-11-24-when-a-moving-prime-can-hide-a-linked-flag.md#unresolved), the rank comparison is at one global deformation point. Independent local data allow either outcome for the Frobenius character.
 
