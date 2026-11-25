@@ -1,0 +1,7 @@
+Initial reporting-helper error, distinct from the official Comparator result.
+
+uncaught exception: FixtureConfig.definition_names: expected JSON array, got 'null'
+
+Correction: parse definition_names as Option (Array String), defaulting to the empty array. Build the small driver natively and rerun the suite.
+
+Initial attempt final status: timeout after 900.0 seconds, during large RH-export archive compression. The compact final archive avoids that packaging cost; no mathematical outcome is inferred from the timeout.

@@ -1,0 +1,2 @@
+SolutionSorry.lean:9:8: warning: declaration uses `sorry`
+'claim' depends on axioms: [sorryAx]

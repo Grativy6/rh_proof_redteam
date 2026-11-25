@@ -1,0 +1,300 @@
+{
+  "schema_version": 2,
+  "claim_id": "APCI_COMPARATOR_FIXED_STATEMENT_2026_11_25",
+  "repository": {
+    "commit": "8484213db0462d3142dd411ed63baf773b18ae14",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "receipt-archives/apci-comparator/run.py",
+    "--lean-bin",
+    "/workspace/scratch/2a97eb17d525/toolchains/lean-4.36.0-linux/bin",
+    "--mathlib",
+    "/workspace/scratch/2a97eb17d525/runtime/mathlib4",
+    "--output",
+    "receipt-archives/apci-comparator/runs/2026-11-25-final"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.12.14"
+      },
+      {
+        "name": "Lean/Lake",
+        "version": "4.36.0; commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9"
+      },
+      {
+        "name": "Mathlib",
+        "version": "fc4f59e577feb1a4956671bc04ac18aaaf8cd842"
+      },
+      {
+        "name": "nanoda_bin",
+        "version": "0.4.17, bundled with Lean 4.36.0"
+      },
+      {
+        "name": "experiment Python",
+        "version": "3.12.14"
+      }
+    ],
+    "hardware": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "mathematics": {
+    "assertion_tested": "For ten specified challenge/solution pairs, the shipped Lean 4.36.0 comparison and axiom checks distinguish fixed APCI or RH targets from changed definitions, added premises and unpermitted assumptions; three allowed controls pass those component checks. Direct kernel checks validate the permitted solution exports and the Boolean non-recoverability control.",
+    "coefficient_domain": "Exact Lean propositions and functions on Bool and Unit; the official Mathlib v4.36.0 RiemannHypothesis definition",
+    "conventions": "Separate Lean module environments for challenge and solution; standard permitted axiom names propext, Quot.sound, Classical.choice; only explicitly configured definition holes may vary.",
+    "inputs": [
+      "Seven Bool/Unit APCI challenge pairs",
+      "Three original RH answer-slot challenge pairs",
+      "A proof that a constant Bool-to-Unit trace cannot decode the identity answer"
+    ],
+    "bounds": {
+      "core_cases": 7,
+      "rh_cases": 3,
+      "boolean_worlds": 2
+    },
+    "non_claims": [
+      "Does not prove or disprove RH.",
+      "Does not prove universal Comparator correctness.",
+      "Direct component and kernel runs are not sandboxed Comparator acceptance.",
+      "An environment failure is not a mathematical rejection.",
+      "Mathlib cache and the official Lean distribution are trusted build inputs, pinned here; the entire cache source closure is not rebuilt."
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-25T07:04:10.182513+00:00",
+    "runtime_seconds": 362.266931,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 900.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 600,
+      "max_cores": 2,
+      "max_threads": 2
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "receipt-archives/apci-comparator/CompareExports.lean",
+    "receipt-archives/apci-comparator/core/APCI.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAddedPremise.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAnswerHole.lean",
+    "receipt-archives/apci-comparator/core/ChallengeAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/ChallengeExtraAxiom.lean",
+    "receipt-archives/apci-comparator/core/ChallengePositive.lean",
+    "receipt-archives/apci-comparator/core/ChallengeSorry.lean",
+    "receipt-archives/apci-comparator/core/ChallengeWrappedAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/MathematicalControl.lean",
+    "receipt-archives/apci-comparator/core/SolutionAddedPremise.lean",
+    "receipt-archives/apci-comparator/core/SolutionAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/SolutionExtraAxiom.lean",
+    "receipt-archives/apci-comparator/core/SolutionPositive.lean",
+    "receipt-archives/apci-comparator/core/SolutionSorry.lean",
+    "receipt-archives/apci-comparator/core/SolutionWrappedAnswerSwap.lean",
+    "receipt-archives/apci-comparator/core/cases.json",
+    "receipt-archives/apci-comparator/lakefile.toml",
+    "receipt-archives/apci-comparator/lean-toolchain",
+    "receipt-archives/apci-comparator/rh/Bare.json",
+    "receipt-archives/apci-comparator/rh/ChallengeBare.lean",
+    "receipt-archives/apci-comparator/rh/ChallengeHole.lean",
+    "receipt-archives/apci-comparator/rh/ChallengeTrue.lean",
+    "receipt-archives/apci-comparator/rh/Hole.json",
+    "receipt-archives/apci-comparator/rh/Solution.lean",
+    "receipt-archives/apci-comparator/rh/True.json",
+    "receipt-archives/apci-comparator/run.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "receipt-archives/apci-comparator/CompareExports.lean",
+      "sha256": "c7e4755f506bd9286829141473cf33e62be778fec35eb3e93cadf54a2641bea9",
+      "sha256_after": "c7e4755f506bd9286829141473cf33e62be778fec35eb3e93cadf54a2641bea9"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/APCI.lean",
+      "sha256": "94a81ed49c32457bf40404200f8632edee1bee1784080efbaa0ae02c244f7ab4",
+      "sha256_after": "94a81ed49c32457bf40404200f8632edee1bee1784080efbaa0ae02c244f7ab4"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeAddedPremise.lean",
+      "sha256": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9",
+      "sha256_after": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeAnswerHole.lean",
+      "sha256": "4aa32594f61b1295c71bc262263f591ebdef22ba30a3747990d91e861e4eb2c1",
+      "sha256_after": "4aa32594f61b1295c71bc262263f591ebdef22ba30a3747990d91e861e4eb2c1"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeAnswerSwap.lean",
+      "sha256": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9",
+      "sha256_after": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeExtraAxiom.lean",
+      "sha256": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9",
+      "sha256_after": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengePositive.lean",
+      "sha256": "a0764e0bd970dc26c293deddfebab27c577d979b7c26e0fe3fbf6babae55d098",
+      "sha256_after": "a0764e0bd970dc26c293deddfebab27c577d979b7c26e0fe3fbf6babae55d098"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeSorry.lean",
+      "sha256": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9",
+      "sha256_after": "4554c751f8f179ba7f1cc5da25a37bf5646c185b9aaa81f7468a876af11d22b9"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/ChallengeWrappedAnswerSwap.lean",
+      "sha256": "6809ec43bfe3d52773f706533ab8a4adc246c960b089d2327883a6d7bde5a29f",
+      "sha256_after": "6809ec43bfe3d52773f706533ab8a4adc246c960b089d2327883a6d7bde5a29f"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/MathematicalControl.lean",
+      "sha256": "69bbce0eff0ec5d590f843135b34104e1298199c5ba2445fb6a1d20dff010cd2",
+      "sha256_after": "69bbce0eff0ec5d590f843135b34104e1298199c5ba2445fb6a1d20dff010cd2"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionAddedPremise.lean",
+      "sha256": "b866a5e541505522816755dc0bf79411087fc92be04375cfca73aa4970c3c52f",
+      "sha256_after": "b866a5e541505522816755dc0bf79411087fc92be04375cfca73aa4970c3c52f"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionAnswerSwap.lean",
+      "sha256": "8317c755e24673063a1759739677d9d7172590fbe5e672e0f8c4bd6ece647fab",
+      "sha256_after": "8317c755e24673063a1759739677d9d7172590fbe5e672e0f8c4bd6ece647fab"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionExtraAxiom.lean",
+      "sha256": "5b272e0ce2b94802fd67300f889996f864fedc810dddc39bda979e57626d38e7",
+      "sha256_after": "5b272e0ce2b94802fd67300f889996f864fedc810dddc39bda979e57626d38e7"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionPositive.lean",
+      "sha256": "8317c755e24673063a1759739677d9d7172590fbe5e672e0f8c4bd6ece647fab",
+      "sha256_after": "8317c755e24673063a1759739677d9d7172590fbe5e672e0f8c4bd6ece647fab"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionSorry.lean",
+      "sha256": "e169e39e85b3432e33cafaf750826b40c0b044c8e08e1806bde188d66dbe2f37",
+      "sha256_after": "e169e39e85b3432e33cafaf750826b40c0b044c8e08e1806bde188d66dbe2f37"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/SolutionWrappedAnswerSwap.lean",
+      "sha256": "47ec33ecf1f4f8b4d01c6a05769c9c64c25b65cee0e3edfa855b7fff4d7cf5a0",
+      "sha256_after": "47ec33ecf1f4f8b4d01c6a05769c9c64c25b65cee0e3edfa855b7fff4d7cf5a0"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/core/cases.json",
+      "sha256": "55d5ae6db04352f11fbc962d535e9bf2fa67712f5b52ef4e75fc69881e2fe402",
+      "sha256_after": "55d5ae6db04352f11fbc962d535e9bf2fa67712f5b52ef4e75fc69881e2fe402"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/lakefile.toml",
+      "sha256": "5d3c06b29412c5cc9b71c79021a72e725875aeb5f62c6968c0f2d9af371ff46e",
+      "sha256_after": "5d3c06b29412c5cc9b71c79021a72e725875aeb5f62c6968c0f2d9af371ff46e"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/lean-toolchain",
+      "sha256": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a",
+      "sha256_after": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/Bare.json",
+      "sha256": "8b42b672de50649fe40f7f9e1fe8bf0d916d7fd20f9ac30bd06e939dc9207e5c",
+      "sha256_after": "8b42b672de50649fe40f7f9e1fe8bf0d916d7fd20f9ac30bd06e939dc9207e5c"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/ChallengeBare.lean",
+      "sha256": "5310e1d0d1f571d259ab19b719adc7ccc369a2258d7b28b6a75fe42fd189db58",
+      "sha256_after": "5310e1d0d1f571d259ab19b719adc7ccc369a2258d7b28b6a75fe42fd189db58"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/ChallengeHole.lean",
+      "sha256": "7b92eac7024d288ba13a113f50a1aacde464383a90232818680626a08b3c0599",
+      "sha256_after": "7b92eac7024d288ba13a113f50a1aacde464383a90232818680626a08b3c0599"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/ChallengeTrue.lean",
+      "sha256": "7c8b1fb06e4067f520d26d60d0299133a55469a187e4332b8df275ff78982e26",
+      "sha256_after": "7c8b1fb06e4067f520d26d60d0299133a55469a187e4332b8df275ff78982e26"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/Hole.json",
+      "sha256": "6efe1a56c9599b8e7b85b679bd17f811bdc44150455b1821f0aebb1e6542a5f4",
+      "sha256_after": "6efe1a56c9599b8e7b85b679bd17f811bdc44150455b1821f0aebb1e6542a5f4"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/Solution.lean",
+      "sha256": "7eea104c413053650037ceb18e77cc1f0846d7f7164cadab12dba5e969aea48f",
+      "sha256_after": "7eea104c413053650037ceb18e77cc1f0846d7f7164cadab12dba5e969aea48f"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/rh/True.json",
+      "sha256": "f609b96bbb609212b11dd18ac43655b337c9ed9fb453a59879f874e4359c41f2",
+      "sha256_after": "f609b96bbb609212b11dd18ac43655b337c9ed9fb453a59879f874e4359c41f2"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/run.py",
+      "sha256": "380729dd3de0c68fa8cea94bddc019bfbb3ee2407069fdbfb903ed4ba268c326",
+      "sha256_after": "380729dd3de0c68fa8cea94bddc019bfbb3ee2407069fdbfb903ed4ba268c326"
+    }
+  ],
+  "output_directory": "receipt-archives/apci-comparator/runs/2026-11-25-final",
+  "declared_results": [
+    "receipt-archives/apci-comparator/runs/2026-11-25-final/summary.json",
+    "receipt-archives/apci-comparator/runs/2026-11-25-final/core-replay.tar.xz"
+  ],
+  "outputs": [
+    {
+      "path": "receipt-archives/apci-comparator/runs/2026-11-25-final/stdout.txt",
+      "sha256": "95e814fc7b2fcf0bbc30964584b3e1fb7e8d9ca16f0d290e3d923bddaf342f73",
+      "kind": "log"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/runs/2026-11-25-final/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/runs/2026-11-25-final/summary.json",
+      "sha256": "756ca7ecedddd1d1229883e5198e9774b2ab387eacbcd2010e277d250d214340",
+      "kind": "result"
+    },
+    {
+      "path": "receipt-archives/apci-comparator/runs/2026-11-25-final/core-replay.tar.xz",
+      "sha256": "6d441bb8e18fec405e59dbc821adb65a727289a11f2a099b89b08717ad49c259",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,6 @@
+A preparatory bounded run stopped before any fixture judgments.
+Lake reported thread creation failure while a 6 GiB address-space cap was active.
+Isolated repetitions with and without that cap both succeeded; the exact cause is unresolved.
+The final run omits the optional address-space cap, retains wall-time/CPU/affinity/thread/output limits, and records its own status.
+
+libc++abi: terminating due to uncaught exception of type lean::exception: failed to create thread: Resource temporarily unavailable

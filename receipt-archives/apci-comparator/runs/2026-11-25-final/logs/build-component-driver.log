@@ -1,0 +1,6 @@
+info: apci_component_driver: no previous manifest, creating one from scratch
+info: toolchain not updated; already up-to-date
+✔ [2/5] Built CompareExports (614ms)
+✔ [4/5] Built CompareExports:c.o (425ms)
+✔ [5/5] Built compare_exports:exe (3.3s)
+Build completed successfully (5 jobs).

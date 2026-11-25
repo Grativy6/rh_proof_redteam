@@ -1,0 +1,6 @@
+name = "apci_component_driver"
+version = "0.1.0"
+
+[[lean_exe]]
+name = "compare_exports"
+root = "CompareExports"
