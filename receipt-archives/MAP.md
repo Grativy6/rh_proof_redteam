@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [PAL construction stage](2026-11-25-pal-construction-replay.md) · [Corpus source inventory](2026-11-25-pal-construction-corpus.json) | 25 November 2026. Under Pang's activated whole-corpus key, Hearthline derived the frame, gain and sharp reopening results and exercised the independent fixed targets. |
 | [Prime phases and the rational distance](2026-11-25-pal-rh-rational-distance.md) · [Integer replay](check_pal_residue_distance.py) | 25 November 2026. Hearthline, at Pang’s request, combined exact prime turns and checked a witness for the constructive RH branch. |
 | [Two rows halve the general Bernoulli cutoff](2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) · [Symbolic weights](check_two_row_bernoulli_identity.py) · [Provenance](2026-11-25-proof-collection-two-row-supplement.json) | 25 November 2026. Under Pang’s continuing mathematical audit, Hearthline checked the release’s original boundary calculation and proved the stronger inequality for arbitrary odd conductor. |
 | [Order 17 at conductor 64](2026-11-25-the-order-seventeen-class-at-conductor-64.md) · [Signed sums](check_seventeen_dyadic_cutoff.py) · [Provenance](2026-11-25-proof-collection-dyadic-cutoff-supplement.json) | 25 November 2026. Hearthline tested the original Case II coefficient directions for Pang’s public audit, preserving the label of the bad class and the release’s actual conductor cutoff. |

@@ -1,4 +1,8 @@
 import PALRH.Cells
+import PALRH.Gain
+import PALRH.SquareShell
+import PALRH.Dilation
+import Mathlib.Analysis.PSeries
 import Mathlib.NumberTheory.Harmonic.ZetaAsymp
 import Mathlib.NumberTheory.LSeries.Dirichlet
 import Mathlib.NumberTheory.LSeries.SumCoeff
@@ -384,5 +388,252 @@ theorem rh_of_finite_certificates (h : FiniteCertificates) : RiemannHypothesis :
     nlinarith [norm_nonneg (target - candidate c)]
 
 #print axioms PALRH.rh_of_finite_certificates
+
+/-- Squared error over every physical row, indexed here by its zero-based offset. -/
+def actualLoss {N : ℕ} (c : Fin N → ℚ) : ℝ :=
+  ∑' n : ℕ, rowWeight n * (rowError c (n+1) : ℝ)^2
+
+private lemma loss_summable {N : ℕ} (c : Fin N → ℚ) :
+    Summable (fun n : ℕ => rowWeight n * (rowError c (n+1) : ℝ)^2) := by
+  apply Summable.of_norm_bounded (g := fun n => rowWeight n * (envelope c : ℝ)^2)
+    (rowWeight_hasSum.summable.mul_right _)
+  intro n
+  have hr : |(rowError c (n+1) : ℝ)| ≤ (envelope c : ℝ) := by
+    simpa only [Rat.cast_abs] using (Rat.cast_le (K := ℝ)).mpr (row_bound c (n+1))
+  rw [Real.norm_eq_abs, abs_of_nonneg (by apply mul_nonneg; unfold rowWeight; positivity; positivity)]
+  apply mul_le_mul_of_nonneg_left _ (by unfold rowWeight; positivity)
+  rw [← sq_abs (rowError c (n+1) : ℝ)]
+  exact pow_le_pow_left₀ (abs_nonneg _) hr _
+
+/-- Honest compression: every occupied modulus must be readable on the common frame. -/
+theorem actualLoss_eq_frame {N : ℕ} (c : Fin N → ℚ) (L : ℕ) [NeZero L]
+    (readable : ∀ i : Fin N, c i ≠ 0 → i.val+2 ∣ L) :
+    actualLoss c = energy L (fun r => (rowError c (r.val+1) : ℝ)) := by
+  rw [energy_eq_all_rows]
+  apply tsum_congr
+  intro n
+  have he : rowError c ((n:ZMod L).val+1) = rowError c (n+1) := by
+    rw [ZMod.val_natCast]
+    unfold rowError
+    congr 1
+    apply Finset.sum_congr rfl
+    intro i _
+    by_cases h : c i = 0
+    · simp [h]
+    · rw [turn_shift_recover (readable i h)]
+  rw [he]
+
+/-- Every strict all-row bound yields a finite rational head and tail witness. -/
+theorem finite_head_of_loss {N K : ℕ} (c : Fin N → ℚ)
+    (h : actualLoss c < 1/((K:ℝ)+1)) :
+    ∃ M : ℕ, certificateValue c M < 1/((K:ℚ)+1) := by
+  have htail : Tendsto (fun M : ℕ => (envelope c : ℝ)^2 / ((M:ℝ)+1)) atTop (𝓝 0) := by
+    simpa [div_eq_mul_inv] using
+      (tendsto_one_div_add_atTop_nhds_zero_nat (𝕜 := ℝ)).const_mul ((envelope c : ℝ)^2)
+  obtain ⟨M,hM⟩ := (htail.eventually_lt_const (sub_pos.mpr h)).exists
+  have hsum := (loss_summable c).sum_le_tsum (Finset.range M)
+    (fun n _ => mul_nonneg (by unfold rowWeight; positivity) (sq_nonneg _))
+  have he : (certificateValue c M : ℝ) < 1/((K:ℝ)+1) := by
+    have hh : (∑ n ∈ Finset.range M, (rowError c (n+1) : ℝ)^2 /
+        (((n:ℝ)+1)*((n:ℝ)+2))) ≤ actualLoss c := by
+      simpa only [actualLoss, rowWeight, one_div, div_eq_mul_inv, one_mul, mul_comm] using hsum
+    simp only [certificateValue, Rat.cast_add, Rat.cast_sum, Rat.cast_div, Rat.cast_pow,
+      Rat.cast_mul, Rat.cast_natCast, Rat.cast_one, Rat.cast_ofNat]
+    linarith
+  refine ⟨M, (Rat.cast_lt (K := ℝ)).mp ?_⟩
+  simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_add, Rat.cast_natCast] using he
+
+/-- The four selected rows force the original missing-six floor on any finite rational fit. -/
+theorem missing_six_loss {N : ℕ} (c : Fin N → ℚ)
+    (omits : ∀ i : Fin N, i.val+2 = 6 → c i = 0) : (1:ℝ)/92 ≤ actualLoss c := by
+  have zero : (∑ i, c i * fourReadings (turn (i.val+2))) = 0 := by
+    apply Finset.sum_eq_zero
+    intro i _
+    rw [fourReadings_turn (by omega)]
+    split_ifs with he
+    · rw [omits i he, zero_mul]
+    · exact mul_zero _
+  have row : fourReadings (rowError c) = -1 := by
+    calc
+      _ = -1 - ∑ i, c i * fourReadings (turn (i.val+2)) := by
+        simp only [fourReadings, rowError, mul_add, mul_sub, Finset.sum_sub_distrib,
+          Finset.sum_add_distrib, mul_comm (c _) (-2:ℚ), ← mul_assoc, Finset.mul_sum]
+        ring
+      _ = _ := by rw [zero]; ring
+  let a : ℝ := rowError c 1
+  let b : ℝ := rowError c 3
+  let d : ℝ := rowError c 5
+  let e : ℝ := rowError c 6
+  have hr : -2*a+b+d-e = -1 := by
+    dsimp [a,b,d,e]
+    exact_mod_cast row
+  have hfour : a^2/2+b^2/12+d^2/30+e^2/42 ≤ actualLoss c := by
+    have hs := (loss_summable c).sum_le_tsum ({0,2,4,5} : Finset ℕ)
+      (fun n _ => mul_nonneg (by unfold rowWeight; positivity) (sq_nonneg _))
+    change _ ≤ actualLoss c at hs
+    norm_num [Finset.sum_insert, rowWeight] at hs
+    dsimp [a,b,d,e]
+    linarith
+  have hid : 92*(a^2/2+b^2/12+d^2/30+e^2/42)-(-2*a+b+d-e)^2 =
+      (-4*b-12*a)^2/24 + (-4*d-30*a)^2/60 + (-4*e+42*a)^2/84 +
+      (12*d-30*b)^2/360 + (12*e+42*b)^2/504 + (30*e+42*d)^2/1260 := by ring
+  have hpos : 0 ≤ 92*(a^2/2+b^2/12+d^2/30+e^2/42)-(-2*a+b+d-e)^2 := by
+    rw [hid]; positivity
+  rw [hr] at hpos
+  linarith
+
+/-- The rational tail guard bounds the same loss used in the finite-frame calculus. -/
+theorem actualLoss_le_certificate {N : ℕ} (c : Fin N → ℚ) (M : ℕ) :
+    actualLoss c ≤ (certificateValue c M : ℝ) := by
+  let f := fun n : ℕ => rowWeight n * (rowError c (n+1) : ℝ)^2
+  have hf : Summable f := loss_summable c
+  have hweight : Summable (fun n : ℕ => rowWeight (n+M)) :=
+    (summable_nat_add_iff M).mpr rowWeight_hasSum.summable
+  have ht : (∑' i : ℕ, f (i+M)) ≤ (∑' i : ℕ, rowWeight (i+M)*(envelope c : ℝ)^2) := by
+    apply ((summable_nat_add_iff M).mpr hf).tsum_le_tsum _ (hweight.mul_right _)
+    intro i
+    apply mul_le_mul_of_nonneg_left _ (by unfold rowWeight; positivity)
+    have hr : |(rowError c (i+M+1) : ℝ)| ≤ (envelope c : ℝ) := by
+      simpa only [Rat.cast_abs] using (Rat.cast_le (K := ℝ)).mpr (row_bound c (i+M+1))
+    rw [← sq_abs (rowError c (i+M+1) : ℝ)]
+    exact pow_le_pow_left₀ (abs_nonneg _) hr _
+  rw [tsum_mul_right, rowWeight_tail] at ht
+  change (∑' n, f n) ≤ _
+  rw [← hf.sum_add_tsum_nat_add M]
+  simp only [certificateValue, Rat.cast_add, Rat.cast_sum, Rat.cast_div, Rat.cast_pow,
+    Rat.cast_mul, Rat.cast_natCast, Rat.cast_one, Rat.cast_ofNat]
+  have head : (∑ n ∈ Finset.range M, f n) =
+      ∑ n ∈ Finset.range M, (rowError c (n+1) : ℝ)^2 / (((n:ℝ)+1)*((n:ℝ)+2)) := by
+    apply Finset.sum_congr rfl
+    intro n _
+    dsimp [f, rowWeight]
+    ring
+  rw [head]
+  apply add_le_add (le_refl _)
+  simpa only [one_div, div_eq_mul_inv, one_mul, mul_comm] using ht
+
+theorem mirrored_row_errors {N : ℕ} (c : Fin N → ℚ) (k j L : ℕ)
+    (cut : k+j+1=L) (readable : ∀ i : Fin N, i.val+2 ∣ L) :
+    rowError c k + rowError c j = 1 + rowError c (L-1) := by
+  have h0 : L-1+0+1=L := by omega
+  have pair (i : Fin N) : turn (i.val+2) k + turn (i.val+2) j = turn (i.val+2) (L-1) := by
+    have h1 := half_tick_mirror (by omega : 0 < i.val+2) k j (cut ▸ readable i)
+    have h2 := half_tick_mirror (by omega : 0 < i.val+2) (L-1) 0 (h0 ▸ readable i)
+    simpa [turn] using h1.trans h2.symm
+  have acc : (∑ i, c i * turn (i.val+2) k) + (∑ i, c i * turn (i.val+2) j) =
+      ∑ i, c i * turn (i.val+2) (L-1) := by
+    rw [← Finset.sum_add_distrib]
+    apply Finset.sum_congr rfl
+    intro i _
+    rw [← mul_add, pair]
+  unfold rowError
+  linarith
+
+/-- For any finite remainder fit, fixing all odd answers at the target one forces
+every even prediction to zero. A new fit must be allowed to alter old answers. -/
+theorem frozen_odd_forces_even {N : ℕ} (c : Fin N → ℚ)
+    (fixed : ∀ a : ℕ, rowError c (2*a+1) = 0) (a : ℕ) : rowError c (2*a) = 1 := by
+  let M := (N+1).factorial * (a+1)
+  have hM : a+1 ≤ M := by
+    dsimp [M]
+    have h := Nat.factorial_pos (N+1)
+    nlinarith
+  have hd (i : Fin N) : i.val+2 ∣ 2*M := by
+    have h : i.val+2 ∣ (N+1).factorial := Nat.dvd_factorial (by omega) (by omega)
+    exact h.trans ((dvd_mul_right _ (a+1)).trans (dvd_mul_left M 2))
+  have h := mirrored_row_errors c (2*a) (2*(M-a-1)+1) (2*M) (by omega) hd
+  rw [fixed, show 2*M-1 = 2*(M-1)+1 by omega, fixed] at h
+  linarith
+
+theorem frozen_odd_loss {N : ℕ} (c : Fin N → ℚ)
+    (fixed : ∀ a : ℕ, rowError c (2*a+1) = 0) : (1:ℝ)/6 ≤ actualLoss c := by
+  have he := frozen_odd_forces_even c fixed 1
+  have h := (loss_summable c).le_tsum 1
+    (fun n _ => mul_nonneg (by unfold rowWeight; positivity) (sq_nonneg _))
+  change rowWeight 1 * (rowError c 2 : ℝ)^2 ≤ actualLoss c at h
+  norm_num at he
+  norm_num [he, rowWeight] at h ⊢
+  exact h
+
+/-- The missing even response is the difference of two odd residuals at a common reset. -/
+theorem second_row_trace {N : ℕ} (c : Fin N → ℚ) {L : ℕ} (hL : 3 ≤ L)
+    (readable : ∀ i : Fin N, i.val+2 ∣ L) :
+    rowError c (L-3) - rowError c (L-1) = 1 - rowError c 2 := by
+  have h := mirrored_row_errors c 2 (L-3) L (by omega) readable
+  linarith
+
+/-- Hitting row two obliges every finite fit to spend half a unit on an odd row. -/
+theorem odd_displacement {N : ℕ} (c : Fin N → ℚ) (hit : rowError c 2 = 0) :
+    ∃ a : ℕ, (1:ℚ)/2 ≤ |rowError c (2*a+1)| := by
+  let M := 2*(N+1).factorial
+  have hM : 2 ≤ M := by dsimp [M]; have := Nat.factorial_pos (N+1); omega
+  have hd (i : Fin N) : i.val+2 ∣ 2*M := by
+    have h : i.val+2 ∣ (N+1).factorial := Nat.dvd_factorial (by omega) (by omega)
+    exact h.trans ((dvd_mul_left _ 2).trans (dvd_mul_left M 2))
+  have h := second_row_trace c (L := 2*M) (by omega) hd
+  rw [hit, sub_zero, show 2*M-3=2*(M-2)+1 by omega, show 2*M-1=2*(M-1)+1 by omega] at h
+  by_contra! small
+  have h₁ := (abs_lt.mp (small (M-2))).2
+  have h₂ := (abs_lt.mp (small (M-1))).1
+  linarith
+
+/-- A specific rational pair attains the sharp odd displacement at row two. -/
+def reopeningPair (i : Fin 2) : ℚ := if i.val = 0 then 1 else 3/2
+
+theorem reopeningPair_attains :
+    rowError reopeningPair 2 = 0 ∧ ∀ a : ℕ, |rowError reopeningPair (2*a+1)| ≤ 1/2 := by
+  constructor
+  · norm_num [rowError, reopeningPair, Fin.sum_univ_two, turn]
+  · intro a
+    have hodd : (2*a+1)%2 = 1 := by omega
+    have h3 := Nat.mod_lt (2*a+1) (by decide : 0 < 3)
+    have cases3 : (2*a+1)%3 = 0 ∨ (2*a+1)%3 = 1 ∨ (2*a+1)%3 = 2 := by omega
+    rcases cases3 with h | h | h <;>
+      norm_num [rowError, reopeningPair, Fin.sum_univ_two, turn, h, hodd]
+
+/-- Productive cadence. While a requested tolerance remains unmet, actual arithmetic
+improvements earning at least a fixed positive amount per harmonic unit force a crossing. -/
+theorem rh_of_sustained_gain (width : ℕ → ℕ) (fits : (j : ℕ) → Fin (width j) → ℚ)
+    (gain : ∀ K : ℕ, ∃ a : ℝ, 0 < a ∧ ∀ j : ℕ,
+      1/((K:ℝ)+1) ≤ actualLoss (fits j) →
+      actualLoss (fits (j+1)) + a*(1/((j:ℝ)+1)) ≤ actualLoss (fits j)) :
+    RiemannHypothesis := by
+  apply rh_of_finite_certificates
+  intro K
+  have hit : ∃ j : ℕ, actualLoss (fits j) < 1/((K:ℝ)+1) := by
+    by_contra! stalled
+    obtain ⟨a, ha, step⟩ := gain K
+    have budget (m : ℕ) : actualLoss (fits m) +
+        a * (∑ i ∈ Finset.range m, 1/((i:ℝ)+1)) ≤ actualLoss (fits 0) := by
+      induction m with
+      | zero => simp
+      | succ m ih =>
+        rw [Finset.sum_range_succ, mul_add]
+        linarith [step m (stalled m)]
+    obtain ⟨m, hm⟩ :=
+      (Real.tendsto_sum_range_one_div_nat_succ_atTop.eventually_gt_atTop
+        (actualLoss (fits 0)/a)).exists
+    have ha' := (div_lt_iff₀ ha).mp hm
+    have hn : 0 ≤ actualLoss (fits m) :=
+      tsum_nonneg fun n => mul_nonneg (by unfold rowWeight; positivity) (sq_nonneg _)
+    nlinarith [budget m]
+  obtain ⟨j,hj⟩ := hit
+  obtain ⟨M,hM⟩ := finite_head_of_loss (fits j) hj
+  exact ⟨width j, M, fits j, hM⟩
+
+/-- A first fully finite instance of the same quantity used in the RH implication. -/
+theorem first_earned_precision :
+    certificateValue reopeningPair 256 < 1/6 := by
+  decide +kernel
+
+theorem reopeningPair_whole_loss : actualLoss reopeningPair < 1/6 := by
+  apply (actualLoss_le_certificate reopeningPair 256).trans_lt
+  have h := (Rat.cast_lt (K := ℝ)).mpr first_earned_precision
+  simpa only [Rat.cast_div, Rat.cast_one, Rat.cast_ofNat] using h
+
+#print axioms PALRH.odd_displacement
+#print axioms PALRH.reopeningPair_whole_loss
+#print axioms PALRH.first_earned_precision
+#print axioms PALRH.rh_of_sustained_gain
 
 end PALRH

@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+[Construction-key replay](2026-11-25-pal-construction-replay.md) gives the pinned target, clean build, rational comparisons, and independent statement/kernel runs. The [variable-prime checker](check_pal_prime_refits.py) uses only the Python standard library.
+
 [Prime phases and the all-row bound](2026-11-25-pal-rh-rational-distance.md) gives the integer replay command and the formal theorem statements. [Standalone checker](check_pal_residue_distance.py)
 
 ### Check the two-row conductor identity

@@ -1,0 +1,22 @@
+{
+  "challenge_module": "OddChallenge",
+  "solution_module": "OddSolution",
+  "theorem_names": [
+    "oddReopening"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

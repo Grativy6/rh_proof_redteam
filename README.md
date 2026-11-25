@@ -12,6 +12,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Constructing a route from PAL
 
+[**Active construction key**](pal-rh/CONSTRUCTION-KEY.md) · [The whole-corpus toolbelt](pal-rh/CORPUS-ROUTES.md) · [Why improving an even row reopens an odd one](pal-rh/half-tick-reflection.md) · [What a variable fresh prime changes](pal-rh/fresh-prime-transfer.md)
+
 [Prime phases and a finite rational condition for RH](pal-rh/README.md) starts from Pang’s question about which distinctions survive a projection. One four-row calculation identifies the carry from two prime phases. The branch includes a conditional proof against stock Mathlib and an explicit numerical witness checked with integer arithmetic. [Branch map](pal-rh/MAP.md)
 
 ## Audit findings

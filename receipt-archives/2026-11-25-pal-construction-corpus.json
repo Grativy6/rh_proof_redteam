@@ -1,0 +1,463 @@
+{
+  "date": "2026-11-25",
+  "scope": "All nine content shelves used as a research toolbelt. Entries fingerprint source editions and release containers. Manuscript openings, maps and package guides informed routing. Load-bearing sections and uses are named in pal-rh/CORPUS-ROUTES.md. Duplicate formats share one mathematical claim. Historical private drafts, campaign transcripts and administrative data are not distributed.",
+  "content_shelves": 9,
+  "fingerprinted_files": 105,
+  "shelves": {
+    "Context_Stack": [
+      {
+        "source": "Context_Stack/Blob_Weld_Investigative_PCP_v0.1.md",
+        "sha256": "cd58831d585aa1c8bae630ef09e4620a502fcf574179079d70419bcf79d8d15d"
+      },
+      {
+        "source": "Context_Stack/Context_Parallax_v1.0.pdf",
+        "sha256": "d75bf0eff0887bfe6f80cd1a32664d94f1348566b383a0c8501628df060c1c58"
+      },
+      {
+        "source": "Context_Stack/CPX_v1.0_Companion.zip",
+        "sha256": "f3cf930ac8ef6bec06a13e0f948334aa150834d84bda01e9fce120610a88c32e",
+        "archive_members": 435
+      },
+      {
+        "source": "Context_Stack/Honesty_Prompt_Code_Protocol_v1.0.docx",
+        "sha256": "006731b85f1f48b638690ea6fc69cac016bd964223711c99968dd17ca1436ace"
+      },
+      {
+        "source": "Context_Stack/MIND_v0.4_Draft.docx",
+        "sha256": "ff71e0af8ace035582a74bd62435cf1c0c2c750a165231dce86cc821b8abc981"
+      },
+      {
+        "source": "Context_Stack/MIND_v0.4_Draft.md",
+        "sha256": "e8ee6d9cbe53adfba8d0fb099b738142c9bd51057ff70839da787398aa2ff760"
+      },
+      {
+        "source": "Context_Stack/MIND_v0.4_Draft.pdf",
+        "sha256": "7c84265b3dbb05dc9846afb78539d73e8eec4dd262578f43a2bc8e604fb534ad"
+      },
+      {
+        "source": "Context_Stack/MIND_v0.4_Draft_Package.zip",
+        "sha256": "86de17b40d5178572a7a4357babc03f117e7a7393a688c4415c28e295e31dfba",
+        "archive_members": 17
+      },
+      {
+        "source": "Context_Stack/Prompt_Code_Protocol_Routines_v0.1.docx",
+        "sha256": "c60e9fa174bcc1fecb284a78f5f75d50e74acab1979b3767516d7ec53c2b2a32"
+      },
+      {
+        "source": "Context_Stack/Prompt_Code_Protocol_Routines_v0.1.pdf",
+        "sha256": "6c721c84b999e97c0f63b993ac263ce2db4bf2967f5ab5b25a7d199e26c270bc"
+      },
+      {
+        "source": "Context_Stack/Prompt_Code_Protocol_Routines_v0.1_Reuse_Pack.zip",
+        "sha256": "e4956c60dba3628b05d67dfafa3a28f90d1b93a2a4b4633da444a8afe50af17f",
+        "archive_members": 14
+      },
+      {
+        "source": "Context_Stack/The_Context_Draws_a_Map_v1.0.docx",
+        "sha256": "a777d28734ebb58b7d83481bb2549bfb40c88acdb20db8b591dd9f78c7c3b79c"
+      },
+      {
+        "source": "Context_Stack/The_Context_Draws_a_Map_v1.0.pdf",
+        "sha256": "4827531cca48a063e30350a62587354f4106ffcc20750e87da22d749be5a6b40"
+      },
+      {
+        "source": "Context_Stack/The_Context_Draws_a_Map_v1.0_Release_Package.zip",
+        "sha256": "2f249c09ec1e483694e5f96a7aef0920606c8e6106dfde92069474f4c579dfdf",
+        "archive_members": 6
+      },
+      {
+        "source": "Context_Stack/The_Context_Is_the_Model.docx",
+        "sha256": "390c51a6beee6a3521a42137b0663f2522d47d24f519810fa813f27aa7e962cf"
+      },
+      {
+        "source": "Context_Stack/The_Context_Is_the_Model.pdf",
+        "sha256": "dd6bb0c5b3df6f65ba7b24a21d338b0a1a2f6b75dd79eff04045ef27d8bccc6d"
+      },
+      {
+        "source": "Context_Stack/The_Context_Sets_a_Rhythm_v0.1.docx",
+        "sha256": "9ec887b802514c2fd525079e3c652ff7485eeff467dcfb7ea7c0846be12657ce"
+      }
+    ],
+    "Cosmology_Stack": [
+      {
+        "source": "Cosmology_Stack/DARK_v1.0_Public_Methodology_Specification.pdf",
+        "sha256": "8d48ff992a6fd42c8812b2201e6a74dcd1cbad89f781e9589dbf636edc897471"
+      },
+      {
+        "source": "Cosmology_Stack/DARK_v1.0_Zenodo_21766026.zip",
+        "sha256": "bb772934076fb6533ca8102b6f7373fec36a10221d7270192e367be6dc915545",
+        "archive_members": 19
+      },
+      {
+        "source": "Cosmology_Stack/Trav_v0.1_Draft - black hole blob.pdf",
+        "sha256": "7909f16309ce2a341bf5923bd2dc4ed58a85f768c292a651fccfa5f240b2dc5f"
+      },
+      {
+        "source": "Cosmology_Stack/Trav_v0.1_Draft.docx",
+        "sha256": "206acbac6ecb2fb97f08851cae06d4a063e34e32307def75ce781cf11e91568b"
+      },
+      {
+        "source": "Cosmology_Stack/Trav_v0.1_Draft_Package.zip",
+        "sha256": "d05fec1fdf462378706105b1f49c18c6f1edc0644ad000ece3136930be0863e2",
+        "archive_members": 21
+      }
+    ],
+    "Finis_Solutus": [
+      {
+        "source": "Finis_Solutus/Finis_Solutus_World_Campaign_DM_Kernel_v0.18_Draft.docx",
+        "sha256": "7592c35fc6a47c297be5bfe7d0e0b990e0578ab1e8108c5e19919c2153381997"
+      }
+    ],
+    "Journals&Provenance": [
+      {
+        "source": "Journals&Provenance/PAL_Development_Journal_II_2026-08-10.docx",
+        "sha256": "d10f6e5ea335f3786049634e65c4077f0f177ed5c8fc2ff64d4e5c53a4a194ff"
+      },
+      {
+        "source": "Journals&Provenance/PAL_Development_Journal_III_2026-08-27.docx",
+        "sha256": "75c72f972a9552df1467d94629f8468b3b80b8abecf2338cd5eeeb54c8e9c238"
+      },
+      {
+        "source": "Journals&Provenance/PAL_Development_Timeline_2026-05-25_to_2026-07-29.md",
+        "sha256": "489d9fe8464382dae506fbfae70e2cd13641546345296b718285bd70ac7fcbf8"
+      },
+      {
+        "source": "Journals&Provenance/PAL_v2.0_Few_Word_Edition_v0.1.docx",
+        "sha256": "b397ef5c3445c05a0033c16d8e2be3b0ef9498d05d304ce4b343dca10abcaaa3"
+      },
+      {
+        "source": "Journals&Provenance/PEA_Core_v1.1.2_Few_Word_Edition_v0.1 (1).docx",
+        "sha256": "2aa5ac8f7e228c1457ac73eaa479b6ac84d624d1371f6578bf633dfff5f0c729"
+      },
+      {
+        "source": "Journals&Provenance/PECAN_v1.0.4_Few_Word_Edition_v0.1.docx",
+        "sha256": "aa3ea798defd60d1b106ad073ca61efba7fed398d4816900092e108fed86a679"
+      },
+      {
+        "source": "Journals&Provenance/SEED_v0.3_Few_Word_Edition_v0.1.docx",
+        "sha256": "80e3f02e4388a88e3857e0dcd4f35ab76f064bdca854220133b774f2945d1c9d"
+      },
+      {
+        "source": "Journals&Provenance/TIES v0.3/TIES_v0.3_Synthesis.docx",
+        "sha256": "3731b12127fb8d6f289fef497310426cf01676166ed220678659e762acbe4edd"
+      },
+      {
+        "source": "Journals&Provenance/TIES v0.3/TIES_v0.3_Synthesis.md",
+        "sha256": "4e4ffe29f1b8b6fa54f50ed9e166a95bb5352a0bc96ca4cb6c333be1effe8d61"
+      },
+      {
+        "source": "Journals&Provenance/TIES v0.3/TIES_v0.3_Synthesis.pdf",
+        "sha256": "96bad0a63d1ca73b25c327b109a5b10c8763fc8c40f851c94011b5b8a6d1c280"
+      },
+      {
+        "source": "Journals&Provenance/TIES_v0.3_Publication_Packet.zip",
+        "sha256": "c30c33d520ca4406b2197c88813412b533904958b7e83e5c7863e9ef4df15d11",
+        "archive_members": 16
+      }
+    ],
+    "Math_Stack": [
+      {
+        "source": "Math_Stack/Abstract_Loops_v1.0.docx",
+        "sha256": "786f8c150917305b5afc3aa13b6fb28d26b1b15c363b28d335ea08089b4ba736"
+      },
+      {
+        "source": "Math_Stack/Abstract_Loops_v1.0.pdf",
+        "sha256": "decea53ec0d24670ed72ec7e68eb91109e885b78327494ed65fd8b09a1111112"
+      },
+      {
+        "source": "Math_Stack/APCI_Declared_Interface_v1.0.0.docx",
+        "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+      },
+      {
+        "source": "Math_Stack/APCI_Declared_Interface_v1.0.0.pdf",
+        "sha256": "85602cf6801a543028f902f28cc43631e4a5cfacead56c07b8ef19f976e15fe3"
+      },
+      {
+        "source": "Math_Stack/BRIDGE-v0.6-Changing-Intent.pdf",
+        "sha256": "5fc569c72889a7316d779de93665d9b154d6b0ce7c21d510a98c5e30027d17b0"
+      },
+      {
+        "source": "Math_Stack/BRIDGE-v0.6-Corpus-Package.zip",
+        "sha256": "f40314d128d78be987f2300bf33a714d67c4dbf50f14839bee1bc65223757d27",
+        "archive_members": 25
+      },
+      {
+        "source": "Math_Stack/BRIDGE_v0.4.docx",
+        "sha256": "a13d91a728ab6da2a5654b3263a595242397d7fb8edb17cffafdcf32036a2470"
+      },
+      {
+        "source": "Math_Stack/CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.docx",
+        "sha256": "3f813ecadfcea957bdccb157d83792612a85c78e318a4ec22da62efc3d8bcabf"
+      },
+      {
+        "source": "Math_Stack/CHARTER_v1.0_Framed_Prime_Shells_and_Bound_Persistent_Shells.pdf",
+        "sha256": "541130b912024b306268888eeb8566377ae5598f4b54fbbcc6f1c80461745926"
+      },
+      {
+        "source": "Math_Stack/CHARTER_v1.0_Zenodo_Release_Public_Redacted.zip",
+        "sha256": "eb695613b0de05188650f79de146159f5ef06588c04c7d0e0a1929d9d802c8d1",
+        "archive_members": 14
+      },
+      {
+        "source": "Math_Stack/Compactification_Costs_v0.2.docx",
+        "sha256": "3390f47f361c980e2d7e7a111b633118b6b51cb64a6f8ab1098465baa63eb554"
+      },
+      {
+        "source": "Math_Stack/Compactification_Costs_v0.2.pdf",
+        "sha256": "94c70d478111c27c46b826ab6e5c2eb24ecbb621bb52bd8ab1c9ac4943688994"
+      },
+      {
+        "source": "Math_Stack/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1 (1).docx",
+        "sha256": "102a1aee13bad827d0ca46a351417cee178660e5eac76bce7d3481b104603830"
+      },
+      {
+        "source": "Math_Stack/Finite_Abstraction_Between_RH_and_P_vs_NP_v0.1.pdf",
+        "sha256": "ae85fe04d86807405b7c3dcc45645956fedde4a752236ff50c5caa2c469b6802"
+      },
+      {
+        "source": "Math_Stack/FRONT_v1.0_Reproducibility_Package.zip",
+        "sha256": "6a375dded99b101e68d78600ffe37cb7a3999b8674a017e71d5158508bc19927",
+        "archive_members": 796
+      },
+      {
+        "source": "Math_Stack/GOLD_v0.1.docx",
+        "sha256": "dc04425dd8cfa7db449896f7ae448ae8347fe876ee4320c8a1964c87d70fa4fe"
+      },
+      {
+        "source": "Math_Stack/GOLD_v0.1.pdf",
+        "sha256": "db2f3a097dfc0b2327a9e24e170617c89c9b585ac259aadef4e9623afadf2d90"
+      },
+      {
+        "source": "Math_Stack/GPPR_v0.1.docx",
+        "sha256": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7"
+      },
+      {
+        "source": "Math_Stack/GPPR_v0.1.pdf",
+        "sha256": "112079705d27c5ee8ef9228beb8abf1d94ae13c7b295038b49454bafa8aaf92f"
+      },
+      {
+        "source": "Math_Stack/Riemann-Pang_Ledger_v1.0.docx",
+        "sha256": "7c422ca1962d10a971fa387645e1329e712613f95ef482e31d0a01f901eada8f"
+      },
+      {
+        "source": "Math_Stack/Riemann-Pang_Ledger_v1.0.pdf",
+        "sha256": "beca390a45feec9ee334e6d19f0598216b38d9206c05911531f039ea47cb6890"
+      },
+      {
+        "source": "Math_Stack/Riemann-Pang_Ledger_v1.0_Public.zip",
+        "sha256": "77c8100c368dd18e1d7ea60c9ada6a0254f4857c0c1ee02952c32c4a087ff791",
+        "archive_members": 23
+      },
+      {
+        "source": "Math_Stack/SCT_v0.2_verification_bundle.zip",
+        "sha256": "dbd4c1f9b916842522b842e3bc57084b02a95a923d68db562a996cd61adda4c8",
+        "archive_members": 3
+      },
+      {
+        "source": "Math_Stack/Single_Cut_Transport_Lemma_v0.2.docx",
+        "sha256": "e01c6b9969322660dc211d2f49cb5150a53f213c17656217dd20aae67fbfa434"
+      },
+      {
+        "source": "Math_Stack/Single_Cut_Transport_Lemma_v0.2.pdf",
+        "sha256": "e4b038d4a5e0f638d400af8610fb91373be2a22ec7bebbdb41a4061f85574b57"
+      },
+      {
+        "source": "Math_Stack/The Price of Spherical Closure.pdf",
+        "sha256": "81c47c7be21d6a163c359ba1b68b3361211a32340a2c7f0cf6c4140949be2d54"
+      }
+    ],
+    "Phoenix_Stack": [
+      {
+        "source": "Phoenix_Stack/01-pal-the-ledger-and-the-garden.md",
+        "sha256": "88f5baa79931823f94538b8ce047be823f0c087e80cf9cbfe1706e2193292a6c"
+      },
+      {
+        "source": "Phoenix_Stack/02-mind-the-note-that-opened-the-song.md",
+        "sha256": "a877eae8390070232e0d51f89acb4e34e5d7277ab994dca70d66bc45e5976f9d"
+      },
+      {
+        "source": "Phoenix_Stack/03-charter-the-map-made-on-the-way.md",
+        "sha256": "69d5a77d93eacb39d261ade0a015eb8437e254e56f1c2e155b2840db8679676e"
+      },
+      {
+        "source": "Phoenix_Stack/04-lens-the-bench-and-the-ground-beneath-it.md",
+        "sha256": "de035bf0ecd2b1521c5bd12894f0b528b608f2e8480a9c1200991173eddd78ac"
+      },
+      {
+        "source": "Phoenix_Stack/05-ties-the-table-set-for-tomorrow.md",
+        "sha256": "8e02c6715d71c614d85aaa4405b85b4e4199ddcc69abd05a821a688d7ed9f984"
+      },
+      {
+        "source": "Phoenix_Stack/FIVE-SEEDS-READER.md",
+        "sha256": "b8dfcd9c4f3cbf7f738193696d9a8bce47558b8af5b09f505ae2db1b0a02376a"
+      }
+    ],
+    "PPPS": [
+      {
+        "source": "PPPS/PAL/Docx/PAL_v2.4-C_Compatibility_Note.docx",
+        "sha256": "78f88a18d14441ab9778b4cacf303a174a48d876fcb0e9b35abda8424a538f50"
+      },
+      {
+        "source": "PPPS/PAL/Docx/PAL_v2.4-L_Obligation_and_Decision_Ledger.docx",
+        "sha256": "976adffa81bb559f13787f629f276e606ca0211c835138b21b1d42038ba5adc0"
+      },
+      {
+        "source": "PPPS/PAL/Docx/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+        "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+      },
+      {
+        "source": "PPPS/PAL/Docx/PAL_v2.4-T_Conformance_Tests.docx",
+        "sha256": "4a887ba974086a6693796658716b0973c11a55adbff58f7eaf8cbeb279861f0a"
+      },
+      {
+        "source": "PPPS/PAL/Docx/PAL_v2.4_Mechanical_Structural_Spine.docx",
+        "sha256": "692d260363c273d525979fd7766accaa848f143677711a879a0d930ad763fee9"
+      },
+      {
+        "source": "PPPS/PAL/PAL_v2.4_Publication.zip",
+        "sha256": "683213e0976e03a18d72d856b46c08901ea84c443948d280d641dfb3745918ac",
+        "archive_members": 13
+      },
+      {
+        "source": "PPPS/PAL/Pdf/00_PAL_v2.4_Generated_Omnibus.pdf",
+        "sha256": "f431d3b7b56a5cb1c2f19b3cb3ba5ff325011a87b1830240d8e0489bf55c3561"
+      },
+      {
+        "source": "PPPS/PAL/Pdf/PAL_v2.4-C_Compatibility_Note.pdf",
+        "sha256": "15ce9ae707de5128c86a635c8e91dc0872074901cbb98f3d3326c255b5075d68"
+      },
+      {
+        "source": "PPPS/PAL/Pdf/PAL_v2.4-L_Obligation_and_Decision_Ledger.pdf",
+        "sha256": "c75e13d7f32dea4ca16de78d35714df20e3200b7b24c6ec7224c5c1cc8898bac"
+      },
+      {
+        "source": "PPPS/PAL/Pdf/PAL_v2.4-M_Mathematical_Realization_Atlas.pdf",
+        "sha256": "9808c3c91638d2c20981b3e5142e0c55d82346bc443a0f379b82e480a86bba1d"
+      },
+      {
+        "source": "PPPS/PAL/Pdf/PAL_v2.4-T_Conformance_Tests.pdf",
+        "sha256": "91cff00c71be060f633fa6e706f65af6186844135858d3b1b49740d6ecedef2d"
+      },
+      {
+        "source": "PPPS/PAL/Pdf/PAL_v2.4_Mechanical_Structural_Spine.pdf",
+        "sha256": "0c9824390dd87457ae4ff98449d63b78121d3056be83d42215b93db8f2e48da7"
+      },
+      {
+        "source": "PPPS/PAL.zip",
+        "sha256": "f7fa99a718f0882e8b88dce7be2fb4b0cc2590ca0b6ad92ccbd2f18f6f72d0f4",
+        "archive_members": 24
+      },
+      {
+        "source": "PPPS/PEA_Core_v1.1.3_Public_Ethical_Review_Specification.docx",
+        "sha256": "4acf0da392dbb3be0f10b7ab08d0153bda67a502bcac3337ac8ce762adeb6a57"
+      },
+      {
+        "source": "PPPS/PEA_Core_v1.1.3_Public_Ethical_Review_Specification.pdf",
+        "sha256": "e000c91c76390c99daedd2775cd9314f8ae8b49b301c438675f1141ba7d0194c"
+      },
+      {
+        "source": "PPPS/PECAN_v1.0.4_Public_Protocol_Specification.docx",
+        "sha256": "d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43"
+      },
+      {
+        "source": "PPPS/PECAN_v1.0.4_Public_Protocol_Specification.pdf",
+        "sha256": "8ba43bbda1387167ce487de4866ab168ba6ce91b094e575080143e31950058dc"
+      },
+      {
+        "source": "PPPS/PPP_Kernel_v0.6_Public_Integration_and_Verification_Specification.docx",
+        "sha256": "bd6e02b7e1c385d9217630a4639a5de67aa322d4536649e1ccf701a15943503a"
+      },
+      {
+        "source": "PPPS/PPP_Kernel_v0.6_Public_Integration_and_Verification_Specification.pdf",
+        "sha256": "fb6ec48618ba2b9baacb0d69abb4d0f38cff410a9551af08e1e0b599c9fa8227"
+      },
+      {
+        "source": "PPPS/SEED_v0.3_Complete_Release_Discipline.docx",
+        "sha256": "45bb853b7c61997df32f04c45df20b4761bae130b8a0a4d7f583b451174e5985"
+      },
+      {
+        "source": "PPPS/SEED_v0.3_Complete_Release_Discipline.pdf",
+        "sha256": "911e85ba49e64908c0e1c3065e041f174d36b5c9c482fd57f22ba19e5d429d29"
+      }
+    ],
+    "Science_Stack": [
+      {
+        "source": "Science_Stack/BLA in PAL.pdf",
+        "sha256": "7ec1fbd21a792770a1617b74360b3af1b2ab1fd056d9a81bb7ba1b136008185e"
+      },
+      {
+        "source": "Science_Stack/BLA_in_PAL_v0.9.1_public_working_draft_math_formatted.docx",
+        "sha256": "1894ef2ec5931f7aa8734909f29cdd2d692e50b94aa9fac404a4202afd5a4318"
+      },
+      {
+        "source": "Science_Stack/Boundary_Readable_Trace_and_Absorber_Informed_Closure_v2.0_BRRRT.docx",
+        "sha256": "84c74bed8d710f9d3f7057b95e2dcc0c4067c56aa07a7869f8f71bbf298ac890"
+      },
+      {
+        "source": "Science_Stack/Boundary_Readable_Trace_and_Absorber_Informed_Closure_v2.0_BRRRT.pdf",
+        "sha256": "806d7cda4ffb186d21f7797917c99c22ff29452af12de36aa597ed37fe4d3236"
+      },
+      {
+        "source": "Science_Stack/Boundary_Readable_Trace_and_Absorber_Informed_Closure_v2.0_BRRRT_Zenodo_Package.zip",
+        "sha256": "162ed2b2478ca5bb824c82bf69b8c787054ed4d43be03d5d48aa803872e0a338",
+        "archive_members": 25
+      },
+      {
+        "source": "Science_Stack/CLEF_cluster_layer_entropy_focus_v1_0.pdf",
+        "sha256": "24589330eda2020145492fc7c3395911e0cf7a17cc67dfe47dad4e7af1280d43"
+      },
+      {
+        "source": "Science_Stack/CLEF_v1_0_Zenodo_package.zip",
+        "sha256": "4a9aed54d9c5c69d1ba7a00b5eff24d53ebd68a60330e5ddce5f1064b1075c9e",
+        "archive_members": 3
+      },
+      {
+        "source": "Science_Stack/experimental ideas/Spider_Prey_Wrapping_Research_Proposal_Christopher_Pang.docx",
+        "sha256": "ec80e28deea16d363c6aa8766d51a5e8c06581c8b089678c8a33be3d120549fb"
+      },
+      {
+        "source": "Science_Stack/SLEEP_v0.2.docx",
+        "sha256": "450665fd4fc835cc26147403be291bc8a51682c4a2a9061ea04c59001ee4c11d"
+      },
+      {
+        "source": "Science_Stack/SLEEP_v0.2.pdf",
+        "sha256": "2a761f9cbb8057be9763f7d892bb70a44905633247fe7df897415747333a1c82"
+      }
+    ],
+    "Software_Stack": [
+      {
+        "source": "Software_Stack/A0_Software_Boundary-Layer_Kernel_v0.10.0.docx",
+        "sha256": "f3b57da98db3b105e6a67b2c76471123365041ce86e53977be5aa7002b84c46a"
+      },
+      {
+        "source": "Software_Stack/A0_Software_Boundary-Layer_Kernel_v0.10.0.pdf",
+        "sha256": "37c3666e4b62596670fe6f62160d74744c21d347e87c98b3d87c038cc09ee1ac"
+      },
+      {
+        "source": "Software_Stack/one_carrier_many_blocks.md",
+        "sha256": "2382be63c5045503ccfb2b0a3f740e9230973da0e97839a0a1baa113a4fdbcd1"
+      },
+      {
+        "source": "Software_Stack/One_Carrier_Many_Blocks_v1.0.docx",
+        "sha256": "b58aaeb630f958911f32079e19f4c87abb5baa511f8b91c48dbcfbf59bb58de2"
+      },
+      {
+        "source": "Software_Stack/One_Carrier_Many_Blocks_v1.0.pdf",
+        "sha256": "75dd26665bb20f775adabf1310f1bba4ae21adbeefbfcabb657facf6986c43de"
+      },
+      {
+        "source": "Software_Stack/One_Carrier_Many_Blocks_v1.0_Release.zip",
+        "sha256": "a8b7256db6e04de5fa7fd04fac57c454687c2539d8eb3d9347928bbbbb7f1ba6",
+        "archive_members": 9
+      },
+      {
+        "source": "Software_Stack/P3LA_v0.1.docx",
+        "sha256": "20acde45174776536d458c4ee37ff7b0489a741396bc66605baddc63f9882877"
+      },
+      {
+        "source": "Software_Stack/P3LA_v0.1.pdf",
+        "sha256": "ffd2d636db1dbf09f5745af47aff1e54dcfffdad2282214ce973c26ca9ec39a1"
+      }
+    ]
+  }
+}
