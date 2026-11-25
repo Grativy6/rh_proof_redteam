@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Replay the original 116-digit certificate and the ordinary-line tests
+
+Run `python -B check_release_prime_large.py` for the Lucas certificates and the three prime values in the bounded quadratic-norm family. Add `--source PATH_TO_UPSTREAM_GIT_REPO` to repeat the original-source census. `python -B check_ordinary_congruence_levels.py` computes the Hecke matrices and the exact precision cutoffs. Both scripts use the standard library. [Upstream prime and its use](2026-11-24-the-three-prime-norms-up-to-the-released-example.md) · [Ordinary operator](2026-11-24-one-ordinary-line-through-all-congruence-levels.md) · [Same finite readings](2026-11-24-two-linked-flags-with-identical-finite-readings.md) · [Credits and digests](2026-11-24-proof-collection-prime-and-refinement-supplement.json)
+
 ### Check the coefficient prime 2663 on every real dyadic layer
 
 Run `python -B check_prime_2663.py` here with NumPy. The two evaluations of the high-conductor norms give product 95 modulo 2663. Independent split-prime unit calculations treat the single small-conductor candidate and the principal character. [Proof](2026-11-24-what-prime-2663-does-in-the-real-dyadic-tower.md) · [Provenance and digests](2026-11-24-proof-collection-2663-supplement.json)

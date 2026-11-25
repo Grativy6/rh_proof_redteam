@@ -10,6 +10,8 @@ Pang’s PAL atlas and APCI work on what observations can certify supplied the s
 
 ## Audit findings
 
+**Which prime did the original release work out explicitly?** The authors give `prime_large` a 116-digit Lucas certificate. The [quadratic norm calculation](proofs/the-three-prime-norms-in-the-released-example.md) reproduces it and follows it to the three fields read in the later lattice argument. The [ordinary Hecke calculation](proofs/one-ordinary-line-through-all-congruence-levels.md) and [two local flags](proofs/two-linked-flags-with-identical-finite-readings.md) test a different prime-dependent dimension count on the actual operators.
+
 **What happens if 2663 takes 577’s place?** For every field in the real dyadic tower and every positive even twist, the strict group at 2663 vanishes. A period of 1331 covers arbitrarily high conductors. [The proof and its last candidate](proofs/prime-2663-in-the-real-dyadic-tower.md)
 
 **One local map really does return the identity.** The distinguished-prime projector calls a second map, whose inverse is explicit on the pair of split components. In rank three at seven, spaces of dimensions 456 and 343 both project to 36. An integral calculation gives all the divisors of the projection numerator. [The two maps and the calculation](proofs/distinguished-prime-projector.md) · [Where a lost first-order trace reappears](proofs/finite-trace-test-at-an-irreducible-point.md)

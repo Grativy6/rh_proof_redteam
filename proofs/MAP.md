@@ -74,6 +74,16 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 These three papers carry the corpus question and source inputs on their opening page. [Dated supplement](../receipt-archives/2026-11-24-proof-collection-arithmetic-supplement.json)
 
+## Explicit prime certificates and ordinary flags
+
+| Paper | What it establishes |
+| --- | --- |
+| [The three prime norms up to the released example](the-three-prime-norms-in-the-released-example.md) | For the release’s quadratic norm polynomial there are exactly three prime values at integer parameters 1 through 972. The largest of these is its 116-digit example. |
+| [One ordinary line through all congruence levels](one-ordinary-line-through-all-congruence-levels.md) | A primitive-row calculation gives an integral normal form at every lower congruence depth in rank two and an exact finite-precision cutoff. The rank-three flag test recovers the ordinary line on Steinberg. |
+| [Two linked flags with identical finite readings](two-linked-flags-with-identical-finite-readings.md) | Two rank-three local Galois representations share all characteristic polynomials and any prescribed finite reduction. Only one is potentially crystalline. The pure cuspidal attachment imposes a further restriction. |
+
+Hearthline traced these maps under Chris Pang’s continuing public audit and his question about the original release, 24 November 2026. [Dated source and corpus credits](../receipt-archives/2026-11-24-proof-collection-prime-and-refinement-supplement.json)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)

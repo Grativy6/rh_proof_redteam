@@ -1,0 +1,62 @@
+{
+  "assembled_local_date": "2026-11-24",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "preceding_supplement": "receipt-archives/2026-11-24-proof-collection-2663-supplement.json",
+  "preceding_supplement_sha256": "2fceb1a1c5f72a66e714aa2f73194bc9dcd0e0c7abc39fef5a5a0ab501251c24",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "census_scope": "Original submission at the pinned revision. A same-line decimal Nat.Prime assertion is an explicit reproducing criterion. The Git import does not date the authors work on individual examples.",
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/the-three-prime-norms-in-the-released-example.md",
+      "result": "For the release’s quadratic norm polynomial there are exactly three prime values at integer parameters 1 through 972. The largest of these is its 116-digit example.",
+      "dated_receipt": "receipt-archives/2026-11-24-the-three-prime-norms-up-to-the-released-example.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked which individual prime the original proof works out and what can be learned by tracing its construction. His PAL/APCI method follows the observations a later step actually uses.",
+      "proof_inputs_and_release_role": "Alpöge and Claude constructed the 116-digit prime and gave its Lucas certificate. Hearthline replayed their certificate, classified the bounded norm family, and followed the example into the Wach-lattice argument. The three-case classification is an audit result.",
+      "check": "receipt-archives/check_release_prime_large.py",
+      "reading_edition_sha256": "4a8bcde422bad5623ebc4b2ef1f663e7f5fc1f9118b4cdb27f23a634354abd31",
+      "receipt_sha256": "b69ee6df52af09bc24be6cd5a06e36b2278be3a0ef6c3ae1d19c458d1b0ead26",
+      "check_sha256": "d139b6f89735e11afe1693813b3ffbf11af87095cf5e5ad7d59e0e748eb1a68e"
+    },
+    {
+      "reading_edition": "proofs/one-ordinary-line-through-all-congruence-levels.md",
+      "result": "A primitive-row calculation gives an integral normal form at every lower congruence depth in rank two and an exact finite-precision cutoff. The rank-three flag test recovers the ordinary line on Steinberg.",
+      "dated_receipt": "receipt-archives/2026-11-24-one-ordinary-line-through-all-congruence-levels.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked which residual information survives after adding the terms, and whether the discarded part can affect a later count. The PAL/APCI comparison fixes the operator and varies the level.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the coset operator and the ordinary dimension test. Hearthline derived the integral normal form, precision cutoffs and flag matrices directly. The general comparison uses Bernstein–Zelevinsky’s geometric lemma.",
+      "check": "receipt-archives/check_ordinary_congruence_levels.py",
+      "reading_edition_sha256": "f2584979e7ee7e3f0964a7a3540f5877b53127eb95659fc66eb368f256099408",
+      "receipt_sha256": "a2ad7d8aac98e240a25436a827127466be4ae04b671c88380d69115d090160e0",
+      "check_sha256": "ceb5f17e7320e719a6d6b503464d51f3e5ab4c9d488326749cf283d72d06fc80"
+    },
+    {
+      "reading_edition": "proofs/two-linked-flags-with-identical-finite-readings.md",
+      "result": "Two rank-three local Galois representations share all characteristic polynomials and any prescribed finite reduction. Only one is potentially crystalline. The pure cuspidal attachment imposes a further restriction.",
+      "dated_receipt": "receipt-archives/2026-11-24-two-linked-flags-with-identical-finite-readings.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang’s PAL/APCI comparison asks which distinction can persist behind identical observations. It leads here to two local inputs with exactly the same finite readings.",
+      "proof_inputs_and_release_role": "The release supplies its moving-prime character, marked point conditions and global automorphy predicate. Hearthline formed the symmetric-square Kummer pair and traced the integral point. Kummer theory, Tate-curve monodromy and Caraiani’s local–global theorem provide the classical inputs.",
+      "check": "receipt-archives/check_ordinary_congruence_levels.py",
+      "reading_edition_sha256": "3011169305cd7b0293e3d3145de84931434e38ce5bd40b24fc4e8db69cff42dd",
+      "receipt_sha256": "a6b0c15caa629a03cc5d69df4936dc6160c12b32eb67e7e65fc49be9a4bdb513",
+      "check_sha256": "ceb5f17e7320e719a6d6b503464d51f3e5ab4c9d488326749cf283d72d06fc80"
+    }
+  ]
+}

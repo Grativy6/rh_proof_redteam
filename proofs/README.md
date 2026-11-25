@@ -18,12 +18,14 @@ The papers state their own conclusions and the scope of their application to the
 | Where does the first unpaired point enter? | [A determinant inside the disappearing sum](the-first-unpaired-theta-term.md) · [The seven directions recovered by the second digit](the-two-digit-theta-rank.md) |
 | What changes when an equilateral triangle is given unequal weights? | [The cut, the actual $E_8$ roots and the unrestricted vector optimum](three-weighted-triangle-optima.md) |
 | What does the golden ratio do at a lattice boundary? | [An exact golden cycle and the rational boundary limits](golden-and-rational-boundary-limits.md) |
+| Which individual prime is built in the original Lean release? | [The authors’ 116-digit prime and the three-case audit of its norm formula](the-three-prime-norms-in-the-released-example.md) |
+| Can a linked flag hide in one ordinary line? | [One line through every congruence level](one-ordinary-line-through-all-congruence-levels.md) · [What monodromy adds to identical finite readings](two-linked-flags-with-identical-finite-readings.md) |
 | What happens when 2663 takes 577’s place on the same tower? | [The one candidate at conductor eight and the unit that decides it](prime-2663-in-the-real-dyadic-tower.md) |
 | Can the same prime be checked locally and globally on paper? | [The order-577 class and its two arithmetic witnesses](a-577th-power-locally.md) |
 | Can a local map erase information that another reading recovers? | [What the distinguished-prime projector retains](distinguished-prime-projector.md) · [The reciprocal parameters](recovering-the-inert-spherical-parameter.md) · [The mixed trace that sees the change](finite-trace-test-at-an-irreducible-point.md) |
 | Where did the original geometry objection lead? | [An asymmetric mixed intersection](asymmetric-mixed-intersection.md) · [The section-growth countertheorem](section-growth-of-the-geometry-witness.md) |
 
-The [proof map](MAP.md) lists all 43 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
+The [proof map](MAP.md) lists all 46 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
 
 ## Unresolved
 
