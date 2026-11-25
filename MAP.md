@@ -12,7 +12,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 | Question | Record |
 | --- | --- |
-| Can the auxiliary character have too small a conductor to kill a global class? | [Order 17 at conductor 64 and the exact upper tail](proofs/the-order-seventeen-class-at-conductor-64.md) · [Signed sums](receipt-archives/check_seventeen_dyadic_cutoff.py) |
+| Can the auxiliary character have too small a conductor to kill a global class? | [Order 17 at conductor 64 and the exact upper tail](proofs/the-order-seventeen-class-at-conductor-64.md) · [Signed sums](receipt-archives/check_seventeen_dyadic_cutoff.py) · [Two rows and the general cutoff](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md) |
 | Can four pairwise distinctions disappear on every common reading? How much does a power cost? | [Centroid classification and symplectic flag](proofs/the-centroid-that-hides-four-character-readings.md) · [Exact centralizer count and order of limits](proofs/the-exact-cost-of-powering-a-frobenius-matrix.md) |
 | Can the same class acquire more digits while its original symmetry survives? | [Exact order five in the coinvariants and the class-group tower](proofs/the-class-lifts-and-loses-its-inertia-symmetry.md) · [Finite norm calculation](receipt-archives/check_auxiliary_class_tower.py) |
 | Where do the two strict classes go after the auxiliary field changes? | [Depth forced by the class group](proofs/why-the-auxiliary-prime-loses-both-classes.md) · [11, 701 and the lost digit](proofs/a-fifth-power-at-eleven-and-the-missing-digit.md) · [Exact replay](receipt-archives/check_auxiliary_prime_residue.gp) |

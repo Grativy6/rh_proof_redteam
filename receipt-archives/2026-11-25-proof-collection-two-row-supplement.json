@@ -1,0 +1,41 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "preceding_supplement": "receipt-archives/2026-11-25-proof-collection-dyadic-cutoff-supplement.json",
+  "preceding_supplement_sha256": "6cd638b0cdc7fc2dff365b331435c9bf5ee263aea19c46df7b80a433c0cb3735",
+  "corpus_files": [
+    {
+      "path": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+    },
+    {
+      "path": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    }
+  ],
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md",
+      "result": "The Bernoulli-unit implication for arbitrary odd conductor holds at half the released sufficient dyadic conductor. Two signed Fourier rows differ by twice a unit. The next full halving fails at 17.",
+      "dated_receipt": "receipt-archives/2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md",
+      "corpus_editions": [
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked for the smallest observation that earns a claim and an independent test on the same arithmetic objects. The signed-sum calculation at 17 led Hearthline to two representatives on opposite sides of the midpoint.",
+      "proof_inputs_and_release_role": "Alpöge and Claude provide the original general Bernoulli test and the endpoint-shift proof for their range. Hearthline reconstructed that argument, derived the two-row identity and stronger range, carried the pure boundary separately, and checked the coefficient identity symbolically. No literature priority claim is made.",
+      "check": "receipt-archives/check_two_row_bernoulli_identity.py",
+      "reading_edition_sha256": "156d67eb969b654ad3c9587f7177af734f7c991c0af9d808671c3950b554e64e",
+      "receipt_sha256": "6f793a3c0f8bd9abd9e473e5c77010790de1968955e2747d03e8d531f640db73",
+      "check_sha256": "24af87c3eb8e97d3c38dd3fa2d823844654910ac13feb4ec8a25f16e6dc4cd94"
+    }
+  ]
+}

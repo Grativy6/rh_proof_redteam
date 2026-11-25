@@ -116,6 +116,7 @@ Hearthline followed Pang’s public audit request through the local character fl
 
 | Paper | What it establishes |
 | --- | --- |
+| [Two rows halve the Bernoulli conductor cutoff](two-rows-halve-the-bernoulli-conductor-cutoff.md) | Two explicit rows leave twice a unit. The general sufficient dyadic conductor can be halved, and the order-17 example rules out another full halving uniformly. [Dated inputs](../receipt-archives/2026-11-25-proof-collection-two-row-supplement.json) |
 | [The order-seventeen class at conductor 64](the-order-seventeen-class-at-conductor-64.md) | A nonzero strict class has inverse Bernoulli label 11 modulo 17. All six required directions in a late-window Case II family vanish from conductor 128 onward. |
 
 Hearthline checked the conductor and character choices for Christopher Daniel Pang’s public audit on 25 November 2026. [Source, credit and checks](../receipt-archives/2026-11-25-proof-collection-dyadic-cutoff-supplement.json)

@@ -18,7 +18,7 @@ The papers state their own conclusions and the scope of their application to the
 | Where does the first unpaired point enter? | [A determinant inside the disappearing sum](the-first-unpaired-theta-term.md) · [The seven directions recovered by the second digit](the-two-digit-theta-rank.md) |
 | What changes when an equilateral triangle is given unequal weights? | [The cut, the actual $E_8$ roots and the unrestricted vector optimum](three-weighted-triangle-optima.md) |
 | What does the golden ratio do at a lattice boundary? | [An exact golden cycle and the rational boundary limits](golden-and-rational-boundary-limits.md) |
-| At which conductor does a genuine order-17 class disappear from the strict test? | [Conductor 64 and the first uniformly safe layer](the-order-seventeen-class-at-conductor-64.md) |
+| At which conductor does a genuine order-17 class disappear from the strict test? | [Conductor 64 and the first uniformly safe layer](the-order-seventeen-class-at-conductor-64.md) · [Halving the general Bernoulli cutoff](two-rows-halve-the-bernoulli-conductor-cutoff.md) |
 | How much precision buys a shared reading? | [The centroid over the field with five elements](the-centroid-that-hides-four-character-readings.md) · [The counting cost of a Frobenius power](the-exact-cost-of-powering-a-frobenius-matrix.md) |
 | Can a class lift in the enlarged field and still respect its original symmetry? | [The class-group tower and the order-five obstruction](the-class-lifts-and-loses-its-inertia-symmetry.md) |
 | What can still be detected after the auxiliary prime goes quiet? | [Both classes on global commutators](why-the-auxiliary-prime-loses-both-classes.md) · [A fifth-power residue and its lift](a-fifth-power-at-eleven-and-the-missing-digit.md) |
@@ -30,7 +30,7 @@ The papers state their own conclusions and the scope of their application to the
 | Can a local map erase information that another reading recovers? | [What the distinguished-prime projector retains](distinguished-prime-projector.md) · [The reciprocal parameters](recovering-the-inert-spherical-parameter.md) · [The mixed trace that sees the change](finite-trace-test-at-an-irreducible-point.md) |
 | Where did the original geometry objection lead? | [An asymmetric mixed intersection](asymmetric-mixed-intersection.md) · [The section-growth countertheorem](section-growth-of-the-geometry-witness.md) |
 
-The [proof map](MAP.md) lists all 54 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
+The [proof map](MAP.md) lists all 55 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
 
 ## Unresolved
 

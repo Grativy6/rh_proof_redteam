@@ -12,7 +12,7 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 ## Audit findings
 
-**Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. [The class and the cutoff](proofs/the-order-seventeen-class-at-conductor-64.md)
+**Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. A two-row identity halves the release’s Bernoulli cutoff for arbitrary odd conductor. [The class at 17](proofs/the-order-seventeen-class-at-conductor-64.md) · [General proof](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md)
 
 **Which local readings can hide a difference?** Over the field with five elements, four character weights can defeat every common observation while each pair stays distinguishable. The exact shape is a triangle and its centroid. The symplectic flag used in the release excludes it. A separate calculation gives the precise counting error when eigenvalues approach each other under powers. [The centroid](proofs/the-centroid-that-hides-four-character-readings.md) · [The Frobenius calculation](proofs/the-exact-cost-of-powering-a-frobenius-matrix.md)
 

@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Check the two-row conductor identity
+
+Run `python check_two_row_bernoulli_identity.py` here. It records coefficients separately for each residue and verifies that exactly twice one designated weight survives. The [proof](2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) covers arbitrary odd conductor and includes an independent check of the release’s original shift. [Python](check_two_row_bernoulli_identity.py)
+
 ### Check the conductor cutoff at 17
 
 Run `python check_seventeen_dyadic_cutoff.py` here to compare the original Bernoulli sums with the signed coefficients and enumerate the 64 row cases covering all high conductors. The [derivation](2026-11-25-the-order-seventeen-class-at-conductor-64.md) includes a separate PARI/GP check of the degree-16 class group and its Galois action. [Python](check_seventeen_dyadic_cutoff.py)

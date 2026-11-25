@@ -1,6 +1,6 @@
 # Companion derivations and checks
 
-The [main proof collection](README.md) presents 54 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
+The [main proof collection](README.md) presents 55 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
 
 The [elliptic curves attached to the two May corpus papers](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) give a worked comparison of a rational quotient, prime counts and isogenous curves.
 
@@ -10,7 +10,7 @@ The [auxiliary-prime rank bound](../receipt-archives/2026-11-25-why-the-auxiliar
 
 The [centroid classification](../receipt-archives/2026-11-25-the-centroid-that-hides-four-character-readings.md) and [Frobenius power law](../receipt-archives/2026-11-25-the-exact-cost-of-powering-a-frobenius-matrix.md) give exact finite-resolution tests for two operations used to choose and count at auxiliary primes. [Character replay](../receipt-archives/check_four_character_precision.py) · [Matrix replay](../receipt-archives/check_frobenius_centralizer_cost.gp)
 
-The [Case II calculation](../receipt-archives/2026-11-25-the-order-seventeen-class-at-conductor-64.md) compares all auxiliary conductors for the three coefficient directions at 17 beyond the first safe layer. [Signed coefficients and exact finite rows](../receipt-archives/check_seventeen_dyadic_cutoff.py)
+The [Case II calculation](../receipt-archives/2026-11-25-the-order-seventeen-class-at-conductor-64.md) compares all auxiliary conductors for the three coefficient directions at 17 beyond the first safe layer. [Signed coefficients and exact finite rows](../receipt-archives/check_seventeen_dyadic_cutoff.py). The [general half-cutoff proof](../receipt-archives/2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) checks the original argument and exhibits a two-row certificate on the larger range. [Symbolic replay](../receipt-archives/check_two_row_bernoulli_identity.py)
 
 ## Maps, fields and integral frames
 
