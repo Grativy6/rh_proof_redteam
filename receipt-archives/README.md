@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+[First tick, sieve reversal and clock comparisons](2026-11-25-pal-first-tick-stage.md) includes the all-row rational runs for the two-way transfer and sequential improvements. Use `python -B receipt-archives/check_pal_first_tick.py` and `python -B receipt-archives/check_pal_close_clocks.py` from the repository root.
+
 [Construction-key replay](2026-11-25-pal-construction-replay.md) gives the pinned target, clean build, rational comparisons, and independent statement/kernel runs. The [variable-prime checker](check_pal_prime_refits.py) uses only the Python standard library.
 
 [Prime phases and the all-row bound](2026-11-25-pal-rh-rational-distance.md) gives the integer replay command and the formal theorem statements. [Standalone checker](check_pal_residue_distance.py)

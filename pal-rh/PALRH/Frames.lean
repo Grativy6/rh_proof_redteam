@@ -150,4 +150,26 @@ theorem half_tick_mirror {d : ℕ} (hd : 0 < d) (k j : ℕ) (reset : d ∣ k+j+1
   unfold turn
   rw [← add_div, ← Nat.cast_add, hsum]
 
+/-- Crossing a single tick subtracts exactly one on a divisible row. -/
+theorem turn_step {d : ℕ} (hd : 0<d) (k : ℕ) :
+    turn d (k+1)-turn d k = 1/(d:ℚ) - if d ∣ k+1 then 1 else 0 := by
+  have hm := Nat.mod_lt k hd
+  have ha : (k+1)%d = (k%d+1)%d := (Nat.mod_add_mod k d 1).symm
+  by_cases h : k%d+1 = d
+  · have hz : (k+1)%d=0 := by rw [ha,h,Nat.mod_self]
+    have hc : ((k%d:ℕ):ℚ)+1 = (d:ℚ) := by exact_mod_cast h
+    rw [if_pos (Nat.dvd_of_mod_eq_zero hz)]
+    unfold turn
+    rw [hz]
+    field_simp
+    push_cast
+    linarith
+  · have hl : k%d+1<d := by omega
+    have he : (k+1)%d=k%d+1 := by rw [ha,Nat.mod_eq_of_lt hl]
+    have no : ¬ d ∣ k+1 := fun h => by
+      have := Nat.mod_eq_zero_of_dvd h
+      omega
+    simp [turn,he,no]
+    ring
+
 end PALRH

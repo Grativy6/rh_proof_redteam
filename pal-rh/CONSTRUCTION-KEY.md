@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Live mathematical target.** [Isolate one tick](one-tick.md) with arbitrarily small full-row error. Dyadic copies provably generate the original finite certificates. The ordinary sieve already gives the right limit, and the [reflected-sieve calculation](reversing-the-sieve.md) identifies the exact, unearned transport. After two prefix repairs failed, [nearby clocks](close-clocks.md) gave an admissible signed sieve reading on explicit bands and real sequential gains on both target fits. The remaining arithmetic estimate is a cumulative lower bound on these gains, or a different legal way to transport that sieve. [Stage and continuation](../receipt-archives/2026-11-25-pal-first-tick-stage.md)
+
 At each material transition record the parent commit, definitions, input domain, claimed implication, result, and next unresolved inequality in the [live map](MAP.md). Retain paper derivations alongside named Lean declarations. Save runnable discriminators in the existing receipt archive. On failure record the counterexample or failing scale and execute the next route that changes that mechanism. Before asserting RH, replay the entire dependency chain and the frozen challenge, and arrange independent human scrutiny of the mathematical mechanism. Record standard antecedents and bound any originality claim to the literature actually inspected.
 
 ## Unresolved
