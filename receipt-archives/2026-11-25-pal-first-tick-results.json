@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-25",
+  "local_parent": "f18bae2a45732383aa6d922ed8cb42d35ce5a0ac",
+  "parent_tree": "8202d16b31abc09806f28bf1b5cc329b401cf1ec",
+  "compiler": "Lean 4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": {
+    "pal-rh/lakefile.toml": "a110f1a15898f23e9ec82d7a51581812ed9cfe9665c8d274c9fafb549c0da262",
+    "pal-rh/PALRH/Frames.lean": "313ebc7e18c572b2d03e883398b197a0a2a7c126e95103713b804141cb48529b",
+    "pal-rh/PALRH/Dilation.lean": "b069fab9cd1be7f983293c05ead737f6bec2b786c43c369fba3362db1347212d",
+    "pal-rh/PALRH/OneTick.lean": "2a30b99b685c82ec8b639a1f00dcddf697607707e184cfeccb5381d16a57ea9d",
+    "pal-rh/PALRH/Sieve.lean": "0980b2f0b7759dd87fc0ea1eb73e88c26da1af269097c904c2622890e19a9dc2",
+    "pal-rh/PALRH/CloseClocks.lean": "6f4d55d74347267b50f27b05e5be003664967157533731a15a5a9a80d6178df4",
+    "receipt-archives/check_pal_first_tick.py": "27bfa62fa84e9f12bfe8464d5056e937e494922fc367772d790dfb6693cff601",
+    "receipt-archives/check_pal_close_clocks.py": "5c277fc59f41ae324f740799662611d35d220bb17ac062c4ddfca9385c130415",
+    "receipt-archives/check_pal_residue_distance.py": "1dcce9638cd9c8f5dad01959c77e9d608c9b09d625bad92267f762579ecf1295"
+  },
+  "normal_lake_build_exit": 0,
+  "native_replay": {
+    "PALRH.Turns": 0,
+    "PALRH.Cells": 0,
+    "PALRH.Frames": 0,
+    "PALRH.Dilation": 0,
+    "PALRH.SquareShell": 0,
+    "PALRH.Gain": 0,
+    "PALRH": 0,
+    "PALRH.OneTick": 0,
+    "PALRH.CloseClocks": 0,
+    "PALRH.Sieve": 0,
+    "PALPrimeEvents": 0
+  },
+  "active_root": "PALRH.Sieve",
+  "intermediate_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "additional_earlier_odd_export_kernels": [
+    [
+      "con-leche",
+      0,
+      "con-leche: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-leche: accepted 4516 declarations (--verified)\n"
+    ],
+    [
+      "con-ron",
+      0,
+      "con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)\ncon-ron: accepted 4516 declarations (--verified)\n"
+    ]
+  ],
+  "finite_runs": {
+    "pulse": [
+      "Cutoff 200000",
+      "Head upper bound 353843017516150951/18446744073709551616",
+      "Tail upper bound 1530169/500002500",
+      "Full first-tick squared error below 1/40 True"
+    ],
+    "close_clock": [
+      "Initial whole-row squared error at most 112360644252860722613350819/5764610405337996397117440000",
+      "Signed improvement 1 between 99678987086246811213427/922337664854079423538790400 and 111145944421028636217773/922337664854079423538790400",
+      "Signed improvement 2 between 1481791186035762405169/115292208106759927942348800 and 23436578973557358957673/922337664854079423538790400",
+      "Final whole-row squared error at most 446654244097079567692033801/23058441621351985588469760000",
+      "Constant target carried gain 1 between -12284317685998988680049/461168717134889251084697600 and -1572857910646020620419/115292179283722312771174400",
+      "Constant target carried gain 2 between -1130507201174171017739/28823044820930578192793600 and -11979937024882345380651/461168717134889251084697600",
+      "Constant target refit gain 1 between 85168958420267887554503/9223374342697785021693952000 and 132835346356103681272747/9223374342697785021693952000",
+      "Constant target refit gain 2 between 2350573700431801789989/461168717134889251084697600 and 1924757917053047169493/230584358567444625542348800"
+    ]
+  },
+  "assertion_tested": "Actual transported 61-weight witness crosses 1/40, and the two sequential signed corrections have the enclosed full-row gains. The two-band trial tests both carried and refitted coefficients on the unchanged constant parent.",
+  "range": "Pulse crossing at cutoff 200000, pulse gains at cutoff 2000000, two-band constant checks at cutoff 4000000; signed upper and lower bounds include every subsequent row.",
+  "review": "self-review with kernel replays; no outside human peer review",
+  "bare_RH": "not discharged"
+}

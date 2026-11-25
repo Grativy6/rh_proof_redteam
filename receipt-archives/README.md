@@ -4,6 +4,34 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Replay the constructive RH calculation
+
+Run `python -B receipt-archives/check_pal_signed_areas.py` for the first integer sign reversal, both cumulative costs, the two independent integrals and the complex phase test. [Stage results](2026-11-25-pal-signed-areas.json) · [Derivation](../pal-rh/what-the-two-signs-cost-together.md)
+
+For the independently posed conditional theorem, build the pinned project, run `python -B receipt-archives/export_pal_check.py fourths /path/to/exports`, then run Lake Comparator with `pal-rh/checks/fourths/compare.json` and the generated `fourths-challenge.ndjson` and `fourths-solution.ndjson`. The [stock-only reference](../pal-rh/checks/fourths/FourthChallenge.lean) spells out the rational data. The [solution](../pal-rh/checks/fourths/FourthSolution.lean) proves its price agrees with the branch’s original frame.
+
+Run `python -B receipt-archives/check_pal_carried_edge.py` for the two-row reading, its neighboring-frame update, and directed enclosures at cubes and fourth powers. [Results and distinctions between finite and infinite claims](2026-11-25-pal-carried-edge.json)
+
+Run `python -B receipt-archives/check_pal_tapered_newton.py` to reconstruct the balanced lists, price the first errors in both directions and enclose all-row and finite-square costs. [Results](2026-11-25-pal-tapered-newton.json) · [What the direction implies](../pal-rh/when-a-drop-would-count.md)
+
+[Averaged square replay](2026-11-25-pal-smoothed-square.json) uses `python -B receipt-archives/check_pal_smoothed_square.py`. It includes the physical values, the backward second difference, the same assigned signs, and five direct Gaussian comparisons. [Paper and proof scope](../pal-rh/averaging-the-square.md)
+
+The [square-boundary stage](2026-11-25-pal-square-boundary.json) uses `python -B receipt-archives/check_pal_core_squares.py` for the genuine Möbius values and `python -B receipt-archives/check_pal_boundary_packets.py` for the separate side-information counterexample. Both use the standard library. [Pencil-and-paper calculation](../pal-rh/the-signed-matrix-inside-a-square.md)
+
+[Octave and square-window budgets](2026-11-25-pal-octave-growth.json) use `python -B receipt-archives/check_pal_growth_windows.py`. The [reader proof](../pal-rh/what-the-next-octave-costs.md) identifies the finite computations and the all-scale estimates.
+
+[What 5 carries](../pal-rh/what-five-carries.md) has [one stage record](2026-11-25-pal-prime-flow.json). Run `python -B receipt-archives/check_pal_two_clock_flow.py` for the cutoff calculation, then `python -B receipt-archives/check_pal_exits.py` for all four infinite-interval bounds and both universal lower bounds. The separate [candidate selection](select_pal_exits.py) uses NumPy. The two mathematical checkers use the Python standard library.
+
+[Two row-repair calculations](2026-11-25-pal-row-repair-and-parents.json) run with Python’s standard library. Use `python -B receipt-archives/check_pal_row_repair.py` for the rational fits and `python -B receipt-archives/check_pal_single_parent.py` for the missed wave.
+
+[Strict successors on both targets](2026-11-25-pal-strict-successor.json) records the ordinary Lake build, replay command and hashes for the [paper argument](../pal-rh/every-fit-has-a-successor.md).
+
+[First tick, sieve reversal and clock comparisons](2026-11-25-pal-first-tick-stage.md) includes the all-row rational runs for the two-way transfer and sequential improvements. Use `python -B receipt-archives/check_pal_first_tick.py` and `python -B receipt-archives/check_pal_close_clocks.py` from the repository root.
+
+[Construction-key replay](2026-11-25-pal-construction-replay.md) gives the pinned target, clean build, rational comparisons, and independent statement/kernel runs. The [variable-prime checker](check_pal_prime_refits.py) uses only the Python standard library.
+
+[Prime phases and the all-row bound](2026-11-25-pal-rh-rational-distance.md) gives the integer replay command and the formal theorem statements. [Standalone checker](check_pal_residue_distance.py)
+
 ### Check the two-row conductor identity
 
 Run `python check_two_row_bernoulli_identity.py` here. It records coefficients separately for each residue and verifies that exactly twice one designated weight survives. The [proof](2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) covers arbitrary odd conductor and includes an independent check of the release’s original shift. [Python](check_two_row_bernoulli_identity.py)

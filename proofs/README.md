@@ -8,10 +8,29 @@
 
 The papers state their own conclusions and the scope of their application to the RH argument. The overall audit still seeks a verified failure at a necessary step of that deduction.
 
+## Building upward from PAL
+
+[What the two signs cost together](../pal-rh/what-the-two-signs-cost-together.md) gives an exact finite comparison on Pang’s two-row reading, proves both accounts grow, and locates the exact cofinal upper test.
+
+[What the last two rows carry](../pal-rh/what-the-last-two-rows-carry.md) proves that the construction’s boundary reading must take both signs infinitely often on fourth-power frames, and gives a sufficient one-sided bound on fourth powers.
+
+[One coefficient list earns the next square](../pal-rh/the-balanced-newton-handoff.md). An [error-exponent calculation](../pal-rh/when-a-drop-would-count.md) proves that infinitely many nonincreasing steps of its finite arithmetic test would imply RH. The first three steps decrease.
+
+[Averaging the square](../pal-rh/averaging-the-square.md) gives a different, still RH-sensitive target that pays the joint crossing, together with the exact cost of undoing the average.
+
+The [signed square calculation](../pal-rh/the-signed-matrix-inside-a-square.md) recovers a prime aggregate using only side coefficients, and the [fifth-boundary test](../pal-rh/what-the-fifth-boundary-needs.md) shows exactly why an old signed window cannot pay for every joint crossing on its own. [Corpus and classical source credit](PROVENANCE.md)
+
+[What the next doubling window costs](../pal-rh/what-the-next-octave-costs.md) proves how an exact head changes the power that a missed wave must charge, and constructs a finite rational fit whose next interval contains only signed Möbius increments.
+
+[What 5 carries through 2 and 3](../pal-rh/what-five-carries.md) follows one prime through every triangular layer and proves a strict separation between two finite widths on both physical targets. The first 256 measured rows agree exactly throughout.
+
+In Pang’s independent constructive branch, [what every copy of one finite reading misses](../pal-rh/what-one-parent-misses.md) rules out an entire class of attempted RH constructions by a paper argument. [Changing the first wrong row](../pal-rh/changing-the-first-wrong-row.md) gives an exact arithmetic optimum and a six-row example. [Source credit and corpus roles](../pal-rh/CORPUS-ROUTES.md)
+
 ## More ways into the proofs
 
 | Question | Paper |
 | --- | --- |
+| What do the actual primes have to do in the last window estimate? | [The prime window at square cutoffs](prime-remainders-at-square-cutoffs.md) |
 | Can the same recovered metric hide a different arithmetic action? | [Two actions on one fourfold at the same full torsion level](arithmetic-actions-at-full-level.md) |
 | Where can two order-three labels lift to order nine? | [The carry in a nonsplit degeneration](an-order-nine-carry.md) |
 | Can a genuine theta sum disappear, and which probe reads through it? | [An exact zero on a lattice orbit](a-zero-on-a-supported-orbit.md) · [The larger torsion reading and corrected size parameters](torsion-readings-at-a-zero.md) |

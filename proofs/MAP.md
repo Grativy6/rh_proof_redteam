@@ -4,6 +4,24 @@
 
 On 24 November 2026 Christopher D. Pang asked to bring the project’s independent proofs to the front of the public repository. Hearthline assembled these reader editions under that authorization. Each links to its dated source and checks. The [collection introduction](README.md) starts with the doubling theorem. The [contribution record](PROVENANCE.md) gives Pang’s independently dated corpus, per-paper attribution and the role of the upstream release.
 
+## Independent constructive branch
+
+[Two signed areas, one finite arithmetic test](../pal-rh/what-the-two-signs-cost-together.md). Under Pang’s active 25 November 2026 key, Hearthline derived the bounded signed difference, the all-cutoff zero bill and the matching formal conditional theorem. [Arithmetic and reproduction](../receipt-archives/2026-11-25-pal-signed-areas.json)
+
+[Two-row recovery, fourth-power interpolation and signed oscillation](../pal-rh/what-the-last-two-rows-carry.md). Derived by Hearthline on 25 November 2026 under Pang’s active key. [Reproduction](../receipt-archives/2026-11-25-pal-carried-edge.json)
+
+[Balanced Newton passage](../pal-rh/the-balanced-newton-handoff.md) · [Detecting a zero through the direction of successive errors](../pal-rh/when-a-drop-would-count.md). Hearthline derived both results on 25 November 2026 under Pang’s constructive key. [Integer reproduction and formal scope](../receipt-archives/2026-11-25-pal-tapered-newton.json)
+
+[Averaging the square](../pal-rh/averaging-the-square.md) derives the full transfer and its exact reversal under Pang’s 25 November 2026 key. [Arithmetic and scope](../receipt-archives/2026-11-25-pal-smoothed-square.json)
+
+[Rough squares and prime depth](../pal-rh/where-prime-depth-can-stop.md) · [Signed matrix](../pal-rh/the-signed-matrix-inside-a-square.md) · [Boundary counterexample and opening price](../pal-rh/what-the-fifth-boundary-needs.md). Derived and tested by Hearthline under Pang’s active research key, 25 November 2026. [Finite evidence and kernel replay](../receipt-archives/2026-11-25-pal-square-boundary.json)
+
+The [subpower and doubling-window theorems](../pal-rh/what-the-next-octave-costs.md) turn the exact head into a growth test. Derived by Hearthline under Pang’s continuing authorization, 25 November 2026. [Arithmetic and formal scope](../receipt-archives/2026-11-25-pal-octave-growth.json)
+
+On 25 November 2026 Hearthline used Pang’s PAL frame question, RPL arithmetic shell and boundary-ledger accounting in [the signed prime-flow proof](../pal-rh/what-five-carries.md). [Exact primal and dual arithmetic](../receipt-archives/2026-11-25-pal-prime-flow.json)
+
+Under Pang’s active 25 November 2026 key, Hearthline derived [the one-parent obstruction](../pal-rh/what-one-parent-misses.md) and [the least leading cost of a protected row change](../pal-rh/changing-the-first-wrong-row.md). [Dated checks](../receipt-archives/2026-11-25-pal-row-repair-and-parents.json)
+
 ## Lattice geometry and arithmetic actions
 
 | Paper | What it establishes |
@@ -41,6 +59,7 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 | Paper | What it establishes |
 | --- | --- |
+| [The released prime window at square cutoffs](prime-remainders-at-square-cutoffs.md) · [Moving the holes](prime-remainders-at-square-cutoffs.md#moving-the-holes) | 25 November 2026. At Pang’s request, Hearthline reduced the level-one window to integer remainders at squares, then priced all translations of small-prime divisibility patterns in that tally. |
 | [A 577th power locally and a non-power globally](a-577th-power-locally.md) | A single Taylor coefficient checks the strict local condition, while a different prime supplies a global witness of order 577. |
 | [The same dyadic ideal gives a geometric and a Selmer class of order 577](a-dyadic-ideal-of-order-577.md) | An explicit dyadic ideal has order 577 and contributes a class to the arithmetic count. |
 | [What prime 2663 does in the real dyadic tower](prime-2663-in-the-real-dyadic-tower.md) | At 2663 every pure real dyadic strict group at a positive even twist is zero. A finite period handles every higher level. |

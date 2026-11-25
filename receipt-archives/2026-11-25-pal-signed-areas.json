@@ -1,0 +1,468 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent construction key, including tracing a frame in both directions, working upward from earned claims and putting corpus provenance in the public record.",
+  "parent_tree": "465f174749216d39c48440c28985f903b7a719ae",
+  "source_roles": "PAL v2.4, RPL, APCI, BLA and CLEF motivated using the same physical input for two differently signed accounts. The paper identifies classical Möbius inversion, the eta identity, Hardy, Balazard–Saias and Matomäki–Teräväinen, and locates related work of Báez-Duarte and Pintz.",
+  "sha256_sources": {
+    "pal-rh/PALRH/RectangleBalance.lean": "2929e972c43261ef84f53ae6581d3e5eb5f93bc0795e1f03d57b0a8f492bc216",
+    "pal-rh/PALRH/AlternatingRead.lean": "d8577e187155c1a9932980760aa5a9e66b198063000911b271484751a95fbb58",
+    "pal-rh/PALRH/CensusTransfer.lean": "99b80cc5ef5229f1485622823caed38d4fa9ae0a4fdc37524bb2ec863bc17bf2",
+    "pal-rh/PALRH/SignedAreas.lean": "f63e712f77c8c79b03d38be0bb26283de225e1198b92c73e3a10397e6999e102",
+    "pal-rh/PALRH/PositiveArea.lean": "f837f3e38317538969399a6c6996a075b6f71df0c60fad415026ec4af7258433",
+    "pal-rh/PALRH/SourceAllowance.lean": "1f6cd95fb1c6a5cd8e1501292ce99ad17782afb24c9b4e4aac06107c8d9634e4",
+    "pal-rh/PALRH/FourthAccounts.lean": "65ce7b9e2361b50571a6e277d5ec52c285468ccfa87c7199c9cfd460c62636c0",
+    "pal-rh/what-the-two-signs-cost-together.md": "82ed0f8f7e3a0f9e6f9196b7ad85288067570ce3ddd7e1297b7f22350a8c4fd7",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lakefile.toml": "f858dcedf88c2898f9ae3712d40db9590ed458e591bf16812140637a8651a150",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "receipt-archives/check_pal_signed_areas.py": "a18cb33e935b38c6caad2633205b23a0e0e17a6c95f82157c4a9b76d7f8b7de4",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166",
+    "receipt-archives/export_pal_check.py": "29d4d577c237e54557c63b4f4f8489303748c7b197c1b8b1ed6ba06f192e246f",
+    "pal-rh/checks/fourths/FourthChallenge.lean": "2a6436959a308d01926f3967a74c98f321af4361b26ebe66c1cfc5344df15362",
+    "pal-rh/checks/fourths/FourthSolution.lean": "12249cd5fa0dbc0c3828b9b6c5762f78f3eb96eb7c5e5487143d307cca8646a3",
+    "pal-rh/checks/fourths/compare.json": "f0c98cb3a96b57433ab1c487cb4ac9cb946e8d2865bda93bab6bf44c2c809828"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "directory": "pal-rh",
+    "command": "lake build",
+    "exit": 0,
+    "jobs_including_replays": 3761
+  },
+  "module_kernel_replays": [
+    {
+      "module": "PALRH.RectangleBalance",
+      "exit": 0,
+      "seconds": 13.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.AlternatingRead",
+      "exit": 0,
+      "seconds": 13.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CensusTransfer",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SignedAreas",
+      "exit": 0,
+      "seconds": 12.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PositiveArea",
+      "exit": 0,
+      "seconds": 12.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SourceAllowance",
+      "exit": 0,
+      "seconds": 12.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.FourthAccounts",
+      "exit": 0,
+      "seconds": 11.0,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": {
+    "RectangleBalance": [
+      "PALRH.RectangleBalance.sharp_floor",
+      "PALRH.RectangleBalance.ceiling",
+      "PALRH.RectangleBalance.uniform_floor",
+      "PALRH.RectangleBalance.support_exact",
+      "PALRH.RectangleBalance.smooth_source",
+      "PALRH.RectangleBalance.collect",
+      "PALRH.RectangleBalance.compare_signs",
+      "PALRH.RectangleBalance.same_edge",
+      "PALRH.RectangleBalance.dilation",
+      "PALRH.RectangleBalance.rough_dilation",
+      "PALRH.RectangleBalance.edge_before"
+    ],
+    "AlternatingRead": [
+      "PALRH.AlternatingRead.bounded_at_zero",
+      "PALRH.AlternatingRead.pulse_ne_zero"
+    ],
+    "CensusTransfer": [
+      "PALRH.CensusTransfer.actual_pulse",
+      "PALRH.CensusTransfer.signed_bound"
+    ],
+    "SignedAreas": [
+      "PALRH.SignedAreas.finite_transfer",
+      "PALRH.SignedAreas.zero_bill",
+      "PALRH.SignedAreas.rh_of_sparse_gross"
+    ],
+    "PositiveArea": [
+      "PALRH.PositiveArea.balance_as_source",
+      "PALRH.PositiveArea.balance_nonnegative",
+      "PALRH.PositiveArea.gross_le_positive",
+      "PALRH.PositiveArea.rh_of_sparse_up"
+    ],
+    "SourceAllowance": [
+      "PALRH.SourceAllowance.smooth_budget",
+      "PALRH.SourceAllowance.balance_ceiling",
+      "PALRH.SourceAllowance.rh_of_sparse_choice"
+    ],
+    "FourthAccounts": [
+      "PALRH.FourthAccounts.fractional",
+      "PALRH.FourthAccounts.real_cell",
+      "PALRH.FourthAccounts.fourths_pay",
+      "PALRH.FourthAccounts.rh_of_checkpoints"
+    ]
+  },
+  "independent_fixed_conditional": {
+    "statement": "The same finite numerator and two allowed signs are written directly using ordinary Mathlib Moebius coefficients in a separate reference. The cofinal checkpoint hypothesis implies bare RiemannHypothesis. The hypothesis itself is still open.",
+    "reference": "pal-rh/checks/fourths/FourthChallenge.lean",
+    "solution": "pal-rh/checks/fourths/FourthSolution.lean",
+    "config": "pal-rh/checks/fourths/compare.json",
+    "exporter_revision": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+    "exports": {
+      "fourths-challenge.ndjson": {
+        "bytes": 348396777,
+        "sha256": "be8c8572b1933437ed64c50edd9a59697718a13f736f8b0afa3590257ae1c9b2"
+      },
+      "fourths-solution.ndjson": {
+        "bytes": 430801462,
+        "sha256": "b6c543397f89308496fdd7439b8e535cd1be3c50916de5e94d0b1b3f2bf5e6ff"
+      }
+    },
+    "fresh_project_rebuild": {
+      "clean_project_build_exit": 0,
+      "shared_dependency_cache": true,
+      "identical_export_sha256": {
+        "fourths-challenge.ndjson": "be8c8572b1933437ed64c50edd9a59697718a13f736f8b0afa3590257ae1c9b2",
+        "fourths-solution.ndjson": "b6c543397f89308496fdd7439b8e535cd1be3c50916de5e94d0b1b3f2bf5e6ff"
+      }
+    },
+    "judge": "Linux Lake Comparator 4.36.0, Ubuntu 24.04 under WSL",
+    "comparison": {
+      "exit": 0,
+      "seconds": 135.91,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "finite_arithmetic": {
+    "command": [
+      "python",
+      "-B",
+      "receipt-archives/check_pal_signed_areas.py"
+    ],
+    "reproduction": "Two complete standard-library runs returned the identical JSON. Signs on either side of the first crossing were also computed directly from the defining taper.",
+    "results": {
+      "two_independent_integrals": [
+        {
+          "cut": 1,
+          "positive": [
+            "67639972093122393/500000000000000000",
+            "13527994418624479/100000000000000000"
+          ],
+          "negative": [
+            "0",
+            "0"
+          ],
+          "direct_difference": [
+            "67639972093122393/500000000000000000",
+            "13527994418624479/100000000000000000"
+          ],
+          "smooth_source_difference": [
+            "67639972093122393/500000000000000000",
+            "135279944186244789/1000000000000000000"
+          ]
+        },
+        {
+          "cut": 4,
+          "positive": [
+            "186256977851172203/200000000000000000",
+            "931284889255861147/1000000000000000000"
+          ],
+          "negative": [
+            "0",
+            "0"
+          ],
+          "direct_difference": [
+            "186256977851172203/200000000000000000",
+            "931284889255861147/1000000000000000000"
+          ],
+          "smooth_source_difference": [
+            "58205305578491317/62500000000000000",
+            "931284889255861089/1000000000000000000"
+          ]
+        },
+        {
+          "cut": 16,
+          "positive": [
+            "2130742912337960159/1000000000000000000",
+            "426148582467592323/200000000000000000"
+          ],
+          "negative": [
+            "0",
+            "0"
+          ],
+          "direct_difference": [
+            "2130742912337960159/1000000000000000000",
+            "426148582467592323/200000000000000000"
+          ],
+          "smooth_source_difference": [
+            "2130742912337960849/1000000000000000000",
+            "2130742912337960893/1000000000000000000"
+          ]
+        },
+        {
+          "cut": 64,
+          "positive": [
+            "3353576508548247373/1000000000000000000",
+            "3353576508548260169/1000000000000000000"
+          ],
+          "negative": [
+            "0",
+            "0"
+          ],
+          "direct_difference": [
+            "3353576508548247373/1000000000000000000",
+            "3353576508548260169/1000000000000000000"
+          ],
+          "smooth_source_difference": [
+            "838394127137063421/250000000000000000",
+            "3353576508548253767/1000000000000000000"
+          ]
+        },
+        {
+          "cut": 144,
+          "positive": [
+            "3986058868080625451/1000000000000000000",
+            "3986058868080669209/1000000000000000000"
+          ],
+          "negative": [
+            "0",
+            "0"
+          ],
+          "direct_difference": [
+            "3986058868080625451/1000000000000000000",
+            "3986058868080669209/1000000000000000000"
+          ],
+          "smooth_source_difference": [
+            "3986058868080647199/1000000000000000000",
+            "3986058868080647347/1000000000000000000"
+          ]
+        }
+      ],
+      "fourth_power_accounts": {
+        "last_side": 7311616,
+        "sieve_upper_limit": 14623233,
+        "rounding_denominator": 10000000000000000000000,
+        "first_certified_negative_side": 6513933,
+        "previous_signs_not_resolved": 0,
+        "direct_check_before_and_at_first_crossing": [
+          [
+            "4601544329/2500000000000000000000",
+            "4602534329/2500000000000000000000"
+          ],
+          [
+            "-12060672369/1250000000000000000000",
+            "-96481418951/10000000000000000000000"
+          ]
+        ],
+        "checkpoints": [
+          {
+            "j": 4,
+            "side": 256,
+            "slope": [
+              "8342714437626506419/200000000000000000000",
+              "417135721881325321203/10000000000000000000000"
+            ],
+            "positive_sum": [
+              "884681927988439424261/400000000000000000000",
+              "22117048199710985607797/10000000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 8,
+            "side": 4096,
+            "slope": [
+              "38524609792815522683/10000000000000000000000",
+              "38524609792815526757/10000000000000000000000"
+            ],
+            "positive_sum": [
+              "24468825769477538895743/10000000000000000000000",
+              "61172064423693847393/25000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 16,
+            "side": 65536,
+            "slope": [
+              "3695863524001714333/10000000000000000000000",
+              "369586352400177951/1000000000000000000000"
+            ],
+            "positive_sum": [
+              "6349975711642235239057/2500000000000000000000",
+              "25399902846568944286047/10000000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 32,
+            "side": 1048576,
+            "slope": [
+              "278614245414399169/10000000000000000000000",
+              "55722849083089149/2000000000000000000000"
+            ],
+            "positive_sum": [
+              "25716530821171264937117/10000000000000000000000",
+              "1028661232846858422861/400000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 48,
+            "side": 5308416,
+            "slope": [
+              "91667186401480119/10000000000000000000000",
+              "91667186406783919/10000000000000000000000"
+            ],
+            "positive_sum": [
+              "25782434244341623659157/10000000000000000000000",
+              "6445608561085947264821/2500000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 50,
+            "side": 6250000,
+            "slope": [
+              "1889229227877709/400000000000000000000",
+              "47230730703187927/10000000000000000000000"
+            ],
+            "positive_sum": [
+              "25790644443244076086277/10000000000000000000000",
+              "25790644443246835986651/10000000000000000000000"
+            ],
+            "negative_sum": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "j": 51,
+            "side": 6765201,
+            "slope": [
+              "-8576577805345801/10000000000000000000000",
+              "-8576577798585579/10000000000000000000000"
+            ],
+            "positive_sum": [
+              "25790644443244076086277/10000000000000000000000",
+              "25790644443246835986651/10000000000000000000000"
+            ],
+            "negative_sum": [
+              "437405467727864529/10000000000000000000000",
+              "437405468072635851/10000000000000000000000"
+            ]
+          },
+          {
+            "j": 52,
+            "side": 7311616,
+            "slope": [
+              "20132227649696903/10000000000000000000000",
+              "10066113828501697/5000000000000000000000"
+            ],
+            "positive_sum": [
+              "25791691319081860325233/10000000000000000000000",
+              "25791691319085000163139/10000000000000000000000"
+            ],
+            "negative_sum": [
+              "437405467727864529/10000000000000000000000",
+              "437405468072635851/10000000000000000000000"
+            ]
+          }
+        ],
+        "separately_certified_sign_bands": [
+          {
+            "begin": 6250000,
+            "end": 6252048,
+            "common_cut": 7313664,
+            "band_count_at_begin": -739,
+            "sign": "+",
+            "weighted_area_lower": "71456952659/100000000000000000"
+          },
+          {
+            "begin": 6765201,
+            "end": 6767249,
+            "common_cut": 7313664,
+            "band_count_at_begin": 163,
+            "sign": "-",
+            "weighted_area_lower": "18118111527/200000000000000000"
+          },
+          {
+            "begin": 7311616,
+            "end": 7313664,
+            "common_cut": 7313664,
+            "band_count_at_begin": 268,
+            "sign": "+",
+            "weighted_area_lower": "53540657947/200000000000000000"
+          }
+        ],
+        "whole_signed_difference_at_common_cut": [
+          "6630415925821580517/1000000000000000000",
+          "828801990727697707/125000000000000000"
+        ]
+      },
+      "fixed_phase_test": {
+        "s_real": "9/16",
+        "s_imaginary": "133/4",
+        "terms_before_endpoint": 255,
+        "zeta_remainder_absolute": "595/24576",
+        "response_real": [
+          "-10796176337766909/250000000000000000",
+          "-4564619401640977/250000000000000000"
+        ],
+        "response_imaginary": [
+          "52898715520817793/250000000000000000",
+          "118260544913887453/500000000000000000"
+        ]
+      }
+    }
+  },
+  "paper_scope": [
+    "Exact positive-source signed difference at every finite cutoff, increasing to 6.6921304299...; the formal conditional proof uses the sufficient uniform bound 16.",
+    "At a zero, an exact compact pulse charges the total previous area at every cutoff. The finite transfer and pole charge are also proved in Lean.",
+    "Both sampled rational accounts grow at least logarithmically. Their power exponents have a full limit 4 Theta - 2. These asymptotic necessity statements are paper arguments.",
+    "An outward enclosure rules out a fixed complex rotation of the actual positive rectangle response."
+  ],
+  "open": "Prove cofinally subpower common growth of the actual signed rational accounts. The accepted export proves the explicit conditional implication. No unconditional PAL proof of bare RH was submitted."
+}

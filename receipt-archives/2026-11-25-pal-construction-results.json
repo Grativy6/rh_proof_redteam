@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-25",
+  "base": "7c289ca6344c658c622335e89dbc4cdd94db924e",
+  "compiler": "4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "exporter": "15f6055e299ad5b89345e533cc2192f4cc00f659",
+  "judge": "Lake Comparator, Lean 4.36.0, Ubuntu 24.04 under WSL",
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "sources_sha256": {
+    "pal-rh/PALRH.lean": "b7650c68ddf4d566614c5155e418a1f645127a698544726f2e45a663c3449f2f",
+    "pal-rh/PALRH/Turns.lean": "3bd32b938f011b6fc54c0f8c92ee8876a2ac855da7c5f0704557700972861993",
+    "pal-rh/PALRH/Cells.lean": "e5105dbcb74ddf8a20c2b7a43b0b97573f1aa309fe78d2df42eb92e8a09d655e",
+    "pal-rh/PALRH/Frames.lean": "ec231e89c16548c2a329b8a55a0a8a899397d500845851676471ae8831081466",
+    "pal-rh/PALRH/Dilation.lean": "b069fab9cd1be7f983293c05ead737f6bec2b786c43c369fba3362db1347212d",
+    "pal-rh/PALRH/SquareShell.lean": "b3c20a49e604d1417f1c7138e015db1ed5cce36ff75724325899babba68c5f38",
+    "pal-rh/PALRH/Gain.lean": "c7f5c10ad39d583f2ad8a70c958765c8e71794d4dbe6058e62fdbbf0ebfa7b5c",
+    "pal-rh/lakefile.toml": "0f609099f2043b5de6dd66288b3eb61fd0640d4ff523dca38c8acbb03d515ae1",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/checks/odd/OddChallenge.lean": "5ce15348fbe1cf4acf3f7aea3389b695c4d10137d257c0e76bf612b1e6d9cf32",
+    "pal-rh/checks/odd/OddSolution.lean": "0d0f149eb4af9b45af3f43d810865e8fbb69c153e2b217ecdde3c49469cf29bd",
+    "pal-rh/checks/partial/PALSolution.lean": "cb666cae9951311a3d52dc3ffb6e7f44d53410006884c207ae871b61a81a6475",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c",
+    "receipt-archives/PALPrimeEvents.lean": "1cfd88ad161f621fe4a5e99ea72e9eb56d4f13c70df54f32f967027a9b6d96a4",
+    "receipt-archives/check_pal_prime_refits.py": "9f0b3cb29a418b37bc4dd2be77a54566e5b7bf548b31a28614b42c03cf259671",
+    "receipt-archives/export_pal_check.py": "09994256d49f33fc9a54199539064255cde7facce725f244a29d6c70c06aca3c",
+    "receipt-archives/judge_pal_rh.py": "0e58756f11c2c0d04f8aa738dfd8c312d864cb013d9a1e6d1456820a835bc308"
+  },
+  "native_modules": [
+    {
+      "module": "PALRH.Turns",
+      "exit": 0
+    },
+    {
+      "module": "PALRH.Cells",
+      "exit": 0
+    },
+    {
+      "module": "PALRH.Frames",
+      "exit": 0
+    },
+    {
+      "module": "PALRH.Dilation",
+      "exit": 0
+    },
+    {
+      "module": "PALRH.SquareShell",
+      "exit": 0
+    },
+    {
+      "module": "PALRH.Gain",
+      "exit": 0
+    },
+    {
+      "module": "PALRH",
+      "exit": 0
+    },
+    {
+      "module": "PALPrimeEvents",
+      "exit": 0
+    }
+  ],
+  "lake_build_exit": 0,
+  "independent_project_rebuild": {
+    "positive_challenge": "05b57722f8663e0f6bdf7813c41005b944ef3ea49d0cf839c8abe06034240643",
+    "positive_solution": "486075dcf2267fbb51d37d7810b8e7a13301af021969fab1529af6fc247f0245",
+    "same_bytes": true,
+    "clean_checkout_build_exit": 0
+  },
+  "exports": {
+    "odd-target": {
+      "bytes": 10668974,
+      "sha256": "05b57722f8663e0f6bdf7813c41005b944ef3ea49d0cf839c8abe06034240643"
+    },
+    "odd-solution": {
+      "bytes": 16645114,
+      "sha256": "486075dcf2267fbb51d37d7810b8e7a13301af021969fab1529af6fc247f0245"
+    },
+    "fixed-RH": {
+      "bytes": 350862311,
+      "sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9"
+    },
+    "conditional-control": {
+      "bytes": 375402722,
+      "sha256": "74f6f141e521ec0cf05c4303c954e67f869387059d3393b1e69c82f8883e8ef5"
+    }
+  },
+  "comparisons": [
+    {
+      "name": "oddReopening",
+      "exit": 0,
+      "log": [
+        "Running Lean paranoid kernel on solution",
+        "Lean paranoid kernel accepts the solution",
+        "Running nanoda kernel on solution",
+        "nanoda kernel accepts the solution",
+        "Running Lean default kernel on solution",
+        "Lean default kernel accepts the solution",
+        "Your solution is okay!"
+      ]
+    },
+    {
+      "name": "riemannHypothesis",
+      "trial": "the actual conditional theorem with its premise exposed",
+      "exit": 1,
+      "log": [
+        "Challenge SHA-256 bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+        "Solution SHA-256 74f6f141e521ec0cf05c4303c954e67f869387059d3393b1e69c82f8883e8ef5",
+        "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'"
+      ]
+    }
+  ],
+  "bounded_experiment": {
+    "assertion_tested": "optimal signed coefficient at 6, squared error, base mean and direction, and 5/7 joint overcount; all visits in each of five specified finite column sets",
+    "command": "python receipt-archives/check_pal_prime_refits.py",
+    "output": [
+      "base L 6 cutoff 12600 weight at 6 [0.60084, 0.60086] all-row squared error [0.07828, 0.07830]",
+      "five L 30 cutoff 12600 weight at 6 [-0.12594, -0.12561] all-row squared error [0.03718, 0.03779]",
+      "seven L 42 cutoff 12600 weight at 6 [-0.10067, -0.10004] all-row squared error [0.04824, 0.04930]",
+      "eleven L 66 cutoff 15840 weight at 6 [0.14497, 0.14586] all-row squared error [0.05796, 0.05934]",
+      "five and seven L 210 cutoff 50400 weight at 6 [-0.41760, -0.41722] all-row squared error [0.02497, 0.02591]",
+      "base mean residual [0.14168, 0.14170]",
+      "base mean direction at six [3.81942, 3.81945]",
+      "isolated gains minus actual joint gain [0.01618, 0.01877]"
+    ],
+    "randomness": "none"
+  },
+  "review": "self-review; independent kernel implementations; no outside human review requested or claimed",
+  "open": "uniform arithmetic gain or a different independently sufficient all-scale input"
+}

@@ -1,0 +1,264 @@
+{
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "date": "2026-11-25",
+  "authorization": "The active independent PAL proof key. Follow a failed hard-boundary transfer with a change of observable while retaining the actual raw inputs.",
+  "parent_tree": "1ab20c985e1b1189548669f9537ee08e3fd20702",
+  "sha256_sources": {
+    "pal-rh/PALRH/Smoothed.lean": "e144448f8ff96143f2600f8b4aaafc908ed133e3b51fc6c10f407bdce765c6aa",
+    "pal-rh/lakefile.toml": "2683322966a4dc95b1d71eed1762abb46365df6f94e282fe0972f68b5d7e79ca",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/averaging-the-square.md": "e6942e975f770e4f50f985b57deb8a53eaab6a747bb56a2dce716ea66beccd55",
+    "receipt-archives/check_pal_smoothed_square.py": "4aa1d3d57ca38274e4b71e1cb6bc2873ec0dcedddadcf9f715d8801526c3f416",
+    "receipt-archives/check_pal_boundary_packets.py": "02164968b349406df4702945ce3e19b1ebd29e09c35a4bb1c68db15893f766bd",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "command": "cd pal-rh && lake build",
+    "exit": 0,
+    "jobs_including_replays": 3736
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH.Smoothed",
+      "exit": 0,
+      "seconds": 9.9,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "declarations": [
+    "PALRH.Smoothed.smooth_square",
+    "PALRH.Smoothed.twice_partial",
+    "PALRH.Smoothed.reversing_at_square",
+    "PALRH.Smoothed.matrix_transfer",
+    "PALRH.Smoothed.twice_form",
+    "PALRH.Smoothed.twice_census"
+  ],
+  "independent_arithmetic": {
+    "true_arithmetic": [
+      {
+        "side": 5,
+        "raw_integer_form": 6,
+        "second_threshold_difference": 12,
+        "smoothed_true_sum": [
+          "-592/625",
+          "-592/625"
+        ],
+        "smoothed_centered_form": [
+          "-133689/500000",
+          "-267377/1000000"
+        ],
+        "remaining_cubic_form": [
+          "-60089/125000",
+          "-480711/1000000"
+        ]
+      },
+      {
+        "side": 30,
+        "raw_integer_form": 29,
+        "second_threshold_difference": 58,
+        "smoothed_true_sum": [
+          "-12799849/500000",
+          "-25599697/1000000"
+        ],
+        "smoothed_centered_form": [
+          "629361/200000",
+          "1573403/500000"
+        ],
+        "remaining_cubic_form": [
+          "-153533/62500",
+          "-2456527/1000000"
+        ]
+      },
+      {
+        "side": 35,
+        "raw_integer_form": 33,
+        "second_threshold_difference": 66,
+        "smoothed_true_sum": [
+          "-3655209/125000",
+          "-29241671/1000000"
+        ],
+        "smoothed_centered_form": [
+          "921287/250000",
+          "3685149/1000000"
+        ],
+        "remaining_cubic_form": [
+          "-84093/500000",
+          "-33637/200000"
+        ]
+      },
+      {
+        "side": 128,
+        "raw_integer_form": 75,
+        "second_threshold_difference": 150,
+        "smoothed_true_sum": [
+          "-17448003/250000",
+          "-69792011/1000000"
+        ],
+        "smoothed_centered_form": [
+          "13398311/1000000",
+          "1674789/125000"
+        ],
+        "remaining_cubic_form": [
+          "-6021631/1000000",
+          "-602163/100000"
+        ]
+      },
+      {
+        "side": 512,
+        "raw_integer_form": 56,
+        "second_threshold_difference": 112,
+        "smoothed_true_sum": [
+          "-66485851/500000",
+          "-132971701/1000000"
+        ],
+        "smoothed_centered_form": [
+          "16689009/500000",
+          "33378019/1000000"
+        ],
+        "remaining_cubic_form": [
+          "-17202641/1000000",
+          "-215033/12500"
+        ]
+      },
+      {
+        "side": 1024,
+        "raw_integer_form": 35,
+        "second_threshold_difference": 70,
+        "smoothed_true_sum": [
+          "-34544661/200000",
+          "-21590413/125000"
+        ],
+        "smoothed_centered_form": [
+          "22097037/500000",
+          "1767763/40000"
+        ],
+        "remaining_cubic_form": [
+          "-1159381/50000",
+          "-23187619/1000000"
+        ]
+      }
+    ],
+    "alternative_same_inputs": [
+      {
+        "side": 262144,
+        "selected_sites": 1560,
+        "hard_uncentered": -101404,
+        "twice_averaged_uncentered": [
+          "16272813/125000",
+          "26036501/200000"
+        ],
+        "twice_averaged_centered": [
+          "1526281/500000",
+          "3052563/1000000"
+        ]
+      },
+      {
+        "side": 1048576,
+        "selected_sites": 6192,
+        "hard_uncentered": -798812,
+        "twice_averaged_uncentered": [
+          "7283111/15625",
+          "93223821/200000"
+        ],
+        "twice_averaged_centered": [
+          "-1734291/50000",
+          "-34685819/1000000"
+        ]
+      },
+      {
+        "side": 4194304,
+        "selected_sites": 26868,
+        "hard_uncentered": -6941386,
+        "twice_averaged_uncentered": [
+          "518176209/250000",
+          "2072704837/1000000"
+        ],
+        "twice_averaged_centered": [
+          "-127581867/500000",
+          "-255163729/1000000"
+        ]
+      }
+    ],
+    "gaussian_residue_comparison": [
+      {
+        "t": "1/2",
+        "direct": [
+          "3487342356207/1000000000000000000",
+          "871835589053/250000000000000000"
+        ],
+        "dual": [
+          "3487342356177/1000000000000000000",
+          "43591779453/12500000000000000"
+        ],
+        "direct_max": 2,
+        "dual_max": 57
+      },
+      {
+        "t": "1",
+        "direct": [
+          "540173978297153/12500000000000000",
+          "2160695913188613/50000000000000000"
+        ],
+        "dual": [
+          "2160695913188611/50000000000000000",
+          "43213918263772281/1000000000000000000"
+        ],
+        "direct_max": 4,
+        "dual_max": 28
+      },
+      {
+        "t": "2",
+        "direct": [
+          "45593813073525323/100000000000000000",
+          "227969065367626637/500000000000000000"
+        ],
+        "dual": [
+          "18237525229410129/40000000000000000",
+          "455938130735253283/1000000000000000000"
+        ],
+        "direct_max": 9,
+        "dual_max": 14
+      },
+      {
+        "t": "6",
+        "direct": [
+          "521605215460182451/500000000000000000",
+          "1043210430920364993/1000000000000000000"
+        ],
+        "dual": [
+          "521605215460182463/500000000000000000",
+          "6520065193252281/6250000000000000"
+        ],
+        "direct_max": 28,
+        "dual_max": 4
+      },
+      {
+        "t": "24",
+        "direct": [
+          "19999999999999999/5000000000000000",
+          "4000000000000000209/1000000000000000000"
+        ],
+        "dual": [
+          "499999999999999999/125000000000000000",
+          "1000000000000000003/250000000000000000"
+        ],
+        "direct_max": 115,
+        "dual_max": 1
+      }
+    ]
+  },
+  "scope": "The finite exact threshold identity, quadratic weights, reverse second difference and two-axis summation estimate are formal. Paper proofs connect that estimate to the true twice-averaged kernel, derive the side-cost bound, the one-sided RH implications and the Gaussian truncation. Finite Gaussian tables are checks of the normalization, not proofs of an all-scale sign estimate.",
+  "remaining": "A uniform signed bound on the retained high-side terms or a compatible source of the raw or smoothed input estimates at each scale. The bare RH challenge remains unpassed."
+}

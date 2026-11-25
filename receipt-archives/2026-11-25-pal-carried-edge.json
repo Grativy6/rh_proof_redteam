@@ -1,0 +1,128 @@
+{
+  "date": "2026-11-25",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent construction key and his requests to retain the original frame, recover its trace and test both orientations.",
+  "parent_tree": "dc9f633ee733522850a6861b25757ba685057acb",
+  "research_inputs": {
+    "Pang": "PAL v2.4 and RPL for the retained and transported mark, APCI for the same physical rows, and boundary-ledger accounting for the cost of unobserved frames.",
+    "classical": "Moebius convolutions, the Mellin transform, the real singularity theorem for nonnegative transforms, Hardy on the critical line, Balazard–Saias for partial sums, Matomäki–Teräväinen Theorem 1.1 for all short intervals and Lee–Leong for unconditional Mertens decay. The paper derives each transfer to this endpoint."
+  },
+  "sha256_sources": {
+    "pal-rh/PALRH/CarriedEdge.lean": "87fc7bf79db150a0fdaef379859b4186f9a26fcc24062676a5a52f456d979628",
+    "pal-rh/PALRH/TaperedNewton.lean": "392ce3a707aaaef50f201b69a675ac69f4b34adbe85ab9a6fa022dff75b9199a",
+    "pal-rh/what-the-last-two-rows-carry.md": "ed24dec382176da52be64f053c4bc92092b59e6673795404adef1d732c0ae5c3",
+    "pal-rh/when-a-drop-would-count.md": "944c9729f036c553e659b9a5a92c6144f52e213c7512628d3769219ca062ff7d",
+    "pal-rh/lakefile.toml": "29b4a913697993bce7642763cc2e8fe7602f306f68e16bae5f0cb60d7012a1ef",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "receipt-archives/check_pal_carried_edge.py": "84eb465c2210cf39c40a9fbf172a7e4872f08973ed5272e1f42f833ec29f0d3b",
+    "receipt-archives/check_pal_tapered_newton.py": "8f45c7a620133f1a7d9e6ce459e30749ee8f1d59020c3eb1a954e22b9cdd4d0b",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3738
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH.CarriedEdge",
+      "exit": 0,
+      "seconds": 10.4,
+      "output": ""
+    }
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "audited_declarations": [
+    "PALRH.CarriedEdge.read_next_mark",
+    "PALRH.CarriedEdge.last_two_rows",
+    "PALRH.CarriedEdge.scalar_update",
+    "PALRH.CarriedEdge.canonical_update",
+    "PALRH.CarriedEdge.step",
+    "PALRH.CarriedEdge.band_step",
+    "PALRH.CarriedEdge.curvature",
+    "PALRH.CarriedEdge.chord",
+    "PALRH.CarriedEdge.fourth_chord",
+    "PALRH.CarriedEdge.odd_tail"
+  ],
+  "independent_arithmetic": {
+    "command": [
+      "python",
+      "-B",
+      "receipt-archives/check_pal_carried_edge.py"
+    ],
+    "dependencies": "Python standard library, independent integer sieve, previous direct rational construction. Two full executions produced the same data.",
+    "result": {
+      "unit_steps": {
+        "prices_rebuilt": 194,
+        "every_physical_row_checked_for_sides_through": 40,
+        "first_example": {
+          "side": 4,
+          "left": "373/140",
+          "right": "601/140",
+          "slope": "57/70"
+        },
+        "scaled_curvature_min": "-24828/17531",
+        "scaled_curvature_max": "197/105"
+      },
+      "sparse_samples": {
+        "rounding_denominator": 100000000000000000,
+        "largest_integer_sieved": 14829750,
+        "cube_indices_tested": [
+          1,
+          195
+        ],
+        "strictly_negative_cube_indices": [
+          187,
+          188,
+          189,
+          190,
+          191
+        ],
+        "fourth_power_indices_tested": [
+          1,
+          52
+        ],
+        "strictly_negative_fourth_power_indices": [
+          51
+        ],
+        "slope_bounds_at_fourth_powers": {
+          "49": [
+            "6880867536064978767/576480100000000000000000",
+            "6880918043965404197/576480100000000000000000"
+          ],
+          "50": [
+            "59037819751/12500000000000000",
+            "472312056859/100000000000000000"
+          ],
+          "51": [
+            "-36266093928574357/42282506250000000000000",
+            "-290093972037643931/338260050000000000000000"
+          ],
+          "52": [
+            "5749806864697683/2856100000000000000000",
+            "5750124243554959/2856100000000000000000"
+          ]
+        }
+      }
+    }
+  },
+  "paper_claims": [
+    "Either one-sided fourth-power endpoint estimate with arbitrary positive power slack is equivalent to RH.",
+    "Both signs recur at square-root scale on the actual cube and fourth-power samples without assuming RH. The fourth-power transfer at the exact scale uses the cited all-short-interval theorem.",
+    "Each signed limsup exponent on fourth powers equals Theta minus one. The unconditional Mertens upper estimate tends to zero on every side.",
+    "The absolute tail of single new odd marks is at most one half divided by H. The remaining tail is the signed accumulated rough band."
+  ],
+  "reader_edition_correction": "The preceding error-exponent paper has display-math delimiters restored in its finite-square section. Its mathematics is unchanged.",
+  "open": "The one-sided power bound on the actual fourth-power edge values remains unproved by this construction. The analytic equivalence and sign oscillation are paper results. The formal build covers the arithmetic, curvature, interpolation and unit correction tail. There is no independent bare RH submission."
+}

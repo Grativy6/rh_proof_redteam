@@ -8,7 +8,31 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Top-level proof collection](proofs/README.md) · [Full proof editions](proofs/MAP.md) · [Corpus and derivation credits](proofs/PROVENANCE.md). Hearthline established the collection on 24 November 2026 under Christopher Daniel Pang’s request to give the collaboration’s mathematical results prominent placement and fair source attribution.
 
+## A separate constructive route
+
+[Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
+
+[Paying the two signs together](pal-rh/what-the-two-signs-cost-together.md) · [Fourth-power proof](pal-rh/PALRH/FourthAccounts.lean). On 25 November 2026 Hearthline followed Pang’s instruction to test both orientations into the same finite measurement. The first negative integer side and the fixed-phase obstruction are reproducible. [Source and scope](receipt-archives/2026-11-25-pal-signed-areas.json)
+
+[What the last two rows carry](pal-rh/what-the-last-two-rows-carry.md). Under Pang’s active key, Hearthline derived a sparse one-sided target and unconditional signed excursions at cube and fourth-power sizes on 25 November 2026. [Exact finite reconstruction](receipt-archives/2026-11-25-pal-carried-edge.json)
+
+[Recursive balanced lists](pal-rh/the-balanced-newton-handoff.md) · [Direction of the finite error at successive squares](pal-rh/when-a-drop-would-count.md). Hearthline derived the actual handoff, first missing product, finite tail allowance and limiting exponent under Pang’s active construction key, 25 November 2026. [Reproduction](receipt-archives/2026-11-25-pal-tapered-newton.json)
+
+[Averaging the square](pal-rh/averaging-the-square.md) pays the joint boundary for a distinct RH-detecting observable. The backward difference restores the hard form exactly. Hearthline, under Pang’s active key, 25 November 2026. [Reproduction](receipt-archives/2026-11-25-pal-smoothed-square.json)
+
+[Current independent square route](pal-rh/the-signed-matrix-inside-a-square.md) · [Prime-depth rule](pal-rh/where-prime-depth-can-stop.md) · [What the first new cofactor needs](pal-rh/what-the-fifth-boundary-needs.md). Under Pang’s active key, Hearthline derived and tested the rough-core square identities, a paid exterior, a joint-reading obstruction and its prime-five repair on 25 November 2026. [Stage and reproduction](receipt-archives/2026-11-25-pal-square-boundary.json)
+
+[Doubling-window arithmetic and subpower budgets](pal-rh/what-the-next-octave-costs.md). On 25 November 2026 Hearthline followed Pang’s active construction key from exact heads to a signed finite observable with an independently derived RH implication. [Stage record](receipt-archives/2026-11-25-pal-octave-growth.json)
+
+[What 5 carries](pal-rh/what-five-carries.md) reconstructs both clocks from signed flows, removes every interior cycle, and separates all width-256 fits from exhibited width-512 fits at the same protected rows. [Kernel and arithmetic record](receipt-archives/2026-11-25-pal-prime-flow.json)
+
+On the same branch, [all copies of one finite parent miss a common wave](pal-rh/what-one-parent-misses.md). [Finite-height optimum and actual receiving rows](pal-rh/changing-the-first-wrong-row.md) gives the exact price of a new correction in the two-clock construction. [Rational replay](receipt-archives/2026-11-25-pal-row-repair-and-parents.json)
+
+On 25 November 2026, under Pang’s direction, Hearthline built the [prime-phase construction](pal-rh/MAP.md). Its finite rational certificate condition implies Mathlib’s RH. The [worked certificate](receipt-archives/2026-11-25-pal-rh-rational-distance.md) beats every linear combination of single-prime readings.
+
 ## Where the checks lead
+
+[The released estimate at square cutoffs](proofs/prime-remainders-at-square-cutoffs.md) gives the integer remainder test at level one. On 25 November 2026 Hearthline derived the uniform cost of the omitted rows for Pang’s investigation of the infinite tail.
 
 | Question | Record |
 | --- | --- |

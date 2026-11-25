@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-25",
+  "branch": "research/pal-rh",
+  "source_parent_tree": "42bcfb24dbbc5fa9778c5ceaa6ccd9599527f1d1",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang asked for an independent PAL v2.4-led construction, every mathematical step earned, and both directions of a proposed move.",
+  "corpus_roles": [
+    "PAL v2.4 mechanical spine and mathematical realization atlas for retained frames",
+    "RPL for arithmetic shell and core",
+    "Boundary-Ledger Accounting for cancellation on a cut",
+    "Full nine-shelf source and role inventory in pal-rh/CORPUS-ROUTES.md"
+  ],
+  "sources_sha256": {
+    "pal-rh/PALRH.lean": "ab68f26bec90eeb994ed799d1ac5c2a76385220d909d4fe5508115c7c2ff7f31",
+    "pal-rh/PALRH/Parent.lean": "ee766ff9838f701b85a180cdaaf2ff92858ccdf8ebdaf946c59619114f16d662",
+    "pal-rh/PALRH/CarriedPrime.lean": "65c6a8f68428062cd395fd851d95c27f836d91dc2b3864dea46631be8146662f",
+    "pal-rh/PALRH/Protected.lean": "35e52469aeaca09748e512936b27c14d280d02a6bdf2343ac16a48fb7ce36f27",
+    "pal-rh/lakefile.toml": "4e96fdbf58942baa6aa54146bf3d4f31206149297e75ab46f42dce999dde1e97",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/what-one-parent-misses.md": "f1bf0ba594db61e012aeb8dd336d190a556d1b13840a62e00cf667ba7ae58fb1",
+    "pal-rh/what-five-carries.md": "208106a6388a6cb938aed806a58e396f6c3468e9cc2498da3e07c2d54107f03b",
+    "receipt-archives/2026-11-25-pal-two-clock-exits.json": "abe1d44fde3b399b097e4442bd26fad7a99b60f10915807c202649b2f7c93b48",
+    "receipt-archives/check_pal_two_clock_flow.py": "ff4cd6d69fc2d7e56331a1b1996e3f8acd6eeb9a9601e85ecea1506aefb37ee0",
+    "receipt-archives/check_pal_exits.py": "6e71d92f6c06ec35d9ae40492934a99ccb6ed365ef94558739c0c05b5c9b4660",
+    "receipt-archives/select_pal_exits.py": "53124cc9237f59aea68b791c33855a6e4fad0d23ec4365dab9036541b7d4f0c8"
+  },
+  "lean": "4.33.1",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "normal_build": {
+    "command": "cd pal-rh && lake build",
+    "exit": 0,
+    "jobs_including_replays": 3727
+  },
+  "kernel_replays": [
+    {
+      "module": "PALRH",
+      "exit": 0,
+      "seconds": 94.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Parent",
+      "exit": 0,
+      "seconds": 40.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneTick",
+      "exit": 0,
+      "seconds": 11.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Productive",
+      "exit": 0,
+      "seconds": 11.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Sieve",
+      "exit": 0,
+      "seconds": 11.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RowRepair",
+      "exit": 0,
+      "seconds": 11.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CarriedPrime",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.Protected",
+      "exit": 0,
+      "seconds": 11.6,
+      "output": ""
+    }
+  ],
+  "selected_axioms": {
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": [
+      "PALRH.Parent.return_zero",
+      "PALRH.Parent.single_parent_gap",
+      "PALRH.Parent.daughter_ae",
+      "PALRH.Parent.independent_waves",
+      "PALRH.CarriedPrime.detector_carry",
+      "PALRH.CarriedPrime.square_path",
+      "PALRH.CarriedPrime.endpoint_evaluation",
+      "PALRH.CarriedPrime.triangle_conservation",
+      "PALRH.CarriedPrime.spread_source",
+      "PALRH.CarriedPrime.finite_dual_floor",
+      "PALRH.CarriedPrime.invariant_observation",
+      "PALRH.OneTick.protect_row",
+      "PALRH.OneTick.exact_heads_iff",
+      "PALRH.OneTick.protected_iff_certificates",
+      "PALRH.OneTick.rh_of_protected_certificates"
+    ]
+  },
+  "finite_computations": {
+    "flow": {
+      "rule": "at (i,j) split the total in proportions (i+1):(j+1), stop at integer cutoff",
+      "finite_cutoff_trials": [
+        {
+          "target": "constant",
+          "exact_prefix": 256,
+          "last_inspected_row": 15000,
+          "prefix_error_lower": "1083590277172141/1000000000000000",
+          "prefix_error_upper": "1083590277187141/1000000000000000",
+          "first_certified_prefix_above_one": 4857,
+          "absolute_normalized_coefficients": "5279575299890097922426778439324762582540313907076544171831916355954790522569218578730582795393261008/1123537253809591693572213902589278204735667597755405736263020256659058572865047257911279733273329025",
+          "outgoing_by_core_and_layer": {
+            "5, layer 3": "-1/15",
+            "7, layer 3": "-1/21"
+          }
+        },
+        {
+          "target": "tick",
+          "exact_prefix": 256,
+          "last_inspected_row": 15000,
+          "prefix_error_lower": "104577183661513/100000000000000",
+          "prefix_error_upper": "104577183663013/100000000000000",
+          "first_certified_prefix_above_one": 5761,
+          "absolute_normalized_coefficients": "214882758928604897544645221262336364489877948817107870180585153085197696827470213954881307219818467077/37255844010381823114394571146728529455582716864700990211156381843998927749496059798565333764193866800",
+          "outgoing_by_core_and_layer": {
+            "5, layer 3": "-1/30",
+            "7, layer 3": "-1/42"
+          }
+        }
+      ],
+      "larger_constant_grid": {
+        "5, layer 3": "-1/15",
+        "5, layer 4": "-1/15",
+        "7, layer 3": "-1/21",
+        "7, layer 4": "-1/21",
+        "35, layer 3": "1/105"
+      }
+    },
+    "physical": [
+      {
+        "target": "constant",
+        "first_rows_exact": 256,
+        "copy_width": 256,
+        "original_free_exit_coordinates": 171,
+        "rows_in_direct_sum": 2000000,
+        "lower_for_every_width_256_fit_with_exact_prefix": "16939/100000",
+        "true_loss_lower": "1949/10000",
+        "true_loss_upper": "21951/100000",
+        "tail_allowance_upper": "2461/100000",
+        "mean_square_tail_upper": "38816683/50000"
+      },
+      {
+        "target": "constant",
+        "first_rows_exact": 256,
+        "copy_width": 512,
+        "original_free_exit_coordinates": 171,
+        "rows_in_direct_sum": 10000000,
+        "true_loss_lower": "7053/50000",
+        "true_loss_upper": "15431/100000",
+        "tail_allowance_upper": "331/25000",
+        "mean_square_tail_upper": "59434597/50000"
+      },
+      {
+        "target": "tick",
+        "first_rows_exact": 256,
+        "copy_width": 256,
+        "original_free_exit_coordinates": 171,
+        "rows_in_direct_sum": 2000000,
+        "lower_for_every_width_256_fit_with_exact_prefix": "387/5000",
+        "true_loss_lower": "8441/100000",
+        "true_loss_upper": "9399/100000",
+        "tail_allowance_upper": "957/100000",
+        "mean_square_tail_upper": "2657599/12500"
+      },
+      {
+        "target": "tick",
+        "first_rows_exact": 256,
+        "copy_width": 512,
+        "original_free_exit_coordinates": 171,
+        "rows_in_direct_sum": 10000000,
+        "true_loss_lower": "3057/50000",
+        "true_loss_upper": "6529/100000",
+        "tail_allowance_upper": "207/50000",
+        "mean_square_tail_upper": "31103393/100000"
+      }
+    ],
+    "selection": [
+      "constant both rounded candidate tables reproduced",
+      "tick both rounded candidate tables reproduced"
+    ]
+  },
+  "scope": "The global physical lower bounds at width 256 use rational finite dual observations annihilating every free exit for all exact-head fits. Width 512 upper bounds use explicit rational coefficients, a rigorous periodic covariance tail, and the same protected 256 rows. Rational arithmetic and the paper connect the numeric data to the physical fit. The ordinary Lean build checks the stated general theorems.",
+  "open_target": "ProtectedCertificates is proved equivalent to the independent finite-certificate condition and implies stock RiemannHypothesis. The required witnesses at all tolerances are still outstanding. The canonical RH challenge has no successful independent submission on this branch."
+}

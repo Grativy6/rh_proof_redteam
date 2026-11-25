@@ -10,6 +10,20 @@ Pang’s PAL atlas and APCI work on what observations can certify supplied the s
 
 The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf) and [spherical closure](corpus/The_Price_of_Spherical_Closure.pdf), with a [worked elliptic-curve comparison](receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md).
 
+## Constructing a route from PAL
+
+Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
+
+Two finite sums now count only the positive or only the negative fourth-power readings. Both have to grow at least logarithmically. Either may furnish an arbitrarily late small checkpoint, and the allowed sign can change. An elementary comparison places the entire weighted signed difference between 0 and 7 at every cutoff. [Derivation and first sign crossing](pal-rh/what-the-two-signs-cost-together.md) · [Exact conditional Lean theorem](pal-rh/PALRH/FourthAccounts.lean)
+
+In a frame of side $H$, the difference between its last two row errors is exactly twice the number it carried forward. That reading takes both signs infinitely often on fourth-power frames. A one-sided size law at fourth-power frames would imply RH. [Read the two-row proof](pal-rh/what-the-last-two-rows-carry.md)
+
+The same finite Möbius list now generates the next square. Its total error falls at sides 4, 8, 32 and 512. An off-line zero would force every sufficiently late step of this sequence to increase, even if only the first square of physical rows is measured. [How the list passes forward](pal-rh/the-balanced-newton-handoff.md) · [Why repeated drops would count](pal-rh/when-a-drop-would-count.md)
+
+At side 1024, the rough integers with only old prime factors contribute −16,226. The exact subtotal with one larger prime is +16,097. A square matrix using only the earlier signs recovers their total, −129. [The signed matrix and its source](pal-rh/the-signed-matrix-inside-a-square.md) · [How much prime depth can be omitted](pal-rh/where-prime-depth-can-stop.md)
+
+The upper half of that square can be paid from a measured earlier window. At cofactor five, even excellent one-dimensional side prices can hide a large negative joint reading. Opening 5 flattens that boundary on the same labels, with a calculable change in the full-period cost. [The boundary test and repair](pal-rh/what-the-fifth-boundary-needs.md) · [Signed doubling-window theorem](pal-rh/what-the-next-octave-costs.md) · [The original two-clock flow](pal-rh/what-five-carries.md) · [What averaging pays for across the entire square](pal-rh/averaging-the-square.md)
+
 ## Audit findings
 
 **Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. A two-row identity halves the release’s Bernoulli cutoff for arbitrary odd conductor. [The class at 17](proofs/the-order-seventeen-class-at-conductor-64.md) · [General proof](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md)
