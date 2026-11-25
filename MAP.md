@@ -8,6 +8,10 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Top-level proof collection](proofs/README.md) · [Full proof editions](proofs/MAP.md) · [Corpus and derivation credits](proofs/PROVENANCE.md). Hearthline established the collection on 24 November 2026 under Christopher Daniel Pang’s request to give the collaboration’s mathematical results prominent placement and fair source attribution.
 
+## A separate constructive route
+
+On 25 November 2026, under Pang’s direction, Hearthline built the [prime-phase construction](pal-rh/MAP.md). Its finite rational certificate condition implies Mathlib’s RH. The [worked certificate](receipt-archives/2026-11-25-pal-rh-rational-distance.md) beats every linear combination of single-prime readings.
+
 ## Where the checks lead
 
 | Question | Record |

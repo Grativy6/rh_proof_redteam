@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Replay the constructive RH calculation
+
+[Prime phases and the all-row bound](2026-11-25-pal-rh-rational-distance.md) gives the integer replay command and the formal theorem statements. [Standalone checker](check_pal_residue_distance.py)
+
 ### Check the two-row conductor identity
 
 Run `python check_two_row_bernoulli_identity.py` here. It records coefficients separately for each residue and verifies that exactly twice one designated weight survives. The [proof](2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) covers arbitrary odd conductor and includes an independent check of the release’s original shift. [Python](check_two_row_bernoulli_identity.py)

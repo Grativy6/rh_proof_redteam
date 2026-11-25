@@ -10,6 +10,10 @@ Pang’s PAL atlas and APCI work on what observations can certify supplied the s
 
 The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf) and [spherical closure](corpus/The_Price_of_Spherical_Closure.pdf), with a [worked elliptic-curve comparison](receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md).
 
+## Constructing a route from PAL
+
+[Prime phases and a finite rational condition for RH](pal-rh/README.md) starts from Pang’s question about which distinctions survive a projection. One four-row calculation identifies the carry from two prime phases. The branch includes a conditional proof against stock Mathlib and an explicit numerical witness checked with integer arithmetic. [Branch map](pal-rh/MAP.md)
+
 ## Audit findings
 
 **Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. A two-row identity halves the release’s Bernoulli cutoff for arbitrary odd conductor. [The class at 17](proofs/the-order-seventeen-class-at-conductor-64.md) · [General proof](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md)
