@@ -18,6 +18,7 @@ The papers state their own conclusions and the scope of their application to the
 | Where does the first unpaired point enter? | [A determinant inside the disappearing sum](the-first-unpaired-theta-term.md) · [The seven directions recovered by the second digit](the-two-digit-theta-rank.md) |
 | What changes when an equilateral triangle is given unequal weights? | [The cut, the actual $E_8$ roots and the unrestricted vector optimum](three-weighted-triangle-optima.md) |
 | What does the golden ratio do at a lattice boundary? | [An exact golden cycle and the rational boundary limits](golden-and-rational-boundary-limits.md) |
+| What can still be detected after the auxiliary prime goes quiet? | [Both classes on global commutators](why-the-auxiliary-prime-loses-both-classes.md) · [A fifth-power residue and its lift](a-fifth-power-at-eleven-and-the-missing-digit.md) |
 | What can an intersection lose when information passes between components? | [The missing determinant coefficient](two-determinant-tests-at-a-component-intersection.md) · [Exactly which deformations the subgroup trace loses](the-trace-kernel-on-the-cyclotomic-subgroup.md) |
 | Which individual prime is built in the original Lean release? | [The authors’ 116-digit prime and the three-case audit of its norm formula](the-three-prime-norms-in-the-released-example.md) |
 | Can a linked flag hide in one ordinary line? | [One line through every congruence level](one-ordinary-line-through-all-congruence-levels.md) · [What monodromy adds to identical finite readings](two-linked-flags-with-identical-finite-readings.md) |
@@ -26,7 +27,7 @@ The papers state their own conclusions and the scope of their application to the
 | Can a local map erase information that another reading recovers? | [What the distinguished-prime projector retains](distinguished-prime-projector.md) · [The reciprocal parameters](recovering-the-inert-spherical-parameter.md) · [The mixed trace that sees the change](finite-trace-test-at-an-irreducible-point.md) |
 | Where did the original geometry objection lead? | [An asymmetric mixed intersection](asymmetric-mixed-intersection.md) · [The section-growth countertheorem](section-growth-of-the-geometry-witness.md) |
 
-The [proof map](MAP.md) lists all 48 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
+The [proof map](MAP.md) lists all 50 full reading editions by subject. The [companion index](companion-results.md) leads to the other mathematical derivations and case calculations. Scripts, certified data, source pins and run commands are in the [receipt archive](../receipt-archives/README.md).
 
 ## Unresolved
 

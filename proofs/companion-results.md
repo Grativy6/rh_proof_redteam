@@ -1,8 +1,10 @@
 # Companion derivations and checks
 
-The [main proof collection](README.md) presents 48 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
+The [main proof collection](README.md) presents 50 full reading editions. These dated records develop the supporting arithmetic, give independent checks, and document where further tests are needed. The last section identifies external reviews and software controls. Christopher Daniel Pang’s PAL corpus supplied the audit method. The [contribution record](PROVENANCE.md) connects the originating work to its public editions.
 
 The [elliptic curves attached to the two May corpus papers](../receipt-archives/2026-11-24-four-branch-points-and-the-primes-that-see-the-twist.md) give a worked comparison of a rational quotient, prime counts and isogenous curves.
+
+The [auxiliary-prime rank bound](../receipt-archives/2026-11-25-why-the-auxiliary-prime-loses-both-classes.md) uses one earlier field layer to prove that the prime loses both local readings. The [quintic example](../receipt-archives/2026-11-25-a-fifth-power-at-eleven-and-the-missing-digit.md) tests 11, 307, 701 and Pang’s 2663. [Certificate](../receipt-archives/check_auxiliary_prime_residue.gp)
 
 ## Maps, fields and integral frames
 

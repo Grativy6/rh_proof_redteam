@@ -4,6 +4,10 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+### Replay the auxiliary-prime calculation
+
+Run `gp -fq check_auxiliary_prime_residue.gp` here with PARI/GP 2.15 or later. It checks the quintic identity, both residue fields at 11, the ray groups at 11 and 701, the class group after tame base change, and the Frobenius readings at 307 and 2663. The [general rank bound](2026-11-25-why-the-auxiliary-prime-loses-both-classes.md) and the [lifting obstruction](2026-11-25-a-fifth-power-at-eleven-and-the-missing-digit.md) include the proofs. [Calculation file](check_auxiliary_prime_residue.gp)
+
 ### Check the component equations and the trace kernel
 
 Run `python -B check_component_and_dual_trace.py` from this archive. It checks the finite polynomial models, the tangent through two truncations, and the space of trace-zero derivations for block sizes two and one over two fields. The formal local and Galois conclusions are proved in the [component calculation](2026-11-25-two-determinant-tests-at-a-component-intersection.md) and the [trace proof](2026-11-25-the-trace-kernel-on-the-cyclotomic-subgroup.md). [Credits and digests](2026-11-25-proof-collection-component-supplement.json)

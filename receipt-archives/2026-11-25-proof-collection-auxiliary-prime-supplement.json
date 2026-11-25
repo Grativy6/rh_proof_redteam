@@ -1,0 +1,62 @@
+{
+  "assembled_local_date": "2026-11-25",
+  "recorded_utc_date": "2026-11-25",
+  "research_program": "Christopher Daniel Pang, PAL. Derivations with Hearthline.",
+  "corpus_manifest": "receipt-archives/2026-11-24-proof-collection-provenance.json",
+  "corpus_manifest_sha256": "28535beb972d76a46f4454f6b8ed0aa7452940a7c086d300be3322fe59d837a3",
+  "upstream_argument": {
+    "description": "Levent Alpöge and Claude, 20 November 2026 release",
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+  },
+  "preceding_supplement": "receipt-archives/2026-11-25-proof-collection-component-supplement.json",
+  "preceding_supplement_sha256": "6ba822ebda2a0546c40cb7f0ccc30e18eb8cfb427750a411790ca88b06d2a428",
+  "corpus_files": [
+    {
+      "path": "corpus/Shadow_Lattice_and_Dispersal_Lattice.pdf",
+      "sha256": "55eb702249a3cfe8d690d13f5695b5aefc2d17d5c18082b565c7b1f9bd2d05c3"
+    },
+    {
+      "path": "corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx",
+      "sha256": "a27603bab38275942df7eb846e028a079ce04234cd1fe3a9102a320cd51e19e4"
+    },
+    {
+      "path": "corpus/APCI_Declared_Interface_v1.0.0.docx",
+      "sha256": "2068b0f359c32077989ed777d77520f3d8ee367c6cd705cd9ca6da39d0459c30"
+    }
+  ],
+  "reading_editions": [
+    {
+      "reading_edition": "proofs/why-the-auxiliary-prime-loses-both-classes.md",
+      "result": "A ray-class lower bound forces the chosen layer to kill both residual Frobenius readings at the auxiliary prime. The same two independent classes survive globally on explicit commutators.",
+      "dated_receipt": "receipt-archives/2026-11-25-why-the-auxiliary-prime-loses-both-classes.md",
+      "corpus_editions": [
+        "Shadow Lattice and Dispersal Lattice",
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Christopher Daniel Pang asked where the residue of a local observation goes under a change of arithmetic frame. His May shadow-lattice paper and PAL/APCI supplied this comparison.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the auxiliary frame, rank bound, two coefficient characters and component argument. Hearthline derived the lower bound for each permitted witness, the local vanishing at the selected layer and a separate ray-class construction of both required global cocycles.",
+      "check": "receipt-archives/check_auxiliary_prime_residue.gp",
+      "reading_edition_sha256": "1fc37b6d73f3745b7c061dd4ff76bc77cc2b576ff1ce1d9d11fd0d63e4beed46",
+      "receipt_sha256": "381d12c1e90ce7e79344ce95becc0c84cdcc6485a4b7b8f401124298ca46ddb3",
+      "check_sha256": "eddb255b98e0a4413f28f58711f7e5e914545bbf9fc2b598530cba132bfd4ea8"
+    },
+    {
+      "reading_edition": "proofs/a-fifth-power-at-eleven-and-the-missing-digit.md",
+      "result": "Two quintic polynomials give a fifth power equal to 5 in the residue field at 11. A mod-25 lift of the downstairs ray class keeps a nonzero inertia value on allowed full-seed examples.",
+      "dated_receipt": "receipt-archives/2026-11-25-a-fifth-power-at-eleven-and-the-missing-digit.md",
+      "corpus_editions": [
+        "Shadow Lattice and Dispersal Lattice",
+        "PAL",
+        "APCI"
+      ],
+      "originating_question_or_method": "Pang asked for the residue on the residue and proposed testing prime 2663. His shadow-lattice paper prompted tracking both inertia and Frobenius through successive field changes.",
+      "proof_inputs_and_release_role": "Alpöge and Claude supply the residual coefficient and seed conditions. Hearthline identified the quadratic ray class, derived the local uniformizer calculation and lifting obstruction, and used PARI/GP to obtain a quintic and check exact certificates. The ray class and cyclotomic inputs are classical.",
+      "check": "receipt-archives/check_auxiliary_prime_residue.gp",
+      "reading_edition_sha256": "0316d46ad33b433a2a64edbfe70c0165cc7db8341a145cb718309a2ebbdf9036",
+      "receipt_sha256": "9c478725b9b0f637c8799ddcce802e02827089e72e57eaf229cc3e30df8ed721",
+      "check_sha256": "eddb255b98e0a4413f28f58711f7e5e914545bbf9fc2b598530cba132bfd4ea8"
+    }
+  ]
+}

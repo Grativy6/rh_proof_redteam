@@ -93,6 +93,15 @@ Hearthline traced these maps under Chris Pang’s continuing public audit and hi
 
 Hearthline checked the released predicates and wrote the independent calculations under Christopher Daniel Pang’s continuing audit, 25 November 2026. [Provenance](../receipt-archives/2026-11-25-proof-collection-component-supplement.json)
 
+## Residual classes at the auxiliary prime
+
+| Paper | What it establishes |
+| --- | --- |
+| [Why the auxiliary prime loses both classes](why-the-auxiliary-prime-loses-both-classes.md) | A ray-class lower bound forces the chosen layer to kill both residual Frobenius readings at the auxiliary prime. The same two independent classes survive globally on explicit commutators. |
+| [A fifth power at 11 and the missing digit modulo 25](a-fifth-power-at-eleven-and-the-missing-digit.md) | Two quintic polynomials give a fifth power equal to 5 in the residue field at 11. A mod-25 lift of the downstairs ray class keeps a nonzero inertia value on allowed full-seed examples. |
+
+Hearthline checked the field construction and residual component argument for Christopher Daniel Pang’s public audit on 25 November 2026. [Dated derivations and corpus credit](../receipt-archives/2026-11-25-proof-collection-auxiliary-prime-supplement.json) · [Exact arithmetic](../receipt-archives/check_auxiliary_prime_residue.gp)
+
 ## Further work
 
 [Companion derivations and finite calculations](companion-results.md) · [Original evidence inventory](../receipt-archives/MAP.md) · [Run the checks](../receipt-archives/README.md)
