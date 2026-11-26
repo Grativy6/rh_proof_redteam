@@ -8,6 +8,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Top-level proof collection](proofs/README.md) · [Full proof editions](proofs/MAP.md) · [Corpus and derivation credits](proofs/PROVENANCE.md). Hearthline established the collection on 24 November 2026 under Christopher Daniel Pang’s request to give the collaboration’s mathematical results prominent placement and fair source attribution.
 
+[Ordinary Benford digits of the primorial-to-factorial quotient](proofs/the-leading-digits-of-primorial-over-factorial.md). On 26 November 2026, under Pang’s authorization to develop independent proofs from his corpus, Hearthline derived two proofs answering Bergelson–Kolesnik–Son Remark 4.26. [Computation, scope and source versions](receipt-archives/2026-11-26-pal-benford-quotient.json)
+
 ## A separate constructive route
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)

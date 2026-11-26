@@ -10,6 +10,8 @@ Pang’s distinction between an earned transfer and a new unpriced copy suggeste
 
 Pang’s fixed accounting unit and requirement to carry every source of error determined the finite target. Hearthline derived its slab estimates using Büthe’s smoothed formula, Johnston’s inequalities and the Platt–Trudgian finite zero height. [Parameters, sources and range](paying-the-next-full-prime-board.md)
 
+Pang supplied the PAL/RPL requirement to retain a block’s actual incoming state and directed the investigation of prime products and factorials. Hearthline developed the ordinary-density proof and the separate variation bound. Bergelson, Kolesnik and Son posed this canceling case and proved its log-weighted version. Massé and Schneider established the primorial baseline. Dusart and Johnston–Yang supply classical prime estimates. [Proof, exact contributions and scope](the-leading-digits-of-primorial-over-factorial.md)
+
 Pang supplied the turn, its retained place and the APCI control asking whether another stream can give the same reading. Hearthline derived the prime-lane polynomial estimate and the slow arc theorem. The proof credits the classical Kuzmin–Landau argument, Montgomery and Vaughan’s interval sieve and Massé and Schneider’s earlier primorial theorem. [Quantitative derivation](../pal-rh/prime-lane-polynomials.md)
 
 Pang asked that the sign be turned both ways while retaining the physical ordering. Hearthline derived the opposite bound on the same alternating divisor read, its power-scale recovery, and both formal signed implications. [The reading and its transfers](why-either-side-of-the-pocket-is-enough.md)

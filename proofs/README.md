@@ -2,6 +2,10 @@
 
 **These results grew out of Christopher Daniel Pang’s PAL corpus.** Pang originated the research questions and directed the work. Hearthline developed and wrote the derivations with him. The [contribution record](PROVENANCE.md) gives independent publication dates and explains exactly where the Alpöge–Claude release enters each proof.
 
+## A leading-digit question answered on paper
+
+For the product of the first $n$ primes divided by $n!$, the ordinary fraction beginning with decimal digit 1 tends to $\log_{10}2$. Two arguments cover every nonzero real power and base. This resolves the case asked about in Remark 4.26 of Bergelson, Kolesnik and Son’s cited preprint, and yields ordinary joint Benford behavior for factorials and primorials. [Read the self-contained proof](the-leading-digits-of-primorial-over-factorial.md) · [Source question](https://arxiv.org/pdf/2509.19722v2#page=35)
+
 ## Start with the lattice reconstruction theorem
 
 **In every dimension, a marked table of shortest squared lengths at level $N\ge4$ determines the whole positive-definite lattice metric.** For each residue label $c$, the table gives a number $d(c)$. Look for the labels with $d(2c)=4d(c)$. Each has one shortest representative. Those representatives generate the lattice, and the readings of their sums recover every mutual inner product. The proof includes a small numerical example and the extension to rational radicals. [Read the doubling proof](marked-lattice-reconstruction.md)

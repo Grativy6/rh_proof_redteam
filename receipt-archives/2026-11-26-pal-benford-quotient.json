@@ -1,0 +1,515 @@
+{
+  "parent_public_research_commit": "7c27a0fcad8a1e93ede05cec3abfffd5995b0559",
+  "parent_tree": "9a56befd66fe08fa8b3e10bc73f8895308c67ee4",
+  "contributors": "Christopher Daniel Pang supplied the PAL/RPL retained-phase research direction and the prime/factorial comparison. Hearthline developed the mathematical proof, quantitative strengthening and finite implementation. Bergelson, Kolesnik and Son posed the named canceling case and proved the log-weighted version; Masse and Schneider established Benford behavior of the primorial itself.",
+  "paper_scope": "For every fixed t != 0 and every base b > 1, (p_n#/n!)^t is Benford for ordinary natural density. The same paper derives a discrepancy O_tau(exp(-c V(N))) uniformly under a fixed linear twist, proves the critical N*abs(tau_N)/log N scale and its explicit limiting curve for the local block test, and obtains ordinary joint Benford behavior of factorials and primorials using the cited noncanceling theorem.",
+  "formal_scope": "The stock-Mathlib-only module proves finite comparison with a geometric progression retaining the incoming phase, summation over exceptional and regular blocks, and the finite reciprocal-weight variation inequality. The complete Benford conclusion and the stated asymptotic rates are proved on paper, and are not claimed as bare formal Lean declarations.",
+  "review": {
+    "type": "author self-review; two mathematical proofs and an independent finite integer replay; no external peer review",
+    "question_transcription": "Checked BKS arXiv:2509.19722v2, Theorem 4.25 and Remark 4.26, page 35. The target is ordinary natural weighting, for t1+t2=0 and a nonzero real pair. It reduces to powers of the primorial divided by n!.",
+    "prime_input": "At y=p_n the two-term expansion of pi gives p_n/n=log(p_n)-1+O(1/log p_n). Replacing log(p_n/n) by the specified smooth reference incurs O(log log n/(log n)^2) per increment. The entire accumulated phase is never replaced by a global approximation.",
+    "first_proof": "Block length (log X)^(3/2), detuning (log X)^(-5/4). Resonant blocks occupy a vanishing fraction, the geometric progression mean is small, and the true phase error accumulated within a regular block tends to zero. Block origins stay exact.",
+    "other_proof": "The logarithmic variation of the true increment is bounded by the telescoping prime and index ranges even when the ratio falls or crosses ten repeatedly. The smooth reference bounds the number of short resonant intervals. Reciprocal weights estimate actual phases on their complement.",
+    "quantitative": "The inverse logarithmic integral has derivative giving d(log(Y/t))/dt ~ 1/(t log t). The unconditional PNT remainder allows harmonic growth exp(aV/8), excluded neighborhoods exp(-aV/4), and normalized bounds exp(-aV/5). The small lower half of the index scale and the sum over dyadic blocks stay below these bounds.",
+    "critical_scale": "The dyadic subinterval supremum includes arbitrary linear twist. For N*abs(tau_N)/log N unbounded with limit infinity the block construction remains valid; on a bounded subsequence center on the actual factor p_N/N and use a fixed positive fraction of the dyadic interval to prevent cancellation. The critical profile uses the integral of log v.",
+    "failure_control": "On sparse dyadic intervals forcing smooth increments to the nearest selected integer changes each by O(1/log n) yet makes the accumulated phase constant on a positive-length fraction of those scales. Thus a rough first-order surrogate would not justify the same proof.",
+    "scope_control": "Index n counts prime arrivals, not every integer cutoff. Multiplication by exp(c n) preserves the all-base Benford conclusion while adding a linear unwrapped drift. This result alone cannot pay the RH bound.",
+    "priority": "The comparison to the named remark and the earlier primorial result is source-specific. A bounded literature search is not a worldwide priority claim."
+  },
+  "primary_sources": {
+    "question_v2": "https://arxiv.org/pdf/2509.19722v2#page=35",
+    "primorial_prior": "https://doi.org/10.4064/aa163-1-4",
+    "classical_prime_estimate": "https://arxiv.org/pdf/1002.0442",
+    "strong_error": "https://arxiv.org/pdf/2204.01980",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3847
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.BenfordBlocks",
+      "exit": 0,
+      "seconds": 9.5,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.BenfordBlocks.reciprocal_change": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.BenfordBlocks.local_trace": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.BenfordBlocks.one_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.BenfordBlocks.block_collection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "samples": [
+      {
+        "N": 4096,
+        "last_prime": 38873,
+        "primorial": {
+          "counts": [
+            1222,
+            721,
+            498,
+            395,
+            319,
+            302,
+            261,
+            201,
+            177
+          ],
+          "star_discrepancy": [
+            "0.0097936853",
+            "0.0097936854"
+          ]
+        },
+        "primorial_divided_by_factorial": {
+          "counts": [
+            1236,
+            718,
+            509,
+            395,
+            331,
+            277,
+            235,
+            210,
+            185
+          ],
+          "star_discrepancy": [
+            "0.0040722819",
+            "0.0040722820"
+          ]
+        }
+      },
+      {
+        "N": 8192,
+        "last_prime": 84017,
+        "primorial": {
+          "counts": [
+            2437,
+            1441,
+            1021,
+            797,
+            622,
+            602,
+            490,
+            424,
+            358
+          ],
+          "star_discrepancy": [
+            "0.0078900946",
+            "0.0078900947"
+          ]
+        },
+        "primorial_divided_by_factorial": {
+          "counts": [
+            2429,
+            1585,
+            1036,
+            783,
+            636,
+            529,
+            445,
+            401,
+            348
+          ],
+          "star_discrepancy": [
+            "0.0204162504",
+            "0.0204162505"
+          ]
+        }
+      },
+      {
+        "N": 65536,
+        "last_prime": 821641,
+        "primorial": {
+          "counts": [
+            19723,
+            11479,
+            8135,
+            6416,
+            5190,
+            4398,
+            3880,
+            3339,
+            2976
+          ],
+          "star_discrepancy": [
+            "0.0029487270",
+            "0.0029487271"
+          ]
+        },
+        "primorial_divided_by_factorial": {
+          "counts": [
+            19679,
+            11701,
+            8198,
+            6307,
+            5191,
+            4343,
+            3820,
+            3313,
+            2984
+          ],
+          "star_discrepancy": [
+            "0.0029012702",
+            "0.0029012703"
+          ]
+        }
+      },
+      {
+        "N": 262144,
+        "last_prime": 3681131,
+        "primorial": {
+          "counts": [
+            78985,
+            46141,
+            32746,
+            25266,
+            20824,
+            17581,
+            15233,
+            13412,
+            11956
+          ],
+          "star_discrepancy": [
+            "0.0014955922",
+            "0.0014955923"
+          ]
+        },
+        "primorial_divided_by_factorial": {
+          "counts": [
+            78909,
+            46361,
+            32691,
+            25403,
+            20831,
+            17407,
+            15339,
+            13333,
+            11870
+          ],
+          "star_discrepancy": [
+            "0.0011655754",
+            "0.0011655755"
+          ]
+        }
+      }
+    ],
+    "centered_dyadic_phases": [
+      {
+        "start": 1024,
+        "samples": [
+          {
+            "t": "1",
+            "actual_centered_phase": [
+              "0.0000000000",
+              "0.0000000000"
+            ],
+            "limiting_curve": [
+              "0.0000000000",
+              "0.0000000000"
+            ]
+          },
+          {
+            "t": "5/4",
+            "actual_centered_phase": [
+              "0.0217728749",
+              "0.0217728750"
+            ],
+            "limiting_curve": [
+              "0.0289294391",
+              "0.0289294392"
+            ]
+          },
+          {
+            "t": "3/2",
+            "actual_centered_phase": [
+              "0.0935925736",
+              "0.0935925737"
+            ],
+            "limiting_curve": [
+              "0.1081976621",
+              "0.1081976622"
+            ]
+          },
+          {
+            "t": "7/4",
+            "actual_centered_phase": [
+              "0.2028927643",
+              "0.2028927644"
+            ],
+            "limiting_curve": [
+              "0.2293276288",
+              "0.2293276289"
+            ]
+          },
+          {
+            "t": "2",
+            "actual_centered_phase": [
+              "0.3421852689",
+              "0.3421852690"
+            ],
+            "limiting_curve": [
+              "0.3862943611",
+              "0.3862943612"
+            ]
+          }
+        ]
+      },
+      {
+        "start": 4096,
+        "samples": [
+          {
+            "t": "1",
+            "actual_centered_phase": [
+              "0.0000000000",
+              "0.0000000000"
+            ],
+            "limiting_curve": [
+              "0.0000000000",
+              "0.0000000000"
+            ]
+          },
+          {
+            "t": "5/4",
+            "actual_centered_phase": [
+              "0.0278170628",
+              "0.0278170629"
+            ],
+            "limiting_curve": [
+              "0.0289294391",
+              "0.0289294392"
+            ]
+          },
+          {
+            "t": "3/2",
+            "actual_centered_phase": [
+              "0.1021957597",
+              "0.1021957598"
+            ],
+            "limiting_curve": [
+              "0.1081976621",
+              "0.1081976622"
+            ]
+          },
+          {
+            "t": "7/4",
+            "actual_centered_phase": [
+              "0.2167728281",
+              "0.2167728282"
+            ],
+            "limiting_curve": [
+              "0.2293276288",
+              "0.2293276289"
+            ]
+          },
+          {
+            "t": "2",
+            "actual_centered_phase": [
+              "0.3634156232",
+              "0.3634156233"
+            ],
+            "limiting_curve": [
+              "0.3862943611",
+              "0.3862943612"
+            ]
+          }
+        ]
+      },
+      {
+        "start": 32768,
+        "samples": [
+          {
+            "t": "1",
+            "actual_centered_phase": [
+              "0.0000000000",
+              "0.0000000000"
+            ],
+            "limiting_curve": [
+              "0.0000000000",
+              "0.0000000000"
+            ]
+          },
+          {
+            "t": "5/4",
+            "actual_centered_phase": [
+              "0.0276152734",
+              "0.0276152735"
+            ],
+            "limiting_curve": [
+              "0.0289294391",
+              "0.0289294392"
+            ]
+          },
+          {
+            "t": "3/2",
+            "actual_centered_phase": [
+              "0.1022545422",
+              "0.1022545423"
+            ],
+            "limiting_curve": [
+              "0.1081976621",
+              "0.1081976622"
+            ]
+          },
+          {
+            "t": "7/4",
+            "actual_centered_phase": [
+              "0.2161533763",
+              "0.2161533764"
+            ],
+            "limiting_curve": [
+              "0.2293276288",
+              "0.2293276289"
+            ]
+          },
+          {
+            "t": "2",
+            "actual_centered_phase": [
+              "0.3628378349",
+              "0.3628378350"
+            ],
+            "limiting_curve": [
+              "0.3862943611",
+              "0.3862943612"
+            ]
+          }
+        ]
+      },
+      {
+        "start": 131072,
+        "samples": [
+          {
+            "t": "1",
+            "actual_centered_phase": [
+              "0.0000000000",
+              "0.0000000000"
+            ],
+            "limiting_curve": [
+              "0.0000000000",
+              "0.0000000000"
+            ]
+          },
+          {
+            "t": "5/4",
+            "actual_centered_phase": [
+              "0.0267967464",
+              "0.0267967465"
+            ],
+            "limiting_curve": [
+              "0.0289294391",
+              "0.0289294392"
+            ]
+          },
+          {
+            "t": "3/2",
+            "actual_centered_phase": [
+              "0.1014375162",
+              "0.1014375163"
+            ],
+            "limiting_curve": [
+              "0.1081976621",
+              "0.1081976622"
+            ]
+          },
+          {
+            "t": "7/4",
+            "actual_centered_phase": [
+              "0.2148738137",
+              "0.2148738138"
+            ],
+            "limiting_curve": [
+              "0.2293276288",
+              "0.2293276289"
+            ]
+          },
+          {
+            "t": "2",
+            "actual_centered_phase": [
+              "0.3609870878",
+              "0.3609870879"
+            ],
+            "limiting_curve": [
+              "0.3862943611",
+              "0.3862943612"
+            ]
+          }
+        ]
+      }
+    ],
+    "independent_exact_integer_leading_digits": 512,
+    "exact_endpoint_fallbacks": 6,
+    "resonance_interval": {
+      "first_index": 4096,
+      "last_index": 8192,
+      "decreasing_p_over_n_steps": 2237,
+      "crossings_of_p_over_n_equal_ten": [
+        6455,
+        6458,
+        6459,
+        6461,
+        6466,
+        6467,
+        6473
+      ]
+    }
+  },
+  "cached_primary_source_hashes": {
+    "Bergelson_Kolesnik_Son_v2": {
+      "url": "https://arxiv.org/pdf/2509.19722v2",
+      "bytes": 552554,
+      "sha256": "5923d4b47fea15a6f61ab9d6d64e2218bbfb1f03b3f164ba953cbe26e8dea11b"
+    },
+    "Masse_Schneider": {
+      "url": "https://www.impan.pl/shop/en/publication/transaction/download/product/82868",
+      "bytes": 387249,
+      "sha256": "950ef1d237e399b23e4bdfe3ea909a16c2db9b870b8a3fce8dd90708b8fb5f42"
+    },
+    "Dusart": {
+      "url": "https://arxiv.org/pdf/1002.0442",
+      "bytes": 233779,
+      "sha256": "3f11eca84613ad00e6a447f99b318d5c3d76e360283efcc6d3eebdda25ff3923"
+    },
+    "Johnston_Yang": {
+      "url": "https://arxiv.org/pdf/2204.01980",
+      "bytes": 278380,
+      "sha256": "565993a6def48b237a68a92acba604f2c42f99165e0e71e390f8e21a313b74b2"
+    }
+  },
+  "sha256_sources": {
+    "proofs/the-leading-digits-of-primorial-over-factorial.md": "d16bc9fc5d9eb9094b0de4f0a96080e628f0feb16144d613ae6786f812d81f8c",
+    "pal-rh/PALRH/BenfordBlocks.lean": "c8d4310a4335f3c5183d4fd0e0abc5075ae611dc5187c47c549690f64c628d3a",
+    "pal-rh/lakefile.toml": "04a2d3fbdb9979001e96e16ecf83c27294377d4a3e23b7e9872b5683a8a548cc",
+    "receipt-archives/check_pal_benford_quotient.py": "a79c4c8f16bdbcc7d041dc011db3e7687ed460b56149b9aafdfa20df2d39a34a",
+    "receipt-archives/pal_product_clock.py": "a4e5a383c31ed83facd11442a791d19cd781222ef17c0ab2ceacfca9f1f7d66e",
+    "receipt-archives/check_pal_returned_horizon.py": "380ff2ea0bf0b90f9c1782b7a8d5217ce0ce942c48d888afbd0e912914eef115",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_dense_square_payment.py": "56d7e473f05a9808f1a54cc10a5dfba4b23fdd72eb63e8abb2c127aa3c67ac0e",
+    "receipt-archives/2026-11-26-pal-lane-phase.json": "b49cae56966bc54f8bcd54082b8005879878ff6f122c6acbc67a50a9ae51bcf3",
+    "pal-rh/CORPUS-ROUTES.md": "9199673df86082af53a995fcfbd9fcf729351bdbf4d4dd6d1aa3ab3ab9c77871"
+  }
+}

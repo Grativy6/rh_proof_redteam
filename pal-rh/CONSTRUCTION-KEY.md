@@ -55,6 +55,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 **Finite range earned, 26 November 2026.** Price the low and middle known zeros, the unrestricted higher zeros, the unsmoothing and the repeated powers in the same row. All of index 22 and the first half of index 23 fit the actual original target. The quantified all-board inequality is still outstanding. [Complete arithmetic](../proofs/paying-the-next-full-prime-board.md)
 
+**Independent result from the prime and factorial phases, 26 November 2026.** For the primorial divided by the ordinary factorial, the next multiplier is $p_n/n$. A second-order estimate distinguishes a shrinking near-resonant part of each dyadic range. Preserve the actual starting phase of every remaining block. This gives ordinary Benford behavior, including the case asked about in Remark 4.26. The independent RH objective remains the all-board arithmetic bound. [Full proof](../proofs/the-leading-digits-of-primorial-over-factorial.md)
+
 **Fast and slow turns, 26 November 2026.** Every fast nonzero lane harmonic has an unconditional root-scale bound on prime arrivals. A whole added column is invisible at that speed. On the slower circle, bounded jumps prevent changing the lift inside the observed arc. The all-board arc estimate is open. [Proof and an actual separating cut](../proofs/a-square-root-signal-that-forgets-a-turn.md)
 
 **Either orientation in Lean, 26 November 2026.** The verified implication now takes only upper surplus, only lower shortage, or only a family of distinct timely placements. The paired divisor reading recovers a two-sided logarithmic primitive from the chosen one-sided input. [Mathematics and status](../proofs/why-either-side-of-the-pocket-is-enough.md)

@@ -4,6 +4,8 @@
 
 On 24 November 2026 Christopher D. Pang asked to bring the project’s independent proofs to the front of the public repository. Hearthline assembled these reader editions under that authorization. Each links to its dated source and checks. The [collection introduction](README.md) starts with the doubling theorem. The [contribution record](PROVENANCE.md) gives Pang’s independently dated corpus, per-paper attribution and the role of the upstream release.
 
+[Ordinary Benford leading digits in the canceling case](the-leading-digits-of-primorial-over-factorial.md). Hearthline derived the block and variation proofs under Pang’s carry-and-return research program on 26 November 2026. The full theorem is proved on paper. [Finite Lean machinery](../pal-rh/PALRH/BenfordBlocks.lean) · [Reproduction and review](../receipt-archives/2026-11-26-pal-benford-quotient.json)
+
 ## Independent constructive branch
 
 [One thirteenth on every returned strip](one-thirteenth-of-a-returned-layer.md). Hearthline derived the fixed-budget criterion from Pang’s trace and return under the active research key, 26 November 2026. [Exact small cases, formal forward implication and classical reverse bound](../pal-rh/why-one-thirteenth-is-enough.md)
