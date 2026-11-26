@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[One quantity at each fourth power](one-quantity-at-each-fourth-power.md) gives the exact scalar, a hand example, its conditional implication to stock RH and the proved positive interval through two trillion. The [prediction from earlier blocks](../pal-rh/what-two-neighboring-blocks-predict.md) identifies exactly which two details a new sample adds.
+
 [What a positive reference must lose](what-a-positive-reference-must-lose.md) rules out an entire class of unsigned bounds and gives a sign-preserving payment on actual smooth rays.
 
 [Two prime families can carry the full local price](two-prime-families-carry-the-full-price.md) gives an all-label reduction to primes and five times primes. The calculation at $100^4$ retains less than 0.588% of the absolute weight, and a separate construction shows why small fractions alone cannot deliver the global estimate.

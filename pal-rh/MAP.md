@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [One-head primitive](../proofs/one-quantity-at-each-fourth-power.md) · [Two neighboring blocks](what-two-neighboring-blocks-predict.md) · [Stock reduction](PALRH/OneHeadPhysical.lean) | A lower floor at the doubled fourth powers suffices. Every real input through two trillion is covered. Four stored primitive values predict a new sample within a root-size allowance. |
 | [Forced inverse on prime multiples](../proofs/what-a-positive-reference-must-lose.md) · [Lean](PALRH/ReferencePrice.lean) | Nonnegative profiles lose a linear margin under unsigned pricing. The actual signed source pays all covered negatives and gives a growing credit for the remaining rays. |
 | [The entire local stream on two prime supports](../proofs/two-prime-families-carry-the-full-price.md) | Every sufficiently late block has a capacity-limited allocation onto $q$ and $5q$. The unspent fractions retain the five original signed moments. A hostile choice satisfying the same size estimates fails the global floor. |
 | [Positive large-prime surplus](../proofs/why-one-large-prime-leaves-nine.md) · [Ordinary zeta slope](PALRH/LargePrimeSurplus.lean) | The eligible family carries $+9L/\log^2Y$ to leading order. Its macroscopic complement carries the opposite term. A single positive semiprime family eventually supports all remaining five moments of the eligible family. |

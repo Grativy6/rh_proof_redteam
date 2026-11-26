@@ -1,0 +1,22 @@
+{
+  "challenge_module": "OneHeadChallenge",
+  "solution_module": "OneHeadSolution",
+  "theorem_names": [
+    "primitiveFourthReduction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

@@ -1,0 +1,4557 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang supplied the PAL and RPL retained-layer and direction questions. Hearthline derived the single-head reduction, next-block identity, cofinal positive excursions and continuous finite sign proof under his active research key.",
+  "parent_public_research_commit": "41c2766c4b770f8e987ed8ff43f1c914df4c7101",
+  "parent_tree": "4069a45e6e88446e7b11eb5176b44e7d40377cfa",
+  "sha256_sources": {
+    "proofs/one-quantity-at-each-fourth-power.md": "d2d3d4c868f8d9e1097931bdb8a5c82d69e791095cbff40cf83585c634964e1d",
+    "pal-rh/what-two-neighboring-blocks-predict.md": "df7a10c2e88f4b2c5eff83833dbe936b96d5bafd7bc8fae7a85117d8382f77ee",
+    "proofs/figures/one-head-primitive.png": "236b74cd5acee0a36f85087e2673310402e2598426c8c0d53e752eefbf05c2ef",
+    "pal-rh/PALRH/OneHead.lean": "ca023f811162aac2e086041c713950149259b394ef2211e27f4bde0eeb1f0698",
+    "pal-rh/PALRH/OneHeadSamples.lean": "d1c91098c2097371a09596415e0c2f41b781984ce1b79c597dcfa0dde5254c10",
+    "pal-rh/PALRH/OneHeadPhysical.lean": "a02bd98bb53cbe76481f3acbab5b22fdc554e8ea848420e1cc0ea6c854f494ef",
+    "pal-rh/checks/one-head/OneHeadChallenge.lean": "88d84ca3a6e28d3dea4bb3a0de5cad73efd0935c63492c2ab32cc2c771d37a8c",
+    "pal-rh/checks/one-head/OneHeadSolution.lean": "8ef97c90fa30a1e58e326ef6e42ff725bcb0552adf2abae8dca82b9245502917",
+    "pal-rh/checks/one-head/compare.json": "14290a96072b744a4d733e57cb753957b046bfdca672a68412d0341bb83a4f29",
+    "receipt-archives/fourth_primitive.cpp": "c20061a614575cfac91eb65394e6a80908576ec986e50125806890b296889292",
+    "receipt-archives/check_pal_fourth_primitive.py": "e47716e4d805ec7c443e5cfe993e9118b86b579dd0b1ec7f748cf5f314df4e9b",
+    "receipt-archives/check_pal_primitive_mesh.py": "3ae97f9d2b5ff7747ea55cfa5a6aa2df7d20a99729750c02d690c848893cfcd7",
+    "receipt-archives/plot_pal_primitive_mesh.py": "e811865e19ba1101e98afb8f508231254a65c365fb6e072761096dd7698f63f5",
+    "receipt-archives/export_pal_configured_check.py": "505f3545b2024f05f085ea38ed3d7d3c3580da29ea36707f5e606e5a0a652832",
+    "receipt-archives/cubic_window_moments.cpp": "aad478ccb7504abd31b5a7e1dc1511793123a052d3114f808edf193581265ca5",
+    "receipt-archives/cubic_reciprocal_bounds.hpp": "a0d5ab1b26de3433653bdc18af83fc06ac76603be5824a909e67a56643d88bfa"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "comparator": "4.36.0"
+  },
+  "normal_build_exit": 0,
+  "axioms": {
+    "PALRH.OneHead.rh_of_bank_floors": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.OneHeadSamples.rh_of_bank_fourths": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.OneHeadPhysical.cap_at_head": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.OneHeadPhysical.price_of_primitive": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.OneHeadPhysical.rh_of_primitive_floor": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.OneHeadPhysical.rh_of_primitive_sign": "[propext, Classical.choice, Quot.sound]"
+  },
+  "native_kernel_replays": [
+    {
+      "module": "PALRH.OneHead",
+      "exit": 0,
+      "seconds": 15.7,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneHeadSamples",
+      "exit": 0,
+      "seconds": 15.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneHeadPhysical",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    }
+  ],
+  "independent_fixed_conditional": {
+    "theorem": "primitiveFourthReduction",
+    "reference": "pal-rh/checks/one-head/OneHeadChallenge.lean",
+    "solution": "pal-rh/checks/one-head/OneHeadSolution.lean",
+    "config": "pal-rh/checks/one-head/compare.json",
+    "premise": "Nonnegativity of the explicitly defined ordinary rational primitive at all sufficiently late doubled fourth powers.",
+    "exports": {
+      "challenge": {
+        "bytes": 348304322,
+        "sha256": "eec8f14ddfb6a8ac2cc48b7e9d76ed4e4b7cf25036abea818f3843deb24cef59"
+      },
+      "solution": {
+        "bytes": 433580152,
+        "sha256": "fe65e84b4cb9d5afee675d446e7873333ccb0bdf08c52f1c5a8c0a52f8b1ecbf"
+      }
+    },
+    "clean_reproduction": {
+      "empty_project_build_before": true,
+      "same_stock_package_cache": true,
+      "same_exports": true,
+      "exports": {
+        "challenge": {
+          "bytes": 348304322,
+          "sha256": "eec8f14ddfb6a8ac2cc48b7e9d76ed4e4b7cf25036abea818f3843deb24cef59"
+        },
+        "solution": {
+          "bytes": 433580152,
+          "sha256": "fe65e84b4cb9d5afee675d446e7873333ccb0bdf08c52f1c5a8c0a52f8b1ecbf"
+        }
+      },
+      "clean_build_exit": 0,
+      "targets": [
+        "PALRH",
+        "PALRH.OneHeadPhysical"
+      ]
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 138.32,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "final_compiled_modules": {
+      "OneHead": "1c8934d876399d7ba27dfad875177c70d2fb60eb9b34f39d2ea718e26e536a21",
+      "OneHeadSamples": "1674ae4c22e91767820fb0c0767e4a769556078e1616e8fac4ffe033a3d4a152",
+      "OneHeadPhysical": "1f853ebdbe9cdd21a04a99532ea799f73819a7b0c5f325a2718a92364ae59763"
+    },
+    "final_module_bytes_match_judged_build": true
+  },
+  "arithmetic": {
+    "small": {
+      "leading_coefficient": {
+        "eta_half": [
+          "0.60489864",
+          "0.60489865"
+        ],
+        "primitive_positive_limsup_coefficient": [
+          "7.26410105",
+          "7.26410106"
+        ]
+      },
+      "three_label_interior_value": "-6/95",
+      "full_exact_root_limit": 8,
+      "knots_including_origin": 17,
+      "old_head_predictions_checked": 2
+    },
+    "dense": {
+      "endpoints": 201,
+      "last_integer": 200000000,
+      "physical_minimum_harmonic_lower": "0.00438403",
+      "physical_minimum_location": 190607627,
+      "first_physical_nonpositive_candidate": 0,
+      "first_raw_negative_primitive": 0,
+      "forecast_lower_always_positive": true,
+      "local_correction_signs": {
+        "positive": 1,
+        "negative": 93,
+        "undecided": 0
+      },
+      "normalized_primitive_rising_from_roots": [
+        1
+      ],
+      "normalized_primitive_falling_steps": 98,
+      "maximum_absolute_local_correction_in_root_units": "113619287/25000000",
+      "predictions": [
+        {
+          "from_root": 6,
+          "four_old_endpoints": [
+            1250,
+            2592,
+            1250,
+            2592
+          ],
+          "old_forecast_in_root_units": [
+            "23.01771822",
+            "23.01771823"
+          ],
+          "actual_in_root_units": [
+            "18.47294675",
+            "18.47294676"
+          ],
+          "two_local_tents_in_root_units": [
+            "-4.54477148",
+            "-4.54477147"
+          ]
+        },
+        {
+          "from_root": 7,
+          "four_old_endpoints": [
+            2592,
+            4802,
+            2592,
+            4802
+          ],
+          "old_forecast_in_root_units": [
+            "23.85523997",
+            "23.85523998"
+          ],
+          "actual_in_root_units": [
+            "20.08934101",
+            "20.08934102"
+          ],
+          "two_local_tents_in_root_units": [
+            "-3.76589897",
+            "-3.76589896"
+          ]
+        },
+        {
+          "from_root": 8,
+          "four_old_endpoints": [
+            4802,
+            8192,
+            4802,
+            8192
+          ],
+          "old_forecast_in_root_units": [
+            "24.89714162",
+            "24.89714163"
+          ],
+          "actual_in_root_units": [
+            "21.60591391",
+            "21.60591392"
+          ],
+          "two_local_tents_in_root_units": [
+            "-3.29122771",
+            "-3.29122770"
+          ]
+        },
+        {
+          "from_root": 9,
+          "four_old_endpoints": [
+            8192,
+            13122,
+            8192,
+            13122
+          ],
+          "old_forecast_in_root_units": [
+            "25.84327840",
+            "25.84327841"
+          ],
+          "actual_in_root_units": [
+            "22.73349363",
+            "22.73349364"
+          ],
+          "two_local_tents_in_root_units": [
+            "-3.10978478",
+            "-3.10978477"
+          ]
+        },
+        {
+          "from_root": 10,
+          "four_old_endpoints": [
+            13122,
+            20000,
+            13122,
+            20000
+          ],
+          "old_forecast_in_root_units": [
+            "26.22824359",
+            "26.22824360"
+          ],
+          "actual_in_root_units": [
+            "23.83155589",
+            "23.83155590"
+          ],
+          "two_local_tents_in_root_units": [
+            "-2.39668770",
+            "-2.39668769"
+          ]
+        },
+        {
+          "from_root": 11,
+          "four_old_endpoints": [
+            20000,
+            29282,
+            20000,
+            29282
+          ],
+          "old_forecast_in_root_units": [
+            "27.15262187",
+            "27.15262188"
+          ],
+          "actual_in_root_units": [
+            "24.86593501",
+            "24.86593502"
+          ],
+          "two_local_tents_in_root_units": [
+            "-2.28668687",
+            "-2.28668686"
+          ]
+        },
+        {
+          "from_root": 12,
+          "four_old_endpoints": [
+            29282,
+            41472,
+            20000,
+            29282
+          ],
+          "old_forecast_in_root_units": [
+            "27.53921600",
+            "27.53921601"
+          ],
+          "actual_in_root_units": [
+            "25.70059454",
+            "25.70059455"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.83862147",
+            "-1.83862146"
+          ]
+        },
+        {
+          "from_root": 13,
+          "four_old_endpoints": [
+            41472,
+            57122,
+            29282,
+            41472
+          ],
+          "old_forecast_in_root_units": [
+            "28.32345557",
+            "28.32345558"
+          ],
+          "actual_in_root_units": [
+            "26.61595457",
+            "26.61595458"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.70750100",
+            "-1.70750099"
+          ]
+        },
+        {
+          "from_root": 14,
+          "four_old_endpoints": [
+            57122,
+            76832,
+            41472,
+            57122
+          ],
+          "old_forecast_in_root_units": [
+            "29.11211156",
+            "29.11211157"
+          ],
+          "actual_in_root_units": [
+            "27.63723437",
+            "27.63723438"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.47487720",
+            "-1.47487719"
+          ]
+        },
+        {
+          "from_root": 15,
+          "four_old_endpoints": [
+            76832,
+            101250,
+            57122,
+            76832
+          ],
+          "old_forecast_in_root_units": [
+            "30.02050826",
+            "30.02050827"
+          ],
+          "actual_in_root_units": [
+            "28.64066410",
+            "28.64066411"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.37984416",
+            "-1.37984415"
+          ]
+        },
+        {
+          "from_root": 16,
+          "four_old_endpoints": [
+            101250,
+            131072,
+            76832,
+            101250
+          ],
+          "old_forecast_in_root_units": [
+            "30.71206483",
+            "30.71206484"
+          ],
+          "actual_in_root_units": [
+            "29.06552299",
+            "29.06552300"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.64654185",
+            "-1.64654184"
+          ]
+        },
+        {
+          "from_root": 17,
+          "four_old_endpoints": [
+            131072,
+            167042,
+            101250,
+            131072
+          ],
+          "old_forecast_in_root_units": [
+            "30.67262223",
+            "30.67262224"
+          ],
+          "actual_in_root_units": [
+            "29.73118361",
+            "29.73118362"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.94143862",
+            "-0.94143861"
+          ]
+        },
+        {
+          "from_root": 18,
+          "four_old_endpoints": [
+            167042,
+            209952,
+            101250,
+            131072
+          ],
+          "old_forecast_in_root_units": [
+            "31.30845532",
+            "31.30845533"
+          ],
+          "actual_in_root_units": [
+            "30.13246495",
+            "30.13246496"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.17599037",
+            "-1.17599036"
+          ]
+        },
+        {
+          "from_root": 19,
+          "four_old_endpoints": [
+            209952,
+            260642,
+            131072,
+            167042
+          ],
+          "old_forecast_in_root_units": [
+            "31.72600553",
+            "31.72600554"
+          ],
+          "actual_in_root_units": [
+            "31.01914589",
+            "31.01914590"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.70685964",
+            "-0.70685963"
+          ]
+        },
+        {
+          "from_root": 20,
+          "four_old_endpoints": [
+            260642,
+            320000,
+            167042,
+            209952
+          ],
+          "old_forecast_in_root_units": [
+            "32.69989530",
+            "32.69989531"
+          ],
+          "actual_in_root_units": [
+            "31.55500393",
+            "31.55500394"
+          ],
+          "two_local_tents_in_root_units": [
+            "-1.14489137",
+            "-1.14489136"
+          ]
+        },
+        {
+          "from_root": 21,
+          "four_old_endpoints": [
+            320000,
+            388962,
+            209952,
+            260642
+          ],
+          "old_forecast_in_root_units": [
+            "32.99188585",
+            "32.99188586"
+          ],
+          "actual_in_root_units": [
+            "32.16715039",
+            "32.16715040"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.82473547",
+            "-0.82473546"
+          ]
+        },
+        {
+          "from_root": 22,
+          "four_old_endpoints": [
+            388962,
+            468512,
+            260642,
+            320000
+          ],
+          "old_forecast_in_root_units": [
+            "33.51477277",
+            "33.51477278"
+          ],
+          "actual_in_root_units": [
+            "32.53462289",
+            "32.53462290"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.98014988",
+            "-0.98014987"
+          ]
+        },
+        {
+          "from_root": 23,
+          "four_old_endpoints": [
+            468512,
+            559682,
+            320000,
+            388962
+          ],
+          "old_forecast_in_root_units": [
+            "33.61247929",
+            "33.61247930"
+          ],
+          "actual_in_root_units": [
+            "33.03774555",
+            "33.03774556"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.57473374",
+            "-0.57473373"
+          ]
+        },
+        {
+          "from_root": 24,
+          "four_old_endpoints": [
+            559682,
+            663552,
+            388962,
+            468512
+          ],
+          "old_forecast_in_root_units": [
+            "34.24321517",
+            "34.24321518"
+          ],
+          "actual_in_root_units": [
+            "33.64846160",
+            "33.64846161"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.59475357",
+            "-0.59475356"
+          ]
+        },
+        {
+          "from_root": 25,
+          "four_old_endpoints": [
+            663552,
+            781250,
+            388962,
+            468512
+          ],
+          "old_forecast_in_root_units": [
+            "34.85505658",
+            "34.85505659"
+          ],
+          "actual_in_root_units": [
+            "34.07154751",
+            "34.07154752"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.78350907",
+            "-0.78350906"
+          ]
+        },
+        {
+          "from_root": 26,
+          "four_old_endpoints": [
+            781250,
+            913952,
+            468512,
+            559682
+          ],
+          "old_forecast_in_root_units": [
+            "35.17612034",
+            "35.17612035"
+          ],
+          "actual_in_root_units": [
+            "34.61724148",
+            "34.61724149"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.55887887",
+            "-0.55887886"
+          ]
+        },
+        {
+          "from_root": 27,
+          "four_old_endpoints": [
+            913952,
+            1062882,
+            559682,
+            663552
+          ],
+          "old_forecast_in_root_units": [
+            "35.69904362",
+            "35.69904363"
+          ],
+          "actual_in_root_units": [
+            "35.21429788",
+            "35.21429789"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.48474574",
+            "-0.48474573"
+          ]
+        },
+        {
+          "from_root": 28,
+          "four_old_endpoints": [
+            1062882,
+            1229312,
+            663552,
+            781250
+          ],
+          "old_forecast_in_root_units": [
+            "36.28219981",
+            "36.28219982"
+          ],
+          "actual_in_root_units": [
+            "35.53110249",
+            "35.53110250"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.75109732",
+            "-0.75109731"
+          ]
+        },
+        {
+          "from_root": 29,
+          "four_old_endpoints": [
+            1229312,
+            1414562,
+            781250,
+            913952
+          ],
+          "old_forecast_in_root_units": [
+            "36.39782420",
+            "36.39782421"
+          ],
+          "actual_in_root_units": [
+            "35.88713865",
+            "35.88713866"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.51068555",
+            "-0.51068554"
+          ]
+        },
+        {
+          "from_root": 30,
+          "four_old_endpoints": [
+            1414562,
+            1620000,
+            913952,
+            1062882
+          ],
+          "old_forecast_in_root_units": [
+            "36.77767283",
+            "36.77767284"
+          ],
+          "actual_in_root_units": [
+            "36.38399702",
+            "36.38399703"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.39367582",
+            "-0.39367581"
+          ]
+        },
+        {
+          "from_root": 31,
+          "four_old_endpoints": [
+            1620000,
+            1847042,
+            913952,
+            1062882
+          ],
+          "old_forecast_in_root_units": [
+            "37.24905783",
+            "37.24905784"
+          ],
+          "actual_in_root_units": [
+            "36.64343450",
+            "36.64343451"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.60562333",
+            "-0.60562332"
+          ]
+        },
+        {
+          "from_root": 32,
+          "four_old_endpoints": [
+            1847042,
+            2097152,
+            1062882,
+            1229312
+          ],
+          "old_forecast_in_root_units": [
+            "37.26603817",
+            "37.26603818"
+          ],
+          "actual_in_root_units": [
+            "36.82718580",
+            "36.82718581"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.43885237",
+            "-0.43885236"
+          ]
+        },
+        {
+          "from_root": 33,
+          "four_old_endpoints": [
+            2097152,
+            2371842,
+            1229312,
+            1414562
+          ],
+          "old_forecast_in_root_units": [
+            "37.57986988",
+            "37.57986989"
+          ],
+          "actual_in_root_units": [
+            "37.33858940",
+            "37.33858941"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.24128049",
+            "-0.24128048"
+          ]
+        },
+        {
+          "from_root": 34,
+          "four_old_endpoints": [
+            2371842,
+            2672672,
+            1414562,
+            1620000
+          ],
+          "old_forecast_in_root_units": [
+            "38.23770557",
+            "38.23770558"
+          ],
+          "actual_in_root_units": [
+            "37.68002860",
+            "37.68002861"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.55767697",
+            "-0.55767696"
+          ]
+        },
+        {
+          "from_root": 35,
+          "four_old_endpoints": [
+            2672672,
+            3001250,
+            1620000,
+            1847042
+          ],
+          "old_forecast_in_root_units": [
+            "38.38347517",
+            "38.38347518"
+          ],
+          "actual_in_root_units": [
+            "37.97673556",
+            "37.97673557"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.40673962",
+            "-0.40673961"
+          ]
+        },
+        {
+          "from_root": 36,
+          "four_old_endpoints": [
+            3001250,
+            3359232,
+            1847042,
+            2097152
+          ],
+          "old_forecast_in_root_units": [
+            "38.57050943",
+            "38.57050944"
+          ],
+          "actual_in_root_units": [
+            "38.14292681",
+            "38.14292682"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.42758262",
+            "-0.42758261"
+          ]
+        },
+        {
+          "from_root": 37,
+          "four_old_endpoints": [
+            3359232,
+            3748322,
+            1847042,
+            2097152
+          ],
+          "old_forecast_in_root_units": [
+            "38.75437337",
+            "38.75437338"
+          ],
+          "actual_in_root_units": [
+            "38.50089661",
+            "38.50089662"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.25347677",
+            "-0.25347676"
+          ]
+        },
+        {
+          "from_root": 38,
+          "four_old_endpoints": [
+            3748322,
+            4170272,
+            2097152,
+            2371842
+          ],
+          "old_forecast_in_root_units": [
+            "39.16756660",
+            "39.16756661"
+          ],
+          "actual_in_root_units": [
+            "38.93404089",
+            "38.93404090"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.23352571",
+            "-0.23352570"
+          ]
+        },
+        {
+          "from_root": 39,
+          "four_old_endpoints": [
+            4170272,
+            4626882,
+            2371842,
+            2672672
+          ],
+          "old_forecast_in_root_units": [
+            "39.57141532",
+            "39.57141533"
+          ],
+          "actual_in_root_units": [
+            "39.15346265",
+            "39.15346266"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.41795267",
+            "-0.41795266"
+          ]
+        },
+        {
+          "from_root": 40,
+          "four_old_endpoints": [
+            4626882,
+            5120000,
+            2672672,
+            3001250
+          ],
+          "old_forecast_in_root_units": [
+            "39.72826601",
+            "39.72826602"
+          ],
+          "actual_in_root_units": [
+            "39.42748627",
+            "39.42748628"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.30077974",
+            "-0.30077973"
+          ]
+        },
+        {
+          "from_root": 41,
+          "four_old_endpoints": [
+            5120000,
+            5651522,
+            3001250,
+            3359232
+          ],
+          "old_forecast_in_root_units": [
+            "40.08982758",
+            "40.08982759"
+          ],
+          "actual_in_root_units": [
+            "39.83027929",
+            "39.83027930"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.25954830",
+            "-0.25954829"
+          ]
+        },
+        {
+          "from_root": 42,
+          "four_old_endpoints": [
+            5651522,
+            6223392,
+            3359232,
+            3748322
+          ],
+          "old_forecast_in_root_units": [
+            "40.53014766",
+            "40.53014767"
+          ],
+          "actual_in_root_units": [
+            "40.23358347",
+            "40.23358348"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.29656420",
+            "-0.29656419"
+          ]
+        },
+        {
+          "from_root": 43,
+          "four_old_endpoints": [
+            6223392,
+            6837602,
+            3359232,
+            3748322
+          ],
+          "old_forecast_in_root_units": [
+            "40.91311604",
+            "40.91311605"
+          ],
+          "actual_in_root_units": [
+            "40.62182949",
+            "40.62182950"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.29128655",
+            "-0.29128654"
+          ]
+        },
+        {
+          "from_root": 44,
+          "four_old_endpoints": [
+            6837602,
+            7496192,
+            3748322,
+            4170272
+          ],
+          "old_forecast_in_root_units": [
+            "41.20786306",
+            "41.20786307"
+          ],
+          "actual_in_root_units": [
+            "40.83584755",
+            "40.83584756"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.37201552",
+            "-0.37201551"
+          ]
+        },
+        {
+          "from_root": 45,
+          "four_old_endpoints": [
+            7496192,
+            8201250,
+            4170272,
+            4626882
+          ],
+          "old_forecast_in_root_units": [
+            "41.26185744",
+            "41.26185745"
+          ],
+          "actual_in_root_units": [
+            "41.00922967",
+            "41.00922968"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.25262778",
+            "-0.25262777"
+          ]
+        },
+        {
+          "from_root": 46,
+          "four_old_endpoints": [
+            8201250,
+            8954912,
+            4626882,
+            5120000
+          ],
+          "old_forecast_in_root_units": [
+            "41.47424812",
+            "41.47424813"
+          ],
+          "actual_in_root_units": [
+            "41.38388349",
+            "41.38388350"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09036464",
+            "-0.09036463"
+          ]
+        },
+        {
+          "from_root": 47,
+          "four_old_endpoints": [
+            8954912,
+            9759362,
+            5120000,
+            5651522
+          ],
+          "old_forecast_in_root_units": [
+            "41.95963963",
+            "41.95963964"
+          ],
+          "actual_in_root_units": [
+            "41.73454538",
+            "41.73454539"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.22509426",
+            "-0.22509425"
+          ]
+        },
+        {
+          "from_root": 48,
+          "four_old_endpoints": [
+            9759362,
+            10616832,
+            5651522,
+            6223392
+          ],
+          "old_forecast_in_root_units": [
+            "42.26982528",
+            "42.26982529"
+          ],
+          "actual_in_root_units": [
+            "41.93926967",
+            "41.93926968"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.33055561",
+            "-0.33055560"
+          ]
+        },
+        {
+          "from_root": 49,
+          "four_old_endpoints": [
+            10616832,
+            11529602,
+            6223392,
+            6837602
+          ],
+          "old_forecast_in_root_units": [
+            "42.33731242",
+            "42.33731243"
+          ],
+          "actual_in_root_units": [
+            "42.05836062",
+            "42.05836063"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.27895180",
+            "-0.27895179"
+          ]
+        },
+        {
+          "from_root": 50,
+          "four_old_endpoints": [
+            11529602,
+            12500000,
+            6223392,
+            6837602
+          ],
+          "old_forecast_in_root_units": [
+            "42.39208613",
+            "42.39208614"
+          ],
+          "actual_in_root_units": [
+            "42.19890119",
+            "42.19890120"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.19318495",
+            "-0.19318494"
+          ]
+        },
+        {
+          "from_root": 51,
+          "four_old_endpoints": [
+            12500000,
+            13530402,
+            6837602,
+            7496192
+          ],
+          "old_forecast_in_root_units": [
+            "42.54868776",
+            "42.54868777"
+          ],
+          "actual_in_root_units": [
+            "42.33787984",
+            "42.33787985"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.21080792",
+            "-0.21080791"
+          ]
+        },
+        {
+          "from_root": 52,
+          "four_old_endpoints": [
+            13530402,
+            14623232,
+            7496192,
+            8201250
+          ],
+          "old_forecast_in_root_units": [
+            "42.75933015",
+            "42.75933016"
+          ],
+          "actual_in_root_units": [
+            "42.60349268",
+            "42.60349269"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.15583748",
+            "-0.15583747"
+          ]
+        },
+        {
+          "from_root": 53,
+          "four_old_endpoints": [
+            14623232,
+            15780962,
+            8201250,
+            8954912
+          ],
+          "old_forecast_in_root_units": [
+            "43.06401835",
+            "43.06401836"
+          ],
+          "actual_in_root_units": [
+            "42.87687513",
+            "42.87687514"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.18714322",
+            "-0.18714321"
+          ]
+        },
+        {
+          "from_root": 54,
+          "four_old_endpoints": [
+            15780962,
+            17006112,
+            8954912,
+            9759362
+          ],
+          "old_forecast_in_root_units": [
+            "43.26605489",
+            "43.26605490"
+          ],
+          "actual_in_root_units": [
+            "43.11539762",
+            "43.11539763"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.15065727",
+            "-0.15065726"
+          ]
+        },
+        {
+          "from_root": 55,
+          "four_old_endpoints": [
+            17006112,
+            18301250,
+            9759362,
+            10616832
+          ],
+          "old_forecast_in_root_units": [
+            "43.45190771",
+            "43.45190772"
+          ],
+          "actual_in_root_units": [
+            "43.21602492",
+            "43.21602493"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.23588279",
+            "-0.23588278"
+          ]
+        },
+        {
+          "from_root": 56,
+          "four_old_endpoints": [
+            18301250,
+            19668992,
+            9759362,
+            10616832
+          ],
+          "old_forecast_in_root_units": [
+            "43.49872024",
+            "43.49872025"
+          ],
+          "actual_in_root_units": [
+            "43.39393093",
+            "43.39393094"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.10478931",
+            "-0.10478930"
+          ]
+        },
+        {
+          "from_root": 57,
+          "four_old_endpoints": [
+            19668992,
+            21112002,
+            10616832,
+            11529602
+          ],
+          "old_forecast_in_root_units": [
+            "43.80069566",
+            "43.80069567"
+          ],
+          "actual_in_root_units": [
+            "43.66524628",
+            "43.66524629"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.13544938",
+            "-0.13544937"
+          ]
+        },
+        {
+          "from_root": 58,
+          "four_old_endpoints": [
+            21112002,
+            22632992,
+            11529602,
+            12500000
+          ],
+          "old_forecast_in_root_units": [
+            "44.15737467",
+            "44.15737468"
+          ],
+          "actual_in_root_units": [
+            "44.01713027",
+            "44.01713028"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.14024440",
+            "-0.14024439"
+          ]
+        },
+        {
+          "from_root": 59,
+          "four_old_endpoints": [
+            22632992,
+            24234722,
+            12500000,
+            13530402
+          ],
+          "old_forecast_in_root_units": [
+            "44.50546353",
+            "44.50546354"
+          ],
+          "actual_in_root_units": [
+            "44.27490189",
+            "44.27490190"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.23056164",
+            "-0.23056163"
+          ]
+        },
+        {
+          "from_root": 60,
+          "four_old_endpoints": [
+            24234722,
+            25920000,
+            13530402,
+            14623232
+          ],
+          "old_forecast_in_root_units": [
+            "44.68179989",
+            "44.68179990"
+          ],
+          "actual_in_root_units": [
+            "44.50160270",
+            "44.50160271"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.18019719",
+            "-0.18019718"
+          ]
+        },
+        {
+          "from_root": 61,
+          "four_old_endpoints": [
+            25920000,
+            27691682,
+            14623232,
+            15780962
+          ],
+          "old_forecast_in_root_units": [
+            "44.86184473",
+            "44.86184474"
+          ],
+          "actual_in_root_units": [
+            "44.68257609",
+            "44.68257610"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.17926864",
+            "-0.17926863"
+          ]
+        },
+        {
+          "from_root": 62,
+          "four_old_endpoints": [
+            27691682,
+            29552672,
+            14623232,
+            15780962
+          ],
+          "old_forecast_in_root_units": [
+            "44.97889351",
+            "44.97889352"
+          ],
+          "actual_in_root_units": [
+            "44.77239997",
+            "44.77239998"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.20649355",
+            "-0.20649354"
+          ]
+        },
+        {
+          "from_root": 63,
+          "four_old_endpoints": [
+            29552672,
+            31505922,
+            15780962,
+            17006112
+          ],
+          "old_forecast_in_root_units": [
+            "45.01058306",
+            "45.01058307"
+          ],
+          "actual_in_root_units": [
+            "44.89597483",
+            "44.89597484"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.11460823",
+            "-0.11460822"
+          ]
+        },
+        {
+          "from_root": 64,
+          "four_old_endpoints": [
+            31505922,
+            33554432,
+            17006112,
+            18301250
+          ],
+          "old_forecast_in_root_units": [
+            "45.14090462",
+            "45.14090463"
+          ],
+          "actual_in_root_units": [
+            "45.01125881",
+            "45.01125882"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.12964581",
+            "-0.12964580"
+          ]
+        },
+        {
+          "from_root": 65,
+          "four_old_endpoints": [
+            33554432,
+            35701250,
+            18301250,
+            19668992
+          ],
+          "old_forecast_in_root_units": [
+            "45.31013960",
+            "45.31013961"
+          ],
+          "actual_in_root_units": [
+            "45.22455057",
+            "45.22455058"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.08558903",
+            "-0.08558902"
+          ]
+        },
+        {
+          "from_root": 66,
+          "four_old_endpoints": [
+            35701250,
+            37949472,
+            19668992,
+            21112002
+          ],
+          "old_forecast_in_root_units": [
+            "45.54441288",
+            "45.54441289"
+          ],
+          "actual_in_root_units": [
+            "45.45066793",
+            "45.45066794"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09374496",
+            "-0.09374495"
+          ]
+        },
+        {
+          "from_root": 67,
+          "four_old_endpoints": [
+            37949472,
+            40302242,
+            21112002,
+            22632992
+          ],
+          "old_forecast_in_root_units": [
+            "45.79174758",
+            "45.79174759"
+          ],
+          "actual_in_root_units": [
+            "45.60976248",
+            "45.60976249"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.18198510",
+            "-0.18198509"
+          ]
+        },
+        {
+          "from_root": 68,
+          "four_old_endpoints": [
+            40302242,
+            42762752,
+            22632992,
+            24234722
+          ],
+          "old_forecast_in_root_units": [
+            "45.84647324",
+            "45.84647325"
+          ],
+          "actual_in_root_units": [
+            "45.74804244",
+            "45.74804245"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09843080",
+            "-0.09843079"
+          ]
+        },
+        {
+          "from_root": 69,
+          "four_old_endpoints": [
+            42762752,
+            45334242,
+            22632992,
+            24234722
+          ],
+          "old_forecast_in_root_units": [
+            "46.00165477",
+            "46.00165478"
+          ],
+          "actual_in_root_units": [
+            "45.80825753",
+            "45.80825754"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.19339725",
+            "-0.19339724"
+          ]
+        },
+        {
+          "from_root": 70,
+          "four_old_endpoints": [
+            45334242,
+            48020000,
+            24234722,
+            25920000
+          ],
+          "old_forecast_in_root_units": [
+            "46.03226530",
+            "46.03226531"
+          ],
+          "actual_in_root_units": [
+            "45.98049241",
+            "45.98049242"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.05177289",
+            "-0.05177288"
+          ]
+        },
+        {
+          "from_root": 71,
+          "four_old_endpoints": [
+            48020000,
+            50823362,
+            25920000,
+            27691682
+          ],
+          "old_forecast_in_root_units": [
+            "46.29184950",
+            "46.29184951"
+          ],
+          "actual_in_root_units": [
+            "46.17670680",
+            "46.17670681"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.11514271",
+            "-0.11514270"
+          ]
+        },
+        {
+          "from_root": 72,
+          "four_old_endpoints": [
+            50823362,
+            53747712,
+            27691682,
+            29552672
+          ],
+          "old_forecast_in_root_units": [
+            "46.47610293",
+            "46.47610294"
+          ],
+          "actual_in_root_units": [
+            "46.34256934",
+            "46.34256935"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.13353360",
+            "-0.13353359"
+          ]
+        },
+        {
+          "from_root": 73,
+          "four_old_endpoints": [
+            53747712,
+            56796482,
+            29552672,
+            31505922
+          ],
+          "old_forecast_in_root_units": [
+            "46.67071612",
+            "46.67071613"
+          ],
+          "actual_in_root_units": [
+            "46.55745735",
+            "46.55745736"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.11325877",
+            "-0.11325876"
+          ]
+        },
+        {
+          "from_root": 74,
+          "four_old_endpoints": [
+            56796482,
+            59973152,
+            31505922,
+            33554432
+          ],
+          "old_forecast_in_root_units": [
+            "46.90069226",
+            "46.90069227"
+          ],
+          "actual_in_root_units": [
+            "46.81468130",
+            "46.81468131"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.08601097",
+            "-0.08601096"
+          ]
+        },
+        {
+          "from_root": 75,
+          "four_old_endpoints": [
+            59973152,
+            63281250,
+            31505922,
+            33554432
+          ],
+          "old_forecast_in_root_units": [
+            "47.15699015",
+            "47.15699016"
+          ],
+          "actual_in_root_units": [
+            "47.00190672",
+            "47.00190673"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.15508343",
+            "-0.15508342"
+          ]
+        },
+        {
+          "from_root": 76,
+          "four_old_endpoints": [
+            63281250,
+            66724352,
+            33554432,
+            35701250
+          ],
+          "old_forecast_in_root_units": [
+            "47.28676687",
+            "47.28676688"
+          ],
+          "actual_in_root_units": [
+            "47.22023716",
+            "47.22023717"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.06652972",
+            "-0.06652971"
+          ]
+        },
+        {
+          "from_root": 77,
+          "four_old_endpoints": [
+            66724352,
+            70306082,
+            35701250,
+            37949472
+          ],
+          "old_forecast_in_root_units": [
+            "47.49942117",
+            "47.49942118"
+          ],
+          "actual_in_root_units": [
+            "47.37094851",
+            "47.37094852"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.12847267",
+            "-0.12847266"
+          ]
+        },
+        {
+          "from_root": 78,
+          "four_old_endpoints": [
+            70306082,
+            74030112,
+            37949472,
+            40302242
+          ],
+          "old_forecast_in_root_units": [
+            "47.59499763",
+            "47.59499764"
+          ],
+          "actual_in_root_units": [
+            "47.45413484",
+            "47.45413485"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.14086280",
+            "-0.14086279"
+          ]
+        },
+        {
+          "from_root": 79,
+          "four_old_endpoints": [
+            74030112,
+            77900162,
+            40302242,
+            42762752
+          ],
+          "old_forecast_in_root_units": [
+            "47.67403625",
+            "47.67403626"
+          ],
+          "actual_in_root_units": [
+            "47.66054124",
+            "47.66054125"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.01349501",
+            "-0.01349500"
+          ]
+        },
+        {
+          "from_root": 80,
+          "four_old_endpoints": [
+            77900162,
+            81920000,
+            42762752,
+            45334242
+          ],
+          "old_forecast_in_root_units": [
+            "47.96116927",
+            "47.96116928"
+          ],
+          "actual_in_root_units": [
+            "47.86208004",
+            "47.86208005"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09908923",
+            "-0.09908922"
+          ]
+        },
+        {
+          "from_root": 81,
+          "four_old_endpoints": [
+            81920000,
+            86093442,
+            42762752,
+            45334242
+          ],
+          "old_forecast_in_root_units": [
+            "48.13189520",
+            "48.13189521"
+          ],
+          "actual_in_root_units": [
+            "48.08815933",
+            "48.08815934"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.04373587",
+            "-0.04373586"
+          ]
+        },
+        {
+          "from_root": 82,
+          "four_old_endpoints": [
+            86093442,
+            90424352,
+            45334242,
+            48020000
+          ],
+          "old_forecast_in_root_units": [
+            "48.44885651",
+            "48.44885652"
+          ],
+          "actual_in_root_units": [
+            "48.35348910",
+            "48.35348911"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09536741",
+            "-0.09536740"
+          ]
+        },
+        {
+          "from_root": 83,
+          "four_old_endpoints": [
+            90424352,
+            94916642,
+            48020000,
+            50823362
+          ],
+          "old_forecast_in_root_units": [
+            "48.68259968",
+            "48.68259969"
+          ],
+          "actual_in_root_units": [
+            "48.50374612",
+            "48.50374613"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.17885356",
+            "-0.17885355"
+          ]
+        },
+        {
+          "from_root": 84,
+          "four_old_endpoints": [
+            94916642,
+            99574272,
+            50823362,
+            53747712
+          ],
+          "old_forecast_in_root_units": [
+            "48.74501976",
+            "48.74501977"
+          ],
+          "actual_in_root_units": [
+            "48.64246669",
+            "48.64246670"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.10255307",
+            "-0.10255306"
+          ]
+        },
+        {
+          "from_root": 85,
+          "four_old_endpoints": [
+            99574272,
+            104401250,
+            53747712,
+            56796482
+          ],
+          "old_forecast_in_root_units": [
+            "48.86209274",
+            "48.86209275"
+          ],
+          "actual_in_root_units": [
+            "48.73464314",
+            "48.73464315"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.12744960",
+            "-0.12744959"
+          ]
+        },
+        {
+          "from_root": 86,
+          "four_old_endpoints": [
+            104401250,
+            109401632,
+            56796482,
+            59973152
+          ],
+          "old_forecast_in_root_units": [
+            "48.92213870",
+            "48.92213871"
+          ],
+          "actual_in_root_units": [
+            "48.84188051",
+            "48.84188052"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.08025820",
+            "-0.08025819"
+          ]
+        },
+        {
+          "from_root": 87,
+          "four_old_endpoints": [
+            109401632,
+            114579522,
+            56796482,
+            59973152
+          ],
+          "old_forecast_in_root_units": [
+            "49.02413406",
+            "49.02413407"
+          ],
+          "actual_in_root_units": [
+            "48.92703217",
+            "48.92703218"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09710190",
+            "-0.09710189"
+          ]
+        },
+        {
+          "from_root": 88,
+          "four_old_endpoints": [
+            114579522,
+            119939072,
+            59973152,
+            63281250
+          ],
+          "old_forecast_in_root_units": [
+            "49.07901645",
+            "49.07901646"
+          ],
+          "actual_in_root_units": [
+            "48.97873012",
+            "48.97873013"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.10028633",
+            "-0.10028632"
+          ]
+        },
+        {
+          "from_root": 89,
+          "four_old_endpoints": [
+            119939072,
+            125484482,
+            63281250,
+            66724352
+          ],
+          "old_forecast_in_root_units": [
+            "49.13841235",
+            "49.13841236"
+          ],
+          "actual_in_root_units": [
+            "49.09179151",
+            "49.09179152"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.04662084",
+            "-0.04662083"
+          ]
+        },
+        {
+          "from_root": 90,
+          "four_old_endpoints": [
+            125484482,
+            131220000,
+            66724352,
+            70306082
+          ],
+          "old_forecast_in_root_units": [
+            "49.27592774",
+            "49.27592775"
+          ],
+          "actual_in_root_units": [
+            "49.16893006",
+            "49.16893007"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.10699769",
+            "-0.10699768"
+          ]
+        },
+        {
+          "from_root": 91,
+          "four_old_endpoints": [
+            131220000,
+            137149922,
+            70306082,
+            74030112
+          ],
+          "old_forecast_in_root_units": [
+            "49.32891711",
+            "49.32891712"
+          ],
+          "actual_in_root_units": [
+            "49.31095150",
+            "49.31095151"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.01796562",
+            "-0.01796561"
+          ]
+        },
+        {
+          "from_root": 92,
+          "four_old_endpoints": [
+            137149922,
+            143278592,
+            74030112,
+            77900162
+          ],
+          "old_forecast_in_root_units": [
+            "49.54269505",
+            "49.54269506"
+          ],
+          "actual_in_root_units": [
+            "49.45191648",
+            "49.45191649"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.09077857",
+            "-0.09077856"
+          ]
+        },
+        {
+          "from_root": 93,
+          "four_old_endpoints": [
+            143278592,
+            149610402,
+            77900162,
+            81920000
+          ],
+          "old_forecast_in_root_units": [
+            "49.66259383",
+            "49.66259384"
+          ],
+          "actual_in_root_units": [
+            "49.64157202",
+            "49.64157203"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.02102182",
+            "-0.02102181"
+          ]
+        },
+        {
+          "from_root": 94,
+          "four_old_endpoints": [
+            149610402,
+            156149792,
+            77900162,
+            81920000
+          ],
+          "old_forecast_in_root_units": [
+            "49.85276875",
+            "49.85276876"
+          ],
+          "actual_in_root_units": [
+            "49.71558535",
+            "49.71558536"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.13718341",
+            "-0.13718340"
+          ]
+        },
+        {
+          "from_root": 95,
+          "four_old_endpoints": [
+            156149792,
+            162901250,
+            81920000,
+            86093442
+          ],
+          "old_forecast_in_root_units": [
+            "49.87341578",
+            "49.87341579"
+          ],
+          "actual_in_root_units": [
+            "49.81414283",
+            "49.81414284"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.05927296",
+            "-0.05927295"
+          ]
+        },
+        {
+          "from_root": 96,
+          "four_old_endpoints": [
+            162901250,
+            169869312,
+            86093442,
+            90424352
+          ],
+          "old_forecast_in_root_units": [
+            "49.94647423",
+            "49.94647424"
+          ],
+          "actual_in_root_units": [
+            "49.87192891",
+            "49.87192892"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.07454532",
+            "-0.07454531"
+          ]
+        },
+        {
+          "from_root": 97,
+          "four_old_endpoints": [
+            169869312,
+            177058562,
+            90424352,
+            94916642
+          ],
+          "old_forecast_in_root_units": [
+            "50.00659887",
+            "50.00659888"
+          ],
+          "actual_in_root_units": [
+            "49.94626706",
+            "49.94626707"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.06033182",
+            "-0.06033181"
+          ]
+        },
+        {
+          "from_root": 98,
+          "four_old_endpoints": [
+            177058562,
+            184473632,
+            94916642,
+            99574272
+          ],
+          "old_forecast_in_root_units": [
+            "50.09332589",
+            "50.09332590"
+          ],
+          "actual_in_root_units": [
+            "49.98450632",
+            "49.98450633"
+          ],
+          "two_local_tents_in_root_units": [
+            "-0.10881958",
+            "-0.10881957"
+          ]
+        },
+        {
+          "from_root": 99,
+          "four_old_endpoints": [
+            184473632,
+            192119202,
+            99574272,
+            104401250
+          ],
+          "old_forecast_in_root_units": [
+            "50.13797338",
+            "50.13797339"
+          ],
+          "actual_in_root_units": [
+            "50.14532790",
+            "50.14532791"
+          ],
+          "two_local_tents_in_root_units": [
+            "0.00735452",
+            "0.00735453"
+          ]
+        }
+      ]
+    },
+    "large": {
+      "432000000000": {
+        "432000000000": {
+          "primitive": [
+            "108522836.21284073",
+            "108522864.01108592"
+          ],
+          "harmonic_prefix": [
+            "0.00013780",
+            "0.00013781"
+          ],
+          "unpassed_primitive": [
+            "3656.06917617",
+            "3672.76108104"
+          ]
+        },
+        "864000000000": {
+          "primitive": [
+            "158110122.18055173",
+            "158110194.02084934"
+          ],
+          "harmonic_prefix": [
+            "0.00009915",
+            "0.00009916"
+          ],
+          "unpassed_primitive": [
+            "-3017.09005694",
+            "-2974.18806297"
+          ]
+        }
+      },
+      "1000000000000": {
+        "1000000000000": {
+          "primitive": [
+            "171122409.00167518",
+            "171122496.68421261"
+          ],
+          "harmonic_prefix": [
+            "0.00009343",
+            "0.00009344"
+          ],
+          "unpassed_primitive": [
+            "-2662.02550818",
+            "-2609.73202612"
+          ]
+        },
+        "2000000000000": {
+          "primitive": [
+            "249169816.18508969",
+            "249170041.91082310"
+          ],
+          "harmonic_prefix": [
+            "0.00006626",
+            "0.00006627"
+          ],
+          "unpassed_primitive": [
+            "5258.12451495",
+            "5392.19925239"
+          ]
+        }
+      }
+    },
+    "cache_hashes": {
+      "432000000000": "dc376860a59afd4dc3365eae808076bae0b0fec7bae548d36e4be212ae5fd0bb",
+      "1000000000000": "34e71b1a721f04e2b6a549e0b61a2b896291bb2355b93030b80cf1bb704ac890"
+    }
+  },
+  "dense_native_domains": {
+    "maximum_root": 100,
+    "scale": "1208925819614629174706176",
+    "physical": {
+      "minimum_harmonic_lower_over_S": "5299972302688466693395",
+      "harmonic_at": 190607627,
+      "minimum_primitive_lower_over_S_from_two": "1208925819614629174706174",
+      "primitive_at": 2,
+      "first_possible_nonpositive_primitive_from_two": 0,
+      "first_certified_negative_primitive": 0
+    },
+    "raw": {
+      "minimum_harmonic_lower_over_S": "-656176027206746713698",
+      "harmonic_at": 59567,
+      "minimum_primitive_lower_over_S_from_two": "1208925819614629174706174",
+      "primitive_at": 2,
+      "first_possible_nonpositive_primitive_from_two": 0,
+      "first_certified_negative_primitive": 0
+    },
+    "native_output_sha256": "e871eb871bf42ae53a0e7cdb0d2270fe49e4ddf8c25ec09e1b70eeb488acf177"
+  },
+  "continuum_mesh": {
+    "covered_from": 196562611,
+    "covered_through": 2000000000000,
+    "mesh_nodes": 327,
+    "all_panel_lower_bounds_positive": true,
+    "strictly_falling_normalized_panels": 326,
+    "last_panel_weighted_mass": [
+      "-115046445.266",
+      "-115042045.908"
+    ],
+    "failed_panels": [],
+    "lowest_proved_multiple_of_sqrt_t": "9.500945",
+    "weakest_panel": [
+      1937500000000,
+      2000000000000
+    ],
+    "weakest_panel_primitive_lower": "13436370.631",
+    "at_maximum": [
+      "249169893.2973",
+      "249169964.7959"
+    ],
+    "raw_unit": 144115188075855872,
+    "quotient_inputs": [
+      {
+        "top": 32000000000000,
+        "keys": [
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          66,
+          68,
+          70,
+          72,
+          74,
+          76,
+          78,
+          80,
+          82,
+          84,
+          86,
+          88,
+          90,
+          92,
+          94,
+          96,
+          99,
+          102,
+          105,
+          108,
+          111,
+          114,
+          117,
+          120,
+          123,
+          126,
+          129,
+          133,
+          137,
+          141,
+          145,
+          149,
+          153,
+          157,
+          161,
+          166,
+          171,
+          176,
+          181,
+          186,
+          191,
+          196,
+          202,
+          208,
+          214,
+          220,
+          226,
+          233,
+          240,
+          247,
+          254,
+          261,
+          269,
+          277,
+          285,
+          293,
+          302,
+          311,
+          320,
+          330,
+          340,
+          350,
+          360,
+          371,
+          382,
+          393,
+          405,
+          417,
+          430,
+          443,
+          456,
+          470,
+          484,
+          499,
+          514,
+          530,
+          546,
+          563,
+          580,
+          598,
+          616,
+          635,
+          654,
+          674,
+          695,
+          716,
+          738,
+          761,
+          784,
+          808,
+          833,
+          859,
+          885,
+          912,
+          940,
+          969,
+          999,
+          1030,
+          1062,
+          1095,
+          1129,
+          1164,
+          1200,
+          1237,
+          1275,
+          1314,
+          1355,
+          1397,
+          1440,
+          1485,
+          1531,
+          1578,
+          1627,
+          1677,
+          1729,
+          1783,
+          1838,
+          1895,
+          1954,
+          2015,
+          2077,
+          2141,
+          2207,
+          2275,
+          2346,
+          2419,
+          2494,
+          2571,
+          2651,
+          2733,
+          2818,
+          2906,
+          2996,
+          3089,
+          3185,
+          3284,
+          3386,
+          3491,
+          3600,
+          3712,
+          3828,
+          3947,
+          4070,
+          4197,
+          4328,
+          4463,
+          4602,
+          4745,
+          4893,
+          5045,
+          5202,
+          5364,
+          5531,
+          5703,
+          5881,
+          6064,
+          6253,
+          6448,
+          6649,
+          6856,
+          7070,
+          7290,
+          7517,
+          7751,
+          7993,
+          8242,
+          8499,
+          8764,
+          9037,
+          9319,
+          9610,
+          9910,
+          10219,
+          10538,
+          10867,
+          11206,
+          11556,
+          11917,
+          12289,
+          12673,
+          13069,
+          13477,
+          13898,
+          14332,
+          14779,
+          15240,
+          15716,
+          16207,
+          16713,
+          17235,
+          17773,
+          18328,
+          18900,
+          19490,
+          20099,
+          20727,
+          21374,
+          22041,
+          22729,
+          23439,
+          24171,
+          24926,
+          25704,
+          26507,
+          27335,
+          28189,
+          29069,
+          29977,
+          30913,
+          31879,
+          32875,
+          33902,
+          34961,
+          36053,
+          37179,
+          38340,
+          39538,
+          40773,
+          42047,
+          43360,
+          44715,
+          46112,
+          47553,
+          49039,
+          50571,
+          52151,
+          53780,
+          55460,
+          57193,
+          58980,
+          60823,
+          62723,
+          64683,
+          66704,
+          68788,
+          70937,
+          73153,
+          75439,
+          77796,
+          80227,
+          82734,
+          85319,
+          87985,
+          90734,
+          93569,
+          96493,
+          99508,
+          102617,
+          105823,
+          109129,
+          112539,
+          116055,
+          119681,
+          123421,
+          127277,
+          131254,
+          135355,
+          139584,
+          143946,
+          148444,
+          153082,
+          157865,
+          162798
+        ],
+        "rough_queries": 27958,
+        "input_sha256": [
+          "01a1b28af876fe27143ab2f68e183d88acb9ec111ef388ae38d5b9ef5ef5d4fb",
+          "f01c594d8cab5538845fd8a5bf3cc60c708ce2386b6e8b90935f6824afdd496d"
+        ]
+      },
+      {
+        "top": 32000000000000,
+        "keys": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "rough_queries": 2344,
+        "input_sha256": [
+          "da9b256b88607775d0238c4389bc92703eeadd94c7ff8b346517edbf8662aed2",
+          "a530124b1463a165dbadba22a95498118cee938697cc1a63fc6275fa309d9113"
+        ]
+      },
+      {
+        "top": 31000000000000,
+        "keys": [
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "rough_queries": 2319,
+        "input_sha256": [
+          "1d60c547828aab423b8774b09ac8eb981c793e4474c4eb273daaf18e4d861820",
+          "802934473644d33541a293f08c3f95b6672a131390ea1200911b6ce0300f1315"
+        ]
+      }
+    ],
+    "endpoint_receipts": [
+      [
+        196562611,
+        -656959,
+        "988117633040636324243336206849/645488468627244630147072",
+        "1976235266137281001574923190387/1290976937254489260294144"
+      ],
+      [
+        202704842,
+        -665252,
+        "502800433721444014847438816245/322744234313622315073536",
+        "1005600867472119555934583217665/645488468627244630147072"
+      ],
+      [
+        209038293,
+        -672501,
+        "37904808458253355167623612975/23906980319527578894336",
+        "75809616918837243580108066051/47813960639055157788672"
+      ],
+      [
+        215569507,
+        -696073,
+        "3124712516889992938243758487921/1936465405881733890441216",
+        "2083141677992403971139429382135/1290976937254489260294144"
+      ],
+      [
+        222305586,
+        -724187,
+        "1059851128820307474692006347745/645488468627244630147072",
+        "88320927404551362936124563727/53790705718937052512256"
+      ],
+      [
+        229252636,
+        -722684,
+        "1617709953031738630474496227865/968232702940866945220608",
+        "8425572672320028766749548813/5042878661150348673024"
+      ],
+      [
+        236415352,
+        -741740,
+        "823037259600872195353564441003/484116351470433472610304",
+        "137172876604885459412547164927/80686058578405578768384"
+      ],
+      [
+        243802093,
+        -747792,
+        "6698575784888832275677444168253/3872930811763467780882432",
+        "1116429297521088667335027589759/645488468627244630147072"
+      ],
+      [
+        251420130,
+        -769718,
+        "378675724246756517054334522047/215162822875748210049024",
+        "15778155177522869139957559093/8965117619822842085376"
+      ],
+      [
+        259275163,
+        -802209,
+        "6934215080898747405443751251807/3872930811763467780882432",
+        "1155702513526383095393325714631/645488468627244630147072"
+      ],
+      [
+        267377445,
+        -811172,
+        "783766479424852720672626206951/430325645751496420098048",
+        "2419032343998293897593436909/1328165573307087716352"
+      ],
+      [
+        275731334,
+        -803745,
+        "3588734179593290867634544166573/1936465405881733890441216",
+        "12460882568568165864923909005/6723838214867131564032"
+      ],
+      [
+        284345871,
+        -822255,
+        "2434024215496947119357027707795/1290976937254489260294144",
+        "101417675650177415652151222399/53790705718937052512256"
+      ],
+      [
+        293230946,
+        -843934,
+        "3714679569536583823520499709217/1936465405881733890441216",
+        "619113261618144064249663582331/322744234313622315073536"
+      ],
+      [
+        302391729,
+        -885932,
+        "839764954566415771206599259587/430325645751496420098048",
+        "209941238651588731111493587087/107581411437874105024512"
+      ],
+      [
+        311839168,
+        -862421,
+        "120139729678322177306064847033/60514543933804184076288",
+        "7508733105261899228729846477/3782158995862761504768"
+      ],
+      [
+        321582184,
+        -864873,
+        "489067996753603224100461851521/242058175735216736305152",
+        "978135993557524663700636056543/484116351470433472610304"
+      ],
+      [
+        331630273,
+        -889406,
+        "497668755222849827445803065945/242058175735216736305152",
+        "7962700083985698276677763302369/3872930811763467780882432"
+      ],
+      [
+        341993608,
+        -896395,
+        "2025710983151420546666729146849/968232702940866945220608",
+        "506427745815733265652158788469/242058175735216736305152"
+      ],
+      [
+        352679260,
+        -925694,
+        "4123401568199340481127151225359/1936465405881733890441216",
+        "1030850392108052624588871482581/484116351470433472610304"
+      ],
+      [
+        363698357,
+        -936953,
+        "16784432398046883284388410839693/7745861623526935561764864",
+        "4196108099754838723621345939739/1936465405881733890441216"
+      ],
+      [
+        375062998,
+        -946486,
+        "8540819225381919489970551919987/3872930811763467780882432",
+        "2135204806473903043413793110557/968232702940866945220608"
+      ],
+      [
+        386781734,
+        -991086,
+        "8689840270784839025476830493787/3872930811763467780882432",
+        "2172460067830121032661969450869/968232702940866945220608"
+      ],
+      [
+        398868211,
+        -985784,
+        "53051105171252818278970975365925/23237584870580806685294592",
+        "3315694073414854493931286485703/1452349054411300417830912"
+      ],
+      [
+        411332202,
+        -1017780,
+        "999696531397103860287908511821/430325645751496420098048",
+        "249924132865669987561168584989/107581411437874105024512"
+      ],
+      [
+        424183777,
+        -1042831,
+        "54923428832781282904403372249983/23237584870580806685294592",
+        "6865428604567778096783644716437/2904698108822600835661824"
+      ],
+      [
+        437439339,
+        -1023155,
+        "2069659185887175976542574924331/860651291502992840196096",
+        "517414796508182291180245659503/215162822875748210049024"
+      ],
+      [
+        451104501,
+        -1072463,
+        "18953812720162470341811745807789/7745861623526935561764864",
+        "4738453180386472287191213319661/1936465405881733890441216"
+      ],
+      [
+        465197418,
+        -1089075,
+        "357105675878436714254212921711/143441881917165473366016",
+        "89276418976299296642004615661/35860470479291368341504"
+      ],
+      [
+        479731350,
+        -1117462,
+        "306581122777257429233745629287/121029087867608368152576",
+        "9810595929636128200948123533209/3872930811763467780882432"
+      ],
+      [
+        494720405,
+        -1140245,
+        "1871535709288631740287847086685/726174527205650208915456",
+        "59889142702239666132796985850965/23237584870580806685294592"
+      ],
+      [
+        510179678,
+        -1131171,
+        "952037905054025285261041108649/363087263602825104457728",
+        "30465212964340092846513454348591/11618792435290403342647296"
+      ],
+      [
+        526116765,
+        -1160382,
+        "2583310589988501111237561907571/968232702940866945220608",
+        "20666484721770749155523121379543/7745861623526935561764864"
+      ],
+      [
+        542556798,
+        -1205141,
+        "1314048834842541780686493369461/484116351470433472610304",
+        "10512390679712025057317251564957/3872930811763467780882432"
+      ],
+      [
+        559509030,
+        -1199426,
+        "445710961189926174572635858643/161372117156811157536768",
+        "3565687689859445163187617082099/1290976937254489260294144"
+      ],
+      [
+        576992426,
+        -1235315,
+        "8163337888534768990626425965333/2904698108822600835661824",
+        "32653351557352677373332322641289/11618792435290403342647296"
+      ],
+      [
+        595016734,
+        -1251526,
+        "16610873255204759457328072877467/5809396217645201671323648",
+        "33221746513763040275477458162661/11618792435290403342647296"
+      ],
+      [
+        613602807,
+        -1245812,
+        "11267889381662946250480607403853/3872930811763467780882432",
+        "22535778765675715916594007252599/7745861623526935561764864"
+      ],
+      [
+        632773724,
+        -1308990,
+        "8598907860938626720331427011917/2904698108822600835661824",
+        "17197815723746962971600161918801/5809396217645201671323648"
+      ],
+      [
+        652541854,
+        -1327943,
+        "17495744246515698552537003478597/5809396217645201671323648",
+        "34991488496978479766414934556409/11618792435290403342647296"
+      ],
+      [
+        672933358,
+        -1357411,
+        "17799990567541181940547597769353/5809396217645201671323648",
+        "35599981139202526666073980520873/11618792435290403342647296"
+      ],
+      [
+        693962526,
+        -1351289,
+        "3018092853435331760892181857569/968232702940866945220608",
+        "12072371415182598399370869242345/3872930811763467780882432"
+      ],
+      [
+        715643520,
+        -1367423,
+        "2999015214794094801925190011/945539748965690376192",
+        "191936973770453736303936324679/60514543933804184076288"
+      ],
+      [
+        738007380,
+        -1423355,
+        "260397723424465866206127154465/80686058578405578768384",
+        "2083181787662776366068745256405/645488468627244630147072"
+      ],
+      [
+        761053107,
+        -1457434,
+        "12715791976009498961881316470229/3872930811763467780882432",
+        "25431583955380695883511400679933/7745861623526935561764864"
+      ],
+      [
+        784833100,
+        -1422119,
+        "9705929089256851540866544250681/2904698108822600835661824",
+        "19411858181164969463483748286987/5809396217645201671323648"
+      ],
+      [
+        809347969,
+        -1452471,
+        "39508314231337355538316088983745/11618792435290403342647296",
+        "79016628473796031212329442814117/23237584870580806685294592"
+      ],
+      [
+        834637454,
+        -1490185,
+        "20101713708830892227129870615315/5809396217645201671323648",
+        "40203427423535492470256229682267/11618792435290403342647296"
+      ],
+      [
+        860700933,
+        -1532018,
+        "4545615298412595572636182487093/1290976937254489260294144",
+        "9091230598191005057130082854625/2581953874508978520588288"
+      ],
+      [
+        887582170,
+        -1593600,
+        "41619183874940719276527753897245/11618792435290403342647296",
+        "10404795970344704103441583133825/2904698108822600835661824"
+      ],
+      [
+        915305626,
+        -1603944,
+        "42342755964288806804733599119361/11618792435290403342647296",
+        "5292844496384223470170401391969/1452349054411300417830912"
+      ],
+      [
+        943897115,
+        -1640430,
+        "86149400488533898252322691294005/23237584870580806685294592",
+        "43074700251429292218292395176755/11618792435290403342647296"
+      ],
+      [
+        973384030,
+        -1668980,
+        "43811435587713925978791518293565/11618792435290403342647296",
+        "21905717797606210416630990133645/5809396217645201671323648"
+      ],
+      [
+        1003795602,
+        -1710814,
+        "14856563884757653576496695623631/3872930811763467780882432",
+        "1857070485921399794450574395285/484116351470433472610304"
+      ],
+      [
+        1035163199,
+        -1773854,
+        "90660933281647567272802207201289/23237584870580806685294592",
+        "45330466649030928590035756566091/11618792435290403342647296"
+      ],
+      [
+        1067485071,
+        -1777559,
+        "30736525154178395621469502396165/7745861623526935561764864",
+        "7684131289988908701856333424737/1936465405881733890441216"
+      ],
+      [
+        1100829061,
+        -1761257,
+        "93806236634785426240347723245473/23237584870580806685294592",
+        "2931444895412542980555976852601/726174527205650208915456"
+      ],
+      [
+        1135194579,
+        -1798305,
+        "10602532580855851470145309098503/2581953874508978520588288",
+        "1325316572874710292223578034849/322744234313622315073536"
+      ],
+      [
+        1170660325,
+        -1852867,
+        "97079268792064937412369650247439/23237584870580806685294592",
+        "48539634406262171233587980059607/11618792435290403342647296"
+      ],
+      [
+        1207228279,
+        -1906037,
+        "98755579900428819842773810802335/23237584870580806685294592",
+        "24688894980456159687835799299669/5809396217645201671323648"
+      ],
+      [
+        1244942421,
+        -1864886,
+        "33487988691565910927129799025499/7745861623526935561764864",
+        "261624911711104098690702866629/60514543933804184076288"
+      ],
+      [
+        1283800048,
+        -1894393,
+        "3194788762542073236342308668049/726174527205650208915456",
+        "6389577526564087747617752183215/1452349054411300417830912"
+      ],
+      [
+        1323900541,
+        -1954119,
+        "52009359632591515091565860167133/11618792435290403342647296",
+        "104018719289958290298323589170977/23237584870580806685294592"
+      ],
+      [
+        1365245957,
+        -1987677,
+        "211659651822956744163406589728927/46475169741161613370589184",
+        "52914912968768627441385912920323/11618792435290403342647296"
+      ],
+      [
+        1407893000,
+        -2042156,
+        "26922235331234214826516384151963/5809396217645201671323648",
+        "6730558834519898910057068705897/1452349054411300417830912"
+      ],
+      [
+        1451839753,
+        -2066604,
+        "219118455466883997328616215808915/46475169741161613370589184",
+        "54779613881066988044512117984841/11618792435290403342647296"
+      ],
+      [
+        1497146065,
+        -2092881,
+        "222942758732906314409588728091819/46475169741161613370589184",
+        "55735689698305228264978871257361/11618792435290403342647296"
+      ],
+      [
+        1543879963,
+        -2195121,
+        "226782890122053564088847369530793/46475169741161613370589184",
+        "56695722546299166793547563826711/11618792435290403342647296"
+      ],
+      [
+        1592119010,
+        -2188008,
+        "38450813921587172429520949810577/7745861623526935561764864",
+        "9612703483163465409695551160873/1936465405881733890441216"
+      ],
+      [
+        1641867624,
+        -2240466,
+        "362215273112868689447495529847/71720940958582736683008",
+        "90553818305125925091419423983/17930235239645684170752"
+      ],
+      [
+        1693121693,
+        -2291578,
+        "79589537696523946733188632229997/15491723247053871123529728",
+        "19897384430256405783587052289793/3872930811763467780882432"
+      ],
+      [
+        1745962461,
+        -2236611,
+        "8996189885540371379800432835725/1721302583005985680392192",
+        "2249047472098748229858835876885/430325645751496420098048"
+      ],
+      [
+        1800483880,
+        -2330517,
+        "10297597283166950217780411892717/1936465405881733890441216",
+        "2574399321633494217891436577353/484116351470433472610304"
+      ],
+      [
+        1856686974,
+        -2394754,
+        "13968509937807893015132004046493/2581953874508978520588288",
+        "3492127485627228829217373839777/645488468627244630147072"
+      ],
+      [
+        1914677197,
+        -2427620,
+        "2664754504872295535772240427153/484116351470433472610304",
+        "85272144185598033487796796350831/15491723247053871123529728"
+      ],
+      [
+        1974455482,
+        -2493684,
+        "4066316562439929760579840914203/726174527205650208915456",
+        "43374043348334380893880124057759/7745861623526935561764864"
+      ],
+      [
+        2036141511,
+        -2511799,
+        "5514771019205846357481146890441/968232702940866945220608",
+        "29412112113408119769312071508703/5163907749017957041176576"
+      ],
+      [
+        2099737532,
+        -2562000,
+        "8415384851461946402144387938643/1452349054411300417830912",
+        "22441026279230868603310340696653/3872930811763467780882432"
+      ],
+      [
+        2165234454,
+        -2671889,
+        "1902022552378920948613094951257/322744234313622315073536",
+        "5072060141693038125193251619913/860651291502992840196096"
+      ],
+      [
+        2232765838,
+        -2642352,
+        "17412374657198703796946853097391/2904698108822600835661824",
+        "46432999104917736487660784040949/7745861623526935561764864"
+      ],
+      [
+        2302489566,
+        -2732403,
+        "3935950790389242289394715200473/645488468627244630147072",
+        "5247934389405022679016854849641/860651291502992840196096"
+      ],
+      [
+        2374415671,
+        -2763594,
+        "144108457183347872001530844225871/23237584870580806685294592",
+        "32024101610290109703526134247693/5163907749017957041176576"
+      ],
+      [
+        2448542352,
+        -2751073,
+        "3053900357522228464254857812291/484116351470433472610304",
+        "25134982377803513637264671891/3984496719921263149056"
+      ],
+      [
+        2525053262,
+        -2911434,
+        "74558740013859272819130636351493/11618792435290403342647296",
+        "5522869633241591178653659307011/860651291502992840196096"
+      ],
+      [
+        2603954756,
+        -2937987,
+        "37916256818569763711318636632835/5809396217645201671323648",
+        "25277504557958025272654148285437/3872930811763467780882432"
+      ],
+      [
+        2685239573,
+        -2967571,
+        "154265321142020009077840974808199/23237584870580806685294592",
+        "102843547479253740674734216407809/15491723247053871123529728"
+      ],
+      [
+        2769124264,
+        -2993988,
+        "9805953918410472693459352611149/1452349054411300417830912",
+        "39223815693772422752280259726729/5809396217645201671323648"
+      ],
+      [
+        2855613064,
+        -3013567,
+        "623475741156607061021717739083/90771815900706276114432",
+        "39902447455132327267256328882289/5809396217645201671323648"
+      ],
+      [
+        2944694948,
+        -3136264,
+        "5073960491460231591814526698421/726174527205650208915456",
+        "81183367907761343266644051223129/11618792435290403342647296"
+      ],
+      [
+        3036629341,
+        -3173455,
+        "165148607141947911469909381562381/23237584870580806685294592",
+        "330297214469978351030168109097553/46475169741161613370589184"
+      ],
+      [
+        3131421861,
+        -3134882,
+        "56008272840696649568973988823243/7745861623526935561764864",
+        "112016545746622940192370815616155/15491723247053871123529728"
+      ],
+      [
+        3229061553,
+        -3238830,
+        "18992695067548317603567173364161/2581953874508978520588288",
+        "37985390157863588219725412516957/5163907749017957041176576"
+      ],
+      [
+        3329864724,
+        -3272216,
+        "14490574303238169696195212669891/1936465405881733890441216",
+        "28981148624456893462538518339307/3872930811763467780882432"
+      ],
+      [
+        3433844833,
+        -3414402,
+        "176894566081802339688910525891169/23237584870580806685294592",
+        "353789132389647195936965293252229/46475169741161613370589184"
+      ],
+      [
+        3540998118,
+        -3462601,
+        "179920795620585284498186712439747/23237584870580806685294592",
+        "44980198934771339842937265555679/5809396217645201671323648"
+      ],
+      [
+        3651300775,
+        -3484628,
+        "1098108412996890579272691236752481/139425509223484840111767552",
+        "34315887929461003585038733230883/4357047163233901253492736"
+      ],
+      [
+        3765148841,
+        -3587140,
+        "1116921832108993355389703923464205/139425509223484840111767552",
+        "558460916445964174996609083707759/69712754611742420055883776"
+      ],
+      [
+        3882552778,
+        -3651412,
+        "567945583950220684452355384699717/69712754611742420055883776",
+        "283972792180243981908793010721809/34856377305871210027941888"
+      ],
+      [
+        4003503065,
+        -3703122,
+        "1155469609378933780701725979769639/139425509223484840111767552",
+        "144433701279833278694127263147963/17428188652935605013970944"
+      ],
+      [
+        4128499548,
+        -3817496,
+        "32644470445669658375181185243899/3872930811763467780882432",
+        "16322235235341703462278226013729/1936465405881733890441216"
+      ],
+      [
+        4257017427,
+        -3805125,
+        "398427215536392137335046831358275/46475169741161613370589184",
+        "99606803962983220470776407392371/11618792435290403342647296"
+      ],
+      [
+        4389574759,
+        -3810957,
+        "1215902490974462956525907633598089/139425509223484840111767552",
+        "151987811496157174901168609615299/17428188652935605013970944"
+      ],
+      [
+        4526166902,
+        -3926556,
+        "618411015725386007369169897594365/69712754611742420055883776",
+        "9662672128854536099250682375715/1089261790808475313373184"
+      ],
+      [
+        4667444574,
+        -3980418,
+        "209719130959058923518325276445165/23237584870580806685294592",
+        "104859565570676570889003574060645/11618792435290403342647296"
+      ],
+      [
+        4812753797,
+        -4100840,
+        "1280000125049914109730545708132359/139425509223484840111767552",
+        "320000031549675776101699558348321/34856377305871210027941888"
+      ],
+      [
+        4962779156,
+        -4063879,
+        "325502978640753658126722368169091/34856377305871210027941888",
+        "1271496011490540108851041809493/136157723851059414171648"
+      ],
+      [
+        5117543579,
+        -4155422,
+        "662397832619780850984639990962231/69712754611742420055883776",
+        "1324795666503737591728716204970897/139425509223484840111767552"
+      ],
+      [
+        5277044854,
+        -4277037,
+        "336938197060302139130675487436019/34856377305871210027941888",
+        "673876394782229535432445308884905/69712754611742420055883776"
+      ],
+      [
+        5441251487,
+        -4349261,
+        "2741839852543634633440255546302215/278851018446969680223535104",
+        "685459963830595595477347399919171/69712754611742420055883776"
+      ],
+      [
+        5611081886,
+        -4442766,
+        "1394749051468892111328704687417959/139425509223484840111767552",
+        "348687263230994987273008376775679/34856377305871210027941888"
+      ],
+      [
+        5785572229,
+        -4513854,
+        "2837219738364480890121380246770645/278851018446969680223535104",
+        "709304935354932794808849429574951/69712754611742420055883776"
+      ],
+      [
+        5965697240,
+        -4542789,
+        "360766380171097686924565528430347/34856377305871210027941888",
+        "90191595142863137281054133563273/8714094326467802506985472"
+      ],
+      [
+        6151480199,
+        -4740164,
+        "2935491723510555552204200049605135/278851018446969680223535104",
+        "733872931716506601248318521903139/69712754611742420055883776"
+      ],
+      [
+        6342913776,
+        -4790716,
+        "62200927731540656196224222064829/5809396217645201671323648",
+        "15550231951207458074963173467961/1452349054411300417830912"
+      ],
+      [
+        6539955037,
+        -4814631,
+        "3037109193373966303664980973515813/278851018446969680223535104",
+        "759277299264463990964501112283309/69712754611742420055883776"
+      ],
+      [
+        6743940990,
+        -4925241,
+        "514888666446975576352210008057349/46475169741161613370589184",
+        "128722166773167261180523873204831/11618792435290403342647296"
+      ],
+      [
+        6953498478,
+        -4909301,
+        "174571486943399985640772321545303/15491723247053871123529728",
+        "43642871792236339721068311109741/3872930811763467780882432"
+      ],
+      [
+        7170064978,
+        -5066838,
+        "1598573742865451867600756575074713/139425509223484840111767552",
+        "399643436248528299567520019430653/34856377305871210027941888"
+      ],
+      [
+        7393715341,
+        -5192427,
+        "3252473007275193183585449661551005/278851018446969680223535104",
+        "813118252933679384710351695758953/69712754611742420055883776"
+      ],
+      [
+        7624493685,
+        -5260603,
+        "7659328736488473606594655737311/645488468627244630147072",
+        "122549259957088642754421919606301/10327815498035914082353152"
+      ],
+      [
+        7862407862,
+        -5448285,
+        "52590074361964344681383333748947/4357047163233901253492736",
+        "1682882382036912048366767102226193/139425509223484840111767552"
+      ],
+      [
+        8107423359,
+        -5478486,
+        "142621442855176834819722340530475/11618792435290403342647296",
+        "1140971544555292412055863368710455/92950339482323226741178368"
+      ],
+      [
+        8359456635,
+        -5632404,
+        "16117512545342542686047907316271/1290976937254489260294144",
+        "128940100562768228927369525519803/10327815498035914082353152"
+      ],
+      [
+        8620689655,
+        -5860446,
+        "221274895217662878880656369980569/17428188652935605013970944",
+        "3540398329144562980306943815805269/278851018446969680223535104"
+      ],
+      [
+        8888888888,
+        -5799589,
+        "878950790041180980653678594285/68078861925529707085824",
+        "450022805242850892414856817234485/34856377305871210027941888"
+      ],
+      [
+        9166427957,
+        -5968103,
+        "228833844232963769355264192694541/17428188652935605013970944",
+        "3661341513949455469574412984489743/278851018446969680223535104"
+      ],
+      [
+        9450679267,
+        -6037011,
+        "1861284101153829826845894398344817/139425509223484840111767552",
+        "3722568208821913706871988718529259/278851018446969680223535104"
+      ],
+      [
+        9744214372,
+        -6091516,
+        "473212065026203451225304338202899/34856377305871210027941888",
+        "946424131760142544717808742499921/69712754611742420055883776"
+      ],
+      [
+        10047095761,
+        -6303299,
+        "1925165653137432612448209322374101/139425509223484840111767552",
+        "3850331313449203641525433367596861/278851018446969680223535104"
+      ],
+      [
+        10359339592,
+        -6341754,
+        "244710298589451403834337540494675/17428188652935605013970944",
+        "489420598118101723015823492082593/34856377305871210027941888"
+      ],
+      [
+        10680907877,
+        -6365615,
+        "1990942763771414628911887418001025/139425509223484840111767552",
+        "3981885535418914484863655200644305/278851018446969680223535104"
+      ],
+      [
+        11011699931,
+        -6558959,
+        "1012283564812384400510904660641945/69712754611742420055883776",
+        "4049134267496238809590396197124181/278851018446969680223535104"
+      ],
+      [
+        11355571327,
+        -6519171,
+        "514890736972268004080930424920681/34856377305871210027941888",
+        "4119125904424622909387355641844901/278851018446969680223535104"
+      ],
+      [
+        11708744968,
+        -6752958,
+        "8183711322264640784569694292119/544630895404237656686592",
+        "523757525758408465824368805629891/34856377305871210027941888"
+      ],
+      [
+        12070916635,
+        -6840468,
+        "266305828912626367157430740125747/17428188652935605013970944",
+        "4260893272099633712187772666181857/278851018446969680223535104"
+      ],
+      [
+        12446518864,
+        -6773725,
+        "135430067575146234843964542850103/8714094326467802506985472",
+        "270860135771725867169712454843867/17428188652935605013970944"
+      ],
+      [
+        12830793905,
+        -7086658,
+        "2203792860022884080355656385113911/139425509223484840111767552",
+        "4407585730462194215370586991854727/278851018446969680223535104"
+      ],
+      [
+        13228606862,
+        -7213429,
+        "1120627805867503563077325089464793/69712754611742420055883776",
+        "2241255617193376966388232433460689/139425509223484840111767552"
+      ],
+      [
+        13640238704,
+        -7416642,
+        "142471675328503013449207526448253/8714094326467802506985472",
+        "284943351372171421207611508908473/17428188652935605013970944"
+      ],
+      [
+        14065934065,
+        -7471272,
+        "1545426751374487008158257206979261/92950339482323226741178368",
+        "96589172210845339817380536797731/5809396217645201671323648"
+      ],
+      [
+        14499320344,
+        -7498806,
+        "196434148603614871857047784465355/11618792435290403342647296",
+        "49108537281640523979477954616861/2904698108822600835661824"
+      ],
+      [
+        14946286781,
+        -7738152,
+        "1597978687603237063139600284837147/92950339482323226741178368",
+        "798989345992354016300551963694777/46475169741161613370589184"
+      ],
+      [
+        15406836783,
+        -8000251,
+        "541566892861608932568734584222087/30983446494107742247059456",
+        "270783447196786413651613137100115/15491723247053871123529728"
+      ],
+      [
+        15880893300,
+        -7883990,
+        "45894072795950247696888556786145/2581953874508978520588288",
+        "2868379558098534472758373695095/161372117156811157536768"
+      ],
+      [
+        16376663254,
+        -8122527,
+        "840179724675061975521890071145717/46475169741161613370589184",
+        "420089863597467669215586620010787/23237584870580806685294592"
+      ],
+      [
+        16886543535,
+        -8210459,
+        "189879013565468222188313325890113/10327815498035914082353152",
+        "94939507076354778406075718820539/5163907749017957041176576"
+      ],
+      [
+        17410228509,
+        -8226214,
+        "579360522727668725388862960281163/30983446494107742247059456",
+        "72420065571592794262074056189927/3872930811763467780882432"
+      ],
+      [
+        17947279865,
+        -8568363,
+        "5302922430388255932911211613086827/278851018446969680223535104",
+        "441910203981496954312959838578181/23237584870580806685294592"
+      ],
+      [
+        18507807981,
+        -8633221,
+        "599339673283726281531481273026029/30983446494107742247059456",
+        "99889945884752445623061749856583/5163907749017957041176576"
+      ],
+      [
+        19081693500,
+        -8866892,
+        "457159417480113157402266847627439/23237584870580806685294592",
+        "38096618255916218492580042284297/1936465405881733890441216"
+      ],
+      [
+        19668100799,
+        -8961579,
+        "5577407727333192581882691980874905/278851018446969680223535104",
+        "29048998683966418789021269358535/1452349054411300417830912"
+      ],
+      [
+        20278833967,
+        -9032601,
+        "5673029636403642466639639266407509/278851018446969680223535104",
+        "472752471445291083991192787826601/23237584870580806685294592"
+      ],
+      [
+        20901371652,
+        -9396078,
+        "26707219692067517056838902909787/1290976937254489260294144",
+        "17804813195713992287230760949403/860651291502992840196096"
+      ],
+      [
+        21548821548,
+        -9618310,
+        "977640484643450930916768642540425/46475169741161613370589184",
+        "27156680235273103915383822667091/1290976937254489260294144"
+      ],
+      [
+        22222222222,
+        -9490508,
+        "5966021179812893900834154150930055/278851018446969680223535104",
+        "18413645690982840427862890323233/860651291502992840196096"
+      ],
+      [
+        22906227630,
+        -9875982,
+        "2021906581567836281897878296998701/92950339482323226741178368",
+        "168492215831061383952046336893173/7745861623526935561764864"
+      ],
+      [
+        23616236162,
+        -9962912,
+        "6168351691762345902109431457938569/278851018446969680223535104",
+        "514029309847657816520155644008131/23237584870580806685294592"
+      ],
+      [
+        24353120243,
+        -10306415,
+        "12546998715916750393642889873626723/557702036893939360447070208",
+        "1045583230937312216527012749227291/46475169741161613370589184"
+      ],
+      [
+        25098039215,
+        -10363915,
+        "12754229715447620998059921039124175/557702036893939360447070208",
+        "3188557443336792364148835898562785/139425509223484840111767552"
+      ],
+      [
+        25869037995,
+        -10328001,
+        "1440972701486718652569834433432927/61966892988215484494118912",
+        "45030397131856529469476805770581/1936465405881733890441216"
+      ],
+      [
+        26666666666,
+        -10762085,
+        "6593740341108912482033480252052589/278851018446969680223535104",
+        "1648435093216330307009715841678985/69712754611742420055883776"
+      ],
+      [
+        27491408934,
+        -10924387,
+        "2234932634507366680190490811335397/92950339482323226741178368",
+        "279366580699089504760649856251611/11618792435290403342647296"
+      ],
+      [
+        28343666961,
+        -10931992,
+        "505180611428144131177941810884515/20655630996071828164706304",
+        "126295153501764492854003105351555/5163907749017957041176576"
+      ],
+      [
+        29223744292,
+        -11164197,
+        "3467945397143867454440292054699025/139425509223484840111767552",
+        "866986353842631392003287557303635/34856377305871210027941888"
+      ],
+      [
+        30131826741,
+        -11259051,
+        "3628400817209835659564152856543/143441881917165473366016",
+        "58054413389659650046929200895925/2295070110674647573856256"
+      ],
+      [
+        31067961165,
+        -11692796,
+        "49813918232219420421102050163551/1936465405881733890441216",
+        "1594045392319234254009730739291567/61966892988215484494118912"
+      ],
+      [
+        32032032032,
+        -11900238,
+        "170950170752874929073425685070489/6535570744850851880239104",
+        "1367601373879357518691173747102425/52284565958806815041912832"
+      ],
+      [
+        33023735810,
+        -11985526,
+        "2781492071094702417323118473844829/104569131917613630083825664",
+        "22251936700323892773772911636040337/836553055340909040670605312"
+      ],
+      [
+        34042553191,
+        -12266206,
+        "5656150398573609738341688852957715/209138263835227260167651328",
+        "45249203464248769471564806265339031/1673106110681818081341210624"
+      ],
+      [
+        35087719298,
+        -12383453,
+        "2874737416670751135289943497042909/104569131917613630083825664",
+        "22997899477600515856729011692073233/836553055340909040670605312"
+      ],
+      [
+        36158192090,
+        -12679546,
+        "1461305097321943348698702266587607/52284565958806815041912832",
+        "23380881708026264553788672981153957/836553055340909040670605312"
+      ],
+      [
+        37252619324,
+        -12964843,
+        "2970478384819688590801417532433067/104569131917613630083825664",
+        "11881913618178526712637427309464019/418276527670454520335302656"
+      ],
+      [
+        38415366146,
+        -13043492,
+        "12083870756470645697407144297770409/418276527670454520335302656",
+        "24167741678310582031776874561287611/836553055340909040670605312"
+      ],
+      [
+        39603960396,
+        -13000406,
+        "227578847092937931379207239037409/7745861623526935561764864",
+        "455157697391762096805288899871571/15491723247053871123529728"
+      ],
+      [
+        40816326530,
+        -13463794,
+        "12494039743484082878986415902984549/418276527670454520335302656",
+        "24988079668245437225032795182902003/836553055340909040670605312"
+      ],
+      [
+        42049934296,
+        -13559566,
+        "3175220324863182600326306567774057/104569131917613630083825664",
+        "6350440697125033571976649286427973/209138263835227260167651328"
+      ],
+      [
+        43360433604,
+        -13883891,
+        "717679293930718828128958341946747/23237584870580806685294592",
+        "1435358598888766646651612969131463/46475169741161613370589184"
+      ],
+      [
+        44692737430,
+        -13937792,
+        "6567855525391242366732508345921471/209138263835227260167651328",
+        "26271422309295859932554640309799999/836553055340909040670605312"
+      ],
+      [
+        46043165467,
+        -14215054,
+        "13355231499143574457887260719178453/418276527670454520335302656",
+        "53420926430998648130909267440291175/1673106110681818081341210624"
+      ],
+      [
+        47477744807,
+        -14697114,
+        "13582336894901219730023802278049073/418276527670454520335302656",
+        "54329348034636921824607100481478979/1673106110681818081341210624"
+      ],
+      [
+        48929663608,
+        -14850656,
+        "3452018322223820061367547499563099/104569131917613630083825664",
+        "6904036703953787791474499071570027/209138263835227260167651328"
+      ],
+      [
+        50393700787,
+        -15003742,
+        "28072120219738869782146322819614969/836553055340909040670605312",
+        "56144240937304364152603712559155891/1673106110681818081341210624"
+      ],
+      [
+        51948051948,
+        -15371105,
+        "264290956582121830997838880760801/7745861623526935561764864",
+        "528581917987184716995635484247261/15491723247053871123529728"
+      ],
+      [
+        53511705685,
+        -15580985,
+        "29010950030272257176528835797686405/836553055340909040670605312",
+        "58021900605538454168488299567521825/1673106110681818081341210624"
+      ],
+      [
+        55172413793,
+        -16234864,
+        "29498596141121009183951620071886985/836553055340909040670605312",
+        "58997192852710391295553667116946413/1673106110681818081341210624"
+      ],
+      [
+        56838365896,
+        -16340547,
+        "7495063334252233399735287940697617/209138263835227260167651328",
+        "1873765852201677192614499415816453/52284565958806815041912832"
+      ],
+      [
+        58608058608,
+        -16296444,
+        "423472213152243848503546243286435/11618792435290403342647296",
+        "26467013593089893746261081425203/726174527205650208915456"
+      ],
+      [
+        60377358490,
+        -16726265,
+        "30991308339755245532817373742496715/836553055340909040670605312",
+        "15495654333222587554900980656530565/418276527670454520335302656"
+      ],
+      [
+        62256809338,
+        -16853768,
+        "31513679948050377134792014743421903/836553055340909040670605312",
+        "15756840145032274647365519523833687/418276527670454520335302656"
+      ],
+      [
+        64128256513,
+        -17226646,
+        "64072645363871888616035391584257061/1673106110681818081341210624",
+        "4004540379934038793159659036841055/104569131917613630083825664"
+      ],
+      [
+        66115702479,
+        -17610045,
+        "21718629049463870360425422048787931/557702036893939360447070208",
+        "10859314649443963375782520557574345/278851018446969680223535104"
+      ],
+      [
+        68085106382,
+        -17668585,
+        "33107483518311607042497823904772671/836553055340909040670605312",
+        "8276870977354011253603766955402875/209138263835227260167651328"
+      ],
+      [
+        70175438596,
+        -17943187,
+        "16833363966200577990670302646840685/418276527670454520335302656",
+        "2104170521359628070476334097997071/52284565958806815041912832"
+      ],
+      [
+        72234762979,
+        -18535227,
+        "68410469337157177018507641607523423/1673106110681818081341210624",
+        "2137827193498021597406142423879355/52284565958806815041912832"
+      ],
+      [
+        74418604651,
+        -18741401,
+        "69545078692579323006411327365623313/1673106110681818081341210624",
+        "34772539793227802614727000452616437/836553055340909040670605312"
+      ],
+      [
+        76738609112,
+        -19336620,
+        "8840234886320604960984101436373211/209138263835227260167651328",
+        "2210058750830637356428012319350649/52284565958806815041912832"
+      ],
+      [
+        79012345679,
+        -19324542,
+        "71847615239713322476822617661599019/1673106110681818081341210624",
+        "4490476013584345366823999708634517/104569131917613630083825664"
+      ],
+      [
+        81424936386,
+        -19585152,
+        "4058191062036667416251146915921289/92950339482323226741178368",
+        "1014547779716330047910294412596663/23237584870580806685294592"
+      ],
+      [
+        83769633507,
+        -20398682,
+        "12364784635316651650077134588101975/278851018446969680223535104",
+        "24729569626459686598050795749722841/557702036893939360447070208"
+      ],
+      [
+        86253369272,
+        -20646030,
+        "18843945462436420505324023090554133/418276527670454520335302656",
+        "4710986435307900683050646753320639/104569131917613630083825664"
+      ],
+      [
+        88888888888,
+        -20542675,
+        "19156307349800787567145986888561557/418276527670454520335302656",
+        "4789076910358897442649634716624467/104569131917613630083825664"
+      ],
+      [
+        91428571428,
+        -21283678,
+        "12967829031974100746818308889519769/278851018446969680223535104",
+        "3241957308708606274953522251290691/69712754611742420055883776"
+      ],
+      [
+        94117647058,
+        -21399204,
+        "79051383374553742776704083432038851/1673106110681818081341210624",
+        "19762846161472444183705761518996111/418276527670454520335302656"
+      ],
+      [
+        96969696969,
+        -21774425,
+        "53573029883719570275139527401220121/1115404073787878720894140416",
+        "13393257692465801176389465234449155/278851018446969680223535104"
+      ],
+      [
+        100000000000,
+        -22000751,
+        "79798805147017063579674483376151/1633892686212712970059776",
+        "19949701626557938472507890863569/408473171553178242514944"
+      ],
+      [
+        102893890675,
+        -22105030,
+        "166010802482439682418948555137237165/3346212221363636162682421248",
+        "10375675336676521655488258945665565/209138263835227260167651328"
+      ],
+      [
+        105960264900,
+        -22890732,
+        "14059783341736653592915403180114153/278851018446969680223535104",
+        "3514945898653146575909036785927157/69712754611742420055883776"
+      ],
+      [
+        109215017064,
+        -23350458,
+        "264715409409929250181121355817363/5163907749017957041176576",
+        "33089426789005496461535728206995/645488468627244630147072"
+      ],
+      [
+        112280701754,
+        -23095206,
+        "87087644958482792972861072226848695/1673106110681818081341210624",
+        "21771911653319791893808461632809687/418276527670454520335302656"
+      ],
+      [
+        115523465703,
+        -23967556,
+        "58974047498026878491955543846979463/1115404073787878720894140416",
+        "14743512162315921946597590937724183/278851018446969680223535104"
+      ],
+      [
+        118959107806,
+        -24459739,
+        "89887356586270196037966538800600053/1673106110681818081341210624",
+        "22471839597547129753838003619400271/418276527670454520335302656"
+      ],
+      [
+        122605363984,
+        -24907023,
+        "356978047741339482841871393046473/6535570744850851880239104",
+        "11423297763669359908087489191793273/209138263835227260167651328"
+      ],
+      [
+        125984251968,
+        -25295814,
+        "10062891465511488772127225133409/181543631801412552228864",
+        "322012533721629416572236692598593/5809396217645201671323648"
+      ],
+      [
+        129554655870,
+        -25511543,
+        "1307755150709054981458603634851751/23237584870580806685294592",
+        "10462041433398711816884724472372183/185900678964646453482356736"
+      ],
+      [
+        133333333333,
+        -26065059,
+        "7970634860559799510636732509950503/139425509223484840111767552",
+        "63765080311182071323473100891499159/1115404073787878720894140416"
+      ],
+      [
+        137339055793,
+        -26834932,
+        "126558152063412436130114483719429/2178523581616950626746368",
+        "64797775347586890712886698165165043/1115404073787878720894140416"
+      ],
+      [
+        141592920353,
+        -26397873,
+        "4117319002478603975595639131039173/69712754611742420055883776",
+        "65877105600355331793483063014675923/1115404073787878720894140416"
+      ],
+      [
+        145454545454,
+        -27402130,
+        "261144067137396741719940174447611/4357047163233901253492736",
+        "33426441405689246508258303545447845/557702036893939360447070208"
+      ],
+      [
+        149532710280,
+        -27904080,
+        "11045856084275069692387938866605/181543631801412552228864",
+        "2827739228109420068123666433068305/46475169741161613370589184"
+      ],
+      [
+        153846153846,
+        -27997099,
+        "638246837476140258963873214203347/10327815498035914082353152",
+        "1276493707660186916740585530554857/20655630996071828164706304"
+      ],
+      [
+        158415841584,
+        -27990946,
+        "243236360912190652521347064263137/3872930811763467780882432",
+        "162157578211778351268043077572209/2581953874508978520588288"
+      ],
+      [
+        163265306122,
+        -29069020,
+        "53408952780718395339975060318751801/836553055340909040670605312",
+        "35605969485657378454705160024084437/557702036893939360447070208"
+      ],
+      [
+        167539267015,
+        -29338084,
+        "108341761905366641051635623826000901/1673106110681818081341210624",
+        "72227843276172318416215649303900899/1115404073787878720894140416"
+      ],
+      [
+        172043010752,
+        -29623129,
+        "1717658977413958872941369726869369/26142282979403407520956416",
+        "1145106017549782865562994433408807/17428188652935605013970944"
+      ],
+      [
+        176795580110,
+        -29962790,
+        "27892740177546074413777829436020875/418276527670454520335302656",
+        "37190321323329219695118985014726265/557702036893939360447070208"
+      ],
+      [
+        181818181818,
+        -30504411,
+        "65569147772646768566070765618923/968232702940866945220608",
+        "1398808527773765318883881209609685/20655630996071828164706304"
+      ],
+      [
+        187134502923,
+        -31482613,
+        "799337142504718141089731757999787/11618792435290403342647296",
+        "8526263116181544708370102404691673/123933785976430968988237824"
+      ],
+      [
+        192771084337,
+        -31963933,
+        "29240341164709276554519676014255569/418276527670454520335302656",
+        "25991415192646420596351452174981081/371801357929292906964713472"
+      ],
+      [
+        198757763975,
+        -31723060,
+        "118918641311342064029413587458172415/1673106110681818081341210624",
+        "8808788532776019421637597271636865/123933785976430968988237824"
+      ],
+      [
+        203821656050,
+        -33274986,
+        "60282624821211816264486507207728207/836553055340909040670605312",
+        "1488459921881656666862781952293169/20655630996071828164706304"
+      ],
+      [
+        209150326797,
+        -33292898,
+        "40753558081917489462419126704912339/557702036893939360447070208",
+        "27169039651776145076281052827550761/371801357929292906964713472"
+      ],
+      [
+        214765100671,
+        -33700040,
+        "124029516301466095499472033508523855/1673106110681818081341210624",
+        "82686347106098684787100713227684897/1115404073787878720894140416"
+      ],
+      [
+        220689655172,
+        -35258354,
+        "31465467955160272691915525893853321/418276527670454520335302656",
+        "62930938178947099046846839068546029/836553055340909040670605312"
+      ],
+      [
+        226950354609,
+        -34974218,
+        "85180577100423438490441285399670035/1115404073787878720894140416",
+        "21295145063524843009025378890803275/278851018446969680223535104"
+      ],
+      [
+        233576642335,
+        -34834658,
+        "259586215067705917664015754308374619/3346212221363636162682421248",
+        "1014008691179822497270245752824099/13071141489701703760478208"
+      ],
+      [
+        240601503759,
+        -36211887,
+        "87932845887947824149048232453453291/1115404073787878720894140416",
+        "43966424664298739961972532491184969/557702036893939360447070208"
+      ],
+      [
+        248062015503,
+        -36385453,
+        "29798604016681088047712221052188309/371801357929292906964713472",
+        "14899302608376087226564342679957449/185900678964646453482356736"
+      ],
+      [
+        253968253968,
+        -36489654,
+        "5660039710581555075082978755912359/69712754611742420055883776",
+        "44219062059648636331511527735055/544630895404237656686592"
+      ],
+      [
+        260162601626,
+        -37530645,
+        "137632868400801658808989609155966809/1673106110681818081341210624",
+        "17204109274619635348290695103010253/209138263835227260167651328"
+      ],
+      [
+        266666666666,
+        -38302057,
+        "139487718612864957713046077027419307/1673106110681818081341210624",
+        "69743862313306704066606586283998985/836553055340909040670605312"
+      ],
+      [
+        273504273504,
+        -38478930,
+        "2946423088462741790225199288105785/34856377305871210027941888",
+        "736605804637488863304025169607817/8714094326467802506985472"
+      ],
+      [
+        280701754385,
+        -38883776,
+        "286899115151429722741901010884442493/3346212221363636162682421248",
+        "35862391016536845909050823192416191/418276527670454520335302656"
+      ],
+      [
+        288288288288,
+        -39531724,
+        "3032396818404515363880079958440831/34856377305871210027941888",
+        "379049619886457802692509311633089/4357047163233901253492736"
+      ],
+      [
+        296296296296,
+        -39897595,
+        "110823444976555462711785269127187837/1254829583011363561005907968",
+        "55411725125813946528135709459530149/627414791505681780502953984"
+      ],
+      [
+        304761904761,
+        -40803324,
+        "300105566386625426124064027831517395/3346212221363636162682421248",
+        "150052790528402669095034327513482979/1673106110681818081341210624"
+      ],
+      [
+        313725490196,
+        -41613579,
+        "228625657326924022313535653620792271/2509659166022727122011815936",
+        "57156417203479162503381446954201933/627414791505681780502953984"
+      ],
+      [
+        323232323232,
+        -41777994,
+        "9683626415632008606616250977586453/104569131917613630083825664",
+        "2420906729018880018666434189761799/26142282979403407520956416"
+      ],
+      [
+        333333333333,
+        -43201151,
+        "52521847789919180928057741117817505/557702036893939360447070208",
+        "105043701167852828684512689991023247/1115404073787878720894140416"
+      ],
+      [
+        340425531914,
+        -43297116,
+        "119530286929425190598648035357519741/1254829583011363561005907968",
+        "478121173660080753271713649272996697/5019318332045454244023631872"
+      ],
+      [
+        347826086956,
+        -44319999,
+        "483750341305992073841483383603473947/5019318332045454244023631872",
+        "120937592023471783702007885252990963/1254829583011363561005907968"
+      ],
+      [
+        355555555555,
+        -43734184,
+        "1958439962688704234333258595861249467/20077273328181816976094527488",
+        "489610018344617005404243126652503773/5019318332045454244023631872"
+      ],
+      [
+        363636363636,
+        -45475053,
+        "18357169788226908023000236400368615/185900678964646453482356736",
+        "4589292712007781465164504510278939/46475169741161613370589184"
+      ],
+      [
+        372093023255,
+        -44853032,
+        "2007671734497985828632896080999583791/20077273328181816976094527488",
+        "501917963235030112868104280203470289/5019318332045454244023631872"
+      ],
+      [
+        380952380952,
+        -45321132,
+        "28247454006315292975877435087081555/278851018446969680223535104",
+        "7061863927545212122843015398764105/69712754611742420055883776"
+      ],
+      [
+        390243902439,
+        -46660434,
+        "686977850515217937814307664907007717/6692424442727272325364842496",
+        "171744473224188733954674802272133679/1673106110681818081341210624"
+      ],
+      [
+        400000000000,
+        -46749363,
+        "254982648237293505258955589337157/2450839029319069455089664",
+        "63745666084338393279506707392883/612709757329767363772416"
+      ],
+      [
+        410256410256,
+        -47473517,
+        "14708800752234910907205755215952669/139425509223484840111767552",
+        "919300106442443147504804268841007/8714094326467802506985472"
+      ],
+      [
+        421052631578,
+        -48537538,
+        "1074282809009447906570606846916932765/10038636664090908488047263744",
+        "268570720040995627915020707066411885/2509659166022727122011815936"
+      ],
+      [
+        432432432432,
+        -49100775,
+        "5046386327252327938210675725368753/46475169741161613370589184",
+        "1261596667504093127457501193472471/11618792435290403342647296"
+      ],
+      [
+        444444444444,
+        -49656926,
+        "184400354189600794382859456850369133/1673106110681818081341210624",
+        "46100091760350600847717274921448179/418276527670454520335302656"
+      ],
+      [
+        457142857142,
+        -51228739,
+        "1123713047271524214489241848901347299/10038636664090908488047263744",
+        "280928281919296666072168365094779815/2509659166022727122011815936"
+      ],
+      [
+        470588235294,
+        -51799054,
+        "380505221429819070332302857429044317/3346212221363636162682421248",
+        "95126312352569325749988171011836561/836553055340909040670605312"
+      ],
+      [
+        484848484848,
+        -52387168,
+        "2014232342876516196896035718741963/17428188652935605013970944",
+        "16113859961761658337009667534303957/139425509223484840111767552"
+      ],
+      [
+        500000000000,
+        -54243548,
+        "287993818212913926644599652628497/2450839029319069455089664",
+        "1151975362543850130458084889810863/9803356117276277820358656"
+      ],
+      [
+        507936507936,
+        -54664535,
+        "3098201692760843824440830753886247/26142282979403407520956416",
+        "24785615501033720518531905410371361/209138263835227260167651328"
+      ],
+      [
+        516129032258,
+        -54874560,
+        "150002623879352774909910262157018071/1254829583011363561005907968",
+        "1200021087329954872924340173413872915/10038636664090908488047263744"
+      ],
+      [
+        524590163934,
+        -54600178,
+        "1576456825697074958718966655729661/13071141489701703760478208",
+        "403572980258865770714757307347348167/3346212221363636162682421248"
+      ],
+      [
+        533333333333,
+        -55565302,
+        "305419081678786520552303027585680223/2509659166022727122011815936",
+        "2443352855636655987009243643296243535/20077273328181816976094527488"
+      ],
+      [
+        542372881355,
+        -56326996,
+        "308209041282920723159407693122248891/2509659166022727122011815936",
+        "2465672537586306308389492834173615073/20077273328181816976094527488"
+      ],
+      [
+        551724137931,
+        -57805918,
+        "51843441578533438581430408084753295/418276527670454520335302656",
+        "829495136137411340582023371137571635/6692424442727272325364842496"
+      ],
+      [
+        561403508771,
+        -56527913,
+        "313990603153371669648463780604213477/2509659166022727122011815936",
+        "2511925043445983276719965851759147065/20077273328181816976094527488"
+      ],
+      [
+        571428571428,
+        -56821813,
+        "2935770114084763020652870602855145/23237584870580806685294592",
+        "23486162987022838201548255009437681/185900678964646453482356736"
+      ],
+      [
+        581818181818,
+        -58514134,
+        "10005839634283848232336562248168433/78426848938210222562869248",
+        "1280747588226965390106845595010433263/10038636664090908488047263744"
+      ],
+      [
+        592592592592,
+        -58992257,
+        "40425467274778039206501251755636379/313707395752840890251476992",
+        "161701883875810053851737753569949451/1254829583011363561005907968"
+      ],
+      [
+        603773584905,
+        -59346228,
+        "435595210731621715044980279996215369/3346212221363636162682421248",
+        "871190502491172704645145469895458883/6692424442727272325364842496"
+      ],
+      [
+        615384615384,
+        -59474870,
+        "6113469469208281197849188964611179/46475169741161613370589184",
+        "12226940096130344256989698335394097/92950339482323226741178368"
+      ],
+      [
+        627450980392,
+        -59397116,
+        "166835511500599334495999386840106999/1254829583011363561005907968",
+        "333671055169903323088075421046099733/2509659166022727122011815936"
+      ],
+      [
+        640000000000,
+        -61537287,
+        "20588015045279612515765987221973/153177439332441840943104",
+        "41176034134771680009040050615821/306354878664883681886208"
+      ],
+      [
+        653061224489,
+        -62039596,
+        "1364050997735578310824898893567908167/10038636664090908488047263744",
+        "2728102268577358906734439235753524993/20077273328181816976094527488"
+      ],
+      [
+        666666666666,
+        -62538704,
+        "76639590605760719258459484225649069/557702036893939360447070208",
+        "153279196854994208441596495681357817/1115404073787878720894140416"
+      ],
+      [
+        680851063829,
+        -63249279,
+        "1395411600961468166326084331251564337/10038636664090908488047263744",
+        "2790823492451209442440350197783377465/20077273328181816976094527488"
+      ],
+      [
+        695652173913,
+        -64969547,
+        "470595297830172101281614973595204407/3346212221363636162682421248",
+        "941190695636297521624346319673184495/6692424442727272325364842496"
+      ],
+      [
+        711111111111,
+        -64377667,
+        "79368744283258942731379025175843769/557702036893939360447070208",
+        "317475011559811617260542250310717721/2230808147575757441788280832"
+      ],
+      [
+        727272727272,
+        -65609951,
+        "209242025922213787923847920927937/1452349054411300417830912",
+        "13391491142085373778856385066216573/92950339482323226741178368"
+      ],
+      [
+        744186046511,
+        -67004970,
+        "1430128903907441783205902250552653/9803356117276277820358656",
+        "2928904326633605059074536903799266773/20077273328181816976094527488"
+      ],
+      [
+        761904761904,
+        -68691378,
+        "5149216674296000232125131282887827/34856377305871210027941888",
+        "20596869081074125916045920720847093/139425509223484840111767552"
+      ],
+      [
+        780487804878,
+        -69879720,
+        "250384285740147507381367585451876851/1673106110681818081341210624",
+        "500768630771235872931393584661093539/3346212221363636162682421248"
+      ],
+      [
+        800000000000,
+        -68703221,
+        "92930321498953185237242469448811/612709757329767363772416",
+        "185860665523654372277949831475747/1225419514659534727544832"
+      ],
+      [
+        820512820512,
+        -71290866,
+        "5359390441603293007306170226342639/34856377305871210027941888",
+        "10718782213657537305513504886008431/69712754611742420055883776"
+      ],
+      [
+        842105263157,
+        -71799639,
+        "1565304178400645414902928551262574467/10038636664090908488047263744",
+        "3130608755037252648316344024671479339/20077273328181816976094527488"
+      ],
+      [
+        864864864864,
+        -72499600,
+        "1838044129887148355888349941770171/11618792435290403342647296",
+        "3676088739342574031119915390004303/23237584870580806685294592"
+      ],
+      [
+        888888888888,
+        -74705662,
+        "67149779765487623810498665242914707/418276527670454520335302656",
+        "134299577509698121964013607611468419/836553055340909040670605312"
+      ],
+      [
+        914285714285,
+        -74619183,
+        "3272630218721496201013808852819600839/20077273328181816976094527488",
+        "818157667149965075413267402359282601/5019318332045454244023631872"
+      ],
+      [
+        941176470588,
+        -75531409,
+        "277078587414143096654941083842327611/1673106110681818081341210624",
+        "17317414159450691787218227523671987/104569131917613630083825664"
+      ],
+      [
+        969696969696,
+        -76696667,
+        "11732746204491309805835807414395507/69712754611742420055883776",
+        "5866373954497869346523969674571477/34856377305871210027941888"
+      ],
+      [
+        1000000000000,
+        -77683177,
+        "838787109723954001108673082905681/4901678058638138910179328",
+        "419393617581198941631442132273153/2450839029319069455089664"
+      ],
+      [
+        1032258064516,
+        -80094467,
+        "873931347106899457392468117644325623/5019318332045454244023631872",
+        "109241435218891552053594988888136143/627414791505681780502953984"
+      ],
+      [
+        1033333333333,
+        -80165258,
+        "3497691861122069542230616909772972867/20077273328181816976094527488",
+        "437211550065643282681805252160355567/2509659166022727122011815936"
+      ],
+      [
+        1066666666666,
+        -81814584,
+        "1779061132907859766085804376628833793/10038636664090908488047263744",
+        "889530707808205137466538966280346907/5019318332045454244023631872"
+      ],
+      [
+        1068965517241,
+        -81980916,
+        "3562250386053281256258758528481994997/20077273328181816976094527488",
+        "1781125476628667275125669856009157767/10038636664090908488047263744"
+      ],
+      [
+        1103448275862,
+        -82096189,
+        "604027890153521624127520073587761419/3346212221363636162682421248",
+        "151006997310614568112963891692844673/836553055340909040670605312"
+      ],
+      [
+        1107142857142,
+        -83222512,
+        "1815371844987474741155909323525805401/10038636664090908488047263744",
+        "453843035930546783444214561806567509/2509659166022727122011815936"
+      ],
+      [
+        1142857142857,
+        -84372134,
+        "1231289508719035956113709818358261473/6692424442727272325364842496",
+        "307822429366763133813733507642894961/1673106110681818081341210624"
+      ],
+      [
+        1148148148148,
+        -84161530,
+        "308594412926260406117212771086269941/1673106110681818081341210624",
+        "77148616367878024695516677708004601/418276527670454520335302656"
+      ],
+      [
+        1185185185185,
+        -85578303,
+        "418634919238770461550009776652730921/2230808147575757441788280832",
+        "209317496336956832673732952948753073/1115404073787878720894140416"
+      ],
+      [
+        1192307692307,
+        -86076631,
+        "1260006985132331015375667758051648465/6692424442727272325364842496",
+        "630003603696638559783452142191567473/3346212221363636162682421248"
+      ],
+      [
+        1230769230769,
+        -88357031,
+        "1281862938525759146687792338120509505/6692424442727272325364842496",
+        "320465792880290780523508578814932007/1673106110681818081341210624"
+      ],
+      [
+        1240000000000,
+        -89928697,
+        "314210183692073248455745736151247/1633892686212712970059776",
+        "78552560301524471639217110307343/408473171553178242514944"
+      ],
+      [
+        1280000000000,
+        -88064561,
+        "9989721925984169784777871240573/51059146444147280314368",
+        "624357738141328536794912728903/3191196652759205019648"
+      ],
+      [
+        1291666666666,
+        -89439308,
+        "657952694224881962377676487727759417/3346212221363636162682421248",
+        "20561025605845682692841159076531065/104569131917613630083825664"
+      ],
+      [
+        1333333333333,
+        -91842115,
+        "669444834089118743373500892884465635/3346212221363636162682421248",
+        "1338889930565291616439713022236491693/6692424442727272325364842496"
+      ],
+      [
+        1347826086956,
+        -92635067,
+        "168341053364777000012616293030780633/836553055340909040670605312",
+        "336682173382378666042247720903317483/1673106110681818081341210624"
+      ],
+      [
+        1391304347826,
+        -94338501,
+        "456713585794757740435654362941999617/2230808147575757441788280832",
+        "114178419738031889501752789440795913/557702036893939360447070208"
+      ],
+      [
+        1409090909090,
+        -93423292,
+        "1379649542263880011749582770500613947/6692424442727272325364842496",
+        "344912456757811625481693193814391463/1673106110681818081341210624"
+      ],
+      [
+        1454545454545,
+        -97314766,
+        "8422138555065519828378630759318882001/40154546656363633952189054976",
+        "701845028831113367199231307958476223/3346212221363636162682421248"
+      ],
+      [
+        1476190476190,
+        -95885151,
+        "4244873486885216017910231617857052103/20077273328181816976094527488",
+        "353739533511530077134092065577862539/1673106110681818081341210624"
+      ],
+      [
+        1523809523809,
+        -97147012,
+        "8638398965877065440095486346321502233/40154546656363633952189054976",
+        "719866740383755182718145506135672681/3346212221363636162682421248"
+      ],
+      [
+        1550000000000,
+        -98720400,
+        "8514895251054647313700524934426475/39213424469105111281434624",
+        "709574764386151428540352781807675/3267785372425425940119552"
+      ],
+      [
+        1600000000000,
+        -100572717,
+        "270688099918826977057795183001669/1225419514659534727544832",
+        "22557346905159171362272201936337/102118292888294560628736"
+      ],
+      [
+        1631578947368,
+        -101767190,
+        "1120590066660221505613121731902242389/5019318332045454244023631872",
+        "93382527670070198163282041326091359/418276527670454520335302656"
+      ],
+      [
+        1684210526315,
+        -104300533,
+        "9121090563824959038880379869675274843/40154546656363633952189054976",
+        "760091065753143660174612580423595609/3346212221363636162682421248"
+      ],
+      [
+        1722222222222,
+        -105270959,
+        "1538544260620118380943771653242984077/6692424442727272325364842496",
+        "128212053666852994757232345860046683/557702036893939360447070208"
+      ],
+      [
+        1777777777777,
+        -106608136,
+        "9390805694347681823200021608457714417/40154546656363633952189054976",
+        "86951926901131024135779183647407805/371801357929292906964713472"
+      ],
+      [
+        1823529411764,
+        -109605846,
+        "2380467999946046742028921377133247621/10038636664090908488047263744",
+        "66124128496035750130487929553320033/278851018446969680223535104"
+      ],
+      [
+        1882352941176,
+        -111024410,
+        "403551998609849318567348275709987933/1673106110681818081341210624",
+        "33629342329799097967529330683058395/139425509223484840111767552"
+      ],
+      [
+        1937500000000,
+        -112300486,
+        "4803222312613380470637690985198007/19606712234552555640717312",
+        "12808596400266793491993600846595727/52284565958806815041912832"
+      ],
+      [
+        2000000000000,
+        -116644406,
+        "305337649712237894784948386150417/1225419514659534727544832",
+        "1221350949311538134859479823898543/4901678058638138910179328"
+      ]
+    ]
+  },
+  "finite_scope": "Exact integer or outward rational tests for the whole continuous interval 1 < t <= 2e12. The high mesh uses positive mark capacity and independently determined endpoint enclosures. The 326 normalized decreases concern the endpoints of those panels. The infinite limsup result is a paper argument from the real pole.",
+  "open": "Show that the one-head primitive has the required lower floor at unbounded fourth-power heads. The successful fixed comparison is conditional."
+}

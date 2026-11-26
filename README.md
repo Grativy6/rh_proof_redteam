@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+One number per fourth-power root now suffices. The actual primitive is positive at every real input from just above 1 through **two trillion**. The mathematical question is its sign at unbounded heads. [One quantity at each fourth power](proofs/one-quantity-at-each-fourth-power.md) · [The four-value prediction](pal-rh/what-two-neighboring-blocks-predict.md)
+
 Any nonnegative reference profile followed by unsigned error charges loses a linear amount at late heads. Keeping the actual signs pays every negative inverse argument through 40 million with at most one thirty-sixth of its named partner. [The obstruction and the signed payment](proofs/what-a-positive-reference-must-lose.md)
 
 The five measurements that set the local price can be carried by actual primes and five times primes. In one full block, retaining 21,723 units on primes reproduces the measurements of 3,698,711 units of original absolute weight. [Full-stream reduction and open RH condition](proofs/two-prime-families-carry-the-full-price.md) · [Six integers that explain the payment](proofs/which-prime-labels-cancel.md)
