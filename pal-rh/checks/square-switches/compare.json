@@ -1,0 +1,26 @@
+{
+  "challenge_module": "SwitchChallenge",
+  "solution_module": "SwitchSolution",
+  "theorem_names": [
+    "squareEnergy",
+    "signedMaterial",
+    "inverseSigns",
+    "flexibleSquareReturns",
+    "riemannHypothesis"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

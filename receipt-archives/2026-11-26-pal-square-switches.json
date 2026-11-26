@@ -1,0 +1,631 @@
+{
+  "parent_public_research_commit": "ce124043481e7fdc5fefc4aa3746a0585c64e92c",
+  "parent_tree": "5a1476d03a38deac7e0517b774f9a50157e4f4a7",
+  "contributors": "Christopher Daniel Pang supplied the shared-board signed carry, prime label and reversal questions through PAL, GPPR, Single-Cut Transport and DARK. Hearthline derived the finite corrections, adaptive sparse one-side criterion, exact signed ruler and positive fits. The origin of the ordinary first Liouville crossing and the classical oscillation inputs are identified in the proof.",
+  "paper_scope": "A sparse bound on the optimum single-side area after arbitrary prime switches on square roots is equivalent on paper to usual RH. The limit of the normalized cost exponent with a square-root floor equals the zero abscissa. Positive upper/lower fits of the original compact pulse and original linear ruler reach all positive ordinary-area tolerances. One 415-switch coloring attains the minimum one unit of one-side area through two billion but has arbitrarily late positive excursions above 0.9665 sqrt(x). A uniformly bounded reciprocal mass of changed primes cannot maintain that perfect sign on unbounded heads. A global perfect sign would also require all nontrivial zeros to be simple.",
+  "formal_scope": "Lean proves exact square step-energy and disjointness, integer recovery by the same square switches, the original signed finite divisor balance, and two sufficient conditions for stock RH. One condition allows a row-dependent integer parent with bounded residual. The other allows head-dependent legal prime switches bounding every prefix on that same head. The sparse one-sided area implication is a paper proof, distinct from the stronger formal prefix envelope.",
+  "review": {
+    "kind": "author self-review, two arithmetic algorithms, fixed same-source reexports and independent kernel comparisons",
+    "finite": "Every one of two billion positions is processed by a segmented odd-factor sieve for lambda and explicit fixed square edits. A separate floor-quotient recursion initialized by squarefree decomposition matches the landmark counts. No zero-height estimate is needed for this full finite computation. The maximum 829 motivates the selected number of changes. The 415 switches are fixed throughout the entire two-billion test.",
+    "oscillation": "The converse transport back to ordinary Liouville has positive coefficients with absolutely summable critical weights for the chosen set. The product receiving positive excursions is computed from all 415 primes, using the published ordinary oscillation theorem. The date of the first future failure remains unspecified.",
+    "sparse": "The Euler product is uniformly bounded away from zero at every off-line zero for all allowed completely multiplicative switches. The finite truncation and startup corrections are O(sqrt X) uniformly in the coloring. Both signs incur cost through a second positive signed averaging identity on the same board. Arbitrary independent cell choices need not preserve that identity.",
+    "bounds": "The unconditional vanishing tolerance is for ordinary-area brackets. The rowwise parent shortcut actually pays zero across a large measured range; therefore passing this finite test is not evidence for all scales. The integrated norm needed to close the sparse bound is separately identified.",
+    "perfect": "The inverse conductor capacity is checked at the actual ordinary peak, comparing every individual prime flip by an independent recursion. At least five arbitrary nonstandard primes are needed for a perfect nonpositive repair there, and 415 are sharp in the specified class with prime roots at least 174. The global minimum number of switches is unresolved.",
+    "scope": "No bare proof, external peer review, proof of simplicity or history-independent priority claim is inferred."
+  },
+  "primary_sources": {
+    "polya_first": "https://doi.org/10.3836/tjm/1270216093",
+    "ordinary_oscillation": "https://link.springer.com/chapter/10.1007/978-3-319-59969-4_9",
+    "liouville_arithmetic": "https://www.cecm.sfu.ca/~pborwein/PAPERS/P208.pdf",
+    "earlier_mean_lower": "https://arxiv.org/pdf/2608.24878v2#page=7",
+    "quantitative_decay": "https://arxiv.org/pdf/2208.06141v5",
+    "zero_abscissa": "https://arxiv.org/pdf/math/0202141v2#page=3"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3870
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.SquareCarry",
+      "exit": 0,
+      "seconds": 13.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ColoredSquares",
+      "exit": 0,
+      "seconds": 13.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RulerBalance",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.SquareCarry.prefix_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareCarry.squared_steps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareCarry.balanced_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareCarry.rh_of_square_returns": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ColoredSquares.recover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ColoredSquares.rh_of_switches": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.RulerBalance.first_mark": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.RulerBalance.signed_balance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 348299224,
+        "sha256": "18055de8ff5baffe9b95536decbcd5a5c5e47249ff12159a6de831d6f398baa2"
+      },
+      "solution": {
+        "bytes": 382626646,
+        "sha256": "70fd5c4d9f59eddf12d38170abd88ad20e0ce1885502a568959ea9812c0d9ecc"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 112.23,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 13.74,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "70fd5c4d9f59eddf12d38170abd88ad20e0ce1885502a568959ea9812c0d9ecc"
+    }
+  },
+  "signed_fits": {
+    "all_sign_choices": [
+      {
+        "head": 290,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17
+        ],
+        "all_open_prime_signs_varied": true,
+        "configurations": 128,
+        "all_plus_areas": [
+          1,
+          1940
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          84
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 1
+        },
+        "normalized_cost_squared": "1/24389000"
+      },
+      {
+        "head": 867,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29
+        ],
+        "all_open_prime_signs_varied": true,
+        "configurations": 1024,
+        "all_plus_areas": [
+          1,
+          11174
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          184
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 1
+        },
+        "normalized_cost_squared": "1/651714363"
+      },
+      {
+        "head": 1933,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43
+        ],
+        "all_open_prime_signs_varied": true,
+        "configurations": 16384,
+        "all_plus_areas": [
+          1,
+          38931
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          741
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 1
+        },
+        "normalized_cost_squared": "1/7222633237"
+      }
+    ],
+    "fixed_seven_prime_catalog": [
+      {
+        "head": 4096,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17
+        ],
+        "all_open_prime_signs_varied": false,
+        "configurations": 128,
+        "all_plus_areas": [
+          1,
+          112607
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          4779
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 1
+        },
+        "normalized_cost_squared": "1/68719476736"
+      },
+      {
+        "head": 16384,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17
+        ],
+        "all_open_prime_signs_varied": false,
+        "configurations": 128,
+        "all_plus_areas": [
+          1,
+          945155
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          117303
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 1
+        },
+        "normalized_cost_squared": "1/4398046511104"
+      },
+      {
+        "head": 65536,
+        "variables": [
+          2,
+          3,
+          5,
+          7,
+          11,
+          13,
+          17
+        ],
+        "all_open_prime_signs_varied": false,
+        "configurations": 128,
+        "all_plus_areas": [
+          1,
+          7994127
+        ],
+        "best_area": 1,
+        "best_by_side": [
+          1,
+          1095742
+        ],
+        "chosen_orientation": 1,
+        "negative_prime_switches": [],
+        "best_with_17_positive_or_negative": {
+          "1": 1,
+          "-1": 100
+        },
+        "normalized_cost_squared": "1/281474976710656"
+      }
+    ],
+    "single_parents": [
+      {
+        "head": 289,
+        "uncorrected": "2435/83521",
+        "fixed_17": "2435/83521",
+        "optimized_single_17": "2435/83521",
+        "signed_17_coefficient": "0",
+        "best_individual_scale": 2,
+        "best_individual_coefficient": "1171/2370",
+        "best_individual": "1514234/98972385"
+      },
+      {
+        "head": 1024,
+        "uncorrected": "14689/1048576",
+        "fixed_17": "168539/1048576",
+        "optimized_single_17": "3006269/233832448",
+        "signed_17_coefficient": "-367/3791",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "51/280",
+        "best_individual": "1518053/146800640"
+      },
+      {
+        "head": 1933,
+        "uncorrected": "59942/3736489",
+        "fixed_17": "561272/3736489",
+        "optimized_single_17": "58017480/4151239279",
+        "signed_17_coefficient": "2071/18887",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "7477/26055",
+        "best_individual": "296974154/32451406965"
+      },
+      {
+        "head": 4096,
+        "uncorrected": "316025/16777216",
+        "fixed_17": "3128641/16777216",
+        "optimized_single_17": "3381935221/187602829312",
+        "signed_17_coefficient": "12323/190094",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "10867/33396",
+        "best_individual": "643314197/46690992128"
+      },
+      {
+        "head": 16384,
+        "uncorrected": "3529283/268435456",
+        "fixed_17": "11042757/134217728",
+        "optimized_single_17": "128212762429/10076127494144",
+        "signed_17_coefficient": "92349/1276241",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "138807/320528",
+        "best_individual": "392210561471/43020539920384"
+      },
+      {
+        "head": 65536,
+        "uncorrected": "78774021/4294967296",
+        "fixed_17": "205498821/4294967296",
+        "optimized_single_17": "5242161702343/291117178290176",
+        "signed_17_coefficient": "220477/2304554",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "578057/845152",
+        "best_individual": "18251265411891/1814950100074496"
+      },
+      {
+        "head": 83521,
+        "uncorrected": "101928829/6975757441",
+        "fixed_17": "273675290/6975757441",
+        "optimized_single_17": "70863553395214/4908945147593315",
+        "signed_17_coefficient": "930211/11963155",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "3095101/5091266",
+        "best_individual": "173256538951948/17757718341805153"
+      },
+      {
+        "head": 262144,
+        "uncorrected": "696769875/68719476736",
+        "fixed_17": "1733522729/68719476736",
+        "optimized_single_17": "1396222128730953/138394635234967552",
+        "signed_17_coefficient": "1871844/34236419",
+        "best_individual_scale": 6,
+        "best_individual_coefficient": "81543365/163165968",
+        "best_individual": "12298868145745775/1868779990347153408"
+      }
+    ],
+    "rowwise_zero_residual_through": 262144,
+    "positive_brackets": [
+      {
+        "even_head": 34,
+        "mean_absolute_mobius": "31/17",
+        "rational_guard": "3072/85",
+        "signed_integral_outward": [
+          "0.007972170142",
+          "0.007972170143"
+        ],
+        "total_bracket_width": "6144/10115"
+      },
+      {
+        "even_head": 128,
+        "mean_absolute_mobius": "137/64",
+        "rational_guard": "201/5",
+        "signed_integral_outward": [
+          "0.002150845663",
+          "0.002150845664"
+        ],
+        "total_bracket_width": "201/1120"
+      },
+      {
+        "even_head": 512,
+        "mean_absolute_mobius": "1415/512",
+        "rational_guard": "1927/40",
+        "signed_integral_outward": [
+          "0.000464088585",
+          "0.000464088586"
+        ],
+        "total_bracket_width": "1927/35840"
+      },
+      {
+        "even_head": 1024,
+        "mean_absolute_mobius": "2997/1024",
+        "rational_guard": "4021/80",
+        "signed_integral_outward": [
+          "0.000344468085",
+          "0.000344468086"
+        ],
+        "total_bracket_width": "4021/143360"
+      }
+    ],
+    "wrong_unsigned_balance_at_3": "22/729",
+    "units": "one-side areas are integer sums over n=0,...,N-1. Parent energy ratios are sums of squared residuals divided by N^2."
+  },
+  "complete_prefix_sweep": {
+    "last_integer": 1000000000,
+    "changed_primes": 415,
+    "first_changed_prime": 22367,
+    "last_changed_prime": 26591,
+    "ordinary": {
+      "last": -25216,
+      "positive_area": 130792496,
+      "negative_area": 13576606515960,
+      "positive_prefixes": 305427,
+      "first_positive_after_one": 906150257,
+      "maximum_after_one": 829,
+      "first_maximum": 906316571
+    },
+    "large_square_switches": {
+      "last": -26046,
+      "positive_area": 1,
+      "negative_area": 13908853861465,
+      "positive_prefixes": 1,
+      "first_positive_after_one": 0,
+      "maximum_after_one": 0,
+      "first_maximum": 2
+    },
+    "only_17_negative": {
+      "last": -21002,
+      "positive_area": 6883360962,
+      "negative_area": 11946708500488,
+      "positive_prefixes": 5957126,
+      "first_positive_after_one": 48433,
+      "maximum_after_one": 3491,
+      "first_maximum": 906316571
+    },
+    "after_revisits": {
+      "last_integer": 2000000000,
+      "positive_steps_flipped": 415,
+      "negative_steps_flipped": 755,
+      "ordinary": {
+        "last": -23088,
+        "positive_area": 130792496,
+        "negative_area": 42282007513944,
+        "positive_prefixes": 305427,
+        "first_positive_after_one": 906150257,
+        "maximum_after_one": 829,
+        "first_maximum": 906316571
+      },
+      "same_fixed_switches": {
+        "last": -22408,
+        "positive_area": 1,
+        "negative_area": 42603402890263,
+        "positive_prefixes": 1,
+        "first_positive_after_one": 0,
+        "maximum_after_one": 0,
+        "first_maximum": 2
+      },
+      "only_17_negative": {
+        "last": -20930,
+        "positive_area": 6883360962,
+        "negative_area": 37963077691288,
+        "positive_prefixes": 5957126,
+        "first_positive_after_one": 48433,
+        "maximum_after_one": 3491,
+        "first_maximum": 906316571
+      }
+    },
+    "elapsed_seconds": 7.8,
+    "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "independent_landmarks": {
+    "critical_reciprocal_product": [
+      "0.966546579451",
+      "0.966546579452"
+    ],
+    "four_smallest_capacity": 404,
+    "all_other_four_capacity_upper": 718,
+    "prime_switches": 415,
+    "first_prime": 22367,
+    "last_prime": 26591,
+    "first_square": 500282689,
+    "last_square": 707081281,
+    "landmark_columns": [
+      "ordinary",
+      "only_17_negative",
+      "415_fixed_large_switches"
+    ],
+    "landmarks": {
+      "48432": [
+        -10,
+        0,
+        -10
+      ],
+      "48433": [
+        -9,
+        1,
+        -9
+      ],
+      "906150256": [
+        0,
+        2636,
+        -830
+      ],
+      "906150257": [
+        1,
+        2637,
+        -829
+      ],
+      "906180359": [
+        1,
+        2649,
+        -829
+      ],
+      "906316571": [
+        829,
+        3491,
+        -1
+      ],
+      "1000000000": [
+        -25216,
+        -21002,
+        -26046
+      ],
+      "2000000000": [
+        -23088,
+        -20930,
+        -22408
+      ]
+    },
+    "single_flip_minimum_at_ordinary_peak": 827,
+    "single_flip_minimizers_count": 864,
+    "least_minimizing_prime": 21313,
+    "oracle": "sum_(m<=x) L(floor(x/m))=floor(sqrt(x)), with an independent squarefree initialization"
+  },
+  "cached_primary_sources": {
+    "mean_and_earlier_theorem": {
+      "url": "https://arxiv.org/pdf/2608.24878v2",
+      "sha256": "f2e2d49d3b1c8275bedeed534403fa5524d89171c80d8d015b47b7b43dd335b9",
+      "bytes": 342424
+    },
+    "explicit_mobius_decay": {
+      "url": "https://arxiv.org/pdf/2208.06141v5",
+      "sha256": "76e61bb702beecade0deca82896d5125043cd747c694986ec7e732d13be54ad1",
+      "bytes": 437126
+    },
+    "zero_abscissa_mobius": {
+      "url": "https://arxiv.org/pdf/math/0202141v2",
+      "sha256": "3ce4aff466443c71094affc1f8b6f5f0dd36cb4377dc5d2ceddbd2537c1d1819",
+      "bytes": 117974
+    },
+    "real_variable_antecedent": {
+      "url": "https://arxiv.org/pdf/math/0011254v1",
+      "sha256": "951ecc56eaae5b80eb8128ab4f98b5184d06ed97da608a130d65940daea8e94c",
+      "bytes": 255860
+    },
+    "liouville_positive_excursions": {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-319-59969-4_9",
+      "sha256": "acbecc2fdaec2c434c7e287f676e73f2b4fac05d5d9c863278340327072c8d1d",
+      "bytes": 310025
+    },
+    "liouville_sums_and_crossings": {
+      "url": "https://www.cecm.sfu.ca/~pborwein/PAPERS/P208.pdf",
+      "sha256": "646b887a499c3de2b492ab006fde688620a44fa11b94b15fb770c55dd074cd4a",
+      "bytes": 263307
+    }
+  },
+  "sha256_sources": {
+    "proofs/which-prime-squares-can-change-the-walk.md": "0f04f097c98e7eb902b9dbe5bf4ad93103d6b32c5cd171225be2fb68cd4cd2d8",
+    "pal-rh/the-signed-reading-of-the-original-ruler.md": "e9665efbe65cbb43d0a80414a6d3fc44a4ca2d47f569c3cb40fe72daeccec396",
+    "pal-rh/PALRH/SquareCarry.lean": "654200d31596e61f41c09ca89154143e3b2fa3286538d5884bda99e6c98b587e",
+    "pal-rh/PALRH/ColoredSquares.lean": "99524bd09db7b2d769f7d45940e7bf8bd34659c499065f8669226e5afbb50144",
+    "pal-rh/PALRH/RulerBalance.lean": "77b545f0ec6ac4bc67fba1b41c3b57ccd8399ae38134a1829638b90fc8e03a4f",
+    "pal-rh/lakefile.toml": "e9edf6419dc9fa461b5b09dba029c7b714275b410d149061c8bcded193be24f7",
+    "pal-rh/checks/square-switches/SwitchChallenge.lean": "2b74bea6a3038e89d90abb12986d1dc4b8941eea5164a457a319d95e8fb63382",
+    "pal-rh/checks/square-switches/SwitchSolution.lean": "68a474f2b32c3b5bc8afb66d571e454caea26e54f2d15c613c0ccd927b5254a4",
+    "pal-rh/checks/square-switches/compare.json": "6d9b39de6bb21a4f78ec771660d04d8fe18c4efc63ea5fa455841bf2bf00d5fd",
+    "receipt-archives/check_pal_square_switches.py": "2bd05546a9cfb2dca44a6ba40d3a170080bdd191b68b4923ac78dd154d61cf89",
+    "receipt-archives/check_pal_billion_square_switches.cpp": "410321ab71dbbb199d22d050583b7af6893e48f355aa3dccbcce03a7042268cc",
+    "receipt-archives/check_pal_liouville_landmarks.py": "f4d3988134c9216c334ccaf50f2b716e4d216a737df979ff811377ca5464affd",
+    "pal-rh/PALRH/Octaves.lean": "830ab006231aebfb7a81d936a38ae50d490c5ba22b2a8bc8281a1dcd63435266",
+    "pal-rh/PALRH/FactorialReturn.lean": "6901a49da32e76f6312dcda43ee8ce4e98db0085d1cf9fe5c6f10fefd463bc22",
+    "pal-rh/PALRH/DoubledMass.lean": "c06f469a2a71ef805bf6e48532a6e5219af194e5781a40032785f5da8f2b3c74",
+    "pal-rh/PALRH/DoubledRuler.lean": "86c1f5556f76075f5579881f2585efbce8f353805e7e1d638c5db23f2c386baf",
+    "pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md": "7eabb53144b6f3278f3d16e1a56bf1e1d023b50806c7c1e026829e7bfe1114a1",
+    "proofs/why-the-old-divisor-rows-have-to-move.md": "4685af62f15dfd2c8d426dbb2a1fd47c78941ef8016bf6f58abaed06a60dddbe",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "receipt-archives/check_pal_growing_brackets.py": "a3915d89aaec74920b9f1389b30a12cbb7f29f962ccf5e95a4145791c241ba78"
+  }
+}

@@ -22,6 +22,8 @@ The papers state their own conclusions and the scope of their application to the
 
 [Thirteen, fourteen and fifteen copies of the same prime product](thirteen-fourteen-and-fifteen-prime-copies.md) gives an unbounded, elementary Lean proof for both neighboring counts. The two 16-entry rows have a finite check followed by a linear bound on the entire tail.
 
+[Which prime squares can change the walk?](which-prime-squares-can-change-the-walk.md) gives the same fixed switches for every prefix through two billion, a paper proof that their perfect sign must fail, and a weaker sparse price that would suffice for RH.
+
 [One square and five small divisors](one-square-and-five-small-divisors.md) collects proper factorizations on both sides of one square and shows where 17 alone pays the shortfall at board eight. [Two-trace criterion](how-many-square-traces-do-the-primes-need.md) · [Counting and pricing their overlaps](when-two-squares-count-the-same-place.md) · [Which prime labels lower a divisor bound](which-prime-labels-can-lower-a-divisor-bound.md)
 
 [Where fourteen pays again](where-fourteen-pays-again.md) finds successful blocks near all large scales. [What a fourteen-copy failure would force](what-a-fourteen-copy-failure-would-force.md) gives the corresponding almost-linear failure law, an exponent read from the same integer clock, and a power-saving sampling criterion for RH.

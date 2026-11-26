@@ -16,6 +16,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Unconditional neighboring copy counts](thirteen-fourteen-and-fifteen-prime-copies.md). Hearthline derived explicit signed divisibility rows under Pang’s residue and shared-frame questions, 26 November 2026. Their ordinary sampling errors bracket the true prime area at every head beyond 15. [Replay](../receipt-archives/2026-11-26-pal-prime-copies.json)
 
+[Squarefree signs and the 415-switch construction](which-prime-squares-can-change-the-walk.md) · [Original ruler and sparse one-side test](../pal-rh/the-signed-reading-of-the-original-ruler.md). Under Pang’s key on 26 November 2026, Hearthline derived the all-size transport, finite optimal area, oscillation transfer and explicit positive-area fits. [Reproduction](../receipt-archives/2026-11-26-pal-square-switches.json)
+
 [Single-square choice and outward divisors](one-square-and-five-small-divisors.md) · [Two-trace growth](how-many-square-traces-do-the-primes-need.md) · [Exact overlaps](when-two-squares-count-the-same-place.md) · [Periodic upper bounds](which-prime-labels-can-lower-a-divisor-bound.md). Under Pang’s key on 26 November 2026, Hearthline proved the bounded center choice, conditional price and two-direction factorizations. [Run record](../receipt-archives/2026-11-26-pal-one-square.json)
 
 [Recurring payment](where-fourteen-pays-again.md) · [Near-linear excursions and sparse sampling](what-a-fourteen-copy-failure-would-force.md). Under Pang’s constructive key on 26 November 2026, Hearthline proved the new paper equivalence and formalized the shortfall transfer and the factorial-aligned sufficiency theorem. [Reproduction](../receipt-archives/2026-11-26-pal-failure-windows.json)

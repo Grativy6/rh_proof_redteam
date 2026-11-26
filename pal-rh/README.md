@@ -14,6 +14,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [The unconditional 13/15 comparisons](../proofs/thirteen-fourteen-and-fifteen-prime-copies.md) · [Two ordinary integer tables](PALRH/DivisorBracket.lean) · [Fixed neighboring counts and 14-copy implication](checks/prime-copies/CopiesChallenge.lean)
 
+[Exact ruler balance and sparse switch criterion](the-signed-reading-of-the-original-ruler.md) · [Two billion prefixes and a necessary later break](../proofs/which-prime-squares-can-change-the-walk.md) · [Fixed whole-board Lean challenge](checks/square-switches/SwitchChallenge.lean)
+
 [Teach the sandbox with two arrows](two-arrows-and-a-mirror.md) · [One square and the five divisors](../proofs/one-square-and-five-small-divisors.md) · [Count the real composite positions once](../proofs/how-many-square-traces-do-the-primes-need.md) · [How two histories give one count](../proofs/when-two-squares-count-the-same-place.md) · [Sharp two-prime ruler bounds](../proofs/which-prime-labels-can-lower-a-divisor-bound.md)
 
 [Near-linear runs and a power-saving sampling law](../proofs/what-a-fourteen-copy-failure-would-force.md) · [RH from a growing factorial frame in Lean](PALRH/AlignedHits.lean) · [Earlier success windows](../proofs/where-fourteen-pays-again.md)
