@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What a quotient leaves between integers](what-a-quotient-leaves-between-integers.md) compares two readings that agree at every integer. Ordinary division isolates their difference, a finite inverse recovers the arithmetic count, and one outstanding one-sided bound at square heads is equivalent to RH on paper.
+
 [How much can the newest half gain?](how-much-can-the-newest-half-gain.md) sums four actual marks at 16 and shows how an upper bound on their counterparts at every head would force RH. The paper also gives a window whose sign can be settled unconditionally and explains what that narrower measurement loses.
 
 [Why the last two square roots remain](why-the-last-two-square-roots-remain.md) starts at 49. You can follow each mark back to its owner and see which pieces of both the original sum and its remainder carry a negative signed contribution at large heads.

@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Divide 5 by 2. Two readers that agree at every whole number treat the half left over differently. One gives a closed formula at every head. The other lets us recover the weighted Möbius totals with an inverse cost of at most four. Their difference gives an explicit square-head criterion for RH. A tempting positivity shortcut fails at 31 and 81. [Read the example and the remaining bound](proofs/what-a-quotient-leaves-between-integers.md)
+
 Counting just the newest half of the marks gives another route. Its running gain was positive at only 14 heads in the first 50 million. A uniform square-root ceiling on its rises would suffice. At 16 you can add the four marks by hand. [What the half-window earns](proofs/how-much-can-the-newest-half-gain.md)
 
 At head 49 a mark at 1 has three copies, at 1, 25 and 49. We can account for its first copy and part of the second. At every scale at most the last two roots per owner remain. A second calculation prices part of those same remaining marks. [The hand example and the sign question](proofs/why-the-last-two-square-roots-remain.md) · [Derivation and two signed contributions](pal-rh/what-the-last-two-square-roots-carry.md)

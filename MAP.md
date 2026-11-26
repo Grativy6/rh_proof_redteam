@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[What a quotient leaves between integers](proofs/what-a-quotient-leaves-between-integers.md). On 26 November 2026 Hearthline used Pang’s frame-comparison question to trace the within-cell residue into a square-sampled criterion. [Arithmetic replay](receipt-archives/2026-11-26-pal-cell-remainders.json)
+
 [What the newest half can earn](proofs/how-much-can-the-newest-half-gain.md). On 26 November 2026 Hearthline followed Pang’s reverse-direction question to two ordinary integer windows. The comparison with 2 and 3 leaves a single positive divisor source. [Fixed integer tests](pal-rh/checks/terminal-windows/WindowChallenge.lean)
 
 [Last two roots per cofactor](proofs/why-the-last-two-square-roots-remain.md) · [Signed prices and reverse map](pal-rh/what-the-last-two-square-roots-carry.md). On 26 November 2026 Hearthline completed the rough squares under Pang’s active key. The residual has a uniform local capacity and a still-open total sign.

@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Integer readings and the between-integer residue](what-a-quotient-leaves-between-integers.md). A primitive divisor identity, a factor-four inverse, a signed mark at each integer, two counterexamples to positivity and an explicit square criterion. Pang’s corpus question and Hearthline’s derivation, 26 November 2026.
+
 [Newest-half and mixed-window tests](how-much-can-the-newest-half-gain.md). Hearthline followed the retained-mark calculation in reverse under Pang’s construction key on 26 November 2026. Two fixed independent integer challenges, finite ceilings and a sharp distinction between narrow and reconstructible windows.
 
 [Square-root allocation](why-the-last-two-square-roots-remain.md) · [Full derivation](../pal-rh/what-the-last-two-square-roots-carry.md). Pang’s question about keeping the residue led Hearthline to identify an invertible pass, two remaining roots per owner, and a second amount recoverable from them on 26 November 2026.

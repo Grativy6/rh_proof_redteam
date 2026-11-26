@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Within-cell test, 26 November 2026.** Put $N=j^2$. Retain each actual remainder $N\bmod d$ for $j<d\le N$, with its Möbius sign and its specified square-root weight. Either one-sided subpower bound on the normalized sum would suffice. Signs of the individual staircase steps and the unit sampling allowance are known. At fixed quotient the exact price is a positive weighted sum of the ordinary Möbius prefixes within that row. At 49 the quotient-four row has net zero and a positive price. The sum of the positive prefix maxima gives an explicit next test. [Exact statement and proof](../proofs/what-a-quotient-leaves-between-integers.md)
+
 **Newest-half test, 26 November 2026.** On each integer compare the original running mass to its earlier half. An upper bound $H(n)\le C\sqrt n$ suffices. Turning the comparison at 3 as well leaves a positive mixture of ordinary Mertens counts on smooth squares and the same sufficient upper ceiling. Both have fixed integer challenges. [Proof, finite ceilings and the width obstruction](../proofs/how-much-can-the-newest-half-gain.md)
 
 **Square-root test, 26 November 2026.** Keep the owner of each rough-square copy. The known divisor amount leaves at most the last two roots per owner. Their signs still vary across owners. A uniform upper bound on their signed sum strictly below $0.30267087\sqrt t(\log t)^2$ with a fixed positive margin suffices. An identified fraction of those roots carries a further negative term of order $\sqrt t\log t$. [Derivation and exact open inequality](what-the-last-two-square-roots-carry.md)

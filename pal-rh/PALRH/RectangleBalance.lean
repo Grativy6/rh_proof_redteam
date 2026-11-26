@@ -184,12 +184,12 @@ theorem source_nonnegative (n : ℕ) : 0≤divisorMass n := by
 
 
 /-- Grouping the same visits by the product of the two positive row labels. -/
-theorem collect_with (N : ℕ) (f w : ℕ → ℝ) :
-    (∑ r ∈ Finset.Icc 1 N, (f r/(r:ℝ))*∑ d ∈ Finset.Icc 1 (N/r), (marks d:ℝ)/d*w (r*d))
-      = ∑ n ∈ Finset.Icc 1 N, (∑ d ∈ n.divisors, (marks d:ℝ)*f (n/d))/n*w n := by
+theorem collect_weights (N : ℕ) (a f w : ℕ → ℝ) :
+    (∑ r ∈ Finset.Icc 1 N, (f r/(r:ℝ))*∑ d ∈ Finset.Icc 1 (N/r), a d/d*w (r*d))
+      = ∑ n ∈ Finset.Icc 1 N, (∑ d ∈ n.divisors, a d*f (n/d))/n*w n := by
   let I := Finset.Icc 1 N
   let P := (I ×ˢ I).filter (fun t : ℕ×ℕ => t.1*t.2≤N)
-  let val := fun t : ℕ×ℕ => ((marks t.1:ℝ)*f t.2)/((t.1*t.2:ℕ):ℝ)*w (t.1*t.2)
+  let val := fun t : ℕ×ℕ => (a t.1*f t.2)/((t.1*t.2:ℕ):ℝ)*w (t.1*t.2)
   have join (t : ℕ×ℕ) (ht : t∈P) : t.1*t.2∈I := by
     obtain ⟨both,cap⟩ := Finset.mem_filter.mp ht
     obtain ⟨m,n⟩ := Finset.mem_product.mp both
@@ -208,14 +208,14 @@ theorem collect_with (N : ℕ) (f w : ℕ → ℝ) :
       exact ⟨Finset.mem_filter.mpr ⟨Finset.mem_product.mpr
         ⟨Finset.mem_Icc.mpr ⟨Nat.pos_of_dvd_of_pos i pos,(Nat.le_of_dvd pos i).trans lim⟩,
          Finset.mem_Icc.mpr ⟨Nat.pos_of_dvd_of_pos j pos,(Nat.le_of_dvd pos j).trans lim⟩⟩,prod ▸ lim⟩,prod⟩
-  have grouped : (∑ t ∈ P, val t)=∑ n ∈ I, (∑ d ∈ n.divisors, (marks d:ℝ)*f (n/d))/n*w n := by
+  have grouped : (∑ t ∈ P, val t)=∑ n ∈ I, (∑ d ∈ n.divisors, a d*f (n/d))/n*w n := by
     rw [←Finset.sum_fiberwise_of_maps_to join val]
     apply Finset.sum_congr rfl
     intro n hn
     rw [fiber n hn]
     have point (t : ℕ×ℕ) (ht : t∈n.divisorsAntidiagonal) :
-        val t=((marks t.1:ℝ)*f t.2)/n*w n := by simp only [val,(Nat.mem_divisorsAntidiagonal.mp ht).1]
-    rw [Finset.sum_congr rfl point,Nat.sum_divisorsAntidiagonal (fun i j => ((marks i:ℝ)*f j)/n*w n),
+        val t=(a t.1*f t.2)/n*w n := by simp only [val,(Nat.mem_divisorsAntidiagonal.mp ht).1]
+    rw [Finset.sum_congr rfl point,Nat.sum_divisorsAntidiagonal (fun i j => (a i*f j)/n*w n),
       ←Finset.sum_mul,←Finset.sum_div]
   rw [←grouped]
   dsimp only [P]
@@ -236,6 +236,11 @@ theorem collect_with (N : ℕ) (f w : ℕ → ℝ) :
     rw [Nat.mul_comm d r,Nat.cast_mul]
     ring
   · rfl
+
+theorem collect_with (N : ℕ) (f w : ℕ → ℝ) :
+    (∑ r ∈ Finset.Icc 1 N, (f r/(r:ℝ))*∑ d ∈ Finset.Icc 1 (N/r), (marks d:ℝ)/d*w (r*d))
+      = ∑ n ∈ Finset.Icc 1 N, (∑ d ∈ n.divisors, (marks d:ℝ)*f (n/d))/n*w n :=
+  collect_weights N (fun d => (marks d:ℝ)) f w
 
 theorem collect (N : ℕ) (w : ℕ → ℝ) :
     (∑ r ∈ Finset.Icc 1 N, (1/(r:ℝ))*∑ d ∈ Finset.Icc 1 (N/r), (marks d:ℝ)/d*w (r*d))

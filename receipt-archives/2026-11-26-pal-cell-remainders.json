@@ -1,0 +1,726 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "60d840ac987ff47589c37025c17b64058f77aac3",
+  "parent_tree": "87584de6e44f1ababe71f3f00df6721de4828e72",
+  "contributors": "Christopher Daniel Pang supplied the PAL carried-frame question, RPL old/detail split, APCI comparison and the suggestion of 2663. Hearthline derived the two readings, finite inverse, signed jumps, perfect-square sampling and division-remainder criterion in Pang’s constructive program.",
+  "formal_scope": "On the original Moebius divisions: collapsing reading, staircase reading, inverse cost four, pointwise remainder and capacity, exact difference, explicit late square sum and the half-unit bound on discarded early labels.",
+  "analytic_scope": "The equivalence of RH to either one-sided subpower estimate on the normalized late square sum is a paper proof. The forward deduction uses the nonvanishing staircase multiplier and positivity at real abscissae. The converse uses the classical conditional Moebius estimate. The required all-head bound remains open.",
+  "classical_converse_source": "https://arxiv.org/pdf/0705.0723",
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "normal_build_exit": 0,
+  "native_kernel_replays": [
+    {
+      "module": "PALRH.RectangleBalance",
+      "exit": 0,
+      "seconds": 12.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CellRemainder",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.CellRemainder.difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.square_cost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.division_residue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.residue_capacity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.staircase_reading": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.falling_reading": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.tail_quarter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CellRemainder.inverse_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "counterexample_scope": "The sign witnesses contradict the proposed everywhere-nonnegative geometric-mean inclusion-exclusion in our construction.",
+  "calculations": {
+    "through": 200000,
+    "scale": "18889465931478580854784",
+    "weights": [
+      [
+        1,
+        [
+          "0.5000000000",
+          "0.5000000000"
+        ]
+      ],
+      [
+        2,
+        [
+          "0.0857864376",
+          "0.0857864377"
+        ]
+      ],
+      [
+        3,
+        [
+          "0.0505102572",
+          "0.0505102573"
+        ]
+      ],
+      [
+        4,
+        [
+          "0.0358983848",
+          "0.0358983849"
+        ]
+      ],
+      [
+        5,
+        [
+          "0.0278640450",
+          "0.0278640451"
+        ]
+      ],
+      [
+        6,
+        [
+          "0.0227744249",
+          "0.0227744250"
+        ]
+      ],
+      [
+        7,
+        [
+          "0.0192593015",
+          "0.0192593016"
+        ]
+      ]
+    ],
+    "samples": [
+      {
+        "head": 1,
+        "distinct_primes": 0,
+        "mobius": 1,
+        "stable_step": [
+          "0.5000000000",
+          "0.5000000000"
+        ],
+        "stable_sum": [
+          "0.5000000000",
+          "0.5000000000"
+        ],
+        "cell_residue": [
+          "0.0000000000",
+          "0.0000000000"
+        ],
+        "direct_early_cells": [
+          "0.0000000000",
+          "0.0000000000"
+        ],
+        "weighted_mobius_sum": [
+          "1.0000000000",
+          "1.0000000000"
+        ]
+      },
+      {
+        "head": 2,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.2928932189",
+          "-0.2928932188"
+        ],
+        "stable_sum": [
+          "0.2071067811",
+          "0.2071067812"
+        ],
+        "cell_residue": [
+          "-0.0000000001",
+          "0.0000000001"
+        ],
+        "direct_early_cells": [
+          "0.0000000000",
+          "0.0000000000"
+        ],
+        "weighted_mobius_sum": [
+          "0.2928932188",
+          "0.2928932189"
+        ]
+      },
+      {
+        "head": 3,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.2595130240",
+          "-0.2595130239"
+        ],
+        "stable_sum": [
+          "-0.0524062429",
+          "-0.0524062428"
+        ],
+        "cell_residue": [
+          "-0.1297565120",
+          "-0.1297565119"
+        ],
+        "direct_early_cells": [
+          "0.0000000000",
+          "0.0000000000"
+        ],
+        "weighted_mobius_sum": [
+          "-0.2844570504",
+          "-0.2844570503"
+        ]
+      },
+      {
+        "head": 5,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.2111456181",
+          "-0.2111456180"
+        ],
+        "stable_sum": [
+          "-0.2884958872",
+          "-0.2884958871"
+        ],
+        "cell_residue": [
+          "-0.2357094827",
+          "-0.2357094826"
+        ],
+        "direct_early_cells": [
+          "-0.1055728091",
+          "-0.1055728090"
+        ],
+        "weighted_mobius_sum": [
+          "-0.7316706459",
+          "-0.7316706458"
+        ]
+      },
+      {
+        "head": 7,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.1817029048",
+          "-0.1817029047"
+        ],
+        "stable_sum": [
+          "-0.3124199194",
+          "-0.3124199193"
+        ],
+        "cell_residue": [
+          "-0.1903843924",
+          "-0.1903843923"
+        ],
+        "direct_early_cells": [
+          "-0.0908514524",
+          "-0.0908514523"
+        ],
+        "weighted_mobius_sum": [
+          "-0.7013868285",
+          "-0.7013868284"
+        ]
+      },
+      {
+        "head": 16,
+        "distinct_primes": 1,
+        "mobius": 0,
+        "stable_step": [
+          "-0.0021546529",
+          "-0.0021546528"
+        ],
+        "stable_sum": [
+          "-0.2599368777",
+          "-0.2599368776"
+        ],
+        "cell_residue": [
+          "-0.0099368777",
+          "-0.0099368776"
+        ],
+        "direct_early_cells": [
+          "-0.0409944488",
+          "-0.0409944487"
+        ],
+        "weighted_mobius_sum": [
+          "-0.4385603735",
+          "-0.4385603734"
+        ]
+      },
+      {
+        "head": 25,
+        "distinct_primes": 1,
+        "mobius": 0,
+        "stable_step": [
+          "-0.0045522946",
+          "-0.0045522945"
+        ],
+        "stable_sum": [
+          "-0.4007649645",
+          "-0.4007649644"
+        ],
+        "cell_residue": [
+          "-0.1007649645",
+          "-0.1007649644"
+        ],
+        "direct_early_cells": [
+          "-0.0824829047",
+          "-0.0824829046"
+        ],
+        "weighted_mobius_sum": [
+          "-0.6876075399",
+          "-0.6876075398"
+        ]
+      },
+      {
+        "head": 31,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.0890665143",
+          "-0.0890665142"
+        ],
+        "stable_sum": [
+          "-0.5636975730",
+          "-0.5636975729"
+        ],
+        "cell_residue": [
+          "-0.2433028751",
+          "-0.2433028750"
+        ],
+        "direct_early_cells": [
+          "-0.0920353981",
+          "-0.0920353980"
+        ],
+        "weighted_mobius_sum": [
+          "-1.0393662308",
+          "-1.0393662307"
+        ]
+      },
+      {
+        "head": 33,
+        "distinct_primes": 2,
+        "mobius": 1,
+        "stable_step": [
+          "0.0768421606",
+          "0.0768421607"
+        ],
+        "stable_sum": [
+          "-0.4875798629",
+          "-0.4875798628"
+        ],
+        "cell_residue": [
+          "-0.1616575189",
+          "-0.1616575188"
+        ],
+        "direct_early_cells": [
+          "-0.0941638088",
+          "-0.0941638087"
+        ],
+        "weighted_mobius_sum": [
+          "-0.8652885748",
+          "-0.8652885747"
+        ]
+      },
+      {
+        "head": 35,
+        "distinct_primes": 2,
+        "mobius": 1,
+        "stable_step": [
+          "0.0771625888",
+          "0.0771625889"
+        ],
+        "stable_sum": [
+          "-0.3400398085",
+          "-0.3400398084"
+        ],
+        "cell_residue": [
+          "-0.0090706594",
+          "-0.0090706593"
+        ],
+        "direct_early_cells": [
+          "-0.0974663365",
+          "-0.0974663364"
+        ],
+        "weighted_mobius_sum": [
+          "-0.5247591387",
+          "-0.5247591386"
+        ]
+      },
+      {
+        "head": 43,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.0758007445",
+          "-0.0758007444"
+        ],
+        "stable_sum": [
+          "-0.4922136180",
+          "-0.4922136179"
+        ],
+        "cell_residue": [
+          "-0.1447121883",
+          "-0.1447121882"
+        ],
+        "direct_early_cells": [
+          "-0.0954563311",
+          "-0.0954563310"
+        ],
+        "weighted_mobius_sum": [
+          "-0.8297842333",
+          "-0.8297842332"
+        ]
+      },
+      {
+        "head": 49,
+        "distinct_primes": 1,
+        "mobius": 0,
+        "stable_step": [
+          "-0.0023831306",
+          "-0.0023831305"
+        ],
+        "stable_sum": [
+          "-0.4940765223",
+          "-0.4940765222"
+        ],
+        "cell_residue": [
+          "-0.1369336652",
+          "-0.1369336651"
+        ],
+        "direct_early_cells": [
+          "-0.1033000829",
+          "-0.1033000828"
+        ],
+        "weighted_mobius_sum": [
+          "-0.8282072686",
+          "-0.8282072685"
+        ]
+      },
+      {
+        "head": 64,
+        "distinct_primes": 1,
+        "mobius": 0,
+        "stable_step": [
+          "-0.0002499962",
+          "-0.0002499961"
+        ],
+        "stable_sum": [
+          "-0.3903401007",
+          "-0.3903401006"
+        ],
+        "cell_residue": [
+          "-0.0153401007",
+          "-0.0153401006"
+        ],
+        "direct_early_cells": [
+          "-0.0378436199",
+          "-0.0378436198"
+        ],
+        "weighted_mobius_sum": [
+          "-0.5581658470",
+          "-0.5581658469"
+        ]
+      },
+      {
+        "head": 81,
+        "distinct_primes": 1,
+        "mobius": 0,
+        "stable_step": [
+          "-0.0003516213",
+          "-0.0003516212"
+        ],
+        "stable_sum": [
+          "-0.5350731587",
+          "-0.5350731586"
+        ],
+        "cell_residue": [
+          "-0.1461842698",
+          "-0.1461842697"
+        ],
+        "direct_early_cells": [
+          "-0.0425965337",
+          "-0.0425965336"
+        ],
+        "weighted_mobius_sum": [
+          "-0.9097766469",
+          "-0.9097766468"
+        ]
+      },
+      {
+        "head": 577,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.0208062458",
+          "-0.0208062457"
+        ],
+        "stable_sum": [
+          "-0.3765636214",
+          "-0.3765636213"
+        ],
+        "cell_residue": [
+          "0.0818058339",
+          "0.0818058340"
+        ],
+        "direct_early_cells": [
+          "-0.0341810794",
+          "-0.0341810793"
+        ],
+        "weighted_mobius_sum": [
+          "-0.4335083745",
+          "-0.4335083744"
+        ]
+      },
+      {
+        "head": 2663,
+        "distinct_primes": 1,
+        "mobius": -1,
+        "stable_step": [
+          "-0.0096882122",
+          "-0.0096882121"
+        ],
+        "stable_sum": [
+          "-0.3764882688",
+          "-0.3764882687"
+        ],
+        "cell_residue": [
+          "0.1041334873",
+          "0.1041334874"
+        ],
+        "direct_early_cells": [
+          "-0.0522166796",
+          "-0.0522166795"
+        ],
+        "weighted_mobius_sum": [
+          "-0.4475529946",
+          "-0.4475529945"
+        ]
+      },
+      {
+        "head": 10000,
+        "distinct_primes": 2,
+        "mobius": 0,
+        "stable_step": [
+          "0.0000005004",
+          "0.0000005005"
+        ],
+        "stable_sum": [
+          "-0.5860647515",
+          "-0.5860647514"
+        ],
+        "cell_residue": [
+          "-0.0960647515",
+          "-0.0960647514"
+        ],
+        "direct_early_cells": [
+          "0.0015614235",
+          "0.0015614236"
+        ],
+        "weighted_mobius_sum": [
+          "-0.8941618980",
+          "-0.8941618979"
+        ]
+      },
+      {
+        "head": 200000,
+        "distinct_primes": 2,
+        "mobius": 0,
+        "stable_step": [
+          "0.0000000055",
+          "0.0000000056"
+        ],
+        "stable_sum": [
+          "-0.4999970742",
+          "-0.4999970741"
+        ],
+        "cell_residue": [
+          "-0.0022331421",
+          "-0.0022331420"
+        ],
+        "direct_early_cells": [
+          "0.0002625821",
+          "0.0002625822"
+        ],
+        "weighted_mobius_sum": [
+          "-0.6779834703",
+          "-0.6779834702"
+        ]
+      }
+    ],
+    "normalized_square_remainder": {
+      "square_heads": 447,
+      "positive": 234,
+      "negative": 212,
+      "enclosed_zero": 1,
+      "low_witness": [
+        59536,
+        [
+          "-0.1871810743",
+          "-0.1871810742"
+        ]
+      ],
+      "high_witness": [
+        48400,
+        [
+          "0.1614233613",
+          "0.1614233614"
+        ]
+      ]
+    },
+    "largest_observed_square_gap_upper": [
+      3,
+      "0.5524062429"
+    ],
+    "square_root_sign_certificates": [
+      {
+        "head": 31,
+        "denominator": 10000,
+        "numerators": [
+          -648,
+          -628
+        ]
+      },
+      {
+        "head": 33,
+        "denominator": 10000,
+        "numerators": [
+          113,
+          134
+        ]
+      },
+      {
+        "head": 81,
+        "denominator": 10000,
+        "numerators": [
+          -373,
+          -325
+        ]
+      }
+    ],
+    "geometric_mean_sum": {
+      "first_strict_negative_witness": [
+        31,
+        [
+          "-0.0636975730",
+          "-0.0636975729"
+        ]
+      ],
+      "next_strict_positive_witness": [
+        33,
+        [
+          "0.0124201371",
+          "0.0124201372"
+        ]
+      ],
+      "strict_negative_square_witness": [
+        81,
+        [
+          "-0.0350731587",
+          "-0.0350731586"
+        ]
+      ],
+      "low_witness": [
+        59577,
+        [
+          "-0.2025150064",
+          "-0.2025150063"
+        ]
+      ],
+      "high_witness": [
+        1,
+        [
+          "1.0000000000",
+          "1.0000000000"
+        ]
+      ]
+    },
+    "additional_square": {
+      "root": 2663,
+      "head": 7091569,
+      "all_cells": [
+        "-0.1420621312",
+        "-0.1420621311"
+      ],
+      "normalized_square_remainder": [
+        "-0.1427753766",
+        "-0.1427753765"
+      ],
+      "row_budget": {
+        "rows": 2662,
+        "sum_positive_prefix_peaks": 11174,
+        "sum_negative_prefix_depths": 12472,
+        "directed_normalized_range": [
+          "-2.2122382294",
+          "1.9947085558"
+        ]
+      },
+      "corner": [
+        [
+          2663,
+          2663,
+          0,
+          -1
+        ],
+        [
+          2664,
+          2662,
+          1,
+          0
+        ],
+        [
+          2665,
+          2661,
+          4,
+          -1
+        ],
+        [
+          2666,
+          2660,
+          9,
+          -1
+        ],
+        [
+          2667,
+          2659,
+          16,
+          -1
+        ]
+      ]
+    }
+  },
+  "sha256_sources": {
+    "pal-rh/PALRH/CellRemainder.lean": "978b8ef94b346e9046c0d61be58653cbeeae78ba6980af8acd1a9476f8ec208e",
+    "pal-rh/PALRH/RectangleBalance.lean": "0d2b950bdae723f4fd2bf73e2cea504ec6699319fa4631031be5975a75bec8fc",
+    "receipt-archives/check_pal_cell_remainders.py": "0f88df8cebc849c86ea28cf6a1cc939c2e93fd74f6b32c8bbb97904ea3c1c1a3",
+    "proofs/what-a-quotient-leaves-between-integers.md": "811031a4e684eccab8a66d2d936d3f021c62ba223780d1f54ec0d7a41da72081"
+  }
+}
