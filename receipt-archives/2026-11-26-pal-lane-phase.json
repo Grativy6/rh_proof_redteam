@@ -1,0 +1,290 @@
+{
+  "parent_public_research_commit": "70a6eba9d2741b1663308878b684b3a2948ae27d",
+  "parent_tree": "88f6d0879bb2cb73af9646ee7493035c28ca0ea4",
+  "contributors": "Pang supplied the turn and the APCI question of exactly which two inputs a reading merges. Hearthline derived the polynomial bound, the slow lift and the primorial discrepancy estimate. The proof credits Montgomery and Vaughan, the Kuzmin-Landau argument, and Masse and Schneider on primorials.",
+  "formal_scope": "The modular slow-arc criterion implies stock RH. Every true step is bounded, so staying inside the modular arc at all physical cuts gives the same unwrapped lift. The complex summation-by-parts identity and its finite norm estimate are formalized.",
+  "paper_scope": "For any fixed nonzero integer harmonic the true prime-lane polynomial has sup norm of order sqrt(number of prime arrivals), uniformly over one extra fixed rotation per arrival. In the unrounded primorial case the same method and Erdos-Turan give discrepancy O_b(N^(-1/3)), uniformly under a linear twist. The comparison is with the specific published Masse-Schneider bound, with no worldwide priority claim.",
+  "review": {
+    "type": "author self-review",
+    "frequency": "An offset is per arrival. The true and altered streams have exactly the same full fast polynomial because every added charge is an integer number of full fast turns. The counterfeit fails the slow arc even at real prime labels.",
+    "sieve": "Uniform prime density is used only as an upper bound inside near-resonant physical intervals. Outside, monotonicity of the actual rounded increments bounds the variation of 1/(e(t)-1). No RH premise enters the spectral estimate.",
+    "uniform_harmonics": "For ordinary primorials h<=N^(1/3). Labels below 2h^2 cost O(h^2)<=O(sqrt(hN)); on all larger dyadic pieces the enlarged resonant interval has log length comparable to log Y uniformly in h.",
+    "finite": "The FFT only selected offsets. A second evaluation at the fixed rational offsets encloses the actual phases, including the pi*N/grid approximation bound. True and altered lane equality is checked at every sampled prime arrival.",
+    "formal_boundary": "The square-root paper bound and its discrepancy corollary are pencil proofs. The independent fixed target checks the slow modular implication and the consistent lift. The all-board slow-arc hypothesis remains open."
+  },
+  "primary_sources": {
+    "interval_sieve": "https://personal.science.psu.edu/rcv4/personal/Publications/large_sieve.pdf",
+    "first_derivative": "https://arxiv.org/abs/2002.05982",
+    "primorial_prior": "https://doi.org/10.4064/aa163-1-4",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3846
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PhaseBound",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ProductBridge",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.BoardOrientation",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SpokeArc",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.PhaseBound.transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PhaseBound.off_resonance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PhaseBound.arc_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SpokeArc.lift_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SpokeArc.rh_of_residues": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347213573,
+        "sha256": "7a15c27ba061b2fca00ca95092b20a8b09c491f5817db446927ee6ffdd756301"
+      },
+      "solution": {
+        "bytes": 432702358,
+        "sha256": "b4479ab53b8b15cb4ab6f8cc52f31b2f31e77fbcc1fba81c133d52334a6baf91"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 128.36,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.61,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "b4479ab53b8b15cb4ab6f8cc52f31b2f31e77fbcc1fba81c133d52334a6baf91"
+    }
+  },
+  "calculation": {
+    "boards": [
+      {
+        "j": 4,
+        "selected_offset": {
+          "rational_turn": [
+            7537,
+            8192
+          ],
+          "terminal_norm": [
+            "89.7706680",
+            "89.7929917"
+          ],
+          "selection": "FFT grid used to choose the frequency. A separate rational enclosure evaluates it.",
+          "phase_rounding_grid": 1048576
+        },
+        "M": 65536,
+        "x": 25600,
+        "prime_arrivals": 3724,
+        "first_harmonic_terminal_norm": [
+          "69.3817598",
+          "69.3817599"
+        ],
+        "maximum_prefix_norm": [
+          "83.1085874",
+          "83.1085875"
+        ],
+        "largest_certified_lower_endpoint_at_prime": 60611,
+        "prefix_norm_in_sqrt_M_units": [
+          "0.32464291",
+          "0.32464292"
+        ],
+        "true_slow_maximum_in_tick_units": 4024200,
+        "altered_first_forbidden_cut": {
+          "prime": 46771,
+          "arrival": 2016,
+          "actual_unwrapped": -1177883,
+          "altered_unwrapped": 50431717,
+          "actual_fast_lane": 25317,
+          "altered_fast_lane": 25317,
+          "slow_arc_half_width": 50406400
+        },
+        "integer_label_sharpness_control": {
+          "integer_labels": [
+            59850,
+            59861
+          ],
+          "count": 12,
+          "near_integer_winding": 11,
+          "total_distance_from_whole_turns_in_tick_units": 23,
+          "tick_units_per_turn": 25600,
+          "real_part_exceeds": "6"
+        }
+      },
+      {
+        "j": 5,
+        "selected_offset": {
+          "rational_turn": [
+            36715,
+            262144
+          ],
+          "terminal_norm": [
+            "499.7640012",
+            "500.1739912"
+          ],
+          "selection": "FFT grid used to choose the frequency. A separate rational enclosure evaluates it.",
+          "phase_rounding_grid": 1048576
+        },
+        "M": 1048576,
+        "x": 147456,
+        "prime_arrivals": 68394,
+        "first_harmonic_terminal_norm": [
+          "300.8485225",
+          "300.8485226"
+        ],
+        "maximum_prefix_norm": [
+          "333.6796939",
+          "333.6796940"
+        ],
+        "largest_certified_lower_endpoint_at_prime": 444443,
+        "prefix_norm_in_sqrt_M_units": [
+          "0.32585907",
+          "0.32585908"
+        ],
+        "true_slow_maximum_in_tick_units": 171849412,
+        "altered_first_forbidden_cut": {
+          "prime": 289469,
+          "arrival": 11554,
+          "actual_unwrapped": -30885070,
+          "altered_unwrapped": 1672821554,
+          "actual_fast_lane": 80690,
+          "altered_fast_lane": 80690,
+          "slow_arc_half_width": 1672445952
+        },
+        "integer_label_sharpness_control": {
+          "integer_labels": [
+            442343,
+            442393
+          ],
+          "count": 51,
+          "near_integer_winding": 13,
+          "total_distance_from_whole_turns_in_tick_units": 408,
+          "tick_units_per_turn": 147456,
+          "real_part_exceeds": "51/2"
+        }
+      },
+      {
+        "j": 6,
+        "selected_offset": {
+          "rational_turn": [
+            765853,
+            2097152
+          ],
+          "terminal_norm": [
+            "2402.2963364",
+            "2408.3730455"
+          ],
+          "selection": "FFT grid used to choose the frequency. A separate rational enclosure evaluates it.",
+          "phase_rounding_grid": 1048576
+        },
+        "M": 16777216,
+        "x": 802816,
+        "prime_arrivals": 1013709,
+        "first_harmonic_terminal_norm": [
+          "1243.6301579",
+          "1243.6301631"
+        ],
+        "maximum_prefix_norm": [
+          "1363.7832203",
+          "1363.7832231"
+        ],
+        "largest_certified_lower_endpoint_at_prime": 8897143,
+        "prefix_norm_in_sqrt_M_units": [
+          "0.33295488",
+          "0.33295489"
+        ],
+        "true_slow_maximum_in_tick_units": 4475703309,
+        "altered_first_forbidden_cut": {
+          "prime": 1675873,
+          "arrival": 62298,
+          "actual_unwrapped": -434376550,
+          "altered_unwrapped": 49579454618,
+          "actual_fast_lane": 749722,
+          "altered_fast_lane": 749722,
+          "slow_arc_half_width": 49577902080
+        },
+        "integer_label_sharpness_control": {
+          "integer_labels": [
+            8885818,
+            8886021
+          ],
+          "count": 204,
+          "near_integer_winding": 16,
+          "total_distance_from_whole_turns_in_tick_units": 1787,
+          "tick_units_per_turn": 802816,
+          "real_part_exceeds": "102"
+        }
+      }
+    ]
+  },
+  "sha256_sources": {
+    "proofs/a-square-root-signal-that-forgets-a-turn.md": "e25d6caf6673d9a458b7a4371e6e97aa6501c4690bc5c7852f61a1b154ac58eb",
+    "pal-rh/prime-lane-polynomials.md": "7175efa0a74f99fd4f857346892c6917eaf676ba45f49bc70d12486025406ba1",
+    "pal-rh/PALRH/PhaseBound.lean": "b51cf0bf4c6905006bee874ceebe8183316ed9f131ace11d04bf016354a68f51",
+    "pal-rh/PALRH/SpokeArc.lean": "3ffd7980a7a3028d51bbf68b6417f3c2e9a4dc515efa88db8b6fa52343812c4f",
+    "pal-rh/PALRH/ProductBridge.lean": "743975e89a04e56e58e2bae273ca45f8fd663018bd94afcc7f166f6ed822d5f6",
+    "pal-rh/lakefile.toml": "6c0d7dff8aadedfa1ac9493a4b1e28f1e9b58f472f76b651919e91823deaa543",
+    "pal-rh/checks/slow-arc/ArcChallenge.lean": "1a8a786f4cfddb954e5cc4527fc813e852796ac1aa19e17ec3dfb24a59b0d96d",
+    "pal-rh/checks/slow-arc/ArcSolution.lean": "5119b99b9201ed5169ae0aad64f545a6dfee4fe17955c3f50b9ab137d4757964",
+    "pal-rh/checks/slow-arc/compare.json": "b5e87f90b0cc70d493a7138841485bfd9c3147779d85a48e4674786e290200b5",
+    "receipt-archives/check_pal_lane_phase.py": "d81b793dc431f9cdd8bbdd857326cce80bb179d01ce7fa45c698e15799a77769",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_returned_horizon.py": "380ff2ea0bf0b90f9c1782b7a8d5217ce0ce942c48d888afbd0e912914eef115",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2",
+    "receipt-archives/check_pal_dense_square_payment.py": "56d7e473f05a9808f1a54cc10a5dfba4b23fdd72eb63e8abb2c127aa3c67ac0e",
+    "receipt-archives/2026-11-26-pal-product-direction.json": "f843a455be31c1dce24011fceb0d615085458adaf1d8bb97ba691d3b9c856ca1",
+    "pal-rh/PALRH/SharedColumns.lean": "82decfe2c44032adc2263e1cac35b79b61a95463ae54a6ae0ce79c9e13795459",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c"
+  }
+}

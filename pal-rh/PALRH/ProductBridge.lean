@@ -97,7 +97,7 @@ theorem row_lower {j m : ℕ} (mh : m≤16^j) (fits : lower j m) :
 
 /-- A per-row balance pays the genuine triangular prefix using only nonnegative
 weights. The same expression accounts for the starts that have already retired. -/
-private theorem weighted_sign {j m : ℕ} (mh : m≤16^j) (s : ℝ)
+theorem weighted_sign {j m : ℕ} (mh : m≤16^j) (s : ℝ)
     (row : ∀ i≤m, s*plainPrefix (ReturnedReading.increment (board j)) i≤
       (root j:ℝ)*(root j/13:ℕ)) :
     13*(s*SignedStrip.score j m)≤(board j:ℝ)^2 := by
@@ -125,7 +125,7 @@ private theorem weighted_sign {j m : ℕ} (mh : m≤16^j) (s : ℝ)
   have equal : (n:ℝ)*x*x=(n:ℝ)^2 := by rw [spec];ring
   nlinarith only [sign,cut,equal]
 
-private theorem row_form (j i : ℕ) :
+theorem row_form (j i : ℕ) :
     plainPrefix (ReturnedReading.increment (board j)) i=
       (tickSum (board j) i:ℝ)-(root j:ℝ)*((i-root j:ℕ):ℝ) := by
   rw [ReturnedReading.plain,show (board j).sqrt=root j from Nat.sqrt_eq' _]

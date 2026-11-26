@@ -12,6 +12,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [The next full board](../proofs/paying-the-next-full-prime-board.md) · [Finite head specialization](PALRH/FiniteHorizon.lean) · [Numerical inputs and margins](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
+[The fast and slow phases](../proofs/a-square-root-signal-that-forgets-a-turn.md) · [Prime-lane polynomials](prime-lane-polynomials.md) · [Modular challenge](checks/slow-arc/ArcChallenge.lean)
+
 [Either side separately](../proofs/why-either-side-of-the-pocket-is-enough.md) · [Signed area to RH](PALRH/SignedStrip.lean) · [Fixed independent declarations](checks/signed-pocket/SignedChallenge.lean)
 
 [Which cells cross a cut](../proofs/which-empty-cells-must-cross.md) · [All storage caps](how-much-credit-crosses-a-prime-cut.md) · [Recovered columns](the-whole-column-a-prime-can-return.md)

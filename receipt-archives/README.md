@@ -12,6 +12,8 @@ For [the two clocks and the product condition](../proofs/one-product-one-directi
 
 For the [new finite all-cut range](../proofs/paying-the-next-full-prime-board.md), run `python -B receipt-archives/check_pal_finite_prime_budget.py`. It encloses the four terms outward, checks the Bessel coefficient directly and repeats the evaluations in separate decimal arithmetic. [Slabs, sources and normalized costs](2026-11-26-pal-finite-prime-budget.json)
 
+For [the fast lane and the slower arc](../proofs/a-square-root-signal-that-forgets-a-turn.md), run `python -B receipt-archives/check_pal_lane_phase.py`. The synthetic extra-column stream has identical fast phases at every real prime. The terminal and prefix amplitudes, screen of a selected offset, and first slow violation are enclosed separately. [Ranges and checks](2026-11-26-pal-lane-phase.json)
+
 The [two separate signs](../proofs/why-either-side-of-the-pocket-is-enough.md) now have a fixed challenge for excess alone, shortage alone, and an actual deadline-respecting family of injections. [Build, independent exports, kernels and bare comparison](2026-11-26-pal-signed-pocket.json)
 
 For the [shared columns and storage caps](../proofs/which-empty-cells-must-cross.md), run `python -B receipt-archives/check_pal_carry_storage.py`. It replays the sixteen-site codec, exhausts small stock plans and compares every reported depth-based price to direct inventory simulation. [Exact budgets and cells](2026-11-26-pal-carry-storage.json)

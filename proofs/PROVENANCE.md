@@ -10,6 +10,8 @@ Pang’s distinction between an earned transfer and a new unpriced copy suggeste
 
 Pang’s fixed accounting unit and requirement to carry every source of error determined the finite target. Hearthline derived its slab estimates using Büthe’s smoothed formula, Johnston’s inequalities and the Platt–Trudgian finite zero height. [Parameters, sources and range](paying-the-next-full-prime-board.md)
 
+Pang supplied the turn, its retained place and the APCI control asking whether another stream can give the same reading. Hearthline derived the prime-lane polynomial estimate and the slow arc theorem. The proof credits the classical Kuzmin–Landau argument, Montgomery and Vaughan’s interval sieve and Massé and Schneider’s earlier primorial theorem. [Quantitative derivation](../pal-rh/prime-lane-polynomials.md)
+
 Pang asked that the sign be turned both ways while retaining the physical ordering. Hearthline derived the opposite bound on the same alternating divisor read, its power-scale recovery, and both formal signed implications. [The reading and its transfers](why-either-side-of-the-pocket-is-enough.md)
 
 Pang supplied the empty-space and retained-frame questions. Hearthline derived the actual row-remainder encoder, the prime-phase refund and the storage bound on the returned boards. The interval application uses the row totals of Granville and Soundararajan and, for the simpler positive bound, Maynard’s prime clusters. [Mathematics and source roles](../pal-rh/how-much-credit-crosses-a-prime-cut.md)

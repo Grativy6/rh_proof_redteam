@@ -18,6 +18,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Paying the next full prime board](proofs/paying-the-next-full-prime-board.md). Under Pang’s active construction key, Hearthline evaluated the smoothing and unrestricted-tail costs against the original fixed budget on 26 November 2026. [Finite numerical derivation](receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
+[Prime-lane Fourier polynomial and a slow modular arc](proofs/a-square-root-signal-that-forgets-a-turn.md). Under Pang’s carried-frame question, Hearthline separated a sharp unconditional root-scale observation from the whole-turn quantity needed for RH, 26 November 2026.
+
 [Formal one-sided pocket and physical assignment](proofs/why-either-side-of-the-pocket-is-enough.md). Under Pang’s active key on 26 November 2026, Hearthline proved both orientations separately from the alternating divisor sums. [Check and bare comparison](receipt-archives/2026-11-26-pal-signed-pocket.json)
 
 [Required inventory at every cut](proofs/which-empty-cells-must-cross.md). Under Pang’s carry question, Hearthline derived the least crossing profile, measured finite storage caps, and placed true prime ticks by a common quotient and remainder on 26 November 2026.
