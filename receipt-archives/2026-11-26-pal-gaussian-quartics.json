@@ -1,0 +1,132 @@
+{
+  "parent_public_research_commit": "889498799d44cf2c58b58d9634c1354ed5d0d1b4",
+  "parent_tree": "1970b04b4ecce4916255b7f781c02fdcceb3170e",
+  "contributors": "Christopher Daniel Pang supplied the two-direction rule and the requirement to return the original arithmetic at the same endpoint. Hearthline derived the mean-preserving Gaussian read, the ordinary-log price, the search window, and the consecutive successful blocks on the existing exact 14-copy clock. The Jacobi modular formula, Basel sum and Guth-Maynard Corollary 1.3 supply the named mathematical inputs. Biane-Pitman-Yor and Nakamura provide context for positive theta and xi laws.",
+  "paper_scope": "For each fixed A>0, every sufficiently large integer K has at least floor((log K)^A) consecutive successful indices for the original fourteen-copy integer comparison within [K, 2 K (log(2K))^(1/4)]. No global RH premise is used. The threshold depends on A and is not numerically specified. Separately, the retained single-prime return exceeds two thirds of n^2/14 for every n>=2^32 by an elementary Gaussian comparison. Recurrence still permits failures between blocks.",
+  "formal_scope": "The exact discrete derivative of the actual von Mangoldt area, the drift-sign choice with the explicit variation allowance, and the resulting consecutive quartic address statement are native Lean theorems. The Gaussian localization, use of the externally proved short-interval estimate, and the full unbounded recurrence are on paper. No bare RH result is claimed.",
+  "review": {
+    "kind": "author self-review, primary-source and endpoint checks, numerical illustrations and native kernel replay",
+    "positive_measure": "The Jacobi relation makes B'' positive on both sides of 1. The base moments are M0=pi/6 and M1=M2=1/2. Y=(pi/3)/z has mean one and second moment pi/3.",
+    "ordinary_price": "On grouping the actual original von Mangoldt marks by divisibility the transformed sum is a sum of ordinary logs. The two kernel moments remove the logarithmic pole term and price the quadratic. Both the infinite sums and omitted Gaussian tails are controlled before localization.",
+    "window": "Weighting the omitted tail by Y^2 reduces it to an integral of B''. Both ends cost O(X^(2-pi) log(X)^2), which is o(X^(3/2)). This gives a sufficiently cheap real head near each large scale, even if the untreated individual readings have either sign.",
+    "local": "Guth-Maynard's all-interval Corollary 1.3, not its almost-all corollary, covers lengths from m^(2/3) through m^(3/4) times a fixed log power. Shorter differences are covered by monotonicity. After subtracting the signed tangent the variation costs o(m^(3/2)), allowing all points on the favorable side. Fixed-power choices and the asymptotic threshold are kept separate.",
+    "critical_price": "One twentieth plus the exact small-prime loss 1/24 plus the repeated-power allowance (2/3)(sqrt(8/7)-1) is strictly less than 1/7. Hence success is asserted for the exact existing fourteen-copy prime list, not for an easier substitute.",
+    "numerics": "The 22/7-pi integral estimate and index inequalities are rational. Two sample smoothed readings were also independently evaluated in floating point by ordinary logs and by integration of the genuine prime ramps; these illustrative finite computations are not used to prove the recurrence.",
+    "openness": "Eventually convex off-center comparison functions can also have long good blocks. The assertion that the actual arithmetic fails only finitely often remains unproved. External review and a literature priority check have not been completed."
+  },
+  "primary_sources": {
+    "short_intervals": "https://arxiv.org/pdf/2405.20552v2#page=2",
+    "jacobi": "https://dlmf.nist.gov/20.7.E32",
+    "basel": "https://dlmf.nist.gov/25.6.E1",
+    "related_laws": "https://arxiv.org/abs/math/9912170",
+    "related_xi_density": "https://arxiv.org/abs/1504.03438"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3859
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.QuarticReturnBlocks",
+      "exit": 0,
+      "seconds": 11.0,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.QuarticReturnBlocks.step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticReturnBlocks.good_side": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticReturnBlocks.consecutive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "constants": {
+      "two_thirds_funding_from_integer_head": 4294967296,
+      "gross_charge": "n^2/14",
+      "elementary_comparison_coefficient": "4/7 - pi/6",
+      "positive_rational_gap_over_two_thirds_of_gross": "8/85293",
+      "all_explicit_debits_upper_at_first_head": "0.000076339301",
+      "sufficient_raw_area_upper_in_three_halves_units": "1/20",
+      "block_window_in_quartic_indices": "[K, 2 K (log(2K))^(1/4)] for all sufficiently large K"
+    },
+    "same_prime_power_total_at_32_and_33": 144403552893600,
+    "drift_positive_at": 32,
+    "drift_negative_at": 33,
+    "numerical_illustrations": [
+      {
+        "head": 4,
+        "integer_log_sum": 2.878509734,
+        "direct_ramp_quadrature": 2.878509734,
+        "absolute_difference": 1.12e-12,
+        "type": "Floating illustration on the displayed truncations. The proof uses the analytic identities."
+      },
+      {
+        "head": 16,
+        "integer_log_sum": 106.58756984,
+        "direct_ramp_quadrature": 106.58756984,
+        "absolute_difference": 2.91e-10,
+        "type": "Floating illustration on the displayed truncations. The proof uses the analytic identities."
+      }
+    ]
+  },
+  "cached_primary_source_hashes": {
+    "guth_maynard": {
+      "url": "https://arxiv.org/pdf/2405.20552v2",
+      "bytes": 656298,
+      "sha256": "915392cf7d0ecd108479814a9a1481e23423ef63415776471cec3975ae482cae"
+    },
+    "biane_pitman_yor": {
+      "url": "https://arxiv.org/pdf/math/9912170",
+      "bytes": 351648,
+      "sha256": "04a444275e5522cef9a1ba9f7d1b9f20a752764d3548f9c48be6dbc055bb12ea"
+    },
+    "nakamura": {
+      "url": "https://arxiv.org/pdf/1504.03438",
+      "bytes": 214438,
+      "sha256": "f9a2e290751b83286e325f7c3e319b2553f74afc1c39dec9c5076e270c6b68bc"
+    },
+    "theta_modular": {
+      "url": "https://dlmf.nist.gov/20.7.E32.tex",
+      "bytes": 156,
+      "sha256": "3ed7a949550bfd2485c8b032b9c0059aa683d887a5cce03d4fb731f83321300f"
+    },
+    "basel": {
+      "url": "https://dlmf.nist.gov/25.6.E1b.tex",
+      "bytes": 40,
+      "sha256": "a50b8b8b9f3f8e21038fe57b4c0c4e7eb48f79a1553c87059e414bc7433e7c68"
+    }
+  },
+  "sha256_sources": {
+    "proofs/where-fourteen-pays-again.md": "553583ac2622337287e94a5ae9a03ef87caa68d676021df7090f6d0c7c10eb00",
+    "pal-rh/PALRH/QuarticReturnBlocks.lean": "f86ceb444faa491d2e0cd71d9b5a5afc8f8b5f9b5eceda3555ea2b16ced0780b",
+    "pal-rh/lakefile.toml": "c8d6b7e5ef8a3a9ed272aba039ea9e68284e57076aaf59da7706ab9dd23ee1cb",
+    "receipt-archives/check_pal_gaussian_quartics.py": "1d404c9eb55754723cbeab5c9964c983d1a0a28d7578ff88025ab4dbdf783d6d",
+    "proofs/one-seventh-at-the-boundary.md": "da34ef09ec2668ced6ddfdb6d520f2e791d4bb496fcae1f91fca08b95120828c",
+    "pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md": "7eabb53144b6f3278f3d16e1a56bf1e1d023b50806c7c1e026829e7bfe1114a1",
+    "pal-rh/PALRH/MovingEndpoint.lean": "27974601a50db50e272331a38a6e5695878e89b97214841dcdb4338c65466107",
+    "pal-rh/PALRH/PrimeCopies.lean": "1c8b20c65724258bea04e04e2bd472735b7e4914e5cf088ecd8ddca0a0dbd10c",
+    "pal-rh/checks/doubled-ruler/RulerChallenge.lean": "8b9110e426e517b4956fbabeebfa58dac8f71e0711bfd5264c29a7e3ef5a1c0f",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_moving_endpoint.py": "44aea7f93d27ae0c07b09dc286c66e6ba67035d03dc27a28ef92b9ec46f93579",
+    "receipt-archives/2026-11-26-pal-doubled-ruler.json": "2763d9e83a44b72186e4aaeb3be0bfd84e3d7f7808d29ba0871c657dcdc8e610",
+    "receipt-archives/2026-11-26-pal-prime-copies.json": "bd6f81d2bec9f2fdcc1dc4ceca980cf63255d3866a050441dd42516f5e04c0dd"
+  }
+}
