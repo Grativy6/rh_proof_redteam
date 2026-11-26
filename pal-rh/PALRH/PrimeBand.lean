@@ -19,7 +19,7 @@ theorem exact_split (n c : ℕ) : demand n=inputCount n c*removed n c := by
   unfold demand inputCount dials retained removed
   rw [mul_assoc,split]
 
-private theorem removed_pos (n c : ℕ) : 0<removed n c := by
+theorem removed_pos (n c : ℕ) : 0<removed n c := by
   apply Finset.prod_pos
   intro p hp
   exact pow_pos (mem_filter.mp (mem_filter.mp hp).1).2.pos _

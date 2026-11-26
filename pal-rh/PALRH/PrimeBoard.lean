@@ -38,7 +38,7 @@ theorem pair_return (n : ℕ) (np : 0<n)
     _ = capacity n*(dials n*pairLeft n) := by ring
     _ ≤ _ := Nat.mul_le_mul_left _ charge
 
-private theorem dial_log (n : ℕ) : Real.log (dials n:ℝ)=2*primeWalk n := by
+theorem dial_log (n : ℕ) : Real.log (dials n:ℝ)=2*primeWalk n := by
   unfold dials primeWalk
   push_cast
   rw [Real.log_prod]
@@ -101,7 +101,7 @@ theorem log_margin {n : ℕ} (_np : 0<n) :
   push_cast
   ring
 
-private theorem repeated (n : ℕ) : 0≤fullWalk n-primeWalk n ∧
+theorem repeated (n : ℕ) : 0≤fullWalk n-primeWalk n ∧
     fullWalk n-primeWalk n≤(n:ℝ)*(Chebyshev.psi n-Chebyshev.theta n) := by
   let weight:=fun k : ℕ => ArithmeticFunction.vonMangoldt k - (if k.Prime then Real.log (k:ℝ) else 0)
   have pos (k : ℕ) : 0≤weight k := by

@@ -101,11 +101,10 @@ private theorem real_head {C : ℝ} (cn : 0≤C)
   change _-(x/2)≤_
   nlinarith only [shift,top,close,Real.one_le_sqrt.mpr large,mul_le_mul_of_nonneg_left root cn]
 
-/-- A single eventual bound on excess demand, at fourth powers only, implies stock RH. -/
-theorem rh_of_eventual_overflow (K : ℕ)
-    (funded : ∀ k : ℕ, K≤k → 0<k → demand (k^4)≤capacity (k^4)*allowance (k^4)) :
+/-- All sufficiently large fourth-power heads may supply only an upper prime-power area. -/
+theorem rh_of_eventual_upper_area (K : ℕ) {C : ℝ} (cn : 0≤C)
+    (priced : ∀ k : ℕ, K≤k → 0<k → error (k^4)≤C*(k:ℝ)^6) :
     RiemannHypothesis := by
-  obtain ⟨C,cn,price⟩:=full_walk_upper_price
   let early := ∑ j ∈ range K, |error (j^4)|
   have en : 0≤early := Finset.sum_nonneg (fun _ _ => abs_nonneg _)
   let D:=C+early
@@ -115,16 +114,7 @@ theorem rh_of_eventual_overflow (K : ℕ)
     · subst k;simp [error,fullWalk]
     have kp:=Nat.pos_of_ne_zero kz
     by_cases large : K≤k
-    · have h:=price (k^4) (pow_pos kp _) (funded k large kp)
-      have root : Real.sqrt ((k:ℝ)^4)=(k:ℝ)^2 := by
-        rw [show (k:ℝ)^4=((k:ℝ)^2)^2 by ring,Real.sqrt_sq (by positivity)]
-      unfold error
-      push_cast at h ⊢
-      rw [root] at h
-      calc
-        _ ≤ _ := h
-        _ = C*(k:ℝ)^6 := by ring
-        _ ≤ _ := mul_le_mul_of_nonneg_right (by dsimp [D];linarith) (by positivity)
+    · exact (priced k large kp).trans (mul_le_mul_of_nonneg_right (show C≤D by dsimp [D];linarith) (by positivity))
     · have kept : |error (k^4)|≤early := Finset.single_le_sum (fun i (_ : i∈range K) => abs_nonneg (error (i^4)))
         (mem_range.mpr (lt_of_not_ge large))
       have one : (1:ℝ)≤k := by exact_mod_cast kp
@@ -134,6 +124,23 @@ theorem rh_of_eventual_overflow (K : ℕ)
   have cost : 0≤64*D+256 := by positivity
   exact rh_of_real_upper (by positivity : 0≤2*(64*D+256)+1)
     (fun _ xh => real_head cost (fun _ np => quartic_upper_envelope dn knots np) xh)
+
+/-- A single eventual bound on excess demand, at fourth powers only, implies stock RH. -/
+theorem rh_of_eventual_overflow (K : ℕ)
+    (funded : ∀ k : ℕ, K≤k → 0<k → demand (k^4)≤capacity (k^4)*allowance (k^4)) :
+    RiemannHypothesis := by
+  obtain ⟨C,cn,price⟩:=full_walk_upper_price
+  apply rh_of_eventual_upper_area K cn
+  intro k late kp
+  have h:=price (k^4) (pow_pos kp _) (funded k late kp)
+  have root : Real.sqrt ((k:ℝ)^4)=(k:ℝ)^2 := by
+    rw [show (k:ℝ)^4=((k:ℝ)^2)^2 by ring,Real.sqrt_sq (by positivity)]
+  unfold error
+  push_cast at h ⊢
+  rw [root] at h
+  calc
+    _ ≤ _ := h
+    _ = _ := by ring
 
 /-- The entire remaining Pascal input is the comparison of two explicitly computed coprime integers. -/
 theorem rh_of_eventual_pascal_exchange (K : ℕ)

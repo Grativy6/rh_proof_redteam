@@ -1,0 +1,25 @@
+{
+  "challenge_module": "TickChallenge",
+  "solution_module": "TickSolution",
+  "theorem_names": [
+    "riemannHypothesis",
+    "sharedFiveChoices",
+    "reversibleInnerTrips",
+    "localMapsShareAState"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

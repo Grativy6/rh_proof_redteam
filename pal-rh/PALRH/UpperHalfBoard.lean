@@ -22,7 +22,7 @@ private theorem first_two_terms (a k : ℕ) :
         omega
       _ ≤ _ := by simpa only [pow_succ (a+1) (k+1)] using payment
 
-private theorem doubled_words (n : ℕ) (hn : 0<n) : 2*n^n≤(n+1)^n := by
+theorem doubled_words (n : ℕ) (hn : 0<n) : 2*n^n≤(n+1)^n := by
   obtain ⟨k,rfl⟩:=Nat.exists_eq_succ_of_ne_zero hn.ne'
   calc
     _ = (k+1)^(k+1)+(k+1)*(k+1)^k := by

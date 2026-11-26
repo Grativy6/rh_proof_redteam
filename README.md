@@ -16,6 +16,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 The current Lean theorem reaches stock `RiemannHypothesis` from **one eventual comparison of whole numbers**. At $n=k^4$, compare the independent forward trip settings selected by a factorial gcd with the number of ways to pick one subset of each size. All intermediate transfers are proved. The universal comparison itself remains open. [Start with the count at sixteen](proofs/one-integer-comparison-to-rh.md) · [Trace the one-sided deduction](pal-rh/how-one-sided-prime-area-reaches-rh.md)
 
+A second view counts individual trip-and-tick records in a literal three-dimensional lattice. At $n=k^4$, eventual fit with two whole layers set aside implies RH. A middle band has a reversible placement into the same reduced-height stack. [Count and recover a trip](proofs/how-many-layers-a-prime-trip-needs.md)
+
 The proof now reaches RH from counts at fourth powers. A convexity bound pays for the sizes between them. The paired board fits at every size through one billion and on arbitrarily late stretches of consecutive sizes. [Which board sizes have to fit?](proofs/which-prime-boards-have-to-fit.md)
 
 A signed factorial sum returns every marked prime-power weight exactly. On a finer ruler its difference from the original profile concentrates at zero, where one zeta zero prices the missing reading. [What the signed rows leave at zero](proofs/what-the-signed-factorial-rows-leave-at-zero.md)

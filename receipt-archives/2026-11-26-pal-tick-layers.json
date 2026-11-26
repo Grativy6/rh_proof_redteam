@@ -1,0 +1,873 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "f18cef3937dedf7809db5ae11c86fb8243dd2908",
+  "parent_tree": "95fabadbc92a2769cab4ba0e26c8c40b5a702407",
+  "contributors": "Pang supplied the point and horizon, his lattice picture, the many views of one marked record and the PAL/RPL requirement to recover its actual physical address. Hearthline derived the clocks, sharing identities, placements, recurrence and proof in his independent research program.",
+  "formal_scope": "One eventual inequality on the oriented count of tick records in a reduced-height integer lattice implies stock RH. It has no extra spare-room, primality or analytic-continuation premise. The same stage proves prime ownership, actual middle-record recovery with two whole layers physically absent, a single crossing for primitive height costs, twelve independently recoverable base-five slots as a common Pascal fiber, and a joint injection for locally consistent records.",
+  "paper_scope": "RH implies that the ordinary lattice eventually needs exactly sqrt(n)-2 whole layers. Eventual fit with a third entire layer removed is impossible. The shifted clock takes both adjacent height readings under RH. Omitting any one of three explicit thin prime bands funds a local placement unconditionally at every sufficiently late head. The fewest physical disagreements between the locally injective charts is exactly max(0,records-slots). For the shifted clock the forced disagreement exceeds 0.0099*n^2 infinitely often, and vanishes infinitely often. The ordinary all-size fit remains open.",
+  "review": {
+    "type": "author self-review",
+    "objects": "A cell is one directed trip and one tick, not a complete independent assignment of dial states. The proof explicitly prices the change of observable.",
+    "normalization": "One forward count is doubled for the two directed trips. The ordinary reciprocal log step is x+1/2+O(1/x); the prime-square and cutoff bias is 10/3 at the twice-area normalization. The resulting ordinary central height is x-17/6.",
+    "strictness": "The continuum signed Pascal inverse is priced separately from the full-label finite inverse. The first negative at 61 is for the exact all-integer profile. No novelty claim is made for the general pigeonhole principle or compatible gluing of functions.",
+    "middle_allocation": "The reduced-height algorithm uses the same box. For 2b+2<=x it actually divides time by x-2. All larger jobs are ranked into the complement and no occupied cell is reused.",
+    "three_charts": "The omissions are disjoint. Any pair of records is jointly visible. Consistent records inject into the physical slots and a separate piecewise bijection attains the lower bound on disagreements. All image intervals in the two disclosed heads are checked exactly.",
+    "range": "Complete ordinary and shifted counts at the listed roots up to 64. Exhaustive codec inputs at sizes 16 and 81. At 4096 exact group sizes and selected inverses. No conclusion at unbounded size follows from those finite fixtures."
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "primary_sources": {
+    "integrated_explicit_formula": "https://arxiv.org/pdf/2201.06184",
+    "short_intervals": "https://arxiv.org/pdf/2405.20552",
+    "explicit_outer_band": "https://arxiv.org/pdf/1002.0442",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3824
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PrimeBoard",
+      "exit": 0,
+      "seconds": 51.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeBand",
+      "exit": 0,
+      "seconds": 51.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.UpperHalfBoard",
+      "exit": 0,
+      "seconds": 12.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneSidedBoard",
+      "exit": 0,
+      "seconds": 13.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SharedPascal",
+      "exit": 0,
+      "seconds": 11.7,
+      "output": ""
+    },
+    {
+      "module": "PALRH.TickBoard",
+      "exit": 0,
+      "seconds": 11.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.TickPacking",
+      "exit": 0,
+      "seconds": 11.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.LocalAgreement",
+      "exit": 0,
+      "seconds": 8.5,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.SharedPascal.adjacent_rows": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SharedPascal.twelve_fives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SharedPascal.uniform_fiber": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.SharedPascal.paid_above": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.tick_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.rh_of_layers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.rh_of_two_spare_layers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickPacking.owned_placement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickPacking.two_layers_reserved": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LocalAgreement.consistent_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LocalAgreement.complete_count": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347158844,
+        "sha256": "f2ea8da5c35c453124ed8c24a668685ea4e9a2801d33def9612b76fdba0a67e5"
+      },
+      "solution": {
+        "bytes": 430915550,
+        "sha256": "d5261fb952dea2cab11b526a498f98868a05a8ef0c70bfcf4c2ed36008788633"
+      }
+    },
+    "matching_independent_exports": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 128.31,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "calculation": {
+    "tick_layers": [
+      {
+        "k": 1,
+        "n": 1,
+        "square_root": 1,
+        "ordinary": {
+          "oriented_triples": 0,
+          "layers_required": 0,
+          "whole_layers_spared": 1
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 0,
+          "layers_required": 0,
+          "whole_layers_spared": 1
+        }
+      },
+      {
+        "k": 2,
+        "n": 16,
+        "square_root": 4,
+        "ordinary": {
+          "oriented_triples": 520,
+          "layers_required": 3,
+          "whole_layers_spared": 1,
+          "individual_prime_costs": [
+            [
+              5,
+              11,
+              8
+            ],
+            [
+              7,
+              9,
+              9
+            ],
+            [
+              11,
+              5,
+              11
+            ],
+            [
+              13,
+              3,
+              12
+            ]
+          ]
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 610,
+          "layers_required": 3,
+          "whole_layers_spared": 1,
+          "individual_prime_costs": [
+            [
+              5,
+              11,
+              9
+            ],
+            [
+              7,
+              9,
+              11
+            ],
+            [
+              11,
+              5,
+              13
+            ],
+            [
+              13,
+              3,
+              14
+            ]
+          ]
+        }
+      },
+      {
+        "k": 3,
+        "n": 81,
+        "square_root": 9,
+        "ordinary": {
+          "oriented_triples": 43076,
+          "layers_required": 7,
+          "whole_layers_spared": 2,
+          "individual_prime_costs": [
+            [
+              11,
+              70,
+              23
+            ],
+            [
+              13,
+              68,
+              25
+            ],
+            [
+              17,
+              64,
+              27
+            ],
+            [
+              19,
+              62,
+              28
+            ],
+            [
+              23,
+              58,
+              30
+            ],
+            [
+              29,
+              52,
+              32
+            ],
+            [
+              31,
+              50,
+              33
+            ],
+            [
+              37,
+              44,
+              35
+            ],
+            [
+              41,
+              40,
+              36
+            ],
+            [
+              43,
+              38,
+              36
+            ],
+            [
+              47,
+              34,
+              37
+            ],
+            [
+              53,
+              28,
+              38
+            ],
+            [
+              59,
+              22,
+              39
+            ],
+            [
+              61,
+              20,
+              40
+            ],
+            [
+              67,
+              14,
+              40
+            ],
+            [
+              71,
+              10,
+              41
+            ],
+            [
+              73,
+              8,
+              41
+            ],
+            [
+              79,
+              2,
+              42
+            ]
+          ]
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 47016,
+          "layers_required": 8,
+          "whole_layers_spared": 1,
+          "individual_prime_costs": [
+            [
+              11,
+              70,
+              25
+            ],
+            [
+              13,
+              68,
+              27
+            ],
+            [
+              17,
+              64,
+              30
+            ],
+            [
+              19,
+              62,
+              31
+            ],
+            [
+              23,
+              58,
+              33
+            ],
+            [
+              29,
+              52,
+              35
+            ],
+            [
+              31,
+              50,
+              36
+            ],
+            [
+              37,
+              44,
+              38
+            ],
+            [
+              41,
+              40,
+              39
+            ],
+            [
+              43,
+              38,
+              39
+            ],
+            [
+              47,
+              34,
+              40
+            ],
+            [
+              53,
+              28,
+              41
+            ],
+            [
+              59,
+              22,
+              43
+            ],
+            [
+              61,
+              20,
+              43
+            ],
+            [
+              67,
+              14,
+              44
+            ],
+            [
+              71,
+              10,
+              45
+            ],
+            [
+              73,
+              8,
+              45
+            ],
+            [
+              79,
+              2,
+              46
+            ]
+          ]
+        }
+      },
+      {
+        "k": 4,
+        "n": 256,
+        "square_root": 16,
+        "ordinary": {
+          "oriented_triples": 882966,
+          "layers_required": 14,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 926666,
+          "layers_required": 15,
+          "whole_layers_spared": 1
+        }
+      },
+      {
+        "k": 6,
+        "n": 1296,
+        "square_root": 36,
+        "ordinary": {
+          "oriented_triples": 56045872,
+          "layers_required": 34,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 57323734,
+          "layers_required": 35,
+          "whole_layers_spared": 1
+        }
+      },
+      {
+        "k": 8,
+        "n": 4096,
+        "square_root": 64,
+        "ordinary": {
+          "oriented_triples": 1026484552,
+          "layers_required": 62,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 1039763768,
+          "layers_required": 62,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 10,
+        "n": 10000,
+        "square_root": 100,
+        "ordinary": {
+          "oriented_triples": 9720394648,
+          "layers_required": 98,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 9800859664,
+          "layers_required": 99,
+          "whole_layers_spared": 1
+        }
+      },
+      {
+        "k": 12,
+        "n": 20736,
+        "square_root": 144,
+        "ordinary": {
+          "oriented_triples": 60684674128,
+          "layers_required": 142,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 61034519462,
+          "layers_required": 142,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 16,
+        "n": 65536,
+        "square_root": 256,
+        "ordinary": {
+          "oriented_triples": 1087380594760,
+          "layers_required": 254,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 1090913273206,
+          "layers_required": 254,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 20,
+        "n": 160000,
+        "square_root": 400,
+        "ordinary": {
+          "oriented_triples": 10167586171960,
+          "layers_required": 398,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 10188735799316,
+          "layers_required": 398,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 24,
+        "n": 331776,
+        "square_root": 576,
+        "ordinary": {
+          "oriented_triples": 63086534492776,
+          "layers_required": 574,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 63177714860582,
+          "layers_required": 574,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 32,
+        "n": 1048576,
+        "square_root": 1024,
+        "ordinary": {
+          "oriented_triples": 1122747869769466,
+          "layers_required": 1022,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 1123661126502258,
+          "layers_required": 1022,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 40,
+        "n": 2560000,
+        "square_root": 1600,
+        "ordinary": {
+          "oriented_triples": 10466869668790286,
+          "layers_required": 1598,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 10472320227350288,
+          "layers_required": 1598,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 48,
+        "n": 5308416,
+        "square_root": 2304,
+        "ordinary": {
+          "oriented_triples": 64844766532027000,
+          "layers_required": 2302,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 64868214940817234,
+          "layers_required": 2302,
+          "whole_layers_spared": 2
+        }
+      },
+      {
+        "k": 64,
+        "n": 16777216,
+        "square_root": 4096,
+        "ordinary": {
+          "oriented_triples": 1152105902617459062,
+          "layers_required": 4094,
+          "whole_layers_spared": 2
+        },
+        "shifted_five_sixths": {
+          "oriented_triples": 1152340265119030686,
+          "layers_required": 4094,
+          "whole_layers_spared": 2
+        }
+      }
+    ],
+    "owned_routes": {
+      "k": 8,
+      "storage_layers": 64,
+      "all_middle_primes": [
+        67,
+        71,
+        73
+      ],
+      "first_half_distances_owned": 30,
+      "distinct_oriented_records_recovered": 6634268,
+      "example": {
+        "input": [
+          67,
+          4028,
+          270
+        ],
+        "stored": [
+          1980,
+          670,
+          14
+        ],
+        "recovered": [
+          67,
+          4028,
+          270
+        ]
+      }
+    },
+    "full_cube_placements": [
+      {
+        "k": 2,
+        "n": 16,
+        "layers": 3,
+        "all_oriented_records": 520,
+        "capacity": 768,
+        "middle_reserved": 0,
+        "exterior_placed_afterwards": 520,
+        "unused_cells": 248,
+        "tested_roundtrips": 520,
+        "exhaustive_roundtrips": true
+      },
+      {
+        "k": 3,
+        "n": 81,
+        "layers": 7,
+        "all_oriented_records": 43076,
+        "capacity": 45927,
+        "middle_reserved": 0,
+        "exterior_placed_afterwards": 43076,
+        "unused_cells": 2851,
+        "tested_roundtrips": 43076,
+        "exhaustive_roundtrips": true
+      },
+      {
+        "k": 8,
+        "n": 4096,
+        "layers": 62,
+        "all_oriented_records": 1026484552,
+        "capacity": 1040187392,
+        "middle_reserved": 6634268,
+        "exterior_placed_afterwards": 1019850284,
+        "unused_cells": 13702840,
+        "tested_roundtrips": 9828,
+        "exhaustive_roundtrips": false
+      }
+    ],
+    "owned_routes_with_two_layers_set_aside": {
+      "k": 8,
+      "storage_layers": 62,
+      "all_middle_primes": [
+        67,
+        71,
+        73
+      ],
+      "first_half_distances_owned": 30,
+      "distinct_oriented_records_recovered": 6634268,
+      "example": {
+        "input": [
+          67,
+          4028,
+          270
+        ],
+        "stored": [
+          1980,
+          670,
+          22
+        ],
+        "recovered": [
+          67,
+          4028,
+          270
+        ]
+      }
+    },
+    "twelve_fives": {
+      "identical_state_counts": "2250000000000",
+      "common_four_row_pairs": 9216,
+      "remaining_independent_five_settings": 244140625,
+      "decoded_controls": 27648
+    },
+    "agreement_of_three_views": {
+      "small_toy": {
+        "jobs": 4,
+        "available_slots": 3,
+        "least_disagreements": 1,
+        "records_removed_in_each_chart": [
+          1,
+          1,
+          1
+        ],
+        "exact_pieces_in_order": 4
+      },
+      "all_toy_assignments_compared": 216,
+      "shifted_actual": [
+        {
+          "jobs": 1033040942,
+          "available_slots": 1033464566,
+          "least_disagreements": 0,
+          "records_removed_in_each_chart": [
+            8339980,
+            6090794,
+            3188850
+          ],
+          "exact_pieces_in_order": 7,
+          "k": 8,
+          "n": 4096,
+          "fixed_middle_jobs": 6722826,
+          "full_job_count": 1039763768,
+          "full_capacity": 1040187392,
+          "omitted_prime_intervals_open_closed": [
+            [
+              1024,
+              1047
+            ],
+            [
+              2048,
+              2071
+            ],
+            [
+              3072,
+              3095
+            ]
+          ]
+        },
+        {
+          "jobs": 9674509838,
+          "available_slots": 9673650174,
+          "least_disagreements": 859664,
+          "records_removed_in_each_chart": [
+            59362224,
+            51656832,
+            26871260
+          ],
+          "exact_pieces_in_order": 8,
+          "k": 10,
+          "n": 10000,
+          "fixed_middle_jobs": 126349826,
+          "full_job_count": 9800859664,
+          "full_capacity": 9800000000,
+          "omitted_prime_intervals_open_closed": [
+            [
+              2500,
+              2544
+            ],
+            [
+              5000,
+              5044
+            ],
+            [
+              7500,
+              7544
+            ]
+          ]
+        }
+      ]
+    },
+    "finite_signed_reconstruction": {
+      "first_negative_row_on_full_integer_profile": [
+        61,
+        {
+          "11": "-1/330"
+        }
+      ],
+      "first_quartic_with_negative_row": {
+        "n": 81,
+        "signed_rows": {
+          "14": "-29/1365",
+          "15": "-29/1680"
+        }
+      },
+      "scope": "Exact recovery of f(d)=n-d on all integer labels d>=2; a stricter requirement than reading only prime-power labels."
+    },
+    "contiguous_gap": [
+      {
+        "n": 16,
+        "first_primitive_height_that_fits": 3,
+        "forward_records_before_weighting": 28
+      },
+      {
+        "n": 61,
+        "first_primitive_height_that_fits": 8,
+        "forward_records_before_weighting": 370
+      },
+      {
+        "n": 81,
+        "first_primitive_height_that_fits": 11,
+        "forward_records_before_weighting": 684
+      },
+      {
+        "n": 256,
+        "first_primitive_height_that_fits": 25,
+        "forward_records_before_weighting": 6248
+      },
+      {
+        "n": 577,
+        "first_primitive_height_that_fits": 49,
+        "forward_records_before_weighting": 28552
+      },
+      {
+        "n": 2663,
+        "first_primitive_height_that_fits": 183,
+        "forward_records_before_weighting": 518326
+      },
+      {
+        "n": 10000,
+        "first_primitive_height_that_fits": 588,
+        "forward_records_before_weighting": 6304664
+      },
+      {
+        "n": 100000,
+        "first_primitive_height_that_fits": 4651,
+        "forward_records_before_weighting": 498312669
+      }
+    ],
+    "all_crossings_checked_through": 512
+  },
+  "sha256_sources": {
+    "proofs/how-many-layers-a-prime-trip-needs.md": "ee579a067beb41bf22d08eaefc04301f29ddf09aa9d063f3c425c08d4a0900bf",
+    "pal-rh/one-prime-trip-in-a-shared-lattice.md": "fa78566cde2feb4b0ac11b92489d50d3dd0b6224cc6887d5fb5bacc9bffa0e55",
+    "pal-rh/how-a-shared-row-carries-five.md": "48a7185b7adba9af30ae890dcb5bfba117ebf9ec4b93cc52510147b3675c3c69",
+    "pal-rh/PALRH/SharedPascal.lean": "8be607a0da4dbf49a7bcdbd9c349b19f81b2ae63b1ab542fe83b65ae143574b6",
+    "pal-rh/PALRH/TickBoard.lean": "f71479afe1872723eac015025a3e366cb3e53f2d7b3f1ab5879fe1b6ac8c5479",
+    "pal-rh/PALRH/TickPacking.lean": "478f501d2cb8fa2e5a1132c3727fbfe6dfdfa9ec556f15e659b530e0b619ed6b",
+    "pal-rh/PALRH/LocalAgreement.lean": "608fe96e12a4bfd8102daa835e6826003b1724d67b6a28e632d4e247007a05c0",
+    "pal-rh/PALRH/OneSidedBoard.lean": "ec3442b5ac5979dba609dfbc91d89c54b6982f469f7809283c02c65e43a85694",
+    "pal-rh/PALRH/PrimeBoard.lean": "adf6b9838016f6cc45d571cc38ba2a1f3278fd1c3e416df274f50a0f6d7daa7c",
+    "pal-rh/PALRH/PrimeBand.lean": "7944dd7fdadab41d52d1198278cb302a47195e8e56df23648feff9456bc4d4ff",
+    "pal-rh/PALRH/UpperHalfBoard.lean": "d5fc7d5442280f3eb879a75e5ac87fded6d6f123aecfd1f489eb14122398b36e",
+    "pal-rh/lakefile.toml": "35b132a2358cb49e10a66cd34170df2bf2de15aa9539a6f57884d488db2876f5",
+    "pal-rh/checks/tick-layers/TickChallenge.lean": "b66e7ce7e4cb066ffaa4e96aedfade4e278aa794a9471108c6c8830a95931972",
+    "pal-rh/checks/tick-layers/TickSolution.lean": "e31032b8f76d7ce3168b1049d6625d731c4fdf8d446f64a8be8e2bf4789f388c",
+    "pal-rh/checks/tick-layers/compare.json": "5796ee25a3e63d949c96c0168685d01c64a52444ea64f52228468973fef18705",
+    "receipt-archives/check_pal_tick_layers.py": "63f8db4748c18af502e53f672301701cd402c64a3da1d515873a401f358a245f",
+    "receipt-archives/pal_tick_codec.py": "42b8ad0417dade794570b5d8c30b40a2d81ac8ea8a4b0e106012e9f6842b9df5",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_pascal_board.py": "5756b789590cef4c5605946899d15d62cd3998734782920bbd3d8e70c8d5d9d4",
+    "receipt-archives/2026-11-26-pal-one-subset.json": "5f99c7c277efb6a02d007fdcace8fced6eca83d69d930deb55dabb07b4ba725e",
+    "receipt-archives/2026-11-26-pal-horizon-cut.json": "e72df57ca0325f3def7b1be24c7b6fd418a5e5e48d19a70bd271ffd0babbc3ae"
+  }
+}
