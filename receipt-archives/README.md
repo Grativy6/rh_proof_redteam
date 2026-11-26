@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+For the [fixed one-thirteenth comparison](../proofs/one-thirteenth-of-a-returned-layer.md), run `python -B receipt-archives/check_pal_returned_horizon.py`. It returns the largest measured discrepancies and their cuts, and encloses all elementary constants rationally. [Direct ranges and both theorem comparisons](2026-11-26-pal-returned-horizon.json)
+
 For [the one-sided subset comparison](../proofs/one-integer-comparison-to-rh.md), run `python -B receipt-archives/check_pal_one_subset.py`. Prime-power readings and their logarithmic primitives are independently recomputed from all-integer log and harmonic sums. The same solution export was tested against two fixed statements. [Conditional acceptance and bare-statement mismatch](2026-11-26-pal-one-subset.json)
 
 For [the unit tick lattice](../proofs/how-many-layers-a-prime-trip-needs.md), run `python -B receipt-archives/check_pal_tick_layers.py`. It computes two integer clocks, exhaustively recovers small complete cubes, decodes the middle-prime placement and tests all common size-four Pascal states. [Counts, ranges and fixed comparison](2026-11-26-pal-tick-layers.json)

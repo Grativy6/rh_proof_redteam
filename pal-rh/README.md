@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[One thirteenth of a returned layer](../proofs/one-thirteenth-of-a-returned-layer.md) · [All sizes and constants](why-one-thirteenth-is-enough.md) · [Fixed comparison](checks/returned-horizon/ReturnedChallenge.lean)
+
 [One eventual integer comparison](../proofs/one-integer-comparison-to-rh.md) · [Complete one-sided deduction](how-one-sided-prime-area-reaches-rh.md) · [Independently fixed statement](checks/one-subset/OneSubsetChallenge.lean)
 
 [One trip and its layer](../proofs/how-many-layers-a-prime-trip-needs.md) · [Integer box and owned return](one-prime-trip-in-a-shared-lattice.md) · [Five as a shared row fiber](how-a-shared-row-carries-five.md)

@@ -89,7 +89,7 @@ theorem prefix_calibration (n m : ℕ) (np : 0<n) (mn : m≤n) :
     by nlinarith only [lower,paid,xsq,show 0≤(n:ℝ) from Nat.cast_nonneg _]⟩
 
 
-private theorem reading (n m h : ℕ) (mn : m≤n) :
+theorem reading (n m h : ℕ) (mn : m≤n) :
     weighted n (fun d => (tickAt n d:ℝ)-h) m=(prefixJobs n m:ℝ)-(h:ℝ)*plainArea n m := by
   unfold weighted prefixJobs plainArea
   push_cast

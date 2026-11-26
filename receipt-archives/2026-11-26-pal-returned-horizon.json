@@ -1,0 +1,480 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "f9ed27cda9dcd7bbdb1daeb74f52d41efb86a2e4",
+  "parent_tree": "628df488abd17a5c2ce792e6ea4e8ce1f0bcee71",
+  "contributors": "Christopher Daniel Pang supplied the ordered distinction, the requirement to return the discarded part in the same frame, and the instruction to test both directions. Hearthline derived the returned-strip sequence, exact allowances, signed taper and initial buffer model in his program.",
+  "formal_scope": "All j >= 0, one frozen natural comparison per j. If 13 times the maximum two-sided corrected mismatch is at most n^2 on every board, stock Mathlib RH follows. Leaving out the return fails at the root on every sufficiently observed board. A direct bound on the change of Chebyshev error pays the integer comparison. Reweighting a signed prefix by a shorter triangular taper preserves each one-sided bound with positive coefficients. Prefix capacities are equivalent to one coherent injection.",
+  "paper_scope": "RH implies the stated comparison on every board, using Schoenfeld (6.3) and rational constants including every early case. Each sign alone also implies RH using the positive second taper and the classical integrated-prime oscillation. The least initial capacity for storing all jobs by their arrival cut equals the largest positive mismatch. The universal bound on this capacity remains open.",
+  "ranges": {
+    "direct_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "direct_largest_prefix": 16777216,
+    "literature_assisted_complete_indices": [
+      0,
+      21
+    ],
+    "reason": "Johnston Corollary 3.3 and (3.4) provide the same prime estimate through 1.101e26. The full argument needs it only between the board root and 16^j.",
+    "unconditional_inner_region": "All prefixes through the root are paid exactly. On sufficiently large boards the corrected error is o(n^2) uniformly through sqrt(n)*exp(0.10*V(n)), V(n)=(log n)^(3/5)/(log log n)^(1/5)."
+  },
+  "review": {
+    "type": "author self-review",
+    "scope_of_thirteen": "A sufficient fixed denominator derived from c=(log 2)^2/(2*pi). No optimal denominator or literature priority is asserted. The proof of the converse on paper uses an external conditional theorem with its actual hypotheses.",
+    "counts": "Finite extrema are taken on both sides of all prime jumps and the last cut. The natural prime-weight minima are independently enclosed from all primes since two. A wider prime gap occurs elsewhere in each of the three measured active horizons.",
+    "independent_clock": "The clock inverse is enclosed by a rational odd-power log series before conversion to fixed point. Directed logarithm products enclose the true covering tick, with adaptive rational refinement available. The first active board also directly checks the two neighbouring integer powers at its first and last kept primes.",
+    "signed_scope": "The fixed exported RH declaration uses the two-sided comparison. The separate RH implications from each sign are proved on paper. The finite positivity and deadline placement steps are also formalized."
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3834
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.ShapeObservation",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrefixReturn",
+      "exit": 0,
+      "seconds": 12.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.LocalDistance",
+      "exit": 0,
+      "seconds": 12.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedHorizon",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedReading",
+      "exit": 0,
+      "seconds": 10.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedTaper",
+      "exit": 0,
+      "seconds": 10.5,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.ReturnedHorizon.rh_of_one_thirteenth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedHorizon.unreturned_root": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedHorizon.rh_of_returned_horizons": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedReading.one_board_from_prime_change": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedReading.paid_readout": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedTaper.prefix_placement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedTaper.shorter_taper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReturnedTaper.shorter_taper_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347385420,
+        "sha256": "017aba918a25deddb4e1b48c912268931d67d5b8deaf6c1cb39e85e791f4c7e9"
+      },
+      "solution": {
+        "bytes": 427222721,
+        "sha256": "f2da7b7171b1f25cc0096273d191bce4a0c9197c75eb963cc906cfbf8316b30a"
+      }
+    },
+    "independent_exports_match": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 130.6,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.4,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "f2da7b7171b1f25cc0096273d191bce4a0c9197c75eb963cc906cfbf8316b30a"
+    }
+  },
+  "primary_sources": {
+    "corpus": "pal-rh/CORPUS-ROUTES.md",
+    "conditional_theta": "https://doi.org/10.1090/S0025-5718-1976-0457374-X",
+    "finite_theta": "https://link.springer.com/article/10.1007/s11139-022-00616-x",
+    "inner_all_size_theta": "https://arxiv.org/pdf/2204.01980",
+    "two_signed_integral_oscillation": "https://arxiv.org/pdf/2201.06184"
+  },
+  "arithmetic": {
+    "rational_bounds": {
+      "c_above": "2/27",
+      "c_below": "1/13",
+      "root_error_times_five_plus_rounding_below": "13/100"
+    },
+    "boards": [
+      {
+        "j": 0,
+        "ordinary_prime_error_minimum": null,
+        "last_arrival_at_tight_upper_cut": null,
+        "root": 4,
+        "board_size": 16,
+        "last_cut": 1,
+        "forward_jobs_at_last_cut": 0,
+        "first_and_last_prime_ticks": [
+          null,
+          null
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ],
+        "maximum_absolute_mismatch": 0,
+        "one_thirteenth_integer_allowance": 19,
+        "whole_units_left": 19,
+        "uncorrected_gap_at_last_empty_cut": 60
+      },
+      {
+        "j": 1,
+        "ordinary_prime_error_minimum": null,
+        "last_arrival_at_tight_upper_cut": null,
+        "root": 64,
+        "board_size": 4096,
+        "last_cut": 16,
+        "forward_jobs_at_last_cut": 0,
+        "first_and_last_prime_ticks": [
+          null,
+          null
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ],
+        "maximum_absolute_mismatch": 0,
+        "one_thirteenth_integer_allowance": 1290555,
+        "whole_units_left": 1290555,
+        "uncorrected_gap_at_last_empty_cut": 4185600
+      },
+      {
+        "j": 2,
+        "ordinary_prime_error_minimum": null,
+        "last_arrival_at_tight_upper_cut": null,
+        "root": 576,
+        "board_size": 331776,
+        "last_cut": 256,
+        "forward_jobs_at_last_cut": 0,
+        "first_and_last_prime_ticks": [
+          null,
+          null
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ],
+        "maximum_absolute_mismatch": 0,
+        "one_thirteenth_integer_allowance": 8467331859,
+        "whole_units_left": 8467331859,
+        "uncorrected_gap_at_last_empty_cut": 48903413760
+      },
+      {
+        "j": 3,
+        "ordinary_prime_error_minimum": null,
+        "last_arrival_at_tight_upper_cut": null,
+        "root": 4096,
+        "board_size": 16777216,
+        "last_cut": 4096,
+        "forward_jobs_at_last_cut": 0,
+        "first_and_last_prime_ticks": [
+          null,
+          null
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ],
+        "maximum_absolute_mismatch": 0,
+        "one_thirteenth_integer_allowance": 21651921285435,
+        "whole_units_left": 21651921285435,
+        "uncorrected_gap_at_last_empty_cut": 281440608583680
+      },
+      {
+        "j": 4,
+        "ordinary_prime_error_minimum": {
+          "cut": 64996,
+          "previous_prime": 64969,
+          "first_widest_complete_prime_gap": [
+            31397,
+            31469
+          ],
+          "next_prime": 64997,
+          "error_numerators": [
+            -376030338509753480862,
+            -376030338509753347340
+          ],
+          "denominator": 1000000000000000000,
+          "second_terminal_cut_error_at_least": -372783741648799016448
+        },
+        "last_arrival_at_tight_upper_cut": {
+          "minimum_initial_buffer": 1783280135488374,
+          "distance": 59753,
+          "last_forward_job": [
+            59753,
+            655300246,
+            281553
+          ],
+          "arrival_ordinal": 574738224965414773,
+          "actual_destination_sites_and_layer": [
+            655300246,
+            655359999,
+            25599
+          ],
+          "jobs_through_cut": 574738224965414774,
+          "released_before_cut": 574721449279091574,
+          "released_through_cut": 574738224965414774
+        },
+        "root": 25600,
+        "board_size": 655360000,
+        "last_cut": 65536,
+        "forward_jobs_at_last_cut": 667571210365138428,
+        "first_and_last_prime_ticks": [
+          [
+            25601,
+            259855
+          ],
+          [
+            65521,
+            283913
+          ]
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          1783280135488374,
+          59753
+        ],
+        "largest_deficit": [
+          2637063059889022,
+          64996
+        ],
+        "maximum_absolute_mismatch": 2637063059889022,
+        "one_thirteenth_integer_allowance": 33038209969230769,
+        "whole_units_left": 30401146909341747,
+        "uncorrected_gap_at_last_empty_cut": 429488340664320000
+      },
+      {
+        "j": 5,
+        "ordinary_prime_error_minimum": {
+          "cut": 993820,
+          "previous_prime": 993793,
+          "first_widest_complete_prime_gap": [
+            492113,
+            492227
+          ],
+          "next_prime": 993821,
+          "error_numerators": [
+            -1606632288801564917701,
+            -1606632288801562983380
+          ],
+          "denominator": 1000000000000000000,
+          "second_terminal_cut_error_at_least": -1606060115282367206863
+        },
+        "last_arrival_at_tight_upper_cut": {
+          "minimum_initial_buffer": 679594705436492182,
+          "distance": 155893,
+          "last_forward_job": [
+            155893,
+            21743116042,
+            1763126
+          ],
+          "arrival_ordinal": 27729912132591649173,
+          "actual_destination_sites_and_layer": [
+            21743116042,
+            21743271935,
+            147455
+          ],
+          "jobs_through_cut": 27729912132591649174,
+          "released_before_cut": 27726705979672412566,
+          "released_through_cut": 27729912132591649174
+        },
+        "root": 147456,
+        "board_size": 21743271936,
+        "last_cut": 1048576,
+        "forward_jobs_at_last_cut": 2886377951159551597021,
+        "first_and_last_prime_ticks": [
+          [
+            147457,
+            1754923
+          ],
+          [
+            1048573,
+            2044181
+          ]
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          679594705436492182,
+          155893
+        ],
+        "largest_deficit": [
+          3736444008129303732,
+          993820
+        ],
+        "maximum_absolute_mismatch": 3736444008129303732,
+        "one_thirteenth_integer_allowance": 36366913421757322161,
+        "whole_units_left": 32630469413628018429,
+        "uncorrected_gap_at_last_empty_cut": 472768271384020254720
+      },
+      {
+        "j": 6,
+        "ordinary_prime_error_minimum": {
+          "cut": 16576186,
+          "previous_prime": 16576141,
+          "first_widest_complete_prime_gap": [
+            4652353,
+            4652507
+          ],
+          "next_prime": 16576187,
+          "error_numerators": [
+            -6452067949182483593640,
+            -6452067949182452818227
+          ],
+          "denominator": 1000000000000000000,
+          "second_terminal_cut_error_at_least": -6449913803336047928767
+        },
+        "last_arrival_at_tight_upper_cut": {
+          "minimum_initial_buffer": 166979847895058991195,
+          "distance": 1195247,
+          "last_forward_job": [
+            1195247,
+            644512334608,
+            11234504
+          ],
+          "arrival_ordinal": 203220579013635935684698,
+          "actual_destination_sites_and_layer": [
+            644512334608,
+            644513529855,
+            802815
+          ],
+          "jobs_through_cut": 203220579013635935684699,
+          "released_before_cut": 203220061588821514225755,
+          "released_through_cut": 203220579013635935684699
+        },
+        "root": 802816,
+        "board_size": 644513529856,
+        "last_cut": 16777216,
+        "forward_jobs_at_last_cut": 8263302445369582511553591,
+        "first_and_last_prime_ticks": [
+          [
+            802829,
+            10915011
+          ],
+          [
+            16777213,
+            13355280
+          ]
+        ],
+        "log_intervals_refined": 0,
+        "largest_surplus": [
+          166979847895058991195,
+          1195247
+        ],
+        "largest_deficit": [
+          2884605175603947739577,
+          16576186
+        ],
+        "maximum_absolute_mismatch": 2884605175603947739577,
+        "one_thirteenth_integer_allowance": 31953668474418538721595,
+        "whole_units_left": 29069063298814590982018,
+        "uncorrected_gap_at_last_empty_cut": 415397431454231754178560
+      }
+    ]
+  },
+  "sha256_sources": {
+    "proofs/one-thirteenth-of-a-returned-layer.md": "b9b51ad4ad9762247f56ec525ef9380ab5337e775bc6eb585502b4407d680742",
+    "pal-rh/why-one-thirteenth-is-enough.md": "1d1f4c036be53d568217f45c19778a5a443e9f2ea4fe27a9392b1d38a6bd57b2",
+    "pal-rh/PALRH/ReturnedHorizon.lean": "b4a819b9e6fdd22f74c1ba6f9170f4924f5e667a93858b8b7f36fb27873a6007",
+    "pal-rh/PALRH/ReturnedReading.lean": "e577652379e761905251da67b8a24832ae546476f7e6a95fb2666b26f36e50e1",
+    "pal-rh/PALRH/ReturnedTaper.lean": "17c0e982f993300a1874f5bd37fef6c991e7ea323d28180a8afdb438b795397b",
+    "pal-rh/PALRH/ShapeObservation.lean": "90bf96e3a97a83c348997d734432550ac8ea9de259c9033c8aad6db8bc59b87f",
+    "pal-rh/lakefile.toml": "6cb679e234585432601670e27d379ff2d1db98df8bbe6d322eff89fee8756004",
+    "pal-rh/checks/returned-horizon/ReturnedChallenge.lean": "58385872d725da93aa992be33285939d0454e8e199d567b5f6080b64ef52998f",
+    "pal-rh/checks/returned-horizon/ReturnedSolution.lean": "0466e3ed44b910c62f0857a33f7d58fcd24521708a8ec815df6819ac42e51e36",
+    "pal-rh/checks/returned-horizon/compare.json": "a418f20914b19f665dd98111ee24261d7a3a478cacae09c4249571a540692caf",
+    "receipt-archives/check_pal_returned_horizon.py": "380ff2ea0bf0b90f9c1782b7a8d5217ce0ce942c48d888afbd0e912914eef115",
+    "pal-rh/PALRH/PrefixReturn.lean": "5d0a76d9a3c2626bf53ad7ac5cd2968e100d6788d48a3b2e538ab46407d3d54f",
+    "pal-rh/PALRH/DyadicShape.lean": "37163574d7c2f3db4302ab2e67f1f9e9694a17d82b950a9d39de67b5c6203987",
+    "pal-rh/PALRH/ShapeStrip.lean": "96a08ff5378a68563b0ccea8665de2ca3f6e7b24a782a7b28e685764ace67f95",
+    "pal-rh/PALRH/UncalibratedPrime.lean": "9845c6b46bac482ddc71866a5d20f005babbec5ccea1093cf6bd8d8327c92998",
+    "pal-rh/PALRH/OrderedTransport.lean": "55cac30858b3b9c512a7a816bc016a8bcd5b901f58c19558924e88b0d1d0e037",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2",
+    "receipt-archives/2026-11-26-pal-local-distance.json": "40967ff0f9a77e5088834ed9fd161c285d20ebc2bfc1b7e9b718b0270325fe31"
+  }
+}

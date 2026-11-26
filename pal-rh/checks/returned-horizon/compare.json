@@ -1,0 +1,23 @@
+{
+  "challenge_module": "ReturnedChallenge",
+  "solution_module": "ReturnedSolution",
+  "theorem_names": [
+    "riemannHypothesis",
+    "missingStrip"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

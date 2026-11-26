@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[One thirteenth of a returned layer](proofs/one-thirteenth-of-a-returned-layer.md). On 26 November 2026, under Pang’s construction key, Hearthline fixed the board sequence, return and allowance at every size. [Both directions and paid ranges](pal-rh/why-one-thirteenth-is-enough.md)
+
 [Single eventual subset comparison to stock RH](proofs/one-integer-comparison-to-rh.md) · [One-sided prime-area transfer](pal-rh/how-one-sided-prime-area-reaches-rh.md). On 26 November 2026 Hearthline removed the unused-capacity premise under Pang’s active construction key. One exported proof was compared against the conditional statement and the independent bare challenge.
 
 [Prime trips in a shared lattice](proofs/how-many-layers-a-prime-trip-needs.md). On 26 November 2026 Hearthline applied Pang’s internal and external views to successive radix steps, two whole height layers and an explicit middle-prime return. [Exact layer count and movable omitted band](pal-rh/one-prime-trip-in-a-shared-lattice.md)

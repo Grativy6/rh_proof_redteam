@@ -10,7 +10,9 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
-[One integer comparison to the Riemann hypothesis](one-integer-comparison-to-rh.md) gives the current constructive claim and its pencil example. The formal deduction now requires only the eventual comparison of the trip count with one Pascal row.
+[One thirteenth of a returned layer](one-thirteenth-of-a-returned-layer.md) starts at board zero. A freely chosen slope and an unknown starting threshold are replaced by a measured small-distance return and a fixed whole-number test. One failed cut would violate a consequence of RH.
+
+[One integer comparison to the Riemann hypothesis](one-integer-comparison-to-rh.md) gives the eventual subset comparison and its pencil example. The formal deduction now requires only the eventual comparison of the trip count with one Pascal row.
 
 [How many layers does a prime trip need?](how-many-layers-a-prime-trip-needs.md) turns the remaining task into a count of unit positions, implements a disjoint placement and measures the forced disagreement among three locally fitting views.
 

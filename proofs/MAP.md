@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[One thirteenth on every returned strip](one-thirteenth-of-a-returned-layer.md). Hearthline derived the fixed-budget criterion from Pang’s trace and return under the active research key, 26 November 2026. [Exact small cases, formal forward implication and classical reverse bound](../pal-rh/why-one-thirteenth-is-enough.md)
+
 [One eventual comparison, with a complete formal transfer](one-integer-comparison-to-rh.md). Under Pang’s construction key, Hearthline used the first alternating pair to recover a second direction of control on the primitive, 26 November 2026. [Source and scope](../pal-rh/how-one-sided-prime-area-reaches-rh.md)
 
 [Prime-trip layers and shared Pascal states](how-many-layers-a-prime-trip-needs.md). Pang’s point-and-horizon picture led Hearthline to an exact finite fiber, a single crossing of register heights, and a three-dimensional integer test on 26 November 2026. [Technical proofs](../pal-rh/one-prime-trip-in-a-shared-lattice.md)
