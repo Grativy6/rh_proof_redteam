@@ -34,6 +34,8 @@ The [square-boundary stage](2026-11-25-pal-square-boundary.json) uses `python -B
 
 ### Check the two-row conductor identity
 
+From `pal-rh/`, run `lake env lean ../receipt-archives/TwoRowBernoulli.lean` with the pinned Mathlib dependencies available. The [Lean file](TwoRowBernoulli.lean) proves the identity for normalized rows and constructs a primitive odd character of conductor 64 whose weighted Bernoulli sum vanishes in `ZMod 17`. The reduction of the general Bernoulli sum to those rows and the exceptional boundary are in the paper.
+
 Run `python check_two_row_bernoulli_identity.py` here. It records coefficients separately for each residue and verifies that exactly twice one designated weight survives. The [proof](2026-11-25-two-rows-halve-the-bernoulli-conductor-cutoff.md) covers arbitrary odd conductor and includes an independent check of the release’s original shift. [Python](check_two_row_bernoulli_identity.py)
 
 ### Check the conductor cutoff at 17
