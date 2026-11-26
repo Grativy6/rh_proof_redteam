@@ -14,6 +14,8 @@ The papers state their own conclusions and the scope of their application to the
 
 [One product, one direction per board](one-product-one-direction-per-board.md) gives the closed integer thresholds, the necessary quantifier order, and a recoverable address for the extra tick charged by separate prime clocks.
 
+[Paying the next full prime board](paying-the-next-full-prime-board.md) proves the complete index-22 comparison and the first half of index 23 using the finite critical-line height and independent upper bounds for the tail and smoothing.
+
 [Why either side of the pocket is enough](why-either-side-of-the-pocket-is-enough.md) proves the two separate one-sided RH implications and the actual arriving-record placement form in Lean.
 
 [Which empty cells have to cross a cut?](which-empty-cells-must-cross.md) reconstructs all twelve residual lanes at sixteen sites, gives the exact inventory profile at optimal pocket size and proves a growing storage requirement from actual prime intervals.

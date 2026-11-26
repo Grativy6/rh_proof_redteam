@@ -53,6 +53,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 **Current product route, 26 November 2026.** Multiply the labels recognized by the factorial frame. Compare against two fully specified rational-clock thresholds. One direction must cover every observed cut on its board. Different boards may make different choices. The ordinary uniform prime-weight discrepancy remains the open input after both rounding corrections. [Quantifiers, physical placement and proof](../proofs/one-product-one-direction-per-board.md)
 
+**Finite range earned, 26 November 2026.** Price the low and middle known zeros, the unrestricted higher zeros, the unsmoothing and the repeated powers in the same row. All of index 22 and the first half of index 23 fit the actual original target. The quantified all-board inequality is still outstanding. [Complete arithmetic](../proofs/paying-the-next-full-prime-board.md)
+
 **Either orientation in Lean, 26 November 2026.** The verified implication now takes only upper surplus, only lower shortage, or only a family of distinct timely placements. The paired divisor reading recovers a two-sided logarithmic primitive from the chosen one-sided input. [Mathematics and status](../proofs/why-either-side-of-the-pocket-is-enough.md)
 
 **What crosses a cut, 26 November 2026.** Use one running quotient and remainder across prime labels. The leftover includes all retired starting rows. Price physical stock by the lesser of the two bracketing maxima less the current signed reading. A single depth list gives the optimum at every storage cap. [Proofs and exact finite transitions](../proofs/which-empty-cells-must-cross.md)

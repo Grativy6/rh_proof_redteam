@@ -18,6 +18,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [One product, one direction per board](proofs/one-product-one-direction-per-board.md) reduces the test to integer multiplications and powers. The orientation can change between boards. Letting every cut choose for itself is an arithmetic tautology. The same independently fixed challenge distinguishes them.
 
+[The next full board is paid](proofs/paying-the-next-full-prime-board.md). The original one-thirteenth budget now covers every cut through $2^{88}$ on board 22 and through $2^{91}$ on board 23. The derivation uses the published finite zero height and separately bounds the entire high-zero tail.
+
 [Either side of the pocket](proofs/why-either-side-of-the-pocket-is-enough.md) now reaches stock RH in Lean independently. In particular a map assigning every arriving tick a distinct cell by its arrival cut is sufficient. Its all-board existence is the open mathematical input.
 
 [Which empty cells must cross?](proofs/which-empty-cells-must-cross.md) gives the exact amount required at each boundary. A common tick remainder allows one prime to use a column opened by another. At sixteen sites it returns twenty lanes while preserving every original tick.

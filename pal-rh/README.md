@@ -10,6 +10,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [One product with a board-wide orientation](../proofs/one-product-one-direction-per-board.md) · [Both kinds of rounding](two-roundings-on-the-same-primes.md) · [Fixed challenge](checks/product-direction/ProductChallenge.lean)
 
+[The next full board](../proofs/paying-the-next-full-prime-board.md) · [Finite head specialization](PALRH/FiniteHorizon.lean) · [Numerical inputs and margins](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
+
 [Either side separately](../proofs/why-either-side-of-the-pocket-is-enough.md) · [Signed area to RH](PALRH/SignedStrip.lean) · [Fixed independent declarations](checks/signed-pocket/SignedChallenge.lean)
 
 [Which cells cross a cut](../proofs/which-empty-cells-must-cross.md) · [All storage caps](how-much-credit-crosses-a-prime-cut.md) · [Recovered columns](the-whole-column-a-prime-can-return.md)

@@ -8,6 +8,8 @@ Pang supplied the requirement to carry the portion removed in the original frame
 
 Pang’s distinction between an earned transfer and a new unpriced copy suggested merging the multiplicative clocks. His request to try both directions motivated board-dependent orientation. Hearthline derived the local recovery and two-clock phase law. The latter uses Zaccagnini’s short-interval theorem on the actual prime numbers. [Derivation and scope](../pal-rh/two-roundings-on-the-same-primes.md)
 
+Pang’s fixed accounting unit and requirement to carry every source of error determined the finite target. Hearthline derived its slab estimates using Büthe’s smoothed formula, Johnston’s inequalities and the Platt–Trudgian finite zero height. [Parameters, sources and range](paying-the-next-full-prime-board.md)
+
 Pang asked that the sign be turned both ways while retaining the physical ordering. Hearthline derived the opposite bound on the same alternating divisor read, its power-scale recovery, and both formal signed implications. [The reading and its transfers](why-either-side-of-the-pocket-is-enough.md)
 
 Pang supplied the empty-space and retained-frame questions. Hearthline derived the actual row-remainder encoder, the prime-phase refund and the storage bound on the returned boards. The interval application uses the row totals of Granville and Soundararajan and, for the simpler positive bound, Maynard’s prime clusters. [Mathematics and source roles](../pal-rh/how-much-credit-crosses-a-prime-cut.md)

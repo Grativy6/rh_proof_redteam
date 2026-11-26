@@ -10,6 +10,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [One product, one direction per board](one-product-one-direction-per-board.md). Hearthline derived local signed recovery and the guard for the true rounding flags under Pang’s authorized construction, 26 November 2026. [Technical proof and joint frequency](../pal-rh/two-roundings-on-the-same-primes.md)
 
+[Board 22 and the first half of 23](paying-the-next-full-prime-board.md). Hearthline derived the numerical envelope and returned it to Pang’s fixed strip under the active key on 26 November 2026. [Slabs, margin and limit of the estimate](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
+
 [Separate excess and shortage implications](why-either-side-of-the-pocket-is-enough.md). Hearthline followed both directions of Pang’s fixed strip in Lean using the paired logarithms of genuine divisors, 26 November 2026. [Independent statements](../pal-rh/checks/signed-pocket/SignedChallenge.lean)
 
 [Surviving columns and the least crossing inventory](which-empty-cells-must-cross.md). Hearthline followed Pang’s retained-residue question into shared division and a common placement attaining every cut minimum, 26 November 2026. [Proof for storage](../pal-rh/how-much-credit-crosses-a-prime-cut.md) · [Returned columns](../pal-rh/the-whole-column-a-prime-can-return.md)
