@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Which five did we remove?](what-happens-when-the-sieve-forgets-five.md) Pang’s questions about the role of a prime marker and the point seen from outside prompted Hearthline’s two readings, 26 November 2026. [Fixed-size obstruction, asymptotic price and unconditional encoders](../pal-rh/the-factorial-frame-for-prime-distances.md)
+
 [Fourth-power sampling of the prime board](which-prime-boards-have-to-fit.md). Hearthline proved on 26 November 2026 that convexity pays the cost of spacing prime-area readings at fourth powers. Pang’s shared-frame and boundary questions motivated the sampling. [Sharpness, prime-square residue and finite range](../pal-rh/fourth-power-boards-and-their-funded-intervals.md)
 
 [Full recovery on the grid and a missing endpoint reading](what-the-signed-factorial-rows-leave-at-zero.md). Hearthline derived the signed factorial reconstruction and its boundary behavior on 26 November 2026 under Pang’s retained-frame and closure questions. [Actual zero, both orientations and error bounds](../pal-rh/the-boundary-of-the-signed-factorial-rows.md)

@@ -122,12 +122,12 @@ private theorem repeated (n : ℕ) : 0≤fullWalk n-primeWalk n ∧
   · rw [←total,Finset.mul_sum]
     exact Finset.sum_le_sum (fun k _ => mul_le_mul_of_nonneg_right (sub_le_self _ (Nat.cast_nonneg k)) (pos k))
 
-/-- A single funded board bounds the prime-power area at that same size. -/
-theorem full_walk_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
-    demand n≤capacity n ∧ capacity n≤demand n*allowance n →
+/-- The same prime-power area remains bounded when the demand can borrow one binary allowance. -/
+theorem full_walk_price_with_room : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
+    demand n≤capacity n*allowance n ∧ capacity n≤demand n*(allowance n)^2 →
     |fullWalk n-(n:ℝ)^2/2|≤C*n*Real.sqrt n := by
   obtain ⟨D,reps⟩:=Chebyshev.psi_sub_theta_le_mul_sqrt
-  let C:=max 0 D+6
+  let C:=max 0 D+12
   refine ⟨C, by dsimp [C];positivity, ?_⟩
   intro n np fit
   have nr : 0<(n:ℝ) := by exact_mod_cast np
@@ -136,10 +136,12 @@ theorem full_walk_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
   have cc : 0<capacity n := pow_pos np _
   have ld : 0<(demand n:ℝ) := by exact_mod_cast dc
   have lc : 0<(capacity n:ℝ) := by exact_mod_cast cc
-  have low:=Real.log_le_log ld (by exact_mod_cast fit.1 : (demand n:ℝ)≤capacity n)
-  have high:=Real.log_le_log lc (by exact_mod_cast fit.2 : (capacity n:ℝ)≤(demand n:ℝ)*(allowance n:ℝ))
+  have low:=Real.log_le_log ld (by exact_mod_cast fit.1 : (demand n:ℝ)≤(capacity n:ℝ)*(allowance n:ℝ))
+  have high:=Real.log_le_log lc (by exact_mod_cast fit.2 : (capacity n:ℝ)≤(demand n:ℝ)*(allowance n:ℝ)^2)
   have pa : 0<(allowance n:ℝ) := by unfold allowance;positivity
-  rw [Real.log_mul ld.ne' pa.ne'] at high
+  rw [Real.log_mul lc.ne' pa.ne'] at low
+  rw [Real.log_mul ld.ne' (pow_ne_zero _ pa.ne'),Real.log_pow] at high
+  push_cast at high
   have digits : (n.sqrt:ℝ)≤Real.sqrt n :=
     (Real.le_sqrt (Nat.cast_nonneg _) (Nat.cast_nonneg _)).mpr (by exact_mod_cast (by simpa [pow_two] using Nat.sqrt_le n : n.sqrt^2≤n))
   have logtwo:=Real.log_le_sub_one_of_pos (by norm_num : 0<(2:ℝ))
@@ -165,6 +167,19 @@ theorem full_walk_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
     mul_nonneg nr.le pe.1,mul_le_mul_of_nonneg_left pe.2 nr.le,
     mul_nonneg (le_max_left (0:ℝ) D) (mul_nonneg nr.le (Real.sqrt_nonneg (n:ℝ))),
     mul_nonneg nr.le (Real.sqrt_nonneg (n:ℝ))]
+
+/-- A single funded board bounds the prime-power area at that same size. -/
+theorem full_walk_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
+    demand n≤capacity n ∧ capacity n≤demand n*allowance n →
+    |fullWalk n-(n:ℝ)^2/2|≤C*n*Real.sqrt n := by
+  obtain ⟨C,cn,price⟩:=full_walk_price_with_room
+  refine ⟨C,cn,?_⟩
+  intro n np fit
+  have spare : 1≤allowance n := Nat.succ_le_iff.mpr (by unfold allowance; positivity)
+  have spare_sq : allowance n≤(allowance n)^2 := by
+    simpa [pow_two] using Nat.mul_le_mul_left (allowance n) spare
+  exact price n np ⟨fit.1.trans (by simpa using Nat.mul_le_mul_left (capacity n) spare),
+    fit.2.trans (Nat.mul_le_mul_left _ spare_sq)⟩
 
 /-- The hypotheses compare only natural numbers. The second inequality permits a specified number of binary digits. -/
 theorem rh_of_integer_board
@@ -196,6 +211,7 @@ theorem two_cell_roundtrip {n p r d : ℕ} (np : 0<n) (pp : 0<p)
     by simp [Nat.add_comm,Nat.mod_eq_of_lt dd]⟩
 
 #print axioms PALRH.PrimeBoard.two_cell_roundtrip
+#print axioms PALRH.PrimeBoard.full_walk_price_with_room
 #print axioms PALRH.PrimeBoard.full_walk_price
 #print axioms PALRH.PrimeBoard.log_margin
 #print axioms PALRH.PrimeBoard.rh_of_integer_board

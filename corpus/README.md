@@ -1,6 +1,8 @@
 # Corpus used in the RH proof audit
 
-Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 44 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+Chris Pang asked for the complete Context Stack alongside the sources already used in the public audit. The shelf holds 45 source files, including alternate reading formats, original packages, an illustration and prompt-version records. The earlier screen of 74 readings across nine shelves was a discovery pass. The table and worked examples identify which methods have been applied. [Source files and exact editions](MAP.md) · [Machine-readable provenance](sources.json)
+
+The [PECAN Prime-Ledger](PECAN_v1.0.4_Public_Protocol_Specification.docx) assigns each prime marker a declared question. Pang’s distinction between an address and its content helped locate two very different effects of removing five from the [prime board](../proofs/what-happens-when-the-sieve-forgets-five.md). [Public source](https://doi.org/10.5281/zenodo.21760884)
 
 ## The shadow and the sphere
 

@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+For [the factorial frame](../proofs/what-happens-when-the-sieve-forgets-five.md), run `python -B receipt-archives/check_pal_sieve_frame.py`. It tests both meanings of erasing five, checks the first failure, and reproduces the integer products, cutoff arithmetic and decoder controls. [Ranges and fixed statements](2026-11-26-pal-sieve-frame.json)
+
 For [the fourth-power board](../proofs/which-prime-boards-have-to-fit.md), run `python -B receipt-archives/check_pal_board_intervals.py`. A segmented prime census and convex bounds certify full intervals through one billion. An independent division-quotient sieve counts the primes at the last head. [Integer bounds, ranges and fixed-target comparison](2026-11-26-pal-fourth-power-boards.json)
 
 For the [signed factorial boundary](../proofs/what-the-signed-factorial-rows-leave-at-zero.md), run `python -B receipt-archives/check_pal_signed_factorials.py` and `python -B receipt-archives/check_pal_boundary_zero.py`. The first recovers the finite square weights and counts signed primes, squares and higher powers separately. The second encloses an actual critical zero and prices the missing reading. [Numbers and scope](2026-11-26-pal-signed-factorial-boundary.json)

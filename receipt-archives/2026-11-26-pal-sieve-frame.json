@@ -1,0 +1,633 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "2904f4d8a251843b9faeb18c46bceec84b12f74d",
+  "parent_tree": "ee6ecd6280ba44efddb1c3dba8c40ba0912f48b7",
+  "contributors": "Christopher Daniel Pang supplied the PAL/RPL/BLA and PECAN distinction between marker and payload and the two-view question. Hearthline derived the arithmetic tests, loss and funding bounds in his research program.",
+  "formal_scope": "Small prime payload cost, uniqueness of a large prime owner, a fixed arithmetic condition using only factorials and gcd as the prime screen, unconditional overflow after removing five, and all positive upper-half boards. The universal gcd-only funding bounds remain premises of the RH conclusion.",
+  "paper_scope": "The altered-frame loss for any fixed omitted prime q is asymptotic to n squared divided by q-1. Every row order and all prime-distance dials beyond ceil(3*n/bitlength(n)^3) fit at every positive size. Simultaneous funding for the intervening band remains open.",
+  "corpus": {
+    "file": "corpus/PECAN_v1.0.4_Public_Protocol_Specification.docx",
+    "section": "5",
+    "record": "10.5281/zenodo.21760884",
+    "upstream_md5": "95538e8f08f54acf7439fe2b65ace8cc",
+    "manifest_count": 45
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "primary_sources": {
+    "upper_distance_error": "https://arxiv.org/pdf/1002.0442",
+    "prime_marker": "https://doi.org/10.5281/zenodo.21760884"
+  },
+  "review": {
+    "type": "author self-review",
+    "head_and_boundary": "Positive n throughout. Endpoints p=n cost zero. The modified selector counts each newly admitted composite with radix m, not its least prime factor.",
+    "asymptotics": "The groups q^j*p are disjoint; a summable uniform majorant in j permits taking the limit. Pure powers have subquadratic cost.",
+    "funding": "The full-range calculation through one billion supplies the initial interval. The cutoff lemma applies to every integer above it. The frame is recalculated for each size.",
+    "fixed_control": "Two concrete integer products are re-evaluated by the challenge solution. The RH implication has its own explicit quantified input; the counterexample uses a different selector."
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3808
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PrimeBoard",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeBand",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SieveFrame",
+      "exit": 0,
+      "seconds": 13.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.UpperHalfBoard",
+      "exit": 0,
+      "seconds": 13.4,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.PrimeBoard.two_cell_roundtrip": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.full_walk_price_with_room": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.full_walk_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.log_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_integer_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_paired_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBand.small_prime_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBand.unique_large_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBand.rh_of_large_primes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SieveFrame.frame_count_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SieveFrame.square_witness": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SieveFrame.rh_of_factorial_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SieveFrame.removing_five_breaks_the_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.UpperHalfBoard.upper_half_with_spare": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.UpperHalfBoard.upper_half_fits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347415104,
+        "sha256": "b8a0e8e21b7b8f82dbc893e46e5b4964c50e36f0657e7d8f890dd78240534573"
+      },
+      "solution": {
+        "bytes": 428218993,
+        "sha256": "8107bbf853e0fdc1f849b11c0995ac84c434b1d831fe8550dbd95e582985eb48"
+      }
+    },
+    "matching_independent_exports": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 134.35,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "calculation": {
+    "all_sizes_through_first_failure": 247,
+    "ordinary_five_change": "2*(n-5)*log(5) for n>=5",
+    "erased_frame_five_asymptotic_extra_nats_per_n_squared": "1/4",
+    "heads": [
+      {
+        "n": 25,
+        "complete_log_margin": [
+          "269.747984",
+          "269.747985"
+        ],
+        "altered_log_margin": [
+          "205.370467",
+          "205.370468"
+        ],
+        "price_of_missing_frame_five": [
+          "64.377516",
+          "64.377517"
+        ],
+        "extra_price_per_n_squared": [
+          "0.10300402",
+          "0.10300403"
+        ],
+        "price_of_ordinary_five_dials": [
+          "64.377516",
+          "64.377517"
+        ],
+        "new_distance_count": 2,
+        "new_distances": [
+          5,
+          25
+        ]
+      },
+      {
+        "n": 81,
+        "complete_log_margin": [
+          "1821.091577",
+          "1821.091578"
+        ],
+        "altered_log_margin": [
+          "873.981203",
+          "873.981204"
+        ],
+        "price_of_missing_frame_five": [
+          "947.110373",
+          "947.110374"
+        ],
+        "extra_price_per_n_squared": [
+          "0.14435457",
+          "0.14435458"
+        ],
+        "price_of_ordinary_five_dials": [
+          "244.634562",
+          "244.634563"
+        ],
+        "new_distance_count": 4,
+        "new_distances": [
+          5,
+          25,
+          55,
+          65
+        ]
+      },
+      {
+        "n": 246,
+        "complete_log_margin": [
+          "10869.019867",
+          "10869.019868"
+        ],
+        "altered_log_margin": [
+          "3.434755",
+          "3.434756"
+        ],
+        "price_of_missing_frame_five": [
+          "10865.585111",
+          "10865.585112"
+        ],
+        "extra_price_per_n_squared": [
+          "0.17954896",
+          "0.17954897"
+        ],
+        "price_of_ordinary_five_dials": [
+          "775.749073",
+          "775.749074"
+        ],
+        "new_distance_count": 12,
+        "new_distances": [
+          5,
+          25,
+          85,
+          95,
+          115,
+          125,
+          145,
+          155,
+          185,
+          205,
+          215,
+          235
+        ]
+      },
+      {
+        "n": 247,
+        "complete_log_margin": [
+          "10925.280138",
+          "10925.280139"
+        ],
+        "altered_log_margin": [
+          "-49.888646",
+          "-49.888645"
+        ],
+        "price_of_missing_frame_five": [
+          "10975.168783",
+          "10975.168784"
+        ],
+        "extra_price_per_n_squared": [
+          "0.17989425",
+          "0.17989426"
+        ],
+        "price_of_ordinary_five_dials": [
+          "778.967949",
+          "778.967950"
+        ],
+        "new_distance_count": 12,
+        "new_distances": [
+          5,
+          25,
+          85,
+          95,
+          115,
+          125,
+          145,
+          155,
+          185,
+          205,
+          215,
+          235
+        ]
+      },
+      {
+        "n": 248,
+        "complete_log_margin": [
+          "10983.538384",
+          "10983.538385"
+        ],
+        "altered_log_margin": [
+          "-101.214071",
+          "-101.214070"
+        ],
+        "price_of_missing_frame_five": [
+          "11084.752455",
+          "11084.752456"
+        ],
+        "extra_price_per_n_squared": [
+          "0.18022815",
+          "0.18022816"
+        ],
+        "price_of_ordinary_five_dials": [
+          "782.186825",
+          "782.186826"
+        ],
+        "new_distance_count": 12,
+        "new_distances": [
+          5,
+          25,
+          85,
+          95,
+          115,
+          125,
+          145,
+          155,
+          185,
+          205,
+          215,
+          235
+        ]
+      },
+      {
+        "n": 256,
+        "complete_log_margin": [
+          "11466.277919",
+          "11466.277920"
+        ],
+        "altered_log_margin": [
+          "-495.143912",
+          "-495.143911"
+        ],
+        "price_of_missing_frame_five": [
+          "11961.421830",
+          "11961.421831"
+        ],
+        "extra_price_per_n_squared": [
+          "0.18251681",
+          "0.18251682"
+        ],
+        "price_of_ordinary_five_dials": [
+          "807.937832",
+          "807.937833"
+        ],
+        "new_distance_count": 12,
+        "new_distances": [
+          5,
+          25,
+          85,
+          95,
+          115,
+          125,
+          145,
+          155,
+          185,
+          205,
+          215,
+          235
+        ]
+      },
+      {
+        "n": 625,
+        "complete_log_margin": [
+          "49567.820705",
+          "49567.820706"
+        ],
+        "altered_log_margin": [
+          "-24383.863546",
+          "-24383.863545"
+        ],
+        "price_of_missing_frame_five": [
+          "73951.684251",
+          "73951.684252"
+        ],
+        "extra_price_per_n_squared": [
+          "0.18931631",
+          "0.18931632"
+        ],
+        "price_of_ordinary_five_dials": [
+          "1995.703011",
+          "1995.703012"
+        ],
+        "new_distance_count": 25
+      },
+      {
+        "n": 2663,
+        "complete_log_margin": [
+          "442465.285315",
+          "442465.285316"
+        ],
+        "altered_log_margin": [
+          "-1208830.546108",
+          "-1208830.546107"
+        ],
+        "price_of_missing_frame_five": [
+          "1651295.831422",
+          "1651295.831423"
+        ],
+        "extra_price_per_n_squared": [
+          "0.23285338",
+          "0.23285339"
+        ],
+        "price_of_ordinary_five_dials": [
+          "8555.771942",
+          "8555.771943"
+        ],
+        "new_distance_count": 100
+      },
+      {
+        "n": 10000,
+        "complete_log_margin": [
+          "3285506.525398",
+          "3285506.525399"
+        ],
+        "altered_log_margin": [
+          "-22770730.433357",
+          "-22770730.433356"
+        ],
+        "price_of_missing_frame_five": [
+          "26056236.958754",
+          "26056236.958755"
+        ],
+        "extra_price_per_n_squared": [
+          "0.26056236",
+          "0.26056237"
+        ],
+        "price_of_ordinary_five_dials": [
+          "32172.663869",
+          "32172.663870"
+        ],
+        "new_distance_count": 336
+      },
+      {
+        "n": 65536,
+        "complete_log_margin": [
+          "56107203.014290",
+          "56107203.014292"
+        ],
+        "altered_log_margin": [
+          "-1146767988.327332",
+          "-1146767988.327331"
+        ],
+        "price_of_missing_frame_five": [
+          "1202875191.341622",
+          "1202875191.341623"
+        ],
+        "extra_price_per_n_squared": [
+          "0.28006620",
+          "0.28006621"
+        ],
+        "price_of_ordinary_five_dials": [
+          "210936.151679",
+          "210936.151680"
+        ],
+        "new_distance_count": 1883
+      }
+    ],
+    "exact_integer_controls": [
+      {
+        "size": 25,
+        "frame": 30,
+        "frame_without_q": 6,
+        "complete_frame_fits": true,
+        "altered_frame_fits": true,
+        "complete_record_count_bit_length": 2514,
+        "altered_record_count_bit_length": 2607,
+        "board_state_count_bit_length": 2903
+      },
+      {
+        "size": 81,
+        "frame": 210,
+        "frame_without_q": 42,
+        "complete_frame_fits": true,
+        "altered_frame_fits": true,
+        "complete_record_count_bit_length": 38969,
+        "altered_record_count_bit_length": 40335,
+        "board_state_count_bit_length": 41596
+      },
+      {
+        "size": 246,
+        "frame": 30030,
+        "frame_without_q": 6006,
+        "complete_frame_fits": true,
+        "altered_frame_fits": true,
+        "complete_record_count_bit_length": 464969,
+        "altered_record_count_bit_length": 480645,
+        "board_state_count_bit_length": 480650
+      },
+      {
+        "size": 247,
+        "frame": 30030,
+        "frame_without_q": 6006,
+        "complete_frame_fits": true,
+        "altered_frame_fits": false,
+        "complete_record_count_bit_length": 469161,
+        "altered_record_count_bit_length": 484994,
+        "board_state_count_bit_length": 484922
+      },
+      {
+        "size": 256,
+        "frame": 30030,
+        "frame_without_q": 6006,
+        "complete_frame_fits": true,
+        "altered_frame_fits": false,
+        "complete_record_count_bit_length": 507746,
+        "altered_record_count_bit_length": 525003,
+        "board_state_count_bit_length": 524289
+      },
+      {
+        "size": 625,
+        "frame": 223092870,
+        "frame_without_q": 44618574,
+        "complete_frame_fits": true,
+        "altered_frame_fits": false,
+        "complete_record_count_bit_length": 3556502,
+        "altered_record_count_bit_length": 3663192,
+        "board_state_count_bit_length": 3628013
+      }
+    ],
+    "decoder": [
+      {
+        "n": 3,
+        "cut": 0,
+        "recovered_rows": 3,
+        "recovered_dials": 2
+      },
+      {
+        "n": 3,
+        "cut": 1,
+        "recovered_rows": 3,
+        "recovered_dials": 2
+      },
+      {
+        "n": 4,
+        "cut": 2,
+        "recovered_rows": 4,
+        "recovered_dials": 2
+      },
+      {
+        "n": 5,
+        "cut": 2,
+        "recovered_rows": 5,
+        "recovered_dials": 4
+      },
+      {
+        "n": 7,
+        "cut": 4,
+        "recovered_rows": 7,
+        "recovered_dials": 4
+      },
+      {
+        "n": 16,
+        "cut": 4,
+        "recovered_rows": 16,
+        "recovered_dials": 56
+      },
+      {
+        "n": 16,
+        "cut": 8,
+        "recovered_rows": 16,
+        "recovered_dials": 16
+      }
+    ],
+    "all_size_outer_board": {
+      "base": 1000000000,
+      "small_theta_threshold": 90000,
+      "outer_cut_examples": [
+        [
+          81,
+          7,
+          9,
+          1
+        ],
+        [
+          256,
+          9,
+          16,
+          2
+        ],
+        [
+          2663,
+          12,
+          51,
+          5
+        ],
+        [
+          1000000000,
+          30,
+          31622,
+          111112
+        ],
+        [
+          1000000000000,
+          40,
+          1000000,
+          46875000
+        ],
+        [
+          1000000000000000000000000,
+          80,
+          1000000000000,
+          5859375000000000000
+        ]
+      ]
+    }
+  },
+  "sha256_sources": {
+    "corpus/PECAN_v1.0.4_Public_Protocol_Specification.docx": "d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43",
+    "proofs/what-happens-when-the-sieve-forgets-five.md": "e3efc5e1f36bce1bf1c58166296525cbcd772b9f3b03e98ffeaa047dd0a222b0",
+    "pal-rh/the-factorial-frame-for-prime-distances.md": "d2f8b733e32084c8414af8a1399433cc2b8cf502a115ac3b63925d444b66c5ac",
+    "pal-rh/PALRH/PrimeBoard.lean": "f9e25b3b4c9299553013e4084cda216f6c283384e197cd972052bc955a1f856b",
+    "pal-rh/PALRH/PrimeBand.lean": "56ae874f8ef3717ef50a2a2bfe830ad7a68acdc643909587bcd7f472ebe9181e",
+    "pal-rh/PALRH/SieveFrame.lean": "fc306bd76a296ca4395615e2c631f6c6e55c729398284ed9fd349b5d53ec98c2",
+    "pal-rh/PALRH/UpperHalfBoard.lean": "bbdf1bfb036d4ba73bd5e1dcfdf33357cd501e2a051b344c23f90e76a98ffab6",
+    "pal-rh/lakefile.toml": "77d110cd0c1d2eb4ed5896027025374a7b6efebf681666cc1104599146b5d5a6",
+    "pal-rh/checks/sieve-frame/SieveChallenge.lean": "56b2193789395f2d2dd3e51290b81b790869c3f6490dccba6690b7dea596508d",
+    "pal-rh/checks/sieve-frame/SieveSolution.lean": "c63a45f102026e4966c9c68c454fc2c3bd607ab6979c5ae1b5391506569ef84f",
+    "pal-rh/checks/sieve-frame/compare.json": "6f42d301e1af762a326dc0584d757fd7e106e0bde749627323a2acff00ec52e1",
+    "receipt-archives/check_pal_sieve_frame.py": "d5758a6a532131f555d06d976b875ed2982c0a7412017d7cf3a6beee5b67e751",
+    "receipt-archives/check_pal_prime_board.py": "30bc583c85b2e34396e019e7e17bb81bb002b82eb9072deda391920d0993ace9"
+  }
+}

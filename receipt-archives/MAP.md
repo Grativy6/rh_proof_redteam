@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Sieve frame and the fifth factor](2026-11-26-pal-sieve-frame.json) · [Exact counts](check_pal_sieve_frame.py) | Hearthline under Pang’s constructive key, 26 November 2026. Marker and distance comparison, first failure, upper-half theorem, and factorial-gcd implication to RH. |
 | [Fourth-power boards and all sizes through one billion](2026-11-26-pal-fourth-power-boards.json) · [Interval replay](check_pal_board_intervals.py) | Hearthline under Pang’s key, 26 November 2026. Convex sampling at fourth powers, unconditional late funded stretches and a bounded sieve covering every size in 1,284 further intervals. |
 | [Signed factorials and an actual endpoint response](2026-11-26-pal-signed-factorial-boundary.json) · [Weights](check_pal_signed_factorials.py) · [Critical zero](check_pal_boundary_zero.py) | Hearthline under Pang’s active key, 26 November 2026. Independent prime and factorial readings, finite kernels, theta integral and derivative intervals. |
 | [Prime-board products and conditional comparison](2026-11-26-pal-prime-board.json) · [Arithmetic and decoder](check_pal_prime_board.py) | Hearthline under Pang’s active key, 26 November 2026. All 864 small inputs, first single-cell failure, costs of pairing, initial prime integrals and formal reach of the finite counts. |

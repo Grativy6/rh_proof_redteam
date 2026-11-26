@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Taking five-step dials off the board makes a record smaller. Taking the factor five out of the sieve makes a fourth-power board overflow by 715 bits. The difference can be proved by integer counting. [What happens when the sieve forgets five?](proofs/what-happens-when-the-sieve-forgets-five.md)
+
 The proof now reaches RH from counts at fourth powers. A convexity bound pays for the sizes between them. The paired board fits at every size through one billion and on arbitrarily late stretches of consecutive sizes. [Which board sizes have to fit?](proofs/which-prime-boards-have-to-fit.md)
 
 A signed factorial sum returns every marked prime-power weight exactly. On a finer ruler its difference from the original profile concentrates at zero, where one zeta zero prices the missing reading. [What the signed rows leave at zero](proofs/what-the-signed-factorial-rows-leave-at-zero.md)

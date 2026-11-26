@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What happens when the sieve forgets five?](what-happens-when-the-sieve-forgets-five.md) compares the same board with two recognizing integers, 30,030 and 6,006. The smaller frame creates more records than the board can hold.
+
 [Which board sizes have to fit?](which-prime-boards-have-to-fit.md) reduces the universal test to fourth powers, identifies arbitrarily long stretches that fit without RH, and pays every board through one billion.
 
 [What the signed factorial rows leave at zero](what-the-signed-factorial-rows-leave-at-zero.md) gives an example you can check with $1!$ and $2!$, then locates a nonzero limiting reading at the endpoint of an increasingly fine grid.

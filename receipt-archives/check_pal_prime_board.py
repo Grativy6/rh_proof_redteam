@@ -107,7 +107,7 @@ def permutation_unrank(n, rank):
     return tuple(unused.pop(d) for d in reversed(digits))
 
 
-def layout(n):
+def layout(n, cutoff=0):
     flags, _ = prime_data(n)
     wires = []
     free = []
@@ -115,7 +115,7 @@ def layout(n):
         for j in range(n):
             p = abs(i - j)
             cell = n * i + j
-            if flags[p]:
+            if p > cutoff and flags[p]:
                 wires.append((cell, p))
             else:
                 free.append(cell)
@@ -123,8 +123,8 @@ def layout(n):
     return [(cell, free[k], p) for k, (cell, p) in enumerate(wires)], free[len(wires) :]
 
 
-def encode(n, rows, digits):
-    pairs, other = layout(n)
+def encode(n, rows, digits, cutoff=0):
+    pairs, other = layout(n, cutoff)
     if len(rows) != n or len(digits) != len(pairs):
         raise ValueError("wrong input shape")
     rank = 0
@@ -145,10 +145,10 @@ def encode(n, rows, digits):
     return tuple(board)
 
 
-def decode(n, board):
+def decode(n, board, cutoff=0):
     if len(board) != n * n or any(not 0 <= v < n for v in board):
         raise ValueError("bad board")
-    pairs, other = layout(n)
+    pairs, other = layout(n, cutoff)
     radices = []
     digits = []
     for a, b, p in pairs:

@@ -1,0 +1,24 @@
+{
+  "challenge_module": "SieveChallenge",
+  "solution_module": "SieveSolution",
+  "theorem_names": [
+    "fourthPowersFromGCD",
+    "forgettingFive",
+    "allUpperHalfRecords"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

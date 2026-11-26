@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Factorial frame, 26 November 2026.** At $n=k^4$ one integer $(k^2)!$ recognizes all remaining prime labels by gcd. Every row order and all dials above $y=\lceil3n/b^3\rceil$ fit at all sizes, with $b$ the binary length of $n$. The remaining one-sided task is to include the primes between $k^2$ and $y$ in the same capacity. The loss from erasing a fixed small prime in the frame rules out that shortcut. [Derivations](the-factorial-frame-for-prime-distances.md)
+
 **Fourth powers, 26 November 2026.** The board now needs a general funding argument only at $n=k^4$. A positive sum of ramps earns the interpolation across every intervening size. Globally justified stretches have about 1.924 bits of spare room per $n^{3/2}$, and the deterministic finite census reaches one billion. [Proof, tested range and remaining claim](fourth-power-boards-and-their-funded-intervals.md)
 
 **Signed factorials, 26 November 2026.** The unique signed floor rows reconstruct every integer label, including the actual square reading. Replacing all large factorials by signed Stirling expressions has explicit cost. A finer grid leaves a calculable boundary contribution in the critical Mellin reading. The global question is cancellation of the retained signed main terms. [Proof and reopening condition](the-boundary-of-the-signed-factorial-rows.md)

@@ -479,6 +479,17 @@
       "publication_date": "2026-05-30",
       "deposited_title": "The Price of Spherical Closure. Shaving the Hairy Ball.",
       "use_record": "Pang and Chat-Hearthline’s elliptic-curve comparison. A change of geometric carrier can alter the directional data that descend."
+    },
+    {
+      "file": "PECAN_v1.0.4_Public_Protocol_Specification.docx",
+      "bytes": 88803,
+      "sha256": "d90ff29d65660ef0dc495d331adfff08caa3d91e3bf0bcb5b566b2e75223fd43",
+      "record": "10.5281/zenodo.21760884",
+      "upstream_url": "https://zenodo.org/records/21760884/files/PECAN_v1.0.4_Public_Protocol_Specification.docx",
+      "deposited_checksum": "md5:95538e8f08f54acf7439fe2b65ace8cc",
+      "creator": "Pang, Christopher D.",
+      "license": "CC-BY-4.0",
+      "use_record": "Hearthline applied section 5 of the versioned Prime-Ledger to the distinction between a distance and its recognizing frame."
     }
   ]
 }
