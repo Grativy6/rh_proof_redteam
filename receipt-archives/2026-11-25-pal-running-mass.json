@@ -1,0 +1,408 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang supplied the retained-frame and direction questions in the PAL corpus. Hearthline derived the finite divisor rectangle, residue mixing, cofinal direction obstruction, and negative signed portion under his active construction key.",
+  "parent_public_research_commit": "65200a25e0202bca396dc5f4bc3c4fd5b0fb0bb3",
+  "parent_tree": "8ebeb4601a4a978cf2b2be71044f39d7eb646b39",
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build_exit": 0,
+  "independent_fixed_conditional": {
+    "theorem": "runningIntegerReduction",
+    "reference": "pal-rh/checks/running-mass/MassChallenge.lean",
+    "solution": "pal-rh/checks/running-mass/MassSolution.lean",
+    "config": "pal-rh/checks/running-mass/compare.json",
+    "premise": "The explicit integer running mass is nonpositive at every sufficiently late integer.",
+    "exports": {
+      "challenge": {
+        "bytes": 348063028,
+        "sha256": "f1001f74dd5b0960e137736c05f1f1d795fe292fe7db2290598d545f4bd90ebf"
+      },
+      "solution": {
+        "bytes": 433779371,
+        "sha256": "12ce3b304f1f633e286c106545906f2bd0b92efa1d56372a41b916b21123a623"
+      }
+    },
+    "clean_reproduction": {
+      "same_exports": true,
+      "exports": {
+        "challenge": {
+          "bytes": 348063028,
+          "sha256": "f1001f74dd5b0960e137736c05f1f1d795fe292fe7db2290598d545f4bd90ebf"
+        },
+        "solution": {
+          "bytes": 433779371,
+          "sha256": "12ce3b304f1f633e286c106545906f2bd0b92efa1d56372a41b916b21123a623"
+        }
+      },
+      "fresh_module_and_separately_rebuilt_dependency_closure": true
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 134.79,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "externally_supported_extension": {
+    "source": "Walter M. Lioen and Jan van de Lune, Systematic Computations on Mertens’ Conjecture and Dirichlet’s Divisor Problem by Vectorized Sieving, Section 6",
+    "source_url": "https://ir.cwi.nl/pub/13491/13491D.pdf",
+    "input_used": "Ordinary M(z) is less than 0.571 sqrt(z) for 200 < z <= 10^13. We use this outside our direct ordinary sieve. The independent 27-billion running-mass result and the earlier two-trillion primitive result use no such external bound.",
+    "ordinary_maxima_format": "One little-endian signed 32-bit integer per increasing bin, starting with singleton 0. A bin starting at a ends at min(D,a+max(1,floor(a/2048))-1).",
+    "cpp": {
+      "direct_limit": 200000000,
+      "final_limit": 10000000000000,
+      "resolution": 2048,
+      "ordinary_bins": 26765,
+      "ordinary_upper_failures_last_local": 0,
+      "last_positive_physical_in_direct": 43,
+      "last_nonnegative_physical_in_direct": 43,
+      "direct_end_mass": -663292,
+      "panels": 22165,
+      "failed_to_prove_negative": 0,
+      "uniform_negative_margin_per_million_sqrt": 2980492,
+      "sufficient_ordinary_permille_through_two_trillion": 785,
+      "sufficient_ordinary_permille_full": 594,
+      "first_unresolved_panel_left": 0,
+      "representative_least_margin_panel": [
+        9891604756795,
+        9896434641929,
+        -9376212
+      ]
+    },
+    "python": {
+      "ordinary_bins": 26765,
+      "panels": 22165,
+      "misses": 0,
+      "uniform_negative_margin_per_million_sqrt": 2980492,
+      "maxima_sha256": "aebac4b5341cc253c42669b6f8bf1802d069537d90720f93ed2d941ad2cf0d8e"
+    },
+    "terminal": {
+      "top": 10000000000000,
+      "signed_mass": -274138671,
+      "primitive_interval_exact": [
+        "8736302521231935527986138331982389/14705034175914416730537984",
+        "17472629556001322589537805228417903/29410068351828833461075968"
+      ],
+      "metadata": {
+        "top": 10000000000000,
+        "keys": [
+          1
+        ],
+        "rough_queries": 165,
+        "input_sha256": [
+          "4bc683527aa0557eec451e8a5a182e69db8bfc05a555b7bce8d117bda594cc49",
+          "413231f85a49514b9eba72d181654e97fddcb883fd8852ad5aa0b01524af2b08"
+        ]
+      }
+    },
+    "terminal_cli": {
+      "head": 10000000000000,
+      "physical_mass": -274138671,
+      "primitive": [
+        "594102836.941",
+        "594103670.450"
+      ]
+    }
+  },
+  "direction_counts": {
+    "through_root_342_independent": {
+      "rises": 1,
+      "falls": 340
+    },
+    "through_root_1495_using_finite_published_input": {
+      "rises": 1,
+      "falls": 1493
+    }
+  },
+  "paper_scope": "The finite logarithmic look-ahead, all-cutoff direction counts under an off-line zero, and a true growing cofactor range contributing asymptotically -3.6320505 sqrt(t) log(t). These estimates are paper arguments. The factorial transfer from eventual sign to stock RH is also formalized.",
+  "analytic_source_for_exponent": "Balazard–Saias, Lemma 2, reproduced by Báez-Duarte as Lemma 2.1 at https://arxiv.org/pdf/math/0202141.",
+  "corrected_cli": "The optional --large-head entry point in check_pal_fourth_primitive.py now passes the moments executable as a command list. Earlier recorded numerical results used its underlying functions directly.",
+  "open": "Earn eventual nonpositivity or the stated power saving along an unbounded sequence of direction counts. The explicit negative contribution leaves a signed remainder to control.",
+  "sha256_sources": {
+    "proofs/the-integer-that-turns-at-forty-four.md": "079eb0f3b6337b2a768b902e19fa0fa8abda7b92e78117bf45cd78ba3a4c72e7",
+    "pal-rh/how-many-rising-steps-would-a-zero-force.md": "d2209128b89c22930f0c9f498c437b898f5e1297a7062469371529e3a4e8f56c",
+    "pal-rh/where-the-negative-running-mass-comes-from.md": "3a4131df24874684e3941ede52f1c5e86a363744cfaa5a88299fa15e9216381f",
+    "pal-rh/PALRH/RunningMass.lean": "af9da54afd180b3d9c613af30465a283aecac0d5e55d7640e9f28c21b1b7c8fa",
+    "pal-rh/checks/running-mass/MassChallenge.lean": "a5a7fd6f64ba720c65b338c1db6ce7985a6bbc53ada903a534b60d298a26d0c4",
+    "pal-rh/checks/running-mass/MassSolution.lean": "b6a4db95f8ab93f5ae463726d1e7fa587862da82c8063890003d76393adc8de9",
+    "pal-rh/checks/running-mass/compare.json": "3e754392172c960f10d37551ef9e573b86190bd8c149c6735d3f8807f10aca77",
+    "receipt-archives/signed_mass_envelope.cpp": "a6ed6bb0c1c2aa673d9346a73c4f15562763d8422b62ae4e193def2b27381fff",
+    "receipt-archives/physical_mass_grid.cpp": "b8663d8acd69bbfc064555553594bc064ba2640a31d3f0fb3974b0a3e229cdff",
+    "receipt-archives/check_pal_signed_mass.py": "a7e3b29730abfa9b17821416d3cd550d6e64bafbe7552ee31515a17e5e204c0e",
+    "receipt-archives/check_pal_rise_direction.py": "12ef222a1eb47da0c13d76de2462cd549101434114401285e222770ee993a907",
+    "receipt-archives/ordinary-mertens-maxima-200m.bin": "aebac4b5341cc253c42669b6f8bf1802d069537d90720f93ed2d941ad2cf0d8e",
+    "receipt-archives/check_pal_fourth_primitive.py": "4526b6f5b63b3c4a93b69d8696063f3ee4572865c1da4d411a69dfebaec2cecc",
+    "receipt-archives/export_pal_configured_check.py": "505f3545b2024f05f085ea38ed3d7d3c3580da29ea36707f5e606e5a0a652832"
+  },
+  "axioms": {
+    "PALRH.RunningMass.positive_multiples": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.RunningMass.factorial_price": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.RunningMass.rh_of_running_nonpositive": "[propext, Classical.choice, Quot.sound]"
+  },
+  "native_kernel_replays": [
+    {
+      "module": "PALRH.RunningMass",
+      "exit": 0,
+      "seconds": 11.0,
+      "output": ""
+    }
+  ],
+  "independent_mass_grid": {
+    "first_quotient": 400,
+    "last_quotient": 160001,
+    "total_anchors": 159602,
+    "proved_strict_negative_through": 27373823781,
+    "first_unresolved_interval": [
+      27373823781,
+      27397260273,
+      -10843334,
+      -10855494,
+      21715074
+    ],
+    "cheap_panels": 158608,
+    "sharper_panels": 224,
+    "total_unresolved_panels": 769,
+    "largest_examined_endpoint": 80000000000
+  },
+  "independent_grid_recurrences": {
+    "all_output_sha256": "717680dd96b1bc0419d469cca525d81e370a8cc45bc7ef73fcfaea28aefd8570",
+    "rough_output_sha256": "717680dd96b1bc0419d469cca525d81e370a8cc45bc7ef73fcfaea28aefd8570",
+    "rows_identical": true,
+    "rows": 159602
+  },
+  "cross_checks": {
+    "all_common_primitive_grid_masses": 196,
+    "exact_match": true,
+    "unspent_at_selected_heads": [
+      {
+        "head": 1000000000000,
+        "actual_total": -77683177,
+        "remainder_interval": [
+          "-29120900884163/5000000",
+          "-58241786462061/10000000"
+        ],
+        "signed_portion_fraction_of_total": [
+          "32663180374167/35310535000000",
+          "718589983537939/776831770000000"
+        ]
+      },
+      {
+        "head": 2000000000000,
+        "actual_total": -116644406,
+        "remainder_interval": [
+          "-52851980859471/5000000",
+          "-52851969850943/5000000"
+        ],
+        "signed_portion_fraction_of_total": [
+          "530370049140529/583222030000000",
+          "530370060149057/583222030000000"
+        ]
+      },
+      {
+        "head": 10000000000000,
+        "actual_total": -274138671,
+        "remainder_interval": [
+          "-242001920537811/10000000",
+          "-242001867205789/10000000"
+        ],
+        "signed_portion_fraction_of_total": [
+          "833128263154063/913795570000000",
+          "2499384842794211/2741386710000000"
+        ]
+      }
+    ]
+  },
+  "small_and_mixed_checks": {
+    "small": {
+      "trial_factor_limit": 12000,
+      "at_43": 1,
+      "at_44": -1
+    },
+    "finite_comparison": {
+      "finite_mixed_windows": 8,
+      "finite_factorial_frames": 7,
+      "largest_error_fraction_of_proved_bound": "1/15"
+    },
+    "alternate_direct_grid": {
+      "direct_alternate_sieve": 8000000,
+      "matching_quotient_values": 6000
+    }
+  },
+  "test_of_former_large_head_cli": 0,
+  "signed_retained_physical_part": {
+    "compact_signal": {
+      "divisor_coefficients_checked_through": 300,
+      "finite_heads_checked": 6
+    },
+    "partial_mass": [
+      {
+        "head": 200000000,
+        "rough_cofactor_cutoff": 10000,
+        "smooth_terms": 50,
+        "paid_signed_mass": [
+          "-452290.6352924",
+          "-452290.6242571"
+        ],
+        "paid_in_root_units": [
+          "-31.9817776",
+          "-31.9817767"
+        ]
+      },
+      {
+        "head": 10000000000,
+        "rough_cofactor_cutoff": 10000,
+        "smooth_terms": 61,
+        "paid_signed_mass": [
+          "-4068007.5408083",
+          "-4068007.4445848"
+        ],
+        "paid_in_root_units": [
+          "-40.6800755",
+          "-40.6800744"
+        ]
+      },
+      {
+        "head": 1000000000000,
+        "rough_cofactor_cutoff": 10000,
+        "smooth_terms": 75,
+        "paid_signed_mass": [
+          "-50022714.6095511",
+          "-50022713.4431975"
+        ],
+        "paid_in_root_units": [
+          "-50.0227147",
+          "-50.0227134"
+        ]
+      },
+      {
+        "head": 2000000000000,
+        "rough_cofactor_cutoff": 10000,
+        "smooth_terms": 76,
+        "paid_signed_mass": [
+          "-74306467.3878896",
+          "-74306465.7149999"
+        ],
+        "paid_in_root_units": [
+          "-52.5426070",
+          "-52.5426057"
+        ]
+      },
+      {
+        "head": 10000000000000,
+        "rough_cofactor_cutoff": 10000,
+        "smooth_terms": 82,
+        "paid_signed_mass": [
+          "-173654751.6844885",
+          "-173654747.6227397"
+        ],
+        "paid_in_root_units": [
+          "-54.9144542",
+          "-54.9144528"
+        ]
+      },
+      {
+        "head": 200000000,
+        "rough_cofactor_cutoff": 1000000,
+        "smooth_terms": 64,
+        "paid_signed_mass": [
+          "-620216.8542236",
+          "-620216.8403809"
+        ],
+        "paid_in_root_units": [
+          "-43.8559544",
+          "-43.8559533"
+        ]
+      },
+      {
+        "head": 10000000000,
+        "rough_cofactor_cutoff": 1000000,
+        "smooth_terms": 81,
+        "paid_signed_mass": [
+          "-5696730.0512231",
+          "-5696729.9277381"
+        ],
+        "paid_in_root_units": [
+          "-56.9673006",
+          "-56.9672992"
+        ]
+      },
+      {
+        "head": 1000000000000,
+        "rough_cofactor_cutoff": 1000000,
+        "smooth_terms": 102,
+        "paid_signed_mass": [
+          "-71858998.3537939",
+          "-71858996.8231674"
+        ],
+        "paid_in_root_units": [
+          "-71.8589984",
+          "-71.8589968"
+        ]
+      },
+      {
+        "head": 2000000000000,
+        "rough_cofactor_cutoff": 1000000,
+        "smooth_terms": 105,
+        "paid_signed_mass": [
+          "-106074012.0298114",
+          "-106074009.8281058"
+        ],
+        "paid_in_root_units": [
+          "-75.0056533",
+          "-75.0056516"
+        ]
+      },
+      {
+        "head": 10000000000000,
+        "rough_cofactor_cutoff": 1000000,
+        "smooth_terms": 112,
+        "paid_signed_mass": [
+          "-249938484.2794211",
+          "-249938478.9462189"
+        ],
+        "paid_in_root_units": [
+          "-79.0374886",
+          "-79.0374868"
+        ]
+      }
+    ],
+    "signed_balances": [
+      {
+        "K": 200,
+        "exact_balance_enclosure": [
+          "-1.1442136",
+          "-1.1442135"
+        ],
+        "fixed_cut_coefficient": [
+          "-0.5144568",
+          "-0.5144567"
+        ]
+      },
+      {
+        "K": 10000,
+        "exact_balance_enclosure": [
+          "-4.8403447",
+          "-4.8403446"
+        ],
+        "fixed_cut_coefficient": [
+          "-2.1762966",
+          "-2.1762965"
+        ]
+      },
+      {
+        "K": 1000000,
+        "exact_balance_enclosure": [
+          "-7.1967287",
+          "-7.1967286"
+        ],
+        "fixed_cut_coefficient": [
+          "-3.2357647",
+          "-3.2357645"
+        ]
+      }
+    ]
+  }
+}

@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[The negative running integer](the-integer-that-turns-at-forty-four.md) · [Which directions an off-line zero would force](../pal-rh/how-many-rising-steps-would-a-zero-force.md) · [A weighted portion of the true physical rows](../pal-rh/where-the-negative-running-mass-comes-from.md). Under Pang’s active key, Hearthline derived the integer-sign bridge and a sufficient cofinal exception count.
+
 [The one-head criterion and continuous finite interval](one-quantity-at-each-fourth-power.md) · [What carries to the next block](../pal-rh/what-two-neighboring-blocks-predict.md). Pang supplied the old/detail and direction questions. Hearthline derived the scalar reduction, successive-root correction and curvature proof on 25 November 2026.
 
 [The forced inverse and its signed reference price](what-a-positive-reference-must-lose.md). Pang’s BLA and PAL frame questions led Hearthline to optimize the actual margin on genuine prime multiples. A fixed ratio of 2304 funds all negative rays in the certified finite inverse range.

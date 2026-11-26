@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[The integer that turns at 44](the-integer-that-turns-at-forty-four.md) shows why a single ordinary cumulative sign would imply RH. It identifies the exact finite ranges, the outside input used for the larger range, and the [negative contribution that persists at unbounded heads](../pal-rh/where-the-negative-running-mass-comes-from.md).
+
 [One quantity at each fourth power](one-quantity-at-each-fourth-power.md) gives the exact scalar, a hand example, its conditional implication to stock RH and the proved positive interval through two trillion. The [prediction from earlier blocks](../pal-rh/what-two-neighboring-blocks-predict.md) identifies exactly which two details a new sample adds.
 
 [What a positive reference must lose](what-a-positive-reference-must-lose.md) rules out an entire class of unsigned bounds and gives a sign-preserving payment on actual smooth rays.

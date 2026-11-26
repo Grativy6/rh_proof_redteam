@@ -196,5 +196,5 @@ if __name__=="__main__":
         if not args.moments_binary:
             ap.error("A compiled cubic_window_moments binary is required for large quotient grids")
         from check_pal_reflected_cells import load_moments
-        report["large"]={str(h):large(h,*load_moments(str(args.moments_binary),h)) for h in args.large_head}
+        report["large"]={str(h):large(h,*load_moments([str(args.moments_binary.resolve())],h)) for h in args.large_head}
     print(json.dumps(report,indent=2))

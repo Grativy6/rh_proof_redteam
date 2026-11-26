@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Running mass, cofinal directions and all-scale negative credit](2026-11-25-pal-running-mass.json) · [Complete integer replay](check_pal_signed_mass.py) · [Signed portion](check_pal_rise_direction.py) | Independent ordinary arithmetic through more than 27 billion, externally supported extension to ten trillion and a fixed integer implication to stock RH. |
 | [Physical primitive through two trillion](2026-11-25-pal-one-head-primitive.json) · [Dense scan](fourth_primitive.cpp) · [Continuous panels](check_pal_primitive_mesh.py) · [Two new details](check_pal_fourth_primitive.py) | The complete finite sign interval, the older-head prediction, the stock conditional contract and its separate kernels. |
 | [Reference price and negative inverse interval](2026-11-25-pal-reference-price.json) · [Native scan](reference_obstruction.cpp) · [Replay](check_pal_reference_prices.py) | Two interval formulas, prime endpoint counts, three optimization scopes and the true 40-million cutoff credit. |
 | [All-label two-support tests](2026-11-25-pal-two-prime-carriers.json) · [Direct replay](check_pal_two_prime_carriers.py) | Four complete blocks, two successful prime-only payments and two uniform-fraction impossibilities. |

@@ -1,0 +1,22 @@
+{
+  "challenge_module": "MassChallenge",
+  "solution_module": "MassSolution",
+  "theorem_names": [
+    "runningIntegerReduction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}
