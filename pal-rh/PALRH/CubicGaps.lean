@@ -34,7 +34,7 @@ theorem edge_relative : Relative edge 2 := by
   exact sum.trans ((mul_le_mul_of_nonneg_right count (div_nonneg (sub_nonneg.mpr le) (mul_pos xp yp).le)).trans_eq
     (by field_simp))
 
-private theorem sweep_relative (N : ℕ) {p : ℕ} (pp : 1<p) {f : ℝ → ℝ} {C : ℝ}
+theorem sweep_relative (N : ℕ) {p : ℕ} (pp : 1<p) {f : ℝ → ℝ} {C : ℝ}
     (non : 0≤C) (old : Relative f C) : Relative (sweep N p f) (C/(1-1/(p:ℝ))) := by
   intro x y xp le
   have pr : (1:ℝ)<p := by exact_mod_cast pp

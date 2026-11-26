@@ -163,6 +163,11 @@ theorem reading_cast (N k : ℕ) (x : ℚ) (xp : 0<x) (head : x≤(2:ℚ)^N) :
     exact sweep_cast N (by decide : 0<2)
       (fun z zp zh => sweep_cast N (by decide : 0<3) old z zp zh) x xp head
 
+/-- A single clock uses exactly the same physical rational marks on its full head. -/
+theorem single_cast (N : ℕ) {p : ℕ} (pp : 0<p) (x : ℚ) (xp : 0<x) (head : x≤(2:ℚ)^N) :
+    (qSweep N p (qEdge N) x:ℝ)=sweep N p RectangleBalance.edge (x:ℝ) :=
+  sweep_cast N pp (fun _ pos cap => edge_cast N pos cap) x xp head
+
 /-- For any prescribed doublings per pass, every sufficiently remote starting index has a
 later head whose entire finite rational list has nonnegative entries. -/
 def SignCheckpoints : Prop := ∀ q : ℕ, 0<q → ∀ B : ℕ, ∃ N : ℕ, B≤N ∧ ∃ k : ℕ,

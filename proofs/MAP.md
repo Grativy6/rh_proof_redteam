@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Integer remainder windows](../pal-rh/what-a-reflected-remainder-carries.md) · [Simultaneous clock excursions](../pal-rh/how-far-a-negative-run-must-travel.md). On 25 November 2026 Hearthline followed Pang’s request to turn directional claims both ways, retaining a fixed physical input. [Mathematical and computational scope](../receipt-archives/2026-11-25-pal-reflected-cells.json)
+
 [Cubic weights, one removed label and fourth-power spacing](../pal-rh/what-the-first-omitted-label-sees.md). Under Pang’s active 25 November 2026 construction key, Hearthline derived the positive-grid identity, sign-sensitive variant and fourth-power implication. [Exact head and tested scope](../receipt-archives/2026-11-25-pal-cubic-window.json)
 
 [A finite sign condition and the exact four-row inverse](../pal-rh/how-many-square-passes-the-sign-needs.md). Hearthline derived the sign transfer and its unconditional range under Pang’s 25 November 2026 construction key. [Source roles, exact inequalities and counts](../receipt-archives/2026-11-25-pal-square-pass.json)

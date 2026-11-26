@@ -1,0 +1,2014 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "authors": [
+    "Christopher Daniel Pang",
+    "Hearthline"
+  ],
+  "authorization": "Pang’s active independent PAL v2.4 construction, full-corpus research key, and instruction to try both orientations with the same arithmetic inputs.",
+  "parent_public_research_commit": "86a676dc339e10488331c183476d5f8ae6d2ecba",
+  "parent_tree": "ad8ee1d708e97e4c3bb2f3e77a90f125ae13c5d3",
+  "source_roles": {
+    "corpus": "Pang’s GPPR keeps a factor label and multiplicity beside its wrapped phase. APCI supplies the same-input comparison, RPL the selectable square return, and BLA the price of a boundary. The paper computes its actual circular remainder by ordinary integer division.",
+    "gppr_source": "D:/Chris-Path/Corpus/Math_Stack/GPPR_v0.1.docx",
+    "gppr_sha256": "0e4da7c6a000ad55ec712c4c8495c2c7e70018227f8b7b53b38c28eab9083bf7",
+    "mathematical_inputs": [
+      "The prior project half-row reading, one-pass inverse, positive signed rectangle, finite lower bound at a zeta zero and persistent positive witnesses.",
+      "Balazard and Saias (1998), Lemme 2, with its exact half-plane hypotheses reproduced in Báez-Duarte, Lemma 2.1. It is used on paper at the supremum of real parts, separately treating its endpoint 1.",
+      "Matomäki and Teräväinen, Theorem 1.1, theta=3/5, epsilon=1/12, applied to small dilation factors. The remainder has its own absolute estimate.",
+      "Euler–Maclaurin, the functional equation, Cauchy and Rouché for the stand-alone interval proof of a simple critical-line zero. The fixed-point arithmetic and power-series remainder use integer bounds."
+    ],
+    "links": [
+      "https://doi.org/10.1006/aima.1998.1760",
+      "https://arxiv.org/pdf/math/0202141#page=3",
+      "https://arxiv.org/pdf/1911.09076#page=1",
+      "https://dlmf.nist.gov/25.2#iii",
+      "https://dlmf.nist.gov/25.4",
+      "https://dlmf.nist.gov/24.8"
+    ]
+  },
+  "sha256_sources": {
+    "pal-rh/PALRH/CubicFourth.lean": "754ede753b692791b682e6f60a261b725767f1fd160fa2020a5d05950072d995",
+    "pal-rh/PALRH/CubicGaps.lean": "afd7b24c95280b5db221dd6a3b438f237357f44a78ea30d54bbf47f6d7f8544f",
+    "pal-rh/PALRH/SquareSignRows.lean": "8ce345afd59ee6246022e4052d06912611829af3aef76f6575d44b5984a1aa33",
+    "pal-rh/lakefile.toml": "ac9293fa78dd1dc1a0bc5dc60095ac72458a19fc704b22ea58ce14ec05128c98",
+    "pal-rh/PALRH/ClockRoutes.lean": "8c8d016f3fa00b46b06dd5782508e8e8fa83b623fb3fee6aa52e08d81af09d13",
+    "pal-rh/PALRH/ReflectedCells.lean": "f0b104d5e5cc1a472f747731e426975031fb124ea3dc20f05c8945cc5b9642af",
+    "pal-rh/PALRH/ReflectedCarry.lean": "8d208e9f13e2a05f7cc4f780d3852d04103b32f680e26fb51df78da9cd98744f",
+    "pal-rh/PALRH/EvenWindows.lean": "8682c7d60a17766ba3f44da4dd463ac0b705dbe0b4fa0562cce57e4c369e74c0",
+    "pal-rh/PALRH/EvenRemainders.lean": "599d3b2d1ae677bda03a438a885a07dd21cdd60c8569018db09fec9f38a6b5d5",
+    "pal-rh/checks/even-window/EvenWindowChallenge.lean": "bfa342a47ba8fdc0ac141cfdc95c2dd9de9fea3c0e2057c5cf9405fa0d7dc440",
+    "pal-rh/checks/even-window/EvenWindowSolution.lean": "533db5a265ca4f2f60e92972246cf5fb7b70af1dd00afbd122c190c2736ce633",
+    "pal-rh/checks/even-window/compare.json": "290e65cef214f2479754bc72a0be4774c107a258992efdec01bbf95cde1b5732",
+    "pal-rh/how-far-a-negative-run-must-travel.md": "2f7ca1dfafc0be0afb3066d5521cd4058b5aa542b69ae5f023060ada4fbbc69b",
+    "pal-rh/what-a-reflected-remainder-carries.md": "9e9225cdefeb4b623bda7e31f48003e8ea0c11430d1efd746f44ad11cf65d542",
+    "receipt-archives/check_pal_clock_resonance.py": "c26e54f9eda278442e1013f0d0fcfee4a3af375031a280e979d4f605b5ac3213",
+    "receipt-archives/check_pal_reflected_cells.py": "535625925b5da310bdab2de09d7f6be11f5717483c3a7c96ce69201127463c35",
+    "pal-rh/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "pal-rh/lake-manifest.json": "80a87e2655764ecfaf011a86a89b74e6c0283b9cb0f61301fb33d7e8ab6ec13a",
+    "pal-rh/PALRH/SquarePass.lean": "e06956f24b9897368191058ed67d6ebfeaa6d735ef5b3744bcd7f2d10efef2ba",
+    "pal-rh/PALRH/SquarePassBudget.lean": "210430174a641f4e3f852821515d4f749ae09dc105aa45d0b16f42a9241a1bcd",
+    "pal-rh/PALRH/CubicCarry.lean": "23c06f747ca99ddc8d928969c2ad99b781834f3e7d1866dd233ed4264ddcaddd",
+    "pal-rh/PALRH/CubicQuadrature.lean": "51730ca264f6d07f06a3e976bbb59b2082d9e67c74ee8bf19788fa935ff8aea6",
+    "pal-rh/PALRH/CubicWeights.lean": "c3ab1f398f56a9ba7266cce3e0e005daf43718ec5488344dc57e7bf26e9f389d",
+    "receipt-archives/check_pal_cubic_window.py": "0e274176cefb5eaeef65d157a2216712a982ff0ba4e429e11fea5a19107d13a7",
+    "receipt-archives/cubic_reciprocal_bounds.hpp": "a0d5ab1b26de3433653bdc18af83fc06ac76603be5824a909e67a56643d88bfa",
+    "receipt-archives/cubic_window_moments.cpp": "aad478ccb7504abd31b5a7e1dc1511793123a052d3114f808edf193581265ca5",
+    "receipt-archives/check_pal_growth_windows.py": "c513db06956a47c702599b114d9c28b79655d170cbc325d653f1d18fb856d166",
+    "receipt-archives/check_pal_square_pass.py": "8cb587b038de192a62eaa3a1b810896f54008f204495a177dbf77125a9152119",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lean4export": "15f6055e299ad5b89345e533cc2192f4cc00f659"
+  },
+  "build": {
+    "command": "lake build",
+    "directory": "pal-rh",
+    "exit": 0,
+    "jobs_including_replays": 3785
+  },
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "module_kernel_replays": [
+    {
+      "module": "PALRH.SquareSignRows",
+      "exit": 0,
+      "seconds": 13.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicGaps",
+      "exit": 0,
+      "seconds": 13.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CubicFourth",
+      "exit": 0,
+      "seconds": 13.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReflectedCells",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReflectedCarry",
+      "exit": 0,
+      "seconds": 12.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.EvenWindows",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.EvenRemainders",
+      "exit": 0,
+      "seconds": 12.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ClockRoutes",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    }
+  ],
+  "audited_declarations": {
+    "ClockRoutes": [
+      "PALRH.ClockRoutes.routes",
+      "PALRH.ClockRoutes.real_route",
+      "PALRH.ClockRoutes.rh_of_choices",
+      "PALRH.ClockRoutes.rh_of_joint_powers",
+      "PALRH.ClockRoutes.same_record"
+    ],
+    "ReflectedCells": [
+      "PALRH.ReflectedCells.flip",
+      "PALRH.ReflectedCells.cell_identity",
+      "PALRH.ReflectedCells.residue_cap",
+      "PALRH.ReflectedCells.ramp_difference"
+    ],
+    "ReflectedCarry": [
+      "PALRH.ReflectedCarry.identity",
+      "PALRH.ReflectedCarry.divide",
+      "PALRH.ReflectedCarry.old_charge",
+      "PALRH.ReflectedCarry.rh_of_retained"
+    ],
+    "EvenWindows": [
+      "PALRH.EvenWindows.even_identity",
+      "PALRH.EvenWindows.census",
+      "PALRH.EvenWindows.weight_at",
+      "PALRH.EvenWindows.actual_interval",
+      "PALRH.EvenWindows.finds_reading",
+      "PALRH.EvenWindows.rh_of_window_budget"
+    ],
+    "EvenRemainders": [
+      "PALRH.EvenRemainders.arch_span",
+      "PALRH.EvenRemainders.energy_change",
+      "PALRH.EvenRemainders.early_price",
+      "PALRH.EvenRemainders.rh_of_even_remainders"
+    ]
+  },
+  "formal_results": [
+    "Exact decomposition of the original signed reading into a positive smooth source and an odd and even rational remainder. An unconditional bound pays all product indices through floor(X^(5/6)).",
+    "The square-root-width window has nonnegative trapezoid weights on the same physical half-rows. Its signed total requires only squared remainders. Nonnegativity of the retained window test at sufficiently late fourth powers suffices for the stock target.",
+    "The two single-clock readings at a physical input are the changes of the same normalized value toward the two parents. A subpower bound for their joint debt suffices for RH. Either sign of a tilted record forces both increments in that direction."
+  ],
+  "paper_results": [
+    "Positive fourth-power runs, and more generally runs on each fixed integer-power grid, have logarithmic length exponent 1 in every sufficiently large power panel. If RH fails, both signs and both single-clock directions together have exponent 1 on such panels. The result allows the occupied fraction to tend to zero.",
+    "The maximum normalized simultaneous debt at fixed powers has exponent Theta minus one half in the physical variable. The resulting cofinal twelfth-power criterion is equivalent on paper to RH.",
+    "Individual square clocks at 3727, 4657, and 22063 must take strictly negative normalized values at unbounded roots on every fixed-power grid. At 3727 the arithmetic also has an explicit finite negative after the clock is active.",
+    "The signed short-interval estimate permits an additional factor (log X)^(1/12) in the old-modulus cutoff on paper. Unconditional absolute payment alone reaches X^(5/6)."
+  ],
+  "independent_fixed_conditional": {
+    "statement": "evenRemainderReduction",
+    "reference": "pal-rh/checks/even-window/EvenWindowChallenge.lean",
+    "solution": "pal-rh/checks/even-window/EvenWindowSolution.lean",
+    "config": "pal-rh/checks/even-window/compare.json",
+    "meaning": "The reference independently specifies the finite rational window with ordinary Möbius labels, squared integer remainders, the integer comparison k^3 > j^10, and powers of three identified by an integer logarithm. Its premise is eventual nonnegativity of that window. The solution proves equality to the construction and derives bare stock Mathlib RiemannHypothesis under this premise.",
+    "exports": {
+      "even-challenge.ndjson": {
+        "bytes": 348450256,
+        "sha256": "a57c7b7152b987a7c213275e167b916b4b4b1d742cf6148ddfa731d93742da30"
+      },
+      "even-solution.ndjson": {
+        "bytes": 436988454,
+        "sha256": "8b9851698dd4fb7a0d9bb02a4bf8a6a41d2ff3bda18efe7ed34fd0a4298154d3"
+      }
+    },
+    "judge": "Linux Lake Comparator 4.36.0 with the released allow-list of foundational axioms",
+    "comparison": {
+      "exit": 0,
+      "seconds": 136.68,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "final_source_exports_match": true
+  },
+  "arithmetic": {
+    "commands": [
+      "g++ -O3 -std=c++17 receipt-archives/cubic_window_moments.cpp -o /tmp/cubic-window-moments",
+      "python -B receipt-archives/check_pal_reflected_cells.py /tmp/cubic-window-moments",
+      "python -B receipt-archives/check_pal_clock_resonance.py"
+    ],
+    "methods": "The first replay includes direct modular sums, exact small trapezoids, two independent divisor recurrences, counterfactual reflection on the identical input, signed first moments, and rigorous reciprocal intervals. The second independently isolates the zero and checks its phase against each clock, as well as a physical witness at 3727. Recomputed quotient checkpoints agreed; the separately supplied low-head prefix table can have a tighter rounding enclosure at head 4096.",
+    "sha256_local_shell_output": "b8284e9838dbb4eb0dd8f5f6d988b20c2a472dfdbbd2e10fd9a601fe8916658b",
+    "sha256_resonance_output": "5b56b048798a0952365a876799d3c25b159011b637aaf72dcb35cd859b3aaf45",
+    "unique_joint_sites": 663,
+    "shells": {
+      "cell_identities_checked": 8512,
+      "direct_cases": [
+        {
+          "passed": false,
+          "head": 8,
+          "before_cut": 5,
+          "retained_funded_value": [
+            "57665430272852147852147/25000000000000000000000",
+            "57665430272852147852149/25000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "57147852147852147852147/25000000000000000000000",
+            "57147852147852147852149/25000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-53/2560",
+            "-53/2560"
+          ],
+          "odd_residue": [
+            "-2582807817182817182819/100000000000000000000000",
+            "-516561563436563436563/20000000000000000000000"
+          ],
+          "even_residue": [
+            "851950783591408591407/100000000000000000000000",
+            "851950783591408591411/100000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "277603256118881118881/10000000000000000000000",
+          "positive_source": "4717/2048"
+        },
+        {
+          "passed": true,
+          "head": 8,
+          "before_cut": 5,
+          "retained_funded_value": [
+            "273664193879037629037627/50000000000000000000000",
+            "4276003029359962953713/781250000000000000000"
+          ],
+          "whole_funded_value": [
+            "272629037629037629037627/50000000000000000000000",
+            "4259828712953712953713/781250000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-53/2560",
+            "-53/2560"
+          ],
+          "odd_residue": [
+            "-3570049741924741924743/50000000000000000000000",
+            "-7140099483849483849481/100000000000000000000000"
+          ],
+          "even_residue": [
+            "2721237096237096237/5000000000000000000000",
+            "10884948384948384949/20000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "277603256118881118881/10000000000000000000000",
+          "positive_source": "707/128"
+        },
+        {
+          "passed": false,
+          "head": 13,
+          "before_cut": 8,
+          "retained_funded_value": [
+            "589572076873187386042400443/219700000000000000000000000",
+            "589572076873187386042422413/219700000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "585804934016044528899533709/219700000000000000000000000",
+            "117160986803208905779914651/43940000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-857337928343845503611/50000000000000000000000",
+            "-857337928343845503607/50000000000000000000000"
+          ],
+          "odd_residue": [
+            "-101916419661910306681/3125000000000000000000",
+            "-3261325429181129813783/100000000000000000000000"
+          ],
+          "even_residue": [
+            "1670489751459021893689/100000000000000000000000",
+            "835244875729510946849/50000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "578540114510217281939/100000000000000000000000",
+          "positive_source": "5893/2197"
+        },
+        {
+          "passed": true,
+          "head": 13,
+          "before_cut": 8,
+          "retained_funded_value": [
+            "398020748707970810541812767/43940000000000000000000000",
+            "1990103743539854052709103381/219700000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "992280800341355597783097429/109850000000000000000000000",
+            "1984561600682711195566258571/219700000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-2522595747447818453741/100000000000000000000000",
+            "-252259574744781845373/10000000000000000000000"
+          ],
+          "odd_residue": [
+            "-8455120308278927826029/50000000000000000000000",
+            "-4227560154139463913011/25000000000000000000000"
+          ],
+          "even_residue": [
+            "1042717264143013704343/25000000000000000000000",
+            "4170869056572054817387/100000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "110677239297606784371/3125000000000000000000",
+          "positive_source": "40251/4394"
+        },
+        {
+          "passed": false,
+          "head": 625,
+          "before_cut": 213,
+          "retained_funded_value": [
+            "611564045289483547315189/100000000000000000000000",
+            "611564045289483547316071/100000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "610533297326569349826843/100000000000000000000000",
+            "610533297326569349827977/100000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-515373981457098744173/50000000000000000000000",
+            "-515373981457098744047/50000000000000000000000"
+          ],
+          "odd_residue": [
+            "-3376927469372260069091/20000000000000000000000",
+            "-2110579668357662543111/12500000000000000000000"
+          ],
+          "even_residue": [
+            "505733954315325086149/50000000000000000000000",
+            "202293581726130034573/20000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "74636431490402326373241/100000000000000000000000",
+          "positive_source": "1529312663/244140625"
+        },
+        {
+          "passed": true,
+          "head": 625,
+          "before_cut": 213,
+          "retained_funded_value": [
+            "3681769800368478389007597/20000000000000000000000",
+            "18408849001842391945039297/100000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "9202393551820784791509921/50000000000000000000000",
+            "9202393551820784791510761/50000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-4061898200822362018143/100000000000000000000000",
+            "-162475928032894480711/4000000000000000000000"
+          ],
+          "odd_residue": [
+            "-99208320716860833959041/100000000000000000000000",
+            "-99208320716860833958201/100000000000000000000000"
+          ],
+          "even_residue": [
+            "5635814195230416978883/100000000000000000000000",
+            "5635814195230416979723/100000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "275038161607816915502391/100000000000000000000000",
+          "positive_source": "45162010767/244140625"
+        },
+        {
+          "passed": false,
+          "head": 28561,
+          "before_cut": 5165,
+          "retained_funded_value": [
+            "12500042500076917978460460158388821079/1164904256124050000000000000000000000",
+            "12500042500076917978994079500034125903/1164904256124050000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "6247239399691063803540779327709569487/582452128062025000000000000000000000",
+            "6247239399691063803844120396004272107/582452128062025000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-47761012680151938741/10000000000000000000000",
+            "-238805063400759690569/50000000000000000000000"
+          ],
+          "odd_residue": [
+            "5725498876424476242511/5000000000000000000000",
+            "5725498876424476243813/5000000000000000000000"
+          ],
+          "even_residue": [
+            "-647434534252105237507/6250000000000000000000",
+            "-1294869068504210471759/12500000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "1741795487482702816087487/50000000000000000000000",
+          "positive_source": "451248763063519/46596170244962"
+        },
+        {
+          "passed": true,
+          "head": 28561,
+          "before_cut": 5165,
+          "retained_funded_value": [
+            "1264988096610672558367898795298502002313/582452128062025000000000000000000000",
+            "2529976193221345116736597996311386839381/1164904256124050000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "63245571285684513548927628687561940799/29122606403101250000000000000000000",
+            "316227856428422567744751931285547901199/145613032015506250000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "-3290866892245380747693/25000000000000000000000",
+            "-6581733784490761490669/50000000000000000000000"
+          ],
+          "odd_residue": [
+            "-191750930169431110197463/50000000000000000000000",
+            "-76700372067772444071171/20000000000000000000000"
+          ],
+          "even_residue": [
+            "202841904229530185432623/50000000000000000000000",
+            "405683808459060370904319/100000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "10896552423370682196762743/100000000000000000000000",
+          "positive_source": "101182578118785485/46596170244962"
+        },
+        {
+          "passed": false,
+          "head": 390625,
+          "before_cut": 45687,
+          "retained_funded_value": [
+            "8070027368836405608757627/500000000000000000000000",
+            "8070027368836405612041867/500000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "8072240028206409796677177/500000000000000000000000",
+            "8072240028206409800239157/500000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "44253187400083758391/10000000000000000000000",
+            "221265937000418819729/50000000000000000000000"
+          ],
+          "odd_residue": [
+            "81544806158018319841097/20000000000000000000000",
+            "407724030790091599561683/100000000000000000000000"
+          ],
+          "even_residue": [
+            "-309919874603753555097/12500000000000000000000",
+            "-1239679498415014042289/50000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "47560463156623762955506823/100000000000000000000000",
+          "positive_source": "1441482703504586683/119209289550781250"
+        },
+        {
+          "passed": true,
+          "head": 390625,
+          "before_cut": 45687,
+          "retained_funded_value": [
+            "2628754788675398677420946121/250000000000000000000000",
+            "5257509577350797354846818697/500000000000000000000000"
+          ],
+          "whole_funded_value": [
+            "5257572125702783387747175177/500000000000000000000000",
+            "2628786062851391693876259041/250000000000000000000000"
+          ],
+          "discarded_signed_value": [
+            "12509670397206581056587/100000000000000000000000",
+            "12509670397206581139877/100000000000000000000000"
+          ],
+          "odd_residue": [
+            "7163557414871254917909/25000000000000000000000",
+            "179088935371781376287/625000000000000000000"
+          ],
+          "even_residue": [
+            "1571291870971664955389409/100000000000000000000000",
+            "785645935485832477961853/50000000000000000000000"
+          ],
+          "outer_shell_unsigned_lower": "143396054003494676008034293/100000000000000000000000",
+          "positive_source": "625797795677140669569/59604644775390625"
+        }
+      ],
+      "direct_even_windows": [
+        {
+          "fourth_root": 1,
+          "passed": false,
+          "before_cut": 1,
+          "physical_integral": "3/2",
+          "known_source": "3/2",
+          "old_signed_change": "0",
+          "retained_with_source": "3/2",
+          "old_absolute_allowance": "15/2"
+        },
+        {
+          "fourth_root": 1,
+          "passed": true,
+          "before_cut": 1,
+          "physical_integral": "3/2",
+          "known_source": "3/2",
+          "old_signed_change": "0",
+          "retained_with_source": "3/2",
+          "old_absolute_allowance": "15/2"
+        },
+        {
+          "fourth_root": 2,
+          "passed": false,
+          "before_cut": 10,
+          "physical_integral": "58668524439717/2473579378270",
+          "known_source": "15239/640",
+          "old_signed_change": "-4153/179200",
+          "retained_with_source": "150338176496503453/6332363208371200",
+          "old_absolute_allowance": "1875/16"
+        },
+        {
+          "fourth_root": 2,
+          "passed": true,
+          "before_cut": 10,
+          "physical_integral": "695315895362807/7420738134810",
+          "known_source": "601067/6400",
+          "old_signed_change": "1979/179200",
+          "retained_with_source": "1779798897260660363/18997089625113600",
+          "old_absolute_allowance": "1875/16"
+        },
+        {
+          "fourth_root": 3,
+          "passed": false,
+          "before_cut": 38,
+          "physical_integral": "42374314864092598505043192793767636776778696931062560029362903619596059/523150750490021302967937780137025085419745810833028075550984937441370",
+          "known_source": "210810079/2624400",
+          "old_signed_change": "-3736910288358757/34166640633325200",
+          "retained_with_source": "300965720078826139952789269508056734448925977758181056033137740116009265009/3710694134016248398673124081598942254528597043108645625610823972489544400",
+          "old_absolute_allowance": "137180/243"
+        },
+        {
+          "fourth_root": 3,
+          "passed": true,
+          "before_cut": 38,
+          "physical_integral": "2744254189883988337628253292999759198987893975828488383579542978722237799/3457344090194923393527240981775122303643537532461750760163030890916880",
+          "known_source": "138232393/174960",
+          "old_signed_change": "-140969540139257/253086226913520",
+          "retained_with_source": "7674199835436211560476666834702352964348084355885861827954550545565684215099/9661548060049713423211874923570579277531865634464362499275589824667221160",
+          "old_absolute_allowance": "137180/243"
+        },
+        {
+          "fourth_root": 5,
+          "passed": false,
+          "before_cut": 213,
+          "physical_integral": "5192931054979230056188578578219338703525940229786865581077999447296736562390580107025179018223602310688552537584119272652989052042257615288169111255194495400832048265474934996460639841362048660023565080065143950652050749853964205836784015652833556991244888430375216129387944167652743712851884863712957165201562853407051625763360885486499556649858438817266553997763420755594716744217756514888924513621586918544493447900136457520500936256503936678852823871116940432438959982960505474697101600714031720626965656484266624386944813181115443665733310953/16883022800058933596224303937007779180919811234981460660087799194278419206380396016705859099533353626754336670884294652100359020423800619753984218030303209987963264913789150972241020599323288425453621551160271949091670344262283941518957571888637061681821404704193184396895516203990508280097366517800521642459325155150319208994952329384596361754048768534998229795452460895912571362414332898023764727483291475650069465320376655074559240797351524402284598115758904147280997136364672851288363341935871749104265678364242914038700246572571708032109479",
+          "known_source": "331913462627/1056250000",
+          "old_signed_change": "-987532744342733950211002462340182588131137416570810432525893730809543506432425573598029/2279964424588420187613230301434641886589426171643802242368945873674800420257861713750000",
+          "retained_with_source": "156935925514147464003156921717518420661699817751303768055286296135427691625128944225978588844856840235923011272185190170831130707853552078781519890724494740214214884818130828845268614786044496334290894273557173746808783061017898263625287933703733307698251606225800592129621766483434939485791767701224038582203709037023575949648376231094856796666804588291141230679910281254010973500516906784888323558372443158740021916341479353187028428513557852650044186744620624809572918994980438508857078045491840632035111232032767386647603507207702645435485979996698207/509505509501778531743197743813270478852758589055690509206221082827330865335408379789873247825202993378836231674901035036600120437789697274718452294128793301422462816148279734697987943086720668553868221811801064177945051460772497520839969580210654182897824534822972886263453971156142124881509810983622885281361777003643561842883382797499425917220400336145482292041333194894504385758575403529645756954406474890153882078418509769214377088348644218568945907422009785873301520722433877119238107997707558142610874936349473655810775298350824760254732491250000",
+          "old_absolute_allowance": "28990791/6250"
+        },
+        {
+          "fourth_root": 5,
+          "passed": true,
+          "before_cut": 213,
+          "physical_integral": "3389357603444665739912678163348225538202397954902453484210427356812262202012171305656953906141218421096974656192552369801593580673691107794769135497806193566427844661088154765733451627960670860750281005277737347634503433766908209586054523760231687914962879321893492432989816878939684296700794029744000075657784679653020480237731290691166207386234212910861054802891317278177153269820867227476708207689856535537343487630615811990925733143934939980102792625410119633829159073099700098271525733301408731122582914211250015185726670333937155651390880544417/363276076801268088415309160575615662375653869332014877651544368869990813268323003945670899245131471141196761470062064238297380301532813335396074208652041483878933700213945869195806788068197654395967580962896886077006975683436730327856190512362397465153674363290225760815958693492761281613129541624397431203262720579786178841822422535723728611535394191925479151460770193070670501039535990633338937584468064855367011943445345957466378146811977628518123766352881247858735938382467443420825473288551171429002130458596123391729274271078784338346079824",
+          "known_source": "619576593373/66015625",
+          "old_signed_change": "-128074447192805154991302545269441442760324024973267916315899539743857723751364825131400937/78658772648300496472656445399495145087335202921711177361728632641780614498896229124375000",
+          "retained_with_source": "9076781325641880133813948223589151322123072505497782895510033281610347492187600052309013737821934861891173055146674136741219794603305178370836664057176860541775074542907324012175165701251320238751055346614905120246027368117530068482285890323946454552092836359804380286980009862816960488188972162532174714691173371697998103847775506526602454362175131786032327477653098962343201933383843314495786255323946229998067203868329334702337251854315201820446943782488049251000978390561347526765731859339656569792745086041540049319680237118748632543014445025824172673/972692336321577196964286601825334550537084579106318244848240249033995288367597815962485291302660260086869169561174703251691139017598512979007954379700423575442883558101261311696158800438284912693748423458892940703349643697838404357967214653129430712804937748298402782866593944934453147501064184605098235537145210643319527154595548977044358569238946096277738921169817917525872009175462134011141899640230542972111956695162609559409265350483775326358896732351109591212666539561010129045818206177441701908620761242121722433820571024124301815031762028750000",
+          "old_absolute_allowance": "28990791/6250"
+        }
+      ],
+      "same_input_windows": [
+        {
+          "head": 432000000000,
+          "length": 1000000,
+          "integral": [
+            "-5492769354634176729611662578125/820782932044365692928",
+            "-1360013931608898397870506953125/205195733011091423232"
+          ],
+          "funded_part": "1721443664764135946438246367593950358443147/34828678619322624000000000000000000",
+          "change_of_even_residue": [
+            "-246204364352104137380049703519491749873372996543047/36520516511934839783424000000000000000000",
+            "-60964721399442436127154312203431104091458788686543/9130129127983709945856000000000000000000"
+          ],
+          "exact_initial_band": 27680
+        },
+        {
+          "head": 432000000000,
+          "length": 1000000,
+          "integral": [
+            "6562655618612217431930708070450164246366875/132345613938108415458523742208",
+            "486123090148522947124487012538989541125/9803356117276277820358656"
+          ],
+          "funded_part": "576734809085570787267976316964492792519927324379/11609559539774208000000000000000000",
+          "change_of_even_residue": [
+            "-19699711451837046118229774575717126308017197185260812998941/218099355952746481271735058432000000000000000000",
+            "-629268062758267713915171239569387115865652936252045967137987/6979179390487887400695521869824000000000000000000"
+          ],
+          "exact_initial_band": -23449622
+        }
+      ],
+      "both_other_directions_fail_here": [
+        {
+          "prime": 929501,
+          "active_first_return": "27890999/401544432000000000",
+          "actual_single_clock": [
+            "-3868957702245070554311/250965270000000000000000000000",
+            "-3834337334405577193433/250965270000000000000000000000"
+          ]
+        },
+        {
+          "prime": 929507,
+          "active_first_return": "16736951/401547024000000000",
+          "actual_single_clock": [
+            "-3875954069186837933177/250966890000000000000000000000",
+            "-3841333477870224013031/250966890000000000000000000000"
+          ]
+        }
+      ],
+      "independent_large_panels": [
+        {
+          "head": 432000000000,
+          "raw": {
+            "head": "432000000000",
+            "base_cubic": "3846194000467565662422824249608564853/161243136000000000000000000000000000",
+            "funded_source": "1992402367527287598183931470391435147/80621568000000000000000000000000000",
+            "raw_reading": [
+              "-4181156961229811/270000000000000000000000",
+              "-4143910774469933/270000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-4181156961229811/1250000000000",
+              "-4143910774469933/1250000000000"
+            ],
+            "odd_residue": [
+              "-75566351897839771936556653/24883200000000000000000",
+              "-74083464994826337937196653/24883200000000000000000"
+            ],
+            "even_residue": [
+              "-29232843216178246533621975750391435147/80621568000000000000000000000000000",
+              "-26830566433296483454658775750391435147/80621568000000000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "32837960761510243206956653/12441600000000000000000",
+              "33950125938770318706476653/12441600000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-8407543471805851523283347/24883200000000000000000",
+              "-7666100020299134523603347/24883200000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "432000000000",
+            "base_cubic": "867421032453417371319152256919238352131621/53747712000000000000000000000000000",
+            "funded_source": "667513641904419317283810341801793647868379/26873856000000000000000000000000000",
+            "raw_reading": [
+              "9994506266107858849620138337/87071293440000000000000000000000",
+              "15991242157834785091382366719/139314069504000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "9994506266107858849620138337/403107840000000000000",
+              "15991242157834785091382366719/644972544000000000000"
+            ],
+            "odd_residue": [
+              "-955522398461583767112057670387/10077696000000000000000000",
+              "-954518271517492142420014551637/10077696000000000000000000"
+            ],
+            "even_residue": [
+              "4000490188230121710724930882715056394863/80621568000000000000000000000000000",
+              "4004506696006488209493103357715056394863/80621568000000000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "83924065086401167112563169695883/3359232000000000000000000",
+              "41962283574936606462454595627629/1679616000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "62704419246921502298817373634003/2519424000000000000000000",
+              "250818179051158055007615516095387/10077696000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 134,
+            "both_positive": 134,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "175827350274778668746873/17694720000000000000000000000",
+              "14066467123981022604403/1415577600000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "33958887163745649276019/5314410000000000000000000000",
+              "16979873868280821044729/2657205000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-1206456697170854218156691/358318080000000000000",
+              "-47198445294793982524021/14332723200000000000"
+            ],
+            "odd_residue": [
+              "-689983904017625403841993627/223948800000000000000000",
+              "-656864448016369585021786127/223948800000000000000000"
+            ],
+            "even_residue": [
+              "-31012455864850388687959050750391435147/80621568000000000000000000000000000",
+              "-25050953784624341300321700750391435147/80621568000000000000000000000000000"
+            ],
+            "funded_source": [
+              "1992402367527287598183931470391435147/80621568000000000000000000000000000",
+              "1992402367527287598183931470391435147/80621568000000000000000000000000000"
+            ]
+          },
+          "old_absolute_allowance": "4543029978607180874850673391/1843200000000000000000",
+          "retained_funded_value_enclosure": [
+            "90009456097864683922902960663883/4031078400000000000000000",
+            "109880870049681311394438214699867/4031078400000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "1800189121957293678458059213277660000000000/2002540925713257951851431025405380943605137"
+        },
+        {
+          "head": 1,
+          "raw": {
+            "head": "1",
+            "base_cubic": "1/8",
+            "funded_source": "1/2",
+            "raw_reading": [
+              "1",
+              "1"
+            ],
+            "half_head_times_reading": [
+              "1/2",
+              "1/2"
+            ],
+            "odd_residue": [
+              "0",
+              "0"
+            ],
+            "even_residue": [
+              "0",
+              "0"
+            ],
+            "after_turning_odd_part": [
+              "1/2",
+              "1/2"
+            ],
+            "after_dropping_odd_part": [
+              "1/2",
+              "1/2"
+            ]
+          },
+          "passed": {
+            "head": "1",
+            "base_cubic": "1/8",
+            "funded_source": "1/2",
+            "raw_reading": [
+              "1",
+              "1"
+            ],
+            "half_head_times_reading": [
+              "1/2",
+              "1/2"
+            ],
+            "odd_residue": [
+              "0",
+              "0"
+            ],
+            "even_residue": [
+              "0",
+              "0"
+            ],
+            "after_turning_odd_part": [
+              "1/2",
+              "1/2"
+            ],
+            "after_dropping_odd_part": [
+              "1/2",
+              "1/2"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 1,
+            "both_positive": 1,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "1",
+              "1"
+            ],
+            "single_nine_at_head": [
+              "1",
+              "1"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "1/2",
+              "1/2"
+            ],
+            "odd_residue": [
+              "0",
+              "0"
+            ],
+            "even_residue": [
+              "0",
+              "0"
+            ],
+            "funded_source": [
+              "1/2",
+              "1/2"
+            ]
+          },
+          "old_absolute_allowance": "0",
+          "retained_funded_value_enclosure": [
+            "1/2",
+            "1/2"
+          ],
+          "auditable_paid_fraction_lower": "1",
+          "even_only_fourth_window": {
+            "root": 1,
+            "length": 1,
+            "old_allowance": "15/2",
+            "retained_funded_lower": "3/2"
+          }
+        },
+        {
+          "head": 4096,
+          "raw": {
+            "head": "4096",
+            "base_cubic": "3863410861295/549755813888",
+            "funded_source": "2172115503889/274877906944",
+            "raw_reading": [
+              "19262304896407762361/5000000000000000000000",
+              "1540984391712620989/400000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "19262304896407762361/2441406250000000000",
+              "1540984391712620989/195312500000000000"
+            ],
+            "odd_residue": [
+              "-11846924857269066740883/160000000000000000000000",
+              "-473876994290762661771/6400000000000000000000"
+            ],
+            "even_residue": [
+              "1619347275069048093416383/26214400000000000000000000",
+              "40483681876726202738062759/655360000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "25721365268110344945547/3200000000000000000000",
+              "643034131702758623786131/80000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "50968853541929927229323/6400000000000000000000",
+              "1274221338548248180831379/160000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "4096",
+            "base_cubic": "213289455473807/549755813888",
+            "funded_source": "177043579935601/274877906944",
+            "raw_reading": [
+              "4068091555529558488973381/12960000000000000000000000",
+              "4068091555529558488984169/12960000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "4068091555529558488973381/6328125000000000000000",
+              "4068091555529558488984169/6328125000000000000000"
+            ],
+            "odd_residue": [
+              "-31316368374136284389640799/12960000000000000000000000",
+              "-31316368374136284345453151/12960000000000000000000000"
+            ],
+            "even_residue": [
+              "63409410795249478106822037623/53084160000000000000000000000",
+              "63409410795249478197318340727/53084160000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "1399014040412134725688414069/2160000000000000000000000",
+              "1399014040412134725699460981/2160000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "8362767874098672069785031263/12960000000000000000000000",
+              "8362767874098672069807125087/12960000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 17,
+            "both_positive": 17,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "16061985099525593434117/160000000000000000000000",
+              "16061985099525593434211/160000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "6101430484620927160159/101250000000000000000000",
+              "48811443876967417281629/810000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "8321315715248153338577/1054687500000000000000",
+              "332852628609926133679/42187500000000000000"
+            ],
+            "odd_residue": [
+              "-319866971146264813267841/4320000000000000000000000",
+              "-12794678845850591417257/172800000000000000000000"
+            ],
+            "even_residue": [
+              "43722376426864297599495461/707788800000000000000000000",
+              "1093059410671607496996366493/17694720000000000000000000000"
+            ],
+            "funded_source": [
+              "2172115503889/274877906944",
+              "2172115503889/274877906944"
+            ]
+          },
+          "old_absolute_allowance": "240",
+          "retained_funded_value_enclosure": [
+            "2549341555529558488973381/6328125000000000000000",
+            "5586841555529558488984169/6328125000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "21385426967447698577070015643648/34190487801512911319732666015625",
+          "even_only_fourth_window": {
+            "root": 8,
+            "length": 64,
+            "old_allowance": "30720",
+            "retained_funded_lower": "141506450766602319533915351833649/2742187500000000000000000000"
+          }
+        },
+        {
+          "head": 531441,
+          "raw": {
+            "head": "531441",
+            "base_cubic": "13765411612488143537/1200757082375992968",
+            "funded_source": "3727109573601063395/300189270593998242",
+            "raw_reading": [
+              "-17960606554656970442519/88573500000000000000000000",
+              "20082782203922903015411/70858800000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-53881819663970911327557/1000000000000000000000",
+              "60248346611768709046233/800000000000000000000"
+            ],
+            "odd_residue": [
+              "-6205246221719253554036358624035639/47071589413500000000000000000000",
+              "4765858519046921118502445929708691/37657271530800000000000000000000"
+            ],
+            "even_residue": [
+              "-7644525920824697120714175101990949361193/120075708237599296800000000000000000000",
+              "9835406685497289606156909390548372077397/150094635296999121000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "-13391463207084863355507337789126073/75314543061600000000000000000000",
+              "19748379102727635662109075872106917/94143178827000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-3859746168991021118502445929708691/75314543061600000000000000000000",
+              "7337886659289128554036358624035639/94143178827000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "531441",
+            "base_cubic": "9509594556574991816501/1200757082375992968",
+            "funded_source": "1897186847949652236157/150094635296999121",
+            "raw_reading": [
+              "32069823817970207342685801899/680244480000000000000000000000",
+              "16266307259975616397421226379/340122240000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "32069823817970207342685801899/2560000000000000000000000",
+              "16266307259975616397421226379/1280000000000000000000000"
+            ],
+            "odd_residue": [
+              "-27485193051797593979262081348546807527/120503268898560000000000000000000000",
+              "8041697382137474161980016643846677433/60251634449280000000000000000000000"
+            ],
+            "even_residue": [
+              "-12555835751348780518030466075667566305012859/192121133180158874880000000000000000000000",
+              "44350730129986662826439059321859191816869221/384242266360317749760000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "1499195083702262937514059950068459967701/120503268898560000000000000000000000",
+              "3129095930852743501937786244045640422581/241006537797120000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "1515278478466537885838019983356153322567/120503268898560000000000000000000000",
+              "3074125544749148313979262081348546807527/241006537797120000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 37,
+            "both_positive": 37,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "5736861145174360072017483851/680244480000000000000000000000",
+              "3082888995370931879058399379/340122240000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "341144194263659574565609/59049000000000000000000000",
+              "931016891639818874478553/147622500000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-274457297975385676611176187/2560000000000000000000000",
+              "329314548793280012560575867/2560000000000000000000000"
+            ],
+            "odd_residue": [
+              "-28737842003850838797500351119544992649/120503268898560000000000000000000000",
+              "28103158937199697278375100017081568009/120503268898560000000000000000000000"
+            ],
+            "even_residue": [
+              "-44953378487552241611310824584533536752812907/384242266360317749760000000000000000000000",
+              "45669536655786272216787152297966331315131627/384242266360317749760000000000000000000000"
+            ],
+            "funded_source": [
+              "3727109573601063395/300189270593998242",
+              "3727109573601063395/300189270593998242"
+            ]
+          },
+          "old_absolute_allowance": "10935/4",
+          "retained_funded_value_enclosure": [
+            "25071423817970207342685801899/2560000000000000000000000",
+            "19765507259975616397421226379/1280000000000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "3763086214334735548130360940678140808183130779/4856798330751109724561920000000000000000000000",
+          "even_only_fourth_window": {
+            "root": 27,
+            "length": 729,
+            "old_allowance": "7971615/2",
+            "retained_funded_lower": "384627156118603677493209047581/26932246347615945359360"
+          }
+        },
+        {
+          "head": 16777216,
+          "raw": {
+            "head": "16777216",
+            "base_cubic": "17250372268834332551309/1180591620717411303424",
+            "funded_source": "9176287501147671943027/590295810358705651712",
+            "raw_reading": [
+              "-63986325419262969/10000000000000000000000",
+              "3371428013709821/2500000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-127972650838525938/2384185791015625",
+              "26971424109678568/2384185791015625"
+            ],
+            "odd_residue": [
+              "-16883738834173257565037119357039/167772160000000000000000000000",
+              "4922701109576742982879419350929/167772160000000000000000000000"
+            ],
+            "even_residue": [
+              "-47251465532563856531562847404745705291/1407374883553280000000000000000000000",
+              "44211372749266545766565682564239308981/1407374883553280000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "-3973728487936117899429156798353/83886080000000000000000000000",
+              "12381101469876382511508247232623/83886080000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-3024755866295492815978894245777/167772160000000000000000000000",
+              "7878464105579507457979375108207/167772160000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "16777216",
+            "base_cubic": "138694983178665018075877021/2361183241434822606848",
+            "funded_source": "109048128537224340355182947/1180591620717411303424",
+            "raw_reading": [
+              "59896639678102818680113/5467500000000000000000000",
+              "30700102337788420532426411/2799360000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "479173117424822549440904/5214214324951171875",
+              "30700102337788420532426411/333709716796875000000"
+            ],
+            "odd_residue": [
+              "-511424002917673365087437832168192601/733835427840000000000000000000000",
+              "-366188093195916187910663347772897881/733835427840000000000000000000000"
+            ],
+            "even_residue": [
+              "788425302051470143509593923006899007854199/6155857740662046720000000000000000000000",
+              "1397588859141075158770847850004021233129079/6155857740662046720000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "11373769195835815147800949032438829939/122305904640000000000000000000000",
+              "11410078173266254442095142653537653619/122305904640000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "67876427081818974698895030846860081753/733835427840000000000000000000000",
+              "67949045036679853287483418089057729113/733835427840000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 56,
+            "both_positive": 56,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "4211830248474526284551/2560000000000000000000000",
+              "132464380976454847181/80000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "444829698053954174041/455625000000000000000000",
+              "7181334362410738416049/7290000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-6622610766373090678033/74157714843750000000",
+              "3481068610199022081553/74157714843750000000"
+            ],
+            "odd_residue": [
+              "-7007822562469278811402071654672733/40768634880000000000000000000000",
+              "4101290395392325767937750553188003/40768634880000000000000000000000"
+            ],
+            "even_residue": [
+              "-23666869730976003024718822350981085375537/341992096703447040000000000000000000000",
+              "22928127184634756508824511294738031072207/341992096703447040000000000000000000000"
+            ],
+            "funded_source": [
+              "9176287501147671943027/590295810358705651712",
+              "9176287501147671943027/590295810358705651712"
+            ]
+          },
+          "old_absolute_allowance": "15360",
+          "retained_funded_value_enclosure": [
+            "399082785393572549440904/5214214324951171875",
+            "35825883587788420532426411/333709716796875000000"
+          ],
+          "auditable_paid_fraction_lower": "471153792408216654975250299150785621100855296/568600313927911835567438852999210357666015625",
+          "even_only_fourth_window": {
+            "root": 64,
+            "length": 4096,
+            "old_allowance": "125829120",
+            "retained_funded_lower": "915098951789786369841039551/1459522521035440128"
+          }
+        },
+        {
+          "head": 244140625,
+          "raw": {
+            "head": "244140625",
+            "base_cubic": "1983196095436378027669775113/116415321826934814453125000",
+            "funded_source": "260664413554265907694372628/14551915228366851806640625",
+            "raw_reading": [
+              "-313101682910319/312500000000000000000",
+              "-3499439169495089/5000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-313101682910319/2560000000000",
+              "-3499439169495089/40960000000000"
+            ],
+            "odd_residue": [
+              "-1227004997019693217011719/7812500000000000000000",
+              "-10414625380354550700703129/125000000000000000000000"
+            ],
+            "even_residue": [
+              "-1222610208698135363818288037595287/61035156250000000000000000000000",
+              "64234056963088658466868090789943/3814697265625000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "20299619871667903730546891/250000000000000000000000",
+              "2996998974221845377812501/15625000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-529630889041197670859367/250000000000000000000000",
+              "542988980182458943789063/15625000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "244140625",
+            "base_cubic": "1546475994124321614281120350933/5820766091346740722656250",
+            "funded_source": "2413264022095480222278042501259/5820766091346740722656250",
+            "raw_reading": [
+              "683067565107002204627489159/201553920000000000000000000000",
+              "683164605381977662653497549/201553920000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "683067565107002204627489159/1651129712640000000000",
+              "683164605381977662653497549/1651129712640000000000"
+            ],
+            "odd_residue": [
+              "-8136311802222116280070844070331681/5038848000000000000000000000000",
+              "-7544024967655111726796979324237931/5038848000000000000000000000000"
+            ],
+            "even_residue": [
+              "323508438870637674988539998076954404064863/492075000000000000000000000000000000000",
+              "352428694464729694191365425132313290783613/492075000000000000000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "1399960647755493401437929722839218283/3359232000000000000000000000000",
+              "1400552934590060405991203587585312033/3359232000000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "4184793893331169980860195209869178987/10077696000000000000000000000000",
+              "4185386180165736985413469074615272737/10077696000000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 73,
+            "both_positive": 73,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "4419253628411130504159/10240000000000000000000000",
+              "552947607432689991539/1280000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "50280233003922500736053/196830000000000000000000000",
+              "25174412692783719081109/98415000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-2970506806654750402097/20384317440000000000",
+              "-252829812594989897411/4076863488000000000"
+            ],
+            "odd_residue": [
+              "-12683972356533557342088794256281/62208000000000000000000000000",
+              "-2269191206144147460240649725031/62208000000000000000000000000"
+            ],
+            "even_residue": [
+              "-1319824311302090746799379797166674425193/30375000000000000000000000000000000000",
+              "1222846867992198775136202363783032606057/30375000000000000000000000000000000000"
+            ],
+            "funded_source": [
+              "260664413554265907694372628/14551915228366851806640625",
+              "260664413554265907694372628/14551915228366851806640625"
+            ]
+          },
+          "old_absolute_allowance": "234375/4",
+          "retained_funded_value_enclosure": [
+            "586321683507002204627489159/1651129712640000000000",
+            "779910486981977662653497549/1651129712640000000000"
+          ],
+          "auditable_paid_fraction_lower": "174737478347719372697916376292705535888671875/204012130883940396546700679233816550820544512",
+          "even_only_fourth_window": {
+            "root": 125,
+            "length": 15625,
+            "old_allowance": "3662109375/2",
+            "retained_funded_lower": "335785823117962180805280384603221520527/30259208432307973772034441216"
+          }
+        },
+        {
+          "head": 2176782336,
+          "raw": {
+            "head": "2176782336",
+            "base_cubic": "1570046916352444015543636136471/82515398387924284369375592448",
+            "funded_source": "821115274476183050151972625897/41257699193962142184687796224",
+            "raw_reading": [
+              "-35459166798174989399/885735000000000000000000000",
+              "-4208109980535618677/221433750000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-106377500394524968197/2441406250000000000",
+              "-12624329941606856031/610351562500000000"
+            ],
+            "odd_residue": [
+              "-993137989118154929991103424403041293/15062908612320000000000000000000000",
+              "-303602559247794170822708184340589581/15062908612320000000000000000000000"
+            ],
+            "even_residue": [
+              "-2009634771631352790655451620293182290186978801/98366020188241343938560000000000000000000000",
+              "241818044050599315102517591758454345114860047/98366020188241343938560000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "147824201424552623530930559947336717/7531454306160000000000000000000000",
+              "664975773827323192907226989994175501/7531454306160000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-7954156398688923760847064445916147/15062908612320000000000000000000000",
+              "336813558536491455823350555585309709/15062908612320000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "2176782336",
+            "base_cubic": "73877257252423260755734261457377751/82515398387924284369375592448",
+            "funded_source": "57225750430254430929205481821763113/41257699193962142184687796224",
+            "raw_reading": [
+              "55399822201758844999049441203/43535646720000000000000000000000",
+              "27700661903577927970927593947/21767823360000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "55399822201758844999049441203/40000000000000000000000",
+              "27700661903577927970927593947/20000000000000000000000"
+            ],
+            "odd_residue": [
+              "-65468669432155132261880174515585288327/15062908612320000000000000000000000",
+              "-64337742188808016103181935682973196671/15062908612320000000000000000000000"
+            ],
+            "even_residue": [
+              "223520127934972665570569179404521052219898564559/98366020188241343938560000000000000000000000",
+              "227212801604901429526760927972229945005089247183/98366020188241343938560000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "10495651211048020432491828871768028237347/7531454306160000000000000000000000",
+              "10496499406480530769610852550892487306089/7531454306160000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "20926964679907232848880475807853083278023/15062908612320000000000000000000000",
+              "20927530143528906406959824927269389323851/15062908612320000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 89,
+            "both_positive": 89,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "6014270909517580493684635699/43535646720000000000000000000000",
+              "3007785924061012170157001891/21767823360000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "6041444165172088776409/70858800000000000000000000",
+              "75539785649227784402351/885735000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-475382401385844268479639/8000000000000000000000",
+              "-193325046587822653389069/40000000000000000000000"
+            ],
+            "odd_residue": [
+              "-294129908989975433081932767636743249/3012581722464000000000000000000000",
+              "173908996583928064595852229440085371/15062908612320000000000000000000000"
+            ],
+            "even_residue": [
+              "-3568792851586908916431785433193118610693850609/98366020188241343938560000000000000000000000",
+              "360195224801231088175770280931678133124346371/19673204037648268787712000000000000000000000"
+            ],
+            "funded_source": [
+              "821115274476183050151972625897/41257699193962142184687796224",
+              "821115274476183050151972625897/41257699193962142184687796224"
+            ]
+          },
+          "old_absolute_allowance": "174960",
+          "retained_funded_value_enclosure": [
+            "48401422201758844999049441203/40000000000000000000000",
+            "31199861903577927970927593947/20000000000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "119026381835945083653753452019895103944002479112192/136436821056018903086675362162025244235992431640625",
+          "even_only_fourth_window": {
+            "root": 216,
+            "length": 46656,
+            "old_allowance": "16325867520",
+            "retained_funded_lower": "6073688471684794665816919413842827/53791858640441659359232"
+          }
+        },
+        {
+          "head": 13841287201,
+          "raw": {
+            "head": "13841287201",
+            "base_cubic": "7851192614701721215638530011460/378818692265664781682717625943",
+            "funded_source": "16387818640350233942234928128599/757637384531329563365435251886",
+            "raw_reading": [
+              "-977037006494584409632813/34603218002500000000000000000000",
+              "-144152874093805596636143/5536514880400000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-977037006494584409632813/5000000000000000000000",
+              "-144152874093805596636143/800000000000000000000"
+            ],
+            "odd_residue": [
+              "-119270008610599778330428736331398048405340013/478953078451416036002500000000000000000000",
+              "-16751074054256601217853833068596448552295343/76632492552226565760400000000000000000000"
+            ],
+            "even_residue": [
+              "5081762696217464322753098685693011197277215748257849/303054953812531825346174100754400000000000000000000",
+              "60582127630844550902655790341890946689887311712867659/1894093461328323908413588129715000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "39387311091087376773695199205789345656886029/153264985104453131520800000000000000000000",
+              "289898081633784166992121833994194145216020039/957906156902832072005000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "5885162982574174337987533068596448552295343/153264985104453131520800000000000000000000",
+              "51358064412584610331264361331398048405340013/957906156902832072005000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "13841287201",
+            "base_cubic": "939094902380322110592703022722191766/378818692265664781682717625943",
+            "funded_source": "1454052072430122265459467896206419001/378818692265664781682717625943",
+            "raw_reading": [
+              "29628644834249787901930954046946390589/53563501309581656064000000000000000000000",
+              "148144208802889503520537157855686298033/267817506547908280320000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "29628644834249787901930954046946390589/7739670528000000000000000000000",
+              "148144208802889503520537157855686298033/38698352640000000000000000000000"
+            ],
+            "odd_residue": [
+              "-13437981034020247116320911121914094033076851475419527811/741387805117059314743027236864000000000000000000000",
+              "-67001268227945715109504119121142242379117125515730826767/3706939025585296573715136184320000000000000000000000"
+            ],
+            "even_residue": [
+              "115342388582559811168238989642508802203551597011542230955889329881/14659659339920336285586419282285826539520000000000000000000000",
+              "23143077090600333172561433618610189408286656996586039485122549573/2931931867984067257117283856457165307904000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "9549885005756366886756692627576054242379117125515730826767/2471292683723531049143424122880000000000000000000000",
+              "1910014728539704481445758612812896494033076851475419527811/494258536744706209828684824576000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "28515652480813209230051069644485878242379117125515730826767/7413878051170593147430272368640000000000000000000000",
+              "5703168223551072950104634016194861294033076851475419527811/1482775610234118629486054473728000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 103,
+            "both_positive": 103,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "37011967510879961196558154770743/647930427146240000000000000000000000",
+              "37014012891861986088204788459003/647930427146240000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "92204604231187866641483365752701/2724380559772830000000000000000000000",
+              "92211647140196911317866567282393/2724380559772830000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-666118147215104888045821017102491/3224862720000000000000000000000",
+              "-545135433503311055256861195994981/3224862720000000000000000000000"
+            ],
+            "odd_residue": [
+              "-83814395471031328444017068954973911217322898195372891/308911585465441381142928015360000000000000000000000",
+              "-60636378202363329178299906567417977215173420762121381/308911585465441381142928015360000000000000000000000"
+            ],
+            "even_residue": [
+              "6864139711296717031018568917558720707327070255734048063392083/1221638278326694690465534940190485544960000000000000000000000",
+              "52694653106349767967425477180546799418120251467977256231524013/1221638278326694690465534940190485544960000000000000000000000"
+            ],
+            "funded_source": [
+              "16387818640350233942234928128599/757637384531329563365435251886",
+              "16387818640350233942234928128599/757637384531329563365435251886"
+            ]
+          },
+          "old_absolute_allowance": "1764735/4",
+          "retained_funded_value_enclosure": [
+            "26214027966942267901930954046946390589/7739670528000000000000000000000",
+            "165217293139427103520537157855686298033/38698352640000000000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "9930363793452633182985440068180386687995758655003413960514877450427/11253883971164738637413236054830984146458902528000000000000000000000",
+          "even_only_fourth_window": {
+            "root": 343,
+            "length": 117649,
+            "old_allowance": "207619308015/2",
+            "retained_funded_lower": "1452517243387838544859916061599494218420587/1822601240015887937683272499200"
+          }
+        },
+        {
+          "head": 68719476736,
+          "raw": {
+            "head": "68719476736",
+            "base_cubic": "3596862619235683368077430466053047/162259276829213363391578010288128",
+            "funded_source": "1872793279423941946216261704711241/81129638414606681695789005144064",
+            "raw_reading": [
+              "-103362694972040357/81920000000000000000000000",
+              "-76807147024721061/81920000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-103362694972040357/2384185791015625",
+              "-76807147024721061/2384185791015625"
+            ],
+            "odd_residue": [
+              "688324218268205187866240500156393792403/5629499534213120000000000000000000000",
+              "813729247828863638217938035476658070419/5629499534213120000000000000000000000"
+            ],
+            "even_residue": [
+              "-38655947249874457184631763594126544374609024208721/193428131138340667952988160000000000000000000000",
+              "-36501505247006692014685441144989184533985937149777/193428131138340667952988160000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "-904407122017459571131330795398692283283/2814749767106560000000000000000000000",
+              "-810353349846965733367557643908494074771/2814749767106560000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-995084996206055504044723555320726496147/5629499534213120000000000000000000000",
+              "-932382481425726278868874787660594357139/5629499534213120000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "68719476736",
+            "base_cubic": "1930847438090575360094723040053004588311/324518553658426726783156020576256",
+            "funded_source": "1489849274749309347141088497699289836265/162259276829213363391578010288128",
+            "raw_reading": [
+              "7744761213443462086628823347/29023764480000000000000000000000",
+              "1548955420072323452454827701/5804752896000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "7744761213443462086628823347/844702720642089843750",
+              "1548955420072323452454827701/168940544128417968750"
+            ],
+            "odd_residue": [
+              "-57750928823512984576873366358203057945180336363/1994497907974503137280000000000000000000000",
+              "-11535180994740177970456063061262077333000466479/398899581594900627456000000000000000000000"
+            ],
+            "even_residue": [
+              "214565379080999658032313930957615385115100994984503723761/13706085258705453722347197431808000000000000000000000",
+              "1074115795330450140511094779495026613777276895326991540917/68530426293527268611735987159040000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "613406323598981055575949698593156443596250604901/66483263599150104576000000000000000000000",
+              "3067050373957358301560896755728755385801297525497/332416317995750522880000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "3668902760599146155485242128497676584244503162927/398899581594900627456000000000000000000000",
+              "18344551314920636824788507168014329256862604816619/1994497907974503137280000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 118,
+            "both_positive": 118,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "4236243901713647702369/163840000000000000000000000",
+              "2118160256730683451501/81920000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "462756858183395017901473813/29023764480000000000000000000000",
+              "462767955359377019646115861/29023764480000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-21593037880276729727/417137145996093750",
+              "-248236941886916199157/10428428649902343750"
+            ],
+            "odd_residue": [
+              "51929917161565760221811168944889784395129/492468619252963737600000000000000000000",
+              "1986743001315145517100819233807239814113489/12311715481324093440000000000000000000000"
+            ],
+            "even_residue": [
+              "-88098801943104702205008584244951172185763189385369851/423027322799551040813185105920000000000000000000000",
+              "-3050821866702974843755925700779797077493359644226611/16921092911982041632527404236800000000000000000000"
+            ],
+            "funded_source": [
+              "1872793279423941946216261704711241/81129638414606681695789005144064",
+              "1872793279423941946216261704711241/81129638414606681695789005144064"
+            ]
+          },
+          "old_absolute_allowance": "983040",
+          "retained_funded_value_enclosure": [
+            "6914384650943462086628823347/844702720642089843750",
+            "1715030732572323452454827701/168940544128417968750"
+          ],
+          "auditable_paid_fraction_lower": "560961526590549513650886230357907019699193029977994541662208/629239867863693005843168268446769944727029693126678466796875",
+          "even_only_fourth_window": {
+            "root": 512,
+            "length": 262144,
+            "old_allowance": "515396075520",
+            "retained_funded_lower": "70232817656557515146643534338119/16365173467735130112"
+          }
+        },
+        {
+          "head": 282429536481,
+          "raw": {
+            "head": "282429536481",
+            "base_cubic": "4228840537657234010850224165653484513/180227196359513395294721182998181128",
+            "funded_source": "1100100741240130742793559581628930949/45056799089878348823680295749545282",
+            "raw_reading": [
+              "-803706226003353454222099/88259230150312500000000000000000",
+              "-12692165691228062332418083/1412147682405000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "-803706226003353454222099/625000000000000000000",
+              "-12692165691228062332418083/10000000000000000000000"
+            ],
+            "odd_residue": [
+              "-7245506708205895612690735154902544989012204913/8309004487174219777433437500000000000000000",
+              "-111484214431022680440936340278163400186351852321/132944071794787516438935000000000000000000000"
+            ],
+            "even_residue": [
+              "-102516073448542654509264723027825252338169211979812617932797/225283995449391744118401478747726410000000000000000000000",
+              "-6171925850784866777767616811680464420828101185108857206541/14080249715586984007400092421732900625000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "108467220346898232988540235834490200559055556963/265888143589575032877870000000000000000000000",
+              "7612431190482073817180406402207634967036614739/16618008974348439554866875000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-114501208515147127893332444721836599813648147679/265888143589575032877870000000000000000000000",
+              "-6878582225929717408201063907597455010987795087/16618008974348439554866875000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "282429536481",
+            "base_cubic": "769718961768479857507958703925475578872899/60075732119837798431573727666060376",
+            "funded_source": "297482234867659425901143716254109536391537/15018933029959449607893431916515094",
+            "raw_reading": [
+              "6472979654100717183818806721932343/46273255257047040000000000000000000000",
+              "161824719391385677243991578075583/1156831381426176000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "6472979654100717183818806721932343/327680000000000000000000000",
+              "161824719391385677243991578075583/8192000000000000000000000"
+            ],
+            "odd_residue": [
+              "-130061537546554766386941733301269954895297231909268353/1452103781523865779557007360000000000000000000000",
+              "-3249517344290146130309404665220385126858923704398393/36302594538096644488925184000000000000000000000"
+            ],
+            "even_residue": [
+              "2236635611676902692693804211319523734850048615935344787853825099/61517549690713905593931497130045825024000000000000000000000",
+              "89533922476734701968102828769487852892265002284571070756896857379/2460701987628556223757259885201833000960000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "1447240543573141990348923491985549155380576771113195179/72605189076193288977850368000000000000000000000",
+              "57889864274250526377480636319499329864685891695727805059/2904207563047731559114014720000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "1440741508884561698088304682655108385126858923704398393/72605189076193288977850368000000000000000000000",
+              "57629741199157416844706752852896789954895297231909268353/2904207563047731559114014720000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 131,
+            "both_positive": 131,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "1173918972917288675181464805756187/92546510514094080000000000000000000000",
+              "11739345981835834353602719810117/925465105140940800000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "4646150278595045814600265883/564859072962000000000000000000000",
+              "5807785811045133884267466337/706073841202500000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "-1361228531019317954616056539/1048576000000000000000000",
+              "-823772998490940922996707831637/655360000000000000000000000"
+            ],
+            "odd_residue": [
+              "-12497163626268775106551639187442181151353180189193/13940196302629111483747270656000000000000000000",
+              "-7092966652597223141755229810105444389415479154317319/8712622689143194677342044160000000000000000000000"
+            ],
+            "even_residue": [
+              "-6899188551416715420634153223474581265832592479758925174518156683/14764211925771337342543559311210998005760000000000000000000000",
+              "-10065661054431309522639161969282606611097459239722847373650501/23622739081234139748069694897937596809216000000000000000000"
+            ],
+            "funded_source": [
+              "1100100741240130742793559581628930949/45056799089878348823680295749545282",
+              "1100100741240130742793559581628930949/45056799089878348823680295749545282"
+            ]
+          },
+          "old_absolute_allowance": "7971615/4",
+          "retained_funded_value_enclosure": [
+            "5819944953300717183818806721932343/327680000000000000000000000",
+            "178150586911385677243991578075583/8192000000000000000000000"
+          ],
+          "auditable_paid_fraction_lower": "43704681745836973892424935827934897429056366037715428929243103142621/48739489360717320339643386471073306442389422080000000000000000000000",
+          "even_only_fourth_window": {
+            "root": 729,
+            "length": 531441,
+            "old_allowance": "4236443047215/2",
+            "retained_funded_lower": "47377219225034016802298589428550366824087/2509663888389209991657029632"
+          }
+        },
+        {
+          "head": 1000000000000,
+          "raw": {
+            "head": "1000000000000",
+            "base_cubic": "49240738695697033376759107809608564853/2000000000000000000000000000000000000",
+            "funded_source": "25552188988925967245015789690391435147/1000000000000000000000000000000000000",
+            "raw_reading": [
+              "4917410338179/625000000000000000000",
+              "80542247605547/10000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "4917410338179/1250000000",
+              "80542247605547/20000000000"
+            ],
+            "odd_residue": [
+              "1897197954623302899751290041/400000000000000000000000",
+              "1971745242410622899751290041/400000000000000000000000"
+            ],
+            "even_residue": [
+              "-927802914738133216623240892190391435147/1000000000000000000000000000000000000",
+              "-834618805003983216623240892190391435147/1000000000000000000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "-1166322766355152899751290041/200000000000000000000000",
+              "-1110412300514662899751290041/200000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "-360900290299682899751290041/400000000000000000000000",
+              "-323626646406022899751290041/400000000000000000000000"
+            ]
+          },
+          "passed": {
+            "head": "1000000000000",
+            "base_cubic": "50755040078937730447647398158315979705090383/2000000000000000000000000000000000000",
+            "funded_source": "39116710885229846497690427186024520294909617/1000000000000000000000000000000000000",
+            "raw_reading": [
+              "27182724233865213979589646589/348285173760000000000000000000000",
+              "27182833389319275118107288799/348285173760000000000000000000000"
+            ],
+            "half_head_times_reading": [
+              "27182724233865213979589646589/696570347520000000000",
+              "27182833389319275118107288799/696570347520000000000"
+            ],
+            "odd_residue": [
+              "-345263077944687468013475911097185517/2125764000000000000000000000000",
+              "-344596845925271339365757344202654267/2125764000000000000000000000000"
+            ],
+            "even_residue": [
+              "36781302359120956892535723268104523577938231903/531441000000000000000000000000000000000000",
+              "36864581361547972973500544129920929827938231903/531441000000000000000000000000000000000000"
+            ],
+            "after_turning_odd_part": [
+              "55763078569060996384834862329298200481/1417176000000000000000000000000",
+              "55763744801080412513482580896192731731/1417176000000000000000000000000"
+            ],
+            "after_dropping_odd_part": [
+              "166600042015332446475773072299489292909/4251528000000000000000000000000",
+              "166600708247351862604420790866383824159/4251528000000000000000000000000"
+            ]
+          },
+          "single_clocks": {
+            "physical_sides_at_least_one": 142,
+            "both_positive": 142,
+            "both_negative": 0,
+            "sign_undecided_or_separate": 0,
+            "single_four_at_head": [
+              "888311275386429788499/131072000000000000000000000",
+              "555216428416592729827/81920000000000000000000000"
+            ],
+            "single_nine_at_head": [
+              "7099850419196993998153/1771470000000000000000000000",
+              "7100238747739475225743/1771470000000000000000000000"
+            ]
+          },
+          "four_reading_inverses": {
+            "half_head_times_reading": [
+              "11961441477468403863749/3095868211200000000",
+              "317122280036947401923779/77396705280000000000"
+            ],
+            "odd_residue": [
+              "217418260105671601105839814152643/47239200000000000000000000000",
+              "239496193577640967963815888371393/47239200000000000000000000000"
+            ],
+            "even_residue": [
+              "-58933974274516543776503274636309798853995203/59049000000000000000000000000000000000000",
+              "-45135265854535689490268228249591048853995203/59049000000000000000000000000000000000000"
+            ],
+            "funded_source": [
+              "25552188988925967245015789690391435147/1000000000000000000000000000000000000",
+              "25552188988925967245015789690391435147/1000000000000000000000000000000000000"
+            ]
+          },
+          "old_absolute_allowance": "3750000",
+          "retained_funded_value_enclosure": [
+            "24570585430665213979589646589/696570347520000000000",
+            "29794972192519275118107288799/696570347520000000000"
+          ],
+          "auditable_paid_fraction_lower": "18745869011432810958549229880523681640625000000000/20788223949557434852579098314168057090047061768097",
+          "even_only_fourth_window": {
+            "root": 1000,
+            "length": 1000000,
+            "old_allowance": "7500000000000",
+            "retained_funded_lower": "1423047652294504177279175712500905238264795/20171534816116039293490692096"
+          }
+        }
+      ],
+      "outer_sector": {
+        "head": 1000000000000,
+        "left_excluded": 1600000000000,
+        "right_included": 1666666666666,
+        "unsigned_minimum_marks": 13183894191,
+        "unsigned_cost_lower": "39551682573/250",
+        "entire_positive_source": "39116710885229846497690427186024520294909617/1000000000000000000000000000000000000",
+        "signed_sector": [
+          "-6509021630282371822996840876875967031953534957992776147/142657607172096000000000000000000000000000000000000",
+          "-6479096943486723312364934429787853977320394394027932397/142657607172096000000000000000000000000000000000000"
+        ],
+        "moments": [
+          "-1953169",
+          "-3182347697079483509",
+          "-5186097442879607052520176551245",
+          "-8453164528371368199028801021360207383705197"
+        ]
+      },
+      "consecutive_twelfth_windows": [
+        {
+          "left": 1,
+          "right": 4096,
+          "paid_integral": [
+            "4902701874667131731160881/1544952392578125000",
+            "4902701874667131731171669/1544952392578125000"
+          ]
+        },
+        {
+          "left": 4096,
+          "right": 531441,
+          "paid_integral": [
+            "1732110358514239138615512536816375147/207360000000000000000000000",
+            "35040639614876209770968003651580163/4147200000000000000000000"
+          ]
+        },
+        {
+          "left": 531441,
+          "right": 16777216,
+          "paid_integral": [
+            "219325696817628844189401867474109387951/111974400000000000000000000",
+            "10976117822903833095257594868047956409783/5598720000000000000000000000"
+          ]
+        },
+        {
+          "left": 16777216,
+          "right": 244140625,
+          "paid_integral": [
+            "51430162134390465892826043327669519691170023/403107840000000000000000000000",
+            "51436615432581282153739038989904684986583533/403107840000000000000000000000"
+          ]
+        },
+        {
+          "left": 244140625,
+          "right": 2176782336,
+          "paid_integral": [
+            "1516981666705404636927122388381801866620122643/403107840000000000000000000000",
+            "1517020391399999009377441374702828078859140889/403107840000000000000000000000"
+          ]
+        },
+        {
+          "left": 2176782336,
+          "right": 13841287201,
+          "paid_integral": [
+            "2500812453582882184617354220782299704103822731601/38698352640000000000000000000000",
+            "500165848890796015216412753143030994732003020381/7739670528000000000000000000000"
+          ]
+        },
+        {
+          "left": 13841287201,
+          "right": 68719476736,
+          "paid_integral": [
+            "694854160568500488151580116764848181676511958353/928760463360000000000000000000",
+            "138971137607152252677160709675508026720543945053/185752092672000000000000000000"
+          ]
+        },
+        {
+          "left": 68719476736,
+          "right": 282429536481,
+          "paid_integral": [
+            "372101950967298397901700659468223367251752403859021/58047528960000000000000000000000",
+            "46512810294578006456086830255892358478697348150841/7255941120000000000000000000000"
+          ]
+        },
+        {
+          "left": 282429536481,
+          "right": 1000000000000,
+          "paid_integral": [
+            "189200248937052611078080672661466165982943977437457/4353564672000000000000000000000",
+            "7568038615442047252709445627542237463037397707529497/174142586880000000000000000000000"
+          ]
+        }
+      ]
+    },
+    "critical_line_test": {
+      "zero_center_imaginary": "706736257/50000000",
+      "radius": "1/10000000",
+      "zeta_at_center_norm_upper": "1375981807/1000000000000000000",
+      "derivative_at_center_norm": [
+        "19646292531657347/25000000000000000",
+        "200126193437819791/250000000000000000"
+      ],
+      "derivative_at_zero_norm": [
+        "19614292531657347/25000000000000000",
+        "200446193437819791/250000000000000000"
+      ],
+      "seed_residue_norm": [
+        "1402730212457931/250000000000000000",
+        "5734025950720459/1000000000000000000"
+      ],
+      "seed_transform_at_zero": [
+        "2291269136888383091/250000000000000000",
+        "2291269136888425421/250000000000000000"
+      ],
+      "clocks": [
+        {
+          "prime": 2,
+          "phase_chord": [
+            "72820053779962903/100000000000000000",
+            "728201796691260067/1000000000000000000"
+          ],
+          "real_pole": [
+            "661120524226161147/100000000000000000",
+            "6611205242261733619/1000000000000000000"
+          ],
+          "oscillatory_residue": [
+            "7705173037647171/1000000000000000000",
+            "7874240203181817/1000000000000000000"
+          ],
+          "upper_bound_for_liminf": "412718754326505403/62500000000000000",
+          "lower_bound_for_limsup": "6618910415299258641/1000000000000000000"
+        },
+        {
+          "prime": 3,
+          "phase_chord": [
+            "356839078644578669/1000000000000000000",
+            "356841239859366959/1000000000000000000"
+          ],
+          "real_pole": [
+            "4171206094310446091/1000000000000000000",
+            "4171206094310523161/1000000000000000000"
+          ],
+          "oscillatory_residue": [
+            "15723857623751721/1000000000000000000",
+            "16068940578203049/1000000000000000000"
+          ],
+          "upper_bound_for_liminf": "51943527958584643/12500000000000000",
+          "lower_bound_for_limsup": "1046732487983549453/250000000000000000"
+        },
+        {
+          "prime": 577,
+          "phase_chord": [
+            "189144653500920689/100000000000000000",
+            "1891473789594002513/1000000000000000000"
+          ],
+          "real_pole": [
+            "90096177320973811/125000000000000000",
+            "360384709283901903/500000000000000000"
+          ],
+          "oscillatory_residue": [
+            "593285604135819/200000000000000000",
+            "757888981341541/250000000000000000"
+          ],
+          "upper_bound_for_liminf": "717802990547124711/1000000000000000000",
+          "lower_bound_for_limsup": "723735846588469583/1000000000000000000"
+        },
+        {
+          "prime": 2663,
+          "phase_chord": [
+            "1998136988939374291/1000000000000000000",
+            "1998163221442956709/1000000000000000000"
+          ],
+          "real_pole": [
+            "581008885959856267/1000000000000000000",
+            "581008885959867003/1000000000000000000"
+          ],
+          "oscillatory_residue": [
+            "561607859620181/200000000000000000",
+            "573937220767243/200000000000000000"
+          ],
+          "upper_bound_for_liminf": "289100423330883049/500000000000000000",
+          "lower_bound_for_limsup": "145954231314489293/250000000000000000"
+        },
+        {
+          "prime": 3727,
+          "phase_chord": [
+            "8008650857827997/1000000000000000000",
+            "8032968935631279/1000000000000000000"
+          ],
+          "real_pole": [
+            "278629349016188139/500000000000000000",
+            "22290347921295463/40000000000000000"
+          ],
+          "oscillatory_residue": [
+            "698486561418624993/1000000000000000000",
+            "357989507378497929/500000000000000000"
+          ],
+          "upper_bound_for_liminf": "-70613931693119209/500000000000000000",
+          "lower_bound_for_limsup": "1255745259451001271/1000000000000000000"
+        },
+        {
+          "prime": 4657,
+          "phase_chord": [
+            "6308662149538371/1000000000000000000",
+            "1582006157006757/250000000000000000"
+          ],
+          "real_pole": [
+            "67820114669488207/125000000000000000",
+            "542560917355915681/1000000000000000000"
+          ],
+          "oscillatory_residue": [
+            "886678099352011381/1000000000000000000",
+            "454456572154528807/500000000000000000"
+          ],
+          "upper_bound_for_liminf": "-3441171819960957/10000000000000000",
+          "lower_bound_for_limsup": "1429239016707917037/1000000000000000000"
+        },
+        {
+          "prime": 22063,
+          "phase_chord": [
+            "49283899892631/25000000000000000",
+            "2000174266533651/1000000000000000000"
+          ],
+          "real_pole": [
+            "458177894640695857/1000000000000000000",
+            "458177894640704323/1000000000000000000"
+          ],
+          "oscillatory_residue": [
+            "2805215997281867677/1000000000000000000",
+            "1454335483599233909/500000000000000000"
+          ],
+          "upper_bound_for_liminf": "-1173519051320581677/500000000000000000",
+          "lower_bound_for_limsup": "1631696945961281767/500000000000000000"
+        }
+      ],
+      "physical_witness": {
+        "prime": 3727,
+        "physical_side": 6945265,
+        "direct_rough_rows": 13890530,
+        "raw": [
+          "-12685547697329/25000000000000000000",
+          "-50742186567109/100000000000000000000"
+        ],
+        "genuine_shifted_input": "6945265/13890529",
+        "positive_shifted_contribution": "1/25885002655",
+        "single_clock": [
+          "-65668087165098060281699/129425013275000000000000000000",
+          "-262672326802024360134879/517700053100000000000000000000"
+        ]
+      }
+    }
+  },
+  "open": "Prove the retained signed inequality on all sufficiently late windows, or the cofinal joint-clock condition on the twelfth-power panels. The finite data, resonance obstruction and independent conditional statement leave the bare RH construction open."
+}

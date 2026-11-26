@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What a reflected remainder carries](../pal-rh/what-a-reflected-remainder-carries.md) isolates the odd and even parts of an actual return. [How far a negative run would have to travel](../pal-rh/how-far-a-negative-run-must-travel.md) proves the power-exponent law for signed runs and gives a prime clock with forced late sign reversals.
+
 [What the first omitted label sees](../pal-rh/what-the-first-omitted-label-sees.md) builds a rational positive average directly on the original half-rows, finds its sign reversal after one label changes, and derives a sufficient test using one pass at fourth powers.
 
 [How many square passes the sign needs](../pal-rh/how-many-square-passes-the-sign-needs.md) gives an exact four-row inverse and proves positivity through a growing interval. In the finite experiment all the original negative readings can be recovered from the transformed positive ones.

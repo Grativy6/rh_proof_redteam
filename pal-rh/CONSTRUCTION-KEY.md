@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Current local test.** At a fourth-power side and the next square-root-width endpoint, compare the known positive cubic source with differences of squared divider residues. Pay the early labels once. In parallel, follow a backward clock direction at each half-row and measure the deficit only where both directions fail together. On paper any one fixed power saving in negative-run length on arbitrarily late power panels suffices. [Localized cost](what-a-reflected-remainder-carries.md) · [Which runs would be forced](how-far-a-negative-run-must-travel.md)
+
 **First-pass fourth powers.** Examine the actual rational signs $S_1(j^4)$. Nonnegativity from some root onward suffices. The proof pays for every intervening side using only the corners of its tapers. Test failures on the same input and distinguish a finite violation from failure at unbounded roots. [Paper argument](what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [Stock-target deduction](PALRH/CubicFourth.lean)
 
 **Current sign test.** Form the two square rescalings and recover the original with four signed readings. Prove a complete nonnegative list at arbitrarily large heads with arbitrarily many doublings per pass. One pass covers 23 doublings in the recorded experiment. A rate of 19 doublings at unbounded heads already has a specified consequence in (4a). [Paper derivation](how-many-square-passes-the-sign-needs.md) · [Exact rational condition](PALRH/SquareSignRows.lean)

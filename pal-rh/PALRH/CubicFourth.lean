@@ -246,14 +246,16 @@ private theorem interpolation {a x b : ℝ} (ap : 0<a) (lo : a≤x) (hi : x≤b)
 def FourthSigns : Prop := ∃ B : ℕ, ∀ N j : ℕ, B≤j → 0<j → j^4≤2^N →
     0≤SquareSignRows.qReading N 1 ((j:ℚ)^4)
 
-theorem rh_of_fourth_signs (checks : FourthSigns) : RiemannHypothesis := by
+/-- A fixed square-root debt at the fourth powers is affordable in the same deduction. -/
+theorem rh_of_fourth_floor {A : ℝ} (an : 0≤A) (checks : ∃ B : ℕ, ∀ N j : ℕ, B≤j → 0<j →
+    j^4≤2^N → -(A/(j:ℝ)^2)≤reading N 1 ((j:ℝ)^4)) : RiemannHypothesis := by
   obtain ⟨B,sign⟩ := checks
   apply CubicGaps.rh_of_first_pass_floors
   intro e ep small
-  let C:=4*totalPrice+3*((B:ℝ)+1)^2+3
+  let C:=4*(totalPrice+A)+3*((B:ℝ)+1)^2+3
   have cn : 0<C := by dsimp [C];positivity [total_pos]
   have c3 : 3≤C := by dsimp [C];nlinarith [total_pos,sq_nonneg ((B:ℝ)+1)]
-  have cost : 4*totalPrice≤C := by dsimp [C];nlinarith [sq_nonneg ((B:ℝ)+1)]
+  have cost : 4*(totalPrice+A)≤C := by dsimp [C];nlinarith [sq_nonneg ((B:ℝ)+1)]
   refine ⟨C,cn.le,?_⟩
   intro N
   let K:=N+4
@@ -290,13 +292,8 @@ theorem rh_of_fourth_signs (checks : FourthSigns) : RiemannHypothesis := by
         _ ≤ (2:ℝ)^N*16 := mul_le_mul_of_nonneg_right (lo.trans hx.2) (by norm_num)
         _ = _ := by simp [K,pow_add];ring
       have at_root (i : ℕ) (above : B ≤ i) (ip : 0 < i) (within : (i:ℝ)^4≤(2:ℝ)^K) :
-          0≤reading K 1 ((i:ℝ)^4) := by
-        have pos : 0<(i:ℚ)^4 := by positivity
-        have rat : (i:ℚ)^4≤(2:ℚ)^K := by exact_mod_cast within
-        have cast := SquareSignRows.reading_cast K 1 _ pos rat
-        push_cast at cast
-        rw [←cast]
-        exact_mod_cast sign K i above ip (by exact_mod_cast within)
+          -(A/(i:ℝ)^2)≤reading K 1 ((i:ℝ)^4) :=
+        sign K i above ip (by exact_mod_cast within)
       have first:=at_root j active jp (lo.trans (hi.le.trans lasted))
       have last:=at_root (j+1) (by omega) (by omega) (by simpa using lasted)
       push_cast at last
@@ -304,11 +301,16 @@ theorem rh_of_fourth_signs (checks : FourthSigns) : RiemannHypothesis := by
       have bend:=pass_chord K jr lo hi.le tn tu same
       have lower:=neg_le_abs (defect (reading K 1) ((j:ℝ)^4) x ((j+1:ℝ)^4) t) |>.trans bend
       dsimp only [defect] at lower
-      have ratio : totalPrice/(j:ℝ)^2≤C/Real.sqrt x := by
+      have cmp : A/((j:ℝ)+1)^2≤A/(j:ℝ)^2 := div_le_div_of_nonneg_left an (sq_pos_of_pos jpos)
+        (pow_le_pow_left₀ jpos.le (by linarith) 2)
+      have last' : -(A/(j:ℝ)^2)≤reading K 1 (((j:ℝ)+1)^4) := by linarith
+      have ratio : (totalPrice+A)/(j:ℝ)^2≤C/Real.sqrt x := by
         apply (div_le_div_iff₀ (sq_pos_of_pos jpos) (Real.sqrt_pos.mpr xp)).mpr
-        nlinarith [mul_le_mul_of_nonneg_left four total_pos.le,
+        nlinarith [mul_le_mul_of_nonneg_left four (add_nonneg total_pos.le an),
           mul_le_mul_of_nonneg_right cost (sq_nonneg (j:ℝ))]
-      nlinarith [mul_nonneg (sub_nonneg.mpr tu) first,mul_nonneg tn last]
+      rw [add_div] at ratio
+      nlinarith [mul_le_mul_of_nonneg_left first (sub_nonneg.mpr tu),
+        mul_le_mul_of_nonneg_left last' tn]
     · have before : (j:ℝ)≤B := by exact_mod_cast (le_of_not_ge active)
       have sm := pow_le_pow_left₀ (show 0≤(j:ℝ)+1 by positivity)
         (by linarith : (j:ℝ)+1≤B+1) 2
@@ -320,6 +322,18 @@ theorem rh_of_fourth_signs (checks : FourthSigns) : RiemannHypothesis := by
   rw [div_eq_mul_inv] at floor
   linarith [mul_le_mul_of_nonneg_left exponent cn.le]
 
+theorem rh_of_fourth_signs (checks : FourthSigns) : RiemannHypothesis := by
+  apply rh_of_fourth_floor (A:=0) le_rfl
+  obtain ⟨B,sign⟩ := checks
+  refine ⟨B,?_⟩
+  intro N j late jp inside
+  have pos : 0<(j:ℚ)^4 := by positivity
+  have cast := SquareSignRows.reading_cast N 1 _ pos (by exact_mod_cast inside)
+  push_cast at cast
+  rw [zero_div,neg_zero,←cast]
+  exact_mod_cast sign N j late jp inside
+
+#print axioms PALRH.CubicFourth.rh_of_fourth_floor
 #print axioms PALRH.CubicFourth.rh_of_fourth_signs
 
 private theorem extend_sweep {p N K : ℕ} (pp : 2≤p) (nk : N≤K) {f : ℝ → ℝ} (quiet : Before f)
