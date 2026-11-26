@@ -1,0 +1,25 @@
+{
+  "challenge_module": "CountChallenge",
+  "solution_module": "CountSolution",
+  "theorem_names": [
+    "sameCount",
+    "inTopNinth",
+    "boardEightOverlap",
+    "riemannHypothesis"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

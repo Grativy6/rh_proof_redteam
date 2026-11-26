@@ -1,0 +1,250 @@
+{
+  "parent_public_research_commit": "2fca67e28f7efd866718fb38ae6f8708d5027297",
+  "parent_tree": "cd5e173141035a83f4e8c3c650c6e180ec61cd4c",
+  "contributors": "Christopher Daniel Pang supplied the countable-distinction and carried-path questions. Hearthline derived the adjacent-square counting law, exact finite-difference pricing, secondary term and finite-range comparison. Difference of squares, divisor counting and Newton interpolation are classical. The finite analytic range uses the cited finite-height theorem, the ordinate tail bound, explicit prime estimates and the prior 21-move prime-area argument.",
+  "paper_scope": "At every integer b>=4 the proper unequal factor pairs of 2b+1 biject with the common marked slots. Their count gives the exact union cardinality. Removing the entry prefix of the second trace costs (5 sqrt(2)/32) n^(5/4) at next order. The compressed reference uses two degree-twelve polynomial sums and one factor list. Every positive index through 48592007999 pays the actual two-trace comparison, by direct arithmetic and two uniform finite analytic bounds.",
+  "formal_scope": "Stock Lean identifies all overlaps with the proper unequal factorizations, proves a cardinality equality with the smaller divisors, proves the strict top-ninth bound and the exact singleton at board eight. The independent fixed specification also includes the earlier two-trace conditional implication to stock RH. The numerical positive range and the asymptotic expansion are paper results.",
+  "review": {
+    "kind": "author self-review, independent source-only target, native and exported kernel replay, integer and directed-log computation",
+    "count": "The trivial factor pair maps to zero and an equal factor pair has first offset zero. Every remaining pair gives two admissible positive offsets. Integer square roots provide an explicit left inverse, preventing twice counting a common slot.",
+    "next_term": "The polynomial extension of the second quotient cell is used only for interpolating finite differences and comparing the displaced mesh. A bounded derivative prices both the side shift and the remote upper endpoint. The omitted initial offsets alone have order sqrt(b), while overlaps have subpower multiplicity.",
+    "finite": "The reference is priced with the same exact nonnegative truncated bill. Finite prime inputs are summed directly at small k, with exact repeats through k=1023. The fourth-power index coverage is contiguous from one through floor(sqrt(2^71)). The raw bound includes every ordinate above the known finite height. The two uniform branches use decreasing envelopes from their respective first k.",
+    "true_scope": "An exact collision count or a finite run of payments alone does not discharge the universal two-trace premise. The same submission compared against bare stock RH reports an unequal statement."
+  },
+  "primary_sources": {
+    "finite_height": "https://arxiv.org/abs/2004.09765",
+    "raw_error_and_prime_cuts": "https://arxiv.org/pdf/2201.06184v2",
+    "relative_prime_bounds": "https://arxiv.org/abs/2206.12557",
+    "high_ordinate_tail": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3865
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.AdjacentSquares",
+      "exit": 0,
+      "seconds": 12.9,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.AdjacentSquares.overlap_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AdjacentSquares.in_top_ninth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AdjacentSquares.number_of_overlaps": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AdjacentSquares.board_eight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 346894554,
+        "sha256": "960c85f4a40f658a192ec5d1e2926de69fb84270688b9b25ae0ae67d017709d8"
+      },
+      "solution": {
+        "bytes": 448700372,
+        "sha256": "5689349e739977a33ab8af8d0c256feca8b053e17b57d3ff7bf87a12a6d76710"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 143.69,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.98,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "5689349e739977a33ab8af8d0c256feca8b053e17b57d3ff7bf87a12a6d76710"
+    }
+  },
+  "calculation": {
+    "direct_centers_inclusive": [
+      4,
+      320
+    ],
+    "example": {
+      "lower_square": 4096,
+      "upper_square": 4225,
+      "factor_pairs_of_gap": [
+        [
+          1,
+          129
+        ],
+        [
+          3,
+          43
+        ]
+      ],
+      "genuine_intersection": [
+        3696
+      ]
+    },
+    "exact_large_examples": [
+      {
+        "center": 64,
+        "center_gap": 129,
+        "distinct_composites": 62,
+        "overlaps": 1,
+        "refund_numerator": "1046465607005359917420280",
+        "bill_numerator": "43014581372478946194293000"
+      },
+      {
+        "center": 10000,
+        "center_gap": 20001,
+        "distinct_composites": 11404,
+        "overlaps": 3,
+        "refund_numerator": "41954725154042123979752642207269221684334923152664800",
+        "bill_numerator": "228529441846274689304591675929219968873553760314947335200"
+      },
+      {
+        "center": 100000000,
+        "center_gap": 200000001,
+        "distinct_composites": 115455911,
+        "overlaps": 1,
+        "refund_numerator": "426551166101588812583058357396290485954701993370036168497295908126158685722457365821977365420709136404940",
+        "bill_numerator": "22857142430591659041268330274086099746566656902440863772820974358513615683365123801352157987546444579290863595060"
+      },
+      {
+        "center": 1000000000000,
+        "center_gap": 2000000000001,
+        "distinct_composites": 1154699124160,
+        "overlaps": 7,
+        "refund_numerator": "4266211624787396776518054277839277339822846235261763446311495942933752847656525315467935286979953017902644223195144977223704591599474266755416765559119145180",
+        "bill_numerator": "2285714285710019502660894888937767660007875008390462868050452522267974218342780532866629188970245017093972427934478308157757235975157247789352906733244583234440880854820"
+      }
+    ],
+    "second_term_sqrt2_factor": "5/32",
+    "scope": "These integer bills preserve the full signed-polynomial return on the union. The separate retained-prime product is not evaluated at the large examples."
+  },
+  "positive_range": {
+    "all_positive_indices_through": 48592007999,
+    "upper_board": "5575186299632655785383929568162090376495104",
+    "at_one": "bill zero",
+    "direct": {
+      "index_interval": [
+        2,
+        24
+      ],
+      "least_normalized_margin_index": 16,
+      "margin_lower": "0.0259870151"
+    },
+    "individual": {
+      "index_interval": [
+        25,
+        1023
+      ],
+      "last_direct_prime_area": 63,
+      "band_minimum_lower_margins": [
+        {
+          "from": 25,
+          "through": 31,
+          "minimum_index": 25,
+          "lower": "0.0295471448"
+        },
+        {
+          "from": 32,
+          "through": 63,
+          "minimum_index": 39,
+          "lower": "0.0281588008"
+        },
+        {
+          "from": 64,
+          "through": 127,
+          "minimum_index": 64,
+          "lower": "0.0001092241"
+        },
+        {
+          "from": 128,
+          "through": 255,
+          "minimum_index": 128,
+          "lower": "0.0041547836"
+        },
+        {
+          "from": 256,
+          "through": 511,
+          "minimum_index": 268,
+          "lower": "0.0060802514"
+        },
+        {
+          "from": 512,
+          "through": 1023,
+          "minimum_index": 565,
+          "lower": "0.0068996469"
+        }
+      ]
+    },
+    "uniform": [
+      {
+        "first_index": 1024,
+        "last_board": "72057594037927936",
+        "refund_lower": "0.1328612725",
+        "raw_upper": "0.0462100001",
+        "square_upper": "0.0406893331",
+        "higher_upper": "0.0032821596",
+        "first_primes_upper": "0.0422504769",
+        "quadrature_upper": "0.0000038147",
+        "combined_cost_upper": "0.1324357842",
+        "surplus_lower": "0.0004254883"
+      },
+      {
+        "first_index": 16384,
+        "last_board": "5575186299632655785383929568162090376495104",
+        "refund_lower": "0.1332907228",
+        "raw_upper": "0.0523029897",
+        "square_upper": "0.0379763830",
+        "higher_upper": "0.0004500904",
+        "first_primes_upper": "0.0422504769",
+        "quadrature_upper": "0.0000000150",
+        "combined_cost_upper": "0.1329799547",
+        "surplus_lower": "0.0003107681"
+      }
+    ],
+    "sources": "Same finite height, unrestricted high-zero tail and explicit prime estimates as the doubled-ruler reference. The nonasymptotic refund counts the actual two square traces."
+  },
+  "sha256_sources": {
+    "proofs/when-two-squares-count-the-same-place.md": "3c44acd5a10efdd373b6057c4cfe5359821aa3bb13b1410bce7a81332411890b",
+    "pal-rh/PALRH/AdjacentSquares.lean": "50c353f784cd7c9f0423f727d702181ebe45ec3104addb2d353f51d16071da03",
+    "pal-rh/lakefile.toml": "8f3febc53ef8b16024393db6d7aad4384740ea4d0fcf9f58aa0af5fb638bb0fe",
+    "pal-rh/checks/adjacent-squares/CountChallenge.lean": "2948d1410cff780e2308bd849bcfc19e895795a36f2177af6465b22ae85cd04f",
+    "pal-rh/checks/adjacent-squares/CountSolution.lean": "f14939996b98c95ab6df6cd3db0b648c0f43fa7dff11074bb2d398540b09d485",
+    "pal-rh/checks/adjacent-squares/compare.json": "00e9b7ceb6e2dec75698fdcf5de06208a35a8bfaf49744218bcf221234e16417",
+    "receipt-archives/check_pal_adjacent_squares.py": "3043ab92e88372bb0b70e103a1fa4422113bf4811755c6b1589ed08ccbeb9778",
+    "receipt-archives/check_pal_two_square_range.py": "34efd3be4de8eadcd5491baa7bc5ba31952fd9a7611aec4ebba4929388fef49b",
+    "pal-rh/PALRH/SquareHoles.lean": "e25f5feb24b2899fc33d2a643908374bf865716099e73d7492b63d75c232adaf",
+    "proofs/how-many-square-traces-do-the-primes-need.md": "45a48b72c9e7675e9846e4400fc42373760cce861b02dadaf9d1b3c7fd89f47d",
+    "receipt-archives/2026-11-26-pal-square-holes.json": "37eb9d02f4d9aac99f584a407837f29114cf0c0fbf792617360ab4a337803cc7",
+    "receipt-archives/check_pal_square_holes.py": "dc81023778bda890cf0d93d65e67e44ce54831a781530138decc073218040773",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "receipt-archives/check_pal_crossing_refund.py": "791794509c87430fcde763aa59d670230f51c3239a8a315fa7f8b824356e5ea6",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-doubled-ruler.json": "2763d9e83a44b72186e4aaeb3be0bfd84e3d7f7808d29ba0871c657dcdc8e610",
+    "pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md": "7eabb53144b6f3278f3d16e1a56bf1e1d023b50806c7c1e026829e7bfe1114a1"
+  }
+}
