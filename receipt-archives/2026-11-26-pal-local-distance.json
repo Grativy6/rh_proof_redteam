@@ -1,0 +1,1780 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "7851405a2584fa3546c5f139d4fd257005180adc",
+  "parent_tree": "ff19ec7c2b8d440b96989c612d550b8fd1a25767",
+  "contributors": "Christopher Daniel Pang supplied the PAL order, the RPL return, the PECAN owner-address question and the BLA common frame. Hearthline derived the transport, strip, compensator and self-calibration results in his independent research program.",
+  "formal_scope": "A bounded local injection on the actual self-sized prime boards 16^(j+1), with radius B*4^(j+1)*(j+1)^2, implies stock RH. Occupancy determines a coarse bound on each board height. Even arbitrary independent strip slopes converge to one under the specified error bound. The finite interval criterion, exact small-strip return and tick rounding have separate proofs.",
+  "paper_scope": "The far-end rank assignment costs O(1+sqrt(n)+sup abs(theta(t)-t)). Schoenfeld gives the reverse implication from RH. At the earlier fixed multiple addresses the exterior optimum is asymptotic to n/(4*log2(n)) with the stated limiting transport profile. An explicit shrinking omission funds the prescribed target box unconditionally, and the small-distance return gives o(n^2) error through the stated growing inner range. A constant-width multiple of sqrt(n) fails on arbitrarily late self-sized boards. The uniform RH-scale upper bound is open.",
+  "review": {
+    "type": "author self-review",
+    "units": "Site distance and free ordinal are distinct. Ordered positions account for two trip directions except at distance zero, where the diagonal has n cells per layer.",
+    "catch": "The fixed-owner optimum measures only exterior travel. The fully movable optimum measures every job. Both use exactly the same integer box height, determined by the actual demand.",
+    "integer optimum": "The greedy construction gives an injection. Its last reset on failure gives a mandatory interval shortage applying to every conceivable injection. An exhaustive permutation calculation checked 3664 small layouts.",
+    "prefix control": "Every cut enters the strip comparison. Checking two sides of prime jumps and the last cut exhausts the finite extrema. One smaller-error interval intersection independently rules out a better integer height.",
+    "old behaviour": "The former full tick-layer arithmetic replay returns exactly its frozen parsed data with the current default codec.",
+    "scope": "One-third of a board is false after the small-strip correction at the next tested geometric head. The unconditional analytic estimates cover only the stated travel or strip ranges. No literature priority claim is made."
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "primary_sources": {
+    "corpus": "pal-rh/CORPUS-ROUTES.md",
+    "Schoenfeld_6_3": "https://doi.org/10.1090/S0025-5718-1976-0457374-X",
+    "Dusart_5_2": "https://arxiv.org/pdf/1002.0442",
+    "Johnston_Yang_1_8": "https://arxiv.org/pdf/2204.01980",
+    "oscillation_and_prime_powers": "https://arxiv.org/pdf/1407.1914"
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3831
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.OrderedTransport",
+      "exit": 0,
+      "seconds": 9.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DysonOctave",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.WeightedPrimePulse",
+      "exit": 0,
+      "seconds": 12.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.TickBoard",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.UncalibratedPrime",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DyadicShape",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ShapeStrip",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ShapeObservation",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.LocalDistance",
+      "exit": 0,
+      "seconds": 11.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrefixReturn",
+      "exit": 0,
+      "seconds": 10.2,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.DysonOctave.two_observer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.model_centers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.model_one_turn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.kernel_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.rh_of_centered_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.split_pair_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.tick_cover": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.rh_of_layers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TickBoard.rh_of_two_spare_layers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OrderedTransport.interval_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OrderedTransport.greedy_injection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OrderedTransport.necessary_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.UncalibratedPrime.from_unknown_theta": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DyadicShape.recenter": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DyadicShape.infer_density_and_rh": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ShapeStrip.untilted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ShapeObservation.prefix_calibration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ShapeObservation.rh_of_strip_readings": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrefixReturn.first_strip": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrefixReturn.tick_remainder": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LocalDistance.crossing_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LocalDistance.measured_height": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LocalDistance.rh_of_local_moves": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347103985,
+        "sha256": "281b26e520667a9ee4eab973fe0f1711d434af76274ffcc42517e858e16e82ac"
+      },
+      "solution": {
+        "bytes": 428056912,
+        "sha256": "63347401484d8a20435c19d97c0abbdf21fc28c47886f026af86e2a333192907"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 129.62,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.8,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "63347401484d8a20435c19d97c0abbdf21fc28c47886f026af86e2a333192907"
+    }
+  },
+  "transport": {
+    "radius": "absolute difference between the original prime and the destination distance",
+    "reference_volume": "minimum integer height at the actual head",
+    "exhaustive_toy_layouts": 3664,
+    "ordinary": [
+      {
+        "k": 2,
+        "n": 16,
+        "clock": "ordinary",
+        "actual_minimum_height": 3,
+        "all_records": 520,
+        "unused_in_minimum_box": 248,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 520,
+            "minimum_outer_radius": 3,
+            "reverse_rank_radius": 3,
+            "failed_at_radius": 2,
+            "impossible_interval": {
+              "first_prime": 11,
+              "last_prime": 13,
+              "first_destination": 9,
+              "last_destination": 15,
+              "source_records": 182,
+              "available_cells": 168,
+              "shortage": 14
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": true,
+              "checked_roundtrips": 520
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 520,
+            "minimum_outer_radius": 3,
+            "reverse_rank_radius": 3,
+            "failed_at_radius": 2,
+            "impossible_interval": {
+              "first_prime": 11,
+              "last_prime": 13,
+              "first_destination": 9,
+              "last_destination": 15,
+              "source_records": 182,
+              "available_cells": 168,
+              "shortage": 14
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": true,
+              "checked_roundtrips": 520
+            }
+          }
+        ]
+      },
+      {
+        "k": 3,
+        "n": 81,
+        "clock": "ordinary",
+        "actual_minimum_height": 7,
+        "all_records": 43076,
+        "unused_in_minimum_box": 2851,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 43076,
+            "minimum_outer_radius": 9,
+            "reverse_rank_radius": 9,
+            "failed_at_radius": 8,
+            "impossible_interval": {
+              "first_prime": 29,
+              "last_prime": 73,
+              "first_destination": 21,
+              "last_destination": 80,
+              "source_records": 25880,
+              "available_cells": 25620,
+              "shortage": 260
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": true,
+              "checked_roundtrips": 43076
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 2,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 43076,
+            "minimum_outer_radius": 9,
+            "reverse_rank_radius": 9,
+            "failed_at_radius": 8,
+            "impossible_interval": {
+              "first_prime": 29,
+              "last_prime": 73,
+              "first_destination": 21,
+              "last_destination": 80,
+              "source_records": 25880,
+              "available_cells": 25620,
+              "shortage": 260
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": true,
+              "checked_roundtrips": 43076
+            }
+          }
+        ]
+      },
+      {
+        "k": 4,
+        "n": 256,
+        "clock": "ordinary",
+        "actual_minimum_height": 14,
+        "all_records": 882966,
+        "unused_in_minimum_box": 34538,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 882966,
+            "minimum_outer_radius": 15,
+            "reverse_rank_radius": 15,
+            "failed_at_radius": 14,
+            "impossible_interval": {
+              "first_prime": 59,
+              "last_prime": 241,
+              "first_destination": 45,
+              "last_destination": 255,
+              "source_records": 627722,
+              "available_cells": 626248,
+              "shortage": 1474
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 864
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 5,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 882966,
+            "minimum_outer_radius": 15,
+            "reverse_rank_radius": 15,
+            "failed_at_radius": 14,
+            "impossible_interval": {
+              "first_prime": 59,
+              "last_prime": 241,
+              "first_destination": 45,
+              "last_destination": 255,
+              "source_records": 627722,
+              "available_cells": 626248,
+              "shortage": 1474
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 864
+            }
+          }
+        ]
+      },
+      {
+        "k": 8,
+        "n": 4096,
+        "clock": "ordinary",
+        "actual_minimum_height": 62,
+        "all_records": 1026484552,
+        "unused_in_minimum_box": 13702840,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 1026484552,
+            "minimum_outer_radius": 66,
+            "reverse_rank_radius": 66,
+            "failed_at_radius": 65,
+            "impossible_interval": {
+              "first_prime": 1423,
+              "last_prime": 4049,
+              "first_destination": 1358,
+              "last_destination": 4095,
+              "source_records": 464984090,
+              "available_cells": 464961684,
+              "shortage": 22406
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 612
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 73,
+            "reserved_distance_labels": 30,
+            "reserved_records": 6634268,
+            "outer_records": 1019850284,
+            "minimum_outer_radius": 66,
+            "reverse_rank_radius": 66,
+            "failed_at_radius": 65,
+            "impossible_interval": {
+              "first_prime": 1423,
+              "last_prime": 4049,
+              "first_destination": 1358,
+              "last_destination": 4095,
+              "source_records": 464984090,
+              "available_cells": 464961684,
+              "shortage": 22406
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 211,
+                "first_destination": 156,
+                "inward_change": 55,
+                "cut": 73,
+                "reserved_records_beyond_prime": 4882768,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 409,
+                "first_destination": 353,
+                "inward_change": 56,
+                "cut": 73,
+                "reserved_records_beyond_prime": 2631672,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 821,
+                "first_destination": 768,
+                "inward_change": 53,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 1229,
+                "first_destination": 1187,
+                "inward_change": 42,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 1657,
+                "first_destination": 1628,
+                "inward_change": 29,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 2053,
+                "first_destination": 2015,
+                "inward_change": 38,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6634268
+              },
+              {
+                "prime": 2879,
+                "first_destination": 2872,
+                "inward_change": 7,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6634268
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      },
+      {
+        "k": 12,
+        "n": 20736,
+        "clock": "ordinary",
+        "actual_minimum_height": 142,
+        "all_records": 60684674128,
+        "unused_in_minimum_box": 372726704,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 60684674128,
+            "minimum_outer_radius": 134,
+            "reverse_rank_radius": 134,
+            "failed_at_radius": 133,
+            "impossible_interval": {
+              "first_prime": 5381,
+              "last_prime": 20611,
+              "first_destination": 5248,
+              "last_destination": 20735,
+              "source_records": 34065057604,
+              "available_cells": 34064895744,
+              "shortage": 161860
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 324,
+            "reserved_distance_labels": 384,
+            "reserved_records": 1027801106,
+            "outer_records": 59656873022,
+            "minimum_outer_radius": 272,
+            "reverse_rank_radius": 272,
+            "failed_at_radius": 271,
+            "impossible_interval": {
+              "first_prime": 419,
+              "last_prime": 20521,
+              "first_destination": 148,
+              "last_destination": 20735,
+              "source_records": 59164170992,
+              "available_cells": 59164058038,
+              "shortage": 112954
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 1039,
+                "first_destination": 818,
+                "inward_change": 221,
+                "cut": 324,
+                "reserved_records_beyond_prime": 633861014,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 2081,
+                "first_destination": 1918,
+                "inward_change": 163,
+                "cut": 324,
+                "reserved_records_beyond_prime": 236277946,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 4153,
+                "first_destination": 4065,
+                "inward_change": 88,
+                "cut": 324,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 6221,
+                "first_destination": 6132,
+                "inward_change": 89,
+                "cut": 324,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 8297,
+                "first_destination": 8218,
+                "inward_change": 79,
+                "cut": 324,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 10369,
+                "first_destination": 10346,
+                "inward_change": 23,
+                "cut": 324,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1027801106
+              },
+              {
+                "prime": 14519,
+                "first_destination": 14423,
+                "inward_change": 96,
+                "cut": 324,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1027801106
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      },
+      {
+        "k": 16,
+        "n": 65536,
+        "clock": "ordinary",
+        "actual_minimum_height": 254,
+        "all_records": 1087380594760,
+        "unused_in_minimum_box": 3541098424,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 1087380594760,
+            "minimum_outer_radius": 265,
+            "reverse_rank_radius": 265,
+            "failed_at_radius": 264,
+            "impossible_interval": {
+              "first_prime": 19373,
+              "last_prime": 65287,
+              "first_destination": 19109,
+              "last_destination": 65535,
+              "source_records": 547501034116,
+              "available_cells": 547500240024,
+              "shortage": 794092
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 910,
+            "reserved_distance_labels": 1372,
+            "reserved_records": 21163216594,
+            "outer_records": 1066217378166,
+            "minimum_outer_radius": 814,
+            "reverse_rank_radius": 814,
+            "failed_at_radius": 813,
+            "impossible_interval": {
+              "first_prime": 1009,
+              "last_prime": 65447,
+              "first_destination": 196,
+              "last_destination": 65535,
+              "source_records": 1063259928144,
+              "available_cells": 1063259542166,
+              "shortage": 385978
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 3299,
+                "first_destination": 2676,
+                "inward_change": 623,
+                "cut": 910,
+                "reserved_records_beyond_prime": 11146293088,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 6553,
+                "first_destination": 6212,
+                "inward_change": 341,
+                "cut": 910,
+                "reserved_records_beyond_prime": 4135228312,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 13109,
+                "first_destination": 12946,
+                "inward_change": 163,
+                "cut": 910,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 19661,
+                "first_destination": 19446,
+                "inward_change": 215,
+                "cut": 910,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 26227,
+                "first_destination": 26071,
+                "inward_change": 156,
+                "cut": 910,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 32771,
+                "first_destination": 32601,
+                "inward_change": 170,
+                "cut": 910,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 21163216594
+              },
+              {
+                "prime": 45887,
+                "first_destination": 45797,
+                "inward_change": 90,
+                "cut": 910,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 21163216594
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 630
+            }
+          }
+        ]
+      },
+      {
+        "k": 24,
+        "n": 331776,
+        "clock": "ordinary",
+        "actual_minimum_height": 574,
+        "all_records": 63086534492776,
+        "unused_in_minimum_box": 96695844248,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 63086534492776,
+            "minimum_outer_radius": 535,
+            "reverse_rank_radius": 535,
+            "failed_at_radius": 534,
+            "impossible_interval": {
+              "first_prime": 69991,
+              "last_prime": 331447,
+              "first_destination": 69457,
+              "last_destination": 331775,
+              "source_records": 39497816076488,
+              "available_cells": 39497812525920,
+              "shortage": 3550568
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 4147,
+            "reserved_distance_labels": 7598,
+            "reserved_records": 1344629557126,
+            "outer_records": 61741904935650,
+            "minimum_outer_radius": 3923,
+            "reverse_rank_radius": 3923,
+            "failed_at_radius": 3922,
+            "impossible_interval": {
+              "first_prime": 4637,
+              "last_prime": 331549,
+              "first_destination": 715,
+              "last_destination": 331775,
+              "source_records": 61570945833702,
+              "available_cells": 61570945543070,
+              "shortage": 290632
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 16603,
+                "first_destination": 14214,
+                "inward_change": 2389,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 642984354558,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 33179,
+                "first_destination": 31933,
+                "inward_change": 1246,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 266439451652,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 66359,
+                "first_destination": 65898,
+                "inward_change": 461,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 5200739022,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 99551,
+                "first_destination": 99223,
+                "inward_change": 328,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 132721,
+                "first_destination": 132428,
+                "inward_change": 293,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 165901,
+                "first_destination": 165610,
+                "inward_change": 291,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1344629557126
+              },
+              {
+                "prime": 232259,
+                "first_destination": 232287,
+                "inward_change": -28,
+                "cut": 4147,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1344629557126
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      },
+      {
+        "k": 32,
+        "n": 1048576,
+        "clock": "ordinary",
+        "actual_minimum_height": 1022,
+        "all_records": 1122747869769466,
+        "unused_in_minimum_box": 953013817606,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 1122747869769466,
+            "minimum_outer_radius": 1038,
+            "reverse_rank_radius": 1038,
+            "failed_at_radius": 1037,
+            "impossible_interval": {
+              "first_prime": 302831,
+              "last_prime": 1047653,
+              "first_destination": 301794,
+              "last_destination": 1048575,
+              "source_records": 569953153783268,
+              "available_cells": 569953152556732,
+              "shortage": 1226536
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 11915,
+            "reserved_distance_labels": 22926,
+            "reserved_records": 22962793747956,
+            "outer_records": 1099785076021510,
+            "minimum_outer_radius": 11481,
+            "reverse_rank_radius": 11481,
+            "failed_at_radius": 11480,
+            "impossible_interval": {
+              "first_prime": 12373,
+              "last_prime": 1047883,
+              "first_destination": 893,
+              "last_destination": 1048575,
+              "source_records": 1098826035759926,
+              "available_cells": 1098826018179828,
+              "shortage": 17580098
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 52433,
+                "first_destination": 46010,
+                "inward_change": 6423,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 10554818680978,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 104869,
+                "first_destination": 101751,
+                "inward_change": 3118,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 4424257319716,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 209717,
+                "first_destination": 209016,
+                "inward_change": 701,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 117715759562,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 314581,
+                "first_destination": 313779,
+                "inward_change": 802,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 419443,
+                "first_destination": 418725,
+                "inward_change": 718,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 524309,
+                "first_destination": 523983,
+                "inward_change": 326,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 22962793747956
+              },
+              {
+                "prime": 734003,
+                "first_destination": 733709,
+                "inward_change": 294,
+                "cut": 11915,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 22962793747956
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      },
+      {
+        "k": 48,
+        "n": 5308416,
+        "clock": "ordinary",
+        "actual_minimum_height": 2302,
+        "all_records": 64844766532027000,
+        "unused_in_minimum_box": 23937015659912,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 64844766532027000,
+            "minimum_outer_radius": 2258,
+            "reverse_rank_radius": 2258,
+            "failed_at_radius": 2257,
+            "impossible_interval": {
+              "first_prime": 1090697,
+              "last_prime": 5305721,
+              "first_destination": 1088440,
+              "last_destination": 5307978,
+              "source_records": 40994479811286046,
+              "available_cells": 40994479781974092,
+              "shortage": 29311954
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 55296,
+            "reserved_distance_labels": 110322,
+            "reserved_records": 1283473280843540,
+            "outer_records": 63561293251183460,
+            "minimum_outer_radius": 54375,
+            "reverse_rank_radius": 54375,
+            "failed_at_radius": 54374,
+            "impossible_interval": {
+              "first_prime": 55603,
+              "last_prime": 5307661,
+              "first_destination": 1229,
+              "last_destination": 5308415,
+              "source_records": 63555209301184936,
+              "available_cells": 63555209265835572,
+              "shortage": 35349364
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 265423,
+                "first_destination": 236060,
+                "inward_change": 29363,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 592039625160774,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 530843,
+                "first_destination": 516794,
+                "inward_change": 14049,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 266348529680134,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 1061689,
+                "first_destination": 1058932,
+                "inward_change": 2757,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 13824265762700,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 1592533,
+                "first_destination": 1590661,
+                "inward_change": 1872,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 2123369,
+                "first_destination": 2122236,
+                "inward_change": 1133,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 2654209,
+                "first_destination": 2653013,
+                "inward_change": 1196,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1283473280843540
+              },
+              {
+                "prime": 3715909,
+                "first_destination": 3715055,
+                "inward_change": 854,
+                "cut": 55296,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 1283473280843540
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      }
+    ],
+    "shifted_controls": [
+      {
+        "k": 8,
+        "n": 4096,
+        "clock": "shifted",
+        "actual_minimum_height": 62,
+        "all_records": 1039763768,
+        "unused_in_minimum_box": 423624,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 1039763768,
+            "minimum_outer_radius": 84,
+            "reverse_rank_radius": 84,
+            "failed_at_radius": 83,
+            "impossible_interval": {
+              "first_prime": 1423,
+              "last_prime": 4073,
+              "first_destination": 1340,
+              "last_destination": 4095,
+              "source_records": 471116674,
+              "available_cells": 471094104,
+              "shortage": 22570
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 612
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 73,
+            "reserved_distance_labels": 30,
+            "reserved_records": 6722826,
+            "outer_records": 1033040942,
+            "minimum_outer_radius": 88,
+            "reverse_rank_radius": 88,
+            "failed_at_radius": 87,
+            "impossible_interval": {
+              "first_prime": 223,
+              "last_prime": 4057,
+              "first_destination": 136,
+              "last_destination": 4095,
+              "source_records": 966811662,
+              "available_cells": 966789394,
+              "shortage": 22268
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 211,
+                "first_destination": 129,
+                "inward_change": 82,
+                "cut": 73,
+                "reserved_records_beyond_prime": 4971326,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 409,
+                "first_destination": 329,
+                "inward_change": 80,
+                "cut": 73,
+                "reserved_records_beyond_prime": 2720230,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 821,
+                "first_destination": 746,
+                "inward_change": 75,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 1229,
+                "first_destination": 1169,
+                "inward_change": 60,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 1657,
+                "first_destination": 1612,
+                "inward_change": 45,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 2053,
+                "first_destination": 2001,
+                "inward_change": 52,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6722826
+              },
+              {
+                "prime": 2879,
+                "first_destination": 2864,
+                "inward_change": 15,
+                "cut": 73,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 6722826
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      },
+      {
+        "k": 10,
+        "n": 10000,
+        "clock": "shifted",
+        "actual_minimum_height": 99,
+        "all_records": 9800859664,
+        "unused_in_minimum_box": 99140336,
+        "placements": [
+          {
+            "fixed_multiple_owners": false,
+            "owner_cutoff": 0,
+            "reserved_distance_labels": 0,
+            "reserved_records": 0,
+            "outer_records": 9800859664,
+            "minimum_outer_radius": 89,
+            "reverse_rank_radius": 89,
+            "failed_at_radius": 88,
+            "impossible_interval": {
+              "first_prime": 3299,
+              "last_prime": 9931,
+              "first_destination": 3211,
+              "last_destination": 9999,
+              "source_records": 4563759800,
+              "available_cells": 4563633690,
+              "shortage": 126110
+            },
+            "reverse_owner_profile": [],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 594
+            }
+          },
+          {
+            "fixed_multiple_owners": true,
+            "owner_cutoff": 166,
+            "reserved_distance_labels": 142,
+            "reserved_records": 126349826,
+            "outer_records": 9674509838,
+            "minimum_outer_radius": 125,
+            "reverse_rank_radius": 125,
+            "failed_at_radius": 124,
+            "impossible_interval": {
+              "first_prime": 223,
+              "last_prime": 9887,
+              "first_destination": 99,
+              "last_destination": 9999,
+              "source_records": 9579666542,
+              "available_cells": 9579580672,
+              "shortage": 85870
+            },
+            "reverse_owner_profile": [
+              {
+                "prime": 503,
+                "first_destination": 399,
+                "inward_change": 104,
+                "cut": 166,
+                "reserved_records_beyond_prime": 83229386,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 1009,
+                "first_destination": 916,
+                "inward_change": 93,
+                "cut": 166,
+                "reserved_records_beyond_prime": 33337438,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 2003,
+                "first_destination": 1939,
+                "inward_change": 64,
+                "cut": 166,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 3001,
+                "first_destination": 2949,
+                "inward_change": 52,
+                "cut": 166,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 4001,
+                "first_destination": 3943,
+                "inward_change": 58,
+                "cut": 166,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 5003,
+                "first_destination": 4959,
+                "inward_change": 44,
+                "cut": 166,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 126349826
+              },
+              {
+                "prime": 7001,
+                "first_destination": 7000,
+                "inward_change": 1,
+                "cut": 166,
+                "reserved_records_beyond_prime": 0,
+                "all_reserved_records": 126349826
+              }
+            ],
+            "decoder_control": {
+              "exhaustive": false,
+              "checked_roundtrips": 648
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "measured_strips": [
+    {
+      "j": 0,
+      "n": 16,
+      "last_prefix": 1,
+      "square_root": 4,
+      "one_best_height": 0,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ]
+      },
+      "all_best_heights": [
+        0,
+        0
+      ],
+      "minimum_maximum_error": 0,
+      "board_area": 256,
+      "largest_surplus": {
+        "at": 0,
+        "count": 0
+      },
+      "largest_deficit": {
+        "at": 0,
+        "count": 0
+      },
+      "impossible_one_fewer": null,
+      "one_board_area": {
+        "height_at_least": [
+          0,
+          0
+        ],
+        "height_at_most": [
+          17,
+          1
+        ],
+        "cuts": {
+          "0": {
+            "area": 0,
+            "jobs": 0
+          },
+          "1": {
+            "area": 15,
+            "jobs": 0
+          }
+        }
+      }
+    },
+    {
+      "j": 1,
+      "n": 256,
+      "last_prefix": 16,
+      "square_root": 16,
+      "one_best_height": 0,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          0,
+          0
+        ],
+        "largest_deficit": [
+          0,
+          0
+        ]
+      },
+      "all_best_heights": [
+        0,
+        0
+      ],
+      "minimum_maximum_error": 0,
+      "board_area": 65536,
+      "largest_surplus": {
+        "at": 0,
+        "count": 0
+      },
+      "largest_deficit": {
+        "at": 0,
+        "count": 0
+      },
+      "impossible_one_fewer": null,
+      "one_board_area": {
+        "height_at_least": [
+          0,
+          0
+        ],
+        "height_at_most": [
+          16,
+          16
+        ],
+        "cuts": {
+          "0": {
+            "area": 0,
+            "jobs": 0
+          },
+          "16": {
+            "area": 3960,
+            "jobs": 0
+          }
+        }
+      }
+    },
+    {
+      "j": 2,
+      "n": 4096,
+      "last_prefix": 256,
+      "square_root": 64,
+      "one_best_height": 36,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          1389399,
+          113
+        ],
+        "largest_deficit": [
+          3972890,
+          222
+        ]
+      },
+      "all_best_heights": [
+        36,
+        36
+      ],
+      "minimum_maximum_error": 9660658,
+      "board_area": 16777216,
+      "largest_surplus": {
+        "at": 241,
+        "count": 9660658
+      },
+      "largest_deficit": {
+        "at": 66,
+        "count": 9652500
+      },
+      "impossible_one_fewer": {
+        "minimum_height": [
+          37,
+          241
+        ],
+        "maximum_height": [
+          36,
+          66
+        ]
+      },
+      "one_board_area": {
+        "height_at_least": [
+          29,
+          241
+        ],
+        "height_at_most": [
+          59,
+          222
+        ],
+        "cuts": {
+          "222": {
+            "area": 884559,
+            "jobs": 35994790
+          },
+          "241": {
+            "area": 957975,
+            "jobs": 44147758
+          }
+        }
+      }
+    },
+    {
+      "j": 3,
+      "n": 65536,
+      "last_prefix": 4096,
+      "square_root": 256,
+      "one_best_height": 223,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          205832630,
+          283
+        ],
+        "largest_deficit": [
+          1254766763,
+          3298
+        ]
+      },
+      "all_best_heights": [
+        223,
+        223
+      ],
+      "minimum_maximum_error": 3736550783,
+      "board_area": 4294967296,
+      "largest_surplus": {
+        "at": 4093,
+        "count": 3736550783
+      },
+      "largest_deficit": {
+        "at": 256,
+        "count": 3733983360
+      },
+      "impossible_one_fewer": {
+        "minimum_height": [
+          224,
+          4093
+        ],
+        "maximum_height": [
+          223,
+          256
+        ]
+      },
+      "one_board_area": {
+        "height_at_least": [
+          221,
+          3931
+        ],
+        "height_at_most": [
+          247,
+          556
+        ],
+        "cuts": {
+          "556": {
+            "area": 36283170,
+            "jobs": 4679589108
+          },
+          "3931": {
+            "area": 249893670,
+            "jobs": 59327680330
+          }
+        }
+      }
+    },
+    {
+      "j": 4,
+      "n": 1048576,
+      "last_prefix": 65536,
+      "square_root": 1024,
+      "one_best_height": 989,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          16551169638,
+          1627
+        ],
+        "largest_deficit": [
+          313385019757,
+          64996
+        ]
+      },
+      "all_best_heights": [
+        989,
+        989
+      ],
+      "minimum_maximum_error": 1085612986066,
+      "board_area": 1099511627776,
+      "largest_surplus": {
+        "at": 63863,
+        "count": 1041631551102
+      },
+      "largest_deficit": {
+        "at": 1422,
+        "count": 1085612986066
+      },
+      "impossible_one_fewer": {
+        "minimum_height": [
+          989,
+          63803
+        ],
+        "maximum_height": [
+          988,
+          1422
+        ]
+      },
+      "one_board_area": {
+        "height_at_least": [
+          989,
+          63857
+        ],
+        "height_at_most": [
+          998,
+          1422
+        ],
+        "cuts": {
+          "1422": {
+            "area": 1490063319,
+            "jobs": 388059636425
+          },
+          "63857": {
+            "area": 64920027479,
+            "jobs": 65242219323042
+          }
+        }
+      }
+    },
+    {
+      "j": 5,
+      "n": 16777216,
+      "last_prefix": 1048576,
+      "square_root": 4096,
+      "one_best_height": 4060,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          1097802572291,
+          4297
+        ],
+        "largest_deficit": [
+          93468816466096,
+          993820
+        ]
+      },
+      "all_best_heights": [
+        4060,
+        4060
+      ],
+      "minimum_maximum_error": 283808050564401,
+      "board_area": 281474976710656,
+      "largest_surplus": {
+        "at": 1045573,
+        "count": 270610112026658
+      },
+      "largest_deficit": {
+        "at": 11776,
+        "count": 283808050564401
+      },
+      "impossible_one_fewer": {
+        "minimum_height": [
+          4060,
+          1028213
+        ],
+        "maximum_height": [
+          4059,
+          11776
+        ]
+      },
+      "one_board_area": {
+        "height_at_least": [
+          4060,
+          1021387
+        ],
+        "height_at_most": [
+          4046,
+          5380
+        ],
+        "cuts": {
+          "5380": {
+            "area": 90246947190,
+            "jobs": 83672177566201
+          },
+          "1021387": {
+            "area": 16614414106014,
+            "jobs": 67719685941922229
+          }
+        }
+      }
+    },
+    {
+      "j": 6,
+      "n": 268435456,
+      "last_prefix": 16777216,
+      "square_root": 16384,
+      "one_best_height": 16347,
+      "with_small_prefix_return_at_root_height": {
+        "largest_surplus": [
+          256309973871321,
+          24137
+        ],
+        "largest_deficit": [
+          24571799698404646,
+          16576186
+        ]
+      },
+      "all_best_heights": [
+        16347,
+        16347
+      ],
+      "minimum_maximum_error": 72960918914635610,
+      "board_area": 72057594037927936,
+      "largest_surplus": {
+        "at": 16774099,
+        "count": 71081279020245240
+      },
+      "largest_deficit": {
+        "at": 175620,
+        "count": 72960918914635610
+      },
+      "impossible_one_fewer": {
+        "minimum_height": [
+          16347,
+          16310521
+        ],
+        "maximum_height": [
+          16346,
+          175620
+        ]
+      },
+      "one_board_area": {
+        "height_at_least": [
+          16347,
+          16269311
+        ],
+        "height_at_most": [
+          16266,
+          19372
+        ],
+        "cuts": {
+          "19372": {
+            "area": 5199944006754,
+            "jobs": 12526444045515940
+          },
+          "16269311": {
+            "area": 4234914668748800,
+            "jobs": 69295972874050345242
+          }
+        }
+      }
+    }
+  ],
+  "sha256_sources": {
+    "proofs/how-far-a-prime-trip-must-move.md": "edc3b4d920d19581a96e9c26d9b5d72de9bf2f6cb63ce31d98d44479c52b61ee",
+    "pal-rh/how-prime-trips-change-distance.md": "f66f3268665b5d926ac60cb3cb80e152beb61b5596cad760a894b84094c46592",
+    "pal-rh/what-a-multiple-address-costs.md": "67ef7a2dd21652b94794cf9d7e1e5c2286118250965bd33fd0bd2a200965cd7f",
+    "pal-rh/PALRH/OrderedTransport.lean": "55cac30858b3b9c512a7a816bc016a8bcd5b901f58c19558924e88b0d1d0e037",
+    "pal-rh/PALRH/DysonOctave.lean": "2d2543cc09ecd32decd514568d7c3cf5bb11f0228b882a5c723ad2d02a8a385c",
+    "pal-rh/PALRH/WeightedPrimePulse.lean": "bb9c6525b72b9180a362b4cc50a6dc283fd51365b2350aa5c9f8a54ca46105e8",
+    "pal-rh/PALRH/TickBoard.lean": "aae6aaf3507856f3aec85611ea970a679dad0596fb14b9d672d8893bc080a86f",
+    "pal-rh/PALRH/UncalibratedPrime.lean": "9845c6b46bac482ddc71866a5d20f005babbec5ccea1093cf6bd8d8327c92998",
+    "pal-rh/PALRH/DyadicShape.lean": "37163574d7c2f3db4302ab2e67f1f9e9694a17d82b950a9d39de67b5c6203987",
+    "pal-rh/PALRH/ShapeStrip.lean": "96a08ff5378a68563b0ccea8665de2ca3f6e7b24a782a7b28e685764ace67f95",
+    "pal-rh/PALRH/ShapeObservation.lean": "79efdf70d4adad9d6a8d71d9331b011a16876ebccddf014a586511850c4af049",
+    "pal-rh/PALRH/LocalDistance.lean": "08f520385df5bf4496555f5ddcb93bdfbb27094721259c77450d1d8eed2b6192",
+    "pal-rh/PALRH/PrefixReturn.lean": "5d0a76d9a3c2626bf53ad7ac5cd2968e100d6788d48a3b2e538ab46407d3d54f",
+    "pal-rh/lakefile.toml": "f49f006f8944dd96e05ad0ede41a7079326d17467c8624627ad11ebfa077e4af",
+    "pal-rh/checks/local-distance/DistanceChallenge.lean": "9976765d54d7b248fdbc170009f257a8d6bf197d2d17c1a9b59726a0a16df50e",
+    "pal-rh/checks/local-distance/DistanceSolution.lean": "fdba649dedcdbfac8e58cbee07faf6184ed14496f06f0266b8edd10717bee634",
+    "pal-rh/checks/local-distance/compare.json": "da95632a9fcf2e0477ef0c70b16bbeed76ece1cb1f60cb3b3698b82717c83d35",
+    "receipt-archives/check_pal_distance_transport.py": "5d08e7ed600122fa5a630638bb6fa20fb2a46c98d4299dfa74cdcf4b22db239b",
+    "receipt-archives/check_pal_prime_strip.py": "488e008ff265448dc5f751b205a2bf99197a18389495bc9b7a9fb7e64168dd98",
+    "receipt-archives/pal_distance_transport.py": "e13d32f0ec61bdb9073012553712b20d88b27d0048fec4e913ea19cdfcb0c4c2",
+    "receipt-archives/pal_tick_codec.py": "013291c0f49b8d7a4cce6d7704a7af6df1787d953b76343cea4408122e0b2c7f",
+    "receipt-archives/check_pal_tick_layers.py": "63f8db4748c18af502e53f672301701cd402c64a3da1d515873a401f358a245f",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c",
+    "pal-rh/PALRH/SieveFrame.lean": "fc306bd76a296ca4395615e2c631f6c6e55c729398284ed9fd349b5d53ec98c2"
+  }
+}

@@ -10,6 +10,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Prime-trip layers and shared Pascal states](how-many-layers-a-prime-trip-needs.md). Pang’s point-and-horizon picture led Hearthline to an exact finite fiber, a single crossing of register heights, and a three-dimensional integer test on 26 November 2026. [Technical proofs](../pal-rh/one-prime-trip-in-a-shared-lattice.md)
 
+[Distance required for a recoverable trip](how-far-a-prime-trip-must-move.md). Hearthline derived the optimum interval test, the limiting cost of the multiple decoder, and the calibration of freely chosen heights under Pang’s active key on 26 November 2026. [Proof and remaining range](../pal-rh/how-prime-trips-change-distance.md)
+
 [Universal Pascal storage and prime-digit matching](two-pascal-rows-fit-on-every-board.md). Pang’s PAL/RPL/BLA return and accounting questions led Hearthline to the construction on 26 November 2026. [Valuations, limiting share and obstruction](../pal-rh/what-a-pascal-row-pays-for.md)
 
 [The least cutoff and the retained prime-pair directions](the-first-prime-a-board-has-to-give-up.md). Pang supplied the point and horizon question. Hearthline derived the [zero-free region scale](../pal-rh/what-the-least-cut-measures.md) and the [integer prime-pair calibration](../pal-rh/when-two-prime-directions-meet.md) on 26 November 2026.

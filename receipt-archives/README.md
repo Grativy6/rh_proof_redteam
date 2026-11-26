@@ -10,6 +10,8 @@ For [the one-sided subset comparison](../proofs/one-integer-comparison-to-rh.md)
 
 For [the unit tick lattice](../proofs/how-many-layers-a-prime-trip-needs.md), run `python -B receipt-archives/check_pal_tick_layers.py`. It computes two integer clocks, exhaustively recovers small complete cubes, decodes the middle-prime placement and tests all common size-four Pascal states. [Counts, ranges and fixed comparison](2026-11-26-pal-tick-layers.json)
 
+For [the distance experiment](../proofs/how-far-a-prime-trip-must-move.md), run `python -B receipt-archives/check_pal_distance_transport.py` and `python -B receipt-archives/check_pal_prime_strip.py`. The first emits optimal assignments with one-column shortage witnesses. The second minimizes the worst error over every integer height and records the two cuts forcing failure. [Ranges, sources and replay](2026-11-26-pal-local-distance.json)
+
 For [the Pascal construction](../proofs/two-pascal-rows-fit-on-every-board.md), run `python -B receipt-archives/check_pal_pascal_board.py`. It recovers every record at the first three sizes, compares individual binomial factors to prime carries, and prices the two orientations and the negative inventory at five. [Fixed comparisons, scopes and bounds](2026-11-26-pal-pascal-board.json)
 
 For [the least cutoff and prime-pair calibration](../proofs/the-first-prime-a-board-has-to-give-up.md), run `python -B receipt-archives/check_pal_horizon_pairs.py`. It counts unordered prime pairs through selected roots up to 10,000, compares small cases to direct gcd readings, and encloses both spectral prices. [Finite scope and proof record](2026-11-26-pal-horizon-cut.json)

@@ -18,6 +18,8 @@ The current Lean theorem reaches stock `RiemannHypothesis` from **one eventual c
 
 A second view counts individual trip-and-tick records in a literal three-dimensional lattice. At $n=k^4$, eventual fit with two whole layers set aside implies RH. A middle band has a reversible placement into the same reduced-height stack. [Count and recover a trip](proofs/how-many-layers-a-prime-trip-needs.md)
 
+The [distance experiment](proofs/how-far-a-prime-trip-must-move.md) keeps every trip recoverable and measures the price of its address. Two cuts on the same board rule out one proposed error budget even when each board chooses its own height.
+
 The proof now reaches RH from counts at fourth powers. A convexity bound pays for the sizes between them. The paired board fits at every size through one billion and on arbitrarily late stretches of consecutive sizes. [Which board sizes have to fit?](proofs/which-prime-boards-have-to-fit.md)
 
 A signed factorial sum returns every marked prime-power weight exactly. On a finer ruler its difference from the original profile concentrates at zero, where one zeta zero prices the missing reading. [What the signed rows leave at zero](proofs/what-the-signed-factorial-rows-leave-at-zero.md)

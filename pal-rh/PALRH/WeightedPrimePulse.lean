@@ -74,18 +74,19 @@ theorem arithmetic_transform (w : ℝ → ℝ) (K : ℂ → ℂ) (wn : ∀ t, 0�
   rw [←agg.tsum_eq,tsum_mul_left]
   rfl
 
-/-- A reciprocal pulse with a pointwise square-root budget has a holomorphic Mellin transform
-to the right of the critical line. -/
-theorem sqrt_extension (f : ℝ → ℂ) (meas : Measurable f)
+/-- A growth bound at some real exponent controls the Mellin integral to its right. -/
+theorem power_extension (f : ℝ → ℂ) (meas : Measurable f)
     (outside : ∀ {x : ℝ}, x∉Set.Ioc (0:ℝ) 1 → f x=0)
-    {D : ℝ} (dn : 0≤D) (price : ∀ {x : ℝ}, x∈Set.Ioc (0:ℝ) 1 → ‖f x‖≤D/Real.sqrt x)
-    {s : ℂ} (hs : 1/2<s.re) : DifferentiableAt ℂ (mellin f) s ∧ MellinConvergent f s := by
-  have cost (x : ℝ) : ‖f x‖≤D/Real.sqrt x := by
+    {D b : ℝ} (dn : 0≤D) (price : ∀ {x : ℝ}, x∈Set.Ioc (0:ℝ) 1 → ‖f x‖≤D*x^(-b))
+    {s : ℂ} (hs : b<s.re) : DifferentiableAt ℂ (mellin f) s ∧ MellinConvergent f s := by
+  have cost (x : ℝ) : ‖f x‖≤D*|x^(-b)| := by
     by_cases hx : x∈Set.Ioc (0:ℝ) 1
-    · exact price hx
+    · rw [abs_of_pos (Real.rpow_pos_of_pos hx.1 _)]
+      exact price hx
     · rw [outside hx,norm_zero];positivity
-  have ct : ContinuousOn (fun x : ℝ => D/Real.sqrt x) (Set.Ioi 0) :=
-    continuousOn_const.div Real.continuous_sqrt.continuousOn (fun x hx => (Real.sqrt_pos_of_pos hx).ne')
+  have ct : ContinuousOn (fun x : ℝ => D*|x^(-b)|) (Set.Ioi 0) :=
+    continuousOn_const.mul (continuousOn_of_forall_continuousAt (fun x hx =>
+      (Real.continuousAt_rpow_const x _ (Or.inl (ne_of_gt hx))).abs))
   have loc : LocallyIntegrableOn f (Set.Ioi 0) :=
     (ct.locallyIntegrableOn measurableSet_Ioi).mono meas.aestronglyMeasurable
       (Filter.Eventually.of_forall (fun x => (cost x).trans (le_abs_self _)))
@@ -93,12 +94,21 @@ theorem sqrt_extension (f : ℝ → ℂ) (meas : Measurable f)
     apply Asymptotics.IsBigO.of_bound 1
     filter_upwards [eventually_gt_atTop (1:ℝ)] with x hx
     rw [outside (fun h => (not_le_of_gt hx) h.2),norm_zero];positivity
-  have bot : f =O[𝓝[>] (0:ℝ)] (fun x : ℝ => x^(-(1/2:ℝ))) := by
+  have bot : f =O[𝓝[>] (0:ℝ)] (fun x : ℝ => x^(-b)) := by
     apply Asymptotics.IsBigO.of_bound D
-    filter_upwards [self_mem_nhdsWithin] with x (xp : 0<x)
-    rw [Real.norm_eq_abs,abs_of_pos (Real.rpow_pos_of_pos xp _),Real.rpow_neg xp.le,←Real.sqrt_eq_rpow]
-    exact cost x
+    exact Filter.Eventually.of_forall (fun x => by simpa using cost x)
   exact ⟨mellin_differentiableAt_of_isBigO_rpow loc top (by linarith) bot hs,
     mellinConvergent_of_isBigO_rpow loc top (by linarith) bot hs⟩
+
+/-- A reciprocal pulse with a pointwise square-root budget has a holomorphic Mellin transform
+to the right of the critical line. -/
+theorem sqrt_extension (f : ℝ → ℂ) (meas : Measurable f)
+    (outside : ∀ {x : ℝ}, x∉Set.Ioc (0:ℝ) 1 → f x=0)
+    {D : ℝ} (dn : 0≤D) (price : ∀ {x : ℝ}, x∈Set.Ioc (0:ℝ) 1 → ‖f x‖≤D/Real.sqrt x)
+    {s : ℂ} (hs : 1/2<s.re) : DifferentiableAt ℂ (mellin f) s ∧ MellinConvergent f s := by
+  apply power_extension f meas outside (b:=1/2) dn _ hs
+  intro x hx
+  rw [Real.rpow_neg hx.1.le,←Real.sqrt_eq_rpow,←div_eq_mul_inv]
+  exact price hx
 
 end PALRH.WeightedPrimePulse

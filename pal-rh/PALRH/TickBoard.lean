@@ -58,7 +58,7 @@ theorem ticks_le_of_price {n x m t : ℕ} (enough : m*x^t≤(x+1)^t) : ticks n x
 theorem bit_price {n x m b : ℕ} (xp : 0<x) (mb : m≤2^b) : ticks n x m≤b*x :=
   ticks_le_of_price (power_slots xp mb)
 
-private theorem single_price {n x m : ℕ} (xp : 0<x) (mp : 0<m) (mn : m≤n) :
+theorem single_price {n x m : ℕ} (xp : 0<x) (mp : 0<m) (mn : m≤n) :
     (x:ℝ)*Real.log m≤ticks n x m := by
   let T:=ticks n x m
   have xr : 0<(x:ℝ) := by exact_mod_cast xp
@@ -75,6 +75,33 @@ private theorem single_price {n x m : ℕ} (xp : 0<x) (mp : 0<m) (mn : m≤n) :
   rw [mul_one_div] at high
   change Real.log m≤(T:ℝ)/x
   linarith only [logc,high]
+
+/-- One whole tick of rounding and one reciprocal-unit correction suffice uniformly. -/
+theorem single_upper {n x m : ℕ} (xp : 0<x) (mp : 0<m) :
+    (ticks n x m:ℝ)≤1+((x:ℝ)+1)*Real.log m := by
+  have xn : 0<(x:ℝ) := by exact_mod_cast xp
+  have mn : 0<(m:ℝ) := by exact_mod_cast mp
+  have lm : 0≤Real.log m := Real.log_nonneg (by exact_mod_cast mp)
+  cases h : ticks n x m with
+  | zero => push_cast;positivity
+  | succ a =>
+    have fails : (x+1)^a<m*x^a := by
+      by_contra! ok
+      have bad:=ticks_le_of_price (n:=n) ok
+      omega
+    have realFail : ((x:ℝ)+1)^a<(m:ℝ)*(x:ℝ)^a := by exact_mod_cast fails
+    have logc:=Real.log_lt_log (by positivity) realFail
+    rw [Real.log_mul mn.ne' (pow_pos xn a).ne',Real.log_pow,Real.log_pow] at logc
+    have lower:=Real.one_sub_inv_le_log_of_pos (show 0<((x:ℝ)+1)/x by positivity)
+    have e : 1-(((x:ℝ)+1)/x)⁻¹=1/((x:ℝ)+1) := by field_simp;ring
+    rw [e,Real.log_div (by positivity) xn.ne'] at lower
+    have scaled:=mul_le_mul_of_nonneg_left lower (Nat.cast_nonneg a)
+    have limit : (a:ℝ)/((x:ℝ)+1)≤Real.log m := by
+      rw [mul_one_div] at scaled
+      linarith only [scaled,logc]
+    have count:=(div_le_iff₀ (by positivity)).mp limit
+    push_cast
+    nlinarith only [count]
 
 private theorem one_positive (n f : ℕ) : 0<oneFrameDirection n f := by
   apply Finset.prod_pos

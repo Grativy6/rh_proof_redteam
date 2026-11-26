@@ -10,6 +10,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [One trip and its layer](../proofs/how-many-layers-a-prime-trip-needs.md) · [Integer box and owned return](one-prime-trip-in-a-shared-lattice.md) · [Five as a shared row fiber](how-a-shared-row-carries-five.md)
 
+[Distance and its least travel](../proofs/how-far-a-prime-trip-must-move.md) · [What the small-prime cut carries](how-prime-trips-change-distance.md) · [The cost of a multiple label](what-a-multiple-address-costs.md)
+
 [Which prime boards have to fit?](../proofs/which-prime-boards-have-to-fit.md) · [Long funded intervals and sharp fourth-power spacing](fourth-power-boards-and-their-funded-intervals.md) · [Lean](PALRH/QuarticBoards.lean)
 
 [What the signed rows leave at zero](../proofs/what-the-signed-factorial-rows-leave-at-zero.md) · [Endpoint calculation](the-boundary-of-the-signed-factorial-rows.md) · [Four signed factorial phases](counting-the-four-quarters-of-a-factorial.md) · [Finite reconstruction](PALRH/FactorialReturn.lean)

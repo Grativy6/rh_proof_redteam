@@ -3,6 +3,8 @@
 from bisect import bisect_right
 from math import isqrt
 
+from pal_distance_transport import FreeDistanceOffsets
+
 
 def ceil_div(a, b):
     return -(-a // b)
@@ -28,7 +30,7 @@ def unpack_trip(n, layers, stored, primes):
 class TickCube:
     """Reserve the disjoint middle-prime rectangles, then rank the remaining jobs into free cells."""
 
-    def __init__(self, n, layers, prices):
+    def __init__(self, n, layers, prices, keep_prime_addresses=True):
         if n < 1 or layers < 1:
             raise ValueError("positive board dimensions required")
         self.n = n
@@ -37,7 +39,9 @@ class TickCube:
         self.half = (n + 1) // 2
         root = isqrt(n)
         blocks = ceil_div(root * n.bit_length(), layers)
-        self.owners = {p for p in self.prices if p > root and 4 * blocks * p <= n}
+        self.owners = {
+            p for p in self.prices if keep_prime_addresses and p > root and 4 * blocks * p <= n
+        }
         self.reserved = {}
         middle_size = 0
         for p in sorted(self.owners):
@@ -59,11 +63,8 @@ class TickCube:
         for index, p in enumerate(self.outer):
             self.source_index[p] = index
             self.source_offsets.append(self.source_offsets[-1] + 2 * (n - p) * self.prices[p])
-        self.free_offsets = [0]
-        for d in range(n):
-            _, starts, occupied_layers = self.reserved.get(d, (0, 0, 0))
-            per_direction = (n - d) * layers - starts * occupied_layers
-            self.free_offsets.append(self.free_offsets[-1] + (1 if d == 0 else 2) * per_direction)
+        self.free_offsets = FreeDistanceOffsets(n, layers, self.reserved)
+        self.outer_starts = self.source_offsets[:-1]
         self.middle_records = middle_size
         self.outer_records = self.source_offsets[-1]
         self.count = middle_size + self.outer_records
@@ -71,6 +72,18 @@ class TickCube:
         assert self.free_offsets[-1] + middle_size == n * n * layers
         if self.outer_records > self.free_offsets[-1]:
             raise ValueError("outer records exceed the remaining free cells")
+
+    def install_outer_starts(self, starts):
+        """Each ordered group occupies its full consecutive interval of free cells."""
+        if len(starts) != len(self.outer):
+            raise ValueError("wrong number of source groups")
+        previous = 0
+        for i, start in enumerate(starts):
+            size = self.source_offsets[i + 1] - self.source_offsets[i]
+            if start < previous or start + size > self.free_offsets[-1]:
+                raise ValueError("overlap or insufficient room")
+            previous = start + size
+        self.outer_starts = list(starts)
 
     @staticmethod
     def oriented(start, distance, layer, direction):
@@ -90,7 +103,7 @@ class TickCube:
             place = pack_trip(self.n, self.layers, p, i, t)
             return self.oriented(*place, direction)
         rank = (
-            self.source_offsets[self.source_index[p]]
+            self.outer_starts[self.source_index[p]]
             + (direction * (self.n - p) + i) * self.prices[p]
             + t
         )
@@ -123,10 +136,14 @@ class TickCube:
             offset = starts * (self.layers - occupied) + (start - starts) * self.layers + layer
         per_direction = (self.n - d) * self.layers - starts * occupied
         rank = self.free_offsets[d] + direction * per_direction + offset
-        if rank >= self.outer_records:
+        index = bisect_right(self.outer_starts, rank) - 1
+        if (
+            index < 0
+            or rank - self.outer_starts[index]
+            >= self.source_offsets[index + 1] - self.source_offsets[index]
+        ):
             raise ValueError("unused cube cell")
-        index = bisect_right(self.source_offsets, rank) - 1
         p = self.outer[index]
-        side, t = divmod(rank - self.source_offsets[index], self.prices[p])
+        side, t = divmod(rank - self.outer_starts[index], self.prices[p])
         ori, i = divmod(side, self.n - p)
         return p, i, t, ori

@@ -44,12 +44,12 @@ def primeSeries (s : ℂ) := LSeries (fun n => (ArithmeticFunction.vonMangoldt n
 
 /-- The analytic continuation can be tested against the ordinary, absolutely convergent
 prime-power series to the right of one. Its centered window cannot cancel an off-line zero. -/
-theorem rh_of_centered_response (H : ℂ → ℂ) (regular : DifferentiableOn ℂ H {s : ℂ | 1/2<s.re})
-    (overlap : ∀ s : ℂ, 1<s.re → H s=kernel (s-1/2)*primeSeries s-kernel (1/2)/(s-1)) :
-    RiemannHypothesis := by
+theorem calibrate_response (r : ℂ) (H : ℂ → ℂ) (regular : DifferentiableOn ℂ H {s : ℂ | 1/2<s.re})
+    (overlap : ∀ s : ℂ, 1<s.re → H s=kernel (s-1/2)*primeSeries s-r/(s-1)) :
+    r=kernel (1/2) ∧ RiemannHypothesis := by
   let f:=riemannZeta₁
   let A:=fun s : ℂ => (s-1)*shifted s
-  let B:=fun s : ℂ => shifted s-kernel (1/2)-(s-1)*H s
+  let B:=fun s : ℂ => shifted s-r-(s-1)*H s
   have af : AnalyticOnNhd ℂ f U := differentiable_riemannZeta₁.differentiableOn.analyticOnNhd open_U
   have dd : AnalyticOnNhd ℂ (deriv f) U := fun s hs => (af s hs).deriv
   have gH : AnalyticOnNhd ℂ H U := regular.analyticOnNhd open_U
@@ -77,6 +77,13 @@ theorem rh_of_centered_response (H : ℂ → ℂ) (regular : DifferentiableOn �
     rw [reg,zz]
     field_simp [sub_ne_zero.mpr so,fn]
     ring
+  refine ⟨?_,?_⟩
+  · have at_one:=relation (show (1:ℂ)∈U by norm_num [U])
+    have half : (1:ℂ)-1/2=1/2 := by norm_num
+    have eq : (0:ℂ)=kernel ((1:ℂ)-1/2)-r := by
+      simpa [A,B,f,shifted] using at_one
+    rw [half] at eq
+    exact (sub_eq_zero.mp eq.symm).symm
   apply rh_of_right
   intro s hs so zero
   have code : f s=0 := by
@@ -108,6 +115,13 @@ theorem rh_of_centered_response (H : ℂ → ℂ) (regular : DifferentiableOn �
       have bad : (k:ℕ∞)+1≤k := (le_add_self : (k:ℕ∞)+1≤analyticOrderAt B s+((k:ℕ∞)+1)).trans_eq orders.symm
       have impossible : k+1≤k := by exact_mod_cast bad
       omega
+
+/-- The analytic continuation can be tested against the ordinary, absolutely convergent
+prime-power series to the right of one. Its centered window cannot cancel an off-line zero. -/
+theorem rh_of_centered_response (H : ℂ → ℂ) (regular : DifferentiableOn ℂ H {s : ℂ | 1/2<s.re})
+    (overlap : ∀ s : ℂ, 1<s.re → H s=kernel (s-1/2)*primeSeries s-kernel (1/2)/(s-1)) :
+    RiemannHypothesis :=
+  (calibrate_response (kernel (1/2)) H regular overlap).2
 
 def fullReading (j : ℕ) : ℝ :=
   ∑ n ∈ Finset.Icc (1:ℕ) (2*j^2),

@@ -16,6 +16,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Prime trips in a shared lattice](proofs/how-many-layers-a-prime-trip-needs.md). On 26 November 2026 Hearthline applied Pang’s internal and external views to successive radix steps, two whole height layers and an explicit middle-prime return. [Exact layer count and movable omitted band](pal-rh/one-prime-trip-in-a-shared-lattice.md)
 
+[How far a prime trip must move](proofs/how-far-a-prime-trip-must-move.md). Under Pang’s construction key, Hearthline measured the price of retaining a prime factor in its address and traced an all-board movement condition to RH on 26 November 2026. [Derivation and finite counterexample](pal-rh/how-prime-trips-change-distance.md)
+
 [Two Pascal families on the prime board](proofs/two-pascal-rows-fit-on-every-board.md). On 26 November 2026 Hearthline followed Pang’s retained-label question into a universal storage construction, an exact cofactor price and a lower bound against positive rows. [Derivation and outstanding coprime comparison](pal-rh/what-a-pascal-row-pays-for.md)
 
 [The least successful cutoff](proofs/the-first-prime-a-board-has-to-give-up.md) · [Two directions into one product](pal-rh/when-two-prime-directions-meet.md). On 26 November 2026 Hearthline followed Pang’s point and horizon question to a growth scale for the actual research target and a calibration with compulsory overflows.
