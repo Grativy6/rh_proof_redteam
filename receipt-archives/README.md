@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+For the [signed factorial boundary](../proofs/what-the-signed-factorial-rows-leave-at-zero.md), run `python -B receipt-archives/check_pal_signed_factorials.py` and `python -B receipt-archives/check_pal_boundary_zero.py`. The first recovers the finite square weights and counts signed primes, squares and higher powers separately. The second encloses an actual critical zero and prices the missing reading. [Numbers and scope](2026-11-26-pal-signed-factorial-boundary.json)
+
 For the [prime board](../proofs/how-much-room-the-prime-board-needs.md), run `python -B receipt-archives/check_pal_prime_board.py`. The default computes the integer allowance and paired rounding budget through 100,000, tests the full single-cell sequence through 5,000, and decodes every input at size three. Its second product comparison uses leading binary digits with explicit enclosures. [Products, ranges and fixed-target result](2026-11-26-pal-prime-board.json)
 
 For [the Dyson doubling window](../proofs/what-one-doubling-hears-in-the-primes.md), run `python -B receipt-archives/check_pal_dyson_window.py`. It prices all prime powers for every root from 2 to 2663, independently recomputes selected small heads, encloses the diagonal without using a zero table, and checks the prime-square compensation through 99,999. Add `--divisor-control 2663` to recover the same large reading from the independent divisor-product recursion and decimal logarithm enclosures. [Numerators, bands and fixed analytic comparison](2026-11-26-pal-dyson-octave.json)

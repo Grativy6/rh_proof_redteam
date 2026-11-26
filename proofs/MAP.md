@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Full recovery on the grid and a missing endpoint reading](what-the-signed-factorial-rows-leave-at-zero.md). Hearthline derived the signed factorial reconstruction and its boundary behavior on 26 November 2026 under Pang’s retained-frame and closure questions. [Actual zero, both orientations and error bounds](../pal-rh/the-boundary-of-the-signed-factorial-rows.md)
+
 [Counting records on the prime board](how-much-room-the-prime-board-needs.md). Pang’s PAL placement and return question prompted Hearthline’s construction on 26 November 2026. The general equivalence, the two-cell decoder and the exact first single-cell shortage have different proofs. [Derivations](../pal-rh/the-prime-board-and-its-signed-area.md)
 
 [Dyson’s two-observer test and the prime-square bias](what-one-doubling-hears-in-the-primes.md). Pang’s one-turn frame and Dyson lead prompted Hearthline’s finite four-point example and prime-window calculations on 26 November 2026. [Full equivalence and classical inputs](../pal-rh/the-dyson-response-and-prime-squares.md)

@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Signed factorials, 26 November 2026.** The unique signed floor rows reconstruct every integer label, including the actual square reading. Replacing all large factorials by signed Stirling expressions has explicit cost. A finer grid leaves a calculable boundary contribution in the critical Mellin reading. The global question is cancellation of the retained signed main terms. [Proof and reopening condition](the-boundary-of-the-signed-factorial-rows.md)
+
 **Prime board, 26 November 2026.** At size $n$, seek a reversible placement of the $n$ row permutations and all independent prime-distance dials in $n^2$ base-$n$ cells. A size-independent construction would pay the one-sided prime-area bound. The free rank of a pair is $\lfloor n^2/p\rfloor$. Counting heads through 100,000 pays this cost there. The first single-cell shortage and the obstruction to assigning whole Lehmer digits retire those particular schemes. [Paper transfer and remaining obligation](the-prime-board-and-its-signed-area.md)
 
 **Dyson and the doubling window, 26 November 2026.** At square $j^2$ keep primes between $j^2/2$ and $2j^2$, weighting $\log p/\sqrt p$ by the logarithmic distance to the nearer edge. Showing that their sum stays below $4(\sqrt2+1/\sqrt2-2)j$ at every root $j\ge2$ would finish the paper route. The version including prime powers has a fixed fifth-unit allowance. Positive factorial upper envelopes overpay by a known multiple of $j$, so a factorial route needs signed cancellation on the same prime labels. [Derivation, exact diagonal and first failed shortcut](the-dyson-response-and-prime-squares.md)

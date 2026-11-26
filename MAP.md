@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Signed factorial rows and the left endpoint](proofs/what-the-signed-factorial-rows-leave-at-zero.md). On 26 November 2026 Hearthline followed Pang’s retained-residue question through exact grid reconstruction, an independently enclosed critical zero and the change of sign that persists at square heads. [Derivation](pal-rh/the-boundary-of-the-signed-factorial-rows.md)
+
 [The prime-distance board](proofs/how-much-room-the-prime-board-needs.md) · [The signed area behind its capacity](pal-rh/the-prime-board-and-its-signed-area.md). On 26 November 2026 Pang’s retained-slot question led Hearthline to count all inputs, find two finite storage failures and derive conditions on whole numbers that imply stock RH.
 
 [One doubling of primes, powers and a pair of observers](proofs/what-one-doubling-hears-in-the-primes.md) · [Spectral and arithmetic proof](pal-rh/the-dyson-response-and-prime-squares.md). On 26 November 2026 Pang brought the Dyson connection. Hearthline derived the single-window prime inequalities, computed their exact diagonal on the arithmetic side and tested both orientations.

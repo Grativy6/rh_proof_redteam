@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+A signed factorial sum returns every marked prime-power weight exactly. On a finer ruler its difference from the original profile concentrates at zero, where one zeta zero prices the missing reading. [What the signed rows leave at zero](proofs/what-the-signed-factorial-rows-leave-at-zero.md)
+
 At size 4,243 an encoder runs out of room despite the board having space for every setting. Letting each prime dial borrow one cell recovers its digit and the remaining capacity. Proving that all such records fit at every size would prove RH. [The prime board, with a three-cell-row example](proofs/how-much-room-the-prime-board-needs.md)
 
 At the first square, 4, the three primes 3, 5 and 7 miss a fifth-unit lower allowance. The square of 2 pays the difference. Following Pang’s Dyson lead gave a finite test with the opposite orientation: the primes alone stay below an explicit line at every square exactly if RH holds. [The one-doubling calculation](proofs/what-one-doubling-hears-in-the-primes.md) · [Derivation and remaining claim](pal-rh/the-dyson-response-and-prime-squares.md)
