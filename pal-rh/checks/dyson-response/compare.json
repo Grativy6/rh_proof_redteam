@@ -1,0 +1,22 @@
+{
+  "challenge_module": "DysonChallenge",
+  "solution_module": "DysonSolution",
+  "theorem_names": [
+    "primeResponseReduction"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

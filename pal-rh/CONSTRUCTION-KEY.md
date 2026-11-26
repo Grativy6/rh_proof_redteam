@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Dyson and the doubling window, 26 November 2026.** At square $j^2$ keep primes between $j^2/2$ and $2j^2$, weighting $\log p/\sqrt p$ by the logarithmic distance to the nearer edge. Showing that their sum stays below $4(\sqrt2+1/\sqrt2-2)j$ at every root $j\ge2$ would finish the paper route. The version including prime powers has a fixed fifth-unit allowance. Positive factorial upper envelopes overpay by a known multiple of $j$, so a factorial route needs signed cancellation on the same prime labels. [Derivation, exact diagonal and first failed shortcut](the-dyson-response-and-prime-squares.md)
+
 **Square contacts, 26 November 2026.** It suffices to find, for each $j$, one $j^2\le n<(j+1)^2$ with $M(n)\le Kj$ for a fixed $K$. The skipped labels are paid by the common-divisor packing argument. At critical resolution their unsigned mass splits into a uniform background and one possible macroscopic mark. The signed background and accumulation across shells still require control. [Contact criterion and source scope](../proofs/what-can-move-inside-a-square-root-window.md)
 
 **Adaptive trailing widths, 26 November 2026.** At each positive head choose any strictly earlier endpoint. The triangular charge is a sum of actual signed increments. A width with nonpositive charge eventually, or the specified square-root allowance at every head, suffices for stock RH. Balanced smooth squares rule out keeping all widths below $(2\pi^2/9-o(1))\sqrt n$. On slowly shrinking windows the earned negative portion and the required recovery cost share the same factor. [Exact tests, examples and remaining price](../proofs/how-far-a-square-mark-must-reach.md)

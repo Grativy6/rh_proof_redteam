@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What one doubling hears in the primes](what-one-doubling-hears-in-the-primes.md) starts with the four inputs at square 4, distinguishes phase spacing from amplitude, and gives an explicit all-square inequality for primes alone.
+
 [What can move inside a square-root window?](what-can-move-inside-a-square-root-window.md) identifies the unsigned background, the limited set of signed jump heights, and why a single adequately low integer in each square shell is enough.
 
 [How far a square mark must reach](how-far-a-square-mark-must-reach.md) shows exactly how much earlier arithmetic a positive mark needs to borrow. It gives the adaptive integer rule, the complete prefix search and a lower bound on the reach of any successful rule.

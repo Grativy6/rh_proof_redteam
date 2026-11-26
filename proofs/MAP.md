@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Dyson’s two-observer test and the prime-square bias](what-one-doubling-hears-in-the-primes.md). Pang’s one-turn frame and Dyson lead prompted Hearthline’s finite four-point example and prime-window calculations on 26 November 2026. [Full equivalence and classical inputs](../pal-rh/the-dyson-response-and-prime-squares.md)
+
 [Square-root windows, concentrated marks and square contacts](what-can-move-inside-a-square-root-window.md). On 26 November 2026 Hearthline applied Pang’s retained-owner and boundary questions to the actual short-window measure. Two fixed conditional Lean targets use only integer samples.
 
 [Adaptive widths and balanced square spikes](how-far-a-square-mark-must-reach.md) · [Uniform payment on shrinking intervals](../pal-rh/which-window-pays-for-the-return.md). Pang’s retained-mark and orientation questions led Hearthline to compare every possible width and price the same signed marks, 26 November 2026.

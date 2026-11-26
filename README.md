@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+At the first square, 4, the three primes 3, 5 and 7 miss a fifth-unit lower allowance. The square of 2 pays the difference. Following Pang’s Dyson lead gave a finite test with the opposite orientation: the primes alone stay below an explicit line at every square exactly if RH holds. [The one-doubling calculation](proofs/what-one-doubling-hears-in-the-primes.md) · [Derivation and remaining claim](pal-rh/the-dyson-response-and-prime-squares.md)
+
 Zoom into a square-root-wide neighborhood. The unsigned marks give a uniform density of $9/\pi^2$ plus at most one macroscopic mark with its own prime cofactor. The possible concentrated upward and downward jumps have different heights. One low reading anywhere between each pair of ordinary squares would suffice for stock RH. [The packing proof and its physical meaning](proofs/what-can-move-inside-a-square-root-window.md)
 
 At 5,184 a mark of +72 needs 776 earlier-window positions before the weighted sum turns negative. We proved why some positive square marks necessarily defeat every width up to about 2.19 times the square root of their head. The width can be chosen anew at each head in two fixed integer implications to RH. [The square mark and the hand calculation](proofs/how-far-a-square-mark-must-reach.md) · [What a shrinking window pays](pal-rh/which-window-pays-for-the-return.md)

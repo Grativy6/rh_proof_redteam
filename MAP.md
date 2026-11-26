@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[One doubling of primes, powers and a pair of observers](proofs/what-one-doubling-hears-in-the-primes.md) · [Spectral and arithmetic proof](pal-rh/the-dyson-response-and-prime-squares.md). On 26 November 2026 Pang brought the Dyson connection. Hearthline derived the single-window prime inequalities, computed their exact diagonal on the arithmetic side and tested both orientations.
+
 [Local square-root packing and square contacts](proofs/what-can-move-inside-a-square-root-window.md) · [Which background survives](pal-rh/the-background-around-one-large-mark.md). Hearthline derived the unsigned density, concentrated jumps and fixed integer sampling tests on 26 November 2026 under Pang’s construction key.
 
 [A square mark’s required reach](proofs/how-far-a-square-mark-must-reach.md) · [Calibrated signed portion](pal-rh/which-window-pays-for-the-return.md). On 26 November 2026 Hearthline tested flexible widths under Pang’s construction key and found an unconditional square-root obstruction on the actual labels.

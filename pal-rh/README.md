@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[A pair of observers and the primes within one doubling](../proofs/what-one-doubling-hears-in-the-primes.md) · [The exact diagonal and prime-only inequality](the-dyson-response-and-prime-squares.md) · [Analytic stock-target reduction](PALRH/DysonOctave.lean)
+
 [The possible local jumps](../proofs/what-can-move-inside-a-square-root-window.md) · [Density and location of the remaining marks](the-background-around-one-large-mark.md) · [Finite square-contact implications](PALRH/SquareExposure.lean)
 
 [How far a square mark must reach](../proofs/how-far-a-square-mark-must-reach.md) · [Why the signed allowance scales with the recovery price](which-window-pays-for-the-return.md) · [Formal adaptive test](PALRH/TrailingRows.lean)

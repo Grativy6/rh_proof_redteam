@@ -1,0 +1,618 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "8ad5905fddca61c220080a6ffae1e59aecb4af2c",
+  "parent_tree": "32a8b3ee05519feef3b92828ca570dc407148092",
+  "contributors": "Christopher Daniel Pang supplied the Dyson lead, one complete turn per doubling, the retained-frame question and the two orientations. Hearthline derived the octave aperture and the stated prime-side inequalities in his constructive program.",
+  "formal_scope": "Two-observer energy, actual model with off-line shift log(9/8)/log(2), two one-turn observation integrals, critical positivity, no off-axis erasure, explicit contribution at square 4, and the analytic centered-response implication to stock RH.",
+  "paper_scope": "Both one-sided square tests for the full prime-power tent and the primes-only upper inequality are equivalent to RH. The missing proof is the global upper inequality for the actual primes. A case split proves unconditional infinitely recurring deficits and surpluses on actual ordinary square heads.",
+  "self_review": {
+    "claim": "For every integer j>=2, the primes-only triangular reading at j^2 is strictly below c*j if and only if RH is true, with the universal quantifier outside the inequality.",
+    "primary_verdict": "proved as written (the equivalence, not the universal inequality)",
+    "type": "author self-review",
+    "audited_reader_sha256": "4a94c4a4d496bdf480ee70cd84a9fd906aad86c9789f6cb932a3705d03d0cd94",
+    "audited_derivation_sha256": "3d477271e02e158227e8758ac080fd41ac023577acf1d9cd554e283007b8c5a7",
+    "obligations": {
+      "weight_orientation": "passed: on a prime square the von Mangoldt value is log(p), not twice log(p). Endpoints carry zero; n=1 contributes nothing.",
+      "quadratic_control": "passed: the double-centered and split models have identical height multisets; their raw response differs by 1/36. The shortfall at square 4 is a separate true arithmetic calculation.",
+      "nonvanishing_and_multiple_roots": "passed: the octave multiplier is nonzero for positive real displacement. The logarithmic derivative detects every positive finite order, including multiple zeros.",
+      "real_abscissa": "passed on paper: the pole at s=1/2 cancels with exactly K(1/2). A one-sided sampled bound interpolates to O(log x) and the nonnegative Mellin argument applies. The holomorphic extension implies stock RH independently in Lean.",
+      "actual_diagonal": "passed: support [1/2,2], the first prime occurs only at an endpoint, and the real-place integral has its removable endpoint value. Outward rectangular bounds use the separate monotonicities of both positive factors.",
+      "prime_only_return": "passed: square mass is uniformly bounded without RH, so a prime-only upper bound suffices. Under RH the square mass is larger than the actual spectral ceiling for j>=32768; at earlier roots apart from 4 and 9 the finite bound suffices. Those two cases are computed directly.",
+      "recurrence": "passed on paper: positive summable critical weights admit a simultaneous recurrence on dyadic integers under RH. Failure of RH precludes either finite eventual one-sided bound. No independence of ordinates or external RH proof is used."
+    },
+    "global_prime_bound": "open; lower check after removing powers and unrestricted change of aperture both have explicit counterexamples"
+  },
+  "primary_sources": {
+    "montgomery": "https://public.websites.umich.edu/~hlm/paircor1.pdf",
+    "meeting": "https://www.ams.org/notices/202107/rnoti-p1140.pdf",
+    "dyson": "https://wucj.lab.westlake.edu.cn/Others/Dyson_Birds_and_Frogs.pdf",
+    "weil_formula": "https://www.bdim.eu/item?fmt=pdf&id=RLIN_2000_9_11_3_183_0",
+    "archimedean_normalization": "https://alainconnes.org/wp-content/uploads/Selecta.pdf",
+    "zero_trace": "https://websites.umich.edu/~lagarias/doc/bombieri.pdf"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build_exit": 0,
+  "native_replays": [
+    {
+      "module": "PALRH.DysonOctave",
+      "exit": 0,
+      "seconds": 12.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DysonObservation",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.DysonOctave.two_observer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.model_centers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.model_one_turn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.kernel_ne_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.rh_of_centered_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonOctave.split_pair_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonObservation.transform_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonObservation.right_kept": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonObservation.critical_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonObservation.reference_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DysonObservation.first_square_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "primeResponseReduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_analytic_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347980301,
+        "sha256": "7842c9b86095212b4907ed2acf113ccb9b4f02f06c2a49e0c175b14a6b935484"
+      },
+      "solution": {
+        "bytes": 421286720,
+        "sha256": "5a5d1937a23ad996e5b190940b12c365955b2abf4cee7947c4f3376a500cb11d"
+      }
+    },
+    "independent_reexport": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 130.61,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "calculation": {
+    "last_root": 2663,
+    "largest_sieve_index": 14183138,
+    "scale": 1000000000000000000,
+    "constants": {
+      "main_coefficient": [
+        "0.485281374238",
+        "0.485281374239"
+      ],
+      "conditional_zero_allowance": [
+        "0.1903138697",
+        "0.1903138904"
+      ],
+      "trivial_zero_allowance_at_nine": [
+        "0.0039181674",
+        "0.0039181675"
+      ],
+      "limiting_square_contribution": [
+        "0.2402265069",
+        "0.2402265070"
+      ]
+    },
+    "full_lowest_enclosure": [
+      403,
+      [
+        "-0.06314490",
+        "-0.06314489"
+      ]
+    ],
+    "full_highest_enclosure": [
+      565,
+      [
+        "0.07565665",
+        "0.07565666"
+      ]
+    ],
+    "prime_only_proven_lower_failures": 2612,
+    "first_prime_only_lower_failure": 2,
+    "highest_prime_only_minus_main": [
+      565,
+      [
+        "-0.18742814",
+        "-0.18742813"
+      ]
+    ],
+    "direct_crosscheck_roots": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      23
+    ],
+    "examples": [
+      {
+        "root": 2,
+        "window": [
+          2,
+          8
+        ],
+        "main": [
+          "0.97056274",
+          "0.97056275"
+        ],
+        "all_powers": [
+          "0.93390789",
+          "0.93390790"
+        ],
+        "prime_only": [
+          "0.69368138",
+          "0.69368139"
+        ],
+        "squares": [
+          "0.24022650",
+          "0.24022651"
+        ],
+        "higher_powers": [
+          "-0.00000001",
+          "0.00000001"
+        ],
+        "full_minus_main": [
+          "-0.03665486",
+          "-0.03665485"
+        ],
+        "prime_only_minus_main": [
+          "-0.27688136",
+          "-0.27688135"
+        ]
+      },
+      {
+        "root": 3,
+        "window": [
+          4,
+          18
+        ],
+        "main": [
+          "1.45584412",
+          "1.45584413"
+        ],
+        "all_powers": [
+          "1.44287626",
+          "1.44287627"
+        ],
+        "prime_only": [
+          "1.02763133",
+          "1.02763134"
+        ],
+        "squares": [
+          "0.25383333",
+          "0.25383334"
+        ],
+        "higher_powers": [
+          "0.16141159",
+          "0.16141160"
+        ],
+        "full_minus_main": [
+          "-0.01296786",
+          "-0.01296785"
+        ],
+        "prime_only_minus_main": [
+          "-0.42821279",
+          "-0.42821278"
+        ]
+      },
+      {
+        "root": 7,
+        "window": [
+          24,
+          98
+        ],
+        "main": [
+          "3.39696961",
+          "3.39696962"
+        ],
+        "all_powers": [
+          "3.39258919",
+          "3.39258920"
+        ],
+        "prime_only": [
+          "3.07995962",
+          "3.07995963"
+        ],
+        "squares": [
+          "0.19918901",
+          "0.19918902"
+        ],
+        "higher_powers": [
+          "0.11344054",
+          "0.11344055"
+        ],
+        "full_minus_main": [
+          "-0.00438043",
+          "-0.00438042"
+        ],
+        "prime_only_minus_main": [
+          "-0.31701000",
+          "-0.31700999"
+        ]
+      },
+      {
+        "root": 49,
+        "window": [
+          1200,
+          4802
+        ],
+        "main": [
+          "23.77878733",
+          "23.77878734"
+        ],
+        "all_powers": [
+          "23.80988170",
+          "23.80988171"
+        ],
+        "prime_only": [
+          "23.49127747",
+          "23.49127748"
+        ],
+        "squares": [
+          "0.21486164",
+          "0.21486165"
+        ],
+        "higher_powers": [
+          "0.10374259",
+          "0.10374260"
+        ],
+        "full_minus_main": [
+          "0.03109437",
+          "0.03109438"
+        ],
+        "prime_only_minus_main": [
+          "-0.28750987",
+          "-0.28750986"
+        ]
+      },
+      {
+        "root": 100,
+        "window": [
+          5000,
+          20000
+        ],
+        "main": [
+          "48.52813742",
+          "48.52813743"
+        ],
+        "all_powers": [
+          "48.52695460",
+          "48.52695461"
+        ],
+        "prime_only": [
+          "48.25211371",
+          "48.25211372"
+        ],
+        "squares": [
+          "0.22883240",
+          "0.22883241"
+        ],
+        "higher_powers": [
+          "0.04600848",
+          "0.04600849"
+        ],
+        "full_minus_main": [
+          "-0.00118283",
+          "-0.00118282"
+        ],
+        "prime_only_minus_main": [
+          "-0.27602371",
+          "-0.27602370"
+        ]
+      },
+      {
+        "root": 577,
+        "window": [
+          166464,
+          665858
+        ],
+        "main": [
+          "280.00735293",
+          "280.00735294"
+        ],
+        "all_powers": [
+          "280.05834823",
+          "280.05834824"
+        ],
+        "prime_only": [
+          "279.79460618",
+          "279.79460619"
+        ],
+        "squares": [
+          "0.23550411",
+          "0.23550412"
+        ],
+        "higher_powers": [
+          "0.02823792",
+          "0.02823793"
+        ],
+        "full_minus_main": [
+          "0.05099529",
+          "0.05099530"
+        ],
+        "prime_only_minus_main": [
+          "-0.21274675",
+          "-0.21274674"
+        ]
+      },
+      {
+        "root": 2663,
+        "window": [
+          3545784,
+          14183138
+        ],
+        "main": [
+          "1292.30429959",
+          "1292.30429960"
+        ],
+        "all_powers": [
+          "1292.34777309",
+          "1292.34777311"
+        ],
+        "prime_only": [
+          "1292.09450517",
+          "1292.09450518"
+        ],
+        "squares": [
+          "0.23839429",
+          "0.23839430"
+        ],
+        "higher_powers": [
+          "0.01487362",
+          "0.01487363"
+        ],
+        "full_minus_main": [
+          "0.04347350",
+          "0.04347351"
+        ],
+        "prime_only_minus_main": [
+          "-0.20979442",
+          "-0.20979441"
+        ]
+      }
+    ],
+    "prime_upper_calibration": {
+      "last_root": 99999,
+      "test_threshold": "191/1000",
+      "exceptional_squares_and_direct_prime_minus_main": [
+        [
+          4,
+          [
+            "0.12259382",
+            "0.12259383"
+          ],
+          [
+            "-0.28167764",
+            "-0.28167763"
+          ]
+        ],
+        [
+          8,
+          [
+            "0.13070571",
+            "0.13070572"
+          ],
+          [
+            "-0.24574911",
+            "-0.24574910"
+          ]
+        ],
+        [
+          9,
+          [
+            "0.11657253",
+            "0.11657254"
+          ],
+          [
+            "-0.31130886",
+            "-0.31130885"
+          ]
+        ],
+        [
+          10,
+          [
+            "0.14277570",
+            "0.14277571"
+          ],
+          [
+            "-0.28204917",
+            "-0.28204916"
+          ]
+        ],
+        [
+          24,
+          [
+            "0.17509594",
+            "0.17509595"
+          ],
+          [
+            "-0.25140901",
+            "-0.25140900"
+          ]
+        ],
+        [
+          25,
+          [
+            "0.16925966",
+            "0.16925967"
+          ],
+          [
+            "-0.22155393",
+            "-0.22155392"
+          ]
+        ],
+        [
+          26,
+          [
+            "0.16420734",
+            "0.16420735"
+          ],
+          [
+            "-0.22859291",
+            "-0.22859290"
+          ]
+        ],
+        [
+          27,
+          [
+            "0.16698783",
+            "0.16698784"
+          ],
+          [
+            "-0.28514515",
+            "-0.28514514"
+          ]
+        ],
+        [
+          28,
+          [
+            "0.18067326",
+            "0.18067327"
+          ],
+          [
+            "-0.30332054",
+            "-0.30332053"
+          ]
+        ]
+      ],
+      "diagonal_threshold": "128/1000",
+      "small_diagonal_exceptions_below_32768": [
+        [
+          4,
+          [
+            "-0.28167764",
+            "-0.28167763"
+          ]
+        ],
+        [
+          9,
+          [
+            "-0.31130886",
+            "-0.31130885"
+          ]
+        ]
+      ]
+    },
+    "exact_diagonal": {
+      "panels": 32768,
+      "spectral_diagonal": [
+        "0.127106908",
+        "0.127115434"
+      ],
+      "no_prime_terms_at_zero": true
+    },
+    "changed_aperture": {
+      "head": 100,
+      "log_half_width": "2 ln(101/100)",
+      "only_prime": 101,
+      "reference": "2/505",
+      "prime_only_minus_reference": [
+        "0.0006090113",
+        "0.0006090114"
+      ]
+    },
+    "four_point_model": {
+      "one_turn": "ln(2)",
+      "off_center_shift": "ln(9/8)/ln(2)",
+      "centered_return": "4",
+      "split_return": "145/36",
+      "split_quadratic_price": "-1/18",
+      "split_gram_determinant": "-289/1296"
+    },
+    "divisor_control": {
+      "root": 2663,
+      "summand_counts": [
+        668062,
+        234,
+        28
+      ],
+      "prime": [
+        "1292.094505178",
+        "1292.094505179"
+      ],
+      "squares": [
+        "0.238394296",
+        "0.238394297"
+      ],
+      "higher": [
+        "0.014873624",
+        "0.014873625"
+      ],
+      "full": [
+        "1292.347773100",
+        "1292.347773101"
+      ]
+    }
+  },
+  "sha256_sources": {
+    "proofs/what-one-doubling-hears-in-the-primes.md": "4a94c4a4d496bdf480ee70cd84a9fd906aad86c9789f6cb932a3705d03d0cd94",
+    "pal-rh/the-dyson-response-and-prime-squares.md": "3d477271e02e158227e8758ac080fd41ac023577acf1d9cd554e283007b8c5a7",
+    "pal-rh/PALRH/DysonOctave.lean": "d7194f4801e5b15be83091a672add01fb0273502a7dad43b0b9b4d5121b1b929",
+    "pal-rh/PALRH/DysonObservation.lean": "6fc4de5350e59c9af073fab8f18e6bda9dc9c7716cf4ab3e93a7663ddae878aa",
+    "pal-rh/checks/dyson-response/DysonChallenge.lean": "4d7bf27719fc2f633197a6c94cd8de9e0517ad5ad6b129e20f13e8173932ac45",
+    "pal-rh/checks/dyson-response/DysonSolution.lean": "113d80efbc6280c21dbe8ef7941d0b3ad6803260eca161ab25003406c3057856",
+    "pal-rh/checks/dyson-response/compare.json": "a4735712a70670989457c913b9085168eca4e75f04a90443f0a4410922bf3706",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c"
+  }
+}
