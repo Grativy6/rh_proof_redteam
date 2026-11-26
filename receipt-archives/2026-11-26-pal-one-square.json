@@ -1,0 +1,440 @@
+{
+  "parent_public_research_commit": "8bf8be462060bd2439e2e4c11a753bd8d5824d08",
+  "parent_tree": "14c048bbe87bce54237ed82b9a515f6da405d96a",
+  "contributors": "Christopher Daniel Pang suggested 17, reversal and a movable frame via PAL and RPL. Hearthline developed the one-center proper-divisor comparison, price, bounded center selection and real board-eight test. BLA informs accounting on the reference. Earlier sources for the finite price and the two-sided root criterion retain their own attributions.",
+  "paper_scope": "A single square within 62 root positions of k^2 gives an integer comparison equivalent on paper to stock RH. The specific properly aligned square also suffices in the RH-to-payment direction. Five fixed witness primes certify actual outward composites. On the original board eight adding the seven proper 17-multiples alone to the original single inward trace changes the true sign. The fixed aligned centers pay every index from 2^17 through 2^30, and the unshifted centers pay from 2 through 27. The earlier 17-overlap search requested that count; the factor 17 in its first quadratic gap is an additional observation.",
+  "formal_scope": "The module checks every witness is composite, the center can be chosen within 62, and each actual payment implies an upper bound for the integrated prime area. The exported conditional target allows a different square on every late board. Proper-divisor treatment of 17 itself and the seven gained positions are included in the independent fixed statements. The reverse implication, finite spectral range and first 17-overlap calculation are paper/finite arithmetic results.",
+  "review": {
+    "kind": "author self-review, ordinary directed prime logs, independent inert exports and three kernel implementations",
+    "proper": "The condition p<d excludes the marked prime itself. The two sides are disjoint, and multiple proper divisor witnesses at one position contribute once.",
+    "counts": "Only 2,3,5,7,17 are used on outward slots. Two distinct roots at 5 and 17 require coprimality of the actual selected center. Every block of three successive multiples of 21 has at least one working center.",
+    "finite": "The endpoint variation uses the monotone inner return, the actual Lipschitz exterior and the absolute maximum return. The empirical bounds at 2..27, the finite theorem on 2^17..2^30 and the universal open large-head test have distinct quantifiers.",
+    "shared_price": "The old two-trace API reuses a common general-credit inequality. The original area and RH implication were rebuilt and replayed. Prior publication receipts retain their earlier source/export hashes.",
+    "scope": "Crossing a sufficient four-versus-five numerical envelope does not prove four witnesses fail generally. The seven-slot sign switch is checked on actual primes. No bare stock RH proof or external priority claim is made."
+  },
+  "primary_sources": {
+    "finite_height": "https://arxiv.org/abs/2004.09765",
+    "integrated_bound": "https://arxiv.org/pdf/2201.06184v2",
+    "recurrent_interval": "https://arxiv.org/pdf/2405.20552v2",
+    "high_ordinate": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3867
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.SquareReference",
+      "exit": 0,
+      "seconds": 14.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SquareHoles",
+      "exit": 0,
+      "seconds": 14.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneSquare",
+      "exit": 0,
+      "seconds": 12.4,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.SquareReference.area_from_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareHoles.erased_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareHoles.area_of_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareHoles.rh_of_two_traces": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.center_frame": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.proper_marks": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.area_of_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.rh_of_one_square": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.rh_of_chosen_center": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.seven_with_seventeen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSquare.prime_seventeen_stays": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 346981882,
+        "sha256": "ac93accde00229e04d66d425eb8f10496326413da88a587c550c32acae9bda45"
+      },
+      "solution": {
+        "bytes": 447295892,
+        "sha256": "3b4c988dc5d87681a9c0df180efadd65f1dd0bc3f8c12f11f808de8ed76f3f3c"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 141.31,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.59,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "3b4c988dc5d87681a9c0df180efadd65f1dd0bc3f8c12f11f808de8ed76f3f3c"
+    }
+  },
+  "calculation": {
+    "all_unshifted_small_indices": [
+      2,
+      27
+    ],
+    "least_unshifted_small_margin": {
+      "k": 20,
+      "center": 400,
+      "cut_denominator": 5,
+      "proper_divisors": [
+        2,
+        3,
+        5,
+        7,
+        17
+      ],
+      "inner_positions": 309,
+      "outer_positions": 259,
+      "normalized_margin": [
+        "0.0168024327",
+        "0.0168024329"
+      ],
+      "paid": true
+    },
+    "uniform_index_interval": [
+      131072,
+      1073741824
+    ],
+    "finite_refund_lower": "0.1262986404",
+    "finite_price_upper": "0.1262450274",
+    "first_seventeen_overlaps": {
+      "k": 1933,
+      "gap": 7472979,
+      "smaller_factors": [
+        3,
+        9,
+        17,
+        27,
+        51,
+        67,
+        81,
+        153,
+        201,
+        243,
+        459,
+        603,
+        729,
+        1139,
+        1377,
+        1809,
+        2187
+      ]
+    },
+    "board_eight_new_slots": [
+      4097,
+      4352,
+      4420,
+      5185,
+      5321,
+      6596,
+      6800
+    ],
+    "board_eight_seventeen_flip": [
+      {
+        "k": 8,
+        "center": 64,
+        "cut_denominator": 3,
+        "proper_divisors": [],
+        "inner_positions": 36,
+        "outer_positions": 0,
+        "normalized_margin": [
+          "-0.0041953095",
+          "-0.0041953094"
+        ],
+        "paid": false
+      },
+      {
+        "k": 8,
+        "center": 64,
+        "cut_denominator": 3,
+        "proper_divisors": [
+          17
+        ],
+        "inner_positions": 36,
+        "outer_positions": 7,
+        "normalized_margin": [
+          "0.0033241621",
+          "0.0033241622"
+        ],
+        "paid": true
+      }
+    ],
+    "moved_center_examples": [
+      {
+        "k": 2,
+        "center": 21,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 0,
+        "outer_positions": 0,
+        "normalized_margin": [
+          "0.1631986249",
+          "0.1631986250"
+        ],
+        "paid": true
+      },
+      {
+        "k": 3,
+        "center": 21,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 1,
+        "outer_positions": 0,
+        "normalized_margin": [
+          "0.0531955248",
+          "0.0531955249"
+        ],
+        "paid": true
+      },
+      {
+        "k": 4,
+        "center": 21,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 5,
+        "outer_positions": 7,
+        "normalized_margin": [
+          "0.0052044292",
+          "0.0052044293"
+        ],
+        "paid": true
+      },
+      {
+        "k": 5,
+        "center": 42,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 5,
+        "outer_positions": 0,
+        "normalized_margin": [
+          "-0.0124750313",
+          "-0.0124750312"
+        ],
+        "paid": false
+      },
+      {
+        "k": 8,
+        "center": 84,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 19,
+        "outer_positions": 26,
+        "normalized_margin": [
+          "-0.0487982814",
+          "-0.0487982813"
+        ],
+        "paid": false
+      },
+      {
+        "k": 12,
+        "center": 147,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 86,
+        "outer_positions": 120,
+        "normalized_margin": [
+          "0.0250671278",
+          "0.0250671279"
+        ],
+        "paid": true
+      },
+      {
+        "k": 17,
+        "center": 294,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 177,
+        "outer_positions": 242,
+        "normalized_margin": [
+          "0.0181040993",
+          "0.0181040995"
+        ],
+        "paid": true
+      },
+      {
+        "k": 21,
+        "center": 441,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 341,
+        "outer_positions": 374,
+        "normalized_margin": [
+          "0.0506659322",
+          "0.0506659326"
+        ],
+        "paid": true
+      },
+      {
+        "k": 27,
+        "center": 756,
+        "cut_denominator": 5,
+        "proper_divisors": [
+          2,
+          3,
+          5,
+          7,
+          17
+        ],
+        "inner_positions": 399,
+        "outer_positions": 596,
+        "normalized_margin": [
+          "0.0006491070",
+          "0.0006491086"
+        ],
+        "paid": true
+      }
+    ],
+    "constants": {
+      "inner": [
+        "0.0720479226",
+        "0.0720479227"
+      ],
+      "all_outward": "64/1001",
+      "four_prices": [
+        "0.1250235185",
+        "0.1250235186"
+      ],
+      "five_prices": [
+        "0.1263129853",
+        "0.1263129854"
+      ],
+      "gain_from_seventeen": "768/595595",
+      "sufficient_RH_price_upper": [
+        "0.1254808571",
+        "0.1254808572"
+      ]
+    }
+  },
+  "sha256_sources": {
+    "proofs/one-square-and-five-small-divisors.md": "1bf767cbace39ed470890789ebf4b435ce529516276005b3d3d21d8941c039fb",
+    "pal-rh/PALRH/SquareReference.lean": "7ba60dfe65df93c33fd9861913798132e8e00f52538ba34717d32f05936f226c",
+    "pal-rh/PALRH/SquareHoles.lean": "7d6313ec3c8d00afd85356e77dd3b1e58c423df2af2c43f8f9f914317854aad4",
+    "pal-rh/PALRH/OneSquare.lean": "c3c206f563ad1b9aab7ac9cd0451500eda644053b8c668fb644f510b74d1903c",
+    "pal-rh/lakefile.toml": "6d12c894a41502db9d6f6f2e049e7b13defa8da809fb94b5bc8941562161be63",
+    "pal-rh/checks/one-square/CenterChallenge.lean": "ddf060241876296d5ada67c3b3dd0757cc168d35ae8e0ac8e7a3b7281d27ea26",
+    "pal-rh/checks/one-square/CenterSolution.lean": "a6c691b912fcd8261595b4159ac31c5f32f0fdfcf173404c960387c7751ee37f",
+    "pal-rh/checks/one-square/compare.json": "455c1f9060005b207b42659660b812b63a144bbf7071dd29f0b87c5457617373",
+    "receipt-archives/check_pal_one_square.py": "2403427be76ad2c08456098a441ae6ee97cdde38510d9046a244b39c84b84d87",
+    "pal-rh/PALRH/AdjacentSquares.lean": "50c353f784cd7c9f0423f727d702181ebe45ec3104addb2d353f51d16071da03",
+    "pal-rh/PALRH/ClockShortfall.lean": "5836c2a69090f0cbe6dc3ec99e7435e62b9e03fc28b7c8c19a60f5c19e3a5728",
+    "proofs/when-two-squares-count-the-same-place.md": "3c44acd5a10efdd373b6057c4cfe5359821aa3bb13b1410bce7a81332411890b",
+    "proofs/how-many-square-traces-do-the-primes-need.md": "45a48b72c9e7675e9846e4400fc42373760cce861b02dadaf9d1b3c7fd89f47d",
+    "receipt-archives/check_pal_two_square_range.py": "34efd3be4de8eadcd5491baa7bc5ba31952fd9a7611aec4ebba4929388fef49b",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "receipt-archives/2026-11-26-pal-adjacent-squares.json": "738dcb744a0bc4e89834bc134a08b164ac66d15c84d3355916aef5a5fa8d59e8",
+    "receipt-archives/2026-11-26-pal-square-holes.json": "37eb9d02f4d9aac99f584a407837f29114cf0c0fbf792617360ab4a337803cc7"
+  }
+}
