@@ -1,0 +1,661 @@
+{
+  "parent_public_research_commit": "efca2d1420d23a80c9231d5b02b1190c87360067",
+  "parent_tree": "bca44bd3b33ad2211e6c9ed73daf8bcfaf0cf304",
+  "contributors": "Christopher Daniel Pang supplied the PAL/RPL cut, the retained empty space and its return, and BLA accounting in the same units. Hearthline derived the prime-column allocation, its asymptotic refund, and the physical stock consequences in his program.",
+  "formal_scope": "Greedy minimizes cumulative external draws among all legal plans and preserves the corresponding stock dominance. Both nested reversal identities and the lower bound at a cut are formal. The exact weighted Euclidean residue, its all-row bound and the quotient/lane record identity are formal.",
+  "paper_scope": "All cutwise stock minima for an optimal pocket are attained simultaneously. The pocket cost at any uniform stock cap is G plus the sum of depth excesses. A proof using the row totals behind Granville and Soundararajan 1.5 forces K >= n*x*exp(c*sqrt(log M/log log M)) on each sufficiently late feasible board with an O(n^2) pocket, in each orientation. The common rounded columns recover an oscillating limiting fraction of primes and cost fewer than n*x extra lanes at every cut.",
+  "review": {
+    "type": "author self-review",
+    "orientation": "Ordinary stock is limited after every physical distance. Releasing a column and filing jobs at that same distance can be performed together. The generous control checking only after prime arrivals is recorded separately.",
+    "inventory": "Stock means actual still-eligible idle positions. The four-point reductions preserve final stock and add (depth-cap)_+ to spending. A separate dynamic search allowed deliberately paying early when finding the least draw on small fixtures.",
+    "row_mean": "The asymptotic lower bound uses disjoint matrix rows and their mean, as proved on page 623 of the source. A single exceptional interval would not suffice with the prescribed total pocket. Positive parts control varying n-a even when some rows have the opposite sign.",
+    "rounding": "For every retired row its last admissible source fixes the exact unused lanes. The map permits cross-prime use of an ordinary whole column while the global source sequence permits the inverse.",
+    "range": "The strong all-head storage bound applies to the budgeted physical allocation model. It is not a general bound on algorithmic memory. The unknown all-head pocket fit remains open."
+  },
+  "primary_sources": {
+    "matrix": "https://annals.math.princeton.edu/wp-content/uploads/annals-v165-n2-p06.pdf",
+    "cluster": "https://arxiv.org/pdf/1405.2593",
+    "related_inventory_theory": "https://doi.org/10.1002/mma.3077",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3840
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.SharedColumns",
+      "exit": 0,
+      "seconds": 11.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.CutInventory",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.CutInventory.least_draw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CutInventory.down_up_down": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CutInventory.up_down_up": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.CutInventory.crossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.SharedColumns.exact_residue": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SharedColumns.one_column_per_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SharedColumns.address": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "exhaustive_state_and_capacity_cases": 4375,
+    "worked_sixteen": {
+      "primes": [
+        5,
+        7,
+        11,
+        13
+      ],
+      "ticks": [
+        8,
+        9,
+        11,
+        12
+      ],
+      "counts": {
+        "actual_records": 260,
+        "separate_upper_columns_in_lanes": 292,
+        "shared_upper_columns_in_lanes": 272,
+        "recovered_lanes": 20,
+        "unoccupied_shared_lanes": 12,
+        "still_active_remainder": 0,
+        "retired_lane_sum_through_cut": 12,
+        "primes_relinquishing_one_column": 1,
+        "source_primes": 4
+      },
+      "source": [
+        11,
+        1,
+        0
+      ],
+      "physical_owner_row_column_lane": [
+        7,
+        1,
+        2,
+        1
+      ],
+      "inverse": [
+        11,
+        1,
+        0
+      ],
+      "retired_rows_and_lanes": [
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    "boards": [
+      {
+        "j": 4,
+        "n": 655360000,
+        "x": 25600,
+        "last": 65536,
+        "original": {
+          "unlimited_minimum_pocket": 1783280135488374,
+          "prescribed_pocket": 33038209969230769,
+          "least_persistent_capacity_for_prescribed_pocket": 740037595470834,
+          "least_capacity_for_unlimited_minimum": 4225899360077877,
+          "forced_crossing": {
+            "left_peak": [
+              42863,
+              1717432035854483
+            ],
+            "cut": [
+              55602,
+              -2508467324223394
+            ],
+            "right_peak": [
+              59753,
+              1783280135488374
+            ]
+          },
+          "finite_depth_count": 3723,
+          "five_deepest": [
+            4225899360077877,
+            3110062445959968,
+            3031585023121132,
+            2783459365684532,
+            2241141083906209
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              605097170700754428
+            ],
+            [
+              740037595470833,
+              33038209969230786
+            ],
+            [
+              740037595470834,
+              33038209969230731
+            ],
+            [
+              2112949680038938,
+              6701059068860674
+            ],
+            [
+              4225899360077877,
+              1783280135488374
+            ]
+          ]
+        },
+        "opposite": {
+          "unlimited_minimum_pocket": 2637063059889022,
+          "prescribed_pocket": 33038209969230769,
+          "least_persistent_capacity_for_prescribed_pocket": 772143682651944,
+          "least_capacity_for_unlimited_minimum": 4291747459711768,
+          "forced_crossing": {
+            "left_peak": [
+              55602,
+              2508467324223394
+            ],
+            "cut": [
+              59753,
+              -1783280135488374
+            ],
+            "right_peak": [
+              64996,
+              2637063059889022
+            ]
+          },
+          "finite_depth_count": 3724,
+          "five_deepest": [
+            4291747459711768,
+            3501164497218832,
+            3031585023121132,
+            2783459365684532,
+            2241141083906209
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              607494271027046400
+            ],
+            [
+              772143682651943,
+              33038209969230791
+            ],
+            [
+              772143682651944,
+              33038209969230738
+            ],
+            [
+              2145873729855884,
+              7814247845252401
+            ],
+            [
+              4291747459711768,
+              2637063059889022
+            ]
+          ]
+        },
+        "capacity_enforced_only_after_prime_arrivals": {
+          "unlimited_minimum_pocket": 1783280135488374,
+          "prescribed_pocket": 33038209969230769,
+          "least_persistent_capacity_for_prescribed_pocket": 577114658726208,
+          "least_capacity_for_unlimited_minimum": 4059379304451810,
+          "forced_crossing": {
+            "left_peak": [
+              42863,
+              1717432035854483
+            ],
+            "cut": [
+              55603,
+              -2341947268597327
+            ],
+            "right_peak": [
+              59753,
+              1783280135488374
+            ]
+          },
+          "finite_depth_count": 953,
+          "five_deepest": [
+            4059379304451810,
+            2952778495576376,
+            2870274258064288,
+            2614763062551817,
+            2081700209110960
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              191026458668646109
+            ],
+            [
+              577114658726207,
+              33038209969230807
+            ],
+            [
+              577114658726208,
+              33038209969230752
+            ],
+            [
+              2029689652225905,
+              6223569248380031
+            ],
+            [
+              4059379304451810,
+              1783280135488374
+            ]
+          ]
+        },
+        "column_allocations": {
+          "actual_records": 667571210365138428,
+          "separate_upper_columns_in_lanes": 695518363637836800,
+          "shared_upper_columns_in_lanes": 667586158142822400,
+          "recovered_lanes": 27932205495014400,
+          "unoccupied_shared_lanes": 14947777683972,
+          "still_active_remainder": 22810,
+          "retired_lane_sum_through_cut": 510960132,
+          "primes_relinquishing_one_column": 1665,
+          "source_primes": 3724
+        }
+      },
+      {
+        "j": 5,
+        "n": 21743271936,
+        "x": 147456,
+        "last": 1048576,
+        "original": {
+          "unlimited_minimum_pocket": 679594705436492182,
+          "prescribed_pocket": 36366913421757322161,
+          "least_persistent_capacity_for_prescribed_pocket": 578248024553178464,
+          "least_capacity_for_unlimited_minimum": 2613303719827750277,
+          "forced_crossing": {
+            "left_peak": [
+              155893,
+              679594705436492182
+            ],
+            "cut": [
+              757992,
+              -3026926146371057268
+            ],
+            "right_peak": [
+              910229,
+              -413622426543306991
+            ]
+          },
+          "finite_depth_count": 68393,
+          "five_deepest": [
+            2613303719827750277,
+            2479073734399368250,
+            2409631836169635918,
+            2137951842199910553,
+            2105271975772755725
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              2667100685191379261917
+            ],
+            [
+              578248024553178463,
+              36366913421757322191
+            ],
+            [
+              578248024553178464,
+              36366913421757322091
+            ],
+            [
+              1306651859913875138,
+              8206096366362107799
+            ],
+            [
+              2613303719827750277,
+              679594705436492182
+            ]
+          ]
+        },
+        "opposite": {
+          "unlimited_minimum_pocket": 3736444008129303732,
+          "prescribed_pocket": 36366913421757322161,
+          "least_persistent_capacity_for_prescribed_pocket": 603974438976430210,
+          "least_capacity_for_unlimited_minimum": 2613303719827750277,
+          "forced_crossing": {
+            "left_peak": [
+              757992,
+              3026926146371057268
+            ],
+            "cut": [
+              910229,
+              413622426543306991
+            ],
+            "right_peak": [
+              993820,
+              3736444008129303732
+            ]
+          },
+          "finite_depth_count": 68394,
+          "five_deepest": [
+            2613303719827750277,
+            2479073734399368250,
+            2409631836169635918,
+            2137951842199910553,
+            2052772958404120629
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              2669792505210771111936
+            ],
+            [
+              603974438976430209,
+              36366913421757322192
+            ],
+            [
+              603974438976430210,
+              36366913421757322098
+            ],
+            [
+              1306651859913875138,
+              10486283023031139103
+            ],
+            [
+              2613303719827750277,
+              3736444008129303732
+            ]
+          ]
+        },
+        "capacity_enforced_only_after_prime_arrivals": {
+          "unlimited_minimum_pocket": 679594705436492182,
+          "prescribed_pocket": 36366913421757322161,
+          "least_persistent_capacity_for_prescribed_pocket": 538987095430860488,
+          "least_capacity_for_unlimited_minimum": 2573104551103900095,
+          "forced_crossing": {
+            "left_peak": [
+              155893,
+              679594705436492182
+            ],
+            "cut": [
+              757993,
+              -2986726977647207086
+            ],
+            "right_peak": [
+              910229,
+              -413622426543306991
+            ]
+          },
+          "finite_depth_count": 16683,
+          "five_deepest": [
+            2573104551103900095,
+            2440453222547960785,
+            2372373453941782703,
+            2099744388787940634,
+            2064204791250415770
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              872864702470140556338
+            ],
+            [
+              538987095430860487,
+              36366913421757322185
+            ],
+            [
+              538987095430860488,
+              36366913421757322085
+            ],
+            [
+              1286552275551950047,
+              7948642194410862127
+            ],
+            [
+              2573104551103900095,
+              679594705436492182
+            ]
+          ]
+        },
+        "column_allocations": {
+          "actual_records": 2886377951159551597021,
+          "separate_upper_columns_in_lanes": 2990452965565381705728,
+          "shared_upper_columns_in_lanes": 2886379866824681668608,
+          "recovered_lanes": 104073098740700037120,
+          "unoccupied_shared_lanes": 1915665130071587,
+          "still_active_remainder": 88105,
+          "retired_lane_sum_through_cut": 66540938787,
+          "primes_relinquishing_one_column": 32461,
+          "source_primes": 68394
+        }
+      },
+      {
+        "j": 6,
+        "n": 644513529856,
+        "x": 802816,
+        "last": 16777216,
+        "original": {
+          "unlimited_minimum_pocket": 166979847895058991195,
+          "prescribed_pocket": 31953668474418538721595,
+          "least_persistent_capacity_for_prescribed_pocket": 305477500985821975465,
+          "least_capacity_for_unlimited_minimum": 2012862830254085568732,
+          "forced_crossing": {
+            "left_peak": [
+              1195247,
+              166979847895058991195
+            ],
+            "cut": [
+              10219590,
+              -2323649224012589363961
+            ],
+            "right_peak": [
+              12871811,
+              -310786393758503795229
+            ]
+          },
+          "finite_depth_count": 1013709,
+          "five_deepest": [
+            2012862830254085568732,
+            1363084932875114081286,
+            1329643963114509254257,
+            1323820516518367804915,
+            1282307526033944214929
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              7738790269507990673800247
+            ],
+            [
+              305477500985821975464,
+              31953668474418538721686
+            ],
+            [
+              305477500985821975465,
+              31953668474418538721525
+            ],
+            [
+              1006431415127042784366,
+              2892488719578344029597
+            ],
+            [
+              2012862830254085568732,
+              166979847895058991195
+            ]
+          ]
+        },
+        "opposite": {
+          "unlimited_minimum_pocket": 2884605175603947739577,
+          "prescribed_pocket": 31953668474418538721595,
+          "least_persistent_capacity_for_prescribed_pocket": 320366821710992874810,
+          "least_capacity_for_unlimited_minimum": 2012862830254085568732,
+          "forced_crossing": {
+            "left_peak": [
+              10219590,
+              2323649224012589363961
+            ],
+            "cut": [
+              12871811,
+              310786393758503795229
+            ],
+            "right_peak": [
+              16576186,
+              2884605175603947739577
+            ]
+          },
+          "finite_depth_count": 1013709,
+          "five_deepest": [
+            2012862830254085568732,
+            1363084932875114081286,
+            1329643963114509254257,
+            1323820516518367804915,
+            1282307526033944214929
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              7740941380481410580627456
+            ],
+            [
+              320366821710992874809,
+              31953668474418538721656
+            ],
+            [
+              320366821710992874810,
+              31953668474418538721515
+            ],
+            [
+              1006431415127042784366,
+              5610114047287232777979
+            ],
+            [
+              2012862830254085568732,
+              2884605175603947739577
+            ]
+          ]
+        },
+        "capacity_enforced_only_after_prime_arrivals": {
+          "unlimited_minimum_pocket": 166979847895058991195,
+          "prescribed_pocket": 31953668474418538721595,
+          "least_persistent_capacity_for_prescribed_pocket": 297789274224404503354,
+          "least_capacity_for_unlimited_minimum": 2005029217347482867292,
+          "forced_crossing": {
+            "left_peak": [
+              1195247,
+              166979847895058991195
+            ],
+            "cut": [
+              10219591,
+              -2315815611105986662521
+            ],
+            "right_peak": [
+              12871811,
+              -310786393758503795229
+            ]
+          },
+          "finite_depth_count": 247380,
+          "five_deepest": [
+            2005029217347482867292,
+            1355470461605297386201,
+            1321907337295664830117,
+            1315841078893877804884,
+            1274260136101584652859
+          ],
+          "capacity_and_minimum_pocket": [
+            [
+              0,
+              2590943529440408208946800
+            ],
+            [
+              297789274224404503353,
+              31953668474418538721620
+            ],
+            [
+              297789274224404503354,
+              31953668474418538721459
+            ],
+            [
+              1002514608673741433646,
+              2861997318010353833419
+            ],
+            [
+              2005029217347482867292,
+              166979847895058991195
+            ]
+          ]
+        },
+        "column_allocations": {
+          "actual_records": 8263302445369582511553591,
+          "separate_upper_columns_in_lanes": 8538566281993278222942208,
+          "shared_upper_columns_in_lanes": 8263302644639566351679488,
+          "recovered_lanes": 275263637353711871262720,
+          "unoccupied_shared_lanes": 199269983840125897,
+          "still_active_remainder": 309177,
+          "retired_lane_sum_through_cut": 6411349148617,
+          "primes_relinquishing_one_column": 531994,
+          "source_primes": 1013709
+        }
+      }
+    ]
+  },
+  "sha256_sources": {
+    "proofs/which-empty-cells-must-cross.md": "4657fbd745f5b9666c19a1d2ac86d8b824b1a743aa94f60822021c953db2f570",
+    "pal-rh/how-much-credit-crosses-a-prime-cut.md": "ed68a4314dc117e309933f258d115244ca910a808e7df7e684616ed468d41cce",
+    "pal-rh/the-whole-column-a-prime-can-return.md": "489d6fb10f86f9330d4de9e6a7a3018a1f9f78db4f8936749d18395e296ac698",
+    "pal-rh/PALRH/CutInventory.lean": "4be3230793c367d93d8d4b4adbf908508ab4d284ede7f5166a39d51bfbde25f0",
+    "pal-rh/PALRH/SharedColumns.lean": "82decfe2c44032adc2263e1cac35b79b61a95463ae54a6ae0ce79c9e13795459",
+    "pal-rh/lakefile.toml": "82c389944a5d865548967929c33721497f26ff43efbfda8e6415c959de4e2948",
+    "receipt-archives/check_pal_carry_storage.py": "07d14fc1d851ec96c6fce4c6cac47cde5abb8080037bf9d3eb334ac00d8d9796",
+    "receipt-archives/pal_carry_storage.py": "ff2fb1da37d969a6be6e094bbb843ee8336b7df0b23603027c20c308638850b8",
+    "receipt-archives/pal_tick_columns.py": "ee6d92645016924cd44dc04db7e8814c6552dc9ff6190dd88cd9937db8fbdcb1",
+    "receipt-archives/check_pal_returned_horizon.py": "380ff2ea0bf0b90f9c1782b7a8d5217ce0ce942c48d888afbd0e912914eef115",
+    "receipt-archives/2026-11-26-pal-returned-horizon.json": "f17cccbbb8077a19171d2cf4b6b06d194d74ae9a32201dfec8e3a6a563272da5",
+    "receipt-archives/2026-11-26-pal-expiring-gaps.json": "63a629c432dd075eb5e4a76151861ff0b3228054d88bd459f6f379e114a025e8"
+  }
+}

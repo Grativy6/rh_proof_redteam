@@ -10,6 +10,8 @@ For the [fixed one-thirteenth comparison](../proofs/one-thirteenth-of-a-returned
 
 The [two separate signs](../proofs/why-either-side-of-the-pocket-is-enough.md) now have a fixed challenge for excess alone, shortage alone, and an actual deadline-respecting family of injections. [Build, independent exports, kernels and bare comparison](2026-11-26-pal-signed-pocket.json)
 
+For the [shared columns and storage caps](../proofs/which-empty-cells-must-cross.md), run `python -B receipt-archives/check_pal_carry_storage.py`. It replays the sixteen-site codec, exhausts small stock plans and compares every reported depth-based price to direct inventory simulation. [Exact budgets and cells](2026-11-26-pal-carry-storage.json)
+
 For [expiring gap credit](../proofs/how-long-prime-gap-credit-must-survive.md), run `python -B receipt-archives/check_pal_expiring_gap_credit.py --show-partitions`. The output gives the two optimum block caps at each active head and all boundaries of one optimal partition for each transition. [Exact costs and pencil example](2026-11-26-pal-expiring-gaps.json)
 
 For [the one-sided subset comparison](../proofs/one-integer-comparison-to-rh.md), run `python -B receipt-archives/check_pal_one_subset.py`. Prime-power readings and their logarithmic primitives are independently recomputed from all-integer log and harmonic sums. The same solution export was tested against two fixed statements. [Conditional acceptance and bare-statement mismatch](2026-11-26-pal-one-subset.json)

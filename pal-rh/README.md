@@ -10,6 +10,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Either side separately](../proofs/why-either-side-of-the-pocket-is-enough.md) · [Signed area to RH](PALRH/SignedStrip.lean) · [Fixed independent declarations](checks/signed-pocket/SignedChallenge.lean)
 
+[Which cells cross a cut](../proofs/which-empty-cells-must-cross.md) · [All storage caps](how-much-credit-crosses-a-prime-cut.md) · [Recovered columns](the-whole-column-a-prime-can-return.md)
+
 [How long unused cells must survive](../proofs/how-long-prime-gap-credit-must-survive.md) · [Proof for all adaptive local groupings](why-expiring-gap-credit-fails.md)
 
 [One eventual integer comparison](../proofs/one-integer-comparison-to-rh.md) · [Complete one-sided deduction](how-one-sided-prime-area-reaches-rh.md) · [Independently fixed statement](checks/one-subset/OneSubsetChallenge.lean)

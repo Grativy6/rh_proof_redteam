@@ -18,6 +18,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [Either side of the pocket](proofs/why-either-side-of-the-pocket-is-enough.md) now reaches stock RH in Lean independently. In particular a map assigning every arriving tick a distinct cell by its arrival cut is sufficient. Its all-board existence is the open mathematical input.
 
+[Which empty cells must cross?](proofs/which-empty-cells-must-cross.md) gives the exact amount required at each boundary. A common tick remainder allows one prime to use a column opened by another. At sixteen sites it returns twenty lanes while preserving every original tick.
+
 A direct attempt to fund that pocket gives a [lower bound on how long unused cells must survive](proofs/how-long-prime-gap-credit-must-survive.md). Through 1,048,576, the smallest working cap is 246 consecutive primes when each job needs its cell on arrival. Even optimally chosen resets with a polylogarithmic cap eventually overspend.
 
 The subset theorem reaches stock `RiemannHypothesis` from **one eventual comparison of whole numbers**. At $n=k^4$, compare the independent forward trip settings selected by a factorial gcd with the number of ways to pick one subset of each size. All intermediate transfers are proved. The universal comparison itself remains open. [Start with the count at sixteen](proofs/one-integer-comparison-to-rh.md) · [Trace the one-sided deduction](pal-rh/how-one-sided-prime-area-reaches-rh.md)

@@ -10,6 +10,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Separate excess and shortage implications](why-either-side-of-the-pocket-is-enough.md). Hearthline followed both directions of Pang’s fixed strip in Lean using the paired logarithms of genuine divisors, 26 November 2026. [Independent statements](../pal-rh/checks/signed-pocket/SignedChallenge.lean)
 
+[Surviving columns and the least crossing inventory](which-empty-cells-must-cross.md). Hearthline followed Pang’s retained-residue question into shared division and a common placement attaining every cut minimum, 26 November 2026. [Proof for storage](../pal-rh/how-much-credit-crosses-a-prime-cut.md) · [Returned columns](../pal-rh/the-whole-column-a-prime-can-return.md)
+
 [Expiring gap credit](how-long-prime-gap-credit-must-survive.md). Hearthline derived the simultaneous separation of logarithmic prices from integral gap widths and optimized the actual groupings under Pang’s research key on 26 November 2026. [Rules and derivation](../pal-rh/why-expiring-gap-credit-fails.md)
 
 [One eventual comparison, with a complete formal transfer](one-integer-comparison-to-rh.md). Under Pang’s construction key, Hearthline used the first alternating pair to recover a second direction of control on the primitive, 26 November 2026. [Source and scope](../pal-rh/how-one-sided-prime-area-reaches-rh.md)

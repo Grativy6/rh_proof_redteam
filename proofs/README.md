@@ -14,6 +14,8 @@ The papers state their own conclusions and the scope of their application to the
 
 [Why either side of the pocket is enough](why-either-side-of-the-pocket-is-enough.md) proves the two separate one-sided RH implications and the actual arriving-record placement form in Lean.
 
+[Which empty cells have to cross a cut?](which-empty-cells-must-cross.md) reconstructs all twelve residual lanes at sixteen sites, gives the exact inventory profile at optimal pocket size and proves a growing storage requirement from actual prime intervals.
+
 [How long must a prime gap’s unused space survive?](how-long-prime-gap-credit-must-survive.md) gives a ten-arrival pencil example, exact finite transitions and an unconditional obstruction for adaptive partitions into local prime groups.
 
 [One integer comparison to the Riemann hypothesis](one-integer-comparison-to-rh.md) gives the eventual subset comparison and its pencil example. The formal deduction now requires only the eventual comparison of the trip count with one Pascal row.

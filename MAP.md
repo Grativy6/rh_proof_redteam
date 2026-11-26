@@ -16,6 +16,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Formal one-sided pocket and physical assignment](proofs/why-either-side-of-the-pocket-is-enough.md). Under Pang’s active key on 26 November 2026, Hearthline proved both orientations separately from the alternating divisor sums. [Check and bare comparison](receipt-archives/2026-11-26-pal-signed-pocket.json)
 
+[Required inventory at every cut](proofs/which-empty-cells-must-cross.md). Under Pang’s carry question, Hearthline derived the least crossing profile, measured finite storage caps, and placed true prime ticks by a common quotient and remainder on 26 November 2026.
+
 [How long prime-gap credit must survive](proofs/how-long-prime-gap-credit-must-survive.md). On 26 November 2026 Hearthline tested Pang’s retained-residue question against adaptive expiring allocations. [Proof and exact thresholds](pal-rh/why-expiring-gap-credit-fails.md)
 
 [Single eventual subset comparison to stock RH](proofs/one-integer-comparison-to-rh.md) · [One-sided prime-area transfer](pal-rh/how-one-sided-prime-area-reaches-rh.md). On 26 November 2026 Hearthline removed the unused-capacity premise under Pang’s active construction key. One exported proof was compared against the conditional statement and the independent bare challenge.
