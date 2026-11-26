@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Square-root test, 26 November 2026.** Keep the owner of each rough-square copy. The known divisor amount leaves at most the last two roots per owner. Their signs still vary across owners. A uniform upper bound on their signed sum strictly below $0.30267087\sqrt t(\log t)^2$ with a fixed positive margin suffices. An identified fraction of those roots carries a further negative term of order $\sqrt t\log t$. [Derivation and exact open inequality](what-the-last-two-square-roots-carry.md)
+
 **Current local test.** At a fourth-power side and the next square-root-width endpoint, compare the known positive cubic source with differences of squared divider residues. Pay the early labels once. In parallel, follow a backward clock direction at each half-row and measure the deficit only where both directions fail together. On paper any one fixed power saving in negative-run length on arbitrarily late power panels suffices. [Localized cost](what-a-reflected-remainder-carries.md) · [Which runs would be forced](how-far-a-negative-run-must-travel.md)
 
 **First-pass fourth powers.** Examine the actual rational signs $S_1(j^4)$. Nonnegativity from some root onward suffices. The proof pays for every intervening side using only the corners of its tapers. Test failures on the same input and distinguish a finite violation from failure at unbounded roots. [Paper argument](what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [Stock-target deduction](PALRH/CubicFourth.lean)

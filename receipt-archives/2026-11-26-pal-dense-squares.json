@@ -1,0 +1,1255 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "607e947d675405123173e19a4d0194c14d6d9712",
+  "parent_tree": "559bb0153ededbe0e472b6f8fe173a351b37a190",
+  "contributors": "Christopher Daniel Pang supplied PAL v2.4, the retained-frame and old/detail questions, the reverse-direction test and authorization. Hearthline derived the rough-square pass, reversible count, root allocation and two signed portions.",
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "normal_build_exit": 0,
+  "build_jobs": 3795,
+  "axioms": {
+    "PALRH.DenseSquares.return_on_head": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DenseSquares.inverse_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DenseSquares.rh_of_dense_floors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "kernel_replay": [
+    {
+      "module": "PALRH.DenseSquares",
+      "exit": 0,
+      "seconds": 28.8,
+      "output": ""
+    }
+  ],
+  "formal_scope": "Exact finite square inverse, harmonic inverse norm, and a sufficient lower floor on the normalized bank at all covered real arguments. The paper separately derives the implication from eventual nonpositivity of the explicit completed integer count.",
+  "paper_scope": "Universal allocation with at most two remaining rough roots for each original cofactor. Signed source portions have leading terms of order sqrt(t) log(t)^2 and sqrt(t) log(t). No eventual sign has been established.",
+  "finite_sources": {
+    "direct_contiguous_negative": [
+      45,
+      27373823781
+    ],
+    "with_previous_published_mertens_bound": [
+      45,
+      10000000000000
+    ],
+    "large_individual_values": "Independently computed by the paired recurrences. No external finite Mertens bound used to compute a table entry."
+  },
+  "native_columns": [
+    "quotient_index",
+    "head",
+    "original_physical",
+    "completed_physical",
+    "rough_mobius",
+    "rough_liouville",
+    "ordinary_liouville"
+  ],
+  "native_counts": [
+    {
+      "top": 10000000000000,
+      "cutoff": 20000000,
+      "mode": "mobius",
+      "rows": [
+        [
+          1,
+          10000000000000,
+          -274138671,
+          -723457240,
+          71658,
+          -5605669,
+          -966578
+        ],
+        [
+          2,
+          5000000000000,
+          -190198110,
+          -487502048,
+          -153415,
+          -4375475,
+          -2354582
+        ],
+        [
+          5,
+          2000000000000,
+          -116644406,
+          -288890262,
+          -134299,
+          -2755107,
+          -1394102
+        ],
+        [
+          10,
+          1000000000000,
+          -77683177,
+          -191383316,
+          32709,
+          -1797375,
+          -522626
+        ],
+        [
+          25,
+          400000000000,
+          -46749363,
+          -112108857,
+          105337,
+          -1058107,
+          -336998
+        ],
+        [
+          100,
+          100000000000,
+          -22000751,
+          -49994161,
+          -39514,
+          -629139,
+          -342224
+        ],
+        [
+          1000,
+          10000000000,
+          -6245481,
+          -12883692,
+          -19575,
+          -201417,
+          -116026
+        ],
+        [
+          100000,
+          100000000,
+          -445294,
+          -768622,
+          -55,
+          -18531,
+          -3884
+        ]
+      ],
+      "sha256": "cb444037e7540c6be77b0a2fa99f0e2cd9ab7bae3d85056d9412d84256b43b7f"
+    },
+    {
+      "top": 10000000000000,
+      "cutoff": 16000000,
+      "mode": "liouville",
+      "rows": [
+        [
+          1,
+          10000000000000,
+          -274138671,
+          -723457240,
+          71658,
+          -5605669,
+          -966578
+        ],
+        [
+          2,
+          5000000000000,
+          -190198110,
+          -487502048,
+          -153415,
+          -4375475,
+          -2354582
+        ],
+        [
+          5,
+          2000000000000,
+          -116644406,
+          -288890262,
+          -134299,
+          -2755107,
+          -1394102
+        ],
+        [
+          10,
+          1000000000000,
+          -77683177,
+          -191383316,
+          32709,
+          -1797375,
+          -522626
+        ],
+        [
+          25,
+          400000000000,
+          -46749363,
+          -112108857,
+          105337,
+          -1058107,
+          -336998
+        ],
+        [
+          100,
+          100000000000,
+          -22000751,
+          -49994161,
+          -39514,
+          -629139,
+          -342224
+        ],
+        [
+          1000,
+          10000000000,
+          -6245481,
+          -12883692,
+          -19575,
+          -201417,
+          -116026
+        ],
+        [
+          100000,
+          100000000,
+          -445294,
+          -768622,
+          -55,
+          -18531,
+          -3884
+        ]
+      ],
+      "sha256": "cb444037e7540c6be77b0a2fa99f0e2cd9ab7bae3d85056d9412d84256b43b7f"
+    },
+    {
+      "top": 200000000,
+      "cutoff": 500000,
+      "mode": "mobius",
+      "rows": [
+        [
+          1,
+          200000000,
+          -663292,
+          -1183908,
+          658,
+          -25143,
+          -11126
+        ],
+        [
+          2,
+          100000000,
+          -445294,
+          -768622,
+          -55,
+          -18531,
+          -3884
+        ],
+        [
+          3,
+          66666666,
+          -357366,
+          -601050,
+          -738,
+          -15364,
+          -4274
+        ],
+        [
+          5,
+          40000000,
+          -262227,
+          -433017,
+          -896,
+          -12215,
+          -3192
+        ],
+        [
+          9,
+          22222222,
+          -182748,
+          -295701,
+          -208,
+          -8705,
+          -3436
+        ],
+        [
+          25,
+          8000000,
+          -102616,
+          -155953,
+          -382,
+          -5277,
+          -2444
+        ]
+      ],
+      "sha256": "f8789afdefc7941a61a0b9b8cb7175edf3887162ae06879b7d8db3fb3fc3dbd1"
+    },
+    {
+      "top": 200000000,
+      "cutoff": 400000,
+      "mode": "liouville",
+      "rows": [
+        [
+          1,
+          200000000,
+          -663292,
+          -1183908,
+          658,
+          -25143,
+          -11126
+        ],
+        [
+          2,
+          100000000,
+          -445294,
+          -768622,
+          -55,
+          -18531,
+          -3884
+        ],
+        [
+          3,
+          66666666,
+          -357366,
+          -601050,
+          -738,
+          -15364,
+          -4274
+        ],
+        [
+          5,
+          40000000,
+          -262227,
+          -433017,
+          -896,
+          -12215,
+          -3192
+        ],
+        [
+          9,
+          22222222,
+          -182748,
+          -295701,
+          -208,
+          -8705,
+          -3436
+        ],
+        [
+          25,
+          8000000,
+          -102616,
+          -155953,
+          -382,
+          -5277,
+          -2444
+        ]
+      ],
+      "sha256": "f8789afdefc7941a61a0b9b8cb7175edf3887162ae06879b7d8db3fb3fc3dbd1"
+    },
+    {
+      "top": 906150257,
+      "cutoff": 800000,
+      "mode": "mobius",
+      "rows": [
+        [
+          1,
+          906150257,
+          -1576299,
+          -2997993,
+          5128,
+          -48838,
+          1
+        ],
+        [
+          2,
+          453075128,
+          -1072149,
+          -1970484,
+          -2277,
+          -41933,
+          -26670
+        ],
+        [
+          3,
+          302050085,
+          -873964,
+          -1557996,
+          -1290,
+          -32830,
+          -19323
+        ],
+        [
+          5,
+          181230051,
+          -634720,
+          -1119737,
+          -2634,
+          -27265,
+          -17259
+        ],
+        [
+          9,
+          100683361,
+          -445943,
+          -772291,
+          325,
+          -18233,
+          -3397
+        ],
+        [
+          25,
+          36246010,
+          -251119,
+          -410478,
+          756,
+          -10043,
+          -2134
+        ]
+      ],
+      "sha256": "d89aa3a1e9c063273a5a0652d0cfce5250e5c0745ed2abf1e62a9463e61204fb"
+    },
+    {
+      "top": 906150257,
+      "cutoff": 650000,
+      "mode": "liouville",
+      "rows": [
+        [
+          1,
+          906150257,
+          -1576299,
+          -2997993,
+          5128,
+          -48838,
+          1
+        ],
+        [
+          2,
+          453075128,
+          -1072149,
+          -1970484,
+          -2277,
+          -41933,
+          -26670
+        ],
+        [
+          3,
+          302050085,
+          -873964,
+          -1557996,
+          -1290,
+          -32830,
+          -19323
+        ],
+        [
+          5,
+          181230051,
+          -634720,
+          -1119737,
+          -2634,
+          -27265,
+          -17259
+        ],
+        [
+          9,
+          100683361,
+          -445943,
+          -772291,
+          325,
+          -18233,
+          -3397
+        ],
+        [
+          25,
+          36246010,
+          -251119,
+          -410478,
+          756,
+          -10043,
+          -2134
+        ]
+      ],
+      "sha256": "d89aa3a1e9c063273a5a0652d0cfce5250e5c0745ed2abf1e62a9463e61204fb"
+    }
+  ],
+  "payments": {
+    "profile": {
+      "reader_limit": [
+        "0.730177254404",
+        "0.730177254405"
+      ],
+      "lower_for_reader_on_v_ge_4": [
+        "0.39662585",
+        "0.39662586"
+      ],
+      "asymptotic_deficit": [
+        "0.94928618",
+        "0.94928619"
+      ],
+      "small_endpoints": [
+        {
+          "root": 1,
+          "integer_count": 1,
+          "continuous_count": [
+            "0.00000000",
+            "0.00000000"
+          ]
+        },
+        {
+          "root": 5,
+          "integer_count": 2,
+          "continuous_count": [
+            "0.69158186",
+            "0.69158187"
+          ]
+        },
+        {
+          "root": 7,
+          "integer_count": 3,
+          "continuous_count": [
+            "1.37403256",
+            "1.37403257"
+          ]
+        },
+        {
+          "root": 11,
+          "integer_count": 4,
+          "continuous_count": [
+            "2.71306254",
+            "2.71306255"
+          ]
+        },
+        {
+          "root": 13,
+          "integer_count": 5,
+          "continuous_count": [
+            "3.38074092",
+            "3.38074093"
+          ]
+        },
+        {
+          "root": 17,
+          "integer_count": 6,
+          "continuous_count": [
+            "4.72262169",
+            "4.72262170"
+          ]
+        },
+        {
+          "root": 19,
+          "integer_count": 7,
+          "continuous_count": [
+            "5.38824168",
+            "5.38824169"
+          ]
+        },
+        {
+          "root": 23,
+          "integer_count": 8,
+          "continuous_count": [
+            "6.71634561",
+            "6.71634562"
+          ]
+        },
+        {
+          "root": 25,
+          "integer_count": 9,
+          "continuous_count": [
+            "7.38318571",
+            "7.38318572"
+          ]
+        },
+        {
+          "root": 29,
+          "integer_count": 10,
+          "continuous_count": [
+            "8.71673915",
+            "8.71673916"
+          ]
+        },
+        {
+          "root": 31,
+          "integer_count": 11,
+          "continuous_count": [
+            "9.38347998",
+            "9.38347999"
+          ]
+        },
+        {
+          "root": 35,
+          "integer_count": 12,
+          "continuous_count": [
+            "10.71861542",
+            "10.71861543"
+          ]
+        },
+        {
+          "root": 37,
+          "integer_count": 13,
+          "continuous_count": [
+            "11.38515214",
+            "11.38515215"
+          ]
+        },
+        {
+          "root": 41,
+          "integer_count": 14,
+          "continuous_count": [
+            "12.71705699",
+            "12.71705700"
+          ]
+        },
+        {
+          "root": 43,
+          "integer_count": 15,
+          "continuous_count": [
+            "13.38375463",
+            "13.38375464"
+          ]
+        },
+        {
+          "root": 47,
+          "integer_count": 16,
+          "continuous_count": [
+            "14.71713554",
+            "14.71713555"
+          ]
+        },
+        {
+          "root": 48,
+          "integer_count": 16,
+          "continuous_count": [
+            "15.05138252",
+            "15.05138253"
+          ]
+        }
+      ],
+      "failed_dilations_at_five_from_below": {
+        "1": [
+          "1.34911954",
+          "1.34911955"
+        ],
+        "2": [
+          "1.02272256",
+          "1.02272257"
+        ]
+      }
+    },
+    "small": [
+      {
+        "head": 1,
+        "full_count": 1,
+        "paid": [
+          "0.00000000",
+          "0.00000000"
+        ],
+        "unspent": [
+          "1.00000000",
+          "1.00000000"
+        ],
+        "two_roots_witness_label": null
+      },
+      {
+        "head": 6,
+        "full_count": 2,
+        "paid": [
+          "0.00000000",
+          "0.00000000"
+        ],
+        "unspent": [
+          "2.00000000",
+          "2.00000000"
+        ],
+        "two_roots_witness_label": null
+      },
+      {
+        "head": 24,
+        "full_count": 1,
+        "paid": [
+          "0.65849438",
+          "0.65849439"
+        ],
+        "unspent": [
+          "0.34150561",
+          "0.34150562"
+        ],
+        "two_roots_witness_label": null
+      },
+      {
+        "head": 25,
+        "full_count": 2,
+        "paid": [
+          "0.69158186",
+          "0.69158187"
+        ],
+        "unspent": [
+          "1.30841813",
+          "1.30841814"
+        ],
+        "two_roots_witness_label": 1
+      },
+      {
+        "head": 44,
+        "full_count": 0,
+        "paid": [
+          "1.51780858",
+          "1.51780859"
+        ],
+        "unspent": [
+          "-1.51780859",
+          "-1.51780858"
+        ],
+        "two_roots_witness_label": null
+      },
+      {
+        "head": 45,
+        "full_count": -3,
+        "paid": [
+          "1.55930923",
+          "1.55930924"
+        ],
+        "unspent": [
+          "-4.55930924",
+          "-4.55930923"
+        ],
+        "two_roots_witness_label": null
+      },
+      {
+        "head": 49,
+        "full_count": -3,
+        "paid": [
+          "1.70492478",
+          "1.70492479"
+        ],
+        "unspent": [
+          "-4.70492479",
+          "-4.70492478"
+        ],
+        "two_roots_witness_label": 1
+      },
+      {
+        "head": 65,
+        "full_count": -1,
+        "paid": [
+          "2.16799560",
+          "2.16799561"
+        ],
+        "unspent": [
+          "-3.16799561",
+          "-3.16799560"
+        ],
+        "two_roots_witness_label": 1
+      },
+      {
+        "head": 128,
+        "full_count": -21,
+        "paid": [
+          "4.23898106",
+          "4.23898107"
+        ],
+        "unspent": [
+          "-25.23898107",
+          "-25.23898106"
+        ],
+        "two_roots_witness_label": 1
+      },
+      {
+        "head": 245,
+        "full_count": -46,
+        "paid": [
+          "6.62843412",
+          "6.62843413"
+        ],
+        "unspent": [
+          "-52.62843413",
+          "-52.62843412"
+        ],
+        "two_roots_witness_label": 4
+      },
+      {
+        "head": 343,
+        "full_count": -47,
+        "paid": [
+          "7.94867790",
+          "7.94867791"
+        ],
+        "unspent": [
+          "-54.94867791",
+          "-54.94867790"
+        ],
+        "two_roots_witness_label": 5
+      },
+      {
+        "head": 577,
+        "full_count": -97,
+        "paid": [
+          "8.82598591",
+          "8.82598592"
+        ],
+        "unspent": [
+          "-105.82598592",
+          "-105.82598591"
+        ],
+        "two_roots_witness_label": 9
+      },
+      {
+        "head": 2663,
+        "full_count": -467,
+        "paid": [
+          "-6.70024979",
+          "-6.70024978"
+        ],
+        "unspent": [
+          "-460.29975022",
+          "-460.29975021"
+        ],
+        "two_roots_witness_label": 4
+      }
+    ],
+    "sharper": {
+      "dilation": "17/8",
+      "tail_starts": 96,
+      "limiting_deficit": [
+        "0.67241104",
+        "0.67241105"
+      ],
+      "largest_small_right_deficit_upper": "1.34359659",
+      "small_left_deficit_lower_after_first": "0.00384972",
+      "uniform_residual_upper": "27/20",
+      "universal_lower_for_uniform_upper": "4/3"
+    },
+    "coefficients": {
+      "residual_mellin_mass": [
+        "0.96069608",
+        "0.96069609"
+      ],
+      "leading_paid_per_root_log_squared": [
+        "-0.30267088",
+        "-0.30267087"
+      ],
+      "second_paid_per_root_log": [
+        "-3.48929672",
+        "-3.48929670"
+      ]
+    },
+    "negative_prefix": {
+      "direct_through": 500000,
+      "last_positive": 43,
+      "last_nonnegative": 44,
+      "terminal_rough_argument": 1000,
+      "terminal_coefficient": [
+        "-1.07137098",
+        "-1.07137097"
+      ],
+      "terminal_rounding_allowance": "2132/3",
+      "full_count_at_direct_limit": -24570
+    },
+    "direct_integral": {
+      "integrated_to": 72,
+      "direct_integral_plus_bounded_tail": [
+        "0.95095167",
+        "0.97062761"
+      ]
+    },
+    "secondary": [
+      {
+        "head": 200000000,
+        "cutoff": 10000,
+        "smooth_rows": 50,
+        "secondary_signed_price": [
+          "-441061.676497",
+          "-441061.676496"
+        ]
+      },
+      {
+        "head": 906150257,
+        "cutoff": 10000,
+        "smooth_rows": 53,
+        "secondary_signed_price": [
+          "-1030493.142373",
+          "-1030493.142372"
+        ]
+      },
+      {
+        "head": 10000000000,
+        "cutoff": 10000,
+        "smooth_rows": 61,
+        "secondary_signed_price": [
+          "-3936676.954074",
+          "-3936676.954073"
+        ]
+      },
+      {
+        "head": 1000000000000,
+        "cutoff": 10000,
+        "smooth_rows": 75,
+        "secondary_signed_price": [
+          "-48631486.854257",
+          "-48631486.854256"
+        ]
+      },
+      {
+        "head": 2000000000000,
+        "cutoff": 10000,
+        "smooth_rows": 76,
+        "secondary_signed_price": [
+          "-71965391.294409",
+          "-71965391.294408"
+        ]
+      },
+      {
+        "head": 10000000000000,
+        "cutoff": 10000,
+        "smooth_rows": 82,
+        "secondary_signed_price": [
+          "-168448543.625676",
+          "-168448543.625675"
+        ]
+      },
+      {
+        "head": 200000000,
+        "cutoff": 1000000,
+        "smooth_rows": 64,
+        "secondary_signed_price": [
+          "-600861.053927",
+          "-600861.053926"
+        ]
+      },
+      {
+        "head": 906150257,
+        "cutoff": 1000000,
+        "smooth_rows": 70,
+        "secondary_signed_price": [
+          "-1444333.138238",
+          "-1444333.138237"
+        ]
+      },
+      {
+        "head": 10000000000,
+        "cutoff": 1000000,
+        "smooth_rows": 81,
+        "secondary_signed_price": [
+          "-5482284.548283",
+          "-5482284.548282"
+        ]
+      },
+      {
+        "head": 1000000000000,
+        "cutoff": 1000000,
+        "smooth_rows": 102,
+        "secondary_signed_price": [
+          "-69266020.160696",
+          "-69266020.160695"
+        ]
+      },
+      {
+        "head": 2000000000000,
+        "cutoff": 1000000,
+        "smooth_rows": 105,
+        "secondary_signed_price": [
+          "-102148144.418015",
+          "-102148144.418014"
+        ]
+      },
+      {
+        "head": 10000000000000,
+        "cutoff": 1000000,
+        "smooth_rows": 112,
+        "secondary_signed_price": [
+          "-241074887.048737",
+          "-241074887.048736"
+        ]
+      }
+    ],
+    "large": {
+      "10000000000000": {
+        "old_physical": -274138671,
+        "completed_physical": -723457240,
+        "rough_mobius": 71658,
+        "rough_liouville": -5605669,
+        "ordinary_liouville": -966578,
+        "paid": [
+          "-459530197.377701",
+          "-459530197.377700"
+        ],
+        "unspent": [
+          "-263927042.622300",
+          "-263927042.622299"
+        ]
+      },
+      "5000000000000": {
+        "old_physical": -190198110,
+        "completed_physical": -487502048,
+        "rough_mobius": -153415,
+        "rough_liouville": -4375475,
+        "ordinary_liouville": -2354582,
+        "paid": [
+          "-304859744.600638",
+          "-304859744.600637"
+        ],
+        "unspent": [
+          "-182642303.399363",
+          "-182642303.399362"
+        ]
+      },
+      "2000000000000": {
+        "old_physical": -116644406,
+        "completed_physical": -288890262,
+        "rough_mobius": -134299,
+        "rough_liouville": -2755107,
+        "ordinary_liouville": -1394102,
+        "paid": [
+          "-176672140.791985",
+          "-176672140.791984"
+        ],
+        "unspent": [
+          "-112218121.208016",
+          "-112218121.208015"
+        ]
+      },
+      "1000000000000": {
+        "old_physical": -77683177,
+        "completed_physical": -191383316,
+        "rough_mobius": 32709,
+        "rough_liouville": -1797375,
+        "ordinary_liouville": -522626,
+        "paid": [
+          "-116608575.638867",
+          "-116608575.638866"
+        ],
+        "unspent": [
+          "-74774740.361134",
+          "-74774740.361133"
+        ]
+      },
+      "400000000000": {
+        "old_physical": -46749363,
+        "completed_physical": -112108857,
+        "rough_mobius": 105337,
+        "rough_liouville": -1058107,
+        "ordinary_liouville": -336998,
+        "paid": [
+          "-67092790.324113",
+          "-67092790.324112"
+        ],
+        "unspent": [
+          "-45016066.675888",
+          "-45016066.675887"
+        ]
+      },
+      "100000000000": {
+        "old_physical": -22000751,
+        "completed_physical": -49994161,
+        "rough_mobius": -39514,
+        "rough_liouville": -629139,
+        "ordinary_liouville": -342224,
+        "paid": [
+          "-28816439.251943",
+          "-28816439.251942"
+        ],
+        "unspent": [
+          "-21177721.748058",
+          "-21177721.748057"
+        ]
+      },
+      "10000000000": {
+        "old_physical": -6245481,
+        "completed_physical": -12883692,
+        "rough_mobius": -19575,
+        "rough_liouville": -201417,
+        "ordinary_liouville": -116026,
+        "paid": [
+          "-6884355.337251",
+          "-6884355.337250"
+        ],
+        "unspent": [
+          "-5999336.662750",
+          "-5999336.662749"
+        ]
+      },
+      "100000000": {
+        "old_physical": -445294,
+        "completed_physical": -768622,
+        "rough_mobius": -55,
+        "rough_liouville": -18531,
+        "ordinary_liouville": -3884,
+        "paid": [
+          "-338680.953871",
+          "-338680.953870"
+        ],
+        "unspent": [
+          "-429941.046130",
+          "-429941.046129"
+        ]
+      },
+      "200000000": {
+        "old_physical": -663292,
+        "completed_physical": -1183908,
+        "rough_mobius": 658,
+        "rough_liouville": -25143,
+        "ordinary_liouville": -11126,
+        "paid": [
+          "-541748.057306",
+          "-541748.057305"
+        ],
+        "unspent": [
+          "-642159.942695",
+          "-642159.942694"
+        ]
+      },
+      "66666666": {
+        "old_physical": -357366,
+        "completed_physical": -601050,
+        "rough_mobius": -738,
+        "rough_liouville": -15364,
+        "ordinary_liouville": -4274,
+        "paid": [
+          "-256401.511714",
+          "-256401.511713"
+        ],
+        "unspent": [
+          "-344648.488287",
+          "-344648.488286"
+        ]
+      },
+      "40000000": {
+        "old_physical": -262227,
+        "completed_physical": -433017,
+        "rough_mobius": -896,
+        "rough_liouville": -12215,
+        "ordinary_liouville": -3192,
+        "paid": [
+          "-180053.376714",
+          "-180053.376713"
+        ],
+        "unspent": [
+          "-252963.623287",
+          "-252963.623286"
+        ]
+      },
+      "22222222": {
+        "old_physical": -182748,
+        "completed_physical": -295701,
+        "rough_mobius": -208,
+        "rough_liouville": -8705,
+        "ordinary_liouville": -3436,
+        "paid": [
+          "-118850.764135",
+          "-118850.764134"
+        ],
+        "unspent": [
+          "-176850.235866",
+          "-176850.235865"
+        ]
+      },
+      "8000000": {
+        "old_physical": -102616,
+        "completed_physical": -155953,
+        "rough_mobius": -382,
+        "rough_liouville": -5277,
+        "ordinary_liouville": -2444,
+        "paid": [
+          "-56863.577225",
+          "-56863.577224"
+        ],
+        "unspent": [
+          "-99089.422776",
+          "-99089.422775"
+        ]
+      },
+      "906150257": {
+        "old_physical": -1576299,
+        "completed_physical": -2997993,
+        "rough_mobius": 5128,
+        "rough_liouville": -48838,
+        "ordinary_liouville": 1,
+        "paid": [
+          "-1475044.779248",
+          "-1475044.779247"
+        ],
+        "unspent": [
+          "-1522948.220753",
+          "-1522948.220752"
+        ]
+      },
+      "453075128": {
+        "old_physical": -1072149,
+        "completed_physical": -1970484,
+        "rough_mobius": -2277,
+        "rough_liouville": -41933,
+        "ordinary_liouville": -26670,
+        "paid": [
+          "-935381.891884",
+          "-935381.891883"
+        ],
+        "unspent": [
+          "-1035102.108117",
+          "-1035102.108116"
+        ]
+      },
+      "302050085": {
+        "old_physical": -873964,
+        "completed_physical": -1557996,
+        "rough_mobius": -1290,
+        "rough_liouville": -32830,
+        "ordinary_liouville": -19323,
+        "paid": [
+          "-714706.874053",
+          "-714706.874052"
+        ],
+        "unspent": [
+          "-843289.125948",
+          "-843289.125947"
+        ]
+      },
+      "181230051": {
+        "old_physical": -634720,
+        "completed_physical": -1119737,
+        "rough_mobius": -2634,
+        "rough_liouville": -27265,
+        "ordinary_liouville": -17259,
+        "paid": [
+          "-507129.358005",
+          "-507129.358004"
+        ],
+        "unspent": [
+          "-612607.641996",
+          "-612607.641995"
+        ]
+      },
+      "100683361": {
+        "old_physical": -445943,
+        "completed_physical": -772291,
+        "rough_mobius": 325,
+        "rough_liouville": -18233,
+        "ordinary_liouville": -3397,
+        "paid": [
+          "-340265.433114",
+          "-340265.433113"
+        ],
+        "unspent": [
+          "-432025.566887",
+          "-432025.566886"
+        ]
+      },
+      "36246010": {
+        "old_physical": -251119,
+        "completed_physical": -410478,
+        "rough_mobius": 756,
+        "rough_liouville": -10043,
+        "ordinary_liouville": -2134,
+        "paid": [
+          "-168037.059658",
+          "-168037.059657"
+        ],
+        "unspent": [
+          "-242440.940343",
+          "-242440.940342"
+        ]
+      }
+    }
+  },
+  "source_sha256": {
+    "pal-rh/PALRH/DenseSquares.lean": "a5523c5f73f609c30808adb5a584f0ce9c1037d32bbf54ca6d72f862717700bd",
+    "receipt-archives/dense_square_counts.cpp": "050a3c17a9a4679c3a8bb7a00b426ad7dbdd124eb1c100774f62c4ab867e6b51",
+    "receipt-archives/check_pal_dense_square_payment.py": "56d7e473f05a9808f1a54cc10a5dfba4b23fdd72eb63e8abb2c127aa3c67ac0e",
+    "proofs/why-the-last-two-square-roots-remain.md": "b5e02a453e1c044e43c8d2806da58688ba12d541d8ae12de8178d83e33b485b0",
+    "pal-rh/what-the-last-two-square-roots-carry.md": "a7de3340bc4deff6233770cb60d1a6e6cf7cc40ba79c39fbfbb5be342dfdd82e"
+  }
+}

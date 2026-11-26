@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Square-root allocation](why-the-last-two-square-roots-remain.md) · [Full derivation](../pal-rh/what-the-last-two-square-roots-carry.md). Pang’s question about keeping the residue led Hearthline to identify an invertible pass, two remaining roots per owner, and a second amount recoverable from them on 26 November 2026.
+
 [The negative running integer](the-integer-that-turns-at-forty-four.md) · [Which directions an off-line zero would force](../pal-rh/how-many-rising-steps-would-a-zero-force.md) · [A weighted portion of the true physical rows](../pal-rh/where-the-negative-running-mass-comes-from.md). Under Pang’s active key, Hearthline derived the integer-sign bridge and a sufficient cofinal exception count.
 
 [The one-head criterion and continuous finite interval](one-quantity-at-each-fourth-power.md) · [What carries to the next block](../pal-rh/what-two-neighboring-blocks-predict.md). Pang supplied the old/detail and direction questions. Hearthline derived the scalar reduction, successive-root correction and curvature proof on 25 November 2026.

@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Last two roots per cofactor](proofs/why-the-last-two-square-roots-remain.md) · [Signed prices and reverse map](pal-rh/what-the-last-two-square-roots-carry.md). On 26 November 2026 Hearthline completed the rough squares under Pang’s active key. The residual has a uniform local capacity and a still-open total sign.
+
 [One running integer](proofs/the-integer-that-turns-at-forty-four.md) · [A signed all-scale portion](pal-rh/where-the-negative-running-mass-comes-from.md) · [Cofinal direction counts](pal-rh/how-many-rising-steps-would-a-zero-force.md). Pang’s direction question led Hearthline on 25 November 2026 to a finite factorial comparison, a logarithmic-size multiplier test and the observed negative run.
 
 [Single physical primitive and continuous sign proof](proofs/one-quantity-at-each-fourth-power.md) · [Two changes across the next frame](pal-rh/what-two-neighboring-blocks-predict.md). On 25 November 2026 Hearthline followed Pang’s retained-layer question to a Mathlib-only fixed conditional theorem and a continuous bound through two trillion.
