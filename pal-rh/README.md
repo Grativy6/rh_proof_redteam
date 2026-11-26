@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[Where an integer label can go quiet](../proofs/where-an-integer-label-can-go-quiet.md) · [What 2663 carries between frames](what-2663-carries-between-frames.md)
+
 [Which prime labels cancel?](../proofs/which-prime-labels-cancel.md) · [How much can travel with a prime?](how-much-can-travel-with-a-prime.md)
 
 [Reflected remainder cells](what-a-reflected-remainder-carries.md) · [What both clocks must do together](how-far-a-negative-run-must-travel.md) · [One pass at the fourth powers](what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [How many square passes the sign needs](how-many-square-passes-the-sign-needs.md) · [What the ordinary primes still owe](what-the-ordinary-primes-still-owe.md) · [What the two signs cost together](what-the-two-signs-cost-together.md) · [What the last two rows carry](what-the-last-two-rows-carry.md) · [One list builds the next square](the-balanced-newton-handoff.md) · [Why infinitely many finite error drops would imply RH](when-a-drop-would-count.md)

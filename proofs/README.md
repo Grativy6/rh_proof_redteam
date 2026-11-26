@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[Where an integer label can go quiet](where-an-integer-label-can-go-quiet.md) gives a pencil proof of exactly which prices can vanish. The [2663 example](../pal-rh/what-2663-carries-between-frames.md) shows how an arithmetic sign can reverse while that price stays fixed.
+
 [Which prime labels cancel?](which-prime-labels-cancel.md) starts with six factored integers and measures the actual share of the trillion-sector cancellation they teach us to isolate. The [all-scale extension](../pal-rh/how-much-can-travel-with-a-prime.md) carries a growing cofactor through the same calculation.
 
 [What the central mirror earns](what-the-central-mirror-earns.md) changes the arithmetic at 5 and lets you compute how far the resulting cancellation moves. A second construction preserves every prime value and any chosen finite head.

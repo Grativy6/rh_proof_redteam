@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Where the price vanishes and what 2663 carries](2026-11-25-pal-cell-prices.json) · [Census](count_pal_cell_signs.py) · [All small-factor tags](check_pal_cofactor_block.py) | 25 November 2026. Exact price signs, verified count denominator, and termwise same-frame cofactor costs. |
 | [Prime transport and total absolute cost](2026-11-25-pal-prime-transport.json) · [Counts](prime-transport-trillion-counts.csv) · [Exact replay](check_pal_prime_transport.py) | Pang and Hearthline’s physical-label result of 25 November. Includes the six-row witness, count enclosures, true denominator and signed residue. |
 | [Central mirror at five](2026-11-25-pal-central-mirror.json) · [Exact replay](check_pal_central_mirror.py) | Computation and source scope for Pang and Hearthline’s 25 November comparison of symmetric completions. |
 | [Reflected sectors, two directions and a resonant prime](2026-11-25-pal-reflected-cells.json) · [Integer sectors](check_pal_reflected_cells.py) · [Zero and clock enclosures](check_pal_clock_resonance.py) | On 25 November 2026 Hearthline tested both orientations, independent quotient moments and joint returns under Pang’s active key. |

@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/count_pal_cell_signs.py` for the exact sign counts, then `python -B receipt-archives/check_pal_cofactor_block.py` for the four growing-cofactor examples, the 2663 reversal and both cross-cofactor allocations. Both scripts use the Python standard library. [Combined record](2026-11-25-pal-cell-prices.json)
+
 Run `python -B receipt-archives/check_pal_prime_transport.py` to reconstruct the fractions and the full-sector percentages. To regenerate the counts with GCC and the development libraries, run `g++ -O3 -std=c++17 -fopenmp receipt-archives/prime_transport_counts.cpp -lprimecount -lprimesieve -o prime_transport_counts`, then `./prime_transport_counts 1600000000000 1666666666666 2000 347 4 > counts.csv`. The same command with arguments `1600000 1666666 100 347 4` produces a small calibration file. Pass it to the Python script as `--check-small-counts small.csv`. [Inputs, bounds and formal scope](2026-11-25-pal-prime-transport.json)
 
 Run `python -B receipt-archives/check_pal_central_mirror.py` for the reciprocal polynomials, local coefficients and residue checks. The [record](2026-11-25-pal-central-mirror.json) identifies the range checked and the theorems in the normal project build.

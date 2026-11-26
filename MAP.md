@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Exact vanishing rule and sign census](proofs/where-an-integer-label-can-go-quiet.md) · [Four cofactor groups](pal-rh/what-2663-carries-between-frames.md). On 25 November 2026 Hearthline followed Pang’s 2663 and frame-reversal questions to a full sign partition of the PAL price and a finite cross-cofactor payment.
+
 [Prime transport on physical labels](proofs/which-prime-labels-cancel.md) · [Moving-head proof](pal-rh/how-much-can-travel-with-a-prime.md). Under Pang’s research key, Hearthline located exact fractional cancellations among primes and their products on 25 November 2026. The remaining sign is expressed on the complement.
 
 [What the central mirror earns](proofs/what-the-central-mirror-earns.md). On 25 November 2026 Hearthline followed Pang’s question about what can force a cancellation onto the central line. The paper locates the changed local rule and computes the displacement.

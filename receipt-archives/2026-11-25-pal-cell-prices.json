@@ -1,0 +1,489 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang originated the PAL retained-frame question, suggested 2663 and requested both directions. Hearthline derived the price classification and performed the cofactor calculations under his constructive research key.",
+  "parent_public_research_commit": "732ce6d6175c4cb348bc641493eae5f64b933fbc",
+  "parent_tree": "f8c37f3675a273ccd99d2a99376e60e341bc33e8",
+  "sha256_sources": {
+    "proofs/where-an-integer-label-can-go-quiet.md": "5f05246e656feeb38e981a6fbf384c8f979e985688d7a94ea90dfb05abe67f0f",
+    "pal-rh/what-2663-carries-between-frames.md": "3c7b19ec0f49664ba239b04f70bf558dc4aea0283ddfd072bdf4f3a77864feba",
+    "pal-rh/PALRH/PriceSign.lean": "8f08c8c6ab224a92e25cf3ec54ebd2a3b9bd554d27a439237db4ad8f2dcc59f0",
+    "receipt-archives/check_pal_cofactor_block.py": "90c0b7746ca6cdb9cc752431fa109299955a2bf927590bfcf5e8e50bf5abd453",
+    "receipt-archives/count_pal_cell_signs.py": "4ce0aecdaa4c164a9f654e21df5a3f3316869f43944b9c7d722aad1a7aec241d",
+    "receipt-archives/check_pal_prime_transport.py": "4f315c44bbd7d4b15f5d0b10c213c223988740c8f503d632247cfe2e031fa90c"
+  },
+  "sources": "The PAL project supplies the two-head price and five-moment construction. The rational-root argument is elementary. The fixed-cofactor asymptotic uses the short-interval input cited in the preceding moving-head proof.",
+  "formal_scope": "On positive integer labels up to twice the head the actual two-head price vanishes precisely on divisors of the head and the outer endpoint. Includes the signed cell expansion.",
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "lake_exit": 0,
+  "axioms": {
+    "PALRH.PriceSign.zero_iff": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.PriceSign.factor": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.PriceSign.inner": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.PriceSign.late_positive": "[propext, Classical.choice, Quot.sound]"
+  },
+  "native_kernel": [
+    {
+      "module": "PALRH.PriceSign",
+      "exit": 0,
+      "seconds": 11.6,
+      "output": ""
+    }
+  ],
+  "integer_price_census": {
+    "heads": {
+      "577": {
+        "negative": 587,
+        "zero": 3,
+        "positive": 564
+      },
+      "2663": {
+        "negative": 2651,
+        "zero": 3,
+        "positive": 2672
+      },
+      "1464100000000": {
+        "negative": 1460814829008,
+        "zero": 406,
+        "positive": 1467385170586
+      },
+      "1000000000000": {
+        "negative": 997756184958,
+        "zero": 170,
+        "positive": 1002243814872
+      }
+    },
+    "limiting_positive_density": {
+      "K": 1024,
+      "unit_denominator": 1000000000000000,
+      "positive_per_X_lower": 1002243787388720,
+      "positive_per_X_upper": 1002243906599038,
+      "full_support_per_X": 2
+    },
+    "direct_comparisons": 262656,
+    "range_of_dense_heads": [
+      1,
+      512
+    ],
+    "zero_rule": "On 1 <= d <= 2X the two-head price vanishes exactly at divisors of X and d = 2X."
+  },
+  "cofactor_allocation": {
+    "block_left_excluded": 1464100000000,
+    "block_right_included": 1469431264401,
+    "moment_method": "termwise integer enclosures at every actual physical label",
+    "cofactor_exponent": "21/50",
+    "cases": [
+      {
+        "cofactor": 11664,
+        "same_labels_under_prime_dilation": null,
+        "smooth_root": 108,
+        "outside_palette_factors": [],
+        "large_prime_strictly_above": 347,
+        "counts_by_number_of_small_tags": [
+          24543,
+          35793,
+          26118,
+          11168,
+          1437,
+          17
+        ],
+        "sign_of_every_remaining_mark": -1,
+        "unspent_magnitude_in_unit_marks": 5120,
+        "unspent_signed_constant_moment": -552960,
+        "head": 1807529451605,
+        "unspent_signed_point_price": [
+          "-12685.38603",
+          "-12685.38602"
+        ],
+        "first_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.6729882",
+              "0.6729883"
+            ],
+            [
+              "0.6741016",
+              "0.6741017"
+            ],
+            [
+              "0.7097300",
+              "0.7097301"
+            ],
+            [
+              "0.6788846",
+              "0.6788847"
+            ],
+            [
+              "0.6933076",
+              "0.6933077"
+            ]
+          ]
+        },
+        "second_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.7943063",
+              "0.7943064"
+            ],
+            [
+              "0.8760338",
+              "0.8760339"
+            ],
+            [
+              "0.7706288",
+              "0.7706289"
+            ],
+            [
+              "0.8371909",
+              "0.8371910"
+            ],
+            [
+              "0.7938488",
+              "0.7938489"
+            ]
+          ]
+        }
+      },
+      {
+        "cofactor": 9232,
+        "same_labels_under_prime_dilation": {
+          "scale": 577,
+          "preimage_integer_head": 3132633365,
+          "preimage_signed_price": [
+            "-586.56658",
+            "-586.56657"
+          ]
+        },
+        "smooth_root": 4,
+        "outside_palette_factors": [
+          577
+        ],
+        "large_prime_strictly_above": 577,
+        "counts_by_number_of_small_tags": [
+          30563,
+          44601,
+          32266,
+          13306,
+          1487,
+          17
+        ],
+        "sign_of_every_remaining_mark": 1,
+        "unspent_magnitude_in_unit_marks": 6392,
+        "unspent_signed_constant_moment": 25568,
+        "head": 1807529451605,
+        "unspent_signed_point_price": [
+          "586.56657",
+          "586.56658"
+        ],
+        "first_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.6712123",
+              "0.6712124"
+            ],
+            [
+              "0.6911930",
+              "0.6911931"
+            ],
+            [
+              "0.6753892",
+              "0.6753893"
+            ],
+            [
+              "0.7122214",
+              "0.7122215"
+            ],
+            [
+              "0.6763540",
+              "0.6763541"
+            ]
+          ]
+        },
+        "second_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.8336551",
+              "0.8336552"
+            ],
+            [
+              "0.8099989",
+              "0.8099990"
+            ],
+            [
+              "0.7981808",
+              "0.7981809"
+            ],
+            [
+              "0.7858802",
+              "0.7858803"
+            ],
+            [
+              "0.8255328",
+              "0.8255329"
+            ]
+          ]
+        }
+      },
+      {
+        "cofactor": 10652,
+        "same_labels_under_prime_dilation": {
+          "scale": 2663,
+          "preimage_integer_head": 678756835,
+          "preimage_signed_price": [
+            "-367.27850",
+            "-367.27849"
+          ]
+        },
+        "smooth_root": 2,
+        "outside_palette_factors": [
+          2663
+        ],
+        "large_prime_strictly_above": 2663,
+        "counts_by_number_of_small_tags": [
+          26671,
+          38961,
+          28047,
+          8116,
+          367
+        ],
+        "sign_of_every_remaining_mark": 1,
+        "unspent_magnitude_in_unit_marks": 8008,
+        "unspent_signed_constant_moment": 16016,
+        "head": 1807529451605,
+        "unspent_signed_point_price": [
+          "367.27849",
+          "367.27850"
+        ],
+        "first_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.7081533",
+              "0.7081534"
+            ],
+            [
+              "0.6774292",
+              "0.6774293"
+            ],
+            [
+              "0.6714799",
+              "0.6714800"
+            ],
+            [
+              "0.6853689",
+              "0.6853690"
+            ],
+            [
+              "0.6807141",
+              "0.6807142"
+            ]
+          ]
+        },
+        "second_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.6717559",
+              "0.6717560"
+            ],
+            [
+              "0.7299675",
+              "0.7299676"
+            ],
+            [
+              "0.7688350",
+              "0.7688351"
+            ],
+            [
+              "0.6921195",
+              "0.6921196"
+            ],
+            [
+              "0.7292191",
+              "0.7292192"
+            ]
+          ]
+        }
+      },
+      {
+        "cofactor": 123197,
+        "same_labels_under_prime_dilation": null,
+        "smooth_root": 1,
+        "outside_palette_factors": [
+          349,
+          353
+        ],
+        "large_prime_strictly_above": 353,
+        "counts_by_number_of_small_tags": [
+          2674,
+          4027,
+          2969,
+          809,
+          23
+        ],
+        "sign_of_every_remaining_mark": -1,
+        "unspent_magnitude_in_unit_marks": 830,
+        "unspent_signed_constant_moment": -830,
+        "head": 1807529451605,
+        "unspent_signed_point_price": [
+          "-19.06733",
+          "-19.06732"
+        ],
+        "first_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.6453580",
+              "0.6453581"
+            ],
+            [
+              "0.6193661",
+              "0.6193662"
+            ],
+            [
+              "0.7416003",
+              "0.7416004"
+            ],
+            [
+              "0.5470899",
+              "0.5470900"
+            ],
+            [
+              "0.7647453",
+              "0.7647454"
+            ]
+          ]
+        },
+        "second_fractions": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.8192073",
+              "0.8192074"
+            ],
+            [
+              "0.7264462",
+              "0.7264463"
+            ],
+            [
+              "0.7031013",
+              "0.7031014"
+            ],
+            [
+              "0.8424655",
+              "0.8424656"
+            ],
+            [
+              "0.5318407",
+              "0.5318408"
+            ]
+          ]
+        }
+      }
+    ],
+    "cross_cofactor_steps": [
+      {
+        "offered_cofactor": 9232,
+        "target_cofactors_and_orientations": [
+          [
+            123197,
+            1
+          ]
+        ],
+        "extra_fractions_of_original_even_bins": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.0038253",
+              "0.0038254"
+            ],
+            [
+              "0.0061647",
+              "0.0061648"
+            ],
+            [
+              "0.0063731",
+              "0.0063732"
+            ],
+            [
+              "0.0033324",
+              "0.0033325"
+            ],
+            [
+              "0.0110571",
+              "0.0110572"
+            ]
+          ]
+        },
+        "minimum_certified_unspent_fraction_after_both": "0.1625194"
+      },
+      {
+        "offered_cofactor": 11664,
+        "target_cofactors_and_orientations": [
+          [
+            9232,
+            1
+          ],
+          [
+            10652,
+            1
+          ],
+          [
+            123197,
+            -1
+          ]
+        ],
+        "extra_fractions_of_original_even_bins": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.0133328",
+              "0.0133329"
+            ],
+            [
+              "0.0138772",
+              "0.0138773"
+            ],
+            [
+              "0.0132102",
+              "0.0132103"
+            ],
+            [
+              "0.0155519",
+              "0.0155520"
+            ],
+            [
+              "0.0125280",
+              "0.0125281"
+            ]
+          ]
+        },
+        "minimum_certified_unspent_fraction_after_both": "0.1100888"
+      }
+    ],
+    "final_residual_cofactor": 11664,
+    "final_signed_constant_moment": -512206,
+    "final_signed_point_price": [
+      "-11750.60830",
+      "-11750.60826"
+    ]
+  },
+  "open": "The count of favorable prices alone does not establish the signed and magnitude-weighted prime estimate at all fourth-power heads."
+}
