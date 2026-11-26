@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[One cutoff for every yes or no](../proofs/the-first-prime-a-board-has-to-give-up.md) · [Its growth and zero-free regions](what-the-least-cut-measures.md) · [The calibrated semiprime board](when-two-prime-directions-meet.md) · [Finite Lean calculation](PALRH/HorizonCut.lean)
+
 [What happens when the sieve forgets five?](../proofs/what-happens-when-the-sieve-forgets-five.md) · [Factorial frame, prime band and all-size exterior](the-factorial-frame-for-prime-distances.md) · [Natural-number comparison](PALRH/SieveFrame.lean)
 
 [Which prime boards have to fit?](../proofs/which-prime-boards-have-to-fit.md) · [Long funded intervals and sharp fourth-power spacing](fourth-power-boards-and-their-funded-intervals.md) · [Lean](PALRH/QuarticBoards.lean)

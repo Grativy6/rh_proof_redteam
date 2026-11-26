@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Measured cutoff, 26 November 2026.** Track the least prefix of prime distances that must be set aside. An eventual bound by $n^a$ at fourth powers, for fixed $1/2\le a<1$, earns an actual zero-free half-plane to its right. The bit-length cutoff still has growth exponent one. A lowered factorial sieve gives an independent calibration whose unavoidable overflow can be measured in bits. [Growth scale](what-the-least-cut-measures.md) · [Calibrated condition](when-two-prime-directions-meet.md)
+
 **Factorial frame, 26 November 2026.** At $n=k^4$ one integer $(k^2)!$ recognizes all remaining prime labels by gcd. Every row order and all dials above $y=\lceil3n/b^3\rceil$ fit at all sizes, with $b$ the binary length of $n$. The remaining one-sided task is to include the primes between $k^2$ and $y$ in the same capacity. The loss from erasing a fixed small prime in the frame rules out that shortcut. [Derivations](the-factorial-frame-for-prime-distances.md)
 
 **Fourth powers, 26 November 2026.** The board now needs a general funding argument only at $n=k^4$. A positive sum of ramps earns the interpolation across every intervening size. Globally justified stretches have about 1.924 bits of spare room per $n^{3/2}$, and the deterministic finite census reaches one billion. [Proof, tested range and remaining claim](fourth-power-boards-and-their-funded-intervals.md)

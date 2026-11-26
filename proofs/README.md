@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[The first prime a board has to give up](the-first-prime-a-board-has-to-give-up.md) identifies one integer that retains every cutoff reading, proves what its asymptotic growth would mean, and gives a second board that really does overflow infinitely often.
+
 [What happens when the sieve forgets five?](what-happens-when-the-sieve-forgets-five.md) compares the same board with two recognizing integers, 30,030 and 6,006. The smaller frame creates more records than the board can hold.
 
 [Which board sizes have to fit?](which-prime-boards-have-to-fit.md) reduces the universal test to fourth powers, identifies arbitrarily long stretches that fit without RH, and pays every board through one billion.

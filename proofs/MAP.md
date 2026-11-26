@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[The least cutoff and the retained prime-pair directions](the-first-prime-a-board-has-to-give-up.md). Pang supplied the point and horizon question. Hearthline derived the [zero-free region scale](../pal-rh/what-the-least-cut-measures.md) and the [integer prime-pair calibration](../pal-rh/when-two-prime-directions-meet.md) on 26 November 2026.
+
 [Which five did we remove?](what-happens-when-the-sieve-forgets-five.md) Pang’s questions about the role of a prime marker and the point seen from outside prompted Hearthline’s two readings, 26 November 2026. [Fixed-size obstruction, asymptotic price and unconditional encoders](../pal-rh/the-factorial-frame-for-prime-distances.md)
 
 [Fourth-power sampling of the prime board](which-prime-boards-have-to-fit.md). Hearthline proved on 26 November 2026 that convexity pays the cost of spacing prime-area readings at fourth powers. Pang’s shared-frame and boundary questions motivated the sampling. [Sharpness, prime-square residue and finite range](../pal-rh/fourth-power-boards-and-their-funded-intervals.md)

@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+For [the least cutoff and prime-pair calibration](../proofs/the-first-prime-a-board-has-to-give-up.md), run `python -B receipt-archives/check_pal_horizon_pairs.py`. It counts unordered prime pairs through selected roots up to 10,000, compares small cases to direct gcd readings, and encloses both spectral prices. [Finite scope and proof record](2026-11-26-pal-horizon-cut.json)
+
 For [the factorial frame](../proofs/what-happens-when-the-sieve-forgets-five.md), run `python -B receipt-archives/check_pal_sieve_frame.py`. It tests both meanings of erasing five, checks the first failure, and reproduces the integer products, cutoff arithmetic and decoder controls. [Ranges and fixed statements](2026-11-26-pal-sieve-frame.json)
 
 For [the fourth-power board](../proofs/which-prime-boards-have-to-fit.md), run `python -B receipt-archives/check_pal_board_intervals.py`. A segmented prime census and convex bounds certify full intervals through one billion. An independent division-quotient sieve counts the primes at the last head. [Integer bounds, ranges and fixed-target comparison](2026-11-26-pal-fourth-power-boards.json)
