@@ -14,6 +14,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [One thirteenth of a returned layer](proofs/one-thirteenth-of-a-returned-layer.md). On 26 November 2026, under Pang’s construction key, Hearthline fixed the board sequence, return and allowance at every size. [Both directions and paid ranges](pal-rh/why-one-thirteenth-is-enough.md)
 
+[Formal one-sided pocket and physical assignment](proofs/why-either-side-of-the-pocket-is-enough.md). Under Pang’s active key on 26 November 2026, Hearthline proved both orientations separately from the alternating divisor sums. [Check and bare comparison](receipt-archives/2026-11-26-pal-signed-pocket.json)
+
 [How long prime-gap credit must survive](proofs/how-long-prime-gap-credit-must-survive.md). On 26 November 2026 Hearthline tested Pang’s retained-residue question against adaptive expiring allocations. [Proof and exact thresholds](pal-rh/why-expiring-gap-credit-fails.md)
 
 [Single eventual subset comparison to stock RH](proofs/one-integer-comparison-to-rh.md) · [One-sided prime-area transfer](pal-rh/how-one-sided-prime-area-reaches-rh.md). On 26 November 2026 Hearthline removed the unused-capacity premise under Pang’s active construction key. One exported proof was compared against the conditional statement and the independent bare challenge.

@@ -16,6 +16,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 **Our most concrete target is one thirteenth of a layer.** Return the part of each prime-trip strip removed by the factorial sieve. A single whole-number comparison on every prescribed board, starting with board zero, is equivalent to RH on paper. The implication to stock RH is proved in Lean. The all-board comparison is open. [Count the returned strip](proofs/one-thirteenth-of-a-returned-layer.md) · [Why thirteen works, including early boards](pal-rh/why-one-thirteenth-is-enough.md)
 
+[Either side of the pocket](proofs/why-either-side-of-the-pocket-is-enough.md) now reaches stock RH in Lean independently. In particular a map assigning every arriving tick a distinct cell by its arrival cut is sufficient. Its all-board existence is the open mathematical input.
+
 A direct attempt to fund that pocket gives a [lower bound on how long unused cells must survive](proofs/how-long-prime-gap-credit-must-survive.md). Through 1,048,576, the smallest working cap is 246 consecutive primes when each job needs its cell on arrival. Even optimally chosen resets with a polylogarithmic cap eventually overspend.
 
 The subset theorem reaches stock `RiemannHypothesis` from **one eventual comparison of whole numbers**. At $n=k^4$, compare the independent forward trip settings selected by a factorial gcd with the number of ways to pick one subset of each size. All intermediate transfers are proved. The universal comparison itself remains open. [Start with the count at sixteen](proofs/one-integer-comparison-to-rh.md) · [Trace the one-sided deduction](pal-rh/how-one-sided-prime-area-reaches-rh.md)

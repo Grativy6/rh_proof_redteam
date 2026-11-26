@@ -31,7 +31,7 @@ private theorem cost_of_return (n m : ℕ) : smallReturn n m≤n^2 := by
     _ = n*n.sqrt^2 := by ring
     _ ≤ n^2 := by simpa only [pow_two] using Nat.mul_le_mul_left n sq
 
-private theorem covers (j : ℕ) : 4*16^j≤board j := by
+theorem covers (j : ℕ) : 4*16^j≤board j := by
   have sq : ((4:ℕ)^j)^2=16^j := by rw [←pow_mul,mul_comm j 2,pow_mul];rfl
   have one : 1≤(j+1)^2 := Nat.pow_pos (Nat.succ_pos _)
   have r : 4*4^j≤root j := by

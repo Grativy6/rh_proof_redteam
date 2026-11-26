@@ -32,7 +32,7 @@ private theorem root_div {t : ℝ} (tp : 0<t) : Real.sqrt t/t=1/Real.sqrt t := b
   apply (div_eq_div_iff tp.ne' (Real.sqrt_pos_of_pos tp).ne').mpr
   simpa [pow_two] using Real.sq_sqrt tp.le
 
-private theorem primitive_early {x : ℝ} (xp : 0≤x) (small : x<1) : primitive x=0 := by
+theorem primitive_early {x : ℝ} (xp : 0≤x) (small : x<1) : primitive x=0 := by
   unfold primitive
   calc
     _ = ∫ _ in (0:ℝ)..x,(0:ℝ) := intervalIntegral.integral_congr (fun t ht => by
@@ -138,6 +138,28 @@ theorem observed_primitive {x : ℝ} (xp : 0≤x) {N : ℕ} (paid : ⌊x⌋₊�
       calc
         _ = -(12*Real.sqrt t)/t := by rw [neg_div,mul_div_assoc,root_div tp];ring
         _ ≤ _ := div_le_div_of_nonneg_right h tp.le)
+  rw [pair_value N xp,intervalIntegral.integral_const_mul,root_integral le_rfl xp,Real.sqrt_zero,sub_zero] at bound
+  linarith only [bound]
+
+/-- On the same dilation list the upper orientation has the same elementary log cost. -/
+theorem observed_primitive_upper {x : ℝ} (xp : 0≤x) {N : ℕ} (paid : ⌊x⌋₊≤2*N) :
+    alternating primitive N x≤24*Real.sqrt x := by
+  have sum_int:=IntervalIntegrable.sum (range N) (fun j _ => pair_int j xp)
+  have point : (∑ j ∈ range N,pair j)=(fun t => ∑ j ∈ range N,pair j t) := by funext t;simp
+  rw [point] at sum_int
+  have root_int:=(root_integrable (a:=0) le_rfl xp).const_mul 12
+  have bound:=intervalIntegral.integral_mono_on xp sum_int root_int (fun t ht => by
+    rw [pair_sum]
+    by_cases zero : t=0
+    · simp [zero]
+    have tp : 0<t := lt_of_le_of_ne ht.1 (Ne.symm zero)
+    have h : alternating value N t≤12*Real.sqrt t := by
+      by_cases large : 1≤t
+      · exact arithmetic_upper large ((Nat.floor_mono ht.2).trans paid)
+      · rw [all_early tp.le (lt_of_not_ge large)];positivity
+    calc
+      _ ≤ (12*Real.sqrt t)/t := div_le_div_of_nonneg_right h tp.le
+      _ = _ := by rw [mul_div_assoc,root_div tp])
   rw [pair_value N xp,intervalIntegral.integral_const_mul,root_integral le_rfl xp,Real.sqrt_zero,sub_zero] at bound
   linarith only [bound]
 

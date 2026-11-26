@@ -10,7 +10,7 @@ noncomputable section
 namespace PALRH.OneSidedBoard
 open PrimeBoard PrimeBand QuarticBoards LinearPrimeIntegral PrimeDivisorPrimitive
 
-private theorem reciprocal_read {t : ℝ} (ht : t∈Set.Ioc (0:ℝ) 1) :
+theorem reciprocal_read {t : ℝ} (ht : t∈Set.Ioc (0:ℝ) 1) :
     PrimitiveMellin.remainder t=(LogPrimitive.primitive (1/t):ℂ) := by
   let x:=1/t
   have xp : 0<x := by dsimp [x];exact one_div_pos.mpr ht.1

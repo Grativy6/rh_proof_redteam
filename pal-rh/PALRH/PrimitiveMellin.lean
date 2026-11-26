@@ -108,12 +108,12 @@ private theorem center_transform {s : ℂ} (sp : 1<s.re) : HasMellin (fun t => (
   simp only [smul_eq_mul]
   ring
 
-theorem rh_of_primitive_bound {D : ℝ} (dn : 0≤D)
-    (price : ∀ {t : ℝ}, t∈Set.Ioc (0:ℝ) 1 → ‖remainder t‖≤D/Real.sqrt t) :
-    RiemannHypothesis := by
-  have meas : Measurable remainder := Complex.measurable_ofReal.comp
+private theorem remainder_meas : Measurable remainder := Complex.measurable_ofReal.comp
     (meas_read.sub (((measurable_const.div measurable_id).sub measurable_const).div_const _ |>.indicator measurableSet_Ioc))
-  have smooth {s : ℂ} (sr : 1/2<s.re) := WeightedPrimePulse.sqrt_extension remainder meas outside dn price sr
+
+private theorem rh_of_regular_remainder
+    (smooth : ∀ {s : ℂ}, 1/2<s.re → DifferentiableAt ℂ (mellin remainder) s ∧ MellinConvergent remainder s) :
+    RiemannHypothesis := by
   apply LinearPrimeIntegral.rh_of_regular_linear (fun s => s*mellin remainder s)
     (fun s hs => ((hasDerivAt_id s).differentiableAt.mul (smooth hs).1).differentiableWithinAt)
   intro s sr
@@ -134,6 +134,22 @@ theorem rh_of_primitive_bound {D : ℝ} (dn : 0≤D)
   have un : s≠1 := by rintro rfl;norm_num at sr
   field_simp [sn,plus,sub_ne_zero.mpr un]
   ring
+
+theorem rh_of_primitive_bound {D : ℝ} (dn : 0≤D)
+    (price : ∀ {t : ℝ}, t∈Set.Ioc (0:ℝ) 1 → ‖remainder t‖≤D/Real.sqrt t) :
+    RiemannHypothesis := by
+  apply rh_of_regular_remainder
+  exact fun sr => WeightedPrimePulse.sqrt_extension remainder remainder_meas outside dn price sr
+
+theorem rh_of_primitive_powers
+    (price : ∀ b : ℝ, 1/2<b → b<1 → ∃ D : ℝ, 0≤D ∧
+      ∀ t∈Set.Ioc (0:ℝ) 1, ‖remainder t‖≤D*t^(-b)) : RiemannHypothesis := by
+  apply rh_of_regular_remainder
+  intro s sr
+  obtain ⟨b,bh,bs⟩:=exists_between (lt_min sr (by norm_num : (1/2:ℝ)<1))
+  obtain ⟨D,dn,pay⟩:=price b bh (bs.trans_le (min_le_right _ _))
+  exact WeightedPrimePulse.power_extension remainder remainder_meas outside dn
+    (fun ht => pay _ ht) (bs.trans_le (min_le_left _ _))
 
 #print axioms PALRH.PrimitiveMellin.kernel
 #print axioms PALRH.PrimitiveMellin.rh_of_primitive_bound

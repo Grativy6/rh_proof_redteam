@@ -12,6 +12,8 @@ The papers state their own conclusions and the scope of their application to the
 
 [One thirteenth of a returned layer](one-thirteenth-of-a-returned-layer.md) starts at board zero. A freely chosen slope and an unknown starting threshold are replaced by a measured small-distance return and a fixed whole-number test. One failed cut would violate a consequence of RH.
 
+[Why either side of the pocket is enough](why-either-side-of-the-pocket-is-enough.md) proves the two separate one-sided RH implications and the actual arriving-record placement form in Lean.
+
 [How long must a prime gap’s unused space survive?](how-long-prime-gap-credit-must-survive.md) gives a ten-arrival pencil example, exact finite transitions and an unconditional obstruction for adaptive partitions into local prime groups.
 
 [One integer comparison to the Riemann hypothesis](one-integer-comparison-to-rh.md) gives the eventual subset comparison and its pencil example. The formal deduction now requires only the eventual comparison of the trip count with one Pascal row.

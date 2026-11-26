@@ -7,20 +7,20 @@ noncomputable section
 namespace PALRH.ReturnedReading
 open ShapeObservation PrefixReturn ShapeStrip ReturnedHorizon
 
-private def increment (n d : ℕ) : ℝ :=
+def increment (n d : ℕ) : ℝ :=
   (tickAt n d:ℝ)+(if d≤n.sqrt then (n.sqrt:ℝ) else 0)-n.sqrt
 
 private theorem cutset (n m : ℕ) : (Icc 1 m).filter (fun d => d≤n.sqrt)=Icc 1 (min m n.sqrt) := by
   ext d;simp only [mem_filter,mem_Icc,le_min_iff];tauto
 
-private theorem plain (n m : ℕ) :
+theorem plain (n m : ℕ) :
     plainPrefix (increment n) m=(∑ d ∈ Icc 1 m,(tickAt n d:ℝ))+
       (n.sqrt:ℝ)*(min m n.sqrt:ℕ)-(n.sqrt:ℝ)*m := by
   unfold plainPrefix increment
   rw [sum_sub_distrib,sum_add_distrib,←sum_filter,cutset]
   simp [mul_comm]
 
-private theorem weight (n m : ℕ) (mn : m≤n) :
+theorem weight (n m : ℕ) (mn : m≤n) :
     weighted n (increment n) m=(prefixJobs n m+smallReturn n m:ℕ)-(n.sqrt:ℝ)*plainArea n m := by
   have eq : weighted n (increment n) m=weighted n (fun d => (tickAt n d:ℝ)-n.sqrt) m+
       ∑ d ∈ Icc 1 m,(if d≤n.sqrt then ((n:ℝ)-d)*(n.sqrt:ℝ) else 0) := by

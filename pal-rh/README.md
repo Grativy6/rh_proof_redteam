@@ -8,6 +8,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [One thirteenth of a returned layer](../proofs/one-thirteenth-of-a-returned-layer.md) · [All sizes and constants](why-one-thirteenth-is-enough.md) · [Fixed comparison](checks/returned-horizon/ReturnedChallenge.lean)
 
+[Either side separately](../proofs/why-either-side-of-the-pocket-is-enough.md) · [Signed area to RH](PALRH/SignedStrip.lean) · [Fixed independent declarations](checks/signed-pocket/SignedChallenge.lean)
+
 [How long unused cells must survive](../proofs/how-long-prime-gap-credit-must-survive.md) · [Proof for all adaptive local groupings](why-expiring-gap-credit-fails.md)
 
 [One eventual integer comparison](../proofs/one-integer-comparison-to-rh.md) · [Complete one-sided deduction](how-one-sided-prime-area-reaches-rh.md) · [Independently fixed statement](checks/one-subset/OneSubsetChallenge.lean)

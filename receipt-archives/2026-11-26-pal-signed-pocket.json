@@ -1,0 +1,178 @@
+{
+  "parent_public_research_commit": "e7e87486aceda140049d4eb0e59066bf241e9fc9",
+  "parent_tree": "1ad0b9158841516f8aa7475c21d0f8eb982bcff1",
+  "contributors": "Christopher Daniel Pang supplied PAL, the ordered RPL return and the direction-flip request. Hearthline derived the divisor upper read, power-scale sign recovery and formal one-sided transfer in his program.",
+  "formal_scope": "Three independent statements imply bare stock Mathlib RH in their conclusions. Each takes as its only premise one of: every upper surplus fits, every lower shortage fits, or each board supplies an actual timely injection. A positive triangular reweighting, ordinary paired divisor logs and the primitive Mellin transform discharge the intermediate analytic steps.",
+  "outstanding": "An all-board placement or independent proof of one signed budget is still needed to remove the final premise.",
+  "review": {
+    "type": "author self-review",
+    "signed_input": "The auxiliary alternating read bounds both orientations by 12*sqrt(x) before integration. Each final RH theorem accepts only its own sign.",
+    "scope": "The short taper is a positive combination. The integer-to-real extension uses the monotonicity of the von Mangoldt ramp plus the linear reference. No outside RH proof or integrated oscillation lemma is assumed.",
+    "placement": "The capacity includes just the initial n^2/13 pocket and the ordinary cells through the current physical distance above the square root. Prefix sums and injection deadlines use the same cut."
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3837
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PrimeDivisorPrimitive",
+      "exit": 0,
+      "seconds": 13.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimitiveMellin",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimitiveRecovery",
+      "exit": 0,
+      "seconds": 12.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneSidedBoard",
+      "exit": 0,
+      "seconds": 12.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PowerRecovery",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedHorizon",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedReading",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ReturnedTaper",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SignedStrip",
+      "exit": 0,
+      "seconds": 10.9,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.PrimitiveMellin.kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimitiveMellin.rh_of_primitive_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeDivisorPrimitive.alternated_divisors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeDivisorPrimitive.arithmetic_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PowerRecovery.rh_of_signed_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.timely_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_shared_placement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_upper_pocket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_lower_pocket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.short_area": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347218540,
+        "sha256": "55a485fc8a2b40df2ba464bfc3da838c9a063670380eb2105d6dcfcb7e7402ab"
+      },
+      "solution": {
+        "bytes": 432152685,
+        "sha256": "8cf1380710457f37ec39bf06bb04bc704087e2cb118a5d5bdcece9e7d622b6fa"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 130.14,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.25,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "8cf1380710457f37ec39bf06bb04bc704087e2cb118a5d5bdcece9e7d622b6fa"
+    }
+  },
+  "sha256_sources": {
+    "proofs/why-either-side-of-the-pocket-is-enough.md": "fc194f5b50f011a030f3bb79569a9936f6e55f85cd41377315d1171db9b63a20",
+    "pal-rh/PALRH/PowerRecovery.lean": "b25245408a6f33e66c946b6afcbe58ad76f12314bd7c041c9a5189430964b028",
+    "pal-rh/PALRH/SignedStrip.lean": "c1d8a61c5af48dbcc2a2ac82afc6e25102feb809dfe00f7fb9c05bda1c6f0be4",
+    "pal-rh/PALRH/PrimeDivisorPrimitive.lean": "6f3de6ed8918c64b3825d8ca8f9463e1680881fad7d6adc8ee0ee1422aeb209c",
+    "pal-rh/PALRH/PrimitiveMellin.lean": "737721e09770fc4fe1207ac8f882df639db3726fbcf6e0c16364bac2eae2967e",
+    "pal-rh/PALRH/PrimitiveRecovery.lean": "bbf360c52d6bdb8b8d48b0b4eaaeb01194202e950afb0bae30f49abed4524722",
+    "pal-rh/PALRH/OneSidedBoard.lean": "d8ffd2aeb3bf8908685788ad1e97edbdd94c127b7e93ee6e316ed5720724fe12",
+    "pal-rh/PALRH/ReturnedHorizon.lean": "3ba1525244f61eb906bd08789fa4430a705c99efe488839ad135d31052d7acad",
+    "pal-rh/PALRH/ReturnedReading.lean": "af24ab6162cc3e2b0b7c55fb36dd909857be5068bf5453fa1fc13d25fc5bdc1e",
+    "pal-rh/lakefile.toml": "a023971ded7743d0214109a8be36d8e4235a89081170e1911b19098745015594",
+    "pal-rh/checks/signed-pocket/SignedChallenge.lean": "8f28a2efa098ef3cc309636181e3e1f9c0954d4d5dd8ad6f5564350b7559715b",
+    "pal-rh/checks/signed-pocket/SignedSolution.lean": "a96320bd78284237c4bc68da2feecdf2066a93c848b530a5e54722e7b8e33e69",
+    "pal-rh/checks/signed-pocket/compare.json": "82ad079ac6bb5514745912b18097f4d9dee3495f24d86cc902b3da5d1265d9e7",
+    "pal-rh/PALRH/ReturnedTaper.lean": "17c0e982f993300a1874f5bd37fef6c991e7ea323d28180a8afdb438b795397b",
+    "pal-rh/PALRH/PositivePrimitive.lean": "81d97b785998c8c4f11cea1eec889c4ae48eadcb4c87d93559eeeb132d5cbf95",
+    "pal-rh/PALRH/WeightedPrimePulse.lean": "bb9c6525b72b9180a362b4cc50a6dc283fd51365b2350aa5c9f8a54ca46105e8",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c",
+    "receipt-archives/2026-11-26-pal-returned-horizon.json": "f17cccbbb8077a19171d2cf4b6b06d194d74ae9a32201dfec8e3a6a563272da5"
+  }
+}

@@ -244,6 +244,126 @@ theorem arithmetic_lower {x : ℝ} (large : 1≤x) {N : ℕ} (cover : ⌊x⌋₊
     simp [allLogs,harmonicRow,n,m]
     linarith only [rr,two]
 
+private theorem paired_upper {x : ℝ} (xp : 0<x) (M : ℕ) (inside : 2*(M:ℝ)≤x) :
+    logHead x (2*M)-2*logHead (x/2) M≤2*Real.log 2*ramp x M+(M:ℝ)/x*Real.log (x+1) := by
+  induction M with
+  | zero => simp [logHead,ramp]
+  | succ k ih =>
+    have kr : 0≤(k:ℝ) := Nat.cast_nonneg _
+    push_cast at inside
+    have old:=ih (by linarith)
+    unfold logHead ramp at *
+    rw [show 2*(k+1)=(2*k+1)+1 by ring,sum_Icc_succ_top (by omega : 1≤k+1),
+      sum_Icc_succ_top (by omega : 1≤2*k+1+1),sum_Icc_succ_top (by omega : 1≤2*k+1),
+      sum_Icc_succ_top (by omega : 1≤k+1)]
+    push_cast
+    let a:ℝ:=2*k+1
+    let e:ℝ:=2*k+2
+    have ap : 0<a := by dsimp [a];positivity
+    have ep : 0<e := by dsimp [e];positivity
+    have high : e≤x := by dsimp [e];linarith only [inside]
+    have same : Real.log e=Real.log 2+Real.log ((k:ℝ)+1) := by
+      rw [show e=2*((k:ℝ)+1) by dsimp [e];ring,Real.log_mul (by norm_num) (by positivity)]
+    have ab : Real.log a≤Real.log e := Real.log_le_log ap (by dsimp [a,e];linarith)
+    have tip : Real.log a≤Real.log (x+1) := Real.log_le_log ap (by dsimp [a];linarith only [inside])
+    have r0 : 0≤1-e/x := sub_nonneg.mpr ((div_le_one xp).mpr high)
+    have diff : e/x-a/x=1/x := by dsimp [e,a];ring
+    have rec1:=mul_le_mul_of_nonneg_left ab r0
+    have rec2:=mul_le_mul_of_nonneg_left tip (one_div_nonneg.mpr xp.le)
+    rw [←diff] at rec2
+    rw [show ((k:ℝ)+1)/(x/2)=e/x by dsimp [e];ring,
+      show 2*((k:ℝ)+1)=e by dsimp [e];ring,
+      show 2*(k:ℝ)+1+1=e by dsimp [e];ring]
+    change (_+(1-a/x)*Real.log a+(1-e/x)*Real.log e)-2*(_+(1-e/x)*Real.log ((k:ℝ)+1))≤_
+    rw [add_div (k:ℝ) 1 x]
+    have bump : (e/x-a/x)*Real.log (x+1)=(1/x)*Real.log (x+1) := by rw [diff]
+    rw [bump] at rec2
+    rw [same] at rec1 ⊢
+    nlinarith only [old,rec1,rec2]
+
+private theorem harmonic_floor (m n : ℕ) (mn : m≤n) :
+    Real.log ((n:ℝ)+1)-Real.log ((m:ℝ)+1)≤harmonicRow n-harmonicRow m := by
+  induction n,mn using Nat.le_induction with
+  | base => simp
+  | succ n _ ih =>
+    have nr : 0<(n:ℝ)+1 := by positivity
+    have z : 0<((n:ℝ)+2)/((n:ℝ)+1) := by positivity
+    have up:=Real.log_le_sub_one_of_pos z
+    have id : ((n:ℝ)+2)/((n:ℝ)+1)-1=1/((n:ℝ)+1) := by field_simp;ring
+    rw [Real.log_div (by positivity) nr.ne',id] at up
+    unfold harmonicRow at *;rw [sum_Icc_succ_top (by omega : 1≤n+1)]
+    push_cast
+    rw [show (n:ℝ)+1+1=n+2 by ring]
+    linarith only [up,ih]
+
+private theorem harmonic_lower {x : ℝ} (large : 1≤x) :
+    (x/2)*Real.log 2-1≤(x/2)*(harmonicRow ⌊x⌋₊-harmonicRow (⌊x⌋₊/2)) := by
+  let n:=⌊x⌋₊
+  let m:=n/2
+  have xp:=zero_lt_one.trans_le large
+  have mpos : 0<(m:ℝ)+1 := by positivity
+  have npos : 0<(n:ℝ)+1 := by positivity
+  have h:=harmonic_floor m n (Nat.div_le_self _ _)
+  have ceil : x≤(n:ℝ)+1 := (Nat.lt_floor_add_one x).le
+  have root : (m:ℝ)≤x/2 := by
+    rw [show m=⌊x/2⌋₊ from (Nat.floor_div_ofNat x 2).symm];exact Nat.floor_le (by positivity)
+  have w:=Real.log_le_sub_one_of_pos (show 0<1+2/x by positivity)
+  rw [show 1+2/x-1=2/x by ring] at w
+  have cmp : 2*((m:ℝ)+1)≤((n:ℝ)+1)*(1+2/x) := by
+    have temp:=mul_le_mul_of_nonneg_right ceil (show 0≤1+2/x by positivity)
+    have base : x*(1+2/x)=x+2 := by field_simp
+    rw [base] at temp
+    linarith only [root,temp]
+  have logs:=Real.log_le_log (show 0<(2:ℝ)*((m:ℝ)+1) by positivity) cmp
+  rw [Real.log_mul (by norm_num) mpos.ne',Real.log_mul npos.ne' (by positivity)] at logs
+  have pay:=mul_le_mul_of_nonneg_left (show Real.log 2-2/x≤harmonicRow n-harmonicRow m by linarith only [h,w,logs])
+    (show 0≤x/2 by positivity)
+  have one : (x/2)*(2/x)=1 := by field_simp
+  rw [mul_sub,one] at pay;exact pay
+
+/-- The opposite orientation of the same divisor read is paid by pairing consecutive
+logarithms. No estimate of the locations of primes is needed in either orientation. -/
+theorem arithmetic_upper {x : ℝ} (large : 1≤x) {N : ℕ} (cover : ⌊x⌋₊≤2*N) :
+    alternating value N x≤12*Real.sqrt x := by
+  have xp:=zero_lt_one.trans_le large
+  let m:=⌊x/2⌋₊
+  have ml : (m:ℝ)≤x/2 := Nat.floor_le (by positivity)
+  have hi : 2*(m:ℝ)≤x := by linarith
+  have upper:=paired_upper xp m hi
+  have rampTop : ramp x m≤x/4 := by
+    rw [ramp_exact xp]
+    apply (sub_le_iff_le_add).mpr
+    apply le_of_mul_le_mul_right (a:=x) _ xp
+    rw [add_mul,div_mul_cancel₀ _ xp.ne']
+    nlinarith only [sq_nonneg ((m:ℝ)-x/2),Nat.cast_nonneg (α:=ℝ) m]
+  have two : 0≤Real.log 2 := Real.log_nonneg (by norm_num)
+  have logp : 0≤Real.log (x+1) := Real.log_nonneg (by linarith)
+  have nx : 2*m≤⌊x⌋₊ := (Nat.le_floor_iff xp.le).mpr (by exact_mod_cast hi)
+  have hfn : m=⌊x⌋₊/2 := Nat.floor_div_ofNat x 2
+  have parity : ⌊x⌋₊=2*m ∨ ⌊x⌋₊=2*m+1 := by omega
+  have rest : allLogs x≤logHead x (2*m)+Real.log (x+1) := by
+    unfold allLogs logHead
+    rcases parity with eq|eq
+    · rw [eq];linarith only [logp]
+    · rw [eq,sum_Icc_succ_top (by omega : 1≤2*m+1)]
+      have tp : 0<((2*m+1:ℕ):ℝ) := by positivity
+      have small : ((2*m+1:ℕ):ℝ)≤x+1 := by rw [←eq];linarith only [Nat.floor_le xp.le]
+      have ln : 0≤Real.log ((2*m+1:ℕ):ℝ) := Real.log_nonneg (by exact_mod_cast (by omega : 1≤2*m+1))
+      have top:=Real.log_le_log tp small
+      nlinarith only [top,mul_nonneg (div_nonneg tp.le xp.le) ln]
+  have topRamp:=mul_le_mul_of_nonneg_left rampTop (mul_nonneg (by norm_num : 0≤(2:ℝ)) two)
+  have part:=mul_le_mul_of_nonneg_right ((div_le_one xp).mpr (show (m:ℝ)≤x by linarith)) logp
+  have harm:=harmonic_lower large
+  rw [alternated_divisors xp cover]
+  change allLogs x-2*logHead (x/2) m-_≤_
+  have rr:=Real.one_le_sqrt.mpr large
+  have small:=Real.log_le_sub_one_of_pos (Real.sqrt_pos_of_pos xp)
+  rw [Real.log_sqrt xp.le] at small
+  have lg:=Real.log_le_log (by positivity : 0<x+1) (show x+1≤2*x by linarith)
+  rw [Real.log_mul (by norm_num) xp.ne'] at lg
+  have l2:=Real.log_le_sub_one_of_pos (by norm_num : 0<(2:ℝ))
+  linarith only [upper,rest,topRamp,part,harm,small,lg,l2,rr]
+
 #print axioms PALRH.PrimeDivisorPrimitive.alternated_divisors
 #print axioms PALRH.PrimeDivisorPrimitive.arithmetic_lower
 

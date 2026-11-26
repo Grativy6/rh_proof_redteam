@@ -8,6 +8,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [One thirteenth on every returned strip](one-thirteenth-of-a-returned-layer.md). Hearthline derived the fixed-budget criterion from Pang’s trace and return under the active research key, 26 November 2026. [Exact small cases, formal forward implication and classical reverse bound](../pal-rh/why-one-thirteenth-is-enough.md)
 
+[Separate excess and shortage implications](why-either-side-of-the-pocket-is-enough.md). Hearthline followed both directions of Pang’s fixed strip in Lean using the paired logarithms of genuine divisors, 26 November 2026. [Independent statements](../pal-rh/checks/signed-pocket/SignedChallenge.lean)
+
 [Expiring gap credit](how-long-prime-gap-credit-must-survive.md). Hearthline derived the simultaneous separation of logarithmic prices from integral gap widths and optimized the actual groupings under Pang’s research key on 26 November 2026. [Rules and derivation](../pal-rh/why-expiring-gap-credit-fails.md)
 
 [One eventual comparison, with a complete formal transfer](one-integer-comparison-to-rh.md). Under Pang’s construction key, Hearthline used the first alternating pair to recover a second direction of control on the primitive, 26 November 2026. [Source and scope](../pal-rh/how-one-sided-prime-area-reaches-rh.md)
