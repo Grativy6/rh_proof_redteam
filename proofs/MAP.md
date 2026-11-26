@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Square-root windows, concentrated marks and square contacts](what-can-move-inside-a-square-root-window.md). On 26 November 2026 Hearthline applied Pang’s retained-owner and boundary questions to the actual short-window measure. Two fixed conditional Lean targets use only integer samples.
+
 [Adaptive widths and balanced square spikes](how-far-a-square-mark-must-reach.md) · [Uniform payment on shrinking intervals](../pal-rh/which-window-pays-for-the-return.md). Pang’s retained-mark and orientation questions led Hearthline to compare every possible width and price the same signed marks, 26 November 2026.
 
 [Integer readings and the between-integer residue](what-a-quotient-leaves-between-integers.md). A primitive divisor identity, a factor-four inverse, a signed mark at each integer, two counterexamples to positivity and an explicit square criterion. Pang’s corpus question and Hearthline’s derivation, 26 November 2026.

@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[What can move inside a square-root window?](what-can-move-inside-a-square-root-window.md) identifies the unsigned background, the limited set of signed jump heights, and why a single adequately low integer in each square shell is enough.
+
 [How far a square mark must reach](how-far-a-square-mark-must-reach.md) shows exactly how much earlier arithmetic a positive mark needs to borrow. It gives the adaptive integer rule, the complete prefix search and a lower bound on the reach of any successful rule.
 
 [What a quotient leaves between integers](what-a-quotient-leaves-between-integers.md) compares two readings that agree at every integer. Ordinary division isolates their difference, a finite inverse recovers the arithmetic count, and one outstanding one-sided bound at square heads is equivalent to RH on paper.

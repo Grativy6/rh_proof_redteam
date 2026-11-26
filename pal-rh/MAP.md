@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [One contact per square interval](../proofs/what-can-move-inside-a-square-root-window.md) · [Unsigned background and signed component](the-background-around-one-large-mark.md) · [Lean](PALRH/SquareExposure.lean) | The skipped heads have uniformly bounded square-root variation. A macroscopic jump in a narrower window belongs to one original rough cofactor. |
 | [Adaptive trailing rows](../proofs/how-far-a-square-mark-must-reach.md) · [Shrinking-width transfer](which-window-pays-for-the-return.md) · [Lean](PALRH/TrailingRows.lean) | A single affordable earlier window per head suffices. Real smooth squares force widths beyond the square-root scale. A signed portion scales with the return price uniformly over slowly narrowing windows. |
 | [Within-cell remainder at square heads](../proofs/what-a-quotient-leaves-between-integers.md) · [Lean identities](PALRH/CellRemainder.lean) | The falling and stair readings agree at integers. Their explicit division residue carries a one-sided square criterion. A universal geometric-mean sign already fails at 31 and 81. |
 | [Newest half and mixed difference](../proofs/how-much-can-the-newest-half-gain.md) · [Lean](PALRH/TerminalWindows.lean) | Each window needs only an upper ceiling on its positive changes. On the mixed window the underlying positive divisor source is the single unit. |
