@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "f4d0ad066412dfee81f0313989bd5b84d34d2b20",
+  "parent_tree": "5296e08f3804faa378d79264fa965f9ba8e4d1e7",
+  "contributors": "Pang supplied the PAL retained-frame, RPL and BLA boundary questions. Hearthline derived sparse positive-area interpolation, the late funded intervals and finite census for his research program.",
+  "formal_scope": "Positive prime-power area at k^4 with two natural-number funding inequalities implies stock RiemannHypothesis. This applies to ideal capacity or two-cell capacity at the knots. The general prime-area envelope and the price of one funded size are separately proved.",
+  "paper_scope": "Eventual one-sided fit at fourth powers is equivalent to RH. All integer boards are funded in arbitrarily late intervals of radius sqrt(N) log(N); the printed finite control covers all sizes through one billion. No universal construction on all fourth powers is supplied.",
+  "self_review": {
+    "type": "author self-review",
+    "convexity": "The upper estimate uses the chord across two positive-area readings; the lower estimate uses the secant through the preceding two readings. Quadratic errors attain order gap squared for arbitrary convex inputs.",
+    "oscillation": "At 1/2 the prime-square subtraction supplies residue 4/3. The actual critical zero has residue 2/(rho*(rho+1)); other zeros may occur off the line. One-sided positivity rules out both eventual envelopes inside the stated amplitude.",
+    "integer_windows": "The integer factorial correction is o(sqrt(n)); relative steps of normalized margin are O(1/(sqrt(n)*log(n)^2)). This proves full intervals around an unbounded sequence of crossings without specifying a gap bound.",
+    "finite_control": "Every intermediate integer is covered by the proven inequalities; endpoint prime bins use outward bounds on log(p) and p*log(p). A second sieve counts primes independently."
+  },
+  "primary_sources": {
+    "theta_error": "https://arxiv.org/pdf/1002.0442",
+    "integrated_theta": "https://arxiv.org/pdf/2201.06184",
+    "zero_enclosure": "receipt-archives/2026-11-26-pal-signed-factorial-boundary.json",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3805
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PrimeBoard",
+      "exit": 0,
+      "seconds": 13.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.QuarticBoards",
+      "exit": 0,
+      "seconds": 14.0,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.PrimeBoard.two_cell_roundtrip": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.full_walk_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.log_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_integer_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_paired_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.quartic_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.rh_of_quartic_boards": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.rh_of_quartic_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_quartic_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347400365,
+        "sha256": "7a57e254e02ca990d5b5a40f47f8f75b98d4ac83fa2a74e51a2f30e00093ae9e"
+      },
+      "solution": {
+        "bytes": 427612474,
+        "sha256": "06e7df59c001f9ce59581956b8f59055b32e17ba7c65f8721d832d327f387d3f"
+      }
+    },
+    "matching_independent_exports": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 133.45,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "calculation": {
+    "all_positive_sizes_through": 1000000000,
+    "direct_initial_sizes_through": 100000,
+    "sparse_intervals_after_initial_range": 1284,
+    "prime_bins": 761156,
+    "prime_count_by_segmented_and_quotient_sieves": 50847534,
+    "minimum_excess_over_paired_cost_in_thousandths_of_b_root_b": [
+      1209,
+      502812563,
+      504491444
+    ],
+    "minimum_room_below_binary_budget_in_thousandths_of_b_root_b": [
+      771,
+      120936,
+      124175
+    ],
+    "first_and_last_certificates": [
+      {
+        "from": 100000,
+        "to": 102810,
+        "length_including_endpoints": 2811,
+        "lower_log_margin": "43847954.006",
+        "upper_log_margin": "61112630.555",
+        "binary_budget_in_nats_lower": "87891062.495"
+      },
+      {
+        "from": 997402412,
+        "to": 1000000000,
+        "length_including_endpoints": 2597589,
+        "lower_log_margin": "40523480159151.425",
+        "upper_log_margin": "53383203684064.939",
+        "binary_budget_in_nats_lower": "87336442097629.377"
+      }
+    ],
+    "first_anchor_direct_P": [
+      "49299792.3545",
+      "49299792.3546"
+    ],
+    "ordered_integer_certificates_sha256": "d43b5739d6371f88f61d94c96d1a627865bf62723f780f66d10de47f57cb1ee4"
+  },
+  "critical_zero_used": [
+    "44171/3125",
+    "706737/50000"
+  ],
+  "sha256_sources": {
+    "proofs/which-prime-boards-have-to-fit.md": "1367a2d580c56fad76cac808323fead2829a2b56ee8ebb0218d83665136ee88a",
+    "pal-rh/fourth-power-boards-and-their-funded-intervals.md": "7bbfa5abb61b3fee1fc7ef2cc11477fe27e64ebd2babb0375c44a8a8fe19710b",
+    "pal-rh/PALRH/QuarticBoards.lean": "d710f716cf01522986716c7819c1b1d762734c63bfb50e51bbad78ea3ba4a52b",
+    "pal-rh/PALRH/PrimeBoard.lean": "ff3fcfbce77762d9707a1eeacc5b8631ed1867aac401cc30d4b384e22f825623",
+    "pal-rh/lakefile.toml": "e7c1cfbcbc32050e3af8df60c171911606e09b5d72e05c5671f707e2f76e89a3",
+    "pal-rh/checks/quartic-boards/QuarticChallenge.lean": "f0c3a12e137f4de2477e86c55ad9dcebb799f8a72abba56c6dab3062457520e3",
+    "pal-rh/checks/quartic-boards/QuarticSolution.lean": "e7fda24ea2984139d71cbc415b02b81c4163e21da32b7393371793b308f05b4f",
+    "pal-rh/checks/quartic-boards/compare.json": "46bdb18d9c06d8f8f3a7785770b097db5daaee0d3589ebaf0103eaaec3a36aee",
+    "receipt-archives/check_pal_board_intervals.py": "52cb6a06f748586139bbf22bb615a63080ad54be679e1876f429da0f3c9debca",
+    "receipt-archives/check_pal_prime_board.py": "008570f55d77503685b6d0fdcd97944e8fe28068a2bddb3962a6ce6c03ea75f4",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-signed-factorial-boundary.json": "0cb343c3736cd97aa936403d247bc26fec49bde2837821b1a13437d471404096"
+  }
+}

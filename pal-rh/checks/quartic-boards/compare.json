@@ -1,0 +1,23 @@
+{
+  "challenge_module": "QuarticChallenge",
+  "solution_module": "QuarticSolution",
+  "theorem_names": [
+    "fourthPowerBoards",
+    "fourthPowerPairs"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Fourth-power boards and funded intervals](proofs/which-prime-boards-have-to-fit.md). On 26 November 2026 Hearthline followed Pang’s boundary-cost question into convex interpolation. The proof covers all intermediate sizes from sparse assumptions, and the independent sieve funds all boards through one billion. [Infinite stretches and finite calculation](pal-rh/fourth-power-boards-and-their-funded-intervals.md)
+
 [Signed factorial rows and the left endpoint](proofs/what-the-signed-factorial-rows-leave-at-zero.md). On 26 November 2026 Hearthline followed Pang’s retained-residue question through exact grid reconstruction, an independently enclosed critical zero and the change of sign that persists at square heads. [Derivation](pal-rh/the-boundary-of-the-signed-factorial-rows.md)
 
 [The prime-distance board](proofs/how-much-room-the-prime-board-needs.md) · [The signed area behind its capacity](pal-rh/the-prime-board-and-its-signed-area.md). On 26 November 2026 Pang’s retained-slot question led Hearthline to count all inputs, find two finite storage failures and derive conditions on whole numbers that imply stock RH.

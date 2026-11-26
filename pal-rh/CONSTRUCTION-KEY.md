@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Fourth powers, 26 November 2026.** The board now needs a general funding argument only at $n=k^4$. A positive sum of ramps earns the interpolation across every intervening size. Globally justified stretches have about 1.924 bits of spare room per $n^{3/2}$, and the deterministic finite census reaches one billion. [Proof, tested range and remaining claim](fourth-power-boards-and-their-funded-intervals.md)
+
 **Signed factorials, 26 November 2026.** The unique signed floor rows reconstruct every integer label, including the actual square reading. Replacing all large factorials by signed Stirling expressions has explicit cost. A finer grid leaves a calculable boundary contribution in the critical Mellin reading. The global question is cancellation of the retained signed main terms. [Proof and reopening condition](the-boundary-of-the-signed-factorial-rows.md)
 
 **Prime board, 26 November 2026.** At size $n$, seek a reversible placement of the $n$ row permutations and all independent prime-distance dials in $n^2$ base-$n$ cells. A size-independent construction would pay the one-sided prime-area bound. The free rank of a pair is $\lfloor n^2/p\rfloor$. Counting heads through 100,000 pays this cost there. The first single-cell shortage and the obstruction to assigning whole Lehmer digits retire those particular schemes. [Paper transfer and remaining obligation](the-prime-board-and-its-signed-area.md)

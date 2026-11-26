@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[Which board sizes have to fit?](which-prime-boards-have-to-fit.md) reduces the universal test to fourth powers, identifies arbitrarily long stretches that fit without RH, and pays every board through one billion.
+
 [What the signed factorial rows leave at zero](what-the-signed-factorial-rows-leave-at-zero.md) gives an example you can check with $1!$ and $2!$, then locates a nonzero limiting reading at the endpoint of an increasingly fine grid.
 
 [How much room does the prime board need?](how-much-room-the-prime-board-needs.md) starts with 864 records on a three-by-three board. It derives a prime-distance counting inequality equivalent to RH and shows where a particular decoder fails.

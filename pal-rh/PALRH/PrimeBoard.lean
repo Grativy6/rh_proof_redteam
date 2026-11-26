@@ -122,21 +122,22 @@ private theorem repeated (n : ℕ) : 0≤fullWalk n-primeWalk n ∧
   · rw [←total,Finset.mul_sum]
     exact Finset.sum_le_sum (fun k _ => mul_le_mul_of_nonneg_right (sub_le_self _ (Nat.cast_nonneg k)) (pos k))
 
-/-- The hypotheses compare only natural numbers. The second inequality permits a specified number of binary digits. -/
-theorem rh_of_integer_board
-    (fit : ∀ n : ℕ, 0<n → demand n≤capacity n ∧ capacity n≤demand n*allowance n) : RiemannHypothesis := by
+/-- A single funded board bounds the prime-power area at that same size. -/
+theorem full_walk_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
+    demand n≤capacity n ∧ capacity n≤demand n*allowance n →
+    |fullWalk n-(n:ℝ)^2/2|≤C*n*Real.sqrt n := by
   obtain ⟨D,reps⟩:=Chebyshev.psi_sub_theta_le_mul_sqrt
   let C:=max 0 D+6
-  apply rh_of_full_walk (C:=C) (by dsimp [C];positivity)
-  intro n np
+  refine ⟨C, by dsimp [C];positivity, ?_⟩
+  intro n np fit
   have nr : 0<(n:ℝ) := by exact_mod_cast np
   have root : 1≤Real.sqrt (n:ℝ) := Real.one_le_sqrt.mpr (by exact_mod_cast np)
   have dc : 0<demand n := Nat.mul_pos (pow_pos (Nat.factorial_pos _) _) (dial_pos _)
   have cc : 0<capacity n := pow_pos np _
   have ld : 0<(demand n:ℝ) := by exact_mod_cast dc
   have lc : 0<(capacity n:ℝ) := by exact_mod_cast cc
-  have low:=Real.log_le_log ld (by exact_mod_cast (fit n np).1 : (demand n:ℝ)≤capacity n)
-  have high:=Real.log_le_log lc (by exact_mod_cast (fit n np).2 : (capacity n:ℝ)≤(demand n:ℝ)*(allowance n:ℝ))
+  have low:=Real.log_le_log ld (by exact_mod_cast fit.1 : (demand n:ℝ)≤capacity n)
+  have high:=Real.log_le_log lc (by exact_mod_cast fit.2 : (capacity n:ℝ)≤(demand n:ℝ)*(allowance n:ℝ))
   have pa : 0<(allowance n:ℝ) := by unfold allowance;positivity
   rw [Real.log_mul ld.ne' pa.ne'] at high
   have digits : (n.sqrt:ℝ)≤Real.sqrt n :=
@@ -165,6 +166,12 @@ theorem rh_of_integer_board
     mul_nonneg (le_max_left (0:ℝ) D) (mul_nonneg nr.le (Real.sqrt_nonneg (n:ℝ))),
     mul_nonneg nr.le (Real.sqrt_nonneg (n:ℝ))]
 
+/-- The hypotheses compare only natural numbers. The second inequality permits a specified number of binary digits. -/
+theorem rh_of_integer_board
+    (fit : ∀ n : ℕ, 0<n → demand n≤capacity n ∧ capacity n≤demand n*allowance n) : RiemannHypothesis := by
+  obtain ⟨C,cn,price⟩:=full_walk_price
+  exact rh_of_full_walk cn (fun n np => price n np (fit n np))
+
 theorem rh_of_paired_board
     (fit : ∀ n : ℕ, 0<n → n.factorial^n*pairWhole n≤capacity n*pairLeft n ∧
       capacity n≤demand n*allowance n) : RiemannHypothesis :=
@@ -189,6 +196,7 @@ theorem two_cell_roundtrip {n p r d : ℕ} (np : 0<n) (pp : 0<p)
     by simp [Nat.add_comm,Nat.mod_eq_of_lt dd]⟩
 
 #print axioms PALRH.PrimeBoard.two_cell_roundtrip
+#print axioms PALRH.PrimeBoard.full_walk_price
 #print axioms PALRH.PrimeBoard.log_margin
 #print axioms PALRH.PrimeBoard.rh_of_integer_board
 #print axioms PALRH.PrimeBoard.rh_of_paired_board

@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+The proof now reaches RH from counts at fourth powers. A convexity bound pays for the sizes between them. The paired board fits at every size through one billion and on arbitrarily late stretches of consecutive sizes. [Which board sizes have to fit?](proofs/which-prime-boards-have-to-fit.md)
+
 A signed factorial sum returns every marked prime-power weight exactly. On a finer ruler its difference from the original profile concentrates at zero, where one zeta zero prices the missing reading. [What the signed rows leave at zero](proofs/what-the-signed-factorial-rows-leave-at-zero.md)
 
 At size 4,243 an encoder runs out of room despite the board having space for every setting. Letting each prime dial borrow one cell recovers its digit and the remaining capacity. Proving that all such records fit at every size would prove RH. [The prime board, with a three-cell-row example](proofs/how-much-room-the-prime-board-needs.md)
