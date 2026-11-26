@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[How much room does the prime board need?](how-much-room-the-prime-board-needs.md) starts with 864 records on a three-by-three board. It derives a prime-distance counting inequality equivalent to RH and shows where a particular decoder fails.
+
 [What one doubling hears in the primes](what-one-doubling-hears-in-the-primes.md) starts with the four inputs at square 4, distinguishes phase spacing from amplitude, and gives an explicit all-square inequality for primes alone.
 
 [What can move inside a square-root window?](what-can-move-inside-a-square-root-window.md) identifies the unsigned background, the limited set of signed jump heights, and why a single adequately low integer in each square shell is enough.

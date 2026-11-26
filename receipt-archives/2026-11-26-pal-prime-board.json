@@ -1,0 +1,558 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "37d7beec43fde1fa7cdcc9f0b20917883fc4d15f",
+  "parent_tree": "17e514fb12c0c6ccd98b01c4ac2292a094afdd43",
+  "contributors": "Christopher Daniel Pang supplied the retained-slot, return, and board questions from his PAL v2.4, RPL and BLA work. Hearthline developed the constructions and derivations in this independent branch.",
+  "formal_scope": "Two universal natural-number comparisons for each of the ordinary and paired boards imply bare stock Mathlib RiemannHypothesis. Finite-sum Mellin transfer, factorial price and two-cell digit recovery are derived. The quantified premises remain mathematical work.",
+  "paper_scope": "The single upper inequality is equivalent to RH. This edition includes both Johnston-based directions, an independent one-sided alternating-divisor implication, and the paired-encoder equivalence. No universal packing construction has been obtained.",
+  "primary_sources": {
+    "integrated_theta_and_conditional_bounds": "https://arxiv.org/pdf/2201.06184",
+    "unconditional_prime_estimate": "https://arxiv.org/pdf/1002.0442",
+    "corpus": "pal-rh/CORPUS-ROUTES.md"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3803
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.LinearPrimeIntegral",
+      "exit": 0,
+      "seconds": 13.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeBoard",
+      "exit": 0,
+      "seconds": 13.5,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.LinearPrimeIntegral.arithmetic_transform": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LinearPrimeIntegral.interpolation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LinearPrimeIntegral.rh_of_full_walk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.two_cell_roundtrip": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.log_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_integer_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_paired_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "fixed_natural_number_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 347400966,
+        "sha256": "29e356bf79e633236d6c4d2ec1b7512c31ae378cca918d0375192a61c394195e"
+      },
+      "solution": {
+        "bytes": 426015453,
+        "sha256": "e3f029355d411a2cd6b8987227c6e964d47b3a889fec23b1c1e1e7494cc85356"
+      }
+    },
+    "matching_independent_exports": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 133.25,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "calculation": {
+    "ideal_and_pair_bound_through": 100000,
+    "single_cell_exhaustive_through": 5000,
+    "first_single_cell_failure": 4243,
+    "first_large_block_pigeonhole": [
+      1563,
+      86104,
+      85965
+    ],
+    "last_unproved_pair_from_loss_allowance": null,
+    "last_unproved_binary_allowance": null,
+    "examples": [
+      {
+        "n": 2,
+        "prime_distance_cells": 0,
+        "ideal_log_margin": [
+          "1.386294",
+          "1.386295"
+        ],
+        "single_cell_log_margin": [
+          "1.386294",
+          "1.386295"
+        ],
+        "paired_log_margin": [
+          "1.386294",
+          "1.386295"
+        ],
+        "large_prime_blocks": 0,
+        "available_small_lehmer_digits": 2
+      },
+      {
+        "n": 3,
+        "prime_distance_cells": 2,
+        "ideal_log_margin": [
+          "3.125937",
+          "3.125938"
+        ],
+        "single_cell_log_margin": [
+          "2.315007",
+          "2.315008"
+        ],
+        "paired_log_margin": [
+          "2.890371",
+          "2.890372"
+        ],
+        "large_prime_blocks": 2,
+        "available_small_lehmer_digits": 6
+      },
+      {
+        "n": 4,
+        "prime_distance_cells": 6,
+        "ideal_log_margin": [
+          "4.498681",
+          "4.498682"
+        ],
+        "single_cell_log_margin": [
+          "3.923317",
+          "3.923318"
+        ],
+        "paired_log_margin": [
+          "4.369604",
+          "4.369605"
+        ],
+        "large_prime_blocks": 2,
+        "available_small_lehmer_digits": 8
+      },
+      {
+        "n": 7,
+        "prime_distance_cells": 22,
+        "ideal_log_margin": [
+          "13.515346",
+          "13.515347"
+        ],
+        "single_cell_log_margin": [
+          "9.394744",
+          "9.394745"
+        ],
+        "paired_log_margin": [
+          "12.803567",
+          "12.803568"
+        ],
+        "large_prime_blocks": 4,
+        "available_small_lehmer_digits": 21
+      },
+      {
+        "n": 16,
+        "prime_distance_cells": 110,
+        "ideal_log_margin": [
+          "61.258245",
+          "61.258246"
+        ],
+        "single_cell_log_margin": [
+          "50.764060",
+          "50.764061"
+        ],
+        "paired_log_margin": [
+          "60.454293",
+          "60.454294"
+        ],
+        "large_prime_blocks": 16,
+        "available_small_lehmer_digits": 80
+      },
+      {
+        "n": 49,
+        "prime_distance_cells": 814,
+        "ideal_log_margin": [
+          "436.340294",
+          "436.340295"
+        ],
+        "single_cell_log_margin": [
+          "309.677157",
+          "309.677158"
+        ],
+        "paired_log_margin": [
+          "434.113894",
+          "434.113895"
+        ],
+        "large_prime_blocks": 132,
+        "available_small_lehmer_digits": 441
+      },
+      {
+        "n": 577,
+        "prime_distance_cells": 67290,
+        "ideal_log_margin": [
+          "22893.995475",
+          "22893.995476"
+        ],
+        "single_cell_log_margin": [
+          "12376.966242",
+          "12376.966243"
+        ],
+        "paired_log_margin": [
+          "22877.363299",
+          "22877.363300"
+        ],
+        "large_prime_blocks": 12860,
+        "available_small_lehmer_digits": 19041
+      },
+      {
+        "n": 1562,
+        "prime_distance_cells": 416886,
+        "ideal_log_margin": [
+          "101239.267790",
+          "101239.267791"
+        ],
+        "single_cell_log_margin": [
+          "32723.264522",
+          "32723.264523"
+        ],
+        "paired_log_margin": [
+          "101203.594755",
+          "101203.594756"
+        ],
+        "large_prime_blocks": 85886,
+        "available_small_lehmer_digits": 85910
+      },
+      {
+        "n": 1563,
+        "prime_distance_cells": 417378,
+        "ideal_log_margin": [
+          "101332.150061",
+          "101332.150062"
+        ],
+        "single_cell_log_margin": [
+          "33303.007082",
+          "33303.007083"
+        ],
+        "paired_log_margin": [
+          "101290.809165",
+          "101290.809166"
+        ],
+        "large_prime_blocks": 86104,
+        "available_small_lehmer_digits": 85965
+      },
+      {
+        "n": 2663,
+        "prime_distance_cells": 1115886,
+        "ideal_log_margin": [
+          "226501.059340",
+          "226501.059341"
+        ],
+        "single_cell_log_margin": [
+          "49039.052574",
+          "49039.052575"
+        ],
+        "paired_log_margin": [
+          "226437.808354",
+          "226437.808355"
+        ],
+        "large_prime_blocks": 226916,
+        "available_small_lehmer_digits": 191736
+      },
+      {
+        "n": 4242,
+        "prime_distance_cells": 2647156,
+        "ideal_log_margin": [
+          "448246.400494",
+          "448246.400495"
+        ],
+        "single_cell_log_margin": [
+          "353.897133",
+          "353.897134"
+        ],
+        "paired_log_margin": [
+          "448152.050612",
+          "448152.050613"
+        ],
+        "large_prime_blocks": 560808,
+        "available_small_lehmer_digits": 390264
+      },
+      {
+        "n": 4243,
+        "prime_distance_cells": 2648318,
+        "ideal_log_margin": [
+          "448387.559823",
+          "448387.559824"
+        ],
+        "single_cell_log_margin": [
+          "-362.618708",
+          "-362.618707"
+        ],
+        "paired_log_margin": [
+          "448297.320154",
+          "448297.320155"
+        ],
+        "large_prime_blocks": 561332,
+        "available_small_lehmer_digits": 390356
+      },
+      {
+        "n": 5000,
+        "prime_distance_cells": 3593728,
+        "ideal_log_margin": [
+          "575900.770176",
+          "575900.770177"
+        ],
+        "single_cell_log_margin": [
+          "-22849.642307",
+          "-22849.642306"
+        ],
+        "paired_log_margin": [
+          "575792.737512",
+          "575792.737513"
+        ],
+        "large_prime_blocks": 765352,
+        "available_small_lehmer_digits": 495000
+      },
+      {
+        "n": 10000,
+        "prime_distance_cells": 13107208,
+        "ideal_log_margin": [
+          "1619437.655042",
+          "1619437.655043"
+        ],
+        "single_cell_log_margin": [
+          "-595551.803626",
+          "-595551.803625"
+        ],
+        "paired_log_margin": [
+          "1619236.013562",
+          "1619236.013563"
+        ],
+        "large_prime_blocks": 2823480,
+        "available_small_lehmer_digits": 1410000
+      },
+      {
+        "n": 100000,
+        "prime_distance_cells": 1009606926,
+        "ideal_log_margin": [
+          "48632252.144628",
+          "48632252.144629"
+        ],
+        "single_cell_log_margin": [
+          "-125881025.221856",
+          "-125881025.221855"
+        ],
+        "paired_log_margin": [
+          "48630697.651829",
+          "48630697.651830"
+        ],
+        "large_prime_blocks": 225033542,
+        "available_small_lehmer_digits": 44700000
+      }
+    ],
+    "initial_integrals": {
+      "x": 3000,
+      "integral_theta_minus_t": [
+        "-138901.29950074",
+        "-138901.29950073"
+      ],
+      "integral_psi_minus_t": [
+        "-2833.27404847",
+        "-2833.27404846"
+      ],
+      "integral_repeated_powers": [
+        "136068.02545226",
+        "136068.02545227"
+      ]
+    },
+    "codec": {
+      "exhaustive_size": 3,
+      "distinct_encoded_inputs": 864,
+      "total_board_states": 19683,
+      "rows": [
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "dial_digits": [
+        0,
+        1
+      ],
+      "encoded_row_major": [
+        0,
+        1,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "decoded_again": [
+        [
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ]
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "independent_leading_bit_comparisons": [
+      {
+        "n": 2,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 3,
+        "bits_in_board_count": 5
+      },
+      {
+        "n": 3,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 10,
+        "bits_in_board_count": 15
+      },
+      {
+        "n": 49,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 12852,
+        "bits_in_board_count": 13481
+      },
+      {
+        "n": 577,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 3020739,
+        "bits_in_board_count": 3053768
+      },
+      {
+        "n": 1563,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 25773960,
+        "bits_in_board_count": 25920151
+      },
+      {
+        "n": 2663,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 80367034,
+        "bits_in_board_count": 80693806
+      },
+      {
+        "n": 4242,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": 1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 216197331,
+        "bits_in_board_count": 216844014
+      },
+      {
+        "n": 4243,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": -1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 216305498,
+        "bits_in_board_count": 216952385
+      },
+      {
+        "n": 10000,
+        "mantissa_bits": 160,
+        "ideal_capacity_vs_demand": 1,
+        "single_cell_capacity_vs_permutations": -1,
+        "paired_capacity_vs_permutations": 1,
+        "bits_needed_by_demand": 1326434884,
+        "bits_in_board_count": 1328771238
+      }
+    ],
+    "single_cell_asymptotic_loss_constant": [
+      "0.185663238",
+      "0.185663240"
+    ]
+  },
+  "self_review": {
+    "class": "author self-review",
+    "board_size_one": "Direct equality, with the option of positive spare capacity.",
+    "nonintegral_heads": "An affine prime area and a quadratic center introduce at most 1/8 between consecutive integers.",
+    "dyadic_positivity": "Truncated positive integral, alternating monotone pairs, first pair retains the factor 1-2^(-b).",
+    "small_head_controls": "Directed logarithms fund both inequalities through 100000; independent mantissa products at selected sizes. No inference from a finite range to all sizes.",
+    "whole_digit_obstruction": "Limited to allocating two whole permutation digits in each prime pair and one in each other cell.",
+    "assumption_direction": "Johnston conditional estimates are used from RH to the board only."
+  },
+  "sha256_sources": {
+    "proofs/how-much-room-the-prime-board-needs.md": "9e288289e08980fbefde0c2874b5f00a47aa56e2d27ab3cecaa5b2d6a593155a",
+    "pal-rh/the-prime-board-and-its-signed-area.md": "20784f3e96e7ca45bcfebd8e7a78731321ec023b5b40569013d1e961de12cae1",
+    "pal-rh/PALRH/PrimeBoard.lean": "6a7ca2ef6bf88e3a567a0717218a2ed3c92e38ea76e3521fcc180c7fdafff7e2",
+    "pal-rh/PALRH/LinearPrimeIntegral.lean": "34ccacf3c94f1f935f444e3babeee2ffc23942854e4f058a7e9b0320dc0d7854",
+    "pal-rh/lakefile.toml": "16e683657d9518e0f719d58f832ba8a5fc1c3ce5738a959e1a344efae64f9476",
+    "pal-rh/checks/prime-board/BoardChallenge.lean": "992d0eb661eb52475de368d818feb2a9a873fe0a20aaa38e655e85f843518f99",
+    "pal-rh/checks/prime-board/BoardSolution.lean": "e5d5edf24a0e10c15e8fb2878620ad1c283ef3b62afd67867bf8950c501ba93b",
+    "pal-rh/checks/prime-board/compare.json": "9bdb132d0dd5e3b631537ed3d055496726b1233e40db10061d2733612d324229",
+    "receipt-archives/check_pal_prime_board.py": "008570f55d77503685b6d0fdcd97944e8fe28068a2bddb3962a6ce6c03ea75f4"
+  }
+}

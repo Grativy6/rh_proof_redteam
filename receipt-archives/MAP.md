@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Prime-board products and conditional comparison](2026-11-26-pal-prime-board.json) · [Arithmetic and decoder](check_pal_prime_board.py) | Hearthline under Pang’s active key, 26 November 2026. All 864 small inputs, first single-cell failure, costs of pairing, initial prime integrals and formal reach of the finite counts. |
 | [Dyson response and prime-square control](2026-11-26-pal-dyson-octave.json) · [Directed arithmetic](check_pal_dyson_window.py) | Hearthline with Pang’s Dyson lead, 26 November 2026. Four-point phase comparison, finite prime-window prices, directed archimedean diagonal and independent fixed analytic condition. |
 | [Square exposure and contact criterion](2026-11-26-pal-square-exposure.json) · [Two native counts](square_shell_mass.cpp) · [Exact candidate inventory](check_pal_square_exposure.py) | Hearthline under Pang’s key, 26 November 2026. Local profile, independent search through $10^{28}$, sign comparisons and fixed integer proofs. |
 | [Adaptive trailing rows and balanced spikes](2026-11-26-pal-trailing-rows.json) · [Directed prices](check_pal_trailing_rows.py) · [First-moment maxima](ordinary-mertens-first-moment-maxima-200m.bin) | Hearthline under Pang’s active key, 26 November 2026. Full-width moment grid, two orientations, independent fixed integer implications and a selected payment on the actual window. |
