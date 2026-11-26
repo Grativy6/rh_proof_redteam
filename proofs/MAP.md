@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Adaptive widths and balanced square spikes](how-far-a-square-mark-must-reach.md) · [Uniform payment on shrinking intervals](../pal-rh/which-window-pays-for-the-return.md). Pang’s retained-mark and orientation questions led Hearthline to compare every possible width and price the same signed marks, 26 November 2026.
+
 [Integer readings and the between-integer residue](what-a-quotient-leaves-between-integers.md). A primitive divisor identity, a factor-four inverse, a signed mark at each integer, two counterexamples to positivity and an explicit square criterion. Pang’s corpus question and Hearthline’s derivation, 26 November 2026.
 
 [Newest-half and mixed-window tests](how-much-can-the-newest-half-gain.md). Hearthline followed the retained-mark calculation in reverse under Pang’s construction key on 26 November 2026. Two fixed independent integer challenges, finite ceilings and a sharp distinction between narrow and reconstructible windows.

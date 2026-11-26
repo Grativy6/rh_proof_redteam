@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Adaptive trailing rows](../proofs/how-far-a-square-mark-must-reach.md) · [Shrinking-width transfer](which-window-pays-for-the-return.md) · [Lean](PALRH/TrailingRows.lean) | A single affordable earlier window per head suffices. Real smooth squares force widths beyond the square-root scale. A signed portion scales with the return price uniformly over slowly narrowing windows. |
 | [Within-cell remainder at square heads](../proofs/what-a-quotient-leaves-between-integers.md) · [Lean identities](PALRH/CellRemainder.lean) | The falling and stair readings agree at integers. Their explicit division residue carries a one-sided square criterion. A universal geometric-mean sign already fails at 31 and 81. |
 | [Newest half and mixed difference](../proofs/how-much-can-the-newest-half-gain.md) · [Lean](PALRH/TerminalWindows.lean) | Each window needs only an upper ceiling on its positive changes. On the mixed window the underlying positive divisor source is the single unit. |
 | [Last two square roots](../proofs/why-the-last-two-square-roots-remain.md) · [Same-owner signed prices](what-the-last-two-square-roots-carry.md) · [Formal floor implication](PALRH/DenseSquares.lean) | An invertible square pass leaves at most two roots per cofactor. Two disjoint signed portions have explicit all-scale leading terms. The sign of the outstanding sum remains open. |

@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+At 5,184 a mark of +72 needs 776 earlier-window positions before the weighted sum turns negative. We proved why some positive square marks necessarily defeat every width up to about 2.19 times the square root of their head. The width can be chosen anew at each head in two fixed integer implications to RH. [The square mark and the hand calculation](proofs/how-far-a-square-mark-must-reach.md) · [What a shrinking window pays](pal-rh/which-window-pays-for-the-return.md)
+
 Divide 5 by 2. Two readers that agree at every whole number treat the half left over differently. One gives a closed formula at every head. The other lets us recover the weighted Möbius totals with an inverse cost of at most four. Their difference gives an explicit square-head criterion for RH. A tempting positivity shortcut fails at 31 and 81. [Read the example and the remaining bound](proofs/what-a-quotient-leaves-between-integers.md)
 
 Counting just the newest half of the marks gives another route. Its running gain was positive at only 14 heads in the first 50 million. A uniform square-root ceiling on its rises would suffice. At 16 you can add the four marks by hand. [What the half-window earns](proofs/how-much-can-the-newest-half-gain.md)

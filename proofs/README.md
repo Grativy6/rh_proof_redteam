@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[How far a square mark must reach](how-far-a-square-mark-must-reach.md) shows exactly how much earlier arithmetic a positive mark needs to borrow. It gives the adaptive integer rule, the complete prefix search and a lower bound on the reach of any successful rule.
+
 [What a quotient leaves between integers](what-a-quotient-leaves-between-integers.md) compares two readings that agree at every integer. Ordinary division isolates their difference, a finite inverse recovers the arithmetic count, and one outstanding one-sided bound at square heads is equivalent to RH on paper.
 
 [How much can the newest half gain?](how-much-can-the-newest-half-gain.md) sums four actual marks at 16 and shows how an upper bound on their counterparts at every head would force RH. The paper also gives a window whose sign can be settled unconditionally and explains what that narrower measurement loses.
