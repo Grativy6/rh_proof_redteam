@@ -1,0 +1,24 @@
+{
+  "challenge_module": "ProductChallenge",
+  "solution_module": "ProductSolution",
+  "theorem_names": [
+    "riemannHypothesis",
+    "eachCutMayChoose",
+    "oneTickPerJoin"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

@@ -152,14 +152,14 @@ private theorem integer_price {s : ℝ} (unit : |s|=1)
   unfold error
   nlinarith only [small,price,mul_le_mul_of_nonneg_right rootCost Nr.le]
 
-private theorem value_integer {N : ℕ} (np : 0<N) : PrimeDivisorPrimitive.value N=error N/(N:ℝ) := by
+theorem value_integer {N : ℕ} (np : 0<N) : PrimeDivisorPrimitive.value N=error N/(N:ℝ) := by
   have nr : 0<(N:ℝ) := by exact_mod_cast np
   have q : (∑ d ∈ Icc 1 N, ArithmeticFunction.vonMangoldt d*(1-(d:ℝ)/N))=fullWalk N/(N:ℝ) := by
     rw [fullWalk,Finset.sum_div];apply sum_congr rfl;intro d _;field_simp
   rw [PrimeDivisorPrimitive.value,if_pos (by exact_mod_cast np),Nat.floor_natCast,q,error]
   field_simp
 
-private theorem signal_mono {t u : ℝ} (large : 1≤t) (tu : t≤u) :
+theorem signal_mono {t u : ℝ} (large : 1≤t) (tu : t≤u) :
     PrimeDivisorPrimitive.value t+t/2≤PrimeDivisorPrimitive.value u+u/2 := by
   have tp:=zero_lt_one.trans_le large
   have up:=tp.trans_le tu

@@ -1,0 +1,583 @@
+{
+  "parent_public_research_commit": "2b7b31519adcab3fbf70646101167cb7ad5afe33",
+  "parent_tree": "b9db365662cd1822ffeec801f22b917923bd33d4",
+  "contributors": "Christopher Daniel Pang supplied the retained residue, same-frame address and two orientations. Hearthline derived the product guard, the local signed recovery and the joint clock-phase argument within his independent PAL research program.",
+  "formal_scope": "Multiplicative concatenation leaves at most one original tick per join. One all-cut upper product comparison pays an actual row assignment and one all-cut lower comparison pays the opposite signed threshold. The RH theorem accepts either direction on each board, allowing different boards to make different decisions. Moving the disjunction inside the cut test holds for arbitrary nonnegative input q.",
+  "paper_scope": "On the prescribed boards RH implies both guarded product comparisons with every constant fixed. The frequency of individual rounding flags is one half and the joint fraction of both flags is half of the slowly oscillating column refund function, up to o(1). The proof uses prime local-price equidistribution and invariance of two carried circle phases.",
+  "review": {
+    "type": "author self-review",
+    "quantifiers": "A single shared orientation per board controls the absolute primitive on that same finite horizon. All reciprocal dilation arguments are smaller. A common sign across boards is never used.",
+    "address": "Separate-prime flags remain distinct original jobs. At most M flag cells per starting row are reserved in advance. The pure product determines each pooled ordinal, which is pegged either to that row pocket or to a regular distance already released.",
+    "phase": "The limiting base law comes from short-interval averaging at h=floor(M^(1/3)). Index-shift invariance gives Haar fibres outside the countable union of resonances. The frequency concerns prime arrivals or their n-p start weights. No assertion about weighting the carried state by the next gap is required.",
+    "control": "The altered positive product stream has an actual retained prime repeated 439 times at the later cut. It demonstrates the difference between choosing after each cut and choosing once for the entire board. It is not a counterexample for the actual single-copy prime stream.",
+    "boundary": "The normal exported conditional term still has a different type from the fixed bare RH challenge. The all-board arithmetic input remains open."
+  },
+  "primary_sources": {
+    "corpus": "pal-rh/CORPUS-ROUTES.md",
+    "Zaccagnini": "https://bibliotekanauki.pl/articles/1390756.pdf",
+    "Schoenfeld": "https://doi.org/10.1090/S0025-5718-1976-0457374-X"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3843
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.PowerRecovery",
+      "exit": 0,
+      "seconds": 12.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.SignedStrip",
+      "exit": 0,
+      "seconds": 12.9,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ProductClock",
+      "exit": 0,
+      "seconds": 12.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ProductBridge",
+      "exit": 0,
+      "seconds": 12.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.BoardOrientation",
+      "exit": 0,
+      "seconds": 10.1,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.PowerRecovery.rh_of_signed_value": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.timely_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_shared_placement": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_upper_pocket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.rh_of_lower_pocket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SignedStrip.short_area": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductClock.concatenate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductClock.cumulative_rounding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductClock.from_one_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductBridge.fixed_row_address": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductBridge.per_cut_choice": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductBridge.timely_of_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductBridge.rh_of_upper_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ProductBridge.rh_of_lower_product": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.BoardOrientation.choose_by_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.BoardOrientation.rh_of_product_direction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347313572,
+        "sha256": "80afbb00fc29a010add5c2a123e2fdc4ced20b8a3c790c45bbb11cb58bd48c17"
+      },
+      "solution": {
+        "bytes": 433042410,
+        "sha256": "8ff43b7ac6dc293659577c798fce2bb4106847c233c7ac904b44c3263a26b1b0"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 128.81,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.37,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "8ff43b7ac6dc293659577c798fce2bb4106847c233c7ac904b44c3263a26b1b0"
+    }
+  },
+  "calculation": {
+    "small_product": {
+      "n": 16,
+      "x": 4,
+      "last_cut": 16,
+      "prime_count": 4,
+      "joint_flags_tick_then_column": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "forward_start_counts_by_joint_flags": [
+        [
+          14,
+          5
+        ],
+        [
+          9,
+          0
+        ]
+      ],
+      "sum_separate_ticks": 40,
+      "single_product_ticks": 39,
+      "rounded_tick_flags": 1,
+      "ordinary_forward_jobs": 260,
+      "product_clock_forward_jobs": 251,
+      "separate_positions_for_flags": 9,
+      "refined_log_grids": 0,
+      "max_product_columns_above_released_distance": [
+        1,
+        5
+      ],
+      "fixed_product_column_budget": 0,
+      "max_lower_product_shortage": [
+        3,
+        10
+      ],
+      "lower_budget": 0,
+      "direct_product_powers": [
+        [
+          5,
+          8,
+          8,
+          8
+        ],
+        [
+          7,
+          9,
+          8,
+          16
+        ],
+        [
+          11,
+          11,
+          11,
+          27
+        ],
+        [
+          13,
+          12,
+          12,
+          39
+        ]
+      ],
+      "fixed_row_codec": {
+        "checked": 260,
+        "exhaustive": true,
+        "examples": {
+          "pocket": {
+            "source": [
+              5,
+              0,
+              0
+            ],
+            "stored": [
+              "pocket",
+              0,
+              16
+            ]
+          },
+          "ordinary": {
+            "source": [
+              5,
+              0,
+              4
+            ],
+            "stored": [
+              "ordinary",
+              0,
+              5,
+              0
+            ]
+          },
+          "flag": {
+            "source": [
+              7,
+              0,
+              8
+            ],
+            "stored": [
+              "pocket",
+              0,
+              6
+            ]
+          }
+        },
+        "ordinary_bank_columns": 1
+      }
+    },
+    "choice_control": {
+      "j": 4,
+      "lower_fails_at": 27570,
+      "later_genuine_prime_used_as_repeated_label": 27581,
+      "synthetic_multiplicity": 439,
+      "number_of_x_step_blocks_in_upper_test": 3947
+    },
+    "boards": [
+      {
+        "j": 4,
+        "n": 655360000,
+        "x": 25600,
+        "last_cut": 65536,
+        "prime_count": 3724,
+        "joint_flags_tick_then_column": [
+          [
+            1034,
+            854
+          ],
+          [
+            1025,
+            811
+          ]
+        ],
+        "forward_start_counts_by_joint_flags": [
+          [
+            677594020368,
+            559640317026
+          ],
+          [
+            671696376873,
+            531461460123
+          ]
+        ],
+        "sum_separate_ticks": 1018703590,
+        "single_product_ticks": 1018701754,
+        "rounded_tick_flags": 1836,
+        "ordinary_forward_jobs": 667571210365138428,
+        "product_clock_forward_jobs": 667570007207301432,
+        "separate_positions_for_flags": 1203157836996,
+        "refined_log_grids": 0,
+        "max_product_columns_above_released_distance": [
+          107,
+          59753
+        ],
+        "fixed_product_column_budget": 1966,
+        "max_lower_product_shortage": [
+          158,
+          64996
+        ],
+        "lower_budget": 1969,
+        "direct_product_powers": [],
+        "fixed_row_codec": {
+          "checked": 162,
+          "exhaustive": false,
+          "examples": {
+            "pocket": {
+              "source": [
+                25601,
+                0,
+                0
+              ],
+              "stored": [
+                "pocket",
+                0,
+                65536
+              ]
+            },
+            "flag": {
+              "source": [
+                25703,
+                0,
+                259956
+              ],
+              "stored": [
+                "pocket",
+                0,
+                25702
+              ]
+            },
+            "ordinary": {
+              "source": [
+                28723,
+                0,
+                0
+              ],
+              "stored": [
+                "ordinary",
+                0,
+                26799,
+                22395
+              ]
+            }
+          },
+          "ordinary_bank_columns": 1966
+        }
+      },
+      {
+        "j": 5,
+        "n": 21743271936,
+        "x": 147456,
+        "last_cut": 1048576,
+        "prime_count": 68394,
+        "joint_flags_tick_then_column": [
+          [
+            17977,
+            16191
+          ],
+          [
+            17956,
+            16270
+          ]
+        ],
+        "forward_start_counts_by_joint_flags": [
+          [
+            390867438490035,
+            352036602693493
+          ],
+          [
+            390410822329954,
+            353754268757652
+          ]
+        ],
+        "sum_separate_ticks": 132751747031,
+        "single_product_ticks": 132751712805,
+        "rounded_tick_flags": 34226,
+        "ordinary_forward_jobs": 2886377951159551597021,
+        "product_clock_forward_jobs": 2886377206994460509415,
+        "separate_positions_for_flags": 744165091087606,
+        "refined_log_grids": 0,
+        "max_product_columns_above_released_distance": [
+          212,
+          155893
+        ],
+        "fixed_product_column_budget": 11334,
+        "max_lower_product_shortage": [
+          1166,
+          993778
+        ],
+        "lower_budget": 11342,
+        "direct_product_powers": [],
+        "fixed_row_codec": {
+          "checked": 162,
+          "exhaustive": false,
+          "examples": {
+            "pocket": {
+              "source": [
+                147457,
+                0,
+                0
+              ],
+              "stored": [
+                "pocket",
+                0,
+                1048576
+              ]
+            },
+            "flag": {
+              "source": [
+                147547,
+                0,
+                1755012
+              ],
+              "stored": [
+                "pocket",
+                0,
+                147546
+              ]
+            },
+            "ordinary": {
+              "source": [
+                181889,
+                0,
+                0
+              ],
+              "stored": [
+                "ordinary",
+                0,
+                170337,
+                41579
+              ]
+            }
+          },
+          "ordinary_bank_columns": 11334
+        }
+      },
+      {
+        "j": 6,
+        "n": 644513529856,
+        "x": 802816,
+        "last_cut": 16777216,
+        "prime_count": 1013709,
+        "joint_flags_tick_then_column": [
+          [
+            241312,
+            265815
+          ],
+          [
+            240403,
+            266179
+          ]
+        ],
+        "forward_start_counts_by_joint_flags": [
+          [
+            155526842623443706,
+            171319016225656283
+          ],
+          [
+            154940983762527633,
+            171553618791224137
+          ]
+        ],
+        "sum_separate_ticks": 12821166295111,
+        "single_product_ticks": 12821165788529,
+        "rounded_tick_flags": 506582,
+        "ordinary_forward_jobs": 8263302445369582511553591,
+        "product_clock_forward_jobs": 8263302118874979957801821,
+        "separate_positions_for_flags": 326494602553751770,
+        "refined_log_grids": 0,
+        "max_product_columns_above_released_distance": [
+          323,
+          1195247
+        ],
+        "fixed_product_column_budget": 61734,
+        "max_lower_product_shortage": [
+          5576,
+          16576186
+        ],
+        "lower_budget": 61755,
+        "direct_product_powers": [],
+        "fixed_row_codec": {
+          "checked": 162,
+          "exhaustive": false,
+          "examples": {
+            "pocket": {
+              "source": [
+                802829,
+                0,
+                0
+              ],
+              "stored": [
+                "pocket",
+                0,
+                16777216
+              ]
+            },
+            "flag": {
+              "source": [
+                802831,
+                0,
+                10915012
+              ],
+              "stored": [
+                "pocket",
+                0,
+                802830
+              ]
+            },
+            "ordinary": {
+              "source": [
+                1390241,
+                0,
+                0
+              ],
+              "stored": [
+                "ordinary",
+                0,
+                1327908,
+                768112
+              ]
+            }
+          },
+          "ordinary_bank_columns": 61734
+        }
+      }
+    ]
+  },
+  "sha256_sources": {
+    "proofs/one-product-one-direction-per-board.md": "f7740d28ebcf1f0952dc232206185ffd664f675e613e0c0b19ef6694eee0dbaf",
+    "pal-rh/two-roundings-on-the-same-primes.md": "51178569bdef1de3a151238b0390332f69f3795793b2d3ca0d7cd4ae1134132a",
+    "pal-rh/PALRH/PowerRecovery.lean": "f3aa09de7b13907f13e35a23d2fbc21b7b72d9a914a3c341ce215ad0a171c8df",
+    "pal-rh/PALRH/SignedStrip.lean": "0eb58c293a67ca65a55c0807b0832bfe5d4e0791a895aed7fa4bbd102b98777a",
+    "pal-rh/PALRH/ProductClock.lean": "9ddc5c3104c8afb38751e6219ba54129472fc0036b95f2d94c09e914fec96d8a",
+    "pal-rh/PALRH/ProductBridge.lean": "57a5edaf3f20e7a5c6392cc63c5219e5f8c170ac167d72fbb802c14e3adb16e3",
+    "pal-rh/PALRH/BoardOrientation.lean": "c626dd93c200e45431eae120b94c124a6f7cdfff06faca3ffc4a498d13b8ee25",
+    "pal-rh/lakefile.toml": "8465f92c758784327e15fef848e93556bbd56fa496b41edbe4034b0046044c26",
+    "pal-rh/checks/product-direction/ProductChallenge.lean": "f5d3064ffe26da046b46933b40086dc6d6ed1007fa81049fdea831ea1eadc0d4",
+    "pal-rh/checks/product-direction/ProductSolution.lean": "a757a11ed112eff13ea6b5f0d56b08cf679ab6fdff558a6092f388eadc9dad9b",
+    "pal-rh/checks/product-direction/compare.json": "8a1c71f5d39a0ddf671cb0eaf53a5e4d6e9cffebe8ae793f6db8dee4638225da",
+    "receipt-archives/check_pal_product_clock.py": "2e84b4d272b414572a295311e8e03db34d8100b1bcfe6339d8bb69c8bc6f4c29",
+    "receipt-archives/pal_product_clock.py": "a4e5a383c31ed83facd11442a791d19cd781222ef17c0ab2ceacfca9f1f7d66e",
+    "receipt-archives/check_pal_returned_horizon.py": "380ff2ea0bf0b90f9c1782b7a8d5217ce0ce942c48d888afbd0e912914eef115",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-carry-storage.json": "69237a1655f4bff2eb35d475763edc8dbdd863ef19b470000c415da97bd5dd49",
+    "receipt-archives/2026-11-26-pal-signed-pocket.json": "ff6438d128c30c17ac7c66ffd21c5e03d4494cec26d7d5240cfeb1d75458fe9e",
+    "pal-rh/PALRH/SharedColumns.lean": "82decfe2c44032adc2263e1cac35b79b61a95463ae54a6ae0ce79c9e13795459",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c"
+  }
+}

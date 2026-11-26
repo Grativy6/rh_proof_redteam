@@ -16,6 +16,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 **Our most concrete target is one thirteenth of a layer.** Return the part of each prime-trip strip removed by the factorial sieve. A single whole-number comparison on every prescribed board, starting with board zero, is equivalent to RH on paper. The implication to stock RH is proved in Lean. The all-board comparison is open. [Count the returned strip](proofs/one-thirteenth-of-a-returned-layer.md) · [Why thirteen works, including early boards](pal-rh/why-one-thirteenth-is-enough.md)
 
+[One product, one direction per board](proofs/one-product-one-direction-per-board.md) reduces the test to integer multiplications and powers. The orientation can change between boards. Letting every cut choose for itself is an arithmetic tautology. The same independently fixed challenge distinguishes them.
+
 [Either side of the pocket](proofs/why-either-side-of-the-pocket-is-enough.md) now reaches stock RH in Lean independently. In particular a map assigning every arriving tick a distinct cell by its arrival cut is sufficient. Its all-board existence is the open mathematical input.
 
 [Which empty cells must cross?](proofs/which-empty-cells-must-cross.md) gives the exact amount required at each boundary. A common tick remainder allows one prime to use a column opened by another. At sixteen sites it returns twenty lanes while preserving every original tick.

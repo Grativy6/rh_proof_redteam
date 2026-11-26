@@ -6,6 +6,8 @@ Levent Alpöge and Claude’s 20 November RH release is the work under examinati
 
 Pang supplied the requirement to carry the portion removed in the original frame. Hearthline derived the integer return, the padded fourth-power boards and the fixed one-thirteenth condition. Schoenfeld supplies the conditional analytic estimate and Johnston the finite-range version. [Derivation and roles of the inputs](../pal-rh/why-one-thirteenth-is-enough.md)
 
+Pang’s distinction between an earned transfer and a new unpriced copy suggested merging the multiplicative clocks. His request to try both directions motivated board-dependent orientation. Hearthline derived the local recovery and two-clock phase law. The latter uses Zaccagnini’s short-interval theorem on the actual prime numbers. [Derivation and scope](../pal-rh/two-roundings-on-the-same-primes.md)
+
 Pang asked that the sign be turned both ways while retaining the physical ordering. Hearthline derived the opposite bound on the same alternating divisor read, its power-scale recovery, and both formal signed implications. [The reading and its transfers](why-either-side-of-the-pocket-is-enough.md)
 
 Pang supplied the empty-space and retained-frame questions. Hearthline derived the actual row-remainder encoder, the prime-phase refund and the storage bound on the returned boards. The interval application uses the row totals of Granville and Soundararajan and, for the simpler positive bound, Maynard’s prime clusters. [Mathematics and source roles](../pal-rh/how-much-credit-crosses-a-prime-cut.md)

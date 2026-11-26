@@ -8,6 +8,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [One thirteenth of a returned layer](../proofs/one-thirteenth-of-a-returned-layer.md) · [All sizes and constants](why-one-thirteenth-is-enough.md) · [Fixed comparison](checks/returned-horizon/ReturnedChallenge.lean)
 
+[One product with a board-wide orientation](../proofs/one-product-one-direction-per-board.md) · [Both kinds of rounding](two-roundings-on-the-same-primes.md) · [Fixed challenge](checks/product-direction/ProductChallenge.lean)
+
 [Either side separately](../proofs/why-either-side-of-the-pocket-is-enough.md) · [Signed area to RH](PALRH/SignedStrip.lean) · [Fixed independent declarations](checks/signed-pocket/SignedChallenge.lean)
 
 [Which cells cross a cut](../proofs/which-empty-cells-must-cross.md) · [All storage caps](how-much-credit-crosses-a-prime-cut.md) · [Recovered columns](the-whole-column-a-prime-can-return.md)

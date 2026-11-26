@@ -14,6 +14,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [One thirteenth of a returned layer](proofs/one-thirteenth-of-a-returned-layer.md). On 26 November 2026, under Pang’s construction key, Hearthline fixed the board sequence, return and allowance at every size. [Both directions and paid ranges](pal-rh/why-one-thirteenth-is-enough.md)
 
+[One primorial comparison and a board-wide direction](proofs/one-product-one-direction-per-board.md). Under Pang’s key on 26 November 2026, Hearthline proved that the orientation can change between boards and accounted for both kinds of rounding on the original primes. [Tests and scope](receipt-archives/2026-11-26-pal-product-direction.json)
+
 [Formal one-sided pocket and physical assignment](proofs/why-either-side-of-the-pocket-is-enough.md). Under Pang’s active key on 26 November 2026, Hearthline proved both orientations separately from the alternating divisor sums. [Check and bare comparison](receipt-archives/2026-11-26-pal-signed-pocket.json)
 
 [Required inventory at every cut](proofs/which-empty-cells-must-cross.md). Under Pang’s carry question, Hearthline derived the least crossing profile, measured finite storage caps, and placed true prime ticks by a common quotient and remainder on 26 November 2026.
