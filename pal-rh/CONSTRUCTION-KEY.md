@@ -49,6 +49,8 @@ For the primary route write $E_j$ for the infimum of the actual all-row squared 
 
 ## How to keep the key turning
 
+**Pascal allocation, 26 November 2026.** The two subset packets and all row orders fit unconditionally. For each direction take $M=R/\gcd(R,P)$ and $U=P/\gcd(R,P)$, the unmatched prime inputs and the remaining subset states. Paying $M\le U$ at all sufficiently late fourth powers suffices. Additional independent rows with positive weights and unchanged prime labels incur a macroscopic excess. [Exact comparison and failed positive-row strategy](what-a-pascal-row-pays-for.md)
+
 **Measured cutoff, 26 November 2026.** Track the least prefix of prime distances that must be set aside. An eventual bound by $n^a$ at fourth powers, for fixed $1/2\le a<1$, earns an actual zero-free half-plane to its right. The bit-length cutoff still has growth exponent one. A lowered factorial sieve gives an independent calibration whose unavoidable overflow can be measured in bits. [Growth scale](what-the-least-cut-measures.md) · [Calibrated condition](when-two-prime-directions-meet.md)
 
 **Factorial frame, 26 November 2026.** At $n=k^4$ one integer $(k^2)!$ recognizes all remaining prime labels by gcd. Every row order and all dials above $y=\lceil3n/b^3\rceil$ fit at all sizes, with $b$ the binary length of $n$. The remaining one-sided task is to include the primes between $k^2$ and $y$ in the same capacity. The loss from erasing a fixed small prime in the frame rules out that shortcut. [Derivations](the-factorial-frame-for-prime-distances.md)

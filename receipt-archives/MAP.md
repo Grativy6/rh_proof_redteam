@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Pascal capacity, prime digits and negative subrows](2026-11-26-pal-pascal-board.json) · [Combinatorial replay](check_pal_pascal_board.py) | Hearthline under Pang’s active key, 26 November 2026. All-size packet fit, exact registered places, positive-row budget barrier and the remaining exchange. |
 | [Least cutoff and two-prime calibration](2026-11-26-pal-horizon-cut.json) · [Pair counts and directed constants](check_pal_horizon_pairs.py) | Hearthline under Pang’s research key, 26 November 2026. First adjacent fit, finite triangle, actual pair prices and a comparison of independently fixed statements. |
 | [Sieve frame and the fifth factor](2026-11-26-pal-sieve-frame.json) · [Exact counts](check_pal_sieve_frame.py) | Hearthline under Pang’s constructive key, 26 November 2026. Marker and distance comparison, first failure, upper-half theorem, and factorial-gcd implication to RH. |
 | [Fourth-power boards and all sizes through one billion](2026-11-26-pal-fourth-power-boards.json) · [Interval replay](check_pal_board_intervals.py) | Hearthline under Pang’s key, 26 November 2026. Convex sampling at fourth powers, unconditional late funded stretches and a bounded sieve covering every size in 1,284 further intervals. |

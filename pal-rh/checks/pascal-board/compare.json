@@ -1,0 +1,28 @@
+{
+  "challenge_module": "PascalChallenge",
+  "solution_module": "PascalSolution",
+  "theorem_names": [
+    "twoFamiliesFit",
+    "samePrimeDigitsFit",
+    "capacityAtOnePrime",
+    "firstSixteenLedger",
+    "whatRemainsIsCoprime",
+    "leftoverComparisonPays",
+    "positiveRowsDoNotGainAboveACut"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

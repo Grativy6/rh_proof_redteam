@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Two Pascal families on the prime board](proofs/two-pascal-rows-fit-on-every-board.md). On 26 November 2026 Hearthline followed Pang’s retained-label question into a universal storage construction, an exact cofactor price and a lower bound against positive rows. [Derivation and outstanding coprime comparison](pal-rh/what-a-pascal-row-pays-for.md)
+
 [The least successful cutoff](proofs/the-first-prime-a-board-has-to-give-up.md) · [Two directions into one product](pal-rh/when-two-prime-directions-meet.md). On 26 November 2026 Hearthline followed Pang’s point and horizon question to a growth scale for the actual research target and a calibration with compulsory overflows.
 
 [Changing the distance or changing the sieve](proofs/what-happens-when-the-sieve-forgets-five.md). On 26 November 2026 Pang’s internal and external views led Hearthline to an exact obstruction at size 256, a gcd-only RH condition and unconditional funding for the upper distances at every size. [Paper and remaining prime interval](pal-rh/the-factorial-frame-for-prime-distances.md)
