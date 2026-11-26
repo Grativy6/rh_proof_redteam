@@ -108,6 +108,28 @@ private theorem quartic_bracket (n : ℕ) (np : 0<n) :
   obtain ⟨j,h⟩:=Nat.exists_eq_succ_of_ne_zero kp.ne'
   exact ⟨j,by simpa [h] using low,by simpa [h,Nat.add_assoc] using high⟩
 
+/-- Two upper endpoint readings pay for the intervening chord. -/
+theorem upper_chord {a n b : ℕ} (lo : a≤n) (hi : n≤b) {T : ℝ}
+    (left : error a ≤ T) (right : error b ≤ T) :
+    error n ≤ T+((b:ℝ)-a)^2/8 := by
+  by_cases ab : a=b
+  · have eq : n=a := by omega
+    subst n;subst b; simpa using left
+  have pos : 0<(b:ℝ)-a := sub_pos.mpr (by exact_mod_cast (show a<b by omega))
+  have u : 0≤(b:ℝ)-n := sub_nonneg.mpr (by exact_mod_cast hi)
+  have v : 0≤(n:ℝ)-a := sub_nonneg.mpr (by exact_mod_cast lo)
+  have joined := chord lo hi
+  have q : ((n:ℝ)-a)*((b:ℝ)-n)/2 ≤ ((b:ℝ)-a)^2/8 := by
+    nlinarith only [sq_nonneg (((b:ℝ)-n)-((n:ℝ)-a))]
+  apply le_of_mul_le_mul_left (a:=((b:ℝ)-a)) _ pos
+  nlinarith only [joined, mul_le_mul_of_nonneg_left left u, mul_le_mul_of_nonneg_left right v,
+    mul_le_mul_of_nonneg_left q pos.le]
+
+theorem root_interval {n : ℕ} (np : 0<n) :
+    ∃ k : ℕ, 0<k ∧ k^4≤n ∧ n<(k+1)^4 := by
+  obtain ⟨j,h,g⟩ := quartic_bracket n np
+  exact ⟨j+1,Nat.succ_pos _,h,g⟩
+
 /-- Values at fourth powers bound the whole prime-power area by convex interpolation. -/
 theorem quartic_envelope {C : ℝ} (cn : 0≤C)
     (knots : ∀ k : ℕ, |error (k^4)|≤C*(k:ℝ)^6)

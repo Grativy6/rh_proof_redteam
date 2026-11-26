@@ -111,13 +111,10 @@ theorem prime_log_le_all (n : ℕ) :
       exact_mod_cast (pow_pos keep.1.pos (extra n d).toNat).ne'
     · simp [keep]
 
-theorem rh_of_prime_settings (K : ℕ)
-    (paid : ∀ k : ℕ, K ≤ k → 0 < k →
-      let n := k^4
-      (n+1)^(ticks k) ≤ n^(ticks k)*(primeSettings n)^14) :
-    RiemannHypothesis := by
-  apply OneSidedBoard.rh_of_eventual_upper_area K (C:=52) (by norm_num)
-  intro k late kp
+/-- One payment at the exact prime clock bounds one actual quartic head. -/
+theorem area_of_fourteen {k : ℕ} (kp : 0 < k)
+    (paid : (k^4+1)^ticks k ≤ (k^4)^ticks k*(primeSettings (k^4))^14) :
+    error (k^4) ≤ 52*(k:ℝ)^6 := by
   let n := k^4
   let N := 2*n
   have np : 0 < n := pow_pos kp _
@@ -130,7 +127,7 @@ theorem rh_of_prime_settings (K : ℕ)
     split_ifs with h
     · exact pow_pos h.1.pos _
     · decide
-  have input := paid k late kp
+  have input := paid
   change (n+1)^ticks k ≤ n^ticks k*(primeSettings n)^14 at input
   have logs := Real.log_le_log (by positivity : 0 < (((n+1:ℕ)^(ticks k):ℕ):ℝ))
     (by exact_mod_cast input :
@@ -192,6 +189,14 @@ theorem rh_of_prime_settings (K : ℕ)
   have joint : (N:ℝ)^5*(fullWalk n - (n:ℝ)^2/2) ≤ (N:ℝ)^5*(52*(k:ℝ)^6) := by
     nlinarith only [raw,fee,scaled]
   exact le_of_mul_le_mul_left joint (by positivity : 0 < (N:ℝ)^5)
+
+theorem rh_of_prime_settings (K : ℕ)
+    (paid : ∀ k : ℕ, K ≤ k → 0 < k →
+      let n := k^4
+      (n+1)^(ticks k) ≤ n^(ticks k)*(primeSettings n)^14) :
+    RiemannHypothesis := by
+  exact OneSidedBoard.rh_of_eventual_upper_area K (C:=52) (by norm_num)
+    (fun k late kp => area_of_fourteen kp (paid k late kp))
 
 #print axioms PALRH.DoubledPrice.ordinary_price
 #print axioms PALRH.DoubledPrice.rh_of_prime_settings

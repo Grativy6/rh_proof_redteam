@@ -12,7 +12,7 @@ Pang’s fixed accounting unit and requirement to carry every source of error de
 
 Pang’s PAL and BLA method keeps the dividend, its quotient and its remainder on the same row before pooling costs. Hearthline used that rule to design and optimize two signed arrays, then proved their all-size inequalities and the 13/15 comparisons in Lean. Diamond and Erdős provide historical context on finite elementary prime estimates. [Proof and exact source roles](thirteen-fourteen-and-fifteen-prime-copies.md)
 
-Pang supplied the direction reversal and the retained-endpoint question. Hearthline adapted the program’s earlier theta kernel to the fixed prime clock, derived its ordinary-integer price and located the successes. Jacobi’s identity, the Basel sum and Guth–Maynard’s short-interval prime theorem supply the named inputs. [Fourteen-copy recurrence](where-fourteen-pays-again.md)
+Pang supplied the direction reversal and the retained-endpoint and factorial-frame questions. Hearthline derived the [Gaussian recurrence](where-fourteen-pays-again.md) and the [signed growth and gap transfer](what-a-fourteen-copy-failure-would-force.md). Johnston supplies the signed oscillation, Brent–Platt–Trudgian record the zero-count bounds, and Kaczorowski–Pintz localize large excursions. The Gaussian result separately uses Guth–Maynard.
 
 Pang’s RPL/PAL question about reopening retained weights and the BLA/CLEF cost comparison led to a test against an actual prior row. Hearthline derived the compulsory Möbius limits and the sparse cost bound, generated rational refits, and compared them with an initially exact prefix and a localized repair. [Proof and attribution](why-the-old-divisor-rows-have-to-move.md)
 

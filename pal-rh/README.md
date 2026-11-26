@@ -14,7 +14,7 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [The unconditional 13/15 comparisons](../proofs/thirteen-fourteen-and-fifteen-prime-copies.md) · [Two ordinary integer tables](PALRH/DivisorBracket.lean) · [Fixed neighboring counts and 14-copy implication](checks/prime-copies/CopiesChallenge.lean)
 
-[Where the actual fourteen-copy test pays again](../proofs/where-fourteen-pays-again.md) · [Choice of side and quartic block in Lean](PALRH/QuarticReturnBlocks.lean) · [Proof scope](../receipt-archives/2026-11-26-pal-gaussian-quartics.json)
+[Near-linear runs and a power-saving sampling law](../proofs/what-a-fourteen-copy-failure-would-force.md) · [RH from a growing factorial frame in Lean](PALRH/AlignedHits.lean) · [Earlier success windows](../proofs/where-fourteen-pays-again.md)
 
 [The exact cost of freezing old weights](../proofs/why-the-old-divisor-rows-have-to-move.md) · [Frozen-cell identity in Lean](PALRH/ReopenedRows.lean) · [Five rational upper rows](../receipt-archives/growing_divisor_rows.json)
 

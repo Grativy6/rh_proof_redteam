@@ -129,6 +129,13 @@ private theorem analytic_band {k : ℕ} (large : 2≤k) :
   · rw [nr_eq] at pay3 raw
     nlinarith only [raw.2,pay3]
 
+theorem clock_price_bands {k : ℕ} (large : 2≤k) :
+    (k:ℝ)^8-3*k^6 ≤ demand k ∧ demand k ≤ (k:ℝ)^8 ∧
+    (4/7:ℝ)*(k:ℝ)^8-498*k^5 ≤ outlay (k^4) ∧ outlay (k^4) ≤ (4/7:ℝ)*(k:ℝ)^8+96*k^5 := by
+  have clock:=demand_band (by omega : 0<k)
+  have moved:=analytic_band large
+  exact ⟨clock.1,clock.2,moved.1,moved.2.1⟩
+
 /-- Thirteen copies fail on every original quartic board from index 512 onward. -/
 theorem thirteen_fail {k : ℕ} (large : 512≤k) : ¬ pays 13 k := by
   have kp : 0<k := by omega

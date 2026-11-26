@@ -16,7 +16,7 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Unconditional neighboring copy counts](thirteen-fourteen-and-fifteen-prime-copies.md). Hearthline derived explicit signed divisibility rows under Pang’s residue and shared-frame questions, 26 November 2026. Their ordinary sampling errors bracket the true prime area at every head beyond 15. [Replay](../receipt-archives/2026-11-26-pal-prime-copies.json)
 
-[Long runs of fourteen-copy successes](where-fourteen-pays-again.md). Under Pang’s direction to try both orientations, Hearthline derived the Gaussian ordinary-log price and located consecutive quartic successes in each sufficiently late window on 26 November 2026. [Numerical illustrations and exact constants](../receipt-archives/2026-11-26-pal-gaussian-quartics.json)
+[Recurring payment](where-fourteen-pays-again.md) · [Near-linear excursions and sparse sampling](what-a-fourteen-copy-failure-would-force.md). Under Pang’s constructive key on 26 November 2026, Hearthline proved the new paper equivalence and formalized the shortfall transfer and the factorial-aligned sufficiency theorem. [Reproduction](../receipt-archives/2026-11-26-pal-failure-windows.json)
 
 [Frozen coefficients, sparse costs and the original remainder sensors](why-the-old-divisor-rows-have-to-move.md). Hearthline derived the exact fixed excess and the Mellin cost inequality under Pang’s reopening question on 26 November 2026. [Finite rows and methods](../receipt-archives/2026-11-26-pal-growing-brackets.json)
 

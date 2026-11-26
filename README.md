@@ -24,7 +24,7 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [Thirteen, fourteen and fifteen copies](proofs/thirteen-fourteen-and-fifteen-prime-copies.md) fixes the same prime product and the same clock in three statements. Sixteen signed divisibility rows prove in stock Lean that 13 fails from index 512 and 15 pays from $40\,000\,000\,000$. The open count is 14.
 
-[Where fourteen pays again](proofs/where-fourteen-pays-again.md) proves that the critical copy count succeeds in long consecutive runs near every sufficiently large scale. Every sufficiently large $K$ has such a run between $K$ and $2K(\log(2K))^{1/4}$. The behavior between the runs remains open.
+[What a persistent fourteen-copy failure would force](proofs/what-a-fourteen-copy-failure-would-force.md) shows that one paying head in every sufficiently late $[K,K+K^{0.99}]$ would settle RH. Unbounded failure would create almost-linear failing runs. The [Gaussian argument](proofs/where-fourteen-pays-again.md) currently locates successes in longer windows.
 
 [Why the old divisor rows have to move](proofs/why-the-old-divisor-rows-have-to-move.md) gives an exact frozen-prefix price that the 64-label refit beats. An unbounded sequence of sufficiently inexpensive positive rows would reach RH through the original PAL residue sensors.
 

@@ -22,7 +22,7 @@ The papers state their own conclusions and the scope of their application to the
 
 [Thirteen, fourteen and fifteen copies of the same prime product](thirteen-fourteen-and-fifteen-prime-copies.md) gives an unbounded, elementary Lean proof for both neighboring counts. The two 16-entry rows have a finite check followed by a linear bound on the entire tail.
 
-[Fourteen pays in long runs near every large scale](where-fourteen-pays-again.md) locates unbounded stretches of successes on the exact critical clock. It uses a second mean-preserving observation and the sign of the actual prime drift.
+[Where fourteen pays again](where-fourteen-pays-again.md) finds successful blocks near all large scales. [What a fourteen-copy failure would force](what-a-fourteen-copy-failure-would-force.md) gives the corresponding almost-linear failure law, an exponent read from the same integer clock, and a power-saving sampling criterion for RH.
 
 [Why the old divisor rows have to move](why-the-old-divisor-rows-have-to-move.md) identifies a measured refit no append-only extension of the old weights could have achieved, and derives a sparse row-cost condition for RH.
 

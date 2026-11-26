@@ -14,7 +14,7 @@ For the [new finite all-cut range](../proofs/paying-the-next-full-prime-board.md
 
 For the [unconditional neighboring copy counts](../proofs/thirteen-fourteen-and-fifteen-prime-copies.md), run `python -B receipt-archives/check_pal_divisor_brackets.py`. It reproduces both 200-address tests, the unbounded tail margins and the scalar prices. [Fixed exports, kernel checks and scope](2026-11-26-pal-prime-copies.json)
 
-For the [recurring fourteen-copy blocks](../proofs/where-fourteen-pays-again.md), run `python -B receipt-archives/check_pal_gaussian_quartics.py`. It checks the exact two-thirds margin, the signed change at two neighboring integers and a floating illustration of the prime and ordinary-integer formulas. [Scope and source versions](2026-11-26-pal-gaussian-quartics.json)
+For [recurring successes](../proofs/where-fourteen-pays-again.md), run `python -B receipt-archives/check_pal_gaussian_quartics.py`. For the [failure-run and sampling theorem](../proofs/what-a-fourteen-copy-failure-would-force.md), run `python -B receipt-archives/check_pal_failure_windows.py`. [Gaussian scope](2026-11-26-pal-gaussian-quartics.json) · [Gap proof, source versions and fixed exports](2026-11-26-pal-failure-windows.json)
 
 For [frozen and growing divisor rows](../proofs/why-the-old-divisor-rows-have-to-move.md), run `python -B receipt-archives/check_pal_growing_brackets.py`. It checks every supplied integer row, all its subsequent quotient addresses, and the separate Möbius-prefix repair. [Certificates](growing_divisor_rows.json) · [Prices and scope](2026-11-26-pal-growing-brackets.json)
 

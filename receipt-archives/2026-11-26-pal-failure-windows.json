@@ -1,0 +1,370 @@
+{
+  "parent_public_research_commit": "084ea9611e8dd77c1f5bad4be4a7e4c43502987c",
+  "parent_tree": "0fc9e8563477b65f4302e0de4337de92a4bafe6e",
+  "contributors": "Christopher Daniel Pang supplied the reversal, retained measurement and factorial-frame questions through PAL and RPL. Hearthline derived the gap amplification, two signed growth exponents, aligned sampling construction and endpoint obstruction. Classical inputs for the strongest paper result include Johnston's two-sided oscillation lemma, the integrated explicit formula, zero counting, and Kaczorowski-Pintz for localization in power windows.",
+  "paper_scope": "The supremum of the real parts of the zeros equals one half plus one quarter of the positive or negative normalized log-clock growth exponent. If RH is false, true 14-copy failures and successes occur in runs longer than K^(1-eta) for all fixed 0<eta<1 at arbitrarily late starts. Both occur in each sufficiently late [K,K^(1+eps)] under that hypothesis, and the corresponding long successes hold unconditionally. One hit with any fixed power saving in every sufficiently late search window is equivalent to RH. Existence of those hits is open.",
+  "formal_scope": "Stock Lean proves the actual clock shortfall minus the integrated raw error is uniformly O(k^6), its sign equals the true integer comparison, and subpower gaps imply stock RH by convexity and the prior one-sided Mellin result. The growing factorial-aligned frames are proved unconditionally to meet those windows. Their eventual funding independently implies stock RH. The single fixed power-saving criterion and its rightmost-zero proof are on paper, distinct from the all-exponents subpower premise in the exports.",
+  "review": {
+    "kind": "author self-review, signed arithmetic replay, independent fixed exports and kernel comparisons",
+    "normalization": "Positive shortfall is failure. The retained prime-only count and both nonnegative omissions are in their original units. The initial labels use the cubic bound and nthRoot before division by the common denominator. The constant in the uniform two-sided bound is independent of k.",
+    "spectral": "The ordinate tail estimate and the low-height derivative estimate use the same supremum of real parts. Neither requires the supremum to be attained. Powers of the logarithm are absorbed by a strict exponent difference.",
+    "localization": "For the optional stronger location theorem the Mellin transform is regular to the right of 1+Theta. In a left-neighborhood of that abscissa the only singularities are simple nonreal poles of the logarithmic derivative. The margin at the ends of the chosen power window allows the full run to remain inside.",
+    "arithmetic": "The integer log clock and prime-area readings at seven true heads are independently accumulated with outward logarithms. The polynomial and factorial controls verify the respective parameter translations. These finite examples do not establish the universal hit premise.",
+    "fixed_target": "One specification contains unconditional aligned-frame coverage, RH under explicitly quantified subpower hits, and RH under the factorial-aligned payment condition. The same solution compared with the bare stock specification fails the target match as expected. The placeholders reside only in the independent challenge.",
+    "obstruction": "A positive mean-one law annihilating even one fixed zero cannot have negligible quadratic tails in shrinking relative windows. This rules out just the proposed mass-only localization without inferring any failing head.",
+    "scope": "No actual failure of fourteen, external author review or literature-priority determination is claimed."
+  },
+  "primary_sources": {
+    "oscillation": "https://arxiv.org/pdf/2201.06184v2#page=5",
+    "count": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf#page=4",
+    "localized_oscillations": "https://personal.math.ubc.ca/~gerg/teaching/592-Fall2018/papers/1987.Kaczorowski_2.pdf#page=2"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3863
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.AlignedHits",
+      "exit": 0,
+      "seconds": 13.6,
+      "output": ""
+    },
+    {
+      "module": "PALRH.GapClock",
+      "exit": 0,
+      "seconds": 13.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.ClockShortfall",
+      "exit": 0,
+      "seconds": 14.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RulerOmissions",
+      "exit": 0,
+      "seconds": 14.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DoubledPrice",
+      "exit": 0,
+      "seconds": 12.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.QuarticBoards",
+      "exit": 0,
+      "seconds": 12.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeCopies",
+      "exit": 0,
+      "seconds": 11.5,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.ClockShortfall.payment_sign": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ClockShortfall.omitted_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ClockShortfall.transfer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.GapClock.intervening": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.GapClock.rh_of_subpower_hits": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AlignedHits.aligned_in_windows": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AlignedHits.rh_of_aligned": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347360128,
+        "sha256": "e4bfbe0c7741cb0ecd6897b2c00061c6699d6698d25eaf0a44434b47d3d7943b"
+      },
+      "solution": {
+        "bytes": 437212124,
+        "sha256": "cecf5a8161b2918f4473b11a01a3fa0bdf053663091fe2e968e79a202dd9730f"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 133.4,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.5,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "cecf5a8161b2918f4473b11a01a3fa0bdf053663091fe2e968e79a202dd9730f"
+    }
+  },
+  "calculation": {
+    "aligned_examples": [
+      {
+        "start": 215,
+        "factorial_order": 3,
+        "aligned_index": 216
+      },
+      {
+        "start": 216,
+        "factorial_order": 3,
+        "aligned_index": 222
+      },
+      {
+        "start": 331775,
+        "factorial_order": 4,
+        "aligned_index": 331776
+      },
+      {
+        "start": 331776,
+        "factorial_order": 4,
+        "aligned_index": 331800
+      },
+      {
+        "start": 100000000000,
+        "factorial_order": 5,
+        "aligned_index": 100000000080
+      }
+    ],
+    "actual_heads": [
+      {
+        "index": 2,
+        "normalized_clock_shortfall": [
+          "-0.0495249926",
+          "-0.0495249925"
+        ],
+        "normalized_prime_area_error": [
+          "-0.4306158949",
+          "-0.4306158948"
+        ],
+        "clock_less_area": [
+          "0.3810909023",
+          "0.3810909024"
+        ]
+      },
+      {
+        "index": 3,
+        "normalized_clock_shortfall": [
+          "-0.0608748266",
+          "-0.0608748265"
+        ],
+        "normalized_prime_area_error": [
+          "-0.1981205609",
+          "-0.1981205608"
+        ],
+        "clock_less_area": [
+          "0.1372457342",
+          "0.1372457343"
+        ]
+      },
+      {
+        "index": 5,
+        "normalized_clock_shortfall": [
+          "-0.0723296279",
+          "-0.0723296278"
+        ],
+        "normalized_prime_area_error": [
+          "-0.0874685251",
+          "-0.0874685250"
+        ],
+        "clock_less_area": [
+          "0.0151388972",
+          "0.0151388973"
+        ]
+      },
+      {
+        "index": 8,
+        "normalized_clock_shortfall": [
+          "-0.0568176765",
+          "-0.0568176764"
+        ],
+        "normalized_prime_area_error": [
+          "-0.0270103165",
+          "-0.0270103164"
+        ],
+        "clock_less_area": [
+          "-0.0298073601",
+          "-0.0298073600"
+        ]
+      },
+      {
+        "index": 12,
+        "normalized_clock_shortfall": [
+          "-0.0677881629",
+          "-0.0677881628"
+        ],
+        "normalized_prime_area_error": [
+          "-0.0203279479",
+          "-0.0203279478"
+        ],
+        "clock_less_area": [
+          "-0.0474602151",
+          "-0.0474602150"
+        ]
+      },
+      {
+        "index": 16,
+        "normalized_clock_shortfall": [
+          "-0.0453193666",
+          "-0.0453193664"
+        ],
+        "normalized_prime_area_error": [
+          "0.0051640692",
+          "0.0051640693"
+        ],
+        "clock_less_area": [
+          "-0.0504834358",
+          "-0.0504834357"
+        ]
+      },
+      {
+        "index": 24,
+        "normalized_clock_shortfall": [
+          "-0.0735774862",
+          "-0.0735774855"
+        ],
+        "normalized_prime_area_error": [
+          "-0.0171690519",
+          "-0.0171690518"
+        ],
+        "clock_less_area": [
+          "-0.0564084344",
+          "-0.0564084337"
+        ]
+      }
+    ],
+    "symbolic_exponent_controls": [
+      {
+        "position": "500001/1000000",
+        "window_saving": "1/100",
+        "chosen_loss": "1/4000000",
+        "physical_excursion_exponent": "6000003/4000000",
+        "physical_width_exponent": "1999999/2000000",
+        "index_width_exponent": "499999/500000"
+      },
+      {
+        "position": "500001/1000000",
+        "window_saving": "1/4",
+        "chosen_loss": "1/4000000",
+        "physical_excursion_exponent": "6000003/4000000",
+        "physical_width_exponent": "1999999/2000000",
+        "index_width_exponent": "499999/500000"
+      },
+      {
+        "position": "3/4",
+        "window_saving": "1/100",
+        "chosen_loss": "1/3200",
+        "physical_excursion_exponent": "5599/3200",
+        "physical_width_exponent": "1599/1600",
+        "index_width_exponent": "399/400"
+      },
+      {
+        "position": "3/4",
+        "window_saving": "1/4",
+        "chosen_loss": "1/128",
+        "physical_excursion_exponent": "223/128",
+        "physical_width_exponent": "63/64",
+        "index_width_exponent": "15/16"
+      },
+      {
+        "position": "1",
+        "window_saving": "1/100",
+        "chosen_loss": "1/3200",
+        "physical_excursion_exponent": "6399/3200",
+        "physical_width_exponent": "1599/1600",
+        "index_width_exponent": "399/400"
+      },
+      {
+        "position": "1",
+        "window_saving": "1/4",
+        "chosen_loss": "1/128",
+        "physical_excursion_exponent": "255/128",
+        "physical_width_exponent": "63/64",
+        "index_width_exponent": "15/16"
+      }
+    ],
+    "sampling_condition": "Any fixed power saving in the start-to-hit length is sufficient on paper.",
+    "exact_log_observable": "(demand(k)/14 - earned(k^4))/k^6",
+    "source_terms": "Johnston Lemma 2.8 at c=0, integrated explicit formula, and the unconditional zero count.",
+    "smooth_control_factor": "9/8",
+    "smooth_control_is_actual_prime_stream": false
+  },
+  "cached_primary_source_hashes": {
+    "ramps": {
+      "url": "https://arxiv.org/pdf/2201.06184v2",
+      "bytes": 162473,
+      "sha256": "75bc30df5b939e57e1cefef216e5e252f7fb29cdc9dfb5b5403f8c5f26ebcd74"
+    },
+    "ordinate_sum": {
+      "url": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+      "bytes": 179034,
+      "sha256": "f63d2fb8fc736f32b93bd0080a5003cc1dd6695e109e0e7534729a32641b133e"
+    },
+    "oscillation_windows": {
+      "url": "https://personal.math.ubc.ca/~gerg/teaching/592-Fall2018/papers/1987.Kaczorowski_2.pdf",
+      "sha256": "8a70b86b8691420b89089a41fabb466c4795eb1318942cde54367114929c4317",
+      "bytes": 534384
+    }
+  },
+  "sha256_sources": {
+    "proofs/what-a-fourteen-copy-failure-would-force.md": "79e6fca07efa27f537829a0b75f36c5e16680d9d552698803429347fa04a46e9",
+    "pal-rh/PALRH/AlignedHits.lean": "f12ed694231a785cec4c05bc74cdad78002cffc13c2eec43b34c7cc4b4da59c0",
+    "pal-rh/PALRH/GapClock.lean": "98cb6faf8173ceb3cc52781b86ff89c232f0603c8228dbff82aa5f6d13ce0e7f",
+    "pal-rh/PALRH/ClockShortfall.lean": "5836c2a69090f0cbe6dc3ec99e7435e62b9e03fc28b7c8c19a60f5c19e3a5728",
+    "pal-rh/PALRH/QuarticBoards.lean": "576f196e3e6aeb007aec975eda1f048c5d53646932977534f94f640db7af2ba8",
+    "pal-rh/PALRH/DoubledPrice.lean": "a703ed98c02a1ceb1e481922fa7b4e83b0b74f57ddb76c8ebcd168bf06f40926",
+    "pal-rh/PALRH/RulerOmissions.lean": "93dffd53a5596cf0ee0580ba62c713d57dd6427fb86311ce4b12bd93f885e9fb",
+    "pal-rh/PALRH/PrimeCopies.lean": "b70e13cce04198d899f99ec14cbc0e718944ace52c70e7496084fb0928d18431",
+    "pal-rh/lakefile.toml": "f91ed977de1877479356141e7fda1cd422dc655117cdc17d7debfde9c41a175e",
+    "pal-rh/checks/subpower-hits/GapChallenge.lean": "cff5e5496d7501e5067cefe9237f087be15fd770644f1245f5973387d87c59e7",
+    "pal-rh/checks/subpower-hits/GapSolution.lean": "f749608f0eed69b63052ea38fada30391f92bb3b96500d35c4d7ca8febcc11f1",
+    "pal-rh/checks/subpower-hits/compare.json": "c9c6070c33981a5b5021922e49b624050c904cde4c487871390831c0460d4b51",
+    "receipt-archives/check_pal_failure_windows.py": "5e5020df5d8952b38d5b02d5c3fbb5e0bef444a23dc152d040bcbed2ab2ff2ae",
+    "pal-rh/PALRH/DoubledMass.lean": "c06f469a2a71ef805bf6e48532a6e5219af194e5781a40032785f5da8f2b3c74",
+    "pal-rh/PALRH/PowerRecovery.lean": "f3aa09de7b13907f13e35a23d2fbc21b7b72d9a914a3c341ce215ad0a171c8df",
+    "pal-rh/PALRH/SignedStrip.lean": "0eb58c293a67ca65a55c0807b0832bfe5d4e0791a895aed7fa4bbd102b98777a",
+    "proofs/where-fourteen-pays-again.md": "553583ac2622337287e94a5ae9a03ef87caa68d676021df7090f6d0c7c10eb00",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "receipt-archives/2026-11-26-pal-doubled-ruler.json": "2763d9e83a44b72186e4aaeb3be0bfd84e3d7f7808d29ba0871c657dcdc8e610",
+    "receipt-archives/2026-11-26-pal-gaussian-quartics.json": "4a7609f1c486755036d31dd43e86f42f4e4c9bd7e671ea4c08badcfd6c5c466f"
+  }
+}

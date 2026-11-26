@@ -1,0 +1,24 @@
+{
+  "challenge_module": "GapChallenge",
+  "solution_module": "GapSolution",
+  "theorem_names": [
+    "framesAreNear",
+    "rhOfSubpowerHits",
+    "riemannHypothesis"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}
