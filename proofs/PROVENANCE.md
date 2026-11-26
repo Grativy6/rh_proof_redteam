@@ -6,6 +6,8 @@ Levent Alpöge and Claude’s 20 November RH release is the work under examinati
 
 Pang supplied the requirement to carry the portion removed in the original frame. Hearthline derived the integer return, the padded fourth-power boards and the fixed one-thirteenth condition. Schoenfeld supplies the conditional analytic estimate and Johnston the finite-range version. [Derivation and roles of the inputs](../pal-rh/why-one-thirteenth-is-enough.md)
 
+Pang’s RPL instruction to carry the remainder through the next frame supplied the reset experiment. BLA supplied the shared unit of cost. Hearthline developed the adaptive block model, phase separation and optimum recurrences. The unconditional analytic input is Johnston and Yang’s prime estimate. [Proof and inputs](../pal-rh/why-expiring-gap-credit-fails.md)
+
 Pang’s requirement to earn the return cost in the same frame supplied the direction of the one-sided transfer. Hearthline derived the finite paired-log estimate, exact primitive and first-interval recovery, then formalized their implication to stock RH from one eventual Pascal comparison. The classical ingredients are divisor inversion, Mellin transforms, analytic continuation and the zeta functional equation. [Derivation](../pal-rh/how-one-sided-prime-area-reaches-rh.md)
 
 Pang supplied the internal horizon and external point, his lattice picture and the requirement that a transported record retain a usable return. Hearthline derived the tick layer counts, middle-prime decoder, movable outer band and shared Pascal fiber in this research program. [Five-way states and source roles](../pal-rh/how-a-shared-row-carries-five.md)
