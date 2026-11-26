@@ -1,0 +1,22 @@
+{
+  "challenge_module": "RulerChallenge",
+  "solution_module": "RulerSolution",
+  "theorem_names": [
+    "riemannHypothesis"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

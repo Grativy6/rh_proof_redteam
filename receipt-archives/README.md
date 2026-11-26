@@ -12,6 +12,8 @@ For [the two clocks and the product condition](../proofs/one-product-one-directi
 
 For the [new finite all-cut range](../proofs/paying-the-next-full-prime-board.md), run `python -B receipt-archives/check_pal_finite_prime_budget.py`. It encloses the four terms outward, checks the Bessel coefficient directly and repeats the evaluations in separate decimal arithmetic. [Slabs, sources and normalized costs](2026-11-26-pal-finite-prime-budget.json)
 
+For the [doubled ruler](../proofs/one-seventh-at-the-boundary.md), run `python -B receipt-archives/check_pal_doubled_ruler.py`. It checks the signed divisor regrouping, the positive integer returns, the endpoint moment and the successive finite ranges. [Build and fixed-challenge comparison](2026-11-26-pal-doubled-ruler.json)
+
 For the [moving-endpoint proof](../proofs/moving-the-endpoint-of-a-prime-area.md), run `python -B receipt-archives/check_pal_moving_endpoint.py`. For the [actual crossing repayment](../proofs/when-crossed-prime-powers-pay-the-tenth.md), run `python -B receipt-archives/check_pal_crossing_refund.py`. [Original finite prices](2026-11-26-pal-moving-endpoint.json) · [Two-frequency comparison and prime-table cross-check](2026-11-26-pal-crossing-refund.json)
 
 For the [ordinary leading-digit result](../proofs/the-leading-digits-of-primorial-over-factorial.md), run `python -B receipt-archives/check_pal_benford_quotient.py`. It encloses star discrepancies, counts exact digit events and compares the early counts to integer division. [Source versions, evidence and self-review](2026-11-26-pal-benford-quotient.json)

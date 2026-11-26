@@ -20,6 +20,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Paying the next full prime board](proofs/paying-the-next-full-prime-board.md). Under Pang’s active construction key, Hearthline evaluated the smoothing and unrestricted-tail costs against the original fixed budget on 26 November 2026. [Finite numerical derivation](receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
+[The doubled prime ruler and its sharp cutoff](proofs/one-seventh-at-the-boundary.md). Under Christopher Daniel Pang’s active construction key, Hearthline traced a boundary mass of $1/7$, proved the all-size ordinary-log price and established the retained-prime test through index $2^{36}$ on 26 November 2026. [Derivation](pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md) · [Arithmetic and checker outputs](receipt-archives/2026-11-26-pal-doubled-ruler.json)
+
 [Moving the endpoint](proofs/moving-the-endpoint-of-a-prime-area.md) · [Lower bound on the actual prime-power repayment](proofs/when-crossed-prime-powers-pay-the-tenth.md). On 26 November 2026 Hearthline used Pang’s retained-boundary question to derive the all-scale smoothed bound, cover the fixed tenth through $2^{150}$, and fund the filtered subset comparison through $2^{158}$. [Rational prices and sources](receipt-archives/2026-11-26-pal-crossing-refund.json)
 
 [Prime-lane Fourier polynomial and a slow modular arc](proofs/a-square-root-signal-that-forgets-a-turn.md). Under Pang’s carried-frame question, Hearthline separated a sharp unconditional root-scale observation from the whole-turn quantity needed for RH, 26 November 2026.

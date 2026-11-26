@@ -1,0 +1,273 @@
+{
+  "parent_public_research_commit": "5ea0df8010c3e8a97d6af45c0891f206d5c24c21",
+  "parent_tree": "dfd2ae22f8b479bd1702781e943c27a280f2ac94",
+  "contributors": "Christopher Daniel Pang supplied the retained-boundary, shared measuring unit, doubling and cutoff questions in PAL, RPL and BLA. Hearthline constructed the polynomial from the prior cubic-window program, proved its positive return, priced its ordinary-log reading, and developed the sharp cutoff and fixed integer challenge. Named classical sources supply the PNT, finite prime estimates and the zero-sum inputs used only where stated.",
+  "paper_scope": "The compact positive ruler has variance 1/7 and leaves a positive boundary mass of exactly 1/7 when truncating its signed rows. The elementary all-size quadrature costs O(N log N). The eventual fourteen-copy test on only the primes n^(7/8)<p<=2n is equivalent to ordinary RH. Increasing the fixed power 7/8 gives infinitely many failed heads. Fourteen passes through index 2^36 without gaps. Fifteen pays at every positive index and thirteen fails at every index >=512 on paper. The exact fourteen-copy condition at unbounded indices remains open.",
+  "formal_scope": "Stock Lean proves positivity of each integer return, divisor regrouping, curvature and leading-cubic bounds, the boundary bracket, the ordinary-log upper price, and the implication from the exact eventual fourteen-copy prime-only comparison to stock RH. The conditional export matches its separately defined integer challenge. Its comparison against bare stock RH rejects the additional premise. The reverse direction, neighboring-count estimates and finite numerical range are paper results.",
+  "review": {
+    "kind": "author mathematical self-review, two independent finite computations, reproducible inert export and external kernels",
+    "endpoint": "The nonnegative limiting height is the stop-loss transform of a probability on [0,1]. All finite truncations integrate to zero. Their gap from the limit is nonnegative, supported through 1/M and has mass exactly 1/7. The integral is evaluated with an actual lower cutoff before the limit.",
+    "integer_weights": "The numerator is a signed sum of ordinary integers. Nonnegativity is proved before converting it to a natural exponent. Above n only the first multiple is present. Each prime exponent in the regrouped ordinary sum was separately recovered by factoring the individual integer labels through physical head 64.",
+    "forward": "No special zero location or PNT is used in the elementary all-size quadrature or forward Lean proof. The formal target preserves the condition n^7<p^8, the exact numerator of every mark, the exponent of the clock, and the eventual quantifier.",
+    "cutoff": "The two omitted disjoint streams are repeated powers and early first powers. The leading cubic of the positive return and partial summation give the exact 1/24 omission cost at the cutoff. Sharpness elsewhere uses the original forward implication and a separately marked RH case, not a counterexample to RH.",
+    "finite": "Direct outward small comparisons, explicit sieve sums through k=512 and overlapping analytic slabs cover every positive index through 2^36. The fractional-moment upper bound is a finite chord interpolation priced with the actual rational ramp. The 21-move estimate prices its entire high-zero tail.",
+    "independence": "The source for the larger finite heads is the earlier independent finite-height estimate. The Alpoge-Claude release and the APCI worktree are not mathematical inputs. No external mathematical review or literature priority determination has been made."
+  },
+  "primary_sources": {
+    "finite_height": "https://arxiv.org/abs/2004.09765",
+    "spectral_prices": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+    "integrated_explicit_formula_and_prime_powers": "https://arxiv.org/pdf/2201.06184v2",
+    "raw_prime_prices": "https://www.cs.uleth.ca/~fiori/Docs/PrimeCountingTables.pdf#page=3",
+    "raw_prime_price_definitions": "https://arxiv.org/pdf/2206.12557v2#page=5",
+    "finite_theta": "https://link.springer.com/article/10.1007/s11139-022-00616-x"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3851
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.DoubledRuler",
+      "exit": 0,
+      "seconds": 13.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DoubledPrice",
+      "exit": 0,
+      "seconds": 13.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DoubledMass",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.DoubledMass.cubic_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DoubledMass.positive_curvature": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DoubledMass.boundary_bracket": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DoubledPrice.ordinary_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DoubledPrice.rh_of_prime_settings": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347245564,
+        "sha256": "ed60e3eaa6e303a7507ced17eee359e221fe63b74d83f3f02eefe1ead626db4f"
+      },
+      "solution": {
+        "bytes": 435118072,
+        "sha256": "60b41e1dca409bebe5bc66100e58669dc8a898c37f240e6cef34eb3cb516cb9e"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 127.78,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.29,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "60b41e1dca409bebe5bc66100e58669dc8a898c37f240e6cef34eb3cb516cb9e"
+    }
+  },
+  "calculation": {
+    "fifteen_copies": "all positive fourth-power indices",
+    "thirteen_fail_for_all_indices_at_least": 512,
+    "small_ledger": {
+      "all_address_formulas_and_labelled_divisor_regroupings_through_n": 64,
+      "extra_n2_in_label_order": [
+        42,
+        320,
+        17,
+        0
+      ],
+      "denominator_at_two": 1024,
+      "boundary_mass_at_mesh_16": "3810365/33554432"
+    },
+    "early_clock": {
+      "checked_root_range": [
+        1,
+        24
+      ],
+      "strict_failures": [],
+      "examples": {
+        "1": {
+          "n": 1,
+          "kept_primes": 1,
+          "normalized_log_margin": [
+            "0.0000000000",
+            "0.0000000000"
+          ]
+        },
+        "2": {
+          "n": 16,
+          "kept_primes": 6,
+          "normalized_log_margin": [
+            "0.0495249925",
+            "0.0495249926"
+          ]
+        },
+        "3": {
+          "n": 81,
+          "kept_primes": 23,
+          "normalized_log_margin": [
+            "0.0608748265",
+            "0.0608748266"
+          ]
+        },
+        "5": {
+          "n": 625,
+          "kept_primes": 145,
+          "normalized_log_margin": [
+            "0.0723296278",
+            "0.0723296279"
+          ]
+        },
+        "16": {
+          "n": 65536,
+          "kept_primes": 10351,
+          "normalized_log_margin": [
+            "0.0453193664",
+            "0.0453193666"
+          ]
+        },
+        "24": {
+          "n": 331776,
+          "kept_primes": 47084,
+          "normalized_log_margin": [
+            "0.0735774855",
+            "0.0735774862"
+          ]
+        }
+      },
+      "smallest_lower_margin_at": 1
+    },
+    "late_clock": {
+      "nominal_board_interval": [
+        1329227995784915872903807060280344576,
+        22300745198530623141535718272648361505980416
+      ],
+      "all_fourth_power_indices": [
+        1073741824,
+        68719476736
+      ],
+      "moment_3_over_2_upper": "1.056406285673",
+      "raw_area_excess_upper": "0.058395979330",
+      "repeat_return_upper": "0.038289659210",
+      "removed_initial_primes_upper": "0.041666959801",
+      "ordinary_sum_and_clock_rounding_upper": "0.000000000001",
+      "total_fraction_of_n_to_three_halves_upper": "0.138352598340",
+      "available_fraction": "1/7"
+    },
+    "middle_clock": {
+      "board_interval": [
+        68719476736,
+        1329227995784915872903807060280344576
+      ],
+      "square_return_upper": "0.042777158359",
+      "higher_return_upper": "0.010065317154",
+      "raw_upper": "0.046212975093",
+      "removed_primes_upper": "0.042250476838",
+      "all_prices_upper": "0.141321458710"
+    },
+    "intermediate_clock": {
+      "root_range": [
+        25,
+        512
+      ],
+      "insufficient_upper_bounds": [],
+      "largest_upper_bound_at": 25,
+      "largest_upper_bound": "0.137061872295"
+    },
+    "variance_of_endpoint": "1/7",
+    "continuum_charge_per_n_squared": "1/14",
+    "critical_removal_exponent": "7/8",
+    "cost_at_that_cut_per_n_to_three_halves": "1/24"
+  },
+  "authenticated_input_sources": {
+    "height": {
+      "url": "https://arxiv.org/pdf/2004.09765v1",
+      "bytes": 133056,
+      "sha256": "3362f66af9fa9373977eee70e2282ec33989d5d8b97e0852df9e32cc25b52885"
+    },
+    "ramps": {
+      "url": "https://arxiv.org/pdf/2201.06184v2",
+      "bytes": 162473,
+      "sha256": "75bc30df5b939e57e1cefef216e5e252f7fb29cdc9dfb5b5403f8c5f26ebcd74"
+    },
+    "ordinate_sum": {
+      "url": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+      "bytes": 179034,
+      "sha256": "f63d2fb8fc736f32b93bd0080a5003cc1dd6695e109e0e7534729a32641b133e"
+    },
+    "fks_tables": {
+      "url": "https://www.cs.uleth.ca/~fiori/Docs/PrimeCountingTables.pdf",
+      "bytes": 2536807,
+      "sha256": "c8e957153baebd6c2f8fef808152670231abd1141e35a56ed5042249ae0532fa"
+    },
+    "fks_notation": {
+      "url": "https://arxiv.org/pdf/2206.12557v2",
+      "bytes": 289462,
+      "sha256": "405e5dcbca6067fa436141b8a08c79b81bc12deca03bfe12d667428c36b50fbb"
+    },
+    "finite_theta": {
+      "url": "https://arxiv.org/pdf/2109.02249",
+      "bytes": 190961,
+      "sha256": "5bc9cafab41c04b0dfc00b9a3963c839f75aea198a58620dc52ffb9e50f6367b"
+    }
+  },
+  "sha256_sources": {
+    "proofs/one-seventh-at-the-boundary.md": "da34ef09ec2668ced6ddfdb6d520f2e791d4bb496fcae1f91fca08b95120828c",
+    "pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md": "7eabb53144b6f3278f3d16e1a56bf1e1d023b50806c7c1e026829e7bfe1114a1",
+    "pal-rh/PALRH/DoubledRuler.lean": "86c1f5556f76075f5579881f2585efbce8f353805e7e1d638c5db23f2c386baf",
+    "pal-rh/PALRH/DoubledPrice.lean": "cab9523506aee78af23f2bae9534a3ebf0c0dc6fd34e066c44bda8a92658eff1",
+    "pal-rh/PALRH/DoubledMass.lean": "c06f469a2a71ef805bf6e48532a6e5219af194e5781a40032785f5da8f2b3c74",
+    "pal-rh/checks/doubled-ruler/RulerChallenge.lean": "8b9110e426e517b4956fbabeebfa58dac8f71e0711bfd5264c29a7e3ef5a1c0f",
+    "pal-rh/checks/doubled-ruler/RulerSolution.lean": "2100cd71db9f38f10f7646127174f45950ddfa820a9c88e1c6ceb087aa8b32b0",
+    "pal-rh/checks/doubled-ruler/compare.json": "df25bae412def2520869bc220377dea56e22723e3a1415a728faf04721902673",
+    "pal-rh/lakefile.toml": "ee004fd3f1e5e31aa1858f34968aaf2de511cf2d0c2ad079af32ce3a40f244be",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "pal-rh/PALRH/OneSidedBoard.lean": "d8ffd2aeb3bf8908685788ad1e97edbdd94c127b7e93ee6e316ed5720724fe12",
+    "pal-rh/PALRH/FactorialReturn.lean": "6901a49da32e76f6312dcda43ee8ce4e98db0085d1cf9fe5c6f10fefd463bc22",
+    "pal-rh/what-the-first-omitted-label-sees.md": "d5b92682f4787a8e3834b4e30deff2d8742e162d3c57539bbbd7367651d5fc8f",
+    "receipt-archives/check_pal_crossing_refund.py": "791794509c87430fcde763aa59d670230f51c3239a8a315fa7f8b824356e5ea6",
+    "receipt-archives/check_pal_moving_endpoint.py": "44aea7f93d27ae0c07b09dc286c66e6ba67035d03dc27a28ef92b9ec46f93579",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-crossing-refund.json": "53d4fb9bec19a226e0c4d089ab04986add4c6ec148f8b26274d04092a2aca925"
+  }
+}
