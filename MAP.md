@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[What the newest half can earn](proofs/how-much-can-the-newest-half-gain.md). On 26 November 2026 Hearthline followed Pang’s reverse-direction question to two ordinary integer windows. The comparison with 2 and 3 leaves a single positive divisor source. [Fixed integer tests](pal-rh/checks/terminal-windows/WindowChallenge.lean)
+
 [Last two roots per cofactor](proofs/why-the-last-two-square-roots-remain.md) · [Signed prices and reverse map](pal-rh/what-the-last-two-square-roots-carry.md). On 26 November 2026 Hearthline completed the rough squares under Pang’s active key. The residual has a uniform local capacity and a still-open total sign.
 
 [One running integer](proofs/the-integer-that-turns-at-forty-four.md) · [A signed all-scale portion](pal-rh/where-the-negative-running-mass-comes-from.md) · [Cofinal direction counts](pal-rh/how-many-rising-steps-would-a-zero-force.md). Pang’s direction question led Hearthline on 25 November 2026 to a finite factorial comparison, a logarithmic-size multiplier test and the observed negative run.

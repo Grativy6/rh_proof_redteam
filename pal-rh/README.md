@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[What the newest half can gain](../proofs/how-much-can-the-newest-half-gain.md) · [Finite rectangle and recovery of stock RH from an upper bound](PALRH/TerminalWindows.lean)
+
 [Why exactly two rough roots may remain](../proofs/why-the-last-two-square-roots-remain.md) · [How much each signed portion carries](what-the-last-two-square-roots-carry.md) · [Square pass and inverse](PALRH/DenseSquares.lean)
 
 [The running integer at 44](../proofs/the-integer-that-turns-at-forty-four.md) · [Why a rare direction suffices](how-many-rising-steps-would-a-zero-force.md) · [The negative physical contribution](where-the-negative-running-mass-comes-from.md)

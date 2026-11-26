@@ -181,7 +181,7 @@ theorem canonical {N n : ℕ} (inside : n≤2^N) : mass N n=running n := by
   have high : n≤2^L := (Nat.lt_pow_succ_log_self (by decide : 1<2) n).le
   exact (extend_mass (le_max_left N L) inside).trans (extend_mass (le_max_right N L) high).symm
 
-private theorem price_normalized {j N : ℕ} (jp : 0<j) (inside : j^4≤2^N) :
+theorem price_normalized {j N : ℕ} (jp : 0<j) (inside : j^4≤2^N) :
     (OneHeadPhysical.primitive j:ℝ)=
       ∑ i ∈ Finset.range (N+1), ∑ k ∈ Finset.range (N+1), ∑ d ∈ Finset.Icc 1 (2*j^4),
         let v : ℕ := 2^i*3^k
@@ -214,6 +214,24 @@ private theorem price_normalized {j N : ℕ} (jp : 0<j) (inside : j^4≤2^N) :
       push_cast
       field_simp
 
+theorem split_divisor_rows (X T : ℕ) (f : ℕ → ℝ) :
+    (∑ r ∈ Finset.Icc 1 X, f r) =
+      (∑ r ∈ Finset.Icc 1 (X/T), f r) + ∑ r ∈ Finset.Ioc (X/T) X, f r := by
+  have union : Finset.Icc 1 (X/T) ∪ Finset.Ioc (X/T) X=Finset.Icc 1 X := by
+    ext r
+    simp only [Finset.mem_union,Finset.mem_Icc,Finset.mem_Ioc]
+    constructor
+    · rintro (⟨low,high⟩|⟨low,high⟩)
+      · exact ⟨low,high.trans (Nat.div_le_self _ _)⟩
+      · exact ⟨(Nat.zero_le _).trans_lt low,high⟩
+    · rintro ⟨low,high⟩
+      by_cases left : r≤X/T
+      · exact Or.inl ⟨low,left⟩
+      · exact Or.inr ⟨lt_of_not_ge left,high⟩
+  have dis : Disjoint (Finset.Icc 1 (X/T)) (Finset.Ioc (X/T) X) := Finset.disjoint_left.mpr
+    (fun r a b => (Nat.not_lt_of_ge (Finset.mem_Icc.mp a).2) (Finset.mem_Ioc.mp b).1)
+  rw [←union,Finset.sum_union dis]
+
 /-- A negative ordinary running integer suffices. The factorial rectangle is used
 only for the finite arithmetic implication and is never enumerated. -/
 theorem rh_of_running_nonpositive
@@ -242,21 +260,8 @@ theorem rh_of_running_nonpositive
     apply late
     exact far.trans ((Nat.le_div_iff_mul_le rp).mpr (by
       simpa [Nat.mul_comm] using (Nat.le_div_iff_mul_le tp).mp (Finset.mem_Icc.mp hr).2))
-  have union : Finset.Icc 1 (X/T) ∪ Finset.Ioc (X/T) X=Finset.Icc 1 X := by
-    ext r
-    simp only [Finset.mem_union,Finset.mem_Icc,Finset.mem_Ioc]
-    constructor
-    · rintro (⟨low,high⟩|⟨low,high⟩)
-      · exact ⟨low,high.trans (Nat.div_le_self _ _)⟩
-      · exact ⟨(Nat.zero_le _).trans_lt low,high⟩
-    · rintro ⟨low,high⟩
-      by_cases left : r≤X/T
-      · exact Or.inl ⟨low,left⟩
-      · exact Or.inr ⟨lt_of_not_ge left,high⟩
-  have dis : Disjoint (Finset.Icc 1 (X/T)) (Finset.Ioc (X/T) X) := Finset.disjoint_left.mpr
-    (fun r a b => (Nat.not_lt_of_ge (Finset.mem_Icc.mp a).2) (Finset.mem_Ioc.mp b).1)
   have whole := positive_multiples N X
-  rw [←union,Finset.sum_union dis] at whole
+  rw [split_divisor_rows X T] at whole
   have non : 0≤∑ r ∈ Finset.Ioc (X/T) X,mass N (X/r) := by linarith
   rw [factorial_price N T tp] at non
   have val:=price_normalized (N:=N) jp (jt.trans (tX.trans enough))

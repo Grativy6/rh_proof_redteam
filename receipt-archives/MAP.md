@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Terminal-window finite results and fixed-target replay](2026-11-26-pal-terminal-windows.json) · [Prefix](terminal_window_counts.cpp) · [Ordinary bounds](check_pal_terminal_windows.py) | Hearthline, 26 November 2026, under Pang’s key. Complete counts through 50 million, two-direction high samples, first failing sign allowances and positive-rise bounds through ten trillion. |
 | [Dense square counts and signed allocations](2026-11-26-pal-dense-squares.json) · [Two native recurrences](dense_square_counts.cpp) · [Interval replay](check_pal_dense_square_payment.py) | Hearthline, 26 November 2026, under Pang’s constructive key. Root budgets, secondary Mellin mass, two trillion-scale prices, finite sign transfer and pinned Lean module. |
 | [Running mass, cofinal directions and all-scale negative credit](2026-11-25-pal-running-mass.json) · [Complete integer replay](check_pal_signed_mass.py) · [Signed portion](check_pal_rise_direction.py) | Independent ordinary arithmetic through more than 27 billion, externally supported extension to ten trillion and a fixed integer implication to stock RH. |
 | [Physical primitive through two trillion](2026-11-25-pal-one-head-primitive.json) · [Dense scan](fourth_primitive.cpp) · [Continuous panels](check_pal_primitive_mesh.py) · [Two new details](check_pal_fourth_primitive.py) | The complete finite sign interval, the older-head prediction, the stock conditional contract and its separate kernels. |

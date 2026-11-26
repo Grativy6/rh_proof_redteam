@@ -1,0 +1,639 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "561e991dc531c0a017f736161d3060654178770a",
+  "parent_tree": "193dc5186ac31efa33fc5f2a0e52e8fb52bddc61",
+  "contributors": "Christopher Daniel Pang supplied the PAL retained-frame question, RPL old/detail reasoning and reversed-direction test. Hearthline developed the two arithmetic windows, unsigned upper transfer, direct checks and width argument under his active key.",
+  "formal_target": "Two separate implications to stock RiemannHypothesis, each assuming a fixed integer bound on the squared positive rise at all heads.",
+  "paper_results": "Absolute control on very short windows can settle them without controlling the whole stream. Subpower relative losses in the width still allow one-sided reconstruction. The mixed window has an ordinary Moebius source on 2,3-smooth squares.",
+  "conditional_finite_bounds": {
+    "all_heads_through": 10000000000000,
+    "integer_K_half": 26,
+    "integer_K_mixed": 36,
+    "external_above_ordinary_200m": "Lioen and van de Lune, Section 6, upper bound 0.571 sqrt(x), x < 10^13. At 10^13 the ordinary Moebius coefficient is zero.",
+    "source": "https://ir.cwi.nl/pub/13491/13491D.pdf"
+  },
+  "native": {
+    "native_small": {
+      "top": 3072,
+      "mass": -491,
+      "windows": [
+        {
+          "name": "half",
+          "peak_head": 16,
+          "peak_delta": 5,
+          "last_positive": 40,
+          "last_nonnegative": 66,
+          "positive_heads": 14,
+          "at_top": -239
+        },
+        {
+          "name": "quarter",
+          "peak_head": 1,
+          "peak_delta": 1,
+          "last_positive": 341,
+          "last_nonnegative": 1365,
+          "positive_heads": 76,
+          "at_top": -112
+        },
+        {
+          "name": "sixteenth",
+          "peak_head": 147,
+          "peak_delta": 15,
+          "last_positive": 3072,
+          "last_nonnegative": 3072,
+          "positive_heads": 672,
+          "at_top": 51
+        },
+        {
+          "name": "one_256th",
+          "peak_head": 324,
+          "peak_delta": 19,
+          "last_positive": 3072,
+          "last_nonnegative": 3072,
+          "positive_heads": 984,
+          "at_top": 5
+        },
+        {
+          "name": "inverse_log_squared",
+          "peak_head": 145,
+          "peak_delta": 14,
+          "last_positive": 3072,
+          "last_nonnegative": 3072,
+          "positive_heads": 902,
+          "at_top": 8
+        },
+        {
+          "name": "square_root",
+          "peak_head": 2332,
+          "peak_delta": 62,
+          "last_positive": 3072,
+          "last_nonnegative": 3072,
+          "positive_heads": 658,
+          "at_top": 3
+        },
+        {
+          "name": "mixed_two_three",
+          "peak_head": 1,
+          "peak_delta": 1,
+          "last_positive": 1457,
+          "last_nonnegative": 1457,
+          "positive_heads": 59,
+          "at_top": -175
+        }
+      ]
+    },
+    "independent_python_through": 3072,
+    "native_large": {
+      "top": 50000000,
+      "mass": -299497,
+      "windows": [
+        {
+          "name": "half",
+          "peak_head": 16,
+          "peak_delta": 5,
+          "last_positive": 40,
+          "last_nonnegative": 66,
+          "positive_heads": 14,
+          "at_top": -102463
+        },
+        {
+          "name": "quarter",
+          "peak_head": 1,
+          "peak_delta": 1,
+          "last_positive": 341,
+          "last_nonnegative": 1365,
+          "positive_heads": 76,
+          "at_top": -47688
+        },
+        {
+          "name": "sixteenth",
+          "peak_head": 147,
+          "peak_delta": 15,
+          "last_positive": 48955391,
+          "last_nonnegative": 48955391,
+          "positive_heads": 1640782,
+          "at_top": -7337
+        },
+        {
+          "name": "one_256th",
+          "peak_head": 11988671,
+          "peak_delta": 4320,
+          "last_positive": 49837355,
+          "last_nonnegative": 49837355,
+          "positive_heads": 16722650,
+          "at_top": -1127
+        },
+        {
+          "name": "inverse_log_squared",
+          "peak_head": 145,
+          "peak_delta": 14,
+          "last_positive": 50000000,
+          "last_nonnegative": 50000000,
+          "positive_heads": 19837780,
+          "at_top": 734
+        },
+        {
+          "name": "square_root",
+          "peak_head": 2332,
+          "peak_delta": 62,
+          "last_positive": 49996488,
+          "last_nonnegative": 49996488,
+          "positive_heads": 23391437,
+          "at_top": -61
+        },
+        {
+          "name": "mixed_two_three",
+          "peak_head": 1,
+          "peak_delta": 1,
+          "last_positive": 1457,
+          "last_nonnegative": 1457,
+          "positive_heads": 59,
+          "at_top": -51919
+        }
+      ]
+    },
+    "high_counts": [
+      {
+        "top": 10000000000000,
+        "mode": "mobius",
+        "cutoff": 18000000,
+        "rows": [
+          [
+            1,
+            10000000000000,
+            -274138671,
+            -723457240,
+            71658,
+            -5605669,
+            -966578
+          ],
+          [
+            2,
+            5000000000000,
+            -190198110,
+            -487502048,
+            -153415,
+            -4375475,
+            -2354582
+          ],
+          [
+            3,
+            3333333333333,
+            -150190202,
+            -384007480,
+            -120153,
+            -3485575,
+            -2046913
+          ],
+          [
+            4,
+            2500000000000,
+            -128451672,
+            -325559550,
+            -61910,
+            -3043243,
+            -815428
+          ],
+          [
+            5,
+            2000000000000,
+            -116644406,
+            -288890262,
+            -134299,
+            -2755107,
+            -1394102
+          ],
+          [
+            6,
+            1666666666666,
+            -102525886,
+            -257258512,
+            254356,
+            -2111383,
+            -237596
+          ],
+          [
+            8,
+            1250000000000,
+            -89654779,
+            -219399756,
+            -109614,
+            -2103619,
+            -981754
+          ],
+          [
+            9,
+            1111111111111,
+            -83293547,
+            -204412363,
+            51566,
+            -1908525,
+            -519231
+          ],
+          [
+            10,
+            1000000000000,
+            -77683177,
+            -191383316,
+            32709,
+            -1797375,
+            -522626
+          ],
+          [
+            12,
+            833333333333,
+            -71211742,
+            -173012022,
+            -90059,
+            -1791660,
+            -967869
+          ],
+          [
+            16,
+            625000000000,
+            -59500511,
+            -145193704,
+            62249,
+            -1395005,
+            -462584
+          ],
+          [
+            25,
+            400000000000,
+            -46749363,
+            -112108857,
+            105337,
+            -1058107,
+            -336998
+          ],
+          [
+            50,
+            200000000000,
+            -31990094,
+            -74914220,
+            -49040,
+            -861713,
+            -236842
+          ],
+          [
+            100,
+            100000000000,
+            -22000751,
+            -49994161,
+            -39514,
+            -629139,
+            -342224
+          ],
+          [
+            200,
+            50000000000,
+            -14746506,
+            -33061479,
+            39183,
+            -374583,
+            -57682
+          ],
+          [
+            1000,
+            10000000000,
+            -6245481,
+            -12883692,
+            -19575,
+            -201417,
+            -116026
+          ],
+          [
+            2000,
+            5000000000,
+            -4075633,
+            -8360799,
+            8157,
+            -120621,
+            -28112
+          ],
+          [
+            100000,
+            100000000,
+            -445294,
+            -768622,
+            -55,
+            -18531,
+            -3884
+          ],
+          [
+            200000,
+            50000000,
+            -299497,
+            -500022,
+            -781,
+            -13301,
+            -7608
+          ]
+        ]
+      },
+      {
+        "top": 10000000000000,
+        "mode": "liouville",
+        "cutoff": 21000000,
+        "rows": [
+          [
+            1,
+            10000000000000,
+            -274138671,
+            -723457240,
+            71658,
+            -5605669,
+            -966578
+          ],
+          [
+            2,
+            5000000000000,
+            -190198110,
+            -487502048,
+            -153415,
+            -4375475,
+            -2354582
+          ],
+          [
+            3,
+            3333333333333,
+            -150190202,
+            -384007480,
+            -120153,
+            -3485575,
+            -2046913
+          ],
+          [
+            4,
+            2500000000000,
+            -128451672,
+            -325559550,
+            -61910,
+            -3043243,
+            -815428
+          ],
+          [
+            5,
+            2000000000000,
+            -116644406,
+            -288890262,
+            -134299,
+            -2755107,
+            -1394102
+          ],
+          [
+            6,
+            1666666666666,
+            -102525886,
+            -257258512,
+            254356,
+            -2111383,
+            -237596
+          ],
+          [
+            8,
+            1250000000000,
+            -89654779,
+            -219399756,
+            -109614,
+            -2103619,
+            -981754
+          ],
+          [
+            9,
+            1111111111111,
+            -83293547,
+            -204412363,
+            51566,
+            -1908525,
+            -519231
+          ],
+          [
+            10,
+            1000000000000,
+            -77683177,
+            -191383316,
+            32709,
+            -1797375,
+            -522626
+          ],
+          [
+            12,
+            833333333333,
+            -71211742,
+            -173012022,
+            -90059,
+            -1791660,
+            -967869
+          ],
+          [
+            16,
+            625000000000,
+            -59500511,
+            -145193704,
+            62249,
+            -1395005,
+            -462584
+          ],
+          [
+            25,
+            400000000000,
+            -46749363,
+            -112108857,
+            105337,
+            -1058107,
+            -336998
+          ],
+          [
+            50,
+            200000000000,
+            -31990094,
+            -74914220,
+            -49040,
+            -861713,
+            -236842
+          ],
+          [
+            100,
+            100000000000,
+            -22000751,
+            -49994161,
+            -39514,
+            -629139,
+            -342224
+          ],
+          [
+            200,
+            50000000000,
+            -14746506,
+            -33061479,
+            39183,
+            -374583,
+            -57682
+          ],
+          [
+            1000,
+            10000000000,
+            -6245481,
+            -12883692,
+            -19575,
+            -201417,
+            -116026
+          ],
+          [
+            2000,
+            5000000000,
+            -4075633,
+            -8360799,
+            8157,
+            -120621,
+            -28112
+          ],
+          [
+            100000,
+            100000000,
+            -445294,
+            -768622,
+            -55,
+            -18531,
+            -3884
+          ],
+          [
+            200000,
+            50000000,
+            -299497,
+            -500022,
+            -781,
+            -13301,
+            -7608
+          ]
+        ]
+      }
+    ]
+  },
+  "envelope": {
+    "ordinary_source_check": {
+      "all_heads": 3072,
+      "half_at_16": 5
+    },
+    "envelope": {
+      "first": 50000001,
+      "last": 10000000000000,
+      "panels": 25005,
+      "maxima_sha256": "aebac4b5341cc253c42669b6f8bf1802d069537d90720f93ed2d941ad2cf0d8e",
+      "ordinary_direct_limit": 200000000,
+      "windows": [
+        {
+          "name": "half",
+          "first_unresolved": [
+            2473896033939,
+            2475103990985,
+            1147684
+          ],
+          "panels_ge_zero": 2052,
+          "largest_upper_per_root_squared": [
+            9906101488378,
+            9910938451994,
+            15976533
+          ],
+          "contiguous_strict_negative_through": 2473896033938,
+          "upper_positive_ratio_squared": "255249606700089/9906101488378"
+        },
+        {
+          "name": "mixed",
+          "first_unresolved": [
+            153389176634,
+            153464073691,
+            23706
+          ],
+          "panels_ge_zero": 4616,
+          "largest_upper_per_root_squared": [
+            5573905357744,
+            5576626991218,
+            14024255
+          ],
+          "contiguous_strict_negative_through": 153389176633,
+          "upper_positive_ratio_squared": "196679728305025/5573905357744"
+        }
+      ]
+    }
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build_exit": 0,
+  "axioms": {
+    "PALRH.TerminalWindows.rh_of_running_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TerminalWindows.rh_of_half_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.TerminalWindows.rh_of_mixed_window": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "halfWindowReduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "mixedWindowReduction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "native_kernel_replays": [
+    {
+      "module": "PALRH.RunningMass",
+      "exit": 0,
+      "seconds": 16.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.TerminalWindows",
+      "exit": 0,
+      "seconds": 16.0,
+      "output": ""
+    }
+  ],
+  "fixed_check": {
+    "exports": {
+      "challenge": {
+        "bytes": 348007943,
+        "sha256": "876e5517683b6253273ecd82829a45240ef583864b59a00e88c0d77dd56f1a73"
+      },
+      "solution": {
+        "bytes": 434199467,
+        "sha256": "fc4808e370a822879792044f3b869346d3c43e7d41a33e01f497dd2a38ec867a"
+      }
+    },
+    "second_exports_identical": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 135.13,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "source_sha256": {
+    "pal-rh/PALRH/TerminalWindows.lean": "5d90b49547bc679a43110abce22862bf4803a5f96b9f99312beff0cb7cf621a2",
+    "pal-rh/PALRH/RunningMass.lean": "ed170795fe8f81a355861fc69638ef423669c1371d8afcf2c4a41c31e210b574",
+    "pal-rh/checks/terminal-windows/WindowChallenge.lean": "8936595a26fefab6d2a440d0f1959e3c8ebdd7afeb155fb646859e798d7e7690",
+    "pal-rh/checks/terminal-windows/WindowSolution.lean": "e0a4bf83eb58899465e41b537b9e4b5567cd196e149bf868d4b8ac5af8dfd27b",
+    "pal-rh/checks/terminal-windows/compare.json": "bcd7109aa0635ab3e1c1740d3375062d31cd6619cfb3360300860d6fbf0166f2",
+    "receipt-archives/check_pal_terminal_windows.py": "4ea88b78702ae20d24ed52cef8cfc7c87b89b19f37eea8278e7687f451dba611",
+    "receipt-archives/terminal_window_counts.cpp": "bec2bb84f136a03f07a2c3d800b9cdf2cb4e2ea692b23d45b41fef8c499acb51",
+    "receipt-archives/dense_square_counts.cpp": "050a3c17a9a4679c3a8bb7a00b426ad7dbdd124eb1c100774f62c4ab867e6b51",
+    "proofs/how-much-can-the-newest-half-gain.md": "b9dfbe342430f1afedc16b4def89bd0e785700744892ca6b439138f30163a45e"
+  }
+}

@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Newest half and mixed difference](../proofs/how-much-can-the-newest-half-gain.md) · [Lean](PALRH/TerminalWindows.lean) | Each window needs only an upper ceiling on its positive changes. On the mixed window the underlying positive divisor source is the single unit. |
 | [Last two square roots](../proofs/why-the-last-two-square-roots-remain.md) · [Same-owner signed prices](what-the-last-two-square-roots-carry.md) · [Formal floor implication](PALRH/DenseSquares.lean) | An invertible square pass leaves at most two roots per cofactor. Two disjoint signed portions have explicit all-scale leading terms. The sign of the outstanding sum remains open. |
 | [The integer sign](../proofs/the-integer-that-turns-at-forty-four.md) · [Cofinal directions](how-many-rising-steps-would-a-zero-force.md) · [Negative contribution](where-the-negative-running-mass-comes-from.md) · [Lean](PALRH/RunningMass.lean) | An eventual nonpositive integer count suffices. The growing retained range carries a proved negative root-times-log term at every sufficiently late physical head. |
 | [One-head primitive](../proofs/one-quantity-at-each-fourth-power.md) · [Two neighboring blocks](what-two-neighboring-blocks-predict.md) · [Stock reduction](PALRH/OneHeadPhysical.lean) | A lower floor at the doubled fourth powers suffices. Every real input through two trillion is covered. Four stored primitive values predict a new sample within a root-size allowance. |
