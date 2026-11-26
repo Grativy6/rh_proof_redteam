@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[One integer comparison to the Riemann hypothesis](one-integer-comparison-to-rh.md) gives the current constructive claim and its pencil example. The formal deduction now requires only the eventual comparison of the trip count with one Pascal row.
+
 [Two Pascal rows fit on every board](two-pascal-rows-fit-on-every-board.md) constructs an all-size carrier, pays a measured share of the actual prime dials, and identifies the negative row that a strictly label-preserving stack would require.
 
 [The first prime a board has to give up](the-first-prime-a-board-has-to-give-up.md) identifies one integer that retains every cutoff reading, proves what its asymptotic growth would mean, and gives a second board that really does overflow infinitely often.

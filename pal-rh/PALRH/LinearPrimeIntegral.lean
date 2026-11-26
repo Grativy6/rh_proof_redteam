@@ -1,5 +1,4 @@
-import PALRH.DysonOctave
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+import PALRH.WeightedPrimePulse
 import Mathlib.Analysis.Complex.RemovableSingularity
 
 open Set Finset Filter MeasureTheory Complex Asymptotics
@@ -42,66 +41,13 @@ theorem base_transform {s : ℂ} (sp : 0<s.re) : HasMellin pulse s (1/(s*(s+1)))
   have value : 1/s-1/(s+1)=1/(s*(s+1)) := by field_simp; ring
   rwa [value] at h
 
-private theorem term_mellin (n : ℕ) {s : ℂ} (sp : 0<s.re) :
-    HasMellin (fun t => (term n t:ℂ)) s
-      ((1/(s*(s+1)))*LSeries.term (fun k => (ArithmeticFunction.vonMangoldt k:ℂ)) s n) := by
-  by_cases nz : n=0
-  · subst n
-    simp [term,HasMellin,MellinConvergent,mellin,LSeries.term_def]
-  have nr : 0<(n:ℝ) := by exact_mod_cast Nat.pos_of_ne_zero nz
-  have b:=base_transform sp
-  have h:=hasMellin_const_smul ((MellinConvergent.comp_mul_left nr).mpr b.1)
-    (ArithmeticFunction.vonMangoldt n:ℂ)
-  rw [mellin_comp_mul_left _ _ nr,b.2] at h
-  have eq : (fun t : ℝ => (ArithmeticFunction.vonMangoldt n:ℂ) • pulse ((n:ℝ)*t)) =
-      fun t => (term n t:ℂ) := by funext t; simp [term,pulse]
-  rw [eq] at h
-  convert h using 1
-  simp only [LSeries.term_def,if_neg nz,smul_eq_mul,Complex.cpow_neg,Complex.ofReal_natCast]
-  ring
-
-private theorem norm_identity (n : ℕ) (s : ℂ) :
-    (((∫ t in Ioi (0:ℝ), ‖(t:ℂ)^(s-1)*(term n t:ℂ)‖) : ℝ) : ℂ) =
-      mellin (fun t => (term n t:ℂ)) (s.re:ℂ) := by
-  have cast : (((∫ t in Ioi (0:ℝ), ‖(t:ℂ)^(s-1)*(term n t:ℂ)‖) : ℝ) : ℂ) =
-      ∫ t in Ioi (0:ℝ), (‖(t:ℂ)^(s-1)*(term n t:ℂ)‖:ℂ) :=
-    (integral_ofReal (𝕜:=ℂ) (μ:=volume.restrict (Ioi (0:ℝ)))).symm
-  rw [cast,mellin]
-  apply setIntegral_congr_fun measurableSet_Ioi
-  intro t (tp : 0<t)
-  have plus : 0≤term n t := mul_nonneg ArithmeticFunction.vonMangoldt_nonneg (pulse_nonneg _)
-  change ((‖(t:ℂ)^(s-1)*(term n t:ℂ)‖:ℝ):ℂ) = (t:ℂ)^((s.re:ℂ)-1) • (term n t:ℂ)
-  rw [norm_mul,Complex.norm_real,Real.norm_eq_abs,abs_of_nonneg plus,
-    Complex.norm_cpow_eq_rpow_re_of_pos tp,Complex.sub_re,Complex.one_re,Complex.ofReal_mul]
-  have eq : ((s.re:ℂ)-1)=((s.re-1:ℝ):ℂ) := by push_cast;rfl
-  rw [eq,←Complex.ofReal_cpow tp.le,smul_eq_mul]
-
-/-- This Mellin identity starts with the actual sum of weighted prime powers, each
-of which has finite support in the reciprocal frame. -/
+/-- The actual linear prime-power sum, obtained by the common positive-pulse formula. -/
 theorem arithmetic_transform {s : ℂ} (sr : 1<s.re) :
     mellin (fun t => (reading t:ℂ)) s = DysonOctave.primeSeries s/(s*(s+1)) := by
-  have sp : 0<s.re := by linarith
-  have sumC:=ArithmeticFunction.LSeriesSummable_vonMangoldt (s:=(s.re:ℂ)) (by simpa using sr)
-  let z:ℂ := s.re
-  have vals : Summable (fun n : ℕ => (1/(z*(z+1)))*
-      LSeries.term (fun k => (ArithmeticFunction.vonMangoldt k:ℂ)) z n) :=
-    sumC.mul_left _
-  have nsum : Summable (fun n : ℕ => ∫ t in Ioi (0:ℝ), ‖(t:ℂ)^(s-1)*(term n t:ℂ)‖) := by
-    apply Complex.summable_ofReal.mp
-    exact vals.congr (fun n => ((term_mellin n (s:=z) (by simpa [z] using sp)).2.symm.trans (norm_identity n s).symm))
-  have integ n : IntegrableOn (fun t : ℝ => (t:ℂ)^(s-1)*(term n t:ℂ)) (Ioi 0) := (term_mellin n sp).1
-  have agg:=hasSum_integral_of_summable_integral_norm integ nsum
-  have enc n : (∫ t in Ioi (0:ℝ), (t:ℂ)^(s-1)*(term n t:ℂ)) =
-      (1/(s*(s+1)))*LSeries.term (fun k => (ArithmeticFunction.vonMangoldt k:ℂ)) s n :=
-    (term_mellin n sp).2
-  have total (t : ℝ) : (∑' n : ℕ, (t:ℂ)^(s-1)*(term n t:ℂ))=(t:ℂ)^(s-1)*(reading t:ℂ) := by
-    rw [tsum_mul_left,reading,Complex.ofReal_tsum]
-  rw [show (fun t : ℝ => ∑' n : ℕ, (t:ℂ)^(s-1)*(term n t:ℂ)) =
-    (fun t : ℝ => (t:ℂ)^(s-1)*(reading t:ℂ)) from funext total] at agg
-  simp_rw [enc] at agg
-  change (∫ t in Ioi (0:ℝ), (t:ℂ)^(s-1)*(reading t:ℂ))=_
-  rw [←agg.tsum_eq,tsum_mul_left]
-  unfold DysonOctave.primeSeries LSeries
+  have eq:=WeightedPrimePulse.arithmetic_transform pulseR (fun z => 1/(z*(z+1)))
+    pulse_nonneg (fun hs => base_transform hs) sr
+  change mellin (fun t => (reading t:ℂ)) s=(1/(s*(s+1)))*DysonOctave.primeSeries s at eq
+  rw [eq]
   ring
 
 private theorem finite_read {t : ℝ} (tp : 0<t) (N : ℕ) (cap : 1≤(N:ℝ)*t) :
@@ -211,30 +157,10 @@ theorem interpolation {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
 private theorem analytic_residual {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
     |fullWalk n-(n:ℝ)^2/2| ≤ C*n*Real.sqrt n) {s : ℂ} (hs : 1/2<s.re) :
     DifferentiableAt ℂ (mellin residual) s ∧ MellinConvergent residual s := by
-  let D:=2*C+1
-  have dn : 0≤D := by dsimp [D];linarith
-  have cost (x : ℝ) : ‖residual x‖≤D/Real.sqrt x := by
-    by_cases h : x∈Set.Ioc (0:ℝ) 1
-    · exact interpolation cn cap h
-    · rw [outside h,norm_zero];positivity
-  have ct : ContinuousOn (fun x : ℝ => D/Real.sqrt x) (Set.Ioi 0) :=
-    continuousOn_const.div Real.continuous_sqrt.continuousOn (fun x hx => (Real.sqrt_pos_of_pos hx).ne')
-  have loc : LocallyIntegrableOn residual (Set.Ioi 0) :=
-    (ct.locallyIntegrableOn measurableSet_Ioi).mono residual_meas.aestronglyMeasurable
-      (Filter.Eventually.of_forall (fun x => (cost x).trans (le_abs_self _)))
-  have top : residual =O[atTop] (fun x : ℝ => x^(-(s.re+1))) := by
-    apply Asymptotics.IsBigO.of_bound 1
-    filter_upwards [eventually_gt_atTop (1:ℝ)] with x hx
-    rw [outside (fun h => (not_le_of_gt hx) h.2),norm_zero];positivity
-  have bot : residual =O[𝓝[>] (0:ℝ)] (fun x : ℝ => x^(-(1/2:ℝ))) := by
-    apply Asymptotics.IsBigO.of_bound D
-    filter_upwards [self_mem_nhdsWithin] with x (xp : 0<x)
-    rw [Real.norm_eq_abs,abs_of_pos (Real.rpow_pos_of_pos xp _),Real.rpow_neg xp.le,←Real.sqrt_eq_rpow]
-    exact cost x
-  exact ⟨mellin_differentiableAt_of_isBigO_rpow loc top (by linarith) bot hs,
-    mellinConvergent_of_isBigO_rpow loc top (by linarith) bot hs⟩
+  exact WeightedPrimePulse.sqrt_extension residual residual_meas (fun h => outside h)
+    (D:=2*C+1) (by positivity) (fun h => interpolation cn cap h) hs
 
-private theorem principal {s : ℂ} (sr : 1<s.re) :
+theorem principal_transform {s : ℂ} (sr : 1<s.re) :
     HasMellin (fun t => (mainTerm t:ℂ)) s ((1/2)/(s-1)) := by
   have h:=hasMellin_cpow_Ioc (-1) (s:=s) (by simp;linarith)
   have a:=hasMellin_const_smul h.1 (1/2:ℂ)
@@ -248,13 +174,14 @@ private theorem principal {s : ℂ} (sr : 1<s.re) :
   have val : (1/2:ℂ) • (1/(s+(-1))) = (1/2)/(s-1) := by rw [smul_eq_mul];ring
   rwa [val] at a
 
-/-- An arithmetic corridor on the actual finite prime-power sums supplies the analytic continuation. -/
-theorem rh_of_full_walk {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
-    |fullWalk n-(n:ℝ)^2/2| ≤ C*n*Real.sqrt n) : RiemannHypothesis := by
+/-- Any genuine continuation of the centered linear-area transform has the same target. -/
+theorem rh_of_regular_linear (F : ℂ → ℂ)
+    (regular : DifferentiableOn ℂ F {s : ℂ | 1/2<s.re})
+    (agrees : ∀ s : ℂ, 1<s.re → F s=DysonOctave.primeSeries s/(s*(s+1))-(1/2)/(s-1)) :
+    RiemannHypothesis := by
   let U:= {s : ℂ | 1/2<s.re}
   have op : IsOpen U := isOpen_lt continuous_const continuous_re
-  let F:=mellin residual
-  have fr : DifferentiableOn ℂ F U := fun s hs => (analytic_residual cn cap hs).1.differentiableWithinAt
+  have fr : DifferentiableOn ℂ F U := regular
   let Q:=fun s : ℂ => (s*(s+1))*DysonOctave.kernel (s-1/2)
   have qr : DifferentiableOn ℂ Q U := by
     intro s hs
@@ -270,8 +197,21 @@ theorem rh_of_full_walk {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
   have hn : s≠1 := by rintro rfl;norm_num at sr
   have sn : s≠0 := ne_zero_of_re_pos (by linarith)
   have pn : s+1≠0 := ne_zero_of_re_pos (by rw [add_re,one_re];linarith)
+  have value:=agrees s sr
+  rw [value,dslope_of_ne Q hn,slope_def_field]
+  dsimp only [Q]
+  rw [show (1:ℂ)-1/2=1/2 by norm_num]
+  field_simp [sn,pn,sub_ne_zero.mpr hn]
+  ring
+
+/-- An arithmetic corridor on the actual finite prime-power sums supplies the analytic continuation. -/
+theorem rh_of_full_walk {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
+    |fullWalk n-(n:ℝ)^2/2| ≤ C*n*Real.sqrt n) : RiemannHypothesis := by
+  let F:=mellin residual
+  apply rh_of_regular_linear F (fun s hs => (analytic_residual cn cap hs).1.differentiableWithinAt)
+  intro s sr
   have fc:= (analytic_residual cn cap (show 1/2<s.re by linarith)).2
-  have p:=principal sr
+  have p:=principal_transform sr
   have sum:=hasMellin_add fc p.1
   have eq : (fun t => residual t+(mainTerm t:ℂ))=(fun t => (reading t:ℂ)) := by
     funext t; simp [residual]
@@ -281,11 +221,7 @@ theorem rh_of_full_walk {C : ℝ} (cn : 0≤C) (cap : ∀ n : ℕ, 0<n →
     rw [arithmetic_transform sr] at q
     dsimp only [F]
     linear_combination -q
-  rw [value,dslope_of_ne Q hn,slope_def_field]
-  dsimp only [Q]
-  rw [show (1:ℂ)-1/2=1/2 by norm_num]
-  field_simp [sn,pn,sub_ne_zero.mpr hn]
-  ring
+  exact value
 
 #print axioms PALRH.LinearPrimeIntegral.arithmetic_transform
 #print axioms PALRH.LinearPrimeIntegral.interpolation

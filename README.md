@@ -14,11 +14,7 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
-Two independent families of subset choices fit alongside every row permutation at every board size. At size 16, matching the genuine prime dials leaves a factor of 175 to exchange. The first obstruction to covering everything with positive subrows occurs in the Möbius sum through five. [What Pascal’s triangle pays for](proofs/two-pascal-rows-fit-on-every-board.md)
-
-A single number records the first cutoff where the board fits. For genuine dials it is always zero or a prime. How fast it grows measures exactly which region of zeta zeros a construction can exclude. A second board exposes the fluctuations by admitting pairs of near-square-root primes. [The first prime a board has to give up](proofs/the-first-prime-a-board-has-to-give-up.md)
-
-Taking five-step dials off the board makes a record smaller. Taking the factor five out of the sieve makes a fourth-power board overflow by 715 bits. The difference can be proved by integer counting. [What happens when the sieve forgets five?](proofs/what-happens-when-the-sieve-forgets-five.md)
+The current Lean theorem reaches stock `RiemannHypothesis` from **one eventual comparison of whole numbers**. At $n=k^4$, compare the independent forward trip settings selected by a factorial gcd with the number of ways to pick one subset of each size. All intermediate transfers are proved. The universal comparison itself remains open. [Start with the count at sixteen](proofs/one-integer-comparison-to-rh.md) · [Trace the one-sided deduction](pal-rh/how-one-sided-prime-area-reaches-rh.md)
 
 The proof now reaches RH from counts at fourth powers. A convexity bound pays for the sizes between them. The paired board fits at every size through one billion and on arbitrarily late stretches of consecutive sizes. [Which board sizes have to fit?](proofs/which-prime-boards-have-to-fit.md)
 

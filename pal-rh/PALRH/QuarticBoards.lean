@@ -153,6 +153,58 @@ theorem quartic_envelope {C : ℝ} (cn : 0≤C)
       rw [mul_assoc]
       exact mul_le_mul_of_nonneg_left power (by positivity)
 
+/-- Upper funding at the fourth powers controls the upper prime-power area at every integer.
+Only the two endpoints of a chord enter this direction. -/
+theorem quartic_upper_envelope {C : ℝ} (cn : 0≤C)
+    (knots : ∀ k : ℕ, error (k^4)≤C*(k:ℝ)^6)
+    {n : ℕ} (np : 0<n) :
+    error n≤(64*C+256)*n*Real.sqrt n := by
+  obtain ⟨j,left,right⟩:=quartic_bracket n np
+  let a:ℕ:=(j+1)^4
+  let b:ℕ:=(j+2)^4
+  let t:ℝ:=j
+  have tn : 0≤t := Nat.cast_nonneg _
+  have lo : (a:ℝ)≤n := by exact_mod_cast left
+  have hi : (n:ℝ)<b := by exact_mod_cast right
+  have pos : 0<(b:ℝ)-a := by linarith
+  have w : (b:ℝ)-a≤16*(t+1)^3 := by
+    dsimp [a,b,t];push_cast
+    nlinarith only [Nat.cast_nonneg (α:=ℝ) j,sq_nonneg (j:ℝ),
+      pow_nonneg (Nat.cast_nonneg (α:=ℝ) j) 3]
+  have anchor (k : ℕ) (hk : k≤j+2) : error (k^4)≤64*C*(t+1)^6 := by
+    calc
+      _ ≤ _ := knots k
+      _ ≤ C*(2*(t+1))^6 := by
+        apply mul_le_mul_of_nonneg_left _ cn
+        apply pow_le_pow_left₀ (Nat.cast_nonneg k)
+        have v : (k:ℝ)≤(j:ℝ)+2 := by exact_mod_cast hk
+        dsimp [t];linarith only [v,Nat.cast_nonneg (α:=ℝ) j]
+      _ = _ := by ring
+  have ea:=anchor (j+1) (by omega)
+  have eb:=anchor (j+2) le_rfl
+  change error a≤_ at ea
+  change error b≤_ at eb
+  have h:=chord (a:=a) (b:=b) left right.le
+  have cap : ((n:ℝ)-a)*((b:ℝ)-n)≤(16*(t+1)^3)^2 := by
+    rw [pow_two]
+    exact mul_le_mul (by linarith) (by linarith) (by linarith) (by positivity)
+  have area : error n≤(64*C+256)*(t+1)^6 := by
+    apply le_of_mul_le_mul_left (a:=((b:ℝ)-a)) _ pos
+    have square:=mul_le_mul_of_nonneg_left cap pos.le
+    have topA:=mul_le_mul_of_nonneg_left ea (show 0≤(b:ℝ)-n by linarith)
+    have topB:=mul_le_mul_of_nonneg_left eb (show 0≤(n:ℝ)-a by linarith)
+    nlinarith only [h,square,topA,topB,mul_nonneg pos.le (sq_nonneg (16*(t+1)^3))]
+  have floor : (t+1)^4≤(n:ℝ) := by dsimp [t];exact_mod_cast left
+  have root : (t+1)^2≤Real.sqrt n := (Real.le_sqrt (by positivity) (Nat.cast_nonneg _)).mpr
+    (by convert floor using 1;ring)
+  calc
+    _ ≤ _ := area
+    _ = (64*C+256)*((t+1)^4*(t+1)^2) := by ring
+    _ ≤ _ := by
+      rw [mul_assoc]
+      exact mul_le_mul_of_nonneg_left (mul_le_mul floor root (by positivity) (Nat.cast_nonneg n))
+        (by positivity)
+
 /-- Natural-number comparisons are needed only at n=k^4. -/
 theorem rh_of_quartic_boards
     (funded : ∀ k : ℕ, 0<k → demand (k^4)≤capacity (k^4) ∧
@@ -182,6 +234,7 @@ theorem rh_of_quartic_pairs
   rh_of_quartic_boards (fun k kp => ⟨pair_return (k^4) (pow_pos kp _) (funded k kp).1,
     (funded k kp).2⟩)
 
+#print axioms PALRH.QuarticBoards.quartic_upper_envelope
 #print axioms PALRH.QuarticBoards.quartic_envelope
 #print axioms PALRH.QuarticBoards.rh_of_quartic_boards
 #print axioms PALRH.QuarticBoards.rh_of_quartic_pairs

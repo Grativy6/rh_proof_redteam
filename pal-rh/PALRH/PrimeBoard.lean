@@ -122,6 +122,44 @@ private theorem repeated (n : ℕ) : 0≤fullWalk n-primeWalk n ∧
   · rw [←total,Finset.mul_sum]
     exact Finset.sum_le_sum (fun k _ => mul_le_mul_of_nonneg_right (sub_le_self _ (Nat.cast_nonneg k)) (pos k))
 
+private theorem allowance_log {n : ℕ} (np : 0<n) :
+    Real.log (allowance n:ℝ)≤8*n*Real.sqrt n := by
+  have root : 1≤Real.sqrt (n:ℝ) := Real.one_le_sqrt.mpr (by exact_mod_cast np)
+  have digits : (n.sqrt:ℝ)≤Real.sqrt n :=
+    (Real.le_sqrt (Nat.cast_nonneg _) (Nat.cast_nonneg _)).mpr (by exact_mod_cast (by simpa [pow_two] using Nat.sqrt_le n : n.sqrt^2≤n))
+  have logtwo:=Real.log_le_sub_one_of_pos (by norm_num : 0<(2:ℝ))
+  unfold allowance
+  push_cast
+  rw [Real.log_pow]
+  push_cast
+  have scale := mul_le_mul_of_nonneg_left (by linarith only [digits,root] : (n.sqrt:ℝ)+1≤2*Real.sqrt n)
+    (show 0≤4*(n:ℝ) by positivity)
+  have cost:=mul_le_mul_of_nonneg_left (by linarith only [logtwo] : Real.log 2≤1)
+    (show 0≤4*(n:ℝ)*((n.sqrt:ℝ)+1) by positivity)
+  nlinarith only [scale,cost]
+
+/-- A bound only on overflow is sufficient for an upper area estimate at this size. -/
+theorem full_walk_upper_price : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
+    demand n≤capacity n*allowance n → fullWalk n-(n:ℝ)^2/2≤C*n*Real.sqrt n := by
+  obtain ⟨D,reps⟩:=Chebyshev.psi_sub_theta_le_mul_sqrt
+  let C:=max 0 D+4
+  refine ⟨C,by dsimp [C];positivity,?_⟩
+  intro n np fit
+  have nr : 0<(n:ℝ) := by exact_mod_cast np
+  have dc : 0<demand n := Nat.mul_pos (pow_pos (Nat.factorial_pos _) _) (dial_pos _)
+  have cc : 0<capacity n := pow_pos np _
+  have ld : 0<(demand n:ℝ) := by exact_mod_cast dc
+  have lc : 0<(capacity n:ℝ) := by exact_mod_cast cc
+  have low:=Real.log_le_log ld (by exact_mod_cast fit : (demand n:ℝ)≤(capacity n:ℝ)*(allowance n:ℝ))
+  have pa : 0<(allowance n:ℝ) := by unfold allowance;positivity
+  rw [Real.log_mul lc.ne' pa.ne'] at low
+  have pe:=factorial_price n
+  have rep:=repeated n
+  have extra:=mul_le_mul_of_nonneg_left (reps n) nr.le
+  have gain:=mul_le_mul_of_nonneg_right (le_max_right (0:ℝ) D) (show 0≤(n:ℝ)*Real.sqrt n by positivity)
+  dsimp [C]
+  nlinarith only [low,log_margin np,allowance_log np,rep.2,extra,gain,mul_nonneg nr.le pe.1]
+
 /-- The same prime-power area remains bounded when the demand can borrow one binary allowance. -/
 theorem full_walk_price_with_room : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
     demand n≤capacity n*allowance n ∧ capacity n≤demand n*(allowance n)^2 →
@@ -131,7 +169,6 @@ theorem full_walk_price_with_room : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
   refine ⟨C, by dsimp [C];positivity, ?_⟩
   intro n np fit
   have nr : 0<(n:ℝ) := by exact_mod_cast np
-  have root : 1≤Real.sqrt (n:ℝ) := Real.one_le_sqrt.mpr (by exact_mod_cast np)
   have dc : 0<demand n := Nat.mul_pos (pow_pos (Nat.factorial_pos _) _) (dial_pos _)
   have cc : 0<capacity n := pow_pos np _
   have ld : 0<(demand n:ℝ) := by exact_mod_cast dc
@@ -142,19 +179,7 @@ theorem full_walk_price_with_room : ∃ C : ℝ, 0≤C ∧ ∀ n : ℕ, 0<n →
   rw [Real.log_mul lc.ne' pa.ne'] at low
   rw [Real.log_mul ld.ne' (pow_ne_zero _ pa.ne'),Real.log_pow] at high
   push_cast at high
-  have digits : (n.sqrt:ℝ)≤Real.sqrt n :=
-    (Real.le_sqrt (Nat.cast_nonneg _) (Nat.cast_nonneg _)).mpr (by exact_mod_cast (by simpa [pow_two] using Nat.sqrt_le n : n.sqrt^2≤n))
-  have logtwo:=Real.log_le_sub_one_of_pos (by norm_num : 0<(2:ℝ))
-  have spare : Real.log (allowance n:ℝ)≤8*n*Real.sqrt n := by
-    unfold allowance
-    push_cast
-    rw [Real.log_pow]
-    push_cast
-    have scale := mul_le_mul_of_nonneg_left (by linarith only [digits,root] : (n.sqrt:ℝ)+1≤2*Real.sqrt n)
-      (show 0≤4*(n:ℝ) by positivity)
-    have cost:=mul_le_mul_of_nonneg_left (by linarith only [logtwo] : Real.log 2≤1)
-      (show 0≤4*(n:ℝ)*((n.sqrt:ℝ)+1) by positivity)
-    nlinarith only [scale,cost]
+  have spare:=allowance_log np
   have pe:=factorial_price n
   have rep:=repeated n
   have extra:=mul_le_mul_of_nonneg_left (reps n) nr.le

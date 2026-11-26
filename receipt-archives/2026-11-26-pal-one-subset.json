@@ -1,0 +1,506 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "parent_public_research_commit": "0d842f8fe5ac709dfcf9e8f2fe4c85ff51d6868a",
+  "parent_tree": "fcfddc1be0c296fbcc8e2aed101d341e243a7e64",
+  "contributors": "Pang supplied the PAL v2.4 mechanical spine, RPL and BLA same-frame return questions, and the direction to earn every transfer. Hearthline derived and formalized the one-sided route in this independent program.",
+  "formal_scope": "Stock Mathlib RH follows from one existential cutoff followed by a natural-number comparison. At n=k^4 the product of forward trip settings admitted by gcd(m,(k^2)!)=1 is compared with one full Pascal subset family. No bound on underfilling or analytic continuation is supplied as a premise. The actual eventual arithmetic comparison still needs proof.",
+  "mathematical_chain": [
+    "Gcd-labelled input is the prime band above the square root.",
+    "One subset packet for each travel direction plus all row permutations fits.",
+    "Adding small prime dials and repeated prime powers costs at most a constant times n^(3/2).",
+    "A positive-area chord interpolates a single upper bound from all sufficiently large fourth powers.",
+    "The actual alternating divisor reading is bounded below by -12 sqrt(x), by finite log pairing and harmonic comparison.",
+    "Its integrated reading is bounded below by -24 sqrt(x). The nonnegative paired increments of a monotone primitive give pointwise square-root recovery.",
+    "The logarithmic pulse has Mellin transform 1/(s^2(s+1)); its centered actual prime integral therefore rules out off-line zeros."
+  ],
+  "review": {
+    "type": "author self-review and independent fixed statement control",
+    "scope": "There is one additional unproved mathematical premise in the final declaration. Every auxiliary property above is derived; the bare comparator is expected to reject that term.",
+    "orientation": "Only upper demand enters the arithmetic estimates. A lower price for the alternate and the physical monotonicity of the paid primitive supply the other bound.",
+    "support": "Nonzero prime-power terms are finite at every positive head. Padding the even range preserves its reading and all changes of integration variable are finite before continuation.",
+    "endpoints": "The zero and unit heads, fractional heads, early fourth powers before K, and the genuine pole at 1 are handled explicitly.",
+    "comparator": "Independent challenge and solution define both natural-number counts separately. Identical solution export hash used for the bare control."
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3820
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.WeightedPrimePulse",
+      "exit": 0,
+      "seconds": 13.0,
+      "output": ""
+    },
+    {
+      "module": "PALRH.LinearPrimeIntegral",
+      "exit": 0,
+      "seconds": 13.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PositivePrimitive",
+      "exit": 0,
+      "seconds": 13.2,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeDivisorPrimitive",
+      "exit": 0,
+      "seconds": 13.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.LogPrimitive",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimitiveMellin",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimitiveRecovery",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeBoard",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.QuarticBoards",
+      "exit": 0,
+      "seconds": 12.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.OneSidedBoard",
+      "exit": 0,
+      "seconds": 12.7,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.LinearPrimeIntegral.arithmetic_transform": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LinearPrimeIntegral.interpolation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.LinearPrimeIntegral.rh_of_full_walk": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PositivePrimitive.first_pair": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PositivePrimitive.halve_to_base": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PositivePrimitive.signed_recovery": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimitiveMellin.kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimitiveMellin.rh_of_primitive_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.two_cell_roundtrip": [
+      "propext",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.full_walk_price_with_room": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.full_walk_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.log_margin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_integer_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeBoard.rh_of_paired_board": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeDivisorPrimitive.alternated_divisors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeDivisorPrimitive.arithmetic_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.quartic_upper_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.quartic_envelope": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.rh_of_quartic_boards": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.QuarticBoards.rh_of_quartic_pairs": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSidedBoard.rh_of_real_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSidedBoard.rh_of_eventual_overflow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSidedBoard.rh_of_eventual_pascal_exchange": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSidedBoard.rh_of_eventual_factorial_fit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.OneSidedBoard.rh_of_one_subset_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "conditional": {
+    "exports": {
+      "challenge": {
+        "bytes": 347119220,
+        "sha256": "2a48b3ce7353613aed815f76fe82dee8c848ead75661a2906bde74efa7a1bc38"
+      },
+      "solution": {
+        "bytes": 430964090,
+        "sha256": "4a81e61d1c692e3db1be06322553fa1cd00db08745b7165d45a2dbd6757a5dc1"
+      }
+    },
+    "matching_independent_exports": true,
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 133.08,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    }
+  },
+  "canonical_bare_negative_control": {
+    "exit": 1,
+    "seconds": 14.72,
+    "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+    "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+    "same_solution_sha256": "4a81e61d1c692e3db1be06322553fa1cd00db08745b7165d45a2dbd6757a5dc1"
+  },
+  "calculation": {
+    "heads": [
+      {
+        "head": "1",
+        "centered_prime_reading": [
+          "-0.50000000",
+          "-0.50000000"
+        ],
+        "primitive": [
+          "0.00000000",
+          "0.00000000"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.50000000",
+          "-0.50000000"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "0.00000000",
+          "0.00000000"
+        ]
+      },
+      {
+        "head": "2",
+        "centered_prime_reading": [
+          "-1.00000001",
+          "-0.99999999"
+        ],
+        "primitive": [
+          "-0.50000001",
+          "-0.49999999"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.50000001",
+          "-0.49999999"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-0.50000001",
+          "-0.49999999"
+        ]
+      },
+      {
+        "head": "3",
+        "centered_prime_reading": [
+          "-1.26895094",
+          "-1.26895093"
+        ],
+        "primitive": [
+          "-0.95000207",
+          "-0.95000206"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-1.01895094",
+          "-1.01895093"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-0.70000207",
+          "-0.70000206"
+        ]
+      },
+      {
+        "head": "4",
+        "centered_prime_reading": [
+          "-1.37877334",
+          "-1.37877333"
+        ],
+        "primitive": [
+          "-1.32472259",
+          "-1.32472258"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.54544001",
+          "-0.54544000"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-0.99138926",
+          "-0.99138925"
+        ]
+      },
+      {
+        "head": "16",
+        "centered_prime_reading": [
+          "-1.72246358",
+          "-1.72246357"
+        ],
+        "primitive": [
+          "-3.51194380",
+          "-3.51194379"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.61682310",
+          "-0.61682309"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-2.15015652",
+          "-2.15015651"
+        ]
+      },
+      {
+        "head": "49",
+        "centered_prime_reading": [
+          "-1.78351261",
+          "-1.78351260"
+        ],
+        "primitive": [
+          "-5.49490459",
+          "-5.49490458"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-1.17375934",
+          "-1.17375933"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-3.14741897",
+          "-3.14741896"
+        ]
+      },
+      {
+        "head": "577",
+        "centered_prime_reading": [
+          "-2.00268831",
+          "-2.00268830"
+        ],
+        "primitive": [
+          "-9.96367150",
+          "-9.96367149"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-1.17041631",
+          "-1.17041630"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-5.40660830",
+          "-5.40660829"
+        ]
+      },
+      {
+        "head": "2663",
+        "centered_prime_reading": [
+          "-2.34367319",
+          "-2.34367318"
+        ],
+        "primitive": [
+          "-12.80889983",
+          "-12.80889982"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-1.16940231",
+          "-1.16940230"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-6.81149793",
+          "-6.81149792"
+        ]
+      },
+      {
+        "head": "10000",
+        "centered_prime_reading": [
+          "-1.73213498",
+          "-1.73213497"
+        ],
+        "primitive": [
+          "-15.32186274",
+          "-15.32186273"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.66869426",
+          "-0.66869425"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-8.02729742",
+          "-8.02729741"
+        ]
+      },
+      {
+        "head": "5/2",
+        "centered_prime_reading": [
+          "-1.11137057",
+          "-1.11137056"
+        ],
+        "primitive": [
+          "-0.73395812",
+          "-0.73395811"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.48637057",
+          "-0.48637056"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-0.60895812",
+          "-0.60895811"
+        ]
+      },
+      {
+        "head": "99/2",
+        "centered_prime_reading": [
+          "-1.76311975",
+          "-1.76311974"
+        ],
+        "primitive": [
+          "-5.51290349",
+          "-5.51290348"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-1.15825306",
+          "-1.15825305"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-3.15925355",
+          "-3.15925354"
+        ]
+      },
+      {
+        "head": "8017/3",
+        "centered_prime_reading": [
+          "-2.40137307",
+          "-2.40137306"
+        ],
+        "primitive": [
+          "-12.81719701",
+          "-12.81719700"
+        ],
+        "alternate_prime_or_all_integer": [
+          "-0.66853680",
+          "-0.66853679"
+        ],
+        "alternate_primitive_or_all_integer": [
+          "-6.81477484",
+          "-6.81477483"
+        ]
+      }
+    ],
+    "comparison": "finite prime-power labels and independently regrouped log(m) and harmonic rows",
+    "proved_alternate_lower_multiple_of_sqrt": -12,
+    "proved_integrated_alternate_lower_multiple_of_sqrt": -24
+  },
+  "sha256_sources": {
+    "proofs/one-integer-comparison-to-rh.md": "4ce367622220dd300e79cac551fb40b84916b3767e098a376ba894cb68ba3210",
+    "pal-rh/how-one-sided-prime-area-reaches-rh.md": "5cb87789e8356310441b4e078f31486c51477d3f4dd722b5fb3c711976509e4a",
+    "pal-rh/PALRH/WeightedPrimePulse.lean": "cf4d07cb4e24ec619830cb7b87d93415121bf6b37c88e8840fccb27b45b87b37",
+    "pal-rh/PALRH/PositivePrimitive.lean": "81d97b785998c8c4f11cea1eec889c4ae48eadcb4c87d93559eeeb132d5cbf95",
+    "pal-rh/PALRH/PrimeDivisorPrimitive.lean": "2c67eac3d9d5e125af9c7412fa44288f5a8da0f58fec94959e437d238991ac1f",
+    "pal-rh/PALRH/LogPrimitive.lean": "a57fefc06fdad8b7d0c9c33669e541e6d656d48b21c86938977868dc0afea6d3",
+    "pal-rh/PALRH/PrimitiveMellin.lean": "4954136c9c1a38b59ede5d47bfa76f4908c36fb77ad92ea50c6b23f11943ed76",
+    "pal-rh/PALRH/PrimitiveRecovery.lean": "9accadecaf02b2ce56f39c018d877c7c0248c78df9a78efb7aaa1bb1f00f7d88",
+    "pal-rh/PALRH/OneSidedBoard.lean": "2c9478dff5cf327e30774d32bb8aa57780d7ed806621d3d5d86c43b8e9e3bf61",
+    "pal-rh/PALRH/LinearPrimeIntegral.lean": "9a1d4daa5a8079d8b19f9e719da99ce698d3e01f8102ff39e9ee1cd1e8f972a3",
+    "pal-rh/PALRH/PrimeBoard.lean": "99a28a5256eb9c3deb3eafadf8e27df034d3a959d5c402c6a0498e46e60acbea",
+    "pal-rh/PALRH/QuarticBoards.lean": "0c62fcb92fd5375a71a80a4669411bbfc28443a75d0250a83b0238c861cd36e4",
+    "pal-rh/lakefile.toml": "63f3c008eb65a10db935924c6cdeeef42d86078fed09fc8c873cbb13e30a9042",
+    "pal-rh/checks/one-subset/OneSubsetChallenge.lean": "4d70216924befa01768983f6cdf93ec3982e8751c85b2c689cf70972ca89506a",
+    "pal-rh/checks/one-subset/OneSubsetSolution.lean": "480c6d40491cfb32bf4f096ab95fc5969c7e4b2b390d2a9055681a41e37bb572",
+    "pal-rh/checks/one-subset/compare.json": "bfe0bc8cb96f8487b29ecec85a110d9f803aa43bd87c20309462c650a8203be7",
+    "receipt-archives/check_pal_one_subset.py": "bef28ba4ebd99fdd93a00322b60610780614300ca20c41ee53a0d965ae501a73",
+    "pal-rh/checks/rh-only.json": "4329b101656b66675a7e61c168ff7451877d38b17904b8d9fcd1b4885e90144c",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-pascal-board.json": "ca8b11afb48be6f94e6f11d065016a47bcff04dd2782467aeac5c6564df8cf41",
+    "receipt-archives/2026-11-26-pal-sieve-frame.json": "bcf641b8542d5d80a7dd353c4205b1ac07824cf814cff00e52c40bc3e629e861"
+  }
+}
