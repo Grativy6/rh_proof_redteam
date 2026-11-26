@@ -1,0 +1,282 @@
+{
+  "parent_public_research_commit": "9785d9fa255446fbf5b08163e00f9c6f7c83536c",
+  "parent_tree": "a5c167e1c42f89f83e8108683503bcc2d646d4ba",
+  "contributors": "Pang supplied the RPL/PAL question of when an inherited weight must be reopened and BLA/CLEF's comparison of error with the cost of changing its read. Hearthline derived the fixed-prefix floor, compulsory limiting weights, sparse cost test and repaired and refit certificates.",
+  "paper_scope": "Any positive upper divisor bracket has an explicit Mellin cost inequality at every genuine zero. An arbitrarily sparse succession of excesses going to zero with lower coefficient-cost exponent at most one would imply stock RH. Every fixed label must approach its Mobius weight. Keeping all sixteen old normalized weights permanently fixes 1568059/885224340 of excess. Three new refits have smaller total area. The infinite rate is open.",
+  "formal_scope": "The frozen cell identity, the fixed positive rational loss and its invariance under every extension preserving those coefficients are native Lean proofs. The Mellin argument and coefficient convergence are on paper, using the previously formalized Mellin identity for the original residue sensors.",
+  "review": {
+    "type": "author mathematical self-review, independent integer checking and native kernel replay",
+    "cost": "The pointwise error is nonnegative and at most half the normalized sum of absolute coefficients. Monotone rearrangement prices its Mellin response at an actual zero. No sampling-density assumption on the successful sequence is needed for the contradiction.",
+    "frozen": "A previously unseen label contributes zero at the first seventeen knots, including the equal endpoint. Affinity between reciprocal knots fixes the entire integral on [1/17,1]. The 64-label total price lies strictly below it.",
+    "canonical": "The comparison construction retains the exact first M quotient readings, balances a final coefficient, then adds a nonnegative pair localized below 1/M. The direct tests and tail price use the same chosen repair weight.",
+    "tested": "Five explicit rational coefficient lists through 256 allowed labels and six canonical prefix repairs through M=512 are covered. The numerical search supplies candidates only. The calculation verifies every address up to each stated cutoff and the algebraic tail covers all later ones. These finite lists establish no asymptotic bound.",
+    "scope": "The sparse rate test is sufficient. No converse, independent external review or literature-priority assertion is claimed."
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3858
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.ReopenedRows",
+      "exit": 0,
+      "seconds": 11.4,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.ReopenedRows.frozen_area": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.ReopenedRows.permanent_first_cost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "optimized": [
+      {
+        "available_labels": 16,
+        "direct_through": 512,
+        "excess": [
+          "0.003208282279",
+          "0.003208282280"
+        ],
+        "cost": [
+          "9.015744209289",
+          "9.015744209290"
+        ],
+        "cost_times_excess": [
+          "0.028925052382",
+          "0.028925052383"
+        ],
+        "below_old_frozen_part": false
+      },
+      {
+        "available_labels": 32,
+        "direct_through": 1024,
+        "excess": [
+          "0.002062890665",
+          "0.002062890666"
+        ],
+        "cost": [
+          "17.138722419738",
+          "17.138722419739"
+        ],
+        "cost_times_excess": [
+          "0.035355310490",
+          "0.035355310491"
+        ],
+        "below_old_frozen_part": false
+      },
+      {
+        "available_labels": 64,
+        "direct_through": 2048,
+        "excess": [
+          "0.001466060098",
+          "0.001466060099"
+        ],
+        "cost": [
+          "30.274934768676",
+          "30.274934768677"
+        ],
+        "cost_times_excess": [
+          "0.044384873846",
+          "0.044384873847"
+        ],
+        "below_old_frozen_part": true
+      },
+      {
+        "available_labels": 128,
+        "direct_through": 4096,
+        "excess": [
+          "0.000964969515",
+          "0.000964969516"
+        ],
+        "cost": [
+          "45.825930595397",
+          "45.825930595398"
+        ],
+        "cost_times_excess": [
+          "0.044220626055",
+          "0.044220626056"
+        ],
+        "below_old_frozen_part": true
+      },
+      {
+        "available_labels": 256,
+        "direct_through": 8192,
+        "excess": [
+          "0.000699397151",
+          "0.000699397152"
+        ],
+        "cost": [
+          "85.825514793395",
+          "85.825514793396"
+        ],
+        "cost_times_excess": [
+          "0.060026120554",
+          "0.060026120555"
+        ],
+        "below_old_frozen_part": true
+      }
+    ],
+    "individual_revisions_at_64_labels": {
+      "5": [
+        "-50/51",
+        "-1048575/1048576"
+      ],
+      "8": [
+        "4/51",
+        "0"
+      ],
+      "13": [
+        "0",
+        "-262145/262144"
+      ]
+    },
+    "fixed_first_16_exact_surplus": "1568059/885224340",
+    "fixed_first_16_surplus": [
+      "0.001771369052",
+      "0.001771369053"
+    ],
+    "initially_exact_then_repaired": [
+      {
+        "initial_exact_through": 16,
+        "support_through": 32,
+        "tail_from": 1025,
+        "repair_weight": "249/256",
+        "worst_direct_address": 17,
+        "excess": [
+          "0.020281478534",
+          "0.020281478535"
+        ],
+        "cost": [
+          "12.946140578171",
+          "12.946140578172"
+        ],
+        "cost_times_excess": [
+          "0.262566872247",
+          "0.262566872248"
+        ]
+      },
+      {
+        "initial_exact_through": 32,
+        "support_through": 64,
+        "tail_from": 2049,
+        "repair_weight": "505/1024",
+        "worst_direct_address": 42,
+        "excess": [
+          "0.005356362544",
+          "0.005356362545"
+        ],
+        "cost": [
+          "23.486952457082",
+          "23.486952457083"
+        ],
+        "cost_times_excess": [
+          "0.125804632422",
+          "0.125804632423"
+        ]
+      },
+      {
+        "initial_exact_through": 64,
+        "support_through": 128,
+        "tail_from": 4097,
+        "repair_weight": "195/128",
+        "worst_direct_address": 66,
+        "excess": [
+          "0.008385843069",
+          "0.008385843070"
+        ],
+        "cost": [
+          "42.547384876883",
+          "42.547384876884"
+        ],
+        "cost_times_excess": [
+          "0.356795692610",
+          "0.356795692611"
+        ]
+      },
+      {
+        "initial_exact_through": 128,
+        "support_through": 256,
+        "tail_from": 8193,
+        "repair_weight": "877/1024",
+        "worst_direct_address": 170,
+        "excess": [
+          "0.002047958307",
+          "0.002047958308"
+        ],
+        "cost": [
+          "80.642178223082",
+          "80.642178223083"
+        ],
+        "cost_times_excess": [
+          "0.165151818839",
+          "0.165151818840"
+        ]
+      },
+      {
+        "initial_exact_through": 256,
+        "support_through": 512,
+        "tail_from": 16385,
+        "repair_weight": "1193/1024",
+        "worst_direct_address": 257,
+        "excess": [
+          "0.001892070378",
+          "0.001892070379"
+        ],
+        "cost": [
+          "159.330317332848",
+          "159.330317332849"
+        ],
+        "cost_times_excess": [
+          "0.301464173875",
+          "0.301464173876"
+        ]
+      },
+      {
+        "initial_exact_through": 512,
+        "support_through": 1024,
+        "tail_from": 32769,
+        "repair_weight": "35/8",
+        "worst_direct_address": 602,
+        "excess": [
+          "0.002636242106",
+          "0.002636242107"
+        ],
+        "cost": [
+          "329.461706508332",
+          "329.461706508333"
+        ],
+        "cost_times_excess": [
+          "0.868540823308",
+          "0.868540823309"
+        ]
+      }
+    ]
+  },
+  "sha256_sources": {
+    "proofs/why-the-old-divisor-rows-have-to-move.md": "4685af62f15dfd2c8d426dbb2a1fd47c78941ef8016bf6f58abaed06a60dddbe",
+    "pal-rh/PALRH/ReopenedRows.lean": "00271ae3c3746f1730df3db66211893bc502716fbc10cb16ab994428b941616a",
+    "pal-rh/lakefile.toml": "bdf67539365f0b320facb68084cba49df5ce5f02514f207d65030fd727750f24",
+    "receipt-archives/check_pal_growing_brackets.py": "a3915d89aaec74920b9f1389b30a12cbb7f29f962ccf5e95a4145791c241ba78",
+    "receipt-archives/growing_divisor_rows.json": "e31119ff09f063baadcbdb90469de2799742097fc6a324e5c0ac1bbc59feab9c",
+    "pal-rh/PALRH/DivisorBracket.lean": "c3e930c8e2e6ed9fae0dd31e2b08e76b9ed681a6adc3cf3e285e4f7bc48fad0c",
+    "pal-rh/PALRH.lean": "98789ed11382532173da155a03d60b17a2207f423ea50fa74fd261214358b97e",
+    "receipt-archives/check_pal_divisor_brackets.py": "265246c0454735a4398938efff03f1c9d47275ee94159f28c134c9da39f6b94c",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/2026-11-26-pal-prime-copies.json": "bd6f81d2bec9f2fdcc1dc4ceca980cf63255d3866a050441dd42516f5e04c0dd"
+  }
+}

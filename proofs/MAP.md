@@ -16,6 +16,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Unconditional neighboring copy counts](thirteen-fourteen-and-fifteen-prime-copies.md). Hearthline derived explicit signed divisibility rows under Pang’s residue and shared-frame questions, 26 November 2026. Their ordinary sampling errors bracket the true prime area at every head beyond 15. [Replay](../receipt-archives/2026-11-26-pal-prime-copies.json)
 
+[Frozen coefficients, sparse costs and the original remainder sensors](why-the-old-divisor-rows-have-to-move.md). Hearthline derived the exact fixed excess and the Mellin cost inequality under Pang’s reopening question on 26 November 2026. [Finite rows and methods](../receipt-archives/2026-11-26-pal-growing-brackets.json)
+
 [One seventh at the boundary and the doubled prime ruler](one-seventh-at-the-boundary.md). Under Pang’s PAL/RPL/BLA key on 26 November 2026, Hearthline derived an elementary ordinary-log valuation, the cutoff exponent and the contiguous finite range. [Numerical and formal scope](../receipt-archives/2026-11-26-pal-doubled-ruler.json)
 
 [Moving-endpoint bound and fixed-tenth criterion](moving-the-endpoint-of-a-prime-area.md) · [Paying with the actual crossings](when-crossed-prime-powers-pay-the-tenth.md). Under Pang’s construction key, Hearthline obtained the all-scale centered estimate and derived the late finite repayments from the shared spectral terms on 26 November 2026. [First calculation](../receipt-archives/2026-11-26-pal-moving-endpoint.json) · [Second calculation](../receipt-archives/2026-11-26-pal-crossing-refund.json)

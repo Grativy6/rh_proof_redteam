@@ -22,6 +22,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Three copy counts, one prime product](proofs/thirteen-fourteen-and-fifteen-prime-copies.md). Under Pang’s active key on 26 November 2026, Hearthline built an elementary all-size bracket from sixteen divisibility rows and formalized the two neighboring counts. [Independent combined challenge and result](receipt-archives/2026-11-26-pal-prime-copies.json)
 
+[Forced revisions in the signed divisor weights](proofs/why-the-old-divisor-rows-have-to-move.md). Under Pang’s retained-frame key on 26 November 2026, Hearthline proved the exact cost of freezing the old sixteen weights, identified a sparse sufficient rate, and tested refits through 256 labels. [Data and independent arithmetic](receipt-archives/2026-11-26-pal-growing-brackets.json)
+
 [The doubled prime ruler and its sharp cutoff](proofs/one-seventh-at-the-boundary.md). Under Christopher Daniel Pang’s active construction key, Hearthline traced a boundary mass of $1/7$, proved the all-size ordinary-log price and established the retained-prime test through index $2^{36}$ on 26 November 2026. [Derivation](pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md) · [Arithmetic and checker outputs](receipt-archives/2026-11-26-pal-doubled-ruler.json)
 
 [Moving the endpoint](proofs/moving-the-endpoint-of-a-prime-area.md) · [Lower bound on the actual prime-power repayment](proofs/when-crossed-prime-powers-pay-the-tenth.md). On 26 November 2026 Hearthline used Pang’s retained-boundary question to derive the all-scale smoothed bound, cover the fixed tenth through $2^{150}$, and fund the filtered subset comparison through $2^{158}$. [Rational prices and sources](receipt-archives/2026-11-26-pal-crossing-refund.json)
