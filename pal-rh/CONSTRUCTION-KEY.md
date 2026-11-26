@@ -69,6 +69,8 @@ The [upper half of each square](PALRH/OuterBlock.lean) has a genuine lower budge
 
 [Averaging the threshold twice](averaging-the-square.md) removes the extra crossing from the complete forward transfer, and gives a different target whose upper bound would still imply RH. The reverse difference recovers the original hard matrix. A Gaussian weight also yields a high-side finite spectral test with an unconditional allowance outside its stated range. Seek a bound on the true signed terms or a way of supplying compatible smoothed side data at successive scales.
 
+The five-moment transport pays selected prime-factor families at all moving heads. Test the remaining physical signs after this allocation. The known change in the original fourth-power charge is little-$o$ of the square-root allowance. [Pencil example and finite share](../proofs/which-prime-labels-cancel.md) · [Cofactor theorem and exact remaining inequality](how-much-can-travel-with-a-prime.md)
+
 At each material transition record the parent commit, definitions, input domain, claimed implication, result, and next unresolved inequality in the [live map](MAP.md). Retain paper derivations alongside named Lean declarations. Save runnable discriminators in the existing receipt archive. On failure record the counterexample or failing scale and execute the next route that changes that mechanism. Before asserting RH, replay the entire dependency chain and the frozen challenge, and arrange independent human scrutiny of the mathematical mechanism. Record standard antecedents and bound any originality claim to the literature actually inspected.
 
 ## Unresolved

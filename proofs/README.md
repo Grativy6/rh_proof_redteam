@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[Which prime labels cancel?](which-prime-labels-cancel.md) starts with six factored integers and measures the actual share of the trillion-sector cancellation they teach us to isolate. The [all-scale extension](../pal-rh/how-much-can-travel-with-a-prime.md) carries a growing cofactor through the same calculation.
+
 [What the central mirror earns](what-the-central-mirror-earns.md) changes the arithmetic at 5 and lets you compute how far the resulting cancellation moves. A second construction preserves every prime value and any chosen finite head.
 
 [What a reflected remainder carries](../pal-rh/what-a-reflected-remainder-carries.md) isolates the odd and even parts of an actual return. [How far a negative run would have to travel](../pal-rh/how-far-a-negative-run-must-travel.md) proves the power-exponent law for signed runs and gives a prime clock with forced late sign reversals.

@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Prime transport on physical labels](proofs/which-prime-labels-cancel.md) · [Moving-head proof](pal-rh/how-much-can-travel-with-a-prime.md). Under Pang’s research key, Hearthline located exact fractional cancellations among primes and their products on 25 November 2026. The remaining sign is expressed on the complement.
+
 [What the central mirror earns](proofs/what-the-central-mirror-earns.md). On 25 November 2026 Hearthline followed Pang’s question about what can force a cancellation onto the central line. The paper locates the changed local rule and computes the displacement.
 
 [Reflected remainders and simultaneous clock readings](pal-rh/what-a-reflected-remainder-carries.md). On 25 November 2026, under Pang’s construction key, Hearthline computed the signed contribution from the same high-modulus sector, derived an even-only local test, and proved the [run-length result](pal-rh/how-far-a-negative-run-must-travel.md). [Source roles, bounds and replays](receipt-archives/2026-11-25-pal-reflected-cells.json)

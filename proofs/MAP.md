@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[Six-point prime transport and the trillion-sector census](which-prime-labels-cancel.md) · [A prime with a growing cofactor](../pal-rh/how-much-can-travel-with-a-prime.md). Pang’s retained-frame and sign questions led Hearthline to allocate actual marks across five moments on 25 November 2026.
+
 [Local weights and central reflection](what-the-central-mirror-earns.md). Pang supplied the question about the central line. Hearthline derived the example at 5 and its delayed family on 25 November 2026 under his constructive research key.
 
 [Integer remainder windows](../pal-rh/what-a-reflected-remainder-carries.md) · [Simultaneous clock excursions](../pal-rh/how-far-a-negative-run-must-travel.md). On 25 November 2026 Hearthline followed Pang’s request to turn directional claims both ways, retaining a fixed physical input. [Mathematical and computational scope](../receipt-archives/2026-11-25-pal-reflected-cells.json)

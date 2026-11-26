@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Five moments on actual marks](../proofs/which-prime-labels-cancel.md) · [Fourth-power blocks](how-much-can-travel-with-a-prime.md) · [Lean](PALRH/PrimeTransport.lean) | Every prime in the trillion sector is funded. An all-scale allocation carries a cofactor smaller than a fixed power up to exponent $11/26$ with little-$o$ square-root cost. |
 | [Central reflection](../proofs/what-the-central-mirror-earns.md) · [Lean derivation](PALRH/CentralMirror.lean) | A local change at 5 gives an exact off-center cancellation while preserving reflection in the altered completion. A second pair agrees on all primes and any prescribed finite head. |
 | [Reflected cells](what-a-reflected-remainder-carries.md) · [Even-only window](PALRH/EvenRemainders.lean) | All earlier product labels through the five-sixths cutoff fit the same square-root bill. A short-window test uses squared remainders alone. |
 | [The length of a common fall](how-far-a-negative-run-must-travel.md) · [Free choice of the earlier clock](PALRH/ClockRoutes.lean) | An off-line zero forces simultaneous power-size deficits over almost full-length runs in the power-exponent sense. Prime 3,727 fails the single-clock sign test at unbounded powers. |

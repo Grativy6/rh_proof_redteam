@@ -1,0 +1,221 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang supplied the research question and PAL, BLA and APCI corpus. Hearthline developed the arithmetic under his active constructive research key.",
+  "parent_public_research_commit": "39a3d7e644caa4b68fe1b4ab314199d23f275dfa",
+  "parent_tree": "60e1ed2109e72e8ff554e9a54cb4ba1976dcf728",
+  "source_roles": {
+    "PAL_BLA_APCI": "Identify a signed distinction on the same physical labels and test how much carries through a moving frame.",
+    "prime_counts": "Kim Walisch primesieve 12.0 and primecount 7.10, Ubuntu 24.04 distribution. The public CSV counts were produced by the C++ source. Every full factor row was also recomputed at its endpoints.",
+    "analytic_input": "Guth and Maynard, Corollary 1.3. The older Huxley range also follows from Heath-Brown 1982. These results supply short-interval prime counts in the moving-head paper.",
+    "Alpoge_Claude": "Exact target and version comparison only. The prime transports use ordinary arithmetic and the PAL project’s own price functions."
+  },
+  "sha256_sources": {
+    "proofs/which-prime-labels-cancel.md": "53b04f8cb510c8f37660b8199fdaf0275d0df232b7fcaa2df13b3d6fc84e8f6b",
+    "pal-rh/how-much-can-travel-with-a-prime.md": "d9f3b58082f7e27b8fa077d698a9bfd4e2bc030390be005092f24ba7d267c9d5",
+    "pal-rh/PALRH/PrimeTransport.lean": "415c5b9f43472886e55f8c5aa791cf3bf123b13913bfa8d56db42239e02fca83",
+    "receipt-archives/check_pal_prime_transport.py": "4f315c44bbd7d4b15f5d0b10c213c223988740c8f503d632247cfe2e031fa90c",
+    "receipt-archives/prime_transport_counts.cpp": "b6f2cd4c5da6314121a43d61ea39064c95d6f72860c72e58f93fda8a8ab19ae9",
+    "receipt-archives/prime-transport-trillion-counts.csv": "d26a998c80fb1c06698a8ccb166bfccad30c01773940ff1fe090212eba1d2174"
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "count_parameters": {
+    "palette_min": 5,
+    "palette_max": 347,
+    "large_prime_strictly_above": 347,
+    "palettes_tested": "empty, one small prime, two distinct small primes",
+    "small_direct_factorization": {
+      "left_excluded": 1600000,
+      "right_included": 1666666,
+      "bins": 100,
+      "all_three_counts_checked_in_each_bin": true,
+      "csv_sha256": "45f81427fc35580332d1da69812caa9cb53b6b55587f0cb47826e64ce1895a52"
+    }
+  },
+  "arithmetic": {
+    "sector": [
+      1600000000000,
+      1666666666666
+    ],
+    "head": 2000000000000,
+    "subdivisions": 2000,
+    "primes": 2370643751,
+    "donors": 3223386005,
+    "donors_by_group": [
+      645106968,
+      644885235,
+      644673065,
+      644473727,
+      644247010
+    ],
+    "triples": 2104921452,
+    "triples_by_group": [
+      421308294,
+      421144014,
+      420989215,
+      420808943,
+      420670986
+    ],
+    "prime_to_semiprime": {
+      "contraction_upper": "0.03721377",
+      "uniform_fraction_radius_upper": "0.05685338",
+      "actual_fraction_intervals": [
+        [
+          "0.6785229",
+          "0.7922297"
+        ],
+        [
+          "0.6785837",
+          "0.7922905"
+        ],
+        [
+          "0.6785917",
+          "0.7922986"
+        ],
+        [
+          "0.6786566",
+          "0.7923635"
+        ],
+        [
+          "0.6786350",
+          "0.7923419"
+        ]
+      ]
+    },
+    "remaining_semiprime_to_triple": {
+      "contraction_upper": "0.03721480",
+      "uniform_fraction_radius_upper": "0.11838394",
+      "actual_fraction_intervals": [
+        [
+          "0.2868122",
+          "0.5235802"
+        ],
+        [
+          "0.2867303",
+          "0.5234983"
+        ],
+        [
+          "0.2867398",
+          "0.5235078"
+        ],
+        [
+          "0.2866630",
+          "0.5234310"
+        ],
+        [
+          "0.2867263",
+          "0.5234943"
+        ]
+      ]
+    },
+    "total_prime_price_interval": [
+      "56048901.716",
+      "56054740.838"
+    ],
+    "total_semiprime_price_interval": [
+      "76209943.022",
+      "76217882.586"
+    ],
+    "second_stage_price_interval": [
+      "20155202.184",
+      "20168980.869"
+    ],
+    "total_absolute_price_removed_interval": [
+      "152419886.044",
+      "152435765.171"
+    ],
+    "counts_sha256": "d26a998c80fb1c06698a8ccb166bfccad30c01773940ff1fe090212eba1d2174",
+    "hand_example": {
+      "labels": [
+        83,
+        95,
+        107,
+        119,
+        131,
+        143
+      ],
+      "signed_numerators": [
+        -83,
+        475,
+        -1070,
+        1190,
+        -655,
+        143
+      ],
+      "capacity_denominator": 1190,
+      "integer_heads_checked": [
+        144,
+        165
+      ]
+    },
+    "full_sector": {
+      "first_pass": {
+        "absolute_mark_count": 60792389809,
+        "absolute_price": [
+          "1435922440.391",
+          "1438917023.766"
+        ],
+        "fraction_removed": [
+          "0.1059268",
+          "0.1061588"
+        ]
+      },
+      "rough_only": {
+        "absolute_mark_count": 20264236980,
+        "absolute_price": [
+          "478642996.545",
+          "479641197.848"
+        ],
+        "fraction_removed": [
+          "0.3177789",
+          "0.3184749"
+        ]
+      }
+    },
+    "palette": {
+      "palette_primes": 67,
+      "palette_pairs": 2211,
+      "sum_prime_reciprocals": [
+        "1.20121465",
+        "1.20121466"
+      ],
+      "sum_pair_reciprocals": [
+        "0.67610193",
+        "0.67610194"
+      ],
+      "all_subset_signed_density_factor": [
+        "0.28609190",
+        "0.28609191"
+      ]
+    }
+  },
+  "build": {
+    "lake_exit": 0,
+    "target": "normal project roots"
+  },
+  "axioms": {
+    "PALRH.PrimeTransport.six_labels": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.PrimeTransport.both_prices": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.PrimeTransport.rh_after_transport": "[propext, Classical.choice, Quot.sound]"
+  },
+  "kernel": [
+    {
+      "module": "PALRH.PrimeTransport",
+      "exit": 0,
+      "seconds": 11.2,
+      "output": ""
+    }
+  ],
+  "formal_scope": "Five differences, simultaneous point and even-window cancellation on the actual prices for a common quotient, and the conditional implication from an affordable substream and its remaining sign to stock RH.",
+  "paper_scope": "For each fixed cofactor exponent below 11/26, every sufficiently large fourth-power block admits the stated capacity allocation. The allocated moving-head cost is o(sqrt(T)). The finite result has its own interval and population count.",
+  "open": "The funded construction still needs a lower bound on the signed complement at every sufficiently late fourth power. No independent unconditional stock RH theorem has been obtained.",
+  "primary_sources": [
+    "https://arxiv.org/pdf/2405.20552",
+    "https://doi.org/10.4153/CJM-1982-095-9",
+    "https://github.com/kimwalisch/primesieve",
+    "https://github.com/kimwalisch/primecount"
+  ]
+}
