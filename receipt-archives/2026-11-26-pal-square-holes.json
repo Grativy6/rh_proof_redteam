@@ -1,0 +1,719 @@
+{
+  "parent_public_research_commit": "b095f12f23f4702193dc83c078a075d7be43d087",
+  "parent_tree": "bddb72f5bd08dc2835f14464088aff652de04b85",
+  "contributors": "Christopher Daniel Pang supplied the retained missing position, frame, ledger and direction-reversal questions and the imagined two-arrow world prompt. Hearthline constructed the square-trace price, its two-sign test, the count formula and the sharp periodic divisor comparisons. Classical inputs enter at the named passages in the two papers.",
+  "paper_scope": "Eventual payment with two actual difference-of-squares traces is equivalent to ordinary RH. With one trace there are infinitely many payments and failures unconditionally. The growth exponent of the integer minimum number of centers paying the same prime product equals four times (Theta-1/2). The sharp area floors for the dyadic and 2,3-smooth upper divisor rulers and the minimum of three generating primes to cross 1/210 refer to the separate elementary fifteen-copy construction. The two-arrow model has its own explicitly specified entire function.",
+  "formal_scope": "Lean proves every marked candidate is composite, a pointwise upper prime-area consequence with explicit dependence on the number of centers and eventual two-trace sufficiency for stock RH. The independently fixed challenge states compositeness and that conditional implication. Recurrence, the full integer-count exponent, optimal divisor prices and the two-arrow illustration are paper results.",
+  "review": {
+    "kind": "author self-review, fixed independent target, native and exported kernel checks, exact integer and outward-log arithmetic",
+    "arithmetic": "At k=8 one square marks 36 addresses and two mark 62 distinct addresses, with 3696 counted once. The true prime product is identical in both tests. Both signs of the direction were tried at square 16. Separate successive areas are positive constants on the same quotient cell.",
+    "asymptotic": "For each fixed number of traces their pair overlaps have negligible price by difference-of-squares factorization. The growing-s estimates use individual divisor multiplicity and its second moment, not the fixed-s overlap bound. The least-number sentinel is unused at all sufficiently large boards by quantitative PNT.",
+    "recurrence": "Under false RH both unbounded signs transfer to the quartics. Under RH uniform absolute convergence of the genuine spectral sum transfers its shifts to logarithms of quartics. Two phase values are priced independently from the finite prime area, the functional equation and the elementary explicit-formula remainder.",
+    "row_prices": "All signed rational weights are repriced on each residue, with both zero drift and exact balance. The finite search that generated two larger witnesses is not used to prove optimality. The dual argument gives the two small-basis optima and the three-prime minimum for this threshold.",
+    "sandbox": "All zeros in the two-arrow universe can be written down. At a=17/12 the same reflection permits the strictly off-center pair with 2^s=4/3 and 3/2.",
+    "open": "No unconditional uniform two-trace price, bare stock RH theorem, fourteen-copy counterexample or priority determination is claimed."
+  },
+  "primary_sources": {
+    "explicit_formula": "https://arxiv.org/pdf/2201.06184v2#page=4",
+    "quantitative_pnt": "https://arxiv.org/abs/2206.12557",
+    "zero_mass": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+    "reflection": "https://dlmf.nist.gov/25.4.E1",
+    "digamma": "https://dlmf.nist.gov/5.4.ii"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3864
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.SquareHoles",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.SquareHoles.erased_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareHoles.area_of_payment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.SquareHoles.rh_of_two_traces": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 346970213,
+        "sha256": "b79440afd58a70882a6a15e0a08beffab32f035bb85d71e5d1238146e1ba76a2"
+      },
+      "solution": {
+        "bytes": 447279245,
+        "sha256": "1c9471d3ab349698379b9a5b85d43ac035906195755532568a4bb9e294e06d39"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 139.83,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 14.61,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "1c9471d3ab349698379b9a5b85d43ac035906195755532568a4bb9e294e06d39"
+    }
+  },
+  "calculation": {
+    "integral": [
+      "0.0666596671",
+      "0.0666596672"
+    ],
+    "omission_coefficient": [
+      "0.06692048",
+      "0.07927086"
+    ],
+    "one_trace_threshold": [
+      "-0.01261119",
+      "-0.00026081"
+    ],
+    "phase_replay": {
+      "zeta_log_derivative_minus_one": [
+        "1.98468827",
+        "1.98720724"
+      ],
+      "phases": {
+        "3": [
+          "-0.02127148",
+          "-0.02078669"
+        ],
+        "6": [
+          "0.01278746",
+          "0.01295886"
+        ]
+      }
+    },
+    "normalized_margin_definition": "(log prime product - n bill log(1+1/n)) / ((2n)^5 k^6)",
+    "boards": [
+      {
+        "index": 2,
+        "shared_by_both": 0,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": true,
+            "margin": [
+              "0.16319862",
+              "0.16319863"
+            ]
+          },
+          {
+            "distinct_slots": 2,
+            "paid": true,
+            "margin": [
+              "0.20541687",
+              "0.20541688"
+            ]
+          },
+          {
+            "distinct_slots": 3,
+            "paid": true,
+            "margin": [
+              "0.20541687",
+              "0.20541688"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "shared_by_both": 0,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": true,
+            "margin": [
+              "0.03652941",
+              "0.03652942"
+            ]
+          },
+          {
+            "distinct_slots": 5,
+            "paid": true,
+            "margin": [
+              "0.09574391",
+              "0.09574392"
+            ]
+          },
+          {
+            "distinct_slots": 7,
+            "paid": true,
+            "margin": [
+              "0.11849270",
+              "0.11849271"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.01647219",
+              "-0.01647218"
+            ]
+          },
+          {
+            "distinct_slots": 9,
+            "paid": true,
+            "margin": [
+              "0.04597584",
+              "0.04597585"
+            ]
+          },
+          {
+            "distinct_slots": 13,
+            "paid": true,
+            "margin": [
+              "0.07167672",
+              "0.07167673"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.02762244",
+              "-0.02762243"
+            ]
+          },
+          {
+            "distinct_slots": 14,
+            "paid": true,
+            "margin": [
+              "0.03600376",
+              "0.03600377"
+            ]
+          },
+          {
+            "distinct_slots": 22,
+            "paid": true,
+            "margin": [
+              "0.06657123",
+              "0.06657124"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "shared_by_both": 0,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.05581504",
+              "-0.05581503"
+            ]
+          },
+          {
+            "distinct_slots": 20,
+            "paid": true,
+            "margin": [
+              "0.00827051",
+              "0.00827052"
+            ]
+          },
+          {
+            "distinct_slots": 34,
+            "paid": true,
+            "margin": [
+              "0.04894773",
+              "0.04894774"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "shared_by_both": 2,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.06282128",
+              "-0.06282127"
+            ]
+          },
+          {
+            "distinct_slots": 28,
+            "paid": true,
+            "margin": [
+              "0.00243796",
+              "0.00243797"
+            ]
+          },
+          {
+            "distinct_slots": 46,
+            "paid": true,
+            "margin": [
+              "0.04095510",
+              "0.04095511"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.06928491",
+              "-0.06928490"
+            ]
+          },
+          {
+            "distinct_slots": 36,
+            "paid": false,
+            "margin": [
+              "-0.00419531",
+              "-0.00419530"
+            ]
+          },
+          {
+            "distinct_slots": 62,
+            "paid": true,
+            "margin": [
+              "0.03890389",
+              "0.03890390"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "shared_by_both": 0,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.07541661",
+              "-0.07541660"
+            ]
+          },
+          {
+            "distinct_slots": 46,
+            "paid": false,
+            "margin": [
+              "-0.00988349",
+              "-0.00988348"
+            ]
+          },
+          {
+            "distinct_slots": 82,
+            "paid": true,
+            "margin": [
+              "0.03788764",
+              "0.03788765"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.07496111",
+              "-0.07496110"
+            ]
+          },
+          {
+            "distinct_slots": 57,
+            "paid": false,
+            "margin": [
+              "-0.00919847",
+              "-0.00919846"
+            ]
+          },
+          {
+            "distinct_slots": 101,
+            "paid": true,
+            "margin": [
+              "0.03795979",
+              "0.03795980"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "shared_by_both": 2,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.06485023",
+              "-0.06485022"
+            ]
+          },
+          {
+            "distinct_slots": 69,
+            "paid": true,
+            "margin": [
+              "0.00101855",
+              "0.00101856"
+            ]
+          },
+          {
+            "distinct_slots": 123,
+            "paid": true,
+            "margin": [
+              "0.04899861",
+              "0.04899862"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "shared_by_both": 0,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.06762541",
+              "-0.06762540"
+            ]
+          },
+          {
+            "distinct_slots": 83,
+            "paid": false,
+            "margin": [
+              "-0.00138961",
+              "-0.00138960"
+            ]
+          },
+          {
+            "distinct_slots": 151,
+            "paid": true,
+            "margin": [
+              "0.05029609",
+              "0.05029610"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.08356524",
+              "-0.08356523"
+            ]
+          },
+          {
+            "distinct_slots": 97,
+            "paid": false,
+            "margin": [
+              "-0.01738919",
+              "-0.01738918"
+            ]
+          },
+          {
+            "distinct_slots": 177,
+            "paid": true,
+            "margin": [
+              "0.03417059",
+              "0.03417060"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.08189609",
+              "-0.08189608"
+            ]
+          },
+          {
+            "distinct_slots": 113,
+            "paid": false,
+            "margin": [
+              "-0.01555286",
+              "-0.01555285"
+            ]
+          },
+          {
+            "distinct_slots": 207,
+            "paid": true,
+            "margin": [
+              "0.03716490",
+              "0.03716491"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.07162028",
+              "-0.07162027"
+            ]
+          },
+          {
+            "distinct_slots": 129,
+            "paid": false,
+            "margin": [
+              "-0.00539485",
+              "-0.00539484"
+            ]
+          },
+          {
+            "distinct_slots": 238,
+            "paid": true,
+            "margin": [
+              "0.04762140",
+              "0.04762141"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "shared_by_both": 3,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.09335149",
+              "-0.09335148"
+            ]
+          },
+          {
+            "distinct_slots": 147,
+            "paid": false,
+            "margin": [
+              "-0.02705409",
+              "-0.02705408"
+            ]
+          },
+          {
+            "distinct_slots": 271,
+            "paid": true,
+            "margin": [
+              "0.02598701",
+              "0.02598702"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.07840800",
+              "-0.07840799"
+            ]
+          },
+          {
+            "distinct_slots": 166,
+            "paid": false,
+            "margin": [
+              "-0.01207797",
+              "-0.01207796"
+            ]
+          },
+          {
+            "distinct_slots": 309,
+            "paid": true,
+            "margin": [
+              "0.04250505",
+              "0.04250506"
+            ]
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "shared_by_both": 1,
+        "by_number_of_traces": [
+          {
+            "distinct_slots": 0,
+            "paid": false,
+            "margin": [
+              "-0.09000871",
+              "-0.09000870"
+            ]
+          },
+          {
+            "distinct_slots": 187,
+            "paid": false,
+            "margin": [
+              "-0.02352563",
+              "-0.02352562"
+            ]
+          },
+          {
+            "distinct_slots": 349,
+            "paid": true,
+            "margin": [
+              "0.03173148",
+              "0.03173149"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "periodic_rows": {
+    "sharp_witnesses": {
+      "4": {
+        "period": 4,
+        "labels": 3,
+        "denominator": "2",
+        "all_nonnegative_addresses": 4,
+        "positive_addresses": 1,
+        "area_excess": [
+          "0.019860385419",
+          "0.019860385420"
+        ]
+      },
+      "6": {
+        "period": 6,
+        "labels": 4,
+        "denominator": "6",
+        "all_nonnegative_addresses": 6,
+        "positive_addresses": 1,
+        "area_excess": [
+          "0.005702132353",
+          "0.005702132354"
+        ]
+      }
+    },
+    "below_one_over_210": [
+      {
+        "period": 210,
+        "labels": 16,
+        "denominator": "28724741275648",
+        "all_nonnegative_addresses": 210,
+        "positive_addresses": 208,
+        "area_excess": [
+          "0.004754025035",
+          "0.004754025036"
+        ],
+        "excess_at_6": "743/14362370637824",
+        "excess_at_7": "123/7181185318912",
+        "allowed_prime_factors": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      {
+        "period": 2160,
+        "labels": 38,
+        "denominator": "148365350273024",
+        "all_nonnegative_addresses": 2160,
+        "positive_addresses": 2158,
+        "area_excess": [
+          "0.004549369228",
+          "0.004549369229"
+        ],
+        "excess_at_6": "34093/74182675136512",
+        "excess_at_7": "102801/148365350273024",
+        "allowed_prime_factors": [
+          2,
+          3,
+          5
+        ]
+      }
+    ],
+    "node_price": "sum_(k>=2) E(k)/(k*(k^2-1))",
+    "certificate_scope": "All integers via one exact period, with zero drift and balanced reciprocal weights."
+  },
+  "sha256_sources": {
+    "proofs/how-many-square-traces-do-the-primes-need.md": "45a48b72c9e7675e9846e4400fc42373760cce861b02dadaf9d1b3c7fd89f47d",
+    "proofs/which-prime-labels-can-lower-a-divisor-bound.md": "311eeeea9dab4499c2f231fef5447a16df6b755c3085ca865d26a9c41c3ce64b",
+    "pal-rh/two-arrows-and-a-mirror.md": "1586b326e057bc7624195118e75667409ac39da5aa8828faa145ccabf6eb0c72",
+    "pal-rh/PALRH/SquareHoles.lean": "e25f5feb24b2899fc33d2a643908374bf865716099e73d7492b63d75c232adaf",
+    "pal-rh/lakefile.toml": "1706dc24840752fca42d4a2a7356af6f2383da6f68c0102f9aae62fcf461385c",
+    "pal-rh/checks/square-holes/HolesChallenge.lean": "c8b4a37d569cf056b757b26808e127e553ea4b9f23c3852e0cf569625d282cec",
+    "pal-rh/checks/square-holes/HolesSolution.lean": "5448938fe595c3725f74bc832b114c6c30c688c7716721c0d136622401d16e5f",
+    "pal-rh/checks/square-holes/compare.json": "34a6abcd7726e39f5079e56eb72b61ed873e9c18ef20e4bdd017c22824cd66f0",
+    "receipt-archives/check_pal_square_holes.py": "dc81023778bda890cf0d93d65e67e44ce54831a781530138decc073218040773",
+    "receipt-archives/check_pal_periodic_divisor_rows.py": "03d87d6cb0bc567090a8209329e3a73903a6bc23a82e61f9963d40adecf3d7fc",
+    "receipt-archives/periodic_divisor_rows.json": "34919eb353ea5af20816a1ae9530d01cb4d8a20fa5c70afab4d02fa1981f5f7d",
+    "pal-rh/PALRH/PrimeCopies.lean": "b70e13cce04198d899f99ec14cbc0e718944ace52c70e7496084fb0928d18431",
+    "pal-rh/PALRH/DoubledMass.lean": "c06f469a2a71ef805bf6e48532a6e5219af194e5781a40032785f5da8f2b3c74",
+    "pal-rh/PALRH/RulerOmissions.lean": "93dffd53a5596cf0ee0580ba62c713d57dd6427fb86311ce4b12bd93f885e9fb",
+    "pal-rh/PALRH/OneSidedBoard.lean": "d8ffd2aeb3bf8908685788ad1e97edbdd94c127b7e93ee6e316ed5720724fe12",
+    "pal-rh/PALRH/ClockShortfall.lean": "5836c2a69090f0cbe6dc3ec99e7435e62b9e03fc28b7c8c19a60f5c19e3a5728",
+    "proofs/what-a-fourteen-copy-failure-would-force.md": "79e6fca07efa27f537829a0b75f36c5e16680d9d552698803429347fa04a46e9",
+    "proofs/where-fourteen-pays-again.md": "553583ac2622337287e94a5ae9a03ef87caa68d676021df7090f6d0c7c10eb00",
+    "proofs/why-the-old-divisor-rows-have-to-move.md": "4685af62f15dfd2c8d426dbb2a1fd47c78941ef8016bf6f58abaed06a60dddbe",
+    "pal-rh/why-the-doubled-ruler-keeps-seven-eighths.md": "7eabb53144b6f3278f3d16e1a56bf1e1d023b50806c7c1e026829e7bfe1114a1",
+    "receipt-archives/check_pal_doubled_ruler.py": "6a0d6c5401b844f1778e46d729ce6cdf72fd3deca5d51803701994ec241ca379",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c"
+  }
+}

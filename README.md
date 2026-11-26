@@ -24,6 +24,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [Thirteen, fourteen and fifteen copies](proofs/thirteen-fourteen-and-fifteen-prime-copies.md) fixes the same prime product and the same clock in three statements. Sixteen signed divisibility rows prove in stock Lean that 13 fails from index 512 and 15 pays from $40\,000\,000\,000$. The open count is 14.
 
+[How many neighboring squares do the primes need?](proofs/how-many-square-traces-do-the-primes-need.md) At index eight the squares with roots 64 and 65 identify 62 distinct composite positions. One trace misses and two cover the bill. One trace fails arbitrarily late. Whether two eventually suffice is equivalent to ordinary RH. [Sharp limits on divisibility weights built from two primes](proofs/which-prime-labels-can-lower-a-divisor-bound.md)
+
 [What a persistent fourteen-copy failure would force](proofs/what-a-fourteen-copy-failure-would-force.md) shows that one paying head in every sufficiently late $[K,K+K^{0.99}]$ would settle RH. Unbounded failure would create almost-linear failing runs. The [Gaussian argument](proofs/where-fourteen-pays-again.md) currently locates successes in longer windows.
 
 [Why the old divisor rows have to move](proofs/why-the-old-divisor-rows-have-to-move.md) gives an exact frozen-prefix price that the 64-label refit beats. An unbounded sequence of sufficiently inexpensive positive rows would reach RH through the original PAL residue sensors.

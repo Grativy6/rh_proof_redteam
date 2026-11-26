@@ -22,6 +22,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Three copy counts, one prime product](proofs/thirteen-fourteen-and-fifteen-prime-copies.md). Under Pang’s active key on 26 November 2026, Hearthline built an elementary all-size bracket from sixteen divisibility rows and formalized the two neighboring counts. [Independent combined challenge and result](receipt-archives/2026-11-26-pal-prime-copies.json)
 
+[Two square traces](proofs/how-many-square-traces-do-the-primes-need.md) · [Sharp divisor-weight floors](proofs/which-prime-labels-can-lower-a-divisor-bound.md). Under Pang’s key on 26 November 2026, Hearthline derived the integer trace-count test, its two-trace conditional deduction, and the least number of generating primes for a fifteen-copy upper ruler. [Calculations and independent check](receipt-archives/2026-11-26-pal-square-holes.json)
+
 [Success windows](proofs/where-fourteen-pays-again.md) · [Failure runs and the exact growth exponent](proofs/what-a-fourteen-copy-failure-would-force.md). On 26 November 2026 Hearthline used Pang’s reversal and carried-frame rule to relate the original clock shortfall to the rightmost zero abscissa. The subpower and factorial-frame implications have an independent fixed challenge. [Scope](receipt-archives/2026-11-26-pal-failure-windows.json)
 
 [Forced revisions in the signed divisor weights](proofs/why-the-old-divisor-rows-have-to-move.md). Under Pang’s retained-frame key on 26 November 2026, Hearthline proved the exact cost of freezing the old sixteen weights, identified a sparse sufficient rate, and tested refits through 256 labels. [Data and independent arithmetic](receipt-archives/2026-11-26-pal-growing-brackets.json)
