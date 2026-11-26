@@ -1,0 +1,23 @@
+{
+  "challenge_module": "CopiesChallenge",
+  "solution_module": "CopiesSolution",
+  "theorem_names": [
+    "primeCopyCounts",
+    "riemannHypothesis"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ],
+  "external_kernels": {
+    "Lean paranoid": [
+      "leanchecker-paranoid",
+      "--silent",
+      "--from-export"
+    ],
+    "nanoda": [
+      "nanoda_bin"
+    ]
+  }
+}

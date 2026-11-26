@@ -22,6 +22,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [The next full board is paid](proofs/paying-the-next-full-prime-board.md). The original one-thirteenth budget now covers every cut through $2^{88}$ on board 22 and through $2^{91}$ on board 23. The derivation uses the published finite zero height and separately bounds the entire high-zero tail.
 
+[Thirteen, fourteen and fifteen copies](proofs/thirteen-fourteen-and-fifteen-prime-copies.md) fixes the same prime product and the same clock in three statements. Sixteen signed divisibility rows prove in stock Lean that 13 fails from index 512 and 15 pays from $40\,000\,000\,000$. The open count is 14.
+
 [The seventh that stays at the boundary](proofs/one-seventh-at-the-boundary.md) gives an elementary all-size price for a moved prime count. Every finite row has integral zero, and summing the rows first leaves exactly $1/7$. One integer comparison using only first powers of primes between $n^{7/8}$ and $2n$ would imply ordinary RH. It holds for every fourth-power index through $2^{36}$.
 
 One endpoint move per doubling bounds the averaged prime area at all scales. At $x=(2^{37})^4$ the actual crossed prime powers repay more than three quarters of the variance charge. The one-tenth test now holds through $2^{150}$ and the separate filtered subset comparison through $2^{158}$. [Begin at the square of 2](proofs/moving-the-endpoint-of-a-prime-area.md) · [Where the crossings pay](proofs/when-crossed-prime-powers-pay-the-tenth.md)

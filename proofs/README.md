@@ -20,6 +20,8 @@ The papers state their own conclusions and the scope of their application to the
 
 [Paying the next full prime board](paying-the-next-full-prime-board.md) proves the complete index-22 comparison and the first half of index 23 using the finite critical-line height and independent upper bounds for the tail and smoothing.
 
+[Thirteen, fourteen and fifteen copies of the same prime product](thirteen-fourteen-and-fifteen-prime-copies.md) gives an unbounded, elementary Lean proof for both neighboring counts. The two 16-entry rows have a finite check followed by a linear bound on the entire tail.
+
 [The seventh that stays at the boundary](one-seventh-at-the-boundary.md) gives the location and mass of a real boundary term, a positive two-times-size ruler, and a sharp $7/8$ exponent for removing early primes from its RH criterion.
 
 [Moving the endpoint](moving-the-endpoint-of-a-prime-area.md) traces half a $\log2$ to its source at the first square and bounds the adaptive centered reading at every scale. [When crossed prime powers pay the tenth](when-crossed-prime-powers-pay-the-tenth.md) proves the actual repayment through $2^{150}$ with a second observation of the same primes.

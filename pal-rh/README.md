@@ -12,6 +12,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [The next full board](../proofs/paying-the-next-full-prime-board.md) · [Finite head specialization](PALRH/FiniteHorizon.lean) · [Numerical inputs and margins](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
+[The unconditional 13/15 comparisons](../proofs/thirteen-fourteen-and-fifteen-prime-copies.md) · [Two ordinary integer tables](PALRH/DivisorBracket.lean) · [Fixed neighboring counts and 14-copy implication](checks/prime-copies/CopiesChallenge.lean)
+
 [The doubled ruler and its boundary mass](../proofs/one-seventh-at-the-boundary.md) · [Full proof and finite prices](why-the-doubled-ruler-keeps-seven-eighths.md) · [Independent prime-only comparison](checks/doubled-ruler/RulerChallenge.lean)
 
 [Moving a prime-area endpoint](../proofs/moving-the-endpoint-of-a-prime-area.md) · [Paying with the crossed prime powers](../proofs/when-crossed-prime-powers-pay-the-tenth.md) · [Exact crossing and conditional Lean transfer](PALRH/MovingEndpoint.lean) · [Arithmetic through the two new cutoffs](../receipt-archives/2026-11-26-pal-crossing-refund.json)

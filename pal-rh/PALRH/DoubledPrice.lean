@@ -6,7 +6,7 @@ noncomputable section
 namespace PALRH.DoubledPrice
 open DoubledRuler LinearPrimeIntegral QuarticBoards
 
-private def potential (N m : ℕ) : ℝ := (m:ℝ)*((N:ℝ)-m)^6
+def potential (N m : ℕ) : ℝ := (m:ℝ)*((N:ℝ)-m)^6
 
 /-- The derivative weight exceeds the exact finite difference by at most
 six units after the common fifth-power denominator is removed. -/
@@ -28,7 +28,7 @@ private theorem ink_le_step {N m : ℕ} (pos : 0 < m) (cap : m ≤ N) :
     show (7*(m:ℝ)-N)=6*m-t by dsimp [t]; ring]
   nlinarith only [weighed, f]
 
-private theorem log_steps (N L : ℕ) :
+theorem log_steps (N L : ℕ) :
     (∑ m ∈ Icc 1 L, (potential N (m-1)-potential N m)*Real.log m) =
     (∑ m ∈ Icc 1 L, potential N m*(Real.log ((m:ℝ)+1)-Real.log m)) -
       potential N L * Real.log ((L:ℝ)+1) := by
@@ -89,7 +89,7 @@ theorem ordinary_price (N : ℕ) :
   simp [potential] at sums sumSteps cap
   linarith only [sums,sumSteps,cap]
 
-private theorem prime_log_le_all (n : ℕ) :
+theorem prime_log_le_all (n : ℕ) :
     Real.log (primeSettings n : ℝ) ≤
       ∑ d ∈ Icc 1 (2*n), ArithmeticFunction.vonMangoldt d * (extra n d:ℝ) := by
   classical

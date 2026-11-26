@@ -1,0 +1,273 @@
+{
+  "parent_public_research_commit": "146988bfd8c5e6bdefc35c56bf4bec9404b91474",
+  "parent_tree": "308b64838389c172f37ed6234a66213845c769c9",
+  "contributors": "Christopher Daniel Pang supplied the carried residue, shared original frame, and integer-clock research program. Hearthline designed and optimized the individual signed integrated divisor rows, derived their unbounded elementary bounds, and proved and checked both neighboring clocks. Diamond-Erdos is cited as historical context for finite elementary estimates of the ordinary prime count.",
+  "paper_scope": "For the same fixed G_n, thirteen copies fail at every k>=512, and fifteen suffice at every positive k after combining the new elementary late theorem with the prior contiguous finite head. Fourteen eventually suffices if and only if RH on paper. The specific first unrepresented prime, 17, forces a remaining kink in the finite upper array. The all-late result at 14 remains open.",
+  "formal_scope": "In one independently compared inert export, primeCopyCounts has no additional mathematical premise and proves failure at 13 from 512 and payment at 15 from 40 billion. The other submitted declaration derives stock RH from the exactly fixed additional eventual 14-copy premise. No zero-location, PNT or external prime-count data are inputs to the formal neighboring proof. Both declarations use the three permitted foundational axioms. Testing the identical submission under the bare stock RH specification detects the missing bare conclusion.",
+  "review": {
+    "kind": "author self-review with integer rederivation, two independent exports and three kernel comparisons",
+    "arrays": "Each list has zero total. Direct arithmetic through quotient 200 and a strict linear tail from 201 cover every integral quotient. Positive slopes are 8 and 18, doubled excesses are bounded for the entire tail. Linear interpolation preserves the actual quotient remainder at nonintegral inputs.",
+    "pricing": "The divisor sum groups to log(m) on the same ordinary integer. The floor-grid error is paid from j*floor(v/j)-v and the total variation of the sampled linear log reading. The full elementary area fit uses the constants 62/125 and 63/125 with an explicit logarithmic fee.",
+    "neighbors": "Full source arithmetic, positivity and coarse upper prices for the nonnegative omitted returns are all native Lean derivations. At 13 the upper available return is below demand. At 15 the retained return after genuine nonprime and small-label debits exceeds demand for the stated index range.",
+    "exports": "The new challenge fixes both theorem names independently using only stock imports. The challenge placeholders are specifications. All solution modules are free of declarations assuming RH, admitted proofs, or the other release.",
+    "historical": "The Diamond-Erdos paper was consulted after the two actual coefficient arrays had been found. It provides context, not validation or a construction input. Mathematical priority and external author review are unestablished."
+  },
+  "primary_sources": {
+    "historical_comparison": "https://www.renyi.hu/~p_erdos/1981-11.pdf"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3857
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.DivisorBracket",
+      "exit": 0,
+      "seconds": 14.5,
+      "output": ""
+    },
+    {
+      "module": "PALRH.DivisorEconomy",
+      "exit": 0,
+      "seconds": 13.3,
+      "output": ""
+    },
+    {
+      "module": "PALRH.AreaBracket",
+      "exit": 0,
+      "seconds": 15.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RulerFloor",
+      "exit": 0,
+      "seconds": 15.1,
+      "output": ""
+    },
+    {
+      "module": "PALRH.RulerOmissions",
+      "exit": 0,
+      "seconds": 13.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.PrimeCopies",
+      "exit": 0,
+      "seconds": 13.7,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.DivisorBracket.upper_address": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DivisorBracket.lower_address": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DivisorBracket.enclose_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.RulerFloor.ordinary_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DivisorEconomy.upper_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DivisorEconomy.lower_all": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.DivisorEconomy.mixture_price": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AreaBracket.upper_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AreaBracket.lower_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.AreaBracket.raw_box": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeCopies.thirteen_fail": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.PrimeCopies.fifteen_pay": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "linux_comparator": "4.36.0"
+  },
+  "fixed_check": {
+    "independent_exports_match": true,
+    "exports": {
+      "challenge": {
+        "bytes": 347337185,
+        "sha256": "963de086c86132327c1894979ed93582cf301365a8cb609486ad8b491b544dda"
+      },
+      "solution": {
+        "bytes": 449588520,
+        "sha256": "92492abf752a83948b68318be096e96927e3cbe2bedc561b486707e4224645db"
+      }
+    },
+    "linux_verdict": {
+      "exit": 0,
+      "seconds": 140.86,
+      "output": "Running Lean paranoid kernel on solution\nLean paranoid kernel accepts the solution\nRunning nanoda kernel on solution\nnanoda kernel accepts the solution\nRunning Lean default kernel on solution\nLean default kernel accepts the solution\nYour solution is okay!\n"
+    },
+    "same_submission_against_bare_stock_rh": {
+      "exit": 1,
+      "seconds": 15.26,
+      "output": "error: Challenge and solution theorem statement do not match: 'riemannHypothesis'\n",
+      "challenge_sha256": "bd484ac9886a96f26b1d9a7a59ebd45b7a70d102c015d4f31f9302bbdd6ab2b9",
+      "same_solution_sha256": "92492abf752a83948b68318be096e96927e3cbe2bedc561b486707e4224645db"
+    }
+  },
+  "calculation": {
+    "upper": {
+      "coefficients": [
+        102,
+        -51,
+        -34,
+        0,
+        -20,
+        17,
+        -15,
+        1,
+        0,
+        8,
+        -8,
+        0,
+        0,
+        4,
+        -1,
+        -3
+      ],
+      "normalizer": 102,
+      "sum": 0,
+      "first_moment": -212,
+      "absolute_second_moment": 6068,
+      "end_of_direct_test": 200,
+      "tail_slope": 8,
+      "four_times_tail_margin_at_201": 1180,
+      "sampled_address_excess_at_16_17_18": [
+        102,
+        1,
+        2
+      ],
+      "slope_kink_at_missing_17": 102,
+      "absolute_sampling_price": 2724,
+      "leading_area_interval": [
+        "0.503791423906",
+        "0.503791423907"
+      ]
+    },
+    "lower": {
+      "coefficients": [
+        -198,
+        99,
+        66,
+        0,
+        40,
+        -29,
+        21,
+        3,
+        0,
+        -9,
+        0,
+        7,
+        11,
+        -8,
+        -6,
+        3
+      ],
+      "normalizer": 198,
+      "sum": 0,
+      "first_moment": 378,
+      "absolute_second_moment": 11906,
+      "end_of_direct_test": 200,
+      "tail_slope": 18,
+      "four_times_tail_margin_at_201": 982,
+      "sampled_address_excess_at_16_17_18": [
+        112,
+        293,
+        276
+      ],
+      "slope_kink_at_missing_17": -198,
+      "absolute_sampling_price": 5118,
+      "leading_area_interval": [
+        "0.496190508937",
+        "0.496190508938"
+      ]
+    },
+    "proved_integer_comparisons": {
+      "thirteen_fails_from": 512,
+      "fifteen_pays_from": 40000000000,
+      "fourteen_eventual_implies": "stock Mathlib RiemannHypothesis"
+    },
+    "unconditional_area_leading_range": [
+      "62/125",
+      "63/125"
+    ],
+    "ordinary_sampling_error_per_side": "32 n log(n+1)",
+    "unseen_prime": 17
+  },
+  "historical_source_hash": {
+    "historical_comparison": {
+      "url": "https://www.renyi.hu/~p_erdos/1981-11.pdf",
+      "sha256": "6b79630756dd57b8be8f6908d49c2488c33fddc4cf4b9913173bf85fa78ac374",
+      "bytes": 855348,
+      "role": "Historical context for finite elementary prime bounds. Not used to prove either signed array or the prime clock estimates."
+    }
+  },
+  "sha256_sources": {
+    "proofs/thirteen-fourteen-and-fifteen-prime-copies.md": "d1087ff91b044972a734738e018b3ba11194f99a512b7e55ace28b38119d450d",
+    "pal-rh/PALRH/DivisorBracket.lean": "c3e930c8e2e6ed9fae0dd31e2b08e76b9ed681a6adc3cf3e285e4f7bc48fad0c",
+    "pal-rh/PALRH/DivisorEconomy.lean": "db19f2d9709cbaa5b674bb3dc04eb06538e945295bd10a973c378cf2af666e24",
+    "pal-rh/PALRH/AreaBracket.lean": "d7c1ac9f6fbed2c49fd1845fde41800bbdf95837a58e9b23434d8d94c5da18fd",
+    "pal-rh/PALRH/RulerFloor.lean": "8806afad9b560fa29de85272d9e737212f666f4c85fa83a5114bff70e94514aa",
+    "pal-rh/PALRH/RulerOmissions.lean": "2758286e75097a6a377dd153006a1edb88a2cac753f11a281079adc6b877522f",
+    "pal-rh/PALRH/PrimeCopies.lean": "1c8b20c65724258bea04e04e2bd472735b7e4914e5cf088ecd8ddca0a0dbd10c",
+    "pal-rh/PALRH/DoubledPrice.lean": "7bdb17fd4a59d981b3565f2d898e427e24684abdc5348b01de67bc699d12d4b9",
+    "pal-rh/lakefile.toml": "a0fc88328b049f2a87776377ce3a593fac99a0f3a348c850b5965960befd0fb1",
+    "pal-rh/checks/prime-copies/CopiesChallenge.lean": "1e14433c1759936d1d542ade20aceaadf80599751ed8abab917edc4fd40f7bb1",
+    "pal-rh/checks/prime-copies/CopiesSolution.lean": "287d352438d708907608ae875d5eeef387de53e8183769ef27444ed2ed1e9d50",
+    "pal-rh/checks/prime-copies/compare.json": "de6ee6dfc36e929293a00e3bdf98cb396235f15decaa3fa9323350b579d4f7cb",
+    "receipt-archives/check_pal_divisor_brackets.py": "265246c0454735a4398938efff03f1c9d47275ee94159f28c134c9da39f6b94c",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_moving_endpoint.py": "44aea7f93d27ae0c07b09dc286c66e6ba67035d03dc27a28ef92b9ec46f93579",
+    "pal-rh/PALRH/DoubledRuler.lean": "86c1f5556f76075f5579881f2585efbce8f353805e7e1d638c5db23f2c386baf",
+    "pal-rh/PALRH/DoubledMass.lean": "c06f469a2a71ef805bf6e48532a6e5219af194e5781a40032785f5da8f2b3c74",
+    "proofs/one-seventh-at-the-boundary.md": "da34ef09ec2668ced6ddfdb6d520f2e791d4bb496fcae1f91fca08b95120828c",
+    "receipt-archives/2026-11-26-pal-doubled-ruler.json": "2763d9e83a44b72186e4aaeb3be0bfd84e3d7f7808d29ba0871c657dcdc8e610"
+  }
+}
