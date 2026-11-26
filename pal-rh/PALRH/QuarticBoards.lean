@@ -7,10 +7,12 @@ noncomputable section
 namespace PALRH.QuarticBoards
 open LinearPrimeIntegral PrimeBoard
 
-private def extended (B : ℕ) (x : ℝ) :=
+/-- The area of the prime-power ramps with labels through the fixed cutoff. -/
+def extended (B : ℕ) (x : ℝ) :=
   ∑ k ∈ Icc 1 B, ArithmeticFunction.vonMangoldt k * max 0 (x-k)
 
-private theorem extended_integer {n B : ℕ} (hn : n≤B) : extended B n=fullWalk n := by
+/-- At an integer head all additional labels have zero height. -/
+theorem extended_integer {n B : ℕ} (hn : n≤B) : extended B n=fullWalk n := by
   calc
     extended B n = ∑ k ∈ Icc 1 n, ArithmeticFunction.vonMangoldt k * max 0 ((n:ℝ)-k) := by
       unfold extended

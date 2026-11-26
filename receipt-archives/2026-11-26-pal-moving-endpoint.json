@@ -1,0 +1,167 @@
+{
+  "parent_public_research_commit": "1f509afeb923c6b6e81d800d6b1dbf2f8380c892",
+  "parent_tree": "4d1d3f747ab09ff7de9c6a223e55aa44767f44b6",
+  "contributors": "Christopher Daniel Pang supplied the retained boundary, common unit and actual-prime program in PAL, RPL and BLA. Hearthline derived the prime crossing refund, the fixed and adaptive mean-preserving convolution bounds and the finite subset prices. Johnston, Platt and Trudgian, and Brent, Platt and Trudgian supply the cited independent analytic inputs.",
+  "paper_scope": "For r=ceil(log2 x) normalized uniform log shifts, the centered integrated von Mangoldt measurement is little-o of x^(3/2) unconditionally. The unpaid crossing cost at most k^6/10 at every fourth-power head k>=20 is equivalent to ordinary RH. The finite fixed-tenth charge is covered through x=2^145. Separately the raw subset product comparison holds untrimmed through 2^154 and square-root-filtered through 2^156, paying the existing fixed statement at all indices k<=2^39. The universal crossing charge is open.",
+  "formal_scope": "Stock Lean derives the exact finite sum of crossed labelled ramps, the inequality and the exact identity at the mean of a probability measure, and the ordinary RH implication from two common bounds on the centered area and unpaid crossing price. The adaptive analytic estimate, numerical endpoints and finite-height source are supplied on paper. No bare stock RH derivation is claimed. The earlier fixed subset challenge remains the comparison to which the finite head is returned.",
+  "review": {
+    "kind": "author self-review, arithmetic re-evaluation and native module replay",
+    "spectral": "The finite zero theorem is used only through 3e12. Both signs and multiplicities are included in the ordinate sums. For higher zeros use only 0<beta<1. Every term in the integrated explicit formula is accounted for, including normalization at y=2.",
+    "all_scales": "The centered average is measured in units of the original x^(3/2). A strict low-frequency contraction follows from gamma>4 and |h gamma|<=2, independent of the increasing second moment. At high frequencies sqrt(x)*alpha^r -> 0. The elementary term is between -2x and 0. No RH premise is used to prove this estimate.",
+    "reverse": "RH enters only in the necessity proof of the fixed tenth. The adaptive upper bound and the proposed crossing comparison independently supply the two inputs of the forward implication. The ordinary density asymptotic controls only the larger x^2 scale of the unpaid quantity.",
+    "finite": "Pointwise Jensen upper bound is valid throughout every stated interval. Each numerical bound in (2) increases with the square root of the head. The repeated powers and the small first-power prime labels are separate credits. The finite head and high-precision numerical repeats are reproducible in the archived script.",
+    "early": "Every integer through 65536 is covered by outward enclosures for the Pascal recurrence and untrimmed prime area. Direct multiplication repeats the first 64. The early theta inequalities imply the integral sign for real endpoints between integers.",
+    "boundary": "k=30 and k=32 give opposite signs for the unpaid crossing amount while satisfying its finite threshold. The decimal late-head controls price the estimated envelope or the gross variance and do not exhibit a failing arithmetic head.",
+    "independence": "The conjecture-specific release and the separate APCI worktree are not inputs. Novelty against the literature and external mathematical review are unestablished."
+  },
+  "primary_sources": {
+    "finite_height": "https://arxiv.org/abs/2004.09765",
+    "spectral_prices": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+    "integrated_explicit_formula_and_prime_powers": "https://arxiv.org/pdf/2201.06184v2"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3848
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.MovingEndpoint",
+      "exit": 0,
+      "seconds": 11.8,
+      "output": ""
+    },
+    {
+      "module": "PALRH.QuarticBoards",
+      "exit": 0,
+      "seconds": 11.9,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.MovingEndpoint.exact_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.at_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.mean_with_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.rh_of_crossing_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "height": 3000000000000,
+    "log_width": "2/T",
+    "passes": 45,
+    "mass_both_signs_upper": "0.04621",
+    "unrestricted_tail_mass_upper": "10/T",
+    "two_endpoint_twice_excess": {
+      "log2": 1,
+      "log3": 0
+    },
+    "small_boards": {
+      "range": [
+        1,
+        65536
+      ],
+      "least_proved_log_margin_after_one_at": 2,
+      "least_margin_lower_endpoint": "0.6931471805",
+      "theta_strictly_below_head_through": 65536,
+      "direct_integer_product_repeat_through": 64
+    },
+    "adaptive": {
+      "opposite_signed_heads": {
+        "positive": 810000,
+        "negative": 1048576
+      },
+      "passes_at_x": "ceil(log2(x))",
+      "centered_upper_in_x_to_three_halves_units": "0.04622",
+      "centered_normalized_limit": 0,
+      "worth_of_one_high_pass_at_most": "0.500000000001",
+      "time_dependent_low_pass_saving_at_least": "h^2/4 per factor in its modulus bound",
+      "lower_index_in_fixed_tenth_test": 20,
+      "gross_variance_covers_all_real_heads_through": 44601490397061246283071436545296723011960832,
+      "upper_at_that_head_using_a_rational_square_root_bound": "0.076082571113",
+      "gross_variance_above_one_tenth_at": 89202980794122492566142873090593446023921664
+    },
+    "upper_prime_power_area_excess_in_x_to_three_halves_units": {
+      "154": {
+        "curvature_upper": "0.503719091507",
+        "low_zeros_upper": "0.046210000001",
+        "high_zeros_upper": "0.014316557655",
+        "sum_upper": "0.564245649161",
+        "decimal_repeat": [
+          "0.503719091506",
+          "0.046210000000",
+          "0.014316557653"
+        ]
+      },
+      "156": {
+        "curvature_upper": "1.007438183013",
+        "low_zeros_upper": "0.046210000001",
+        "high_zeros_upper": "0.028633115309",
+        "sum_upper": "1.082281298321",
+        "decimal_repeat": [
+          "1.007438183012",
+          "0.046210000000",
+          "0.028633115307"
+        ]
+      }
+    },
+    "every_untrimmed_head_through": 22835963083295358096932575511191922182123945984,
+    "every_sqrt_trimmed_head_through": 91343852333181432387730302044767688728495783936,
+    "every_fourth_power_index_through": 549755813888,
+    "next_exponent_control": {
+      "exponent": 158,
+      "same_envelope_upper": "2.118352596642",
+      "meaning": "The evaluated upper bound exceeds the two credits used here."
+    }
+  },
+  "cached_primary_source_hashes": {
+    "height": {
+      "url": "https://arxiv.org/pdf/2004.09765v1",
+      "bytes": 133056,
+      "sha256": "3362f66af9fa9373977eee70e2282ec33989d5d8b97e0852df9e32cc25b52885"
+    },
+    "ramps": {
+      "url": "https://arxiv.org/pdf/2201.06184v2",
+      "bytes": 162473,
+      "sha256": "75bc30df5b939e57e1cefef216e5e252f7fb29cdc9dfb5b5403f8c5f26ebcd74"
+    },
+    "ordinate_sum": {
+      "url": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+      "bytes": 179034,
+      "sha256": "f63d2fb8fc736f32b93bd0080a5003cc1dd6695e109e0e7534729a32641b133e"
+    }
+  },
+  "sha256_sources": {
+    "proofs/moving-the-endpoint-of-a-prime-area.md": "f17fba80afe75123758f24556e33f5f6cd510dc08db6cbd189de53dfa3073a6f",
+    "pal-rh/PALRH/MovingEndpoint.lean": "8e3ca0c0e72336933ccfc1490c68c956fc3301b07ec24eb620572e67200b56a3",
+    "pal-rh/PALRH/QuarticBoards.lean": "82fabe783e107c22604df3e8b2ac64e3a206003d149774641aba0b7b9e611688",
+    "pal-rh/lakefile.toml": "2df76b2bd97dedfb3692dd5bb69b20bd1095f7284d3b68f452459a34e83018a1",
+    "receipt-archives/check_pal_moving_endpoint.py": "44aea7f93d27ae0c07b09dc286c66e6ba67035d03dc27a28ef92b9ec46f93579",
+    "receipt-archives/check_pal_dyson_window.py": "0f10cca2449646d3bc702f6fc8022f1e077f65d94141dd617c14c2aba193727c",
+    "receipt-archives/check_pal_single_parent.py": "ae5056db77c4dc9432c5baaa518a9b9d93ba7d3d9ea6d838d23e53f00298c4c2",
+    "pal-rh/PALRH/OneSidedBoard.lean": "d8ffd2aeb3bf8908685788ad1e97edbdd94c127b7e93ee6e316ed5720724fe12",
+    "pal-rh/PALRH/PascalBoard.lean": "bd4ae54a9b1c6de45edacfe00875c1cf23a554178328f1943126a55e3cf9a129",
+    "pal-rh/checks/one-subset/OneSubsetChallenge.lean": "4d70216924befa01768983f6cdf93ec3982e8751c85b2c689cf70972ca89506a",
+    "receipt-archives/2026-11-26-pal-one-subset.json": "5f99c7c277efb6a02d007fdcace8fced6eca83d69d930deb55dabb07b4ba725e"
+  }
+}

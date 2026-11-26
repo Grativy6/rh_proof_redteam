@@ -20,6 +20,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Paying the next full prime board](proofs/paying-the-next-full-prime-board.md). Under Pang’s active construction key, Hearthline evaluated the smoothing and unrestricted-tail costs against the original fixed budget on 26 November 2026. [Finite numerical derivation](receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
+[Moving the endpoint of the actual prime area](proofs/moving-the-endpoint-of-a-prime-area.md). On 26 November 2026 Hearthline used Pang’s retained-boundary question to derive an all-scale smoothed bound, a fixed-tenth crossing criterion, and the square-root-filtered subset comparison through $2^{156}$. [Range and source record](receipt-archives/2026-11-26-pal-moving-endpoint.json)
+
 [Prime-lane Fourier polynomial and a slow modular arc](proofs/a-square-root-signal-that-forgets-a-turn.md). Under Pang’s carried-frame question, Hearthline separated a sharp unconditional root-scale observation from the whole-turn quantity needed for RH, 26 November 2026.
 
 [Formal one-sided pocket and physical assignment](proofs/why-either-side-of-the-pocket-is-enough.md). Under Pang’s active key on 26 November 2026, Hearthline proved both orientations separately from the alternating divisor sums. [Check and bare comparison](receipt-archives/2026-11-26-pal-signed-pocket.json)

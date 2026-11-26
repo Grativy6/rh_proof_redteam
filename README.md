@@ -22,6 +22,8 @@ Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md
 
 [The next full board is paid](proofs/paying-the-next-full-prime-board.md). The original one-thirteenth budget now covers every cut through $2^{88}$ on board 22 and through $2^{91}$ on board 23. The derivation uses the published finite zero height and separately bounds the entire high-zero tail.
 
+One mean-preserving endpoint move per doubling gives an all-scale bound on the averaged prime area. The return to the original endpoint costs exactly the variance still unpaid by the prime powers crossed. The remaining local test has a fixed one-tenth allowance. The same method pays the separate factorial-filtered subset comparison through $2^{156}$. [Start at the square of 2](proofs/moving-the-endpoint-of-a-prime-area.md)
+
 [A square-root signal that forgets a turn](proofs/a-square-root-signal-that-forgets-a-turn.md) proves unconditional cancellation for the fast lane polynomial, then adds one full column at each genuine prime without changing a coefficient. The slower modular reading detects the altered bill.
 
 [Either side of the pocket](proofs/why-either-side-of-the-pocket-is-enough.md) now reaches stock RH in Lean independently. In particular a map assigning every arriving tick a distinct cell by its arrival cut is sufficient. Its all-board existence is the open mathematical input.
