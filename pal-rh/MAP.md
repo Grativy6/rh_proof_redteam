@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [Positive large-prime surplus](../proofs/why-one-large-prime-leaves-nine.md) · [Ordinary zeta slope](PALRH/LargePrimeSurplus.lean) | The eligible family carries $+9L/\log^2Y$ to leading order. Its macroscopic complement carries the opposite term. A single positive semiprime family eventually supports all remaining five moments of the eligible family. |
 | [Pointwise price signs](../proofs/where-an-integer-label-can-go-quiet.md) · [Cofactor transport at 2663](what-2663-carries-between-frames.md) · [Lean](PALRH/PriceSign.lean) | The actual price vanishes precisely at divisors and the outer endpoint. Four cofactor groups on one fourth-power block leave their combined residual on a single group. |
 | [Five moments on actual marks](../proofs/which-prime-labels-cancel.md) · [Fourth-power blocks](how-much-can-travel-with-a-prime.md) · [Lean](PALRH/PrimeTransport.lean) | Every prime in the trillion sector is funded. An all-scale allocation carries a cofactor smaller than a fixed power up to exponent $11/26$ with little-$o$ square-root cost. |
 | [Central reflection](../proofs/what-the-central-mirror-earns.md) · [Lean derivation](PALRH/CentralMirror.lean) | A local change at 5 gives an exact off-center cancellation while preserving reflection in the altered completion. A second pair agrees on all primes and any prescribed finite head. |

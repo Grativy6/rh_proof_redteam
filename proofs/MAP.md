@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[The large-prime surplus and its complementary deficit](why-one-large-prime-leaves-nine.md). Pang’s cofactor question led Hearthline to the first surviving logarithmic term, with coefficient 9 in the physical stream and 3 in the raw stream. The independent finite tests include sign changes and a failed supply at $2663^4$.
+
 [Arithmetic locations of vanishing prices](where-an-integer-label-can-go-quiet.md) · [Changing the cofactor](../pal-rh/what-2663-carries-between-frames.md). Pang suggested 2663 and asked to try both directions. Hearthline derived the two-head sign rule, checked the integer census and allocated four whole cofactor groups on one block.
 
 [Six-point prime transport and the trillion-sector census](which-prime-labels-cancel.md) · [A prime with a growing cofactor](../pal-rh/how-much-can-travel-with-a-prime.md). Pang’s retained-frame and sign questions led Hearthline to allocate actual marks across five moments on 25 November 2026.

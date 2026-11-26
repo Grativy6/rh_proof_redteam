@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+One large prime and its smaller cofactor produce a signed surplus with leading coefficient **+9**. The complementary integers carry the opposite leading term in the same sector. At one trillion the two measured contributions are about +8.55 million and −8.59 million. [Why one large prime leaves nine](proofs/why-one-large-prime-leaves-nine.md)
+
 At any positive integer head, the two-head price vanishes exactly at the divisors and the final endpoint. Applying the rule to the same physical labels at two scales shows how 2663 reverses their signed contribution. [Where an integer label can go quiet](proofs/where-an-integer-label-can-go-quiet.md) · [2663 in both directions](pal-rh/what-2663-carries-between-frames.md)
 
 The six integers from 83 to 143 give a hand calculation for how actual prime marks can cancel. At side one trillion the construction accounts for 10.59% to 10.62% of one sector’s total absolute cost. [Which prime labels cancel?](proofs/which-prime-labels-cancel.md)

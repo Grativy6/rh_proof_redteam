@@ -6,6 +6,8 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [Averaging, the whole-square estimate and exact backward differences](averaging-the-square.md) · [Read the current square calculation](the-signed-matrix-inside-a-square.md) · [Absolute prime-depth allowance](where-prime-depth-can-stop.md) · [First new cofactor](what-the-fifth-boundary-needs.md)
 
+[Why one large prime leaves nine](../proofs/why-one-large-prime-leaves-nine.md) · [The generating function at one](PALRH/LargePrimeSurplus.lean)
+
 [Where an integer label can go quiet](../proofs/where-an-integer-label-can-go-quiet.md) · [What 2663 carries between frames](what-2663-carries-between-frames.md)
 
 [Which prime labels cancel?](../proofs/which-prime-labels-cancel.md) · [How much can travel with a prime?](how-much-can-travel-with-a-prime.md)
