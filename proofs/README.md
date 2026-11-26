@@ -20,7 +20,7 @@ The papers state their own conclusions and the scope of their application to the
 
 [Paying the next full prime board](paying-the-next-full-prime-board.md) proves the complete index-22 comparison and the first half of index 23 using the finite critical-line height and independent upper bounds for the tail and smoothing.
 
-[How far moving the endpoint pays for the real primes](moving-the-endpoint-of-a-prime-area.md) traces half a $\log 2$ to its source at the first square. One extra move per doubling bounds the centered average at all scales. The actual crossed prime powers determine the outstanding one-tenth comparison.
+[Moving the endpoint](moving-the-endpoint-of-a-prime-area.md) traces half a $\log2$ to its source at the first square and bounds the adaptive centered reading at every scale. [When crossed prime powers pay the tenth](when-crossed-prime-powers-pay-the-tenth.md) proves the actual repayment through $2^{150}$ with a second observation of the same primes.
 
 [A square-root signal that forgets a whole turn](a-square-root-signal-that-forgets-a-turn.md) gives a sharp root-of-arrival-count order, an exact indistinguishable altered stream, and a quantitative primorial leading-digit corollary.
 

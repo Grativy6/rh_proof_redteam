@@ -103,6 +103,19 @@ theorem mean_with_return {n B : ℕ} (cap : n ≤ B) (X : Ω → ℝ) (hx : Inte
       integral_congr_ae (ae_of_all _ fun w => exact_return cap (X w))
     _ = _ := by rw [integral_add line cross, value]
 
+/-- A second mean-preserving observation lower-bounds the actual crossings of the
+first. The two observations may keep different upper cutoffs for their labels. -/
+theorem refund_by_comparison {n B H : ℕ} (first : n ≤ B) (second : n ≤ H)
+    (X Y : Ω → ℝ) (hx : Integrable X μ) (hy : Integrable Y μ)
+    (mx : ∫ w, X w ∂μ = (n:ℝ)) (my : ∫ w, Y w ∂μ = (n:ℝ))
+    (cross : Integrable (fun w => crossed B n (X w)) μ)
+    (area : Integrable (fun w => extended H (Y w)) μ) :
+    (∫ w, extended B (X w) ∂μ) - (∫ w, extended H (Y w) ∂μ) ≤
+      ∫ w, crossed B n (X w) ∂μ := by
+  have paid := at_mean (μ:=μ) second Y hy my area
+  have exactValue := mean_with_return (μ:=μ) first X hx mx cross
+  linarith only [paid, exactValue]
+
 /-- At fourth powers use the centered moved area and the variance still unpaid
 after actual prime crossings. Shrinking the moved variance is unnecessary. -/
 theorem rh_of_crossing_credit (K : ℕ) {C D : ℝ} (cn : 0 ≤ C) (dn : 0 ≤ D)
@@ -126,6 +139,7 @@ theorem rh_of_crossing_credit (K : ℕ) {C D : ℝ} (cn : 0 ≤ C) (dn : 0 ≤ D
 #print axioms PALRH.MovingEndpoint.exact_return
 #print axioms PALRH.MovingEndpoint.at_mean
 #print axioms PALRH.MovingEndpoint.mean_with_return
+#print axioms PALRH.MovingEndpoint.refund_by_comparison
 #print axioms PALRH.MovingEndpoint.rh_of_crossing_credit
 
 end PALRH.MovingEndpoint

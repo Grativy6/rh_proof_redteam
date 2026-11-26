@@ -1,0 +1,169 @@
+{
+  "parent_public_research_commit": "43a20fb3ef1609ae59eb1802aff25ecb2f76b30f",
+  "parent_tree": "809953cc416f315f2f3eee2d18468f9519b749a6",
+  "contributors": "Pang supplied the shared-frame comparison and the actual returned-prime question within PAL/RPL/BLA. Hearthline developed the second log-window, proved its spectral and arithmetic bounds, and derived a quantitative repayment on actual crossed prime powers. Published primary inputs are attributed in the paper.",
+  "paper_scope": "For each 4<=x<=2^150 the true variance still unpaid by crossings is at most x^(3/2)/10. At x=2^148 the crossed prime powers repay more than three quarters of the original variance charge. The untrimmed Pascal comparison and integrated Chebyshev sign hold through 2^155, and the correctly filtered subset comparison through 2^158. The universal fixed-tenth statement is open.",
+  "formal_scope": "Lean derives a lower bound on the actual first distribution's crossing integral from the difference of two observations of the same prime-power area with the same mean. These observations may have distinct finite label cutoffs. The arithmetic and analytic numerical specializations are paper results using the named finite-height and prime-count inputs.",
+  "review": {
+    "type": "author review with independent direct prime error cross-check",
+    "variance": "The 21-move variance is charged in (1), while the claimed actual repayment is subtracted from the 148-move original variance. The three-quarter lower bound follows by comparing the upper unpaid amount to one quarter of the lower gross amount.",
+    "high_zeros": "The bound on the real sinc for v>=51/20 is extended to complex beta with the separate sinh(real) correction. No critical-line input is applied above T.",
+    "shared_zeros": "The same x^(i gamma) appears in both readings. Reciprocal-square weights are differenced only for the same low ordinates. Above 100000 through the finite height use each multiplier at most one. The linear and constant parts of the elementary remainder cancel at the common mean.",
+    "small_and_large": "The earlier proof covers all heads through 2^145 in the tenth test. Monotone envelopes then cover the continuum through 2^150. The square-root cutoff and removal of repeated powers are independent credits for the separate Pascal test.",
+    "independent_prime_check": "At 2^146 and 2^147 the source relative psi bounds on every intermediate endpoint combine with a rational inclusion-exclusion evaluation of the exact first absolute moment of the sum of uniform widths. This method does not use the new common-frequency comparison.",
+    "scope": "A finite head with a positive refund and an all-scale bound for the averaged signal do not establish the unbounded raw crossing inequality. No external review or literature priority determination has been made."
+  },
+  "primary_sources": {
+    "finite_height": "https://arxiv.org/abs/2004.09765",
+    "spectral_prices": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+    "integrated_explicit_formula_and_prime_powers": "https://arxiv.org/pdf/2201.06184v2",
+    "raw_prime_prices": "https://www.cs.uleth.ca/~fiori/Docs/PrimeCountingTables.pdf#page=3",
+    "raw_prime_price_definitions": "https://arxiv.org/pdf/2206.12557v2#page=5"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "branch": "research/pal-rh",
+  "normal_build": {
+    "exit": 0,
+    "jobs": 3848
+  },
+  "native_replays": [
+    {
+      "module": "PALRH.MovingEndpoint",
+      "exit": 0,
+      "seconds": 10.2,
+      "output": ""
+    }
+  ],
+  "axioms": {
+    "PALRH.MovingEndpoint.exact_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.at_mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.mean_with_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.refund_by_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "PALRH.MovingEndpoint.rh_of_crossing_credit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "calculation": {
+    "finite_zero_height": 3000000000000,
+    "original_width": "2/T",
+    "comparison_width": "51/(20*T)",
+    "comparison_passes": 21,
+    "middle_ordinate_split": 100000,
+    "maximum_two_low_parts_difference": "0.000101343352",
+    "sinc_tangent_upper": "0.218362500000",
+    "prices": {
+      "148": {
+        "curvature_upper": "0.047766736975",
+        "short_high_upper": "0.000977180343",
+        "original_prime_power_area_upper": "0.094953917317",
+        "unpaid_crossing_upper": "0.048845260672"
+      },
+      "150": {
+        "curvature_upper": "0.095533473949",
+        "short_high_upper": "0.001954360685",
+        "original_prime_power_area_upper": "0.143697834633",
+        "unpaid_crossing_upper": "0.097589177988"
+      },
+      "151": {
+        "curvature_upper": "0.135104734519",
+        "short_high_upper": "0.002763883386",
+        "original_prime_power_area_upper": "0.184078617904"
+      },
+      "155": {
+        "curvature_upper": "0.540418938075",
+        "short_high_upper": "0.011055533541",
+        "original_prime_power_area_upper": "0.597684471615"
+      },
+      "158": {
+        "curvature_upper": "1.528535583176",
+        "short_high_upper": "0.031269770946",
+        "original_prime_power_area_upper": "1.606015354121"
+      },
+      "160": {
+        "curvature_upper": "3.057071166351",
+        "short_high_upper": "0.062539541892",
+        "original_prime_power_area_upper": "3.165820708242"
+      }
+    },
+    "return_at_x_equal_two_to_148": {
+      "gross_lower_strict": "0.207",
+      "unpaid_upper": "0.048845260672",
+      "actual_crossings_lower_strict": "0.158"
+    },
+    "prime_table_independent_repeat": {
+      "146": {
+        "prime_table_log_cutoff": 100,
+        "expected_absolute_uniform_sum_upper": "5.568071043403",
+        "unpaid_upper": "0.070458667386"
+      },
+      "147": {
+        "prime_table_log_cutoff": 101,
+        "expected_absolute_uniform_sum_upper": "5.587094192477",
+        "unpaid_upper": "0.099735278783"
+      }
+    },
+    "fixed_tenth_all_real_heads_through": 1427247692705959881058285969449495136382746624,
+    "full_pascal_product_through": 45671926166590716193865151022383844364247891968,
+    "filtered_pascal_product_through": 365375409332725729550921208179070754913983135744
+  },
+  "cached_primary_source_hashes": {
+    "height": {
+      "url": "https://arxiv.org/pdf/2004.09765v1",
+      "bytes": 133056,
+      "sha256": "3362f66af9fa9373977eee70e2282ec33989d5d8b97e0852df9e32cc25b52885"
+    },
+    "ramps": {
+      "url": "https://arxiv.org/pdf/2201.06184v2",
+      "bytes": 162473,
+      "sha256": "75bc30df5b939e57e1cefef216e5e252f7fb29cdc9dfb5b5403f8c5f26ebcd74"
+    },
+    "ordinate_sum": {
+      "url": "https://maths-people.anu.edu.au/brent/pd/rpb276-MC-preprint.pdf",
+      "bytes": 179034,
+      "sha256": "f63d2fb8fc736f32b93bd0080a5003cc1dd6695e109e0e7534729a32641b133e"
+    },
+    "fks_tables": {
+      "url": "https://www.cs.uleth.ca/~fiori/Docs/PrimeCountingTables.pdf",
+      "bytes": 2536807,
+      "sha256": "c8e957153baebd6c2f8fef808152670231abd1141e35a56ed5042249ae0532fa"
+    },
+    "fks_notation": {
+      "url": "https://arxiv.org/pdf/2206.12557v2",
+      "bytes": 289462,
+      "sha256": "405e5dcbca6067fa436141b8a08c79b81bc12deca03bfe12d667428c36b50fbb"
+    }
+  },
+  "sha256_sources": {
+    "proofs/when-crossed-prime-powers-pay-the-tenth.md": "1583a29cf553068092308db71d3e6377d659981cc11a30a90d0f06c61d8e9627",
+    "pal-rh/PALRH/MovingEndpoint.lean": "27974601a50db50e272331a38a6e5695878e89b97214841dcdb4338c65466107",
+    "receipt-archives/check_pal_crossing_refund.py": "791794509c87430fcde763aa59d670230f51c3239a8a315fa7f8b824356e5ea6",
+    "proofs/moving-the-endpoint-of-a-prime-area.md": "f17fba80afe75123758f24556e33f5f6cd510dc08db6cbd189de53dfa3073a6f",
+    "receipt-archives/check_pal_moving_endpoint.py": "44aea7f93d27ae0c07b09dc286c66e6ba67035d03dc27a28ef92b9ec46f93579",
+    "receipt-archives/2026-11-26-pal-moving-endpoint.json": "4fda022987b8787e2e109c366826e1a2608fa81d2ed46d725b4bd1a4805e2b90",
+    "pal-rh/PALRH/OneSidedBoard.lean": "d8ffd2aeb3bf8908685788ad1e97edbdd94c127b7e93ee6e316ed5720724fe12",
+    "pal-rh/checks/one-subset/OneSubsetChallenge.lean": "4d70216924befa01768983f6cdf93ec3982e8751c85b2c689cf70972ca89506a"
+  }
+}

@@ -12,7 +12,7 @@ Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas ask
 
 [The next full board](../proofs/paying-the-next-full-prime-board.md) · [Finite head specialization](PALRH/FiniteHorizon.lean) · [Numerical inputs and margins](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
-[Moving a prime-area endpoint](../proofs/moving-the-endpoint-of-a-prime-area.md) · [Exact crossing and conditional Lean transfer](PALRH/MovingEndpoint.lean) · [Every fourth-power index through $2^{39}$ in the subset comparison](../receipt-archives/2026-11-26-pal-moving-endpoint.json)
+[Moving a prime-area endpoint](../proofs/moving-the-endpoint-of-a-prime-area.md) · [Paying with the crossed prime powers](../proofs/when-crossed-prime-powers-pay-the-tenth.md) · [Exact crossing and conditional Lean transfer](PALRH/MovingEndpoint.lean) · [Arithmetic through the two new cutoffs](../receipt-archives/2026-11-26-pal-crossing-refund.json)
 
 [Ordinary Benford behavior of the primorial-to-factorial quotient](../proofs/the-leading-digits-of-primorial-over-factorial.md) · [Finite block estimates](PALRH/BenfordBlocks.lean) · [Arithmetic and sources](../receipt-archives/2026-11-26-pal-benford-quotient.json)
 

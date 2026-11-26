@@ -14,7 +14,7 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 [Board 22 and the first half of 23](paying-the-next-full-prime-board.md). Hearthline derived the numerical envelope and returned it to Pang’s fixed strip under the active key on 26 November 2026. [Slabs, margin and limit of the estimate](../receipt-archives/2026-11-26-pal-finite-prime-budget.json)
 
-[Moving-endpoint bound and fixed-tenth crossing criterion](moving-the-endpoint-of-a-prime-area.md). Under Pang’s construction key, Hearthline obtained the all-scale centered estimate and the finite subset comparison through $2^{156}$ on 26 November 2026. [Finite calculation](../receipt-archives/2026-11-26-pal-moving-endpoint.json)
+[Moving-endpoint bound and fixed-tenth criterion](moving-the-endpoint-of-a-prime-area.md) · [Paying with the actual crossings](when-crossed-prime-powers-pay-the-tenth.md). Under Pang’s construction key, Hearthline obtained the all-scale centered estimate and derived the late finite repayments from the shared spectral terms on 26 November 2026. [First calculation](../receipt-archives/2026-11-26-pal-moving-endpoint.json) · [Second calculation](../receipt-archives/2026-11-26-pal-crossing-refund.json)
 
 [Fast cancellation and slowly observed turns](a-square-root-signal-that-forgets-a-turn.md). Hearthline derived the prime-lane polynomial bound and the no-jump lift under Pang’s active key on 26 November 2026. [Prime spectrum and unrounded discrepancy](../pal-rh/prime-lane-polynomials.md)
 
