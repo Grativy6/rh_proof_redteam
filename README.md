@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Any nonnegative reference profile followed by unsigned error charges loses a linear amount at late heads. Keeping the actual signs pays every negative inverse argument through 40 million with at most one thirty-sixth of its named partner. [The obstruction and the signed payment](proofs/what-a-positive-reference-must-lose.md)
+
 The five measurements that set the local price can be carried by actual primes and five times primes. In one full block, retaining 21,723 units on primes reproduces the measurements of 3,698,711 units of original absolute weight. [Full-stream reduction and open RH condition](proofs/two-prime-families-carry-the-full-price.md) · [Six integers that explain the payment](proofs/which-prime-labels-cancel.md)
 
 In the trillion-scale sector, one large prime and its smaller cofactor contribute about +8.55 million while the complementary integers contribute about −8.59 million. The first surviving coefficient is 9. [Derivation and finite counts](proofs/why-one-large-prime-leaves-nine.md) · [Where an integer label can go quiet](proofs/where-an-integer-label-can-go-quiet.md) · [2663 in both directions](pal-rh/what-2663-carries-between-frames.md) · [What the central mirror earns](proofs/what-the-central-mirror-earns.md)

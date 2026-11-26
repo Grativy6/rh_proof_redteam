@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Compile `g++ -O3 -std=c++17 receipt-archives/reference_obstruction.cpp -o reference_obstruction`, then run `./reference_obstruction 40000000 > inverse.json` and `python -B receipt-archives/check_pal_reference_prices.py --scan inverse.json`. Add `--primecount /path/to/primecount` to repeat the finite prime counts. [Directed endpoints, exact margin and signed partner](2026-11-25-pal-reference-price.json)
+
 Run `python -B receipt-archives/check_pal_two_prime_carriers.py` to factor four complete fourth-power blocks, enclose all five moments and test the capacities of the two chosen prime supports. [Full-block record](2026-11-25-pal-two-prime-carriers.json)
 
 For the [one-large-prime proof](../proofs/why-one-large-prime-leaves-nine.md), replay the small population directly with `python -B receipt-archives/check_pal_large_prime_surplus.py receipt-archives/large-prime-calibration.csv 89 --trial-division`. Recheck all six stored matrix systems with `python -B receipt-archives/check_pal_large_prime_surplus.py --replay-record receipt-archives/2026-11-25-pal-large-prime-surplus.json`. To regenerate the trillion-sector populations, compile `g++ -O3 -std=c++17 -fopenmp receipt-archives/large_prime_block.cpp -lprimesieve -lprimecount -o large_prime_block`, run `./large_prime_block 1600000000000 1666666666666 31622 100000 4 > sector.csv`, then run `python -B receipt-archives/check_pal_large_prime_surplus.py sector.csv 31622 --head 2000000000000`. The [record](2026-11-25-pal-large-prime-surplus.json) gives the corresponding inputs and population hashes for the other heads.

@@ -6,6 +6,8 @@ On 24 November 2026 Christopher D. Pang asked to bring the project’s independe
 
 ## Independent constructive branch
 
+[The forced inverse and its signed reference price](what-a-positive-reference-must-lose.md). Pang’s BLA and PAL frame questions led Hearthline to optimize the actual margin on genuine prime multiples. A fixed ratio of 2304 funds all negative rays in the certified finite inverse range.
+
 [All-label reduction to primes and five times primes](two-prime-families-carry-the-full-price.md). Pang’s reconstruction question led Hearthline to the full local deficit, two signed prime supports, and an explicit failure of reasoning from their sizes alone.
 
 [The large-prime surplus and its complementary deficit](why-one-large-prime-leaves-nine.md). Pang’s cofactor question led Hearthline to the first surviving logarithmic term, with coefficient 9 in the physical stream and 3 in the raw stream. The independent finite tests include sign changes and a failed supply at $2663^4$.

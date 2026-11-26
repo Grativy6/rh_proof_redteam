@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Reference price and negative inverse interval](2026-11-25-pal-reference-price.json) · [Native scan](reference_obstruction.cpp) · [Replay](check_pal_reference_prices.py) | Two interval formulas, prime endpoint counts, three optimization scopes and the true 40-million cutoff credit. |
 | [All-label two-support tests](2026-11-25-pal-two-prime-carriers.json) · [Direct replay](check_pal_two_prime_carriers.py) | Four complete blocks, two successful prime-only payments and two uniform-fraction impossibilities. |
 | [Large-prime surplus, positive and negative finite cases](2026-11-25-pal-large-prime-surplus.json) · [Trial calibration](large-prime-calibration.csv) · [Replay](check_pal_large_prime_surplus.py) | A cofactor census with two prime counts on every eligible row, rational moment enclosures, the ordinary zeta slope, and both sides of the trillion-sector cancellation. |
 | [Where the price vanishes and what 2663 carries](2026-11-25-pal-cell-prices.json) · [Census](count_pal_cell_signs.py) · [All small-factor tags](check_pal_cofactor_block.py) | 25 November 2026. Exact price signs, verified count denominator, and termwise same-frame cofactor costs. |

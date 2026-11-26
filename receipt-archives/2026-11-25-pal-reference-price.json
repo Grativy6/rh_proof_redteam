@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang supplied the PAL and BLA questions about the observation boundary and the cost of carrying a sign. Hearthline derived the profile obstruction, the three optimization formulas and the actual 2304 payment under the active construction key.",
+  "parent_public_research_commit": "28524dcd15002710b2ba6d42445285c84c7ff463",
+  "parent_tree": "d4f6debd66ba0acb2aa6ca6b01aad07452e5ddc5",
+  "sha256_sources": {
+    "proofs/what-a-positive-reference-must-lose.md": "cf8c5d7b58b78fc7de71a306fda32eaacfa529f7d4f9c8e597e1054bdbb06319",
+    "pal-rh/PALRH/ReferencePrice.lean": "1a07b3908fd7ea7de46485db5937483fbf9dea6c7a39583f13e3c57f83bc9b9e",
+    "receipt-archives/reference_obstruction.cpp": "8141c15f3a659f6bbd6d8ca23750ea1119feaa574ea84ef43fdddf3040172c59",
+    "receipt-archives/check_pal_reference_prices.py": "67c0a5d8177072028ae46446b0f2e5c14d354fde864f31be5ad6d03b529a22f6"
+  },
+  "source_roles": {
+    "arithmetic": "Ordinary rough Mobius inversion and the PAL square pass. All reported finite bounds refer to this construction.",
+    "prime_and_mertens": "The prime number theorem and the fixed-prime-exclusion Mertens estimate justify the sign densities.",
+    "computations": "The native scan uses a Mobius sieve, two directed endpoint formulas, and a corrected integer inverse-square-root enclosure. primecount 7.10 computed each reported endpoint with Gourdon and Deleglise-Rivat."
+  },
+  "finite_scan": {
+    "max_y": 40000000,
+    "scale": "1208925819614629174706176",
+    "plain_first_certified_negative": 18350,
+    "plain_upper_numerator_over_twice_scale": "-931349211458495379354",
+    "rough_first_certified_negative": 13027865,
+    "rough_upper_numerator_over_four_times_scale": "-61389956707207838804",
+    "negative_intervals": [
+      {
+        "left": 13031101,
+        "right": 14105875,
+        "negative_depth_over_16": 1
+      },
+      {
+        "left": 13034444,
+        "right": 14102658,
+        "negative_depth_over_16": 2
+      },
+      {
+        "left": 13040999,
+        "right": 14095485,
+        "negative_depth_over_16": 4
+      },
+      {
+        "left": 13053863,
+        "right": 14079998,
+        "negative_depth_over_16": 8
+      },
+      {
+        "left": 13098384,
+        "right": 14047497,
+        "negative_depth_over_16": 16
+      },
+      {
+        "left": 32514164,
+        "right": 36025677,
+        "negative_depth_over_16": 32
+      },
+      {
+        "left": 32635379,
+        "right": 35940562,
+        "negative_depth_over_16": 64
+      },
+      {
+        "left": 32832883,
+        "right": 35727669,
+        "negative_depth_over_16": 128
+      },
+      {
+        "left": 33310787,
+        "right": 35354188,
+        "negative_depth_over_16": 256
+      }
+    ],
+    "fixed_band": {
+      "left": 33400000,
+      "right": 35300000,
+      "upper_direct_over_4S": "-83289242371630725261155424",
+      "upper_integrated_over_2S": "-41644621186749905578418005",
+      "small_prime_product_lower_over_S": "39055418459630915325412",
+      "small_prime_product_upper_over_S": "39055418459630917356029"
+    },
+    "integral_moments": {
+      "full_mass": -896,
+      "half_mass": -445,
+      "full_reciprocal_over_S": "-13767829154388753891",
+      "half_reciprocal_over_S": "-4755718394253800512",
+      "root_scale": "1125899906842624",
+      "full_inverse_root_over_root_scale": "-6303098713523563",
+      "half_inverse_root_over_root_scale": "-6234465665985575"
+    },
+    "early_floor_over_4S": "733267084356907457480540",
+    "early_floor_last": 12000000,
+    "global_floor_over_4S": "-145783726154880778092722740",
+    "global_floor_at": 34249477
+  },
+  "exact_games_and_credit": {
+    "finite_games": 50,
+    "targets_with_strict_individual_ray_debt": 4,
+    "inverse_and_payment": {
+      "cutoff_integral": {
+        "integral_interval": [
+          "3.23470583",
+          "3.23470604"
+        ],
+        "credit_per_sqrt_T_log_T": [
+          "1.06195200",
+          "1.06195207"
+        ]
+      },
+      "density_strictly_above": "0.0323",
+      "margin_loss_per_T_liminf_strictly_above": "0.0000000008",
+      "certified_density_lower": "344664058142388212839032068647/10668770358099102466782003200000",
+      "certified_liminf_lower": "6548617104705376043941609304293/7861683517253752368990823383040000000000",
+      "payment_multiplier": 2304,
+      "positive_fraction_sufficient": "1/36",
+      "donor_interval": [
+        2,
+        8
+      ],
+      "all_inputs_through": 40000000
+    }
+  },
+  "prime_witnesses": [
+    {
+      "fourth_root": 10000,
+      "side": 10000000000000000,
+      "head": 20000000000000000,
+      "first_label": 566572238,
+      "last_label": 598802395,
+      "pi_before": 29668315,
+      "pi_at_end": 31265596,
+      "prime_witnesses": 1597281,
+      "forced_absolute_price": 25556496,
+      "forced_margin_loss": 51112992
+    },
+    {
+      "fourth_root": 100000,
+      "side": 100000000000000000000,
+      "head": 200000000000000000000,
+      "first_label": 5665722379604,
+      "last_label": 5988023952095,
+      "pi_before": 200009276168,
+      "pi_at_end": 210974374080,
+      "prime_witnesses": 10965097912,
+      "forced_absolute_price": 175441566592,
+      "forced_margin_loss": 350883133184
+    },
+    {
+      "fourth_root": 1000000,
+      "side": 1000000000000000000000000,
+      "head": 2000000000000000000000000,
+      "first_label": 56657223796033995,
+      "last_label": 59880239520958083,
+      "pi_before": 1508944280194659,
+      "pi_at_end": 1592434076151429,
+      "prime_witnesses": 83489795956770,
+      "forced_absolute_price": 1335836735308320,
+      "forced_margin_loss": 2671673470616640
+    }
+  ],
+  "second_count_method": {
+    "method": "Deleglise-Rivat",
+    "matching_endpoints": 6
+  },
+  "formal_scope": "The rough finite inverse, forced negative ray, prime sign change, doubled margin, exact physical splitting and conditional remaining-ray implication to stock RiemannHypothesis. Asymptotic densities, smooth annulus mean, numerical cutoff bounds and the partner allocation are paper or finite-computation results.",
+  "pins": {
+    "lean": "4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "lake_exit": 0,
+  "axioms": {
+    "PALRH.ReferencePrice.true_split": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.rh_of_remaining_rays": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.inverse_is_edge": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.actual_prime_sign": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.invert_ray": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.negative_ray": "[propext, Classical.choice, Quot.sound]",
+    "PALRH.ReferencePrice.absolute_margin": "[propext, Classical.choice, Quot.sound]"
+  },
+  "kernel": [
+    {
+      "module": "PALRH.ReferencePrice",
+      "exit": 0,
+      "seconds": 11.2,
+      "output": ""
+    }
+  ],
+  "open": "Control the combined signed values on inverse arguments above 40 million after the earned positive credit. No fixed constant budget for individual ray positivity can pay all independent negative terms."
+}
