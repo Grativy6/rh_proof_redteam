@@ -10,6 +10,8 @@ The papers state their own conclusions and the scope of their application to the
 
 ## Building upward from PAL
 
+[Two prime families can carry the full local price](two-prime-families-carry-the-full-price.md) gives an all-label reduction to primes and five times primes. The calculation at $100^4$ retains less than 0.588% of the absolute weight, and a separate construction shows why small fractions alone cannot deliver the global estimate.
+
 [Why one large prime leaves nine](why-one-large-prime-leaves-nine.md) explains a positive cofactor surplus, computes the signed cost of both sides at one trillion, and proves that one family of semiprimes can eventually carry all five surviving moments.
 
 [Where an integer label can go quiet](where-an-integer-label-can-go-quiet.md) gives a pencil proof of exactly which prices can vanish. The [2663 example](../pal-rh/what-2663-carries-between-frames.md) shows how an arithmetic sign can reverse while that price stays fixed.

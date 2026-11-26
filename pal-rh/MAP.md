@@ -8,6 +8,7 @@ Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem,
 
 | Where to read | What was established |
 | --- | --- |
+| [The entire local stream on two prime supports](../proofs/two-prime-families-carry-the-full-price.md) | Every sufficiently late block has a capacity-limited allocation onto $q$ and $5q$. The unspent fractions retain the five original signed moments. A hostile choice satisfying the same size estimates fails the global floor. |
 | [Positive large-prime surplus](../proofs/why-one-large-prime-leaves-nine.md) · [Ordinary zeta slope](PALRH/LargePrimeSurplus.lean) | The eligible family carries $+9L/\log^2Y$ to leading order. Its macroscopic complement carries the opposite term. A single positive semiprime family eventually supports all remaining five moments of the eligible family. |
 | [Pointwise price signs](../proofs/where-an-integer-label-can-go-quiet.md) · [Cofactor transport at 2663](what-2663-carries-between-frames.md) · [Lean](PALRH/PriceSign.lean) | The actual price vanishes precisely at divisors and the outer endpoint. Four cofactor groups on one fourth-power block leave their combined residual on a single group. |
 | [Five moments on actual marks](../proofs/which-prime-labels-cancel.md) · [Fourth-power blocks](how-much-can-travel-with-a-prime.md) · [Lean](PALRH/PrimeTransport.lean) | Every prime in the trillion sector is funded. An all-scale allocation carries a cofactor smaller than a fixed power up to exponent $11/26$ with little-$o$ square-root cost. |

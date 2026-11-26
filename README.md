@@ -14,13 +14,9 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
-One large prime and its smaller cofactor produce a signed surplus with leading coefficient **+9**. The complementary integers carry the opposite leading term in the same sector. At one trillion the two measured contributions are about +8.55 million and −8.59 million. [Why one large prime leaves nine](proofs/why-one-large-prime-leaves-nine.md)
+The five measurements that set the local price can be carried by actual primes and five times primes. In one full block, retaining 21,723 units on primes reproduces the measurements of 3,698,711 units of original absolute weight. [Full-stream reduction and open RH condition](proofs/two-prime-families-carry-the-full-price.md) · [Six integers that explain the payment](proofs/which-prime-labels-cancel.md)
 
-At any positive integer head, the two-head price vanishes exactly at the divisors and the final endpoint. Applying the rule to the same physical labels at two scales shows how 2663 reverses their signed contribution. [Where an integer label can go quiet](proofs/where-an-integer-label-can-go-quiet.md) · [2663 in both directions](pal-rh/what-2663-carries-between-frames.md)
-
-The six integers from 83 to 143 give a hand calculation for how actual prime marks can cancel. At side one trillion the construction accounts for 10.59% to 10.62% of one sector’s total absolute cost. [Which prime labels cancel?](proofs/which-prime-labels-cancel.md)
-
-Changing the weights at the powers of 5 lets us move a cancellation off the central line by an exact distance. The same construction explains which data can agree on both sides of that experiment. [What the central mirror earns](proofs/what-the-central-mirror-earns.md)
+In the trillion-scale sector, one large prime and its smaller cofactor contribute about +8.55 million while the complementary integers contribute about −8.59 million. The first surviving coefficient is 9. [Derivation and finite counts](proofs/why-one-large-prime-leaves-nine.md) · [Where an integer label can go quiet](proofs/where-an-integer-label-can-go-quiet.md) · [2663 in both directions](pal-rh/what-2663-carries-between-frames.md) · [What the central mirror earns](proofs/what-the-central-mirror-earns.md)
 
 At a side of one trillion, the absolute cost of one angular sector exceeds 158 million. Its actual signed contribution is about −45,500. The positive source for the whole side is 39.117 million. A second proof shows how far the two square clocks would have to drop together if RH failed. [The exact remainder and its reflection](pal-rh/what-a-reflected-remainder-carries.md) · [Length of the simultaneous runs](pal-rh/how-far-a-negative-run-must-travel.md)
 

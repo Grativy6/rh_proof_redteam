@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-25",
+  "timezone": "America/New_York",
+  "contributors": "Christopher Daniel Pang proposed reconstruction from fewer pieces and supplied the PAL retained-frame question. Hearthline derived and tested the two-prime reduction under his constructive research key.",
+  "parent_public_research_commit": "cb5425c6a1d120b2288f504bcb06c15054bec5bc",
+  "parent_tree": "05251c2c9ef7da155aff9f69e9c413ec08e7101b",
+  "sha256_sources": {
+    "proofs/two-prime-families-carry-the-full-price.md": "b113f4c81f12854558fc5fe6ecb06c0e645fb93e813157d9c6d779708bdc9ebf",
+    "receipt-archives/check_pal_two_prime_carriers.py": "e73eee73c216588617630eab838fe0bc50b2205705009e4863aeb3988aab4d77",
+    "receipt-archives/check_pal_prime_transport.py": "4f315c44bbd7d4b15f5d0b10c213c223988740c8f503d632247cfe2e031fa90c",
+    "pal-rh/PALRH/PrimeTransport.lean": "415c5b9f43472886e55f8c5aa791cf3bf123b13913bfa8d56db42239e02fca83",
+    "proofs/why-one-large-prime-leaves-nine.md": "725a953f370be510b017cd6724df13fe745bc4f80071aa078bc6af4c7e23bede"
+  },
+  "analytic_input": {
+    "authors": "Kaisa Matomäki and Xuancheng Shao",
+    "paper": "Discorrelation between primes in short intervals and polynomial phases",
+    "source": "https://arxiv.org/pdf/1902.04708",
+    "theorem": "1.4, with g(n)=n so e(g(n))=1 on the integers. The fixed exponent 7/10 is above 2/3.",
+    "transfer": "Write a=mu*b with nonnegative smooth b and sum b(d)/d^(5/8) finite. For d<=Y^(1/8) the relevant prime-free Mobius interval has exponent at least 5/7+o(1). Larger divisors cost O(h Y^(-3/64)+Y^(5/8))."
+  },
+  "paper_scope": "Whole-block complement has leading coefficient -9. Every sufficiently late block admits a true signed allocation to q and 5q. The spent cost at any moving head is O_B(sqrt(T)/log^B(2T)) for any fixed B. A sparse counterexample demonstrates that smallness, capacity, signs and support alone do not imply the remaining fourth-power lower bound.",
+  "formal_scope": "Uses the previously checked PALRH.PrimeTransport.both_prices and rh_after_transport. The new short-interval and two-support arguments are paper proofs.",
+  "arithmetic": {
+    "cases": [
+      {
+        "m": 20,
+        "signed_mass": -858,
+        "counts": [
+          15334,
+          16192,
+          2848,
+          665
+        ],
+        "bernstein_obstructions": [],
+        "uniform_fraction_necessary": {
+          "empty": true,
+          "necessary_minimum_rounded_down": "1.8875461",
+          "necessary_maximum_rounded_up": "-0.0412880"
+        },
+        "tested_uniform_fractions": 40,
+        "status": "no_fraction_in_tested_uniform_grid_certified"
+      },
+      {
+        "m": 40,
+        "left_excluded": 2560000,
+        "right_included": 2825761,
+        "positive_marks": 118469,
+        "negative_marks": 122627,
+        "signed_mass": -4158,
+        "primes": 18009,
+        "five_times_primes": 4009,
+        "uniform_positive_fraction": "0",
+        "negative_fraction_certificate": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.1016833",
+              "0.1016834"
+            ],
+            [
+              "0.4337407",
+              "0.4337408"
+            ],
+            [
+              "0.2578295",
+              "0.2578296"
+            ],
+            [
+              "0.0130619",
+              "0.0130620"
+            ],
+            [
+              "0.3428805",
+              "0.3428806"
+            ]
+          ]
+        },
+        "retained_absolute_mass": "4158",
+        "whole_absolute_mass": 241096,
+        "retained_mass_fraction_interval": [
+          "0.01724624",
+          "0.01724625"
+        ],
+        "direct_trial_all_labels": false,
+        "tested_uniform_fractions": 40,
+        "tested_fractions_certified": 40
+      },
+      {
+        "m": 64,
+        "signed_mass": -8141,
+        "counts": [
+          484856,
+          492997,
+          64467,
+          14182
+        ],
+        "bernstein_obstructions": [],
+        "uniform_fraction_necessary": {
+          "empty": true,
+          "necessary_minimum_rounded_down": "1.5166662",
+          "necessary_maximum_rounded_up": "0.6491881"
+        },
+        "tested_uniform_fractions": 40,
+        "status": "no_fraction_in_tested_uniform_grid_certified"
+      },
+      {
+        "m": 100,
+        "left_excluded": 100000000,
+        "right_included": 104060401,
+        "positive_marks": 1838494,
+        "negative_marks": 1860217,
+        "signed_mass": -21723,
+        "primes": 220344,
+        "five_times_primes": 48222,
+        "uniform_positive_fraction": "0",
+        "negative_fraction_certificate": {
+          "contraction_upper": "0.00000001",
+          "uniform_fraction_radius_upper": "0.00000001",
+          "actual_fraction_intervals": [
+            [
+              "0.0484618",
+              "0.0484619"
+            ],
+            [
+              "0.1066357",
+              "0.1066358"
+            ],
+            [
+              "0.1450368",
+              "0.1450369"
+            ],
+            [
+              "0.0810574",
+              "0.0810575"
+            ],
+            [
+              "0.1114019",
+              "0.1114020"
+            ]
+          ]
+        },
+        "retained_absolute_mass": "21723",
+        "whole_absolute_mass": 3698711,
+        "retained_mass_fraction_interval": [
+          "0.00587312",
+          "0.00587313"
+        ],
+        "direct_trial_all_labels": false,
+        "tested_uniform_fractions": 40,
+        "tested_fractions_certified": 40
+      }
+    ]
+  },
+  "finite_domain": "All physical integer labels in each displayed (m^4,(m+1)^4] block, including all smooth roots 2^i3^j. The smallest block is also factored by independent trial division.",
+  "open": "Control the actual signed moments through the retained global prices. Failure for a uniform positive fraction in two finite blocks does not give a general obstruction to other admissible allocations."
+}

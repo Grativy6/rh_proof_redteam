@@ -12,6 +12,8 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 [Active key, 25 November 2026](pal-rh/CONSTRUCTION-KEY.md). Christopher Daniel Pang authorized Hearthline to build upward from the published PAL v2.4 spine, use every corpus shelf, change routes on evidence, and pursue the independent bare Mathlib target. [Current mathematical boundary](pal-rh/MAP.md) · [Reproduction](receipt-archives/2026-11-25-pal-construction-replay.md)
 
+[Two prime supports for all the physical labels](proofs/two-prime-families-carry-the-full-price.md). On 25 November 2026 Hearthline followed Pang’s request to reconstruct the whole stream from fewer pieces. The five full-block moments determine the retained fractions. Their accumulation across blocks remains unresolved.
+
 [The first surviving cofactor term](proofs/why-one-large-prime-leaves-nine.md). On 25 November 2026 Hearthline used Pang’s retained-residue question to isolate a positive large-prime family, compute its coefficient and locate the opposite signed family in the ordinary sector.
 
 [Exact vanishing rule and sign census](proofs/where-an-integer-label-can-go-quiet.md) · [Four cofactor groups](pal-rh/what-2663-carries-between-frames.md). On 25 November 2026 Hearthline followed Pang’s 2663 and frame-reversal questions to a full sign partition of the PAL price and a finite cross-cofactor payment.
