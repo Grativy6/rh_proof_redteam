@@ -6,6 +6,8 @@ For the proofs in reading order, start with the [front collection](../proofs/REA
 
 ### Replay the constructive RH calculation
 
+Run `python -B receipt-archives/check_pal_central_mirror.py` for the reciprocal polynomials, local coefficients and residue checks. The [record](2026-11-25-pal-central-mirror.json) identifies the range checked and the theorems in the normal project build.
+
 Run `python -B receipt-archives/check_pal_clock_resonance.py` to enclose the zero and test its response to the stated square clocks. For the [residue windows](../pal-rh/what-a-reflected-remainder-carries.md), `python -B receipt-archives/check_pal_reflected_cells.py` runs the direct small cases. Appending the compiled `cubic_window_moments` binary described below also reproduces the trillion-scale angular sector and the twelfth-power panels. [Exact results](2026-11-25-pal-reflected-cells.json)
 
 For the [fourth-power test and omitted-label calculation](../pal-rh/what-the-first-omitted-label-sees.md), run `python -B receipt-archives/check_pal_cubic_window.py` for the direct small cases. For the large cases build `g++ -O3 -std=c++17 receipt-archives/cubic_window_moments.cpp -o /tmp/cubic-window-moments` and run `python -B receipt-archives/check_pal_cubic_window.py /tmp/cubic-window-moments`. The two modular moment recurrences and directed reciprocal intervals run locally. [Results, ranges and compiler details](2026-11-25-pal-cubic-window.json)

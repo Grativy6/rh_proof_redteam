@@ -14,6 +14,8 @@ The corpus also includes Pang’s May papers on the [shadow lattice](corpus/Shad
 
 Christopher Daniel Pang’s [active construction key](pal-rh/CONSTRUCTION-KEY.md) uses the [nine-shelf corpus](pal-rh/CORPUS-ROUTES.md) to build an independent route to the bare Mathlib statement. The [constructive proof map](pal-rh/MAP.md) keeps the open all-scale obligation beside the results earned so far.
 
+Changing the weights at the powers of 5 lets us move a cancellation off the central line by an exact distance. The same construction explains which data can agree on both sides of that experiment. [What the central mirror earns](proofs/what-the-central-mirror-earns.md)
+
 At a side of one trillion, the absolute cost of one angular sector exceeds 158 million. Its actual signed contribution is about −45,500. The positive source for the whole side is 39.117 million. A second proof shows how far the two square clocks would have to drop together if RH failed. [The exact remainder and its reflection](pal-rh/what-a-reflected-remainder-carries.md) · [Length of the simultaneous runs](pal-rh/how-far-a-negative-run-must-travel.md)
 
 **One pass, one sign at each fourth power.** Nonnegative readings at all sufficiently late fourth-power sides would imply RH. Around side 432 billion a single pass has over 10.6 billion consecutive positive half-rows, including $810^4$ and $811^4$. The original has over 213 million consecutive negative half-rows there. [The shorter construction and its open step](pal-rh/what-the-first-omitted-label-sees.md#one-rational-sign-at-each-fourth-power-suffices) · [Conditional Lean theorem](pal-rh/PALRH/CubicFourth.lean)

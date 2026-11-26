@@ -1,0 +1,219 @@
+{
+  "date_local": "2026-11-25",
+  "contributors": "Christopher Daniel Pang proposed the central-line question from PAL and APCI. Hearthline derived the local-factor comparisons under his research key.",
+  "result": "The altered completion at five has a specified off-center zero. The two delayed families can share every prime value and an arbitrarily long finite prefix.",
+  "scope": "The displayed models change a local zeta factor and the scale of completion relative to ordinary zeta. The delayed family is proved on paper. The finite replay tests r from 3 through 24.",
+  "sha256": {
+    "proofs/what-the-central-mirror-earns.md": "f317cd8f8705daf6ef362f2669ea457d9dcbbf1f939d2472a30d9e14097ff120",
+    "pal-rh/PALRH/CentralMirror.lean": "c43f94fe5dbd017c01cb4887412f32b6f8b34720e60d383e1733ec33d4acc08d",
+    "receipt-archives/check_pal_central_mirror.py": "cce64508baf0c25bd4f92baaf0eb5add4eb4ef0cc3d5b60ab3fa93908e02ecd2"
+  },
+  "exact_replay": {
+    "prime": 5,
+    "rational_trace_tests": 2,
+    "paired_valuation_ledgers": [
+      {
+        "r": 3,
+        "m": 7,
+        "first_different_integer": 125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 14,
+        "off_center_extra_roots_changed": 14
+      },
+      {
+        "r": 4,
+        "m": 9,
+        "first_different_integer": 625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 18,
+        "off_center_extra_roots_changed": 18
+      },
+      {
+        "r": 5,
+        "m": 11,
+        "first_different_integer": 3125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 22,
+        "off_center_extra_roots_changed": 22
+      },
+      {
+        "r": 6,
+        "m": 13,
+        "first_different_integer": 15625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 26,
+        "off_center_extra_roots_changed": 26
+      },
+      {
+        "r": 7,
+        "m": 15,
+        "first_different_integer": 78125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 30,
+        "off_center_extra_roots_changed": 30
+      },
+      {
+        "r": 8,
+        "m": 17,
+        "first_different_integer": 390625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 34,
+        "off_center_extra_roots_changed": 34
+      },
+      {
+        "r": 9,
+        "m": 19,
+        "first_different_integer": 1953125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 38,
+        "off_center_extra_roots_changed": 38
+      },
+      {
+        "r": 10,
+        "m": 21,
+        "first_different_integer": 9765625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 42,
+        "off_center_extra_roots_changed": 42
+      },
+      {
+        "r": 11,
+        "m": 23,
+        "first_different_integer": 48828125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 46,
+        "off_center_extra_roots_changed": 46
+      },
+      {
+        "r": 12,
+        "m": 25,
+        "first_different_integer": 244140625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 50,
+        "off_center_extra_roots_changed": 50
+      },
+      {
+        "r": 13,
+        "m": 27,
+        "first_different_integer": 1220703125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 54,
+        "off_center_extra_roots_changed": 54
+      },
+      {
+        "r": 14,
+        "m": 29,
+        "first_different_integer": 6103515625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 58,
+        "off_center_extra_roots_changed": 58
+      },
+      {
+        "r": 15,
+        "m": 31,
+        "first_different_integer": 30517578125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 62,
+        "off_center_extra_roots_changed": 62
+      },
+      {
+        "r": 16,
+        "m": 33,
+        "first_different_integer": 152587890625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 66,
+        "off_center_extra_roots_changed": 66
+      },
+      {
+        "r": 17,
+        "m": 35,
+        "first_different_integer": 762939453125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 70,
+        "off_center_extra_roots_changed": 70
+      },
+      {
+        "r": 18,
+        "m": 37,
+        "first_different_integer": 3814697265625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 74,
+        "off_center_extra_roots_changed": 74
+      },
+      {
+        "r": 19,
+        "m": 39,
+        "first_different_integer": 19073486328125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 78,
+        "off_center_extra_roots_changed": 78
+      },
+      {
+        "r": 20,
+        "m": 41,
+        "first_different_integer": 95367431640625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 82,
+        "off_center_extra_roots_changed": 82
+      },
+      {
+        "r": 21,
+        "m": 43,
+        "first_different_integer": 476837158203125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 86,
+        "off_center_extra_roots_changed": 86
+      },
+      {
+        "r": 22,
+        "m": 45,
+        "first_different_integer": 2384185791015625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 90,
+        "off_center_extra_roots_changed": 90
+      },
+      {
+        "r": 23,
+        "m": 47,
+        "first_different_integer": 11920928955078125,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 94,
+        "off_center_extra_roots_changed": 94
+      },
+      {
+        "r": 24,
+        "m": 49,
+        "first_different_integer": 59604644775390625,
+        "common_pole_residue": "1",
+        "central_extra_roots_reference": 98,
+        "off_center_extra_roots_changed": 98
+      }
+    ]
+  },
+  "environment": {
+    "lean": "leanprover/lean4:v4.33.1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "lean_scope": "Reflection for the normalized altered completion, its explicit zero, the strict real-part interval, and the integer transfer form.",
+  "lake_build": {
+    "exit": 0,
+    "modules_reported": {
+      "PALRH.CentralMirror.same_mirror": "[propext, Classical.choice, Quot.sound]",
+      "PALRH.CentralMirror.off_center_zero": "[propext, Classical.choice, Quot.sound]",
+      "PALRH.CentralMirror.displaced": "[propext, Classical.choice, Quot.sound]",
+      "PALRH.CentralMirror.transfer": "[propext, Classical.choice, Quot.sound]"
+    }
+  },
+  "leanchecker": [
+    {
+      "module": "PALRH.CentralMirror",
+      "exit": 0,
+      "seconds": 10.4,
+      "output": ""
+    }
+  ],
+  "primary_sources": {
+    "classical_reflection": "https://dlmf.nist.gov/25.4",
+    "ordinary_zeta_and_counting": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf"
+  }
+}

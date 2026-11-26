@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Central mirror at five](2026-11-25-pal-central-mirror.json) · [Exact replay](check_pal_central_mirror.py) | Computation and source scope for Pang and Hearthline’s 25 November comparison of symmetric completions. |
 | [Reflected sectors, two directions and a resonant prime](2026-11-25-pal-reflected-cells.json) · [Integer sectors](check_pal_reflected_cells.py) · [Zero and clock enclosures](check_pal_clock_resonance.py) | On 25 November 2026 Hearthline tested both orientations, independent quotient moments and joint returns under Pang’s active key. |
 | [Cubic window, fourth powers and the 432-billion head](2026-11-25-pal-cubic-window.json) · [Replay](check_pal_cubic_window.py) | On 25 November 2026 Hearthline tested Pang’s one-label comparison, the four-row return, reciprocal enclosures and whole signed intervals against two divisor recurrences. |
 | [Square rescaling and sign transfer](2026-11-25-pal-square-pass.json) · [Arithmetic replay](check_pal_square_pass.py) | On 25 November 2026 Hearthline tested Pang’s carry-and-return question on all half-rows through side 8,388,608. The receipt identifies the paper results and the precise conditional Lean statement. |
