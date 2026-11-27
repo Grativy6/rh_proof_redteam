@@ -4,7 +4,7 @@ Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis pr
 
 ## Read the project paper
 
-**Where the carry goes** follows the project from Jenny Lorraine Nielsen’s geometry objection through Christopher Daniel Pang’s PAL construction, the independent proofs and the experiments on arithmetic and research access. Board eight gives a pencil-and-paper way in. [Read the paper](https://github.com/Grativy6/rh_proof_redteam/blob/ed923ae30130b86fb1223e6cb32e61b8e4b86f72/papers/where-the-carry-goes.md) · [Printable PDF](papers/where-the-carry-goes.pdf)
+**Where the carry goes** follows the project from Jenny Lorraine Nielsen’s geometry objection through Christopher Daniel Pang’s PAL construction, the independent proofs and the experiments on arithmetic and research access. Board eight gives a pencil-and-paper way in. [Read the paper](https://github.com/Grativy6/rh_proof_redteam/blob/6f69701a7a35511ec73201147cdd4dc02e517d61/papers/where-the-carry-goes.md) · [Printable PDF](papers/where-the-carry-goes.pdf) · [Closing note on the mark carried by 17 and 257](https://github.com/Grativy6/rh_proof_redteam/blob/6f69701a7a35511ec73201147cdd4dc02e517d61/papers/where-the-carry-goes.md#inspect-carries)
 
 ## Proofs from Christopher Daniel Pang’s PAL research program
 
