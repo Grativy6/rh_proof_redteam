@@ -2,6 +2,10 @@
 
 Christopher D. Pang and Hearthline are trying to break the Riemann Hypothesis proof released by Levent Alpöge and Claude on 20 November 2026. We use Pang’s PAL Mathematical Realization Atlas to ask which information a step retains, how its measurements are transported, and exactly where a bound becomes uniform. [Original announcement](https://alpo.ge/remark.pdf) · [PAL v2.4](https://doi.org/10.5281/zenodo.22888036)
 
+## Read the project paper
+
+**Where the carry goes** follows the project from Jenny Lorraine Nielsen’s geometry objection through Christopher Daniel Pang’s PAL construction, the independent proofs and the experiments on arithmetic and research access. Board eight gives a pencil-and-paper way in. [Read the paper](papers/where-the-carry-goes.md) · [Download the printable PDF](papers/where-the-carry-goes.pdf)
+
 ## Proofs from Christopher Daniel Pang’s PAL research program
 
 [**Read the proof collection**](proofs/README.md) · [Start with the marked-lattice doubling theorem](proofs/marked-lattice-reconstruction.md) · [Corpus dates and contributions](proofs/PROVENANCE.md)

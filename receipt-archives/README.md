@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+For the history of the project, [read the retrospective](../papers/where-the-carry-goes.md) or [download the PDF](../papers/where-the-carry-goes.pdf). Its [replay record](2026-11-26-pal-project-retrospective.json) lists the seven calculations repeated for the paper. Run `python -B receipt-archives/render_project_retrospective.py` with ReportLab and the DejaVu fonts to rebuild the figure and print edition.
+
 ### Replay the constructive RH calculation
 
 For the [fixed one-thirteenth comparison](../proofs/one-thirteenth-of-a-returned-layer.md), run `python -B receipt-archives/check_pal_returned_horizon.py`. It returns the largest measured discrepancies and their cuts, and encloses all elementary constants rationally. [Direct ranges and both theorem comparisons](2026-11-26-pal-returned-horizon.json)

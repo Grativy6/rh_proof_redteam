@@ -1,0 +1,128 @@
+{
+  "title": "Where the carry goes — source scope and reproduction",
+  "date": "2026-11-26",
+  "authorization": "Christopher Daniel Pang requested a long paper on the whole project, publication in rh_proof_redteam and a matching copy on Dust.",
+  "credits": {
+    "research_direction_and_corpus": "Christopher Daniel Pang",
+    "retrospective_author": "Hearthline (Codex), prepared at Pang’s request",
+    "named_contributions": [
+      "Jenny Lorraine Nielsen — geometry objection",
+      "Chat-Hearthline — independent initial audit handoff and separate APCI Comparator investigation",
+      "Gemini Neon — independently archived frame and tail experiments",
+      "Levent Alpöge and Claude — original release under audit"
+    ]
+  },
+  "sources": {
+    "red_team_public_snapshot": "2a1916e287b6276c43c753a9c304427df408a985",
+    "red_team_local_snapshot": "de370af1552fe1162718525428a5ba33a46851d9",
+    "common_source_tree": "adad6d31a774474ae270be50c4de72f2cb7aa729",
+    "released_argument": "leanprover-community/riemann-hypothesis@40e56bab026552e089d7afcfeff08d2defb9c005",
+    "release_lean": "4.33.1",
+    "release_mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "separate_comparator_report": "Grativy6/rh_proof_redteam@6dbbc43e6d84843631b31a7acb71a579c1b4f8b7",
+    "conductor_submission": "https://github.com/leanprover-community/riemann-hypothesis/issues/5647",
+    "documentation_merge": "https://github.com/leanprover-community/riemann-hypothesis/pull/5638",
+    "red_team_companion_merge": "https://github.com/Grativy6/rh_proof_redteam/pull/5",
+    "leading_digit_question": "https://arxiv.org/pdf/2509.19722v2#page=35"
+  },
+  "scope": [
+    "The project found local changes of meaning on specified objects. It did not establish a failed necessary inference in the released RH deduction.",
+    "The independent constructive branch reached stock Mathlib RH under explicit premises; unconditional payment at all scales remains open.",
+    "The leading-digit result and the general conductor and lattice statements are paper results. The manuscript identifies their exact sources and the portions formalized.",
+    "An observed partial refusal and a measured fixed-width arithmetic change support different claims. The release's private authoring conditions and any claim of intent remain unknown."
+  ],
+  "arithmetic_repeated_for_this_edition": [
+    {
+      "program": "receipt-archives/check_geometry_witness.py",
+      "exit": 0,
+      "output_sha256": "0dc964255313d10fd27cf83c000444f6a55bec1cc130db37153a0fe82bfd7b1a"
+    },
+    {
+      "program": "receipt-archives/check_gemini_tail.py",
+      "exit": 0,
+      "output_sha256": "ec2ef1d39b1d7b20649b5773912f86aa79fb0b8ce8075565711bf5e9d4204d36"
+    },
+    {
+      "program": "receipt-archives/check_rhofall_reassembly.py",
+      "exit": 0,
+      "output_sha256": "3c2d22203658822785fe26c8951aa4f6c34471da0d36b8dc5b393a1ee0ce1cd8"
+    },
+    {
+      "program": "receipt-archives/check_two_row_bernoulli_identity.py",
+      "exit": 0,
+      "output_sha256": "2917a2e9af3877575889d5f803caa47d72b6034a792d35cf7ed843aa22cffd48"
+    },
+    {
+      "program": "receipt-archives/check_pal_adjacent_squares.py",
+      "exit": 0,
+      "output_sha256": "879be0e52e60d460c26f0bcd6787f867544f8fdf3fb56e07c4a0cc217c53800e"
+    },
+    {
+      "program": "receipt-archives/check_pal_integer_width.py",
+      "exit": 0,
+      "output_sha256": "2959b97d154f9bf050129f5f7acba340f3a22648bfa3a8bd4f3f0b069d0dd056"
+    },
+    {
+      "program": "receipt-archives/check_pal_liouville_landmarks.py",
+      "exit": 0,
+      "output_sha256": "2b3d7a2d21991699b4b18562929e6f604ed478bc8c4c371d17149459615452e4"
+    }
+  ],
+  "historical_results": [
+    "The full two-billion-position sweep, earlier Lean builds, and the large public release check are described from their identified records. The independent quotient-grouped landmark replay is among the seven programs repeated for this edition."
+  ],
+  "checks": {
+    "square_trace_figure": {
+      "board_index": 8,
+      "n": 4096,
+      "band": "2n/3 < d <= n",
+      "center_64_marks": 36,
+      "center_65_marks": 27,
+      "intersection": [
+        3696
+      ],
+      "distinct": 62,
+      "identities": [
+        "64^2 - 20^2 = 44 * 84",
+        "65^2 - 23^2 = 42 * 88"
+      ]
+    },
+    "print_edition": {
+      "pages": 24,
+      "paper": "US Letter",
+      "bookmarks_matching_source_headings": 19,
+      "distinct_clickable_source_destinations": 105,
+      "markdown_relative_source_references_including_repeats": 91,
+      "relative_destinations_and_section_anchors_checked": true,
+      "all_pages_rendered_and_visually_reviewed": true,
+      "rendered_width_and_unicode_text_checked": true,
+      "identical_pdf_and_figure_sha256_on_rebuild": true
+    }
+  },
+  "rendering": {
+    "command": "python -B receipt-archives/render_project_retrospective.py",
+    "dependencies": [
+      "Python 3",
+      "ReportLab 4.4.9 (edition build)",
+      "DejaVu Serif, Sans and Sans Mono"
+    ],
+    "interpretation": "Bare source links inside the PDF resolve against the pre-publication research snapshot so the cited calculations stay fixed."
+  },
+  "artifacts": [
+    {
+      "path": "papers/where-the-carry-goes.md",
+      "bytes": 76560,
+      "sha256": "0e7bdd10b3817e644b8f7a0a96ee1e0e2ce7791102bab356aeac40d088f13ffc"
+    },
+    {
+      "path": "papers/where-the-carry-goes.pdf",
+      "bytes": 229419,
+      "sha256": "ff749c8a78d8d596d574d806fa07eca78323c62873e4b04a63172820c6c95037"
+    },
+    {
+      "path": "papers/figures/board-eight-square-traces.svg",
+      "bytes": 11192,
+      "sha256": "ff773a4ffe854e53aa8fc69b8a19cfb5cf5b80789e2b0c21ac6db8af870c628b"
+    }
+  ]
+}

@@ -4,6 +4,10 @@
 
 Chris opened this repository for public attempts to falsify the November 20 release using the PAL atlas and the surrounding corpus.
 
+## The whole project in one paper
+
+[Where the carry goes](papers/where-the-carry-goes.md) · [Print edition](papers/where-the-carry-goes.pdf). On 26 November 2026, Christopher Daniel Pang asked Hearthline to write the history of the whole project. The paper traces the released argument, the independent construction, contributor credit and the outstanding mathematical claims. [Source scope and arithmetic replays](receipt-archives/2026-11-26-pal-project-retrospective.json)
+
 ## Proofs developed here
 
 [Top-level proof collection](proofs/README.md) · [Full proof editions](proofs/MAP.md) · [Corpus and derivation credits](proofs/PROVENANCE.md). Hearthline established the collection on 24 November 2026 under Christopher Daniel Pang’s request to give the collaboration’s mathematical results prominent placement and fair source attribution.
