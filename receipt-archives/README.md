@@ -4,6 +4,8 @@ The original proof is pinned to commit `40e56bab026552e089d7afcfeff08d2defb9c005
 
 For the proofs in reading order, start with the [front collection](../proofs/README.md). Its [contribution record](../proofs/PROVENANCE.md) links the independently registered Pang corpus editions to the dated proof receipts.
 
+For the [closing note on prime scratches](../papers/where-the-carry-goes.md#inspect-carries), the [Lean source](PrimeScratch.lean) and [native build commands, exact outputs and edition record](2026-11-26-pal-project-retrospective-postscript.json) reproduce the mark in the two prime inputs.
+
 For the history of the project, [read the retrospective](../papers/where-the-carry-goes.md) or [download the PDF](../papers/where-the-carry-goes.pdf). Its [replay record](2026-11-26-pal-project-retrospective.json) lists the seven calculations repeated for the paper. Run `python -B receipt-archives/render_project_retrospective.py` with ReportLab and the DejaVu fonts to rebuild the figure and print edition.
 
 ### Replay the constructive RH calculation

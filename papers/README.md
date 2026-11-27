@@ -6,7 +6,7 @@ Christopher Daniel Pang asked for a paper examining his suspicion that restricti
 
 ## Where the carry goes
 
-The full project paper follows each change of question, from the audit of the released RH argument to the mathematics that grew from Pang’s corpus. The worked examples include a mixed intersection, a disappearing series, two square traces that meet at 3696, and a sign experiment followed through two billion positions. [Read online](where-the-carry-goes.md) · [Printable PDF](where-the-carry-goes.pdf) · [Source scope and replays](../receipt-archives/2026-11-26-pal-project-retrospective.json)
+The full project paper follows each change of question, from the audit of the released RH argument to the mathematics that grew from Pang’s corpus. The worked examples include a mixed intersection, a disappearing series, two square traces that meet at 3696, and a sign experiment followed through two billion positions. [Read online](where-the-carry-goes.md) · [Printable PDF](where-the-carry-goes.pdf) · [Inspect carries, the closing note](where-the-carry-goes.md#inspect-carries) · [First-edition sources and replays](../receipt-archives/2026-11-26-pal-project-retrospective.json)
 
 ## Research access
 

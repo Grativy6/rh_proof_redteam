@@ -6,6 +6,7 @@ Chris supplied a separate research pack on 23 November 2026. Its digest and the 
 
 | Record | Use |
 | --- | --- |
+| [Prime scratch and the closing edition](2026-11-26-pal-project-retrospective-postscript.json) · [Program and two-prime theorem](PrimeScratch.lean) | On 26 November 2026, at Christopher Daniel Pang’s request, Hearthline added the DeepSeek and Chat-Hearthline afterword and read the marked binary place in 17 and 257 with a native Lean 4.33.1 executable. |
 | [Project history and seven replays](2026-11-26-pal-project-retrospective.json) · [PDF and figure builder](render_project_retrospective.py) | On 26 November 2026, under Christopher Daniel Pang’s request, Hearthline recorded the scope of the full project retrospective, source pins, independently repeated arithmetic and checks on the print edition. |
 | [One thirteenth on the returned boards](2026-11-26-pal-returned-horizon.json) · [Direct prime counts and constants](check_pal_returned_horizon.py) | Hearthline under Pang’s active key, 26 November 2026. Fixed all-size comparison, necessity on paper, worst finite cuts, finite literature range and bare-target response. |
 | [Product clocks and common board orientation](2026-11-26-pal-product-direction.json) · [Arithmetic replay](check_pal_product_clock.py) | Hearthline under Pang’s active key, 26 November 2026. Pure integer condition, board and cut scopes, joint flag data, physical address and bare-challenge comparison. |

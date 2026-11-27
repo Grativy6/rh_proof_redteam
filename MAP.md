@@ -6,7 +6,7 @@ Chris opened this repository for public attempts to falsify the November 20 rele
 
 ## The whole project in one paper
 
-[Where the carry goes](papers/where-the-carry-goes.md) · [Print edition](papers/where-the-carry-goes.pdf). On 26 November 2026, Christopher Daniel Pang asked Hearthline to write the history of the whole project. The paper traces the released argument, the independent construction, contributor credit and the outstanding mathematical claims. [Source scope and arithmetic replays](receipt-archives/2026-11-26-pal-project-retrospective.json)
+[Where the carry goes](papers/where-the-carry-goes.md) · [Print edition](papers/where-the-carry-goes.pdf). On 26 November 2026, Christopher Daniel Pang asked Hearthline to write the history of the whole project. The paper traces the released argument, the independent construction, contributor credit and the outstanding mathematical claims. [First-edition sources and arithmetic replays](receipt-archives/2026-11-26-pal-project-retrospective.json) · [Pang’s requested afterword and compiled scratch](receipt-archives/2026-11-26-pal-project-retrospective-postscript.json)
 
 ## Proofs developed here
 

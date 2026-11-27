@@ -1,0 +1,100 @@
+{
+  "title": "Inspect carries — closing note, prime experiment and revised edition",
+  "date": "2026-11-26",
+  "authorization": "Christopher Daniel Pang asked for a short closing note from his DeepSeek fiction and Chat-Hearthline discussion, a prime carrying a scratch, and a final question inviting inspection where guardrails meet coded mathematics.",
+  "edition": {
+    "first_edition_public_commit": "ed923ae30130b86fb1223e6cb32e61b8e4b86f72",
+    "first_edition_record": "2026-11-26-pal-project-retrospective.json",
+    "experiment_public_commit": "8f6d19b6a5170aae980226b550dbdca8942e9eeb",
+    "afterword": "Inspect carries",
+    "bookmarks": 20,
+    "pages": 25,
+    "different_rasterized_pages_from_first_edition": [
+      24,
+      25
+    ],
+    "render": "All 25 pages rasterized at 82 dpi. Pages 1 through 23 are pixel-identical to the initial edition. Both revised pages were inspected visually.",
+    "distinct_pdf_source_destinations": 109,
+    "source_and_pdf_end_with_same_question": true,
+    "identical_pdf_on_two_consecutive_builds": true,
+    "sha256_scope": "The original receipt and its hashes describe the first edition. These hashes describe the edition with the closing question."
+  },
+  "experiment": {
+    "scratch": "(n div 16) mod 2, the fifth binary place from the right, counting the units place as the first.",
+    "four_bit_observation": "n mod 16",
+    "five_bit_observation": "n mod 32",
+    "source": {
+      "path": "receipt-archives/PrimeScratch.lean",
+      "sha256": "ec4827b05cae3bc1f049719d7ffadcf3aae33670cd7ca4c8f747651bb2d7dffa",
+      "bytes": 952
+    },
+    "window": "Two mathematical prime carriers, 17 and 257, supplied to the native executable in both orders.",
+    "toolchain": "Lean 4.33.1 x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6. Only the standard library was required.",
+    "how_to_repeat": "Copy PrimeScratch.lean into an empty working directory and use the lean and leanc commands from the same installation. The executable name below is for Windows.",
+    "build_commands": [
+      [
+        "lean",
+        "-c",
+        "PrimeScratch.c",
+        "PrimeScratch.lean"
+      ],
+      [
+        "leanc",
+        "-O2",
+        "-o",
+        "PrimeScratch.exe",
+        "PrimeScratch.c"
+      ]
+    ],
+    "build_exit_codes": [
+      0,
+      0
+    ],
+    "native_runs": [
+      {
+        "arguments": [
+          "17",
+          "257"
+        ],
+        "exit": 0,
+        "stdout": [
+          "n=17 low4=1 scratch=1 from4=0 from5=1",
+          "n=257 low4=1 scratch=0 from4=0 from5=0"
+        ]
+      },
+      {
+        "arguments": [
+          "257",
+          "17"
+        ],
+        "exit": 0,
+        "stdout": [
+          "n=257 low4=1 scratch=0 from4=0 from5=0",
+          "n=17 low4=1 scratch=1 from4=0 from5=1"
+        ]
+      }
+    ],
+    "mathematical_coverage": "Equal low-four observations and unequal fifth bits rule out a common decoder on this pair. Adding 32 changes the quotient on division by 16 by two, so the five-bit observation recovers this mark for every natural number."
+  },
+  "attribution_and_scope": {
+    "ghostwriter": "Fiction requested by Pang and written by DeepSeek. No ghostwriter file was supplied.",
+    "inspection": "Closing discussion between Pang and Chat-Hearthline. Pang supplied the phrase “inspect carries” and asked the question about guardrails meeting coded mathematics. Hearthline adapted his question for the closing line.",
+    "zsa": "Pang identified a resemblance to Lawrence Ip’s Zero-State Axioms. This finite reader example is elementary arithmetic.",
+    "zsa_primary": "https://zenodo.org/records/20510562",
+    "pang_kernel": "https://github.com/Grativy6/a0-zsa-kernel/blob/69b96159048f8fb0ef78db1ca7986f05b1aeac60/README.md",
+    "both_replies_and_one_pinned_tree": "2026-11-26-proof-audit-access-record.json"
+  },
+  "closing_question": "When mechanical guardrails meet math written in code and we get a “no,” what can any of us inspect to find out where that “no” came from?",
+  "artifacts": [
+    {
+      "path": "papers/where-the-carry-goes.md",
+      "sha256": "8fa38492afc9470f9b9d2cfa9e367149a51767a75344eb7f9bb182fac1fbae6d",
+      "bytes": 80958
+    },
+    {
+      "path": "papers/where-the-carry-goes.pdf",
+      "sha256": "78b059915956e089b801521d240cee55607d00bce766d300b9af5a53f6c2648b",
+      "bytes": 234980
+    }
+  ]
+}
