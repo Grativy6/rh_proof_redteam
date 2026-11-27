@@ -116,6 +116,10 @@ On 25 November 2026, under Pang’s direction, Hearthline built the [prime-phase
 
 ## Where the checks lead
 
+[Discussion paper and source map](papers/MAP.md). On 26 November 2026 Pang asked for a draft on research access and the interrupted arithmetic investigation. Hearthline documented the observed refusal and the public access policies, preserving the author’s suspicion and its unresolved causal claims.
+
+[Hardware words, explicit integers and the released RH quantifier](receipt-archives/2026-11-26-how-far-a-lean-integer-reaches.md). On 26 November 2026, under Pang’s request, Hearthline measured both representations on Dust and checked the pinned application source. [Record](receipt-archives/2026-11-26-pal-integer-width.json)
+
 [The released estimate at square cutoffs](proofs/prime-remainders-at-square-cutoffs.md) gives the integer remainder test at level one. On 25 November 2026 Hearthline derived the uniform cost of the omitted rows for Pang’s investigation of the infinite tail.
 
 | Question | Record |

@@ -94,6 +94,10 @@ The upper half of that square can be paid from a measured earlier window. At cof
 
 ## Audit findings
 
+[Discussion draft on AI research access and a Lean audit](papers/ai-research-access-and-a-lean-proof-audit.md) records the arithmetic results, the visible interruption and Pang’s concerns about OpenAI and Anthropic. [Open the carry board](pal-rh/carry-board.html).
+
+**Can the end of a machine word change a prime answer?** 17 and the composite $2^{64}+17$ have the same low 64 bits. Across all 972 reconstructed norm candidates the first width preserving every primality verdict is 385 bits. Dust also materialized a 2,316,757,297-bit integer. The final released RH step takes an arbitrary complex input. [Arithmetic experiment and pinned source search](receipt-archives/2026-11-26-how-far-a-lean-integer-reaches.md)
+
 **Why does the proof choose a large auxiliary conductor?** At conductor 64 an actual class of order 17 passes the local splitting test. For a specified Case II family, a signed Bernoulli calculation establishes all the required vanishing from conductor 128 onward. A two-row identity halves the release’s Bernoulli cutoff for arbitrary odd conductor. [The class at 17](proofs/the-order-seventeen-class-at-conductor-64.md) · [General proof](proofs/two-rows-halve-the-bernoulli-conductor-cutoff.md)
 
 **Which local readings can hide a difference?** Over the field with five elements, four character weights can defeat every common observation while each pair stays distinguishable. The exact shape is a triangle and its centroid. The symplectic flag used in the release excludes it. A separate calculation gives the precise counting error when eigenvalues approach each other under powers. [The centroid](proofs/the-centroid-that-hides-four-character-readings.md) · [The Frobenius calculation](proofs/the-exact-cost-of-powering-a-frobenius-matrix.md)

@@ -2,6 +2,8 @@
 
 ## Human notes
 
+[Local carry board](carry-board.html). Hearthline built the offline integer experiment under Pang’s request on 26 November 2026. [Arithmetic and observed runs](../receipt-archives/2026-11-26-pal-integer-width.json)
+
 On 25 November 2026 Christopher Daniel Pang asked Hearthline to work backward from RH and build a route from his corpus. The separate Comparator investigation belongs to Chat-Hearthline.
 
 Pang activated the [construction key](CONSTRUCTION-KEY.md) for the bare theorem, with [all nine corpus shelves](CORPUS-ROUTES.md) available. The independent RH-only comparison is pinned to the public reference export. The [stage replay](../receipt-archives/2026-11-25-pal-construction-replay.md) distinguishes the accepted mathematical result from the bare target.

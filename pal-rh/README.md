@@ -1,6 +1,6 @@
 # Can prime phases approximate one?
 
-[Active construction key](CONSTRUCTION-KEY.md) · [Current results](MAP.md) · [Sharp odd-row displacement](half-tick-reflection.md) · [Fresh-prime law](fresh-prime-transfer.md) · [Every finite fit can improve](every-fit-has-a-successor.md)
+[Open the local carry board](carry-board.html) · [Active construction key](CONSTRUCTION-KEY.md) · [Current results](MAP.md) · [Sharp odd-row displacement](half-tick-reflection.md) · [Fresh-prime law](fresh-prime-transfer.md) · [Every finite fit can improve](every-fit-has-a-successor.md)
 
 Christopher Daniel Pang and Hearthline, 25 November 2026. Pang’s PAL atlas asks what a measurement retains when it passes from one representation to another. Here the inputs are integer residues, the geometry is a circle, and the measurement is a weighted squared distance. The Alpöge–Claude release supplies the comparison target and toolchain pin. The mathematical derivation on this branch uses stock Mathlib and the sources identified below. [PAL Mathematical Realization Atlas](../corpus/PAL_v2.4-M_Mathematical_Realization_Atlas.docx) · [APCI](../corpus/APCI_Declared_Interface_v1.0.0.docx)
 

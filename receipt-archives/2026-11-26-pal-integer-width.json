@@ -1,0 +1,250 @@
+{
+  "explicit_digit_carry_replay": {
+    "base": 5,
+    "modulus_bit_length": 385,
+    "stored_32_bit_digits": 13,
+    "binary_ladder_first_value_over_64_bits": {
+      "index": 5,
+      "exponent": 32,
+      "whole": "23283064365386962890625",
+      "high_64_bit_digit": 1262,
+      "low_64_bit_digit": "3273344365508751233"
+    },
+    "dropping_intermediate_high_digits_at_every_product": "5625304617532669953",
+    "exact_residue_at_full_exponent": "1",
+    "order_factor_tests": {
+      "2": "65794571027774832745588537266486439382601586586498771901135640963549130131839564588689999034983373394040350895271936",
+      "3": "29509020182834794054055448241224306530711236629070958796785690203864100238794752395734553678655453420725957366984012",
+      "571": "7934320002768819286461108990260177925300080178601486319791509231030835586007543700012788172220637604788975808929610",
+      "599": "24233938224649648911732636907835869352432775843492941817614740309514131976760512423872779323164828855282365339575638",
+      "413718278401": "33163391371698712807634046670708244078112533286827586181310971904178486489410920652603700297172713734367235080255888",
+      "603339156001": "23095646587523677525525390906745661934228658823014094468462573805912009773578693855792857389218857894840490160291284"
+    },
+    "bounded_multiply_run": {
+      "greatest_inner_sum": 18434640864454108096,
+      "nonzero_partial_carries": 234169,
+      "digit_products": 1604
+    },
+    "maximum_allowed_inner_sum": "18446744073709551615"
+  },
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "authorization": "Christopher Daniel Pang asked Hearthline to materialize large integers, cross the ordinary machine-word width, demonstrate the distinction, and compare it to the specific released RH claim. The runs used local CPU and RAM on Dust.",
+  "research_branch": "research/pal-rh",
+  "parent_public_research_commit": "9906ed5718d38edeaf83689cc56d68e1348857e6",
+  "parent_local_tree": "4284ef5bd769a3e270a60121c51c38b70d144c75",
+  "original_release": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "windows_lean": "4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)",
+  "linux_numeric_repeat": {
+    "version": "Lean (version 4.36.0, x86_64-unknown-linux-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)",
+    "runs": [
+      [
+        "bits=136279841 bytes=17034981 mod131071=15 mod17=1 last9=486871551",
+        "UInt64=0 Nat=18446744073709551616 twin64=17 cofactor=6148914691236517211"
+      ],
+      [
+        "bits=2316757297 bytes=289594663 mod131071=0 mod17=1 last9=548764671",
+        "UInt64=0 Nat=18446744073709551616 twin64=17 cofactor=6148914691236517211"
+      ]
+    ]
+  },
+  "windows_numeric_runs": [
+    {
+      "exponent": 136279841,
+      "bit_length": 136279841,
+      "packed_bytes": 17034981,
+      "actual": "bits=136279841 bytes=17034981 mod131071=15 mod17=1 last9=486871551",
+      "word_witness": "UInt64=0 Nat=18446744073709551616 twin64=17 cofactor=6148914691236517211"
+    },
+    {
+      "exponent": 2316757297,
+      "bit_length": 2316757297,
+      "packed_bytes": 289594663,
+      "actual": "bits=2316757297 bytes=289594663 mod131071=0 mod17=1 last9=548764671",
+      "word_witness": "UInt64=0 Nat=18446744073709551616 twin64=17 cofactor=6148914691236517211"
+    }
+  ],
+  "arithmetic_and_coverage": {
+    "largest_unsigned_64_bit_prime": 18446744073709551557,
+    "release_prime": {
+      "bits": 385,
+      "decimal_digits": 116,
+      "certificate": "replayed full-width Lucas chain",
+      "low_32_bits": 1029468161,
+      "low_32_is_prime": true,
+      "low_64_bits": 586678051033346049,
+      "low_64_divisor": 3,
+      "cofactor": 195559350344448683,
+      "full_base_5_residue": 1,
+      "low_64_base_5_residue": 497633511686448868
+    },
+    "norm_family": {
+      "scanned_parameter_interval": [
+        1,
+        972
+      ],
+      "full_prime_parameters": [
+        363,
+        663,
+        972
+      ],
+      "low_64_prime_parameters": [
+        26,
+        38,
+        50,
+        55,
+        62,
+        84,
+        114,
+        116,
+        159,
+        163,
+        172,
+        193,
+        212,
+        226,
+        232,
+        238,
+        287,
+        322,
+        376,
+        387,
+        404,
+        440,
+        474,
+        498,
+        520,
+        563,
+        614,
+        615,
+        620,
+        629,
+        658,
+        678,
+        689,
+        711,
+        736,
+        740,
+        742,
+        778,
+        779,
+        799,
+        805,
+        827,
+        853,
+        854,
+        906
+      ],
+      "true_positives": 0,
+      "first_width_with_all_972_verdicts_correct": 385,
+      "widths_passing_Fermat_for_all_three_actual_primes": [
+        14,
+        385
+      ],
+      "width_14_actual_prime_readings": 365,
+      "width_14_false_positive": {
+        "k": 2,
+        "low_word": 15361,
+        "full_divisor": 3
+      },
+      "false_positives": 45,
+      "false_negatives": 3,
+      "true_negatives": 924,
+      "reverse_witness_parameter": 26,
+      "reverse_witness_full_divisor": 3,
+      "reverse_witness_prime_low_word": 2813010139532958721,
+      "attribution": "The release supplies the actual k=972 example. The parameter sweep is the earlier PAL reconstruction."
+    },
+    "higher_composites": 58,
+    "explicit_composite_twin": 18446744073709551633,
+    "runtime_crosschecks": [
+      {
+        "bits": 136279841,
+        "packed_bytes": 17034981,
+        "mod131071": 15,
+        "mod17": 1,
+        "last_nine_decimal_digits": 486871551
+      },
+      {
+        "bits": 2316757297,
+        "packed_bytes": 289594663,
+        "mod131071": 0,
+        "mod17": 1,
+        "last_nine_decimal_digits": 548764671
+      }
+    ],
+    "lean": {
+      "dense_runs": [
+        "bits=136279841 bytes=17034981 mod131071=15 mod17=1 last9=486871551",
+        "bits=2316757297 bytes=289594663 mod131071=0 mod17=1 last9=548764671"
+      ],
+      "invalid_prime_transfer": "rejected with a type mismatch"
+    },
+    "release_source": {
+      "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "covered_lean_files": 175187,
+      "matched_lines": 0,
+      "matching_files": [],
+      "exact_numeric_type_pattern": "(^|[^[:alnum:]_])(U?Int(8|16|32|64)|USize|ISize|BitVec|Float(32)?|toU?Int(8|16|32|64)|toUSize|toISize)([^[:alnum:]_]|$)",
+      "scope": "Explicit named machine representations in the release's src Lean files. This test does not expand aliases, inspect transitive Mathlib or prove runtime correctness."
+    }
+  },
+  "source_terminus": {
+    "file": "src/Formalism/GammaFactorNonvanishing/CritLine.lean",
+    "line": 29
+  },
+  "formal_axioms": {
+    "IntegerWidth.same_cast": [
+      "propext"
+    ],
+    "IntegerWidth.composite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IntegerWidth.symbolic_prime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IntegerWidth.beyond_any_word": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "IntegerWidth.released_word_composite": [
+      "propext"
+    ],
+    "IntegerWidth.product_carry": [
+      "propext"
+    ],
+    "IntegerWidth.first_base_five_spill": [
+      "propext"
+    ]
+  },
+  "native_replay": [
+    {
+      "module": "IntegerWidth",
+      "exit": 0,
+      "seconds": 12.5,
+      "output": ""
+    }
+  ],
+  "cloud_cost": 0,
+  "review": {
+    "distinctions": "Dense runtime arithmetic, finite-word projection, symbolic prime specification, independent arithmetic replay and source search have separate scopes. The bit counts are actual binary magnitude lengths; packed byte counts exclude the allocator and scratch space. The 17-times-wider integer is composite. The dense runs do not find a new world record prime.",
+    "full_width": "The release supplies the actual prime at k=972. The wider k=1..972 table is our reconstructed audit family. All positive low-word verdicts have complete order witnesses. For all 384 narrower widths at least one decision is wrong in that family.",
+    "negative_control": "The standard compiler rejected using a proof of Nat.Prime 17 for Nat.Prime (2^64+17) with a type mismatch. A first automatic trial for the separate residue-compositeness proof reached maxRecDepth and produced an error; the final file supplies a divisor explicitly.",
+    "release_scope": "The code scan covers every .lean file under src at the stated release commit. It covers only explicit spellings in its recorded regex. The 385-bit Lucas example was separately tested before and after narrowing. Neither check is a full audit of the proof or runtime.",
+    "cost": "No Runpod pod or remote paid compute was provisioned."
+  },
+  "source_hashes": {
+    "receipt-archives/IntegerWidth.lean": "e00b5a807d459073ccbc2119a7d09cb5324036f66722b34fedd14e11861dc90a",
+    "receipt-archives/check_pal_integer_width.py": "714a7ed9216ba03c0df91e8067338b83d44b5cb1f8055005107ba18b9acbbde0",
+    "receipt-archives/word_prime_order_witnesses.json": "9f3f2f10c571671c59af1fa5d761dde80b2a86e032b47618d1321a06d53d2016",
+    "receipt-archives/check_release_prime_large.py": "bc1a73cdc282dbc7c37be108d3307f5984a9c9c624ac48eebb359ab3193e7dca",
+    "receipt-archives/check_pal_lucas_carries.py": "87435785687f88cdd60269e47cecc2e3ad604f4f6744480fd25f3c44d1834b18",
+    "receipt-archives/2026-11-26-how-far-a-lean-integer-reaches.md": "bbe70aa21340e62e8ebd01e95c287b9b7f1d59fa83653ac77f2fb2e7c4b384cc"
+  }
+}

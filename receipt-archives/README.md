@@ -224,6 +224,10 @@ The [pole experiment](2026-11-24-value-at-the-zeta-pole.md) checks an actual use
 
 The [dyadic counterexample](2026-11-24-dyadic-class-enters-late.md) gives the exact finite input, the number-field class and the threshold used downstream. Run `python check_dyadic_window_class.py` from this directory to check the prime, scale and finite cocycles. [Survival through the tower](2026-11-24-dyadic-class-in-the-tower.md) and the [independent relative prime estimate](2026-11-24-relative-prime-count.md) give the neighboring checks.
 
+The [research-access discussion draft](../papers/ai-research-access-and-a-lean-proof-audit.md) uses [source scopes and selected chat excerpts](2026-11-26-proof-audit-access-record.json). The [local carry board](../pal-rh/carry-board.html) has a [browser replay](check_carry_board.cjs).
+
+For [the integer-width demonstration](2026-11-26-how-far-a-lean-integer-reaches.md), run `python -B receipt-archives/check_pal_integer_width.py`. Its `--project` and `--release` options also rerun the pinned Lean experiment, deliberate type mismatch and complete release-source search. [Lean source](IntegerWidth.lean) · [Run record](2026-11-26-pal-integer-width.json)
+
 For Chris’s [P versus NP double feature](2026-11-24-p-vs-np-double-feature.md), the [prebuilt inputs](p-vs-np-comparator-exports.tar.xz) go directly to the exported-statement judge. The [source runner](replay_p_vs_np.py) can also rebuild the inputs from the pinned definitions.
 
 For the [marked directions](2026-11-24-three-deformation-directions-at-577.md) run `python -B residual_directions.py` from `receipt-archives/marked-directions-577`. In that directory `python -B matrix_checks.py` and `python -B two_words.py` check the [ramification test](2026-11-24-why-the-trace-field-must-ramify.md). The command `python -B auxiliary_constant.py` checks the [auxiliary digits](2026-11-24-one-ramified-digit-at-the-auxiliary-prime.md). The independent PARI controls are `gp -fq upper_local.gp` and `gp -fq rank_floor.gp`.

@@ -1,0 +1,14 @@
+{
+  "page": "pal-rh/carry-board.html",
+  "checks": "split, restore, prime/composite reading, wider word, invalid input, squaring, narrow layout",
+  "networkRequests": 0,
+  "browserErrors": [],
+  "offline": true,
+  "date": "2026-11-26",
+  "authorization": "Christopher Daniel Pang requested a local contained arithmetic toy on Dust.",
+  "source_hashes": {
+    "pal-rh/carry-board.html": "354d116f911c9883c3e17a1487ba7f08f7a237178d74ab45472d57c302347cb5",
+    "receipt-archives/check_carry_board.cjs": "405935183ee4975cdb1fed1f46f453e3d9d6092c752b9d7dfadaed635a14624a"
+  },
+  "visual_review": "Inspected desktop and narrow-screen captures, then widened the first table column to keep exponent labels together."
+}

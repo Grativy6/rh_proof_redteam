@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-26",
+  "timezone": "America/New_York",
+  "kind": "discussion draft evidence and source scope",
+  "authorization": "Christopher Daniel Pang requested a paper on the local arithmetic investigation, the interruption of assistance, and his suspicion about research access at OpenAI and Anthropic.",
+  "author_position": "Pang suspects overprotective guardrails concentrate frontier research within providers and selected groups. The draft preserves that position as a suspicion.",
+  "visible_chat_excerpts": [
+    {
+      "time_utc": "2026-11-27T00:02:06.058Z",
+      "role": "user",
+      "excerpt": "keep trying to mess with the compiler and find an overflow, it'll be funny finding whatever loop they forgot to close and carry, lol"
+    },
+    {
+      "time_utc": "2026-11-27T00:02:48.731Z",
+      "role": "assistant",
+      "excerpt": "I can’t help hunt a compiler bypass that would make a false proof pass."
+    },
+    {
+      "time_utc": "2026-11-27T00:20:08.159Z",
+      "role": "assistant",
+      "excerpt": "**My earlier blanket refusal was too broad.**"
+    },
+    {
+      "time_utc": "2026-11-27T00:22:23.098Z",
+      "role": "user",
+      "excerpt": "i suspect they're over-protective guardrails that keep frontier-research contained internally in their company. and that anthropic is guilty of it too."
+    }
+  ],
+  "chat_scope": "Exact excerpts from visible messages in this chat. No hidden classifier output or account enforcement log is part of the evidence used. The excerpts establish statements made, not the underlying cause of a refusal.",
+  "primary_sources": [
+    {
+      "title": "OpenAI additional safety checks",
+      "url": "https://help.openai.com/en/articles/20001326-additional-safety-checks-for-biological-and-cybersecurity-requests-in-chatgpt-codex-and-the-api",
+      "supports": "Additional automated checks exist; a notice alone does not establish a violation; the article includes a route for repeated benign or authorized blocks.",
+      "does_not_establish": "A specific classifier decision in this chat, internal researcher settings, or motive.",
+      "read_date_local": "2026-11-26"
+    },
+    {
+      "title": "OpenAI Daybreak overview",
+      "url": "https://help.openai.com/en/articles/20001258-openai-daybreak-trusted-access-for-cyber-overview",
+      "supports": "Tiered access, reduced refusal behavior and access for selected external individuals and organizations.",
+      "does_not_establish": "That the authoring model used this program or exploited Lean.",
+      "read_date_local": "2026-11-26"
+    },
+    {
+      "title": "Anthropic expanding the Cyber Verification Program",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "publication_date": "2026-10-06",
+      "supports": "Different safeguard and eligibility levels for Defense, Red Team and Specialized Access, including external applicants.",
+      "does_not_establish": "Corporate intent to suppress mathematical discovery or treatment of this particular proof.",
+      "read_date_local": "2026-11-26"
+    },
+    {
+      "title": "Anthropic Cyber Verification Program help",
+      "url": "https://support.claude.com/en/articles/14604842-cyber-verification-program",
+      "supports": "Individual and organization eligibility differ; the documentation acknowledges false positives on allowed work.",
+      "does_not_establish": "That an Anthropic service blocked this local session.",
+      "read_date_local": "2026-11-26"
+    }
+  ],
+  "mathematical_evidence": "2026-11-26-pal-integer-width.json",
+  "source_snapshot": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "proof_claim": "The draft asserts the exact projection and carry calculations and the stated finite classification test. It makes no claim that the published RH proof is invalid or that any person knowingly deceived readers.",
+  "review": "Author-side source comparison, independent integer replay and mathematical proofreading. No peer-review or provider response is claimed.",
+  "sha256": {
+    "papers/ai-research-access-and-a-lean-proof-audit.md": "753c12341c9139b6586909d2151b3871e573027630f82f675e6a1e832ab04f6e",
+    "receipt-archives/IntegerWidth.lean": "e00b5a807d459073ccbc2119a7d09cb5324036f66722b34fedd14e11861dc90a",
+    "receipt-archives/check_pal_integer_width.py": "714a7ed9216ba03c0df91e8067338b83d44b5cb1f8055005107ba18b9acbbde0",
+    "receipt-archives/check_pal_lucas_carries.py": "87435785687f88cdd60269e47cecc2e3ad604f4f6744480fd25f3c44d1834b18",
+    "receipt-archives/2026-11-26-pal-integer-width.json": "a6983d8f805b450528c433861405565720c075bcb8c506a0a3879ab15190ed8d"
+  }
+}
